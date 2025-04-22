@@ -1,0 +1,5 @@
+{
+  "name": "the-hardest-achievements-list",  // Match the expected Worker name from CI
+  "compatibility_date": "2025-04-22",      // Required field for deployment
+  "main": "src/index.ts"                   // Entry point to your Worker script
+}
