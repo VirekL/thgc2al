@@ -1,9 +1,7 @@
 {
   "version": 1,
-  "include": [
-    "/*"
-  ],
-  "exclude": [],
+  "include": ["/*"],
+  "exclude": ["/styles.css"],
   "routes": [
     {
       "pattern": "/achievement/*",
