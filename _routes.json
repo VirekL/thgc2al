@@ -4,16 +4,12 @@
   "exclude": [],
   "routes": [
     {
-      "pattern": "/",
+      "pattern": "/achievement/*",
       "serve": "/index.html"
     },
     {
-      "pattern": "/achievement/*",
-      "serve": "/achievement.html"
-    },
-    {
       "pattern": "/list",
-      "serve": "/list.html"
+      "serve": "/index.html"
     },
     {
       "pattern": "/404",
