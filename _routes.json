@@ -1,37 +1,39 @@
 {
-    "version": 1,
-    "include": [
-        "/*"
-    ],
-    "exclude": [],
-    "routes": [
-        {
-            "pattern": "/achievement/*",
-            "serve": "/achievement.html"
-        },
-        {
-            "pattern": "/list",
-            "serve": "/list.html"
-        },
-        {
-            "pattern": "/404",
-            "serve": "/404.html"
-        },
-        {
-            "pattern": "/about-us",
-            "serve": "/about-us.html"
-        },
-        {
-            "pattern": "/leaderboard",
-            "serve": "/leaderboard.html"
-        },
-        {
-            "pattern": "/submission-stats",
-            "serve": "/submission-stats.html"
-        },
-        {
-            "pattern": "/timeline",
-            "serve": "/timeline.html"
-        }
-    ]
+  "version": 1,
+  "include": ["/*"],
+  "exclude": [],
+  "routes": [
+    {
+      "pattern": "/",
+      "serve": "/index.html"
+    },
+    {
+      "pattern": "/achievement/*",
+      "serve": "/achievement-details.html"
+    },
+    {
+      "pattern": "/list",
+      "serve": "/index.html"
+    },
+    {
+      "pattern": "/404",
+      "serve": "/404.html"
+    },
+    {
+      "pattern": "/about-us",
+      "serve": "/about-us.html"
+    },
+    {
+      "pattern": "/leaderboard",
+      "serve": "/leaderboard.html"
+    },
+    {
+      "pattern": "/submission-stats",
+      "serve": "/submission-stats.html"
+    },
+    {
+      "pattern": "/timeline",
+      "serve": "/timeline.html"
+    }
+  ]
 }
