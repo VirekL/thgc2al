@@ -13,7 +13,7 @@
     },
     {
       "pattern": "/list",
-      "serve": "/index.html"
+      "serve": "/list.html"
     },
     {
       "pattern": "/404",
