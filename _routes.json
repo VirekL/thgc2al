@@ -9,7 +9,7 @@
     },
     {
       "pattern": "/achievement/*",
-      "serve": "/achievement-details.html"
+      "serve": "/achievement.html"
     },
     {
       "pattern": "/list",
