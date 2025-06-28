@@ -1,4 +1,12 @@
-import{useEffect as e}from"react";export default function t(){return e(()=>{if(!document.getElementById("background-style")){let e=document.createElement("style");e.id="background-style",e.textContent=`
+import { useEffect } from 'react';
+
+export default function Background() {
+  useEffect(() => {
+    // Inject styles only once
+    if (!document.getElementById('background-style')) {
+      const style = document.createElement('style');
+      style.id = 'background-style';
+      style.textContent = `
         #background-root {
           position: fixed;
           inset: 0;
@@ -27,10 +35,38 @@ import{useEffect as e}from"react";export default function t(){return e(()=>{if(!
           background: rgba(40, 80, 180, 0.12);
           pointer-events: none;
         }
-      `,document.head.appendChild(e)}function t(e){if(!e||!e.length)return;let t=e.find(e=>e&&(e.thumbnail||e.levelID));if(!t)return;let n=t.thumbnail||(t.levelID?`https://tjcsucht.net/levelthumbs/${t.levelID}.png`:null);if(n){let o=document.getElementById("dynamic-background");o&&(o.style.backgroundImage=`url('${n}')`)}}fetch("/achievements.json").then(e=>e.ok?e.json():Promise.reject()).then(t).catch(()=>{fetch("achievements.json").then(e=>e.ok?e.json():Promise.reject()).then(t).catch(()=>{})})},[]),<div id="background-root">
+      `;
+      document.head.appendChild(style);
+    }
 
+    // Fetch achievements and set background
+    function setBackgroundFromAchievements(achievements) {
+      if (!achievements || !achievements.length) return;
+      let topAchievement = achievements.find(a => a && (a.thumbnail || a.levelID));
+      if (!topAchievement) return;
+      let bgUrl = topAchievement.thumbnail || (topAchievement.levelID ? `https://tjcsucht.net/levelthumbs/${topAchievement.levelID}.png` : null);
+      if (bgUrl) {
+        const bgDiv = document.getElementById('dynamic-background');
+        if (bgDiv) bgDiv.style.backgroundImage = `url('${bgUrl}')`;
+      }
+    }
+
+    // Try both possible paths for achievements.json
+    fetch('/achievements.json')
+      .then(res => res.ok ? res.json() : Promise.reject())
+      .then(setBackgroundFromAchievements)
+      .catch(() => {
+        fetch('achievements.json')
+          .then(res => res.ok ? res.json() : Promise.reject())
+          .then(setBackgroundFromAchievements)
+          .catch(() => {});
+      });
+  }, []);
+
+  return (
+    <div id="background-root">
       <div id="dynamic-background"></div>
-
       <div id="blue-tint-overlay"></div>
-
-    </div>};
+    </div>
+  );
+}
