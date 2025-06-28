@@ -3,13 +3,10 @@ import Link from 'next/link';
 import Background from '../../components/Background';
 import Header from '../../components/Header';
 import Sidebar from '../../components/Sidebar';
-import fs from 'fs';
-import path from 'path';
 
 export async function getStaticPaths() {
-  const achievementsPath = path.join(process.cwd(), 'public', 'achievements.json');
-  const achievementsData = fs.readFileSync(achievementsPath, 'utf8');
-  const achievements = JSON.parse(achievementsData);
+  const res = await fetch('http://localhost:3000/achievements.json');
+  const achievements = await res.json();
   const paths = achievements
     .filter(a => a && a.id)
     .map(a => ({ params: { id: a.id.toString() } }));
@@ -17,9 +14,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const achievementsPath = path.join(process.cwd(), 'public', 'achievements.json');
-  const achievementsData = fs.readFileSync(achievementsPath, 'utf8');
-  const achievements = JSON.parse(achievementsData);
+  const res = await fetch('http://localhost:3000/achievements.json');
+  const achievements = await res.json();
   const achievement = achievements.find(a => a && a.id && a.id.toString() === params.id) || null;
   return { props: { achievement } };
 }
