@@ -13,7 +13,8 @@ export async function getStaticPaths() {
   const paths = achievements
     .filter(a => a && a.id)
     .map(a => ({ params: { id: a.id.toString() } }));
-  return { paths, fallback: false };
+  // Enable fallback for dynamic generation
+  return { paths, fallback: 'blocking' };
 }
 
 export async function getStaticProps({ params }) {
@@ -25,6 +26,10 @@ export async function getStaticProps({ params }) {
 }
 
 export default function AchievementPage({ achievement }) {
+  // Handle fallback loading state
+  if (typeof window !== 'undefined' && !achievement) {
+    return <div>Loading...</div>;
+  }
   if (!achievement) {
     return (
       <div>
