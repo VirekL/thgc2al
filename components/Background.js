@@ -20,10 +20,11 @@ export default function Background() {
           inset: 0;
           width: 100vw;
           height: 100vh;
-          z-index: 0;
+          z-index: -2;
           background-size: cover;
           background-position: center;
-          transition: background-image 0.5s;
+          filter: grayscale(75%) blur(5px) brightness(.7);
+          transition: background-image 0.3s ease-in-out;
           pointer-events: none;
         }
         #blue-tint-overlay {
@@ -32,7 +33,7 @@ export default function Background() {
           width: 100vw;
           height: 100vh;
           z-index: -1;
-          background: rgba(40, 80, 180, 0.12);
+          background: rgba(19,23,41,.8);
           pointer-events: none;
         }
       `;
