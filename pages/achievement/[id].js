@@ -6,7 +6,22 @@ import Sidebar from '../../components/Sidebar';
 import fs from 'fs';
 import path from 'path';
 
-export async function getServerSideProps({ params }) {
+export async function getStaticPaths() {
+  const achievementsPath = path.join(process.cwd(), 'public', 'achievements.json');
+  let achievements = [];
+  try {
+    const achievementsData = fs.readFileSync(achievementsPath, 'utf8');
+    achievements = JSON.parse(achievementsData);
+  } catch (e) {
+    // fallback to empty array if file not found or parse error
+  }
+  const paths = achievements
+    .filter(a => a && a.id)
+    .map(a => ({ params: { id: a.id.toString() } }));
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps({ params }) {
   const achievementsPath = path.join(process.cwd(), 'public', 'achievements.json');
   let achievements = [];
   try {
