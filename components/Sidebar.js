@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Sidebar() {
   return (
-    <nav>
+    <nav className="sidebar">
       <Link href="/list" className="sidebar-link">Main List</Link>
       <Link href="/timeline" className="sidebar-link">Timeline</Link>
       <Link href="/leaderboard" className="sidebar-link">Leaderboard</Link>
