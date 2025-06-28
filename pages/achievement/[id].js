@@ -3,18 +3,24 @@ import Link from 'next/link';
 import Background from '../../components/Background';
 import Header from '../../components/Header';
 import Sidebar from '../../components/Sidebar';
-import achievements from '../../achievements.json'; // Or fetch from API
+import fs from 'fs';
+import path from 'path';
 
 export async function getStaticPaths() {
-  // Pre-render all achievement pages at build time
-  const paths = achievements.map(a => ({
-    params: { id: a.id.toString() }
-  }));
-  return { paths, fallback: false }; // fallback: false means 404 for unknown ids
+  const achievementsPath = path.join(process.cwd(), 'public', 'achievements.json');
+  const achievementsData = fs.readFileSync(achievementsPath, 'utf8');
+  const achievements = JSON.parse(achievementsData);
+  const paths = achievements
+    .filter(a => a && a.id)
+    .map(a => ({ params: { id: a.id.toString() } }));
+  return { paths, fallback: false };
 }
 
 export async function getStaticProps({ params }) {
-  const achievement = achievements.find(a => a.id.toString() === params.id) || null;
+  const achievementsPath = path.join(process.cwd(), 'public', 'achievements.json');
+  const achievementsData = fs.readFileSync(achievementsPath, 'utf8');
+  const achievements = JSON.parse(achievementsData);
+  const achievement = achievements.find(a => a && a.id && a.id.toString() === params.id) || null;
   return { props: { achievement } };
 }
 
