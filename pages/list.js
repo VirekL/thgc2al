@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { useEffect, useState, useMemo, useRef } from 'react';
+import Link from 'next/link';
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
 import Background from '../components/Background';
@@ -119,31 +120,35 @@ function TagFilterPills({ allTags, filterTags, setFilterTags, isMobile, show, se
 
 function AchievementCard({ achievement, onClick }) {
   return (
-    <div className="achievement-item" onClick={onClick} tabIndex={0} style={{cursor: 'pointer'}}>
-      <div className="rank-date-container">
-        <div className="achievement-length">
-          {achievement.length ? `${Math.floor(achievement.length / 60)}:${(achievement.length % 60).toString().padStart(2, '0')}` : 'N/A'}
+    <Link href={`/achievement/${achievement.id}`} passHref legacyBehavior>
+      <a style={{ textDecoration: 'none', color: 'inherit' }}>
+        <div className="achievement-item" tabIndex={0} style={{cursor: 'pointer'}}>
+          <div className="rank-date-container">
+            <div className="achievement-length">
+              {achievement.length ? `${Math.floor(achievement.length / 60)}:${(achievement.length % 60).toString().padStart(2, '0')}` : 'N/A'}
+            </div>
+            <div className="achievement-date">
+              {achievement.date ? new Date(achievement.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : 'N/A'}
+            </div>
+            <div className="rank"><strong>#{achievement.rank}</strong></div>
+          </div>
+          <div className="tag-container">
+            {(achievement.tags || []).sort((a, b) => TAG_PRIORITY_ORDER.indexOf(a.toUpperCase()) - TAG_PRIORITY_ORDER.indexOf(b.toUpperCase())).map(tag => (
+              <Tag tag={tag} key={tag} />
+            ))}
+          </div>
+          <div className="achievement-details">
+            <div className="text">
+              <h2>{achievement.name}</h2>
+              <p>{achievement.player}</p>
+            </div>
+            <div className="thumbnail-container">
+              <img src={achievement.thumbnail || (achievement.levelID ? `https://tjcsucht.net/levelthumbs/${achievement.levelID}.png` : '/assets/default-thumbnail.png')} alt={achievement.name} loading="lazy" />
+            </div>
+          </div>
         </div>
-        <div className="achievement-date">
-          {achievement.date ? new Date(achievement.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : 'N/A'}
-        </div>
-        <div className="rank"><strong>#{achievement.rank}</strong></div>
-      </div>
-      <div className="tag-container">
-        {(achievement.tags || []).sort((a, b) => TAG_PRIORITY_ORDER.indexOf(a.toUpperCase()) - TAG_PRIORITY_ORDER.indexOf(b.toUpperCase())).map(tag => (
-          <Tag tag={tag} key={tag} />
-        ))}
-      </div>
-      <div className="achievement-details">
-        <div className="text">
-          <h2>{achievement.name}</h2>
-          <p>{achievement.player}</p>
-        </div>
-        <div className="thumbnail-container">
-          <img src={achievement.thumbnail || (achievement.levelID ? `https://tjcsucht.net/levelthumbs/${achievement.levelID}.png` : '/assets/default-thumbnail.png')} alt={achievement.name} loading="lazy" />
-        </div>
-      </div>
-    </div>
+      </a>
+    </Link>
   );
 }
 
