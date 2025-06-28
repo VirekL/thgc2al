@@ -216,51 +216,52 @@ export default function List() {
         />
       </Head>
       <Background />
-      <Header />
+      <Header>
+        <div className="search-bar" style={{marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8, width: '100%'}}>
+          <input
+            type="text"
+            placeholder="Search achievements..."
+            value={search}
+            onChange={e => setSearch(e.target.value)}
+            aria-label="Search achievements"
+            style={{padding: '0.75rem', borderRadius: 8, border: '2px solid #343A52', width: '100%'}}
+          />
+          {isMobile && (
+            <button
+              ref={mobileBtnRef}
+              id="mobile-filter-toggle-btn"
+              aria-label={showMobileFilters ? 'Hide Filters' : 'Show Filters'}
+              onClick={handleMobileToggle}
+              style={{
+                background: 'none',
+                border: 'none',
+                cursor: 'pointer',
+                padding: 0,
+                marginLeft: 8,
+                display: 'flex',
+                alignItems: 'center',
+                height: 40,
+              }}
+              dangerouslySetInnerHTML={{
+                __html: showMobileFilters
+                  ? '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-up.svg" alt="Hide Filters" style="width: 20px; height: 20px; filter: invert(92%) sepia(7%) saturate(104%) hue-rotate(200deg) brightness(97%) contrast(92%);"></span>'
+                  : '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-down.svg" alt="Show Filters" style="width: 20px; height: 20px; filter: invert(92%) sepia(7%) saturate(104%) hue-rotate(200deg) brightness(97%) contrast(92%);"></span>'
+              }}
+            />
+          )}
+        </div>
+        <TagFilterPills
+          allTags={allTags}
+          filterTags={filterTags}
+          setFilterTags={setFilterTags}
+          isMobile={isMobile}
+          show={showMobileFilters}
+          setShow={setShowMobileFilters}
+        />
+      </Header>
       <main className="main-content" style={{display: 'flex', gap: '2rem', padding: '2rem', justifyContent: 'center', alignItems: 'flex-start'}}>
         <Sidebar />
         <section className="achievements" style={{flexGrow: 1, width: '70%', maxWidth: '1000px', display: 'flex', flexDirection: 'column', gap: '1rem', padding: '2rem', maxHeight: 'calc(100vh - 150px)', overflowY: 'auto'}}>
-          <div className="search-bar" style={{marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8}}>
-            <input
-              type="text"
-              placeholder="Search achievements..."
-              value={search}
-              onChange={e => setSearch(e.target.value)}
-              aria-label="Search achievements"
-              style={{padding: '0.75rem', borderRadius: 8, border: '2px solid #343A52', width: '100%'}}
-            />
-            {isMobile && (
-              <button
-                ref={mobileBtnRef}
-                id="mobile-filter-toggle-btn"
-                aria-label={showMobileFilters ? 'Hide Filters' : 'Show Filters'}
-                onClick={handleMobileToggle}
-                style={{
-                  background: 'none',
-                  border: 'none',
-                  cursor: 'pointer',
-                  padding: 0,
-                  marginLeft: 8,
-                  display: 'flex',
-                  alignItems: 'center',
-                  height: 40,
-                }}
-                dangerouslySetInnerHTML={{
-                  __html: showMobileFilters
-                    ? '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-up.svg" alt="Hide Filters" style="width: 20px; height: 20px; filter: invert(92%) sepia(7%) saturate(104%) hue-rotate(200deg) brightness(97%) contrast(92%);"></span>'
-                    : '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-down.svg" alt="Show Filters" style="width: 20px; height: 20px; filter: invert(92%) sepia(7%) saturate(104%) hue-rotate(200deg) brightness(97%) contrast(92%);"></span>'
-                }}
-              />
-            )}
-          </div>
-          <TagFilterPills
-            allTags={allTags}
-            filterTags={filterTags}
-            setFilterTags={setFilterTags}
-            isMobile={isMobile}
-            show={showMobileFilters}
-            setShow={setShowMobileFilters}
-          />
           {filtered.length === 0 ? (
             <div style={{color: '#aaa'}}>No achievements found.</div>
           ) : (
