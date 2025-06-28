@@ -31,7 +31,7 @@ export default function Background() {
           inset: 0;
           width: 100vw;
           height: 100vh;
-          z-index: 1;
+          z-index: -1;
           background: rgba(40, 80, 180, 0.12);
           pointer-events: none;
         }
@@ -65,8 +65,8 @@ export default function Background() {
 
   return (
     <div id="background-root">
-      <div id="dynamic-background"></div>
       <div id="blue-tint-overlay"></div>
+      <div id="dynamic-background"></div>
     </div>
   );
 }
