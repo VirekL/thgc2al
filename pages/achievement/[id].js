@@ -3,26 +3,23 @@ import Link from 'next/link';
 import Background from '../../components/Background';
 import Header from '../../components/Header';
 import Sidebar from '../../components/Sidebar';
-import achievements from '../../public/achievements.json';
+import fs from 'fs';
+import path from 'path';
 
-export async function getStaticPaths() {
-  const paths = achievements
-    .filter(a => a && a.id)
-    .map(a => ({ params: { id: a.id.toString() } }));
-  // Enable fallback for dynamic generation
-  return { paths, fallback: 'blocking' };
-}
-
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
+  const achievementsPath = path.join(process.cwd(), 'public', 'achievements.json');
+  let achievements = [];
+  try {
+    const achievementsData = fs.readFileSync(achievementsPath, 'utf8');
+    achievements = JSON.parse(achievementsData);
+  } catch (e) {
+    // fallback to empty array if file not found or parse error
+  }
   const achievement = achievements.find(a => a && a.id && a.id.toString() === params.id) || null;
   return { props: { achievement } };
 }
 
 export default function AchievementPage({ achievement }) {
-  // Handle fallback loading state
-  if (typeof window !== 'undefined' && !achievement) {
-    return <div>Loading...</div>;
-  }
   if (!achievement) {
     return (
       <div>
