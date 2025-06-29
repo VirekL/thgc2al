@@ -33,7 +33,7 @@ export default function Background() {
           width: 100vw;
           height: 100vh;
           z-index: -1;
-          background: rgba(19, 23, 41, 0.5)
+          background: rgba(19, 23, 41, 0.5);
           pointer-events: none;
         }
       `;
