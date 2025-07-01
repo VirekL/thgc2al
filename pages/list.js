@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useEffect, useState, useMemo, useRef } from 'react';
 import Link from 'next/link';
 import Sidebar from '../components/Sidebar';
