@@ -30,7 +30,7 @@ function Tag({ tag }) {
   const def = TAG_DEFINITIONS[tag.toUpperCase()];
   return (
     <span
-      className="tag"
+      className={"tag-filter-pill neutral"}
       style={{
         background: def?.color || '#2E3451',
         color: '#fff',
@@ -39,9 +39,12 @@ function Tag({ tag }) {
         gap: 4,
         fontWeight: 500,
         fontSize: 13,
-        padding: '2px 8px',
-        borderRadius: 6,
+        padding: '4px 10px',
+        borderRadius: 20,
         marginRight: 4,
+        border: '1.5px solid transparent',
+        boxShadow: '0 1px 3px rgba(0,0,0,0.10)',
+        opacity: 0.85,
       }}
     >
       {def?.icon && (
@@ -221,34 +224,25 @@ export default function List() {
         />
       </Head>
       <Background />
-      <header style={{
-        width: '100%',
-        background: '#23273a',
-        borderBottom: '2px solid #343A52',
-        padding: '0 0 1.5rem 0',
-        marginBottom: 0,
-        boxShadow: '0 2px 8px 0 #181a24',
-        zIndex: 10,
-        position: 'relative',
-      }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 16, padding: '1.2rem 2rem 0.5rem 2rem' }}>
-          <button id="mobile-hamburger-btn" className="mobile-hamburger-btn" type="button" aria-label="Open sidebar" title="Open sidebar menu" style={{ background: 'none', border: 'none', cursor: 'pointer', marginRight: 12, display: 'flex', alignItems: 'center' }}>
-            <span className="bi bi-list" style={{ fontSize: '2rem', color: '#DFE3F5' }} aria-hidden="true"></span>
+      <header className="main-header">
+        <div className="header-bar">
+          <button id="mobile-hamburger-btn" className="mobile-hamburger-btn" type="button" aria-label="Open sidebar" title="Open sidebar menu">
+            <span className="bi bi-list hamburger-icon" aria-hidden="true"></span>
           </button>
-          <div className="logo" style={{ display: 'flex', alignItems: 'center' }}>
-            <img src="/assets/favicon-96x96.png" alt="The Hardest Achievements List Logo" title="The Hardest Achievements List Logo" style={{ width: 40, height: 40, marginRight: 10 }} />
+          <div className="logo">
+            <img src="/assets/favicon-96x96.png" alt="The Hardest Achievements List Logo" title="The Hardest Achievements List Logo" className="logo-img" />
           </div>
-          <h1 className="title" style={{ fontSize: '2rem', color: '#DFE3F5', margin: 0, fontWeight: 700 }}>The Hardest Achievements List</h1>
+          <h1 className="title main-title">The Hardest Achievements List</h1>
         </div>
-        <div id="splash-text" style={{ fontStyle: 'italic', color: '#4d566e', marginTop: '0.2em', fontSize: '1.1em', paddingLeft: '4.5rem', paddingBottom: 8 }}></div>
-        <div className="search-bar" style={{ margin: '0.5rem 2rem 0 2rem', display: 'flex', alignItems: 'center', gap: 8, width: 'auto' }}>
+        <div id="splash-text" className="splash-text"></div>
+        <div className="search-bar">
           <input
             type="text"
             placeholder="Search achievements..."
             value={search}
             onChange={e => setSearch(e.target.value)}
             aria-label="Search achievements"
-            style={{ padding: '0.75rem', borderRadius: 8, border: '2px solid #343A52', width: '100%' }}
+            className="search-input"
           />
           {isMobile && (
             <button
@@ -256,25 +250,16 @@ export default function List() {
               id="mobile-filter-toggle-btn"
               aria-label={showMobileFilters ? 'Hide Filters' : 'Show Filters'}
               onClick={handleMobileToggle}
-              style={{
-                background: 'none',
-                border: 'none',
-                cursor: 'pointer',
-                padding: 0,
-                marginLeft: 8,
-                display: 'flex',
-                alignItems: 'center',
-                height: 40,
-              }}
+              className="mobile-filter-toggle"
               dangerouslySetInnerHTML={{
                 __html: showMobileFilters
-                  ? '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-up.svg" alt="Hide Filters" style="width: 20px; height: 20px; filter: invert(92%) sepia(7%) saturate(104%) hue-rotate(200deg) brightness(97%) contrast(92%);"></span>'
-                  : '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-down.svg" alt="Show Filters" style="width: 20px; height: 20px; filter: invert(92%) sepia(7%) saturate(104%) hue-rotate(200deg) brightness(97%) contrast(92%);"></span>'
+                  ? '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-up.svg" alt="Hide Filters" class="arrow-img" /></span>'
+                  : '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-down.svg" alt="Show Filters" class="arrow-img" /></span>'
               }}
             />
           )}
         </div>
-        <div style={{ margin: '0.5rem 2rem 0 2rem' }}>
+        <div className="tag-filter-pills-container">
           <TagFilterPills
             allTags={allTags}
             filterTags={filterTags}
@@ -285,11 +270,11 @@ export default function List() {
           />
         </div>
       </header>
-      <main className="main-content" style={{display: 'flex', gap: '2rem', padding: '2rem', justifyContent: 'center', alignItems: 'flex-start'}}>
+      <main className="main-content achievements-main">
         <Sidebar />
-        <section className="achievements" style={{flexGrow: 1, width: '70%', maxWidth: '1000px', display: 'flex', flexDirection: 'column', gap: '1rem', padding: '2rem', maxHeight: 'calc(100vh - 150px)', overflowY: 'auto'}}>
+        <section className="achievements achievements-section">
           {filtered.length === 0 ? (
-            <div style={{color: '#aaa'}}>No achievements found.</div>
+            <div className="no-achievements">No achievements found.</div>
           ) : (
             filtered.map((a, i) => (
               <AchievementCard achievement={a} key={a.id || i} />
