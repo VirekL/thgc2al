@@ -47,14 +47,6 @@ header {
   flex-wrap: wrap;
   position: relative; /* Ensure proper stacking for the search bar */
 }
-.header-bar {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 1.2rem 2rem 0.5rem 2rem;
-  width: 100%;
-  position: relative;
-}
 .header-left {
   display: flex;
   align-items: center;
@@ -1349,8 +1341,6 @@ main {
   align-items: center;
   gap: 16px;
   padding: 1.2rem 2rem 0.5rem 2rem;
-  width: 100%;
-  position: relative;
 }
 .logo-img {
   width: 40px;
@@ -1358,7 +1348,7 @@ main {
   margin-right: 10px;
 }
 .main-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--text-color);
   margin: 0;
   font-weight: 700;
@@ -1368,15 +1358,8 @@ main {
   color: #4d566e;
   margin-top: 0.2em;
   font-size: 1.1em;
-  padding-left: 0;
+  padding-left: 4.5rem;
   padding-bottom: 8px;
-  margin-left: auto; /* Pushes splash text to the far right */
-  align-self: center;
-  white-space: nowrap;
-  display: block;
-  max-width: 40vw;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .search-bar {
   margin: 0.5rem 2rem 0 2rem;
