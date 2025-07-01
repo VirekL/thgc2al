@@ -73,47 +73,53 @@ function TagFilterPills({ allTags, filterTags, setFilterTags, isMobile, show, se
     <div
       className="tag-filter-pills"
       style={{
+        minHeight: 40,
         marginBottom: 16,
         display: isMobile ? (show ? 'flex' : 'none') : 'flex',
         flexWrap: 'wrap',
         gap: 8,
+        alignItems: 'center',
         transition: 'all 0.2s',
       }}
     >
-      {allTags.sort((a, b) => TAG_PRIORITY_ORDER.indexOf(a.toUpperCase()) - TAG_PRIORITY_ORDER.indexOf(b.toUpperCase())).map(tag => {
-        let state = tagStates[tag];
-        let border = state === 'include' ? '2px solid #fff' : state === 'exclude' ? '2px solid #f55' : '1px solid #343A52';
-        let opacity = state === 'exclude' ? 0.5 : 1;
-        return (
-          <span
-            key={tag}
-            className={`tag-filter-pill ${state}`}
-            style={{
-              cursor: 'pointer',
-              padding: '4px 10px',
-              borderRadius: 6,
-              background: TAG_DEFINITIONS[tag.toUpperCase()]?.color || '#1B1F30',
-              color: '#DFE3F5',
-              border,
-              opacity,
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: 4,
-              fontWeight: 500,
-              fontSize: 13,
-            }}
-            onClick={() => handlePillClick(tag)}
-            tabIndex={0}
-            aria-label={`${tag} filter pill`}
-            onKeyDown={e => { if (e.key === ' ' || e.key === 'Enter') { handlePillClick(tag); e.preventDefault(); } }}
-          >
-            {TAG_DEFINITIONS[tag.toUpperCase()]?.icon && (
-              <img src={TAG_DEFINITIONS[tag.toUpperCase()].icon} alt={tag} style={{ width: 16, height: 16, verticalAlign: 'middle' }} />
-            )}
-            <span>{TAG_DEFINITIONS[tag.toUpperCase()]?.text || tag}</span>
-          </span>
-        );
-      })}
+      {allTags.length === 0 ? (
+        <span style={{ color: '#aaa', fontSize: 13 }}>Loading tags...</span>
+      ) : (
+        allTags.sort((a, b) => TAG_PRIORITY_ORDER.indexOf(a.toUpperCase()) - TAG_PRIORITY_ORDER.indexOf(b.toUpperCase())).map(tag => {
+          let state = tagStates[tag];
+          let border = state === 'include' ? '2px solid #fff' : state === 'exclude' ? '2px solid #f55' : '1px solid #343A52';
+          let opacity = state === 'exclude' ? 0.5 : 1;
+          return (
+            <span
+              key={tag}
+              className={`tag-filter-pill ${state}`}
+              style={{
+                cursor: 'pointer',
+                padding: '4px 10px',
+                borderRadius: 6,
+                background: TAG_DEFINITIONS[tag.toUpperCase()]?.color || '#1B1F30',
+                color: '#DFE3F5',
+                border,
+                opacity,
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 4,
+                fontWeight: 500,
+                fontSize: 13,
+              }}
+              onClick={() => handlePillClick(tag)}
+              tabIndex={0}
+              aria-label={`${tag} filter pill`}
+              onKeyDown={e => { if (e.key === ' ' || e.key === 'Enter') { handlePillClick(tag); e.preventDefault(); } }}
+            >
+              {TAG_DEFINITIONS[tag.toUpperCase()]?.icon && (
+                <img src={TAG_DEFINITIONS[tag.toUpperCase()].icon} alt={tag} style={{ width: 16, height: 16, verticalAlign: 'middle' }} />
+              )}
+              <span>{TAG_DEFINITIONS[tag.toUpperCase()]?.text || tag}</span>
+            </span>
+          );
+        })
+      )}
     </div>
   );
 }
@@ -271,8 +277,6 @@ export default function List() {
           )}
         </section>
       </main>
-      <div id="dynamic-background"></div>
-      <div id="blue-tint-overlay"></div>
     </>
   );
 }
