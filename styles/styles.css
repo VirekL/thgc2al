@@ -47,6 +47,14 @@ header {
   flex-wrap: wrap;
   position: relative; /* Ensure proper stacking for the search bar */
 }
+.header-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 1.2rem 2rem 0.5rem 2rem;
+  width: 100%;
+  position: relative;
+}
 .header-left {
   display: flex;
   align-items: center;
@@ -992,7 +1000,7 @@ main {
   background: var(--accent-bg);
   color: var(--text-color);
   border-color: transparent;
-  opacity: 0.85;
+  opacity: 1; /* Changed from 0.85 to 1 for full opacity */
 }
 .tag-filter-pill.include {
   background: linear-gradient(90deg, #3ecf8e, var(--accent-bg) 100%);
@@ -1335,13 +1343,14 @@ main {
   z-index: 10;
   position: relative;
   display: flex;
-  flex-direction: column;
 }
 .header-bar {
   display: flex;
   align-items: center;
   gap: 16px;
   padding: 1.2rem 2rem 0.5rem 2rem;
+  width: 100%;
+  position: relative;
 }
 .logo-img {
   width: 40px;
@@ -1359,8 +1368,15 @@ main {
   color: #4d566e;
   margin-top: 0.2em;
   font-size: 1.1em;
-  padding-left: 4.5rem;
+  padding-left: 0;
   padding-bottom: 8px;
+  margin-left: auto; /* Pushes splash text to the far right */
+  align-self: center;
+  white-space: nowrap;
+  display: block;
+  max-width: 40vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .search-bar {
   margin: 0.5rem 2rem 0 2rem;
