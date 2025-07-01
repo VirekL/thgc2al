@@ -1323,3 +1323,91 @@ main {
 .link-web-app-manifest-512 {
   background-image: url('/assets/web-app-manifest-512x512.png');
 }
+
+/* List.js custom classes for header and main layout */
+.main-header {
+  width: 100%;
+  background: var(--primary-bg);
+  border-bottom: 2px solid var(--hover-bg);
+  padding: 0 0 1.5rem 0;
+  margin-bottom: 0;
+  box-shadow: 0 2px 8px 0 #181a24;
+  z-index: 10;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.header-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 1.2rem 2rem 0.5rem 2rem;
+}
+.logo-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.main-title {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin: 0;
+  font-weight: 700;
+}
+.splash-text {
+  font-style: italic;
+  color: #4d566e;
+  margin-top: 0.2em;
+  font-size: 1.1em;
+  padding-left: 4.5rem;
+  padding-bottom: 8px;
+}
+.search-bar {
+  margin: 0.5rem 2rem 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: auto;
+}
+.search-input {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 2px solid var(--hover-bg);
+  width: 100%;
+  background: var(--primary-bg);
+  color: var(--text-color);
+  font-size: 1rem;
+}
+.tag-filter-pills-container {
+  margin: 0.5rem 2rem 0 2rem;
+}
+.hamburger-icon {
+  font-size: 2rem;
+  color: var(--text-color);
+}
+.achievements-main {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+.achievements-section {
+  flex-grow: 1;
+  width: 70%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
+}
+.no-achievements {
+  color: #aaa;
+}
+.arrow-img {
+  width: 20px;
+  height: 20px;
+  filter: invert(92%) sepia(7%) saturate(104%) hue-rotate(200deg) brightness(97%) contrast(92%);
+}
