@@ -612,6 +612,7 @@ main {
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   padding: 2rem;
+  padding-bottom: 3.5rem; /* Increased bottom padding for better spacing */
   max-width: 800px;
   width: 100%;
   text-align: center;
