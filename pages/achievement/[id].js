@@ -149,9 +149,9 @@ export default function AchievementPage({ achievement }) {
               )}
               {}
               {achievement.tags && achievement.tags.length > 0 && (
-                <div style={{ marginBottom: 16 }}>
+                <div style={{ marginBottom: 16, textAlign: 'left' }}>
                   <strong>Tags:</strong>{' '}
-                  <span style={{ display: 'inline-flex', gap: 8, flexWrap: 'wrap', verticalAlign: 'middle' }}>
+                  <span style={{ display: 'inline-flex', gap: 8, flexWrap: 'wrap', verticalAlign: 'middle', justifyContent: 'flex-start' }}>
                     {achievement.tags.map(tag => {
                       const meta = getTagMeta(tag);
                       return (
