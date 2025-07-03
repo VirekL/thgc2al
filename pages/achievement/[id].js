@@ -169,7 +169,7 @@ export default function AchievementPage({ achievement }) {
                 <div style={{ marginBottom: 8 }}><strong>ID:</strong> <span style={{ cursor: 'pointer' }}>{achievement.levelID}</span></div>
               )}
               {/* Level Info: Length, Version, Date (copyable, fancy) */}
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 4, marginBottom: 8, marginTop: 8 }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 12, marginTop: 12 }}>
                 {achievement.length && (
                   <div style={{ marginBottom: 4, display: 'flex', alignItems: 'center', gap: 8 }}>
                     <strong>Length:</strong>
