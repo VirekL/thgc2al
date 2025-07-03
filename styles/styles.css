@@ -391,11 +391,12 @@ main {
 }
 .sidebar-link {
     display: block;
-    padding: 0.75rem 1rem;
+    padding: 0.95rem 1.2rem;
     color: var(--text-color);
     text-decoration: none;
     border-radius: var(--border-radius);
     transition: background-color var(--transition), color var(--transition);
+    margin-bottom: 1.1rem;
 }
 
 .sidebar-link:hover {
