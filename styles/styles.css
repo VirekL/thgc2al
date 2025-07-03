@@ -612,7 +612,6 @@ main {
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   padding: 2rem;
-  padding-bottom: 3.5rem; /* Increased bottom padding for better spacing */
   max-width: 800px;
   width: 100%;
   text-align: center;
@@ -1370,4 +1369,32 @@ main {
   width: 20px;
   height: 20px;
   filter: invert(92%) sepia(7%) saturate(104%) hue-rotate(200deg) brightness(97%) contrast(92%);
+}
+.copy-btn {
+  background: var(--secondary-bg);
+  color: var(--text-color);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.4em 0.7m;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  margin-left: 0.3em;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+}
+.copy-btn:hover, .copy-btn:focus {
+  background: linear-gradient(135deg, var(--active-bg), var(--hover-bg));
+  color: #fff;
+  transform: scale(1.06);
+}
+.copy-btn:active {
+  background: var(--active-bg);
+  color: #ffe066;
+  transform: scale(0.98);
 }
