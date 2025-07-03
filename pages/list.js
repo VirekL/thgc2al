@@ -43,8 +43,7 @@ function Tag({ tag }) {
         borderRadius: 20,
         marginRight: 4,
         border: '1.5px solid transparent',
-        boxShadow: '0 1px 3px rgba(0,0,0,0.10)',
-        opacity: 0.85,
+        boxShadow: '0 1px 3px rgba(0,0,0,0.10)'
       }}
     >
       {def?.icon && (
@@ -198,7 +197,7 @@ export default function List() {
       const tags = (a.tags || []).map(t => t.toUpperCase());
       if (filterTags.include.length && !filterTags.include.every(tag => tags.includes(tag.toUpperCase()))) return false;
       if (filterTags.exclude.length && filterTags.exclude.some(tag => tags.includes(tag.toUpperCase()))) return false;
-      if (search && !a.name.toLowerCase().includes(search.toLowerCase())) return false;
+      if (search && !(typeof a.name === 'string' && a.name.toLowerCase().includes(search.toLowerCase()))) return false;
       return true;
     });
   }, [achievements, search, filterTags]);
