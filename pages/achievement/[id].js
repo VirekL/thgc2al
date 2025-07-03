@@ -109,9 +109,9 @@ export default function AchievementPage({ achievement }) {
       </Head>
       <Background />
       <Header />
-      <main style={{ display: 'flex', gap: '2rem', padding: '2rem', justifyContent: 'center', alignItems: 'flex-start' }}>
+      <main style={{ display: 'flex', gap: '2rem', padding: '2rem', justifyContent: 'center', alignItems: 'flex-start', minHeight: '100vh', overflowY: 'auto' }}>
         <Sidebar />
-        <section style={{ flex: 1, maxWidth: 600 }}>
+        <section style={{ flex: 1, maxWidth: 900, overflowY: 'auto', maxHeight: 'calc(100vh - 4rem)' }}>
           <div
             style={{
               background: 'var(--secondary-bg, #1B1F30)',
@@ -120,9 +120,10 @@ export default function AchievementPage({ achievement }) {
               padding: '2rem',
               color: 'var(--text-color, #DFE3F5)',
               position: 'relative',
-              overflow: 'hidden',
+              overflow: 'auto',
               minWidth: 320,
               minHeight: 400,
+              maxHeight: 'calc(100vh - 4rem)',
             }}
           >
             {bgImage && (
@@ -138,8 +139,8 @@ export default function AchievementPage({ achievement }) {
               }} />
             )}
             <div style={{ position: 'relative', zIndex: 1 }}>
-              <h2 style={{ fontSize: '2rem', marginBottom: 8 }}>{achievement.name}</h2>
-              <p style={{ fontWeight: 500, color: '#8fa1c7', marginBottom: 16 }}>{achievement.player}</p>
+              <h2 style={{ fontSize: '2rem', marginBottom: 8, textAlign: 'center' }}>{achievement.name}</h2>
+              <p style={{ fontWeight: 500, color: '#8fa1c7', marginBottom: 16, textAlign: 'center' }}>{achievement.player}</p>
               {}
               {getEmbedLink(achievement.video) ? (
                 <iframe
@@ -175,18 +176,24 @@ export default function AchievementPage({ achievement }) {
               {achievement.levelID && (
                 <div style={{ marginBottom: 8 }}><strong>ID:</strong> <span style={{ cursor: 'pointer' }}>{achievement.levelID}</span></div>
               )}
-              {}
-              {achievement.length && (
-                <div style={{ marginBottom: 8 }}><strong>Length:</strong> <span>{formatLength(achievement.length)}</span></div>
-              )}
-              {}
-              {achievement.version && (
-                <div style={{ marginBottom: 8 }}><strong>Version:</strong> <span>{achievement.version}</span></div>
-              )}
-              {}
-              {achievement.date && (
-                <div style={{ marginBottom: 8 }}><strong>Date:</strong> <span>{formatDate(achievement.date)}</span></div>
-              )}
+              {/* Level Info: Length, Version, Date (copyable) */}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 4, marginBottom: 8, marginTop: 8 }}>
+                {achievement.length && (
+                  <div style={{ marginBottom: 4 }}>
+                    <strong>Length:</strong> <span style={{ cursor: 'pointer' }} onClick={() => navigator.clipboard.writeText(formatLength(achievement.length))}>{formatLength(achievement.length)}</span>
+                  </div>
+                )}
+                {achievement.version && (
+                  <div style={{ marginBottom: 4 }}>
+                    <strong>Version:</strong> <span style={{ cursor: 'pointer' }} onClick={() => navigator.clipboard.writeText(achievement.version)}>{achievement.version}</span>
+                  </div>
+                )}
+                {achievement.date && (
+                  <div style={{ marginBottom: 4 }}>
+                    <strong>Date:</strong> <span style={{ cursor: 'pointer' }} onClick={() => navigator.clipboard.writeText(formatDate(achievement.date))}>{formatDate(achievement.date)}</span>
+                  </div>
+                )}
+              </div>
               {}
               {achievement.showcaseVideo && (
                 <div style={{ marginTop: 16 }}>
