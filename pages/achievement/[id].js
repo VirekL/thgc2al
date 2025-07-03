@@ -113,7 +113,7 @@ export default function AchievementPage({ achievement }) {
         <title>{achievement.name} · The Hardest Achievements List</title>
         <meta name="description" content={`${achievement.name} done by ${achievement.player} on ${formatDate(achievement.date)}. View Geometry Dash details, videos, and more on The Hardest Achievements List.`} />
       </Head>
-      <Background />
+      <Background bgImage={bgImage} />
       <Header />
       <main style={{ display: 'flex', gap: '2rem', padding: '2rem', justifyContent: 'center', alignItems: 'flex-start', minHeight: '100vh', overflowY: 'auto' }}>
         <Sidebar />
