@@ -15,8 +15,9 @@ export async function getStaticPaths() {
   } catch (e) {
     // fallback to empty array if file not found or parse error
   }
+  // Filter out invalid entries (must have id and name)
   const paths = achievements
-    .filter(a => a && a.id)
+    .filter(a => a && a.id && a.name)
     .map(a => ({ params: { id: a.id.toString() } }));
   return { paths, fallback: false };
 }
@@ -30,7 +31,10 @@ export async function getStaticProps({ params }) {
   } catch (e) {
     // fallback to empty array if file not found or parse error
   }
-  const achievement = achievements.find(a => a && a.id && a.id.toString() === params.id) || null;
+  // Filter out invalid entries (must have id and name)
+  achievements = achievements.filter(a => a && a.id && a.name);
+  // Find achievement by id (string or number)
+  const achievement = achievements.find(a => a.id.toString() === params.id) || null;
   return { props: { achievement } };
 }
 
@@ -62,7 +66,12 @@ export default function AchievementPage({ achievement }) {
         <div>
           <h1>{achievement.name}</h1>
           <p>by {achievement.player}</p>
-          {/* Render more achievement details here */}
+          {/* Render more achievement details here for debugging */}
+          <ul>
+            {Object.entries(achievement).map(([key, value]) => (
+              <li key={key}><strong>{key}:</strong> {typeof value === 'object' ? JSON.stringify(value) : value?.toString()}</li>
+            ))}
+          </ul>
           <Link href="/list">← Back to List</Link>
         </div>
       </main>
