@@ -126,12 +126,13 @@ export default function AchievementPage({ achievement }) {
               overflow: 'auto',
               minWidth: 320,
               minHeight: 400,
-              maxHeight: 'calc(100vh - 4rem)'
+              maxHeight: 'calc(100vh - 4rem)',
+              paddingBottom: '3rem' // Increased bottom padding for more space
             }}
           >
             <div style={{ position: 'relative', zIndex: 1 }}>
               <h2 className="achievement-title" style={{ fontSize: '2rem', marginBottom: 8, textAlign: 'center' }}>{achievement.name}</h2>
-              <p className="achievement-player" style={{ fontWeight: 700, color: '#8fa1c7', marginBottom: 16, textAlign: 'center', fontSize: '2rem' }}>{achievement.player}</p>
+              <p className="achievement-player" style={{ fontWeight: 700, color: '#8fa1c7', marginBottom: 16, textAlign: 'center', fontSize: '1.5rem' }}>{achievement.player}</p>
               {}
               {getEmbedLink(achievement.video) ? (
                 <iframe
@@ -229,7 +230,25 @@ export default function AchievementPage({ achievement }) {
             </div>
           </div>
           {copyMsg && (
-            <div className="copy-notification show" style={{position: 'fixed', bottom: 24, right: 24, zIndex: 9999, pointerEvents: 'none'}}>
+            <div className="copy-notification show" style={{
+              position: 'fixed',
+              bottom: 20,
+              right: 20,
+              left: 'auto',
+              minWidth: 0,
+              maxWidth: 260,
+              fontSize: '0.95rem',
+              padding: '0.45rem 1.1rem',
+              borderRadius: 7,
+              zIndex: 9999,
+              pointerEvents: 'none',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.18)',
+              background: 'rgba(30,40,70,0.93)',
+              color: '#fff',
+              textAlign: 'center',
+              opacity: 1,
+              transition: 'opacity 0.3s',
+            }}>
               {copyMsg}
             </div>
           )}
