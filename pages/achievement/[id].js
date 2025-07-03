@@ -230,25 +230,7 @@ export default function AchievementPage({ achievement }) {
             </div>
           </div>
           {copyMsg && (
-            <div className="copy-notification show" style={{
-              position: 'fixed',
-              bottom: 20,
-              right: 20,
-              left: 'auto',
-              minWidth: 0,
-              maxWidth: 260,
-              fontSize: '0.95rem',
-              padding: '0.45rem 1.1rem',
-              borderRadius: 7,
-              zIndex: 9999,
-              pointerEvents: 'none',
-              boxShadow: '0 2px 8px rgba(0,0,0,0.18)',
-              background: 'rgba(30,40,70,0.93)',
-              color: '#fff',
-              textAlign: 'center',
-              opacity: 1,
-              transition: 'opacity 0.3s',
-            }}>
+            <div className="copy-notification show">
               {copyMsg}
             </div>
           )}
