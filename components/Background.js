@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-export default function Background() {
+export default function Background({ bgImage }) {
   useEffect(() => {
     // Inject styles only once
     if (!document.getElementById('background-style')) {
@@ -40,7 +40,14 @@ export default function Background() {
       document.head.appendChild(style);
     }
 
-    // Fetch achievements and set background
+    // If bgImage is provided, set it directly
+    if (bgImage) {
+      const bgDiv = document.getElementById('dynamic-background');
+      if (bgDiv) bgDiv.style.backgroundImage = `url('${bgImage}')`;
+      return;
+    }
+
+    // Fallback: Fetch achievements and set background
     function setBackgroundFromAchievements(achievements) {
       if (!achievements || !achievements.length) return;
       let topAchievement = achievements.find(a => a && (a.thumbnail || a.levelID));
@@ -52,7 +59,6 @@ export default function Background() {
       }
     }
 
-    // Try both possible paths for achievements.json
     fetch('/achievements.json')
       .then(res => res.ok ? res.json() : Promise.reject())
       .then(setBackgroundFromAchievements)
@@ -62,7 +68,7 @@ export default function Background() {
           .then(setBackgroundFromAchievements)
           .catch(() => {});
       });
-  }, []);
+  }, [bgImage]);
 
   return (
     <div id="background-root">
