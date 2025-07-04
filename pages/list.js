@@ -205,8 +205,8 @@ export default function List() {
   const filterFn = useCallback(
     a => {
       if (searchLower) {
-        // Only match if name is a string and includes the search term
-        if (typeof a.name !== 'string' || !a.name.toLowerCase().includes(searchLower)) return false;
+        // Use exact match (case-insensitive, trimmed)
+        if (typeof a.name !== 'string' || a.name.trim().toLowerCase() !== searchLower) return false;
       }
       const tags = (a.tags || []).map(t => t.toUpperCase());
       if (filterTags.include.length && !filterTags.include.every(tag => tags.includes(tag.toUpperCase()))) return false;
