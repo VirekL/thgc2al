@@ -55,7 +55,6 @@ function Tag({ tag }) {
 }
 
 function TagFilterPills({ allTags, filterTags, setFilterTags, isMobile, show, setShow }) {
-  // State: { tag: 'neutral' | 'include' | 'exclude' }
   const tagStates = {};
   allTags.forEach(tag => {
     if (filterTags.include.includes(tag)) tagStates[tag] = 'include';
@@ -64,7 +63,6 @@ function TagFilterPills({ allTags, filterTags, setFilterTags, isMobile, show, se
   });
 
   function handlePillClick(tag) {
-    // Cycle: neutral -> include -> exclude -> neutral
     if (tagStates[tag] === 'neutral') setFilterTags(prev => ({ ...prev, include: [...prev.include, tag] }));
     else if (tagStates[tag] === 'include') setFilterTags(prev => ({ ...prev, include: prev.include.filter(t => t !== tag), exclude: [...prev.exclude, tag] }));
     else setFilterTags(prev => ({ ...prev, exclude: prev.exclude.filter(t => t !== tag) }));
@@ -183,12 +181,9 @@ export default function List() {
     fetch('/achievements.json')
       .then(res => res.json())
       .then(data => {
-        // Filter out invalid entries (no name or id)
         const valid = data.filter(a => a && typeof a.name === 'string' && a.name && a.id);
-        // Add rank property for display
         const withRank = valid.map((a, i) => ({ ...a, rank: i + 1 }));
         setAchievements(withRank);
-        // Collect all unique tags
         const tags = new Set();
         withRank.forEach(a => (a.tags || []).forEach(t => tags.add(t)));
         setAllTags(Array.from(tags));
@@ -205,31 +200,27 @@ export default function List() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Memoize lowercased search for performance
-  const searchLower = useMemo(() => debouncedSearch.toLowerCase(), [debouncedSearch]);
+  const searchLower = useMemo(() => debouncedSearch.trim().toLowerCase(), [debouncedSearch]);
 
-  // Memoize filter function
   const filterFn = useCallback(
     a => {
-      if (debouncedSearch) {
-        if (!(typeof a.name === 'string' && a.name.toLowerCase().includes(searchLower))) return false;
+      if (searchLower) {
+        const nameMatch = typeof a.name === 'string' && a.name.toLowerCase().includes(searchLower);
+        const playerMatch = typeof a.player === 'string' && a.player.toLowerCase().includes(searchLower);
+        const tagsMatch = Array.isArray(a.tags) && a.tags.some(t => t.toLowerCase().includes(searchLower));
+        if (!(nameMatch || playerMatch || tagsMatch)) return false;
       }
-      const tags = (a.tags || []);
-      if (filterTags.include.length && !filterTags.include.every(tag => tags.some(t => t.toUpperCase() === tag.toUpperCase()))) return false;
-      if (filterTags.exclude.length && filterTags.exclude.some(tag => tags.some(t => t.toUpperCase() === tag.toUpperCase()))) return false;
+      const tags = (a.tags || []).map(t => t.toUpperCase());
+      if (filterTags.include.length && !filterTags.include.every(tag => tags.includes(tag.toUpperCase()))) return false;
+      if (filterTags.exclude.length && filterTags.exclude.some(tag => tags.includes(tag.toUpperCase()))) return false;
       return true;
     },
-    [searchLower, debouncedSearch, filterTags]
+    [searchLower, filterTags]
   );
 
-  // Use useMemo for filtered list, and useTransition for large lists (if available)
   const filtered = useMemo(() => {
-    let result = achievements;
-    if (debouncedSearch || filterTags.include.length || filterTags.exclude.length) {
-      result = achievements.filter(filterFn);
-    }
-    return result;
-  }, [achievements, filterFn, debouncedSearch, filterTags]);
+    return achievements.filter(filterFn);
+  }, [achievements, filterFn]);
 
   function handleMobileToggle() {
     setShowMobileFilters(v => !v);
