@@ -7,12 +7,18 @@ export default function Sidebar() {
 
   const handleRandomClick = useCallback(async (e) => {
     e.preventDefault();
+    e.stopPropagation();
+    console.log('Random button clicked');
     const res = await fetch('/achievements.json');
     const data = await res.json();
+    console.log('Fetched achievements:', data);
     const valid = data.filter(a => a && a.id && a.name);
     if (valid.length > 0) {
       const random = valid[Math.floor(Math.random() * valid.length)];
+      console.log('Redirecting to:', `/achievement/${random.id}`);
       router.push(`/achievement/${random.id}`);
+    } else {
+      console.log('No valid achievements found');
     }
   }, [router]);
 
@@ -22,7 +28,7 @@ export default function Sidebar() {
       <Link href="/timeline" className="sidebar-link">Timeline</Link>
       <Link href="/leaderboard" className="sidebar-link">Leaderboard</Link>
       <Link href="/submission-stats" className="sidebar-link">Submission Stats</Link>
-      <a href="#" id="random-achievement-btn" className="sidebar-link" onClick={handleRandomClick}>Random</a>
+      <a href="#" id="random-achievement-btn" className="sidebar-link" onClick={handleRandomClick} role="button" tabIndex={0}>Random</a>
       <Link href="/about-us" className="sidebar-link">About Us</Link>
       <div style={{position: "relative", width: "100%", paddingBottom: "350px"}}>
         <iframe
