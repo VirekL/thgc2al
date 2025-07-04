@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { useEffect, useState, useMemo, useRef } from 'react';
+import { useEffect, useState, useMemo, useRef, useCallback, useTransition } from 'react';
 import Link from 'next/link';
 import Sidebar from '../components/Sidebar';
 import Background from '../components/Background';
@@ -177,6 +177,7 @@ export default function List() {
   const [isMobile, setIsMobile] = useState(false);
   const [showMobileFilters, setShowMobileFilters] = useState(false);
   const mobileBtnRef = useRef();
+  const [isPending, startTransition] = typeof useTransition === 'function' ? useTransition() : [false, fn => fn()];
 
   useEffect(() => {
     fetch('/achievements.json')
@@ -204,15 +205,31 @@ export default function List() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const filtered = useMemo(() => {
-    return achievements.filter(a => {
-      const tags = (a.tags || []).map(t => t.toUpperCase());
-      if (filterTags.include.length && !filterTags.include.every(tag => tags.includes(tag.toUpperCase()))) return false;
-      if (filterTags.exclude.length && filterTags.exclude.some(tag => tags.includes(tag.toUpperCase()))) return false;
-      if (debouncedSearch && !(typeof a.name === 'string' && a.name.toLowerCase().includes(debouncedSearch.toLowerCase()))) return false;
+  // Memoize lowercased search for performance
+  const searchLower = useMemo(() => debouncedSearch.toLowerCase(), [debouncedSearch]);
+
+  // Memoize filter function
+  const filterFn = useCallback(
+    a => {
+      if (debouncedSearch) {
+        if (!(typeof a.name === 'string' && a.name.toLowerCase().includes(searchLower))) return false;
+      }
+      const tags = (a.tags || []);
+      if (filterTags.include.length && !filterTags.include.every(tag => tags.some(t => t.toUpperCase() === tag.toUpperCase()))) return false;
+      if (filterTags.exclude.length && filterTags.exclude.some(tag => tags.some(t => t.toUpperCase() === tag.toUpperCase()))) return false;
       return true;
-    });
-  }, [achievements, debouncedSearch, filterTags]);
+    },
+    [searchLower, debouncedSearch, filterTags]
+  );
+
+  // Use useMemo for filtered list, and useTransition for large lists (if available)
+  const filtered = useMemo(() => {
+    let result = achievements;
+    if (debouncedSearch || filterTags.include.length || filterTags.exclude.length) {
+      result = achievements.filter(filterFn);
+    }
+    return result;
+  }, [achievements, filterFn, debouncedSearch, filterTags]);
 
   function handleMobileToggle() {
     setShowMobileFilters(v => !v);
@@ -284,7 +301,9 @@ export default function List() {
       <main className="main-content achievements-main">
         <Sidebar />
         <section className="achievements achievements-section">
-          {filtered.length === 0 ? (
+          {isPending ? (
+            <div className="no-achievements">Loading...</div>
+          ) : filtered.length === 0 ? (
             <div className="no-achievements">No achievements found.</div>
           ) : (
             filtered.map((a, i) => (
