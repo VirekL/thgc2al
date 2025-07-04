@@ -206,9 +206,7 @@ export default function List() {
     a => {
       if (searchLower) {
         const nameMatch = typeof a.name === 'string' && a.name.toLowerCase().includes(searchLower);
-        const playerMatch = typeof a.player === 'string' && a.player.toLowerCase().includes(searchLower);
-        const tagsMatch = Array.isArray(a.tags) && a.tags.some(t => t.toLowerCase().includes(searchLower));
-        if (!(nameMatch || playerMatch || tagsMatch)) return false;
+        if (!nameMatch) return false;
       }
       const tags = (a.tags || []).map(t => t.toUpperCase());
       if (filterTags.include.length && !filterTags.include.every(tag => tags.includes(tag.toUpperCase()))) return false;
