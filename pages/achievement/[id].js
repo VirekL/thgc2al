@@ -132,7 +132,7 @@ export default function AchievementPage({ achievement }) {
           >
             <div style={{ position: 'relative', zIndex: 1 }}>
               <h2 className="achievement-title" style={{ fontSize: '2rem', marginBottom: 8, textAlign: 'center' }}>{achievement.name}</h2>
-              <p className="achievement-player" style={{ fontWeight: 700, color: '#8fa1c7', marginBottom: 16, textAlign: 'center', fontSize: '1.5rem' }}>{achievement.player}</p>
+              <p className="achievement-player" style={{ fontWeight: 700, color: '#8fa1c7', marginBottom: 16, textAlign: 'center', fontSize: '1.25rem' }}>{achievement.player}</p>
               {}
               {getEmbedLink(achievement.video) ? (
                 <iframe
@@ -165,11 +165,18 @@ export default function AchievementPage({ achievement }) {
                 </div>
               )}
               {}
-              {achievement.levelID && (
-                <div style={{ marginBottom: 8 }}><strong>ID:</strong> <span style={{ cursor: 'pointer' }}>{achievement.levelID}</span></div>
-              )}
-              {/* Level Info: Length, Version, Date (copyable, fancy) */}
+              {/* Level Info: ID, Length, Version, Date (copyable, fancy) */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 12, marginTop: 12 }}>
+                {achievement.levelID && (
+                  <div style={{ marginBottom: 4, display: 'flex', alignItems: 'center', gap: 8 }}>
+                    <strong>ID:</strong>
+                    <button
+                      onClick={() => {navigator.clipboard.writeText(achievement.levelID); showCopyNotification(`Copied ID: ${achievement.levelID}`);}}
+                      className="copy-btn"
+                      style={{ marginLeft: 4 }}
+                    >{achievement.levelID}</button>
+                  </div>
+                )}
                 {achievement.length && (
                   <div style={{ marginBottom: 4, display: 'flex', alignItems: 'center', gap: 8 }}>
                     <strong>Length:</strong>
