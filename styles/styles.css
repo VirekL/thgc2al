@@ -327,10 +327,27 @@ main {
   line-height: 1.4;
   margin: 0.5rem 0 0 0.5rem;
 }
+.copy-notification {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: .5rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  font-size: 1rem;
+  display: block;
+}
 .copy-notification.show {
   opacity: 1;
   transform: translateX(-50%) scale(1);
-  display: block;
+  pointer-events: auto;
 }
 .sidebar {
   width: 250px; 
@@ -567,13 +584,22 @@ main {
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%) scale(0.9);
-  background-color: rgba(0, 0, 0, 0.521);
+  background-color: rgba(0, 0, 0, 0.85);
   color: white;
-  padding: .5rem;
+  padding: .5rem 1.2rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  opacity: 1;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999;
   transition: transform 0.3s ease, opacity 0.3s ease;
+  font-size: 1rem;
+  display: block;
+}
+.copy-notification.show {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+  pointer-events: auto;
 }
 .main-content {
     display: flex;
@@ -1372,15 +1398,15 @@ main {
   filter: invert(92%) sepia(7%) saturate(104%) hue-rotate(200deg) brightness(97%) contrast(92%);
 }
 .copy-btn {
-  background: var(--secondary-bg);
+  background: var(--primary-bg);
   color: var(--text-color);
   border: none;
   border-radius: var(--border-radius);
-  padding: 0.4em 0.7m;
+  padding: 0.2em 0.7em;
   font-size: 1rem;
   font-family: inherit;
   font-weight: 600;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   cursor: pointer;
   transition: background 0.2s, color 0.2s, transform 0.2s;
   margin-left: 0.3em;
