@@ -64,7 +64,7 @@
       "Progress"
     ],
     "date": "2025-05-01",
-        "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/amethyst-trick1.avif",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/amethyst-trick1.avif",
     "length": "72",
     "version": "2.2",
     "submitter": "TYATYAPKA"
@@ -104,40 +104,39 @@
     "submitter": "kyle1saurus",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/grief-unbuffed2.avif"
   },
-  
-{
-  "name": "Amethyst 59%, 54%",
-  "id": "amethyst-59-54",
-  "player": "wPopoff",
-  "length": "123",
-  "version": "2.2",
-          "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/amethyst-trick2.avif",
-  "video": "https://www.youtube.com/live/lYtYOAYQqr8?t=1772",
-  "showcaseVideo": "https://www.youtube.com/watch?v=2Z7NGo83ZnU",
-  "date": "2025-05-06",
-  "submitter": "BigmacGd",
-  "tags": [
-    "Level",
-    "Consistency"
-  ]
-},
-{
-  "name": "GRIEF 65-100%x3",
-  "id": "grief-65-99x3",
-  "player": "Doggie",
-  "length": "189",
-  "version": "2.2",
-  "video": "https://www.youtube.com/live/gzmPWZeAczU?t=7157",
-  "showcaseVideo": "https://youtu.be/1GolW8jKK7k",
-  "date": "2025-05-23",
-  "submitter": "tmtsps12",
-  "tags": [
-    "Level",
-    "Consistency",
-    "2P",
-    "CBF"
-  ]
-},
+  {
+    "name": "Amethyst 59%, 54%",
+    "id": "amethyst-59-54",
+    "player": "wPopoff",
+    "length": "123",
+    "version": "2.2",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/amethyst-trick2.avif",
+    "video": "https://www.youtube.com/live/lYtYOAYQqr8?t=1772",
+    "showcaseVideo": "https://www.youtube.com/watch?v=2Z7NGo83ZnU",
+    "date": "2025-05-06",
+    "submitter": "BigmacGd",
+    "tags": [
+      "Level",
+      "Consistency"
+    ]
+  },
+  {
+    "name": "GRIEF 65-100%x3",
+    "id": "grief-65-99x3",
+    "player": "Doggie",
+    "length": "189",
+    "version": "2.2",
+    "video": "https://www.youtube.com/live/gzmPWZeAczU?t=7157",
+    "showcaseVideo": "https://youtu.be/1GolW8jKK7k",
+    "date": "2025-05-23",
+    "submitter": "tmtsps12",
+    "tags": [
+      "Level",
+      "Consistency",
+      "2P",
+      "CBF"
+    ]
+  },
   {
     "name": "FLAMEWALL 57%, 43%, 25%, 43%",
     "id": "flamewall-57-43-25-43",
@@ -179,7 +178,7 @@
       "Level",
       "Rated"
     ],
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "levelID": "86407629",
     "date": "2023-09-10",
     "length": "181",
@@ -229,7 +228,7 @@
       "Consistency",
       "Rated"
     ],
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "levelID": "27690100",
     "date": "2024-04-27",
     "length": "210",
@@ -247,14 +246,14 @@
     ],
     "date": "2024-09-10",
     "length": "333",
-                    "submitter": "Anceps",
+    "submitter": "Anceps",
     "version": "2.2"
   },
   {
     "name": "FLAMEWALL 62%",
     "id": "flamewall-62",
     "player": "Cuatrocientos",
-                    "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/MV9wSXitcSc",
     "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
     "tags": [
@@ -310,7 +309,7 @@
       "Progress"
     ],
     "date": "2024-05-13",
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "length": "78",
     "version": "2.2",
     "thumbnail": "https://i.ytimg.com/vi/i8TGgQNAzDg/maxresdefault.jpg"
@@ -341,7 +340,7 @@
     "showcaseVideo": "https://youtu.be/XYvhc8b_wb8",
     "date": "2025-03-18",
     "submitter": "Buhbuh7",
-        "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/anathema1.avif",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/anathema1.avif",
     "levelID": "112313819",
     "tags": [
       "Level",
@@ -387,7 +386,7 @@
     "player": "wPopoff",
     "length": "70",
     "version": "2.1",
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/5QeIp5fC1hE",
     "showcaseVideo": "https://youtu.be/7W5bZJY2IPI",
     "date": "2023-10-08",
@@ -418,7 +417,7 @@
     "player": "LOL123",
     "length": "33",
     "version": "2.2",
-            "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/acheron-riot1.avif",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/acheron-riot1.avif",
     "video": "https://youtu.be/IdbGnYw4UR8",
     "showcaseVideo": "https://youtu.be/Pui-sfRR_kQ",
     "date": "2025-04-06",
@@ -483,7 +482,7 @@
     "player": "Zoink",
     "length": "67",
     "version": "2.1",
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/06ADbkaBDz4",
     "showcaseVideo": "https://youtu.be/i6vcmdupm0g",
     "date": "2023-01-29",
@@ -498,7 +497,7 @@
     "player": "Zoink",
     "length": "67",
     "version": "2.1",
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/sBKR6aUorzA",
     "showcaseVideo": "https://youtu.be/YQElFvT5ynk",
     "date": "2022-08-22",
@@ -529,7 +528,7 @@
     "length": "47",
     "version": "2.2",
     "video": "https://youtu.be/CELNmHwln_c",
-    "showcaseVideo":"https://youtu.be/7xZ-xgeDyuc",
+    "showcaseVideo": "https://youtu.be/7xZ-xgeDyuc",
     "date": "2025-05-03",
     "submitter": "tmtsps12",
     "tags": [
@@ -559,7 +558,7 @@
     "player": "Zoink",
     "length": "78",
     "version": "2.1",
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/16Zh8jssanc",
     "showcaseVideo": "https://youtu.be/JL30R7f-iBE",
     "date": "2023-03-22",
@@ -644,7 +643,7 @@
     "video": "https://youtu.be/C4LjXAG6UIU",
     "showcaseVideo": "https://youtu.be/WX5RCDxobSA",
     "date": "2024-06-12",
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "levelID": "10887708",
     "tags": [
       "Level",
@@ -698,13 +697,13 @@
       "Progress"
     ]
   },
-    {
+  {
     "name": "Acheron buffed",
     "id": "acheron-buffed",
     "player": "Mizukii",
     "length": "67",
     "version": "2.2",
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://www.youtube.com/watch?v=rfCxxQ38FhU",
     "showcaseVideo": "https://youtu.be/i6vcmdupm0g",
     "date": "2024-07-25",
@@ -867,7 +866,7 @@
     "player": "paqoe",
     "length": "87",
     "version": "2.1",
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/GR4OMkS3SN8&t=4s",
     "showcaseVideo": "https://youtu.be/Oos0Ptzqq-E",
     "date": "2022-07-17",
@@ -1108,7 +1107,7 @@
     "date": "2022-06-12",
     "length": 170,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/LfajEBhdJHs",
     "showcaseVideo": "https://youtu.be/pZlRHWuVDn4",
     "tags": [
@@ -1237,7 +1236,7 @@
     "length": 65,
     "version": 2.2,
     "video": "https://www.youtube.com/live/WfnaiwqDHaE&t=5135",
-        "showcaseVideo": "https://youtu.be/8lNHaYbvQE0",
+    "showcaseVideo": "https://youtu.be/8lNHaYbvQE0",
     "submitter": "Brachiozaur",
     "tags": [
       "Progress",
@@ -1360,7 +1359,7 @@
     "date": "2024-05-20",
     "length": 194,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/3mvddPaNklg",
     "showcaseVideo": "https://youtu.be/8rPIzVEuj80",
     "tags": [
@@ -1369,7 +1368,7 @@
   },
   {
     "name": "OUROBOROS 27-100%",
-    "id": "ouroboros-73",
+    "id": "ouroboros-27-100",
     "player": "SerVax",
     "date": "2024-09-05",
     "length": 67,
@@ -1405,7 +1404,7 @@
     "date": "2024-07-02",
     "length": 105,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/LpS4JREhW98",
     "showcaseVideo": "https://youtu.be/SgWZkTPHNaM?t=113",
     "tags": [
@@ -1485,7 +1484,7 @@
     "date": "2022-04-03",
     "length": 125,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/ejJkpqcMMCY",
     "showcaseVideo": "https://youtu.be/A7i2m-yL-mA",
     "tags": [
@@ -1501,7 +1500,7 @@
     "date": "2023-03-20",
     "length": 125,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/9xnaAgxqqJs",
     "showcaseVideo": "https://youtu.be/RWBEfS4mLbw&t=2177s",
     "tags": [
@@ -1531,7 +1530,7 @@
     "date": "2023-12-06",
     "length": 127,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/8zU6VTSuOgU",
     "showcaseVideo": "https://youtu.be/i1PU3YoEOXc?t=9",
     "tags": [
@@ -1610,7 +1609,7 @@
     "date": "2024-05-15",
     "length": 98,
     "version": 2.2,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/KDa5c0CJTHs",
     "showcaseVideo": "https://youtu.be/RBeyMGug3J0",
     "tags": [
@@ -1663,7 +1662,7 @@
     "date": "2023-11-03",
     "length": 305,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/b6dUBlA38_4",
     "showcaseVideo": "https://youtu.be/lbrN3kasxR0",
     "tags": [
@@ -1779,7 +1778,7 @@
     "date": "2024-09-02",
     "length": 39,
     "version": 2.2,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/yCyuzPl-pGc",
     "showcaseVideo": "https://youtu.be/9nSkkXZ628E",
     "tags": [
@@ -1843,7 +1842,7 @@
     "date": "2023-11-06",
     "length": 70,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/5rUPUAyQtWc",
     "showcaseVideo": "https://youtu.be/G4PhC4FvrFU",
     "tags": [
@@ -1858,7 +1857,7 @@
     "date": "2021-12-21",
     "length": 70,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/kpcF1-QAHQc",
     "showcaseVideo": "https://youtu.be/sysQa0IE1n4",
     "tags": [
@@ -1932,7 +1931,7 @@
       "Level"
     ]
   },
-    {
+  {
     "name": "Firework 144hz Mobile 97%",
     "id": "firework-144hz-mobile-97",
     "player": "MAXDASH07",
@@ -2025,7 +2024,7 @@
     "date": "2023-05-05",
     "length": 48,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/JlhBdtzL99A",
     "tags": [
       "Level"
@@ -2086,7 +2085,7 @@
     "date": "2023-07-26",
     "length": 17,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/oXTEP51YbZY",
     "tags": [
       "Challenge"
@@ -2100,7 +2099,7 @@
     "date": "2023-08-04",
     "length": 18,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/svZh5TMUPWo",
     "tags": [
       "Challenge"
@@ -2195,7 +2194,7 @@
     "date": "2022-09-08",
     "length": 13,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/IWjhhj0aHPc",
     "tags": [
       "Challenge"
@@ -2224,7 +2223,7 @@
     "date": "2024-09-05",
     "length": 99,
     "version": 2.2,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/ktD6Lb5MzAs",
     "tags": [
       "Challenge"
@@ -2252,7 +2251,7 @@
     "date": "2022-09-10",
     "length": 105,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/A-QIy2BjRLg",
     "tags": [
       "Challenge"
@@ -2266,7 +2265,7 @@
     "date": "2023-04-10",
     "length": 100,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/ZH788q4wRd8",
     "tags": [
       "Challenge"
@@ -2280,7 +2279,7 @@
     "date": "2022-10-11",
     "length": 16,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/lJLLlG09mmM",
     "tags": [
       "Challenge"
@@ -2294,7 +2293,7 @@
     "date": "2021-09-21",
     "length": 16,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/ewlMbTR-c_w&t=5s",
     "tags": [
       "Challenge"
@@ -2308,7 +2307,7 @@
     "date": "2023-12-01",
     "length": 16,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/70c4SvUe-EA",
     "tags": [
       "Challenge"
@@ -2339,7 +2338,7 @@
     "date": "2023-02-14",
     "length": 67,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/VHgRQfFy9xc",
     "showcaseVideo": "https://youtu.be/VcQ3-nRRrE0",
     "tags": [
@@ -2421,14 +2420,14 @@
     "date": "2021-12-22",
     "length": 19,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/Fb6w_l0Q5DM",
     "showcaseVideo": "https://youtu.be/zbeVxP-aw3U",
     "tags": [
       "Challenge"
     ]
   },
-    {
+  {
     "name": "INTERCONNECTED 77%",
     "id": "interconnected-77",
     "player": "NucGDStuff",
@@ -2531,7 +2530,7 @@
     "date": "2024-06-02",
     "length": 85,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/z_U8zR1CpOY",
     "showcaseVideo": "https://youtu.be/FQLS9G52wQ8",
     "tags": [
@@ -2565,7 +2564,7 @@
     "date": "2024-02-08",
     "length": 19,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/-ZKWeohEHNs",
     "tags": [
       "Challenge"
@@ -2722,7 +2721,7 @@
     "date": "2024-09-04",
     "length": 27,
     "version": 2.2,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/cl2dJGYDLQw",
     "tags": [
       "Level",
@@ -2737,7 +2736,7 @@
     "date": "2021-12-29",
     "length": 50,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/ofG2mJi9kEA",
     "showcaseVideo": "https://youtu.be/b66_Oe4Xo1w",
     "tags": [
@@ -2769,7 +2768,7 @@
     "date": "2023-06-18",
     "length": 49,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/KZksoQVGmKw",
     "showcaseVideo": "https://youtu.be/ZpeknSJF-2U",
     "tags": [
@@ -2815,7 +2814,7 @@
     "date": "2023-02-03",
     "length": 50,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/MKFeLVaBdoE",
     "showcaseVideo": "https://youtu.be/o626AFlYzoI",
     "tags": [
@@ -2877,7 +2876,7 @@
     "date": "2023-05-12",
     "length": 87,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/2CxE-UWCIG4",
     "showcaseVideo": "https://youtu.be/ulaXL0SdzZk",
     "tags": [
@@ -2957,7 +2956,7 @@
     "date": "2022-11-28",
     "length": 14,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/sUPrYLoiul0",
     "showcaseVideo": "https://youtu.be/fiCwcuCl4c0",
     "tags": [
@@ -3050,7 +3049,7 @@
     "date": "2023-10-07",
     "length": 15,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/cfcVzI2Ag1A",
     "showcaseVideo": "https://youtu.be/p3wpVieXmVM",
     "tags": [
@@ -3126,7 +3125,7 @@
     "date": "2023-12-30",
     "length": 177,
     "version": 2.2,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/qSdyb-Ft1tk",
     "showcaseVideo": "https://youtu.be/27vg7KzwMNU",
     "tags": [
@@ -3158,7 +3157,7 @@
     "date": "2023-01-30",
     "length": 85,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/K77leSnLP0Y",
     "showcaseVideo": "https://youtu.be/P5qLACDcdGg",
     "tags": [
@@ -3173,7 +3172,7 @@
     "date": "2023-10-12",
     "length": 98,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/4yHA6jux5UI",
     "showcaseVideo": "https://youtu.be/AcXRpf5XDq8",
     "tags": [
@@ -3188,7 +3187,7 @@
     "date": "2021-05-06",
     "length": 116,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/0DAojkSfR-8",
     "showcaseVideo": "https://youtu.be/aK5TTzArgJs?t=460",
     "tags": [
@@ -3203,7 +3202,7 @@
     "date": "2020-12-09",
     "length": 100,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/veFJtgFFvNM",
     "showcaseVideo": "https://youtu.be/yozw67YK6Gc",
     "tags": [
@@ -3317,7 +3316,7 @@
     "date": "2024-04-11",
     "length": 97,
     "version": 2.2,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/ZcdiTGuIJ1k",
     "showcaseVideo": "https://youtu.be/qDcewR4PUYY",
     "tags": [
@@ -3352,7 +3351,7 @@
     "date": "2023-08-05",
     "length": 177,
     "version": 2.1,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/b2yHaIk5zio",
     "showcaseVideo": "https://youtu.be/CQJqSSBFHQ8",
     "tags": [
@@ -3426,7 +3425,7 @@
     "date": "2023-01-16",
     "length": 25,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/LkA0JlLEwR0",
     "showcaseVideo": "https://youtu.be/WRd6SCFXpMc",
     "tags": [
@@ -3508,7 +3507,7 @@
     "date": "2024-05-23",
     "length": 127,
     "version": 2.2,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": " https://youtu.be/Kbb3eXeMHQo",
     "showcaseVideo": "https://youtu.be/DU6mRmGHy74",
     "tags": [
@@ -3616,7 +3615,7 @@
     "date": "2023-03-12",
     "length": 87,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/RsOVrVlcE2g",
     "showcaseVideo": "https://youtu.be/t-2NVfHfXiI",
     "tags": [
@@ -3721,7 +3720,7 @@
     "date": "2023-02-21",
     "length": 28,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/vNxSw5azrUQ",
     "showcaseVideo": "https://youtu.be/44L7NaTxHUQ",
     "tags": [
@@ -3753,7 +3752,7 @@
     "date": "2021-09-25",
     "length": 24,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/-HNuhKG4fiA",
     "showcaseVideo": "https://www.youtube.com/watch?v=gHIt5LX6JrM",
     "tags": [
@@ -3876,7 +3875,7 @@
     "date": "2023-08-28",
     "length": 97,
     "version": 2.1,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/nQDTi077O6M",
     "showcaseVideo": "https://youtu.be/dzVCMlRFPlc",
     "tags": [
@@ -4022,7 +4021,7 @@
     "date": "2024-06-17",
     "length": 109,
     "version": 2.2,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/eLGr383CmyM",
     "showcaseVideo": "https://youtu.be/SD0RHzOj2yc",
     "tags": [
@@ -4166,7 +4165,7 @@
     "length": 27,
     "version": 2.2,
     "video": "https://youtu.be/mTtuS8U8zZs",
-"showcaseVideo": "https://youtu.be/3s4otV3lbbc",
+    "showcaseVideo": "https://youtu.be/3s4otV3lbbc",
     "submitter": "zXdasfsa",
     "tags": [
       "Challenge"
@@ -4180,7 +4179,7 @@
     "date": "2023-08-12",
     "length": 77,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/lUNvV1k19HA?t=32",
     "showcaseVideo": "https://youtu.be/CcvGGDzxOJo",
     "tags": [
@@ -4189,14 +4188,14 @@
     ]
   },
   {
-    "name": "Natural Disaster",
-    "id": "natural-disaster",
+    "name": "Natural Disaster (GammaReXx)",
+    "id": "natural-disaster-gammarexx",
     "player": "Helix",
     "levelID": 76483916,
     "date": "2022-10-30",
     "length": 74,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/Soc-JeRJtqM",
     "showcaseVideo": "https://youtu.be/pncIrL1iWVg",
     "tags": [
@@ -4221,18 +4220,18 @@
     ]
   },
   {
-  "name": "Bloodlust, Spectrum Cyclone, Wasureta, Sonic Wave",
-  "id": "bloodlust-spectrum-cyclone-wasureta-sonic-wave",
-  "player": "Trick",
-  "length": "471",
-  "version": "2.2",
-  "video": "https://youtu.be/_eWcDxL6ZuY?t=332",
-  "date": "2024-09-22",
-  "submitter": "jak",
-  "tags": [
-    "Miscellaneous"
-  ]
-},
+    "name": "Bloodlust, Spectrum Cyclone, Wasureta, Sonic Wave",
+    "id": "bloodlust-spectrum-cyclone-wasureta-sonic-wave",
+    "player": "Trick",
+    "length": "471",
+    "version": "2.2",
+    "video": "https://youtu.be/_eWcDxL6ZuY?t=332",
+    "date": "2024-09-22",
+    "submitter": "jak",
+    "tags": [
+      "Miscellaneous"
+    ]
+  },
   {
     "name": "M I S F O R T U N E",
     "id": "m-i-s-f-o-r-t-u-n-e",
@@ -4303,7 +4302,7 @@
     "date": "2023-12-05",
     "length": 97,
     "version": 2.1,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/AROmUo7DNkE",
     "showcaseVideo": "https://youtu.be/CWZknmr875g",
     "tags": [
@@ -4443,7 +4442,7 @@
     "date": "2023-07-06",
     "length": 89,
     "version": 2.1,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/3LfjQWk9Hyg",
     "showcaseVideo": "https://youtu.be/a3xBOH7RsrU",
     "tags": [
@@ -4458,7 +4457,7 @@
     "length": 41,
     "version": 2.2,
     "video": "https://youtu.be/DRmGuZjlAaM",
-        "showcaseVideo": "https://youtu.be/watch?v=kXd8eWv72nA",
+    "showcaseVideo": "https://youtu.be/watch?v=kXd8eWv72nA",
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
@@ -4473,7 +4472,7 @@
     "date": "2022-11-01",
     "length": 82,
     "version": 2.1,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/fzL31vai1ms",
     "showcaseVideo": "https://youtu.be/WM1KcNGkP08",
     "tags": [
@@ -4513,26 +4512,25 @@
       "Rated"
     ]
   },
-  
-{
-  "name": "Tunnel of Despair 144hz Mobile 46-100%",
-  "id": "tunnel-of-despair-144hz-mobile-46-100",
-  "player": "VERTOP",
-  "length": "38",
-  "version": "2.2",
-  "video": "https://youtu.be/41fGLBze4cY",
-  "showcaseVideo": "https://youtu.be/SgWZkTPHNaM?t=113",
-  "date": "2025-05-22",
-  "submitter": "finn",
-  "levelID": "91351939",
-  "tags": [
-    "Level",
-    "Rated",
-    "Mobile",
-    "Low Hertz",
-    "Progress"
-  ]
-},
+  {
+    "name": "Tunnel of Despair 144hz Mobile 46-100%",
+    "id": "tunnel-of-despair-144hz-mobile-46-100",
+    "player": "VERTOP",
+    "length": "38",
+    "version": "2.2",
+    "video": "https://youtu.be/41fGLBze4cY",
+    "showcaseVideo": "https://youtu.be/SgWZkTPHNaM?t=113",
+    "date": "2025-05-22",
+    "submitter": "finn",
+    "levelID": "91351939",
+    "tags": [
+      "Level",
+      "Rated",
+      "Mobile",
+      "Low Hertz",
+      "Progress"
+    ]
+  },
   {
     "name": "INTERCONNECTED 61%, 50%",
     "id": "interconnected-61-50",
@@ -4589,7 +4587,7 @@
     "date": "2021-12-01",
     "length": 15,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/1tjmKs4lyB4",
     "showcaseVideo": "https://youtu.be/VPXub8NAKPU",
     "tags": [
@@ -4619,7 +4617,7 @@
     "date": "2023-05-02",
     "length": 86,
     "version": 2.1,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/hjs5PjUaw9k",
     "showcaseVideo": "https://youtu.be/ktVdIYE9P-I",
     "tags": [
@@ -4627,7 +4625,7 @@
       "Rated"
     ]
   },
-    {
+  {
     "name": "Waterfall 120hz Mobile 92%",
     "id": "waterfall-120hz-mobile-92",
     "player": "GameGuru",
@@ -4807,7 +4805,7 @@
   },
   {
     "name": "CSE 40-100%",
-    "id": "cse-63",
+    "id": "cse-40-100",
     "player": "seels",
     "length": "7",
     "version": "2.2",
@@ -4821,7 +4819,7 @@
       "Progress"
     ]
   },
-    {
+  {
     "name": "Sodium Oxybutyrate 35%x3, 36%",
     "id": "sodium-oxybutyrate-35x3-36",
     "player": "MoonFrost",
@@ -4845,7 +4843,7 @@
     "date": "2023-10-29",
     "length": 92,
     "version": 2.1,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/yvLwiOy3KEA",
     "showcaseVideo": "https://youtu.be/bqKgTzTZ7N4",
     "tags": [
@@ -4908,7 +4906,7 @@
     "date": "2023-03-18",
     "length": 82,
     "version": 2.1,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/YvA8ehhzz0Q",
     "tags": [
       "Level",
@@ -5028,7 +5026,7 @@
     "date": "2023-09-26",
     "length": 106,
     "version": 2.1,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/saHSgoU1JQQ",
     "showcaseVideo": "https://youtu.be/WxpF_bZxvIQ",
     "tags": [
@@ -5043,7 +5041,7 @@
     "date": "2024-04-30",
     "length": 15,
     "version": 2.2,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/dlle6sylsE8",
     "tags": [
       "Challenge",
@@ -5058,7 +5056,7 @@
     "date": "2023-02-03",
     "length": 15,
     "version": 2.1,
-                    "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/kzOU51YpbnI",
     "showcaseVideo": "https://youtu.be/tptDmva9gdQ",
     "tags": [
@@ -5090,7 +5088,7 @@
     "date": "2022-06-19",
     "length": 124,
     "version": 2.1,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/tYbXsNkO9HE",
     "showcaseVideo": "https://youtu.be/EM41J4sV2Iw",
     "tags": [
@@ -5154,7 +5152,7 @@
     "date": "2023-09-10",
     "length": 59,
     "version": 2.1,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/3cTR4XUcA28",
     "showcaseVideo": "https://youtu.be/KaWAdxssH2w",
     "tags": [
@@ -5215,7 +5213,7 @@
     "date": "2023-04-29",
     "length": 65,
     "version": 2.1,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/eHQNgty8ypY",
     "showcaseVideo": "https://youtu.be/V2UFysszlyI",
     "tags": [
@@ -5231,7 +5229,7 @@
     "date": "2023-09-19",
     "length": 15,
     "version": 2.1,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/nRBeA29yRYA",
     "showcaseVideo": "https://youtu.be/5UnmtdUZs7c",
     "tags": [
@@ -5265,7 +5263,7 @@
     "date": "2021-11-07",
     "length": 14,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/kTNwsbxiQmQ&t=80s",
     "showcaseVideo": "https://youtu.be/sWdgDpblGBU",
     "tags": [
@@ -5310,7 +5308,7 @@
     "date": "2022-11-25",
     "length": 207,
     "version": 2.1,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/kXYMbaMVOZg",
     "showcaseVideo": "https://youtu.be/gGz9rPR4pbw",
     "tags": [
@@ -5376,7 +5374,7 @@
     "date": "2021-09-27",
     "length": 12,
     "version": 2.1,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/XWBPITWsptc",
     "showcaseVideo": "https://youtu.be/Tpf3IrvpWTo",
     "tags": [
@@ -5437,7 +5435,7 @@
     "date": "2023-11-25",
     "length": 300,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/4_C6BaxD1D4",
     "showcaseVideo": "https://youtu.be/UdBS9JYYlZ8",
     "tags": [
@@ -5468,7 +5466,7 @@
     "date": "2024-04-20",
     "length": 73,
     "version": 2.2,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/T9-75lfKVQg",
     "showcaseVideo": "https://youtu.be/ULW2gj0bJNs",
     "tags": [
@@ -5477,22 +5475,22 @@
     ]
   },
   {
-  "name": "Silent AcropoliX 51%",
-  "id": "silent-acropolix-51",
-  "player": "SeptaGon7",
-  "length": "38",
-  "version": "2.2",
-  "video": "https://youtu.be/KCX1UHsCG-g",
-  "showcaseVideo": "https://youtu.be/BrEuDSpVD_A",
-  "date": "2025-05-15",
-  "submitter": "SeptaGon7",
-  "levelID": "20846131",
-  "tags": [
-    "Level",
-    "CBF",
-    "Progress"
-  ]
-},
+    "name": "Silent AcropoliX 51%",
+    "id": "silent-acropolix-51",
+    "player": "SeptaGon7",
+    "length": "38",
+    "version": "2.2",
+    "video": "https://youtu.be/KCX1UHsCG-g",
+    "showcaseVideo": "https://youtu.be/BrEuDSpVD_A",
+    "date": "2025-05-15",
+    "submitter": "SeptaGon7",
+    "levelID": "20846131",
+    "tags": [
+      "Level",
+      "CBF",
+      "Progress"
+    ]
+  },
   {
     "name": "Edge of Destiny",
     "id": "edge-of-destiny",
@@ -5501,7 +5499,7 @@
     "date": "2023-03-09",
     "length": 126,
     "version": 2.1,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/rUphe3H59yU",
     "showcaseVideo": "https://youtu.be/At8bF2pw-qk",
     "tags": [
@@ -5532,7 +5530,7 @@
     "date": "2022-06-12",
     "length": 14,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/WYGRrBTHxnk",
     "showcaseVideo": "https://youtu.be/0tdNoThBlxM",
     "tags": [
@@ -5613,7 +5611,7 @@
     "date": "2023-06-04",
     "length": 125,
     "version": 2.1,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/IKGk41hSnDo",
     "showcaseVideo": "https://youtu.be/ti5G-c3wcM0",
     "tags": [
@@ -5708,7 +5706,7 @@
     "date": "2022-08-07",
     "length": 89,
     "version": 2.1,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/U6e6DD32noM",
     "showcaseVideo": "https://youtu.be/pKJUmSJR22Y",
     "tags": [
@@ -5753,7 +5751,7 @@
     "length": 30,
     "version": 2.2,
     "video": "https://youtu.be/HehmDoRV5NM",
-        "showcaseVideo": "https://youtu.be/watch?v=kXd8eWv72nA",
+    "showcaseVideo": "https://youtu.be/watch?v=kXd8eWv72nA",
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
@@ -5768,7 +5766,7 @@
     "date": "2022-07-02",
     "length": 124,
     "version": 2.1,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/KzK62PkWOJ0",
     "showcaseVideo": "https://youtu.be/xg93mOaaG5I",
     "tags": [
@@ -5832,7 +5830,7 @@
     "date": "2023-10-20",
     "length": 104,
     "version": 2.1,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/eRhgaF0r5Q0&t=6s",
     "showcaseVideo": "https://youtu.be/s8XXG6Mf-GU",
     "tags": [
@@ -5910,7 +5908,7 @@
     "date": "2024-05-16",
     "length": 126,
     "version": 2.2,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/1luL7tTE8p8",
     "showcaseVideo": "https://youtu.be/TzvckUZSoaM",
     "tags": [
@@ -5926,7 +5924,7 @@
     "date": "2022-08-29",
     "length": 63,
     "version": 2.1,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/XpBY-eMYZTE",
     "showcaseVideo": "https://youtu.be/_wozpbdDoCM",
     "tags": [
@@ -6085,7 +6083,7 @@
     "date": "2023-10-24",
     "length": 133,
     "version": 2.2,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/l52ApE4HWkY",
     "showcaseVideo": "https://youtu.be/qWUaEXOt_t0",
     "tags": [
@@ -6139,7 +6137,7 @@
     "version": 2.1,
     "submitter": "Anceps",
     "video": "https://youtu.be/E3-9s2DyjJI",
-        "showcaseVideo": "https://youtu.be/QuRsfqweNTk",
+    "showcaseVideo": "https://youtu.be/QuRsfqweNTk",
     "tags": [
       "Challenge"
     ]
@@ -6152,7 +6150,7 @@
     "date": "2023-10-29",
     "length": 97,
     "version": 2.1,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/rRlyvmjcz_4",
     "showcaseVideo": "https://youtu.be/99R4_EVBZl8",
     "tags": [
@@ -6332,7 +6330,7 @@
     "date": "2023-11-02",
     "length": 66,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/NhkN_a9cNi8",
     "showcaseVideo": "https://youtu.be/iTtXXMdM8qs",
     "tags": [
@@ -6415,7 +6413,7 @@
     "date": "2022-11-26",
     "length": 525,
     "version": 2.1,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/dJCdTMQxHMo",
     "showcaseVideo": "https://youtu.be/MDutuGulI_8",
     "tags": [
@@ -6431,7 +6429,7 @@
     "date": "2023-08-03",
     "length": 525,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/6N8u_byYoZo",
     "showcaseVideo": "https://youtu.be/0yfTwDma-j0",
     "tags": [
@@ -6526,7 +6524,7 @@
     "date": "2021-08-08",
     "length": 60,
     "version": 2.1,
-            "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/a_Bqa8l9Xtc&t=4s",
     "showcaseVideo": "https://youtu.be/GKQc2JECHLs",
     "tags": [
@@ -6556,7 +6554,7 @@
     "date": "2021-07-13",
     "length": 68,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/MFNIDirFmNk",
     "showcaseVideo": "https://youtu.be/rwi7_o5F6lw",
     "tags": [
@@ -6888,7 +6886,7 @@
     "date": "2022-11-12",
     "length": 125,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/RmItPs84OOk",
     "tags": [
       "Level",
@@ -6953,7 +6951,7 @@
     "date": "2021-05-30",
     "length": 148,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/C3-l_fFikpQ&t=98s",
     "showcaseVideo": "https://youtu.be/QYd2YdKtj8Y",
     "tags": [
@@ -7323,7 +7321,7 @@
       "Speedhack"
     ]
   },
-    {
+  {
     "name": "Infinite Chaos 89%",
     "id": "infinite-chaos-89",
     "player": "Victurkey",
@@ -7347,7 +7345,7 @@
     "date": "2024-08-02",
     "length": 112,
     "version": 2.2,
-                "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/gM-OF3NoJIs",
     "showcaseVideo": "https://youtu.be/NVZH32TJxJQ",
     "tags": [
@@ -7448,7 +7446,7 @@
     "date": "2023-09-26",
     "length": 64,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/iQ3RzYCvLvA",
     "showcaseVideo": "https://youtu.be/xtS4ibDPGxE",
     "tags": [
@@ -7477,7 +7475,7 @@
     "date": "2023-08-13",
     "length": 309,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/MWQyCUGt76Y",
     "showcaseVideo": "https://youtu.be/4rW5LcILMMo",
     "tags": [
@@ -7597,7 +7595,7 @@
     "date": "2023-12-21",
     "length": 84,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/b0DJ-TR4Y60&t=282s",
     "showcaseVideo": "https://youtu.be/iHzi6WmE-Bc",
     "tags": [
@@ -7626,7 +7624,7 @@
     "date": "2024-02-27",
     "length": 70,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/QXTda-J8W70",
     "showcaseVideo": "https://youtu.be/lNRCkmF2I-E",
     "tags": [
@@ -7729,7 +7727,7 @@
       "Rated"
     ]
   },
-    {
+  {
     "name": "Coalescence",
     "id": "coalescence",
     "player": "Amplitron",
@@ -8010,7 +8008,7 @@
     "date": "2020-01-06",
     "length": 87,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/9YYQBbrsV5Y",
     "showcaseVideo": "https://youtu.be/lm1498Rfl0s",
     "tags": [
@@ -8064,7 +8062,7 @@
       "Progress"
     ]
   },
-    {
+  {
     "name": "Aeternus 79-98%",
     "id": "aeternus-79-98",
     "player": "surroundedgd",
@@ -8117,23 +8115,23 @@
     ]
   },
   {
-  "name": "True Unnerfed Slaughterhouse 25-100% 16 deaths, 97.96 accuracy",
-  "id": "true-unnerfed-slaughterhouse-25-100-16-deaths-97-96-accuracy",
-  "player": "Doggie",
-  "length": "60",
-  "version": "2.2",
-  "video": "https://youtu.be/8Z5_H0LCBpw&t=4547s",
-  "showcaseVideo": "https://youtu.be/8NBuqpGb1KY",
-  "date": "2025-05-18",
-  "submitter": "kittycatiscute",
-  "levelID": "77618325",
-  "tags": [
-    "CBF",
-    "Level",
-    "Noclip",
-    "Progress"
-  ]
-},
+    "name": "True Unnerfed Slaughterhouse 25-100% 16 deaths, 97.96 accuracy",
+    "id": "true-unnerfed-slaughterhouse-25-100-16-deaths-97-96-accuracy",
+    "player": "Doggie",
+    "length": "60",
+    "version": "2.2",
+    "video": "https://youtu.be/8Z5_H0LCBpw&t=4547s",
+    "showcaseVideo": "https://youtu.be/8NBuqpGb1KY",
+    "date": "2025-05-18",
+    "submitter": "kittycatiscute",
+    "levelID": "77618325",
+    "tags": [
+      "CBF",
+      "Level",
+      "Noclip",
+      "Progress"
+    ]
+  },
   {
     "name": "Heliopolis (Old) 46%",
     "id": "heliopolis-old-46",
@@ -8220,7 +8218,7 @@
     "date": "2023-10-02",
     "length": 67,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/E4ppq2WeAAs",
     "showcaseVideo": "https://youtu.be/SrwxNt0MLFQ",
     "tags": [
@@ -8251,7 +8249,7 @@
     "date": "2021-05-01",
     "length": 16,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/oaF6lKgMoms",
     "showcaseVideo": "https://youtu.be/P0KCxV6m0Jw",
     "tags": [
@@ -8394,7 +8392,7 @@
     "date": "2023-10-01",
     "length": 95,
     "version": 2.2,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/FPfSqlI0T30",
     "showcaseVideo": "https://youtu.be/KgRPhglipsU",
     "tags": [
@@ -8439,7 +8437,7 @@
     "date": "2023-01-30",
     "length": 42,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/a1sQxQqU6EM",
     "showcaseVideo": "https://youtu.be/7K7UWZmK9eU",
     "tags": [
@@ -8455,7 +8453,7 @@
     "date": "2024-01-07",
     "length": 42,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/ERvtVOPyWgY",
     "showcaseVideo": "https://youtu.be/2kEXtkkIZ3M",
     "tags": [
@@ -8778,7 +8776,7 @@
     "date": "2022-12-23",
     "length": 49,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/A76WxInuqos",
     "showcaseVideo": "https://youtu.be/8CspJrsUz4I",
     "tags": [
@@ -8879,7 +8877,7 @@
     "date": "2022-03-02",
     "length": 78,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/c2VeokBtius",
     "showcaseVideo": "https://youtu.be/sdl1ck-YJRw",
     "tags": [
@@ -8924,7 +8922,7 @@
     "date": "2024-08-07",
     "length": 98,
     "version": 2.2,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/VnTdzASs2tM",
     "showcaseVideo": "https://youtu.be/samnJmBLe1A",
     "tags": [
@@ -8969,7 +8967,7 @@
     "date": "2023-05-01",
     "length": 89,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/wHhRNjO0X68",
     "showcaseVideo": "https://youtu.be/g2OE21U9e5w",
     "tags": [
@@ -9084,7 +9082,7 @@
     "date": "2021-07-26",
     "length": 176,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/4E8Ixyn7rOc",
     "showcaseVideo": "https://youtu.be/rh_tQA5DGUg",
     "tags": [
@@ -9159,7 +9157,7 @@
     "date": "2021-01-31",
     "length": 76,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/dGBPjQZUsVE",
     "showcaseVideo": "https://youtu.be/g2OE21U9e5w",
     "tags": [
@@ -9254,7 +9252,7 @@
     "date": "2023-12-16",
     "length": 90,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/iZWpNF3zicc",
     "showcaseVideo": "https://youtu.be/UVAEgJ9rbPg",
     "tags": [
@@ -9315,7 +9313,7 @@
     "date": "2023-09-24",
     "length": 84,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/wpS5PSHmji0",
     "showcaseVideo": "https://youtu.be/g2OE21U9e5w",
     "tags": [
@@ -9323,7 +9321,7 @@
       "Rated"
     ]
   },
-    {
+  {
     "name": "Murder Mitten",
     "id": "murder-mitten",
     "player": "mark.",
@@ -9531,7 +9529,7 @@
     "date": "2024-03-07",
     "length": 121,
     "version": 2.2,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/yJslAlNsQfA",
     "showcaseVideo": "https://youtu.be/bCkCXiFgRrY",
     "tags": [
@@ -9561,7 +9559,7 @@
     "date": "2021-12-14",
     "length": 129,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/wjZxkS5KC0A",
     "showcaseVideo": "https://youtu.be/dSbox0NKuXs",
     "tags": [
@@ -9703,7 +9701,7 @@
     "date": "2024-05-01",
     "length": 77,
     "version": 2.2,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/5nM4hlnLDyM",
     "showcaseVideo": "https://youtu.be/7NWrWZbnyRY",
     "tags": [
@@ -9826,7 +9824,7 @@
     "date": "2023-04-02",
     "length": 61,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/kvLtsnNsBVk",
     "showcaseVideo": "https://youtu.be/wWa_pwH74Pw",
     "tags": [
@@ -9959,7 +9957,7 @@
     "date": "2023-08-30",
     "length": 145,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/_rr3J8DkIm4",
     "showcaseVideo": "https://youtu.be/SYhxEhywmrQ",
     "tags": [
@@ -9991,7 +9989,7 @@
     "date": "2023-10-06",
     "length": 124,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/K7wJi01J5D8",
     "showcaseVideo": "https://youtu.be/iozImYI5Yoo",
     "tags": [
@@ -10085,7 +10083,7 @@
     "date": "2022-04-03",
     "length": 65,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/nkG4hKJIz2g",
     "showcaseVideo": "https://youtu.be/Ol4kYHKRk-s",
     "tags": [
@@ -10178,7 +10176,7 @@
     "date": "2023-04-14",
     "length": 99,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/29hRhhqQTLc",
     "showcaseVideo": "https://youtu.be/H-9x_xi9UeY",
     "tags": [
@@ -10326,7 +10324,7 @@
     "date": "2023-04-27",
     "length": 67,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/YrJTfWjeAS0",
     "showcaseVideo": "https://youtu.be/rDvJzr7YQYM",
     "tags": [
@@ -10525,7 +10523,7 @@
     "date": "2023-08-20",
     "length": 71,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/Ho58nTcsZLs",
     "showcaseVideo": "https://youtu.be/py9BYMgAQ_k",
     "tags": [
@@ -10574,7 +10572,7 @@
     "date": "2021-09-01",
     "length": 87,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/BN7DxkMaQfg",
     "showcaseVideo": "https://youtu.be/uYdqO9lOW_A",
     "tags": [
@@ -10603,7 +10601,7 @@
     "date": "2023-02-08",
     "length": 62,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/UjYIt2jy_BY",
     "showcaseVideo": "https://youtu.be/eyLFpG8rjiY",
     "tags": [
@@ -10763,7 +10761,7 @@
     "date": "2022-01-01",
     "length": 58,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/xDKFca4HMDk",
     "showcaseVideo": "https://youtu.be/TXVAJeefL98",
     "tags": [
@@ -10796,7 +10794,7 @@
     "date": "2022-08-24",
     "length": 65,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/eyZjKtrGVYw",
     "showcaseVideo": "https://youtu.be/YrwMLHHmUJY",
     "tags": [
@@ -10812,7 +10810,7 @@
     "date": "2021-07-16",
     "length": 74,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/yHESkazVD4Q",
     "showcaseVideo": "https://youtu.be/qkQidB9aPLA",
     "tags": [
@@ -11023,7 +11021,7 @@
     "date": "2022-12-24",
     "length": 98,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/nq3i1qJQeEk",
     "showcaseVideo": "https://youtu.be/0ap21i99o7Y",
     "tags": [
@@ -11070,7 +11068,7 @@
     "date": "2022-09-04",
     "length": 80,
     "version": 2.1,
-        "submitter": "Anceps",
+    "submitter": "Anceps",
     "video": "https://youtu.be/UBXN6H4zck4",
     "showcaseVideo": "https://youtu.be/wez4Dd3cDBg",
     "tags": [
