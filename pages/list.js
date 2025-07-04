@@ -205,11 +205,9 @@ export default function List() {
   const filterFn = useCallback(
     a => {
       if (searchLower) {
-        // Only match if name is a string and contains the search term as a whole word (case-insensitive)
         if (typeof a.name !== 'string') return false;
-        // Use regex to match whole word or exact phrase
-        const pattern = new RegExp(`\\b${searchLower.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')}\\b`, 'i');
-        if (!pattern.test(a.name)) return false;
+        // Match if the search term appears anywhere in the name (substring, case-insensitive)
+        if (!a.name.toLowerCase().includes(searchLower)) return false;
       }
       const tags = (a.tags || []).map(t => t.toUpperCase());
       if (filterTags.include.length && !filterTags.include.every(tag => tags.includes(tag.toUpperCase()))) return false;
