@@ -1,13 +1,28 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useCallback } from 'react';
 
 export default function Sidebar() {
+  const router = useRouter();
+
+  const handleRandomClick = useCallback(async (e) => {
+    e.preventDefault();
+    const res = await fetch('/achievements.json');
+    const data = await res.json();
+    const valid = data.filter(a => a && a.id && a.name);
+    if (valid.length > 0) {
+      const random = valid[Math.floor(Math.random() * valid.length)];
+      router.push(`/achievement/${random.id}`);
+    }
+  }, [router]);
+
   return (
     <nav className="sidebar">
       <Link href="/list" className="sidebar-link">Main List</Link>
       <Link href="/timeline" className="sidebar-link">Timeline</Link>
       <Link href="/leaderboard" className="sidebar-link">Leaderboard</Link>
       <Link href="/submission-stats" className="sidebar-link">Submission Stats</Link>
-      <a href="#" id="random-achievement-btn" className="sidebar-link">Random</a>
+      <a href="#" id="random-achievement-btn" className="sidebar-link" onClick={handleRandomClick}>Random</a>
       <Link href="/about-us" className="sidebar-link">About Us</Link>
       <div style={{position: "relative", width: "100%", paddingBottom: "350px"}}>
         <iframe
