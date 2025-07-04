@@ -120,7 +120,7 @@ function TagFilterPills({ allTags, filterTags, setFilterTags, isMobile, show, se
             </span>
           );
         })
-      )}
+      }
     </div>
   );
 }
@@ -159,9 +159,19 @@ function AchievementCard({ achievement, onClick }) {
   );
 }
 
+function useDebouncedValue(value, delay) {
+  const [debounced, setDebounced] = useState(value);
+  useEffect(() => {
+    const handler = setTimeout(() => setDebounced(value), delay);
+    return () => clearTimeout(handler);
+  }, [value, delay]);
+  return debounced;
+}
+
 export default function List() {
   const [achievements, setAchievements] = useState([]);
   const [search, setSearch] = useState('');
+  const debouncedSearch = useDebouncedValue(search, 200);
   const [filterTags, setFilterTags] = useState({ include: [], exclude: [] });
   const [allTags, setAllTags] = useState([]);
   const [isMobile, setIsMobile] = useState(false);
@@ -172,8 +182,10 @@ export default function List() {
     fetch('/achievements.json')
       .then(res => res.json())
       .then(data => {
+        // Filter out invalid entries (no name or id)
+        const valid = data.filter(a => a && typeof a.name === 'string' && a.name && a.id);
         // Add rank property for display
-        const withRank = data.map((a, i) => ({ ...a, rank: i + 1 }));
+        const withRank = valid.map((a, i) => ({ ...a, rank: i + 1 }));
         setAchievements(withRank);
         // Collect all unique tags
         const tags = new Set();
@@ -197,10 +209,10 @@ export default function List() {
       const tags = (a.tags || []).map(t => t.toUpperCase());
       if (filterTags.include.length && !filterTags.include.every(tag => tags.includes(tag.toUpperCase()))) return false;
       if (filterTags.exclude.length && filterTags.exclude.some(tag => tags.includes(tag.toUpperCase()))) return false;
-      if (search && !(typeof a.name === 'string' && a.name.toLowerCase().includes(search.toLowerCase()))) return false;
+      if (debouncedSearch && !(typeof a.name === 'string' && a.name.toLowerCase().includes(debouncedSearch.toLowerCase()))) return false;
       return true;
     });
-  }, [achievements, search, filterTags]);
+  }, [achievements, debouncedSearch, filterTags]);
 
   function handleMobileToggle() {
     setShowMobileFilters(v => !v);
