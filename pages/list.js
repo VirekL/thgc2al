@@ -120,7 +120,7 @@ function TagFilterPills({ allTags, filterTags, setFilterTags, isMobile, show, se
             </span>
           );
         })
-      }
+      )}
     </div>
   );
 }
