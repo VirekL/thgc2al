@@ -329,9 +329,10 @@ main {
 }
 .copy-notification {
   position: fixed;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%) scale(0.9);
+  bottom: 1.5rem;
+  right: 2rem;
+  left: auto;
+  transform: none;
   background-color: rgba(0, 0, 0, 0.85);
   color: white;
   padding: .5rem 1.2rem;
@@ -346,7 +347,7 @@ main {
 }
 .copy-notification.show {
   opacity: 1;
-  transform: translateX(-50%) scale(1);
+  transform: none;
   pointer-events: auto;
 }
 .sidebar {
@@ -581,9 +582,10 @@ main {
 
 .copy-notification {
   position: fixed;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%) scale(0.9);
+  bottom: 1.5rem;
+  right: 2rem;
+  left: auto;
+  transform: none;
   background-color: rgba(0, 0, 0, 0.85);
   color: white;
   padding: .5rem 1.2rem;
@@ -598,7 +600,7 @@ main {
 }
 .copy-notification.show {
   opacity: 1;
-  transform: translateX(-50%) scale(1);
+  transform: none;
   pointer-events: auto;
 }
 .main-content {
