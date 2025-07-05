@@ -33,7 +33,7 @@ export default function Background({ bgImage }) {
           width: 100vw;
           height: 100vh;
           z-index: -1;
-          background: rgba(19, 23, 41, 0.5);
+          background: rgba(19, 23, 41, 0.8);
           pointer-events: none;
         }
       `;
