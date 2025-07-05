@@ -2,6 +2,7 @@ import { useState } from "react";
 
 export default function Header() {
   const [showSettings, setShowSettings] = useState(false);
+  const [dateFormat, setDateFormat] = useState("Month D, Yr");
   return (
     <header style={{ position: "relative" }}>
       <div className="header-left">
@@ -86,9 +87,55 @@ export default function Header() {
               ×
             </button>
             <h2 style={{ color: "#DFE3F5", marginBottom: 24 }}>Settings</h2>
-            <button style={{ padding: "10px 24px", borderRadius: 8, border: "none", background: "#343A52", color: "#DFE3F5", fontSize: 16, cursor: "pointer" }}>
-              Placeholder Button
-            </button>
+            <div style={{ width: "100%", marginBottom: 12 }}>
+              <label style={{ color: "#DFE3F5", fontWeight: 600, fontSize: 16, marginBottom: 8, display: "block" }}>Date Format</label>
+              <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                <label style={{ color: "#DFE3F5", fontSize: 15, cursor: "pointer" }}>
+                  <input
+                    type="radio"
+                    name="date-format"
+                    value="Month D, Yr"
+                    checked={dateFormat === "Month D, Yr"}
+                    onChange={() => setDateFormat("Month D, Yr")}
+                    style={{ marginRight: 8 }}
+                  />
+                  Month D, Yr (Default)
+                </label>
+                <label style={{ color: "#DFE3F5", fontSize: 15, cursor: "pointer" }}>
+                  <input
+                    type="radio"
+                    name="date-format"
+                    value="YY/MM/DD"
+                    checked={dateFormat === "YY/MM/DD"}
+                    onChange={() => setDateFormat("YY/MM/DD")}
+                    style={{ marginRight: 8 }}
+                  />
+                  YY/MM/DD
+                </label>
+                <label style={{ color: "#DFE3F5", fontSize: 15, cursor: "pointer" }}>
+                  <input
+                    type="radio"
+                    name="date-format"
+                    value="MM/DD/YY"
+                    checked={dateFormat === "MM/DD/YY"}
+                    onChange={() => setDateFormat("MM/DD/YY")}
+                    style={{ marginRight: 8 }}
+                  />
+                  MM/DD/YY
+                </label>
+                <label style={{ color: "#DFE3F5", fontSize: 15, cursor: "pointer" }}>
+                  <input
+                    type="radio"
+                    name="date-format"
+                    value="DD/MM/YY"
+                    checked={dateFormat === "DD/MM/YY"}
+                    onChange={() => setDateFormat("DD/MM/YY")}
+                    style={{ marginRight: 8 }}
+                  />
+                  DD/MM/YY
+                </label>
+              </div>
+            </div>
           </div>
         </div>
       )}
