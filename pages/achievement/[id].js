@@ -36,10 +36,18 @@ export async function getStaticProps({ params }) {
   achievements = achievements.filter(a => a && a.id && a.name);
 
   const achievement = achievements.find(a => a.id.toString() === params.id) || null;
-  return { props: { achievement } };
+
+  // Compute placement (rank) in the filtered list
+  let placement = null;
+  if (achievement) {
+    const index = achievements.findIndex(a => a.id.toString() === params.id);
+    if (index !== -1) placement = index + 1;
+  }
+
+  return { props: { achievement, placement } };
 }
 
-export default function AchievementPage({ achievement }) {
+export default function AchievementPage({ achievement, placement }) {
   const [copyMsg, setCopyMsg] = useState('');
   function showCopyNotification(text) {
     setCopyMsg(text);
@@ -165,7 +173,7 @@ export default function AchievementPage({ achievement }) {
                 </div>
               )}
               { }
-              {/* Level Info: ID, Length, Version, Date (copyable, fancy) */}
+              {/* Level Info: ID, Date, Length, Version (copyable, fancy) */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 12, marginTop: 12 }}>
                 {achievement.levelID && (
                   <div style={{ marginBottom: 4, display: 'flex', alignItems: 'center', gap: 8 }}>
@@ -207,14 +215,17 @@ export default function AchievementPage({ achievement }) {
                     >{achievement.version}</button>
                   </div>
                 )}
-                {achievement.rank && (
-                  <div style={{ marginBottom: 8, display: 'flex', alignItems: 'center', gap: 8 }}>
-                    <strong>Rank:</strong>
-                    <span style={{ background: 'rgba(0,0,0,0.18)', borderRadius: 6, padding: '2px 12px', fontWeight: 600, fontSize: 16, color: '#ffe066', letterSpacing: 1 }}>{achievement.rank}</span>
-                  </div>
-                )}
               </div>
-              { }
+              {placement && (
+                <div style={{ marginBottom: 4, display: 'flex', alignItems: 'center', gap: 8 }}>
+                  <strong>Rank:</strong>
+                  <button
+                    onClick={() => { navigator.clipboard.writeText(placement); showCopyNotification(`Copied Rank: ${placement}`); }}
+                    className="copy-btn"
+                    style={{ marginLeft: 4 }}
+                  >{placement}</button>
+                </div>
+              )}
               {achievement.showcaseVideo && (
                 <div style={{ marginTop: 16 }}>
                   <h3 style={{ fontSize: '1.1rem', marginBottom: 6 }}>Showcase</h3>
