@@ -133,7 +133,7 @@ export default function AchievementPage({ achievement }) {
             <div style={{ position: 'relative', zIndex: 1 }}>
               <h2 className="achievement-title" style={{ fontSize: '2rem', marginBottom: 8, textAlign: 'center' }}>{achievement.name}</h2>
               <p className="achievement-player" style={{ fontWeight: 700, color: '#8fa1c7', marginBottom: 16, textAlign: 'center', fontSize: '1.25rem' }}>{achievement.player}</p>
-              {}
+              { }
               {getEmbedLink(achievement.video) ? (
                 <iframe
                   src={getEmbedLink(achievement.video)}
@@ -147,7 +147,7 @@ export default function AchievementPage({ achievement }) {
               ) : (
                 <p style={{ color: '#aaa', marginBottom: 16 }}>No video available</p>
               )}
-              {}
+              { }
               {achievement.tags && achievement.tags.length > 0 && (
                 <div style={{ marginBottom: 16, textAlign: 'left' }}>
                   <strong>Tags:</strong>{' '}
@@ -164,24 +164,34 @@ export default function AchievementPage({ achievement }) {
                   </span>
                 </div>
               )}
-              {}
+              { }
               {/* Level Info: ID, Length, Version, Date (copyable, fancy) */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 12, marginTop: 12 }}>
                 {achievement.levelID && (
                   <div style={{ marginBottom: 4, display: 'flex', alignItems: 'center', gap: 8 }}>
                     <strong>ID:</strong>
                     <button
-                      onClick={() => {navigator.clipboard.writeText(achievement.levelID); showCopyNotification(`Copied ID: ${achievement.levelID}`);}}
+                      onClick={() => { navigator.clipboard.writeText(achievement.levelID); showCopyNotification(`Copied ID: ${achievement.levelID}`); }}
                       className="copy-btn"
                       style={{ marginLeft: 4 }}
                     >{achievement.levelID}</button>
+                  </div>
+                )}
+                {achievement.date && (
+                  <div style={{ marginBottom: 4, display: 'flex', alignItems: 'center', gap: 8 }}>
+                    <strong>Date:</strong>
+                    <button
+                      onClick={() => { navigator.clipboard.writeText(formatDate(achievement.date)); showCopyNotification(`Copied Date: ${formatDate(achievement.date)}`); }}
+                      className="copy-btn"
+                      style={{ marginLeft: 4 }}
+                    >{formatDate(achievement.date)}</button>
                   </div>
                 )}
                 {achievement.length && (
                   <div style={{ marginBottom: 4, display: 'flex', alignItems: 'center', gap: 8 }}>
                     <strong>Length:</strong>
                     <button
-                      onClick={() => {navigator.clipboard.writeText(formatLength(achievement.length)); showCopyNotification(`Copied Length: ${formatLength(achievement.length)}`);}}
+                      onClick={() => { navigator.clipboard.writeText(formatLength(achievement.length)); showCopyNotification(`Copied Length: ${formatLength(achievement.length)}`); }}
                       className="copy-btn"
                       style={{ marginLeft: 4 }}
                     >{formatLength(achievement.length)}</button>
@@ -191,24 +201,20 @@ export default function AchievementPage({ achievement }) {
                   <div style={{ marginBottom: 4, display: 'flex', alignItems: 'center', gap: 8 }}>
                     <strong>Version:</strong>
                     <button
-                      onClick={() => {navigator.clipboard.writeText(achievement.version); showCopyNotification(`Copied Version: ${achievement.version}`);}}
+                      onClick={() => { navigator.clipboard.writeText(achievement.version); showCopyNotification(`Copied Version: ${achievement.version}`); }}
                       className="copy-btn"
                       style={{ marginLeft: 4 }}
                     >{achievement.version}</button>
                   </div>
                 )}
-                {achievement.date && (
-                  <div style={{ marginBottom: 4, display: 'flex', alignItems: 'center', gap: 8 }}>
-                    <strong>Date:</strong>
-                    <button
-                      onClick={() => {navigator.clipboard.writeText(formatDate(achievement.date)); showCopyNotification(`Copied Date: ${formatDate(achievement.date)}`);}}
-                      className="copy-btn"
-                      style={{ marginLeft: 4 }}
-                    >{formatDate(achievement.date)}</button>
+                {achievement.rank && (
+                  <div style={{ marginBottom: 8, display: 'flex', alignItems: 'center', gap: 8 }}>
+                    <strong>Rank:</strong>
+                    <span style={{ background: 'rgba(0,0,0,0.18)', borderRadius: 6, padding: '2px 12px', fontWeight: 600, fontSize: 16, color: '#ffe066', letterSpacing: 1 }}>{achievement.rank}</span>
                   </div>
                 )}
               </div>
-              {}
+              { }
               {achievement.showcaseVideo && (
                 <div style={{ marginTop: 16 }}>
                   <h3 style={{ fontSize: '1.1rem', marginBottom: 6 }}>Showcase</h3>
@@ -225,7 +231,7 @@ export default function AchievementPage({ achievement }) {
                   )}
                 </div>
               )}
-              {}
+              { }
               {achievement.submitter && (
                 <div style={{ marginTop: 16, color: '#b6c2e1', fontSize: 13 }}>
                   <strong>Thanks for submitting this achievement,</strong> {achievement.submitter}
