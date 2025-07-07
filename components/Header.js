@@ -106,12 +106,12 @@ export default function Header() {
                   <input
                     type="radio"
                     name="date-format"
-                    value="YY/MM/DD"
-                    checked={dateFormat === "YY/MM/DD"}
-                    onChange={() => setDateFormat("YY/MM/DD")}
+                    value="YYYY/MM/DD"
+                    checked={dateFormat === "YYYY/MM/DD"}
+                    onChange={() => setDateFormat("YYYY/MM/DD")}
                     style={{ marginRight: 8 }}
                   />
-                  YY/MM/DD
+                  YYYY/MM/DD
                 </label>
                 <label style={{ color: "#DFE3F5", fontSize: 15, cursor: "pointer" }}>
                   <input
