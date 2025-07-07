@@ -21,7 +21,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header style={{ position: "relative" }}>
+    <header style={{ position: "relative", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", padding: "1rem 2rem", backgroundColor: "var(--secondary-bg)", boxShadow: "var(--shadow)" }}>
       <div className="header-left">
         <button id="mobile-hamburger-btn" className="mobile-hamburger-btn" type="button" aria-label="Open sidebar" title="Open sidebar menu">
           <span className="bi bi-list" style={{fontSize: "2rem", color: "#DFE3F5"}} aria-hidden="true"></span>
@@ -31,28 +31,27 @@ export default function Header() {
         </div>
         <h1 className="title">The Hardest Achievements List</h1>
       </div>
-      {/* Settings button on the right */}
-      <button
-        className="settings-btn"
-        aria-label="Open settings"
-        title="Open settings"
-        style={{
-          position: "absolute",
-          right: 24,
-          top: "50%",
-          transform: "translateY(-50%)",
-          background: "none",
-          border: "none",
-          cursor: "pointer",
-          padding: 8,
-          zIndex: 10
-        }}
-        onClick={() => setShowSettings(true)}
-      >
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#DFE3F5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09A1.65 1.65 0 0 0 9 3.09V3a2 2 0 1 1 4 0v.09c0 .66.39 1.26 1 1.51a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09c.22.61.85 1 1.51 1H21a2 2 0 1 1 0 4h-.09c-.66 0-1.26.39-1.51 1z"/></svg>
-      </button>
-      {/* Splash text display */}
-      <div id="splash-text" style={{fontStyle: "italic", color: "#4d566e", marginTop: "0.2em", fontSize: "1.1em"}}>{splashText}</div>
+      {/* Splash text and settings button container */}
+      <div style={{ display: "flex", alignItems: "center", gap: "1.2rem", marginLeft: "auto" }}>
+        <div className="splash-text">{splashText}</div>
+        <button
+          className="settings-btn"
+          aria-label="Open settings"
+          title="Open settings"
+          style={{
+            background: "none",
+            border: "none",
+            cursor: "pointer",
+            padding: 8,
+            zIndex: 10,
+            display: "flex",
+            alignItems: "center"
+          }}
+          onClick={() => setShowSettings(true)}
+        >
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#DFE3F5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09A1.65 1.65 0 0 0 9 3.09V3a2 2 0 1 1 4 0v.09c0 .66.39 1.26 1 1.51a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09c.22.61.85 1 1.51 1H21a2 2 0 1 1 0 4h-.09c-.66 0-1.26.39-1.51 1z"/></svg>
+        </button>
+      </div>
       {/* Settings Modal */}
       {showSettings && (
         <div
