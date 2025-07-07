@@ -1,9 +1,25 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useDateFormat } from "./DateFormatContext";
 
 export default function Header() {
   const [showSettings, setShowSettings] = useState(false);
   const { dateFormat, setDateFormat } = useDateFormat();
+  // Splash text state
+  const [splashText, setSplashText] = useState("");
+
+  useEffect(() => {
+    // Fetch splash texts from public folder
+    fetch("/splash-text.json")
+      .then(res => res.json())
+      .then(data => {
+        if (Array.isArray(data) && data.length > 0) {
+          const randomSplash = data[Math.floor(Math.random() * data.length)];
+          setSplashText(randomSplash);
+        }
+      })
+      .catch(() => setSplashText(""));
+  }, []);
+
   return (
     <header style={{ position: "relative" }}>
       <div className="header-left">
@@ -35,7 +51,8 @@ export default function Header() {
       >
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#DFE3F5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09A1.65 1.65 0 0 0 9 3.09V3a2 2 0 1 1 4 0v.09c0 .66.39 1.26 1 1.51a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09c.22.61.85 1 1.51 1H21a2 2 0 1 1 0 4h-.09c-.66 0-1.26.39-1.51 1z"/></svg>
       </button>
-      <div id="splash-text" style={{fontStyle: "italic", color: "#4d566e", marginTop: "0.2em", fontSize: "1.1em"}}></div>
+      {/* Splash text display */}
+      <div id="splash-text" style={{fontStyle: "italic", color: "#4d566e", marginTop: "0.2em", fontSize: "1.1em"}}>{splashText}</div>
       {/* Settings Modal */}
       {showSettings && (
         <div
