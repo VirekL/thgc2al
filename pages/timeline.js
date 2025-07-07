@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { useEffect, useState, useMemo } from 'react';
+import { useDateFormat } from '../components/DateFormatContext';
 import Background from '../components/Background';
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
@@ -22,7 +23,23 @@ function calculateDaysLasted(currentDate, previousDate) {
   return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 }
 
+function formatDate(date, dateFormat) {
+  if (!date) return 'N/A';
+  const d = new Date(date);
+  if (isNaN(d)) return 'N/A';
+  const yy = String(d.getFullYear()).slice(-2);
+  const yyyy = d.getFullYear();
+  const mm = String(d.getMonth() + 1).padStart(2, '0');
+  const dd = String(d.getDate()).padStart(2, '0');
+  if (dateFormat === 'YY/MM/DD') return `${yy}/${mm}/${dd}`;
+  if (dateFormat === 'MM/DD/YY') return `${mm}/${dd}/${yy}`;
+  if (dateFormat === 'DD/MM/YY') return `${dd}/${mm}/${yy}`;
+  // Default: Month D, Yr
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+
 function TimelineAchievementCard({ achievement, previousAchievement }) {
+  const { dateFormat } = useDateFormat();
   const lastedDays = previousAchievement ? calculateDaysLasted(achievement.date, previousAchievement.date) : 'N/A';
   return (
     <div className="achievement-item" tabIndex={0} style={{cursor: 'pointer'}}>
@@ -31,7 +48,7 @@ function TimelineAchievementCard({ achievement, previousAchievement }) {
           {achievement.length ? `${Math.floor(achievement.length / 60)}:${(achievement.length % 60).toString().padStart(2, '0')}` : 'N/A'}
         </div>
         <div className="lasted-days">Lasted {lastedDays} days</div>
-        <div className="rank"><strong>{achievement.date ? new Date(achievement.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : 'N/A'}</strong></div>
+        <div className="rank"><strong>{achievement.date ? formatDate(achievement.date, dateFormat) : 'N/A'}</strong></div>
       </div>
       <div className="tag-container">
         {(achievement.tags || []).sort((a, b) => TAG_PRIORITY_ORDER.indexOf(a.toUpperCase()) - TAG_PRIORITY_ORDER.indexOf(b.toUpperCase())).map(tag => (
