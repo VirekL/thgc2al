@@ -33,29 +33,18 @@ export default function Sidebar() {
       <Link href="/submission-stats" className="sidebar-link">Submission Stats</Link>
       <a href="#" id="random-achievement-btn" className="sidebar-link" onClick={handleRandomClick} role="button" tabIndex={0}>Random</a>
       <Link href="/about-us" className="sidebar-link">About Us</Link>
-      {/* Settings button */}
-      <button
-        className="settings-btn"
+      {/* Settings button as a sidebar-link */}
+      <a
+        href="#"
+        className="sidebar-link"
         aria-label="Open settings"
         title="Open settings"
-        style={{
-          background: "none",
-          border: "none",
-          cursor: "pointer",
-          padding: 8,
-          zIndex: 10,
-          display: "flex",
-          alignItems: "center",
-          margin: '1rem auto',
-          color: '#DFE3F5',
-          width: '100%',
-          justifyContent: 'center'
-        }}
-        onClick={() => setShowSettings(true)}
+        onClick={e => { e.preventDefault(); setShowSettings(true); }}
+        tabIndex={0}
+        role="button"
       >
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#DFE3F5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09A1.65 1.65 0 0 0 9 3.09V3a2 2 0 1 1 4 0v.09c0 .66.39 1.26 1 1.51a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09c.22.61.85 1 1.51 1H21a2 2 0 1 1 0 4h-.09c-.66 0-1.26.39-1.51 1z"/></svg>
-        <span style={{marginLeft: 8}}>Settings</span>
-      </button>
+        Settings
+      </a>
       {showSettings && (
         <div
           className="settings-modal-overlay"
