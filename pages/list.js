@@ -132,7 +132,7 @@ function formatDate(date, dateFormat) {
   const yyyy = d.getFullYear();
   const mm = String(d.getMonth() + 1).padStart(2, '0');
   const dd = String(d.getDate()).padStart(2, '0');
-  if (dateFormat === 'YY/MM/DD') return `${yy}/${mm}/${dd}`;
+  if (dateFormat === 'YYYY/MM/DD') return `${yyyy}/${mm}/${dd}`;
   if (dateFormat === 'MM/DD/YY') return `${mm}/${dd}/${yy}`;
   if (dateFormat === 'DD/MM/YY') return `${dd}/${mm}/${yy}`;
   // Default: Month D, Yr
