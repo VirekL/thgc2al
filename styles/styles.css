@@ -1314,7 +1314,7 @@ main {
   width: 100%;
   background: var(--primary-bg);
   border-bottom: 2px solid var(--hover-bg);
-  padding: 0 0 1.5rem 0;
+  padding: 0 0 1rem 0;
   margin-bottom: 0;
   box-shadow: 0 2px 8px 0 #181a24;
   z-index: 10;
