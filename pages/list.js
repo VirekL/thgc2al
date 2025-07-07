@@ -3,6 +3,7 @@ import { useEffect, useState, useMemo, useRef, useCallback, useTransition } from
 import Link from 'next/link';
 import Sidebar from '../components/Sidebar';
 import Background from '../components/Background';
+import { useDateFormat } from '../components/DateFormatContext';
 
 const TAG_DEFINITIONS = {
   LEVEL: { color: 'rgb(34, 139, 34)', text: 'Level' },
@@ -123,7 +124,23 @@ function TagFilterPills({ allTags, filterTags, setFilterTags, isMobile, show, se
   );
 }
 
+function formatDate(date, dateFormat) {
+  if (!date) return 'N/A';
+  const d = new Date(date);
+  if (isNaN(d)) return 'N/A';
+  const yy = String(d.getFullYear()).slice(-2);
+  const yyyy = d.getFullYear();
+  const mm = String(d.getMonth() + 1).padStart(2, '0');
+  const dd = String(d.getDate()).padStart(2, '0');
+  if (dateFormat === 'YY/MM/DD') return `${yy}/${mm}/${dd}`;
+  if (dateFormat === 'MM/DD/YY') return `${mm}/${dd}/${yy}`;
+  if (dateFormat === 'DD/MM/YY') return `${dd}/${mm}/${yy}`;
+  // Default: Month D, Yr
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+
 function AchievementCard({ achievement, onClick }) {
+  const { dateFormat } = useDateFormat();
   return (
     <Link href={`/achievement/${achievement.id}`} passHref legacyBehavior>
       <a style={{ textDecoration: 'none', color: 'inherit' }}>
@@ -133,7 +150,7 @@ function AchievementCard({ achievement, onClick }) {
               {achievement.length ? `${Math.floor(achievement.length / 60)}:${(achievement.length % 60).toString().padStart(2, '0')}` : 'N/A'}
             </div>
             <div className="achievement-date">
-              {achievement.date ? new Date(achievement.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : 'N/A'}
+              {achievement.date ? formatDate(achievement.date, dateFormat) : 'N/A'}
             </div>
             <div className="rank"><strong>#{achievement.rank}</strong></div>
           </div>
