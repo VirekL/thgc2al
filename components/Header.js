@@ -32,7 +32,7 @@ export default function Header() {
         <h1 className="title">The Hardest Achievements List</h1>
       </div>
       {/* Splash text and settings button container */}
-      <div style={{ display: "flex", alignItems: "center", gap: "1.2rem", marginLeft: "auto" }}>
+      <div style={{ display: "flex", alignItems: "center", marginLeft: "auto" }}>
         <div className="splash-text">{splashText}</div>
         <button
           className="settings-btn"
