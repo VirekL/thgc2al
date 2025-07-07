@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { useDateFormat } from "./DateFormatContext";
 import Sidebar from "./Sidebar";
 
 export default function Header() {
