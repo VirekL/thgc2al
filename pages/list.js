@@ -269,7 +269,6 @@ export default function List() {
           </div>
           <h1 className="title main-title">The Hardest Achievements List</h1>
         </div>
-        <div id="splash-text" className="splash-text"></div>
         <div className="search-bar">
           <input
             type="text"
