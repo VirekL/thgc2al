@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
 const DateFormatContext = createContext({
   dateFormat: "Month D, Yr",
@@ -6,7 +6,25 @@ const DateFormatContext = createContext({
 });
 
 export function DateFormatProvider({ children }) {
-  const [dateFormat, setDateFormat] = useState("Month D, Yr");
+  const [dateFormat, setDateFormatState] = useState("Month D, Yr");
+
+  // Load from localStorage on mount
+  useEffect(() => {
+    const saved =
+      typeof window !== "undefined" && localStorage.getItem("dateFormat");
+    if (saved) setDateFormatState(saved);
+  }, []);
+
+  // Save to localStorage on change
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("dateFormat", dateFormat);
+    }
+  }, [dateFormat]);
+
+  // Wrap setDateFormat to update state
+  const setDateFormat = (val) => setDateFormatState(val);
+
   return (
     <DateFormatContext.Provider value={{ dateFormat, setDateFormat }}>
       {children}
