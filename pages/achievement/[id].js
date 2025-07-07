@@ -6,6 +6,7 @@ import Sidebar from '../../components/Sidebar';
 import fs from 'fs';
 import path from 'path';
 import { useState } from 'react';
+import { useDateFormat } from '../../components/DateFormatContext';
 
 export async function getStaticPaths() {
   const achievementsPath = path.join(process.cwd(), 'public', 'achievements.json');
@@ -49,6 +50,7 @@ export async function getStaticProps({ params }) {
 
 export default function AchievementPage({ achievement, placement }) {
   const [copyMsg, setCopyMsg] = useState('');
+  const { dateFormat } = useDateFormat();
   function showCopyNotification(text) {
     setCopyMsg(text);
     setTimeout(() => setCopyMsg(''), 1800);
@@ -58,6 +60,14 @@ export default function AchievementPage({ achievement, placement }) {
     if (!date) return 'N/A';
     const d = new Date(date);
     if (isNaN(d)) return 'N/A';
+    const yy = String(d.getFullYear()).slice(-2);
+    const yyyy = d.getFullYear();
+    const mm = String(d.getMonth() + 1).padStart(2, '0');
+    const dd = String(d.getDate()).padStart(2, '0');
+    if (dateFormat === 'YY/MM/DD') return `${yy}/${mm}/${dd}`;
+    if (dateFormat === 'MM/DD/YY') return `${mm}/${dd}/${yy}`;
+    if (dateFormat === 'DD/MM/YY') return `${dd}/${mm}/${yy}`;
+    // Default: Month D, Yr
     return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
   }
   function formatLength(length) {
