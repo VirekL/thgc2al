@@ -1,8 +1,9 @@
 import { useState } from "react";
+import { useDateFormat } from "./DateFormatContext";
 
 export default function Header() {
   const [showSettings, setShowSettings] = useState(false);
-  const [dateFormat, setDateFormat] = useState("Month D, Yr");
+  const { dateFormat, setDateFormat } = useDateFormat();
   return (
     <header style={{ position: "relative" }}>
       <div className="header-left">
