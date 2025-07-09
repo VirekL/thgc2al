@@ -4,13 +4,7 @@ import { useDateFormat } from '../components/DateFormatContext';
 import Background from '../components/Background';
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
-import Tag from '../components/Tag';
-
-const TAG_PRIORITY_ORDER = [
-  'LEVEL', 'CHALLENGE', 'LOW HERTZ', 'MOBILE', 'SPEEDHACK',
-  'NOCLIP', 'MISCELLANEOUS', 'PROGRESS', 'CONSISTENCY', '2P', 'CBF',
-  'RATED', 'FORMERLY RATED', 'OUTDATED VERSION'
-];
+import Tag, { TAG_PRIORITY_ORDER } from '../components/Tag';
 
 function calculateDaysLasted(currentDate, previousDate) {
   if (!currentDate || !previousDate) return 'N/A';
@@ -139,19 +133,19 @@ export default function Timeline() {
             />
           </div>
           <div className="tag-filter-pills" style={{marginBottom: 16, display: 'flex', flexWrap: 'wrap', gap: 8}}>
-            {allTags.map(tag => {
+            {allTags.sort((a, b) => TAG_PRIORITY_ORDER.indexOf(a.toUpperCase()) - TAG_PRIORITY_ORDER.indexOf(b.toUpperCase())).map(tag => {
               let state = 'neutral';
               if (filterTags.include.includes(tag)) state = 'include';
               if (filterTags.exclude.includes(tag)) state = 'exclude';
               return (
-                <span
+                <Tag
                   key={tag}
-                  className={`tag-filter-pill ${state}`}
-                  style={{cursor: 'pointer', padding: '4px 10px', borderRadius: 6, background: state === 'include' ? '#2E3451' : state === 'exclude' ? '#424A66' : '#1B1F30', color: '#DFE3F5', border: '1px solid #343A52'}}
+                  tag={tag}
+                  state={state}
                   onClick={() => handleTagClick(tag)}
-                >
-                  {tag}
-                </span>
+                  clickable={true}
+                  tabIndex={0}
+                />
               );
             })}
           </div>
