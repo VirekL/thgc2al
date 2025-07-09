@@ -1358,3 +1358,11 @@ main {
   color: #ffe066;
   transform: scale(0.98);
 }
+.achievement-item .tag-container {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 6;
+}
