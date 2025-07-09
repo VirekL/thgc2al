@@ -23,12 +23,31 @@ const TAG_DEFINITIONS = {
     'OUTDATED VERSION': { className: 'tag-outdated-version', icon: '/assets/outdated-version-icon.png', text: 'Outdated Version' },
 };
 
-export default function Tag({ tag }) {
+export default function Tag({ tag, onClick, tabIndex, clickable, state }) {
     const def = TAG_DEFINITIONS[tag.toUpperCase()] || {};
-    const classNames = ['tag', def.className].filter(Boolean).join(' ');
+    const classNames = [
+        'tag',
+        def.className,
+        clickable ? 'tag-clickable' : '',
+        state === 'include' ? 'tag-include' : '',
+        state === 'exclude' ? 'tag-exclude' : '',
+        state === 'neutral' ? 'tag-neutral' : ''
+    ].filter(Boolean).join(' ');
     return (
         <>
-            <span className={classNames}>
+            <span
+                className={classNames}
+                onClick={clickable ? onClick : undefined}
+                tabIndex={clickable ? (tabIndex ?? 0) : undefined}
+                role={clickable ? 'button' : undefined}
+                aria-pressed={clickable ? (state === 'include' ? 'true' : 'false') : undefined}
+                onKeyDown={clickable ? (e => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        onClick && onClick(e);
+                    }
+                }) : undefined}
+            >
                 {def.icon && (
                     <img src={def.icon} alt={def.text} />
                 )}
@@ -50,6 +69,30 @@ export default function Tag({ tag }) {
           text-transform: uppercase;
           text-shadow: 2px 2px 6px rgba(0,0,0,0.85), 0 1px 2px #000;
           transition: background 0.3s, border 0.2s, opacity 0.2s;
+          outline: none;
+          cursor: default;
+        }
+        .tag-clickable {
+          cursor: pointer;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        }
+        .tag-clickable:focus {
+          outline: 2px solid #fff;
+          outline-offset: 2px;
+        }
+        .tag-clickable:hover {
+          opacity: 0.85;
+          filter: brightness(1.1);
+        }
+        .tag-include {
+          border: 2px solid #43e97b;
+        }
+        .tag-exclude {
+          border: 2px solid #e52d27;
+          opacity: 0.7;
+        }
+        .tag-neutral {
+          border: 2px solid transparent;
         }
         .tag img {
           width: 16px;
