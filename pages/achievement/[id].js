@@ -94,31 +94,7 @@ export default function AchievementPage({ achievement, placement }) {
     'OUTDATED VERSION': { color: 'rgb(110, 103, 33)', icon: '/assets/outdated-version-icon.png', text: 'Outdated Version' },
   };
   function Tag({ tag }) {
-    const def = TAG_DEFINITIONS[tag.toUpperCase()];
-    return (
-      <span
-        className="tag-filter-pill neutral"
-        style={{
-          background: def?.color || '#2E3451',
-          color: '#fff',
-          display: 'inline-flex',
-          alignItems: 'center',
-          gap: 4,
-          fontWeight: 500,
-          fontSize: 13,
-          padding: '4px 10px',
-          borderRadius: 20,
-          marginRight: 4,
-          border: '1px solid #343A52',
-          boxShadow: '0 1px 3px rgba(0,0,0,0.10)'
-        }}
-      >
-        {def?.icon && (
-          <img src={def.icon} alt={def.text} style={{ width: 16, height: 16, verticalAlign: 'middle' }} />
-        )}
-        <span>{def?.text || tag}</span>
-      </span>
-    );
+    return <span className="tag">{tag}</span>;
   }
   function getEmbedLink(url) {
     if (!url) return null;
