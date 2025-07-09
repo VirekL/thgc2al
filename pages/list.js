@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Sidebar from '../components/Sidebar';
 import Background from '../components/Background';
 import { useDateFormat } from '../components/DateFormatContext';
-import Tag from '../components/Tag';
+import Tag, { TAG_PRIORITY_ORDER } from '../components/Tag';
 
 function TagFilterPills({ allTags, filterTags, setFilterTags, isMobile, show, setShow }) {
   const tagStates = {};
