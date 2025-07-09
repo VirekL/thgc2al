@@ -7,7 +7,7 @@ import fs from 'fs';
 import path from 'path';
 import { useState } from 'react';
 import { useDateFormat } from '../../components/DateFormatContext';
-import Tag from '../../components/Tag';
+import Tag, { TAG_PRIORITY_ORDER } from '../../components/Tag';
 
 export async function getStaticPaths() {
   const achievementsPath = path.join(process.cwd(), 'public', 'achievements.json');
@@ -152,7 +152,7 @@ export default function AchievementPage({ achievement, placement }) {
                 <div style={{ marginBottom: 16, textAlign: 'left' }}>
                   <strong>Tags:</strong>{' '}
                   <span style={{ display: 'inline-flex', gap: 8, flexWrap: 'wrap', verticalAlign: 'middle', justifyContent: 'flex-start' }}>
-                    {achievement.tags.map(tag => (
+                    {achievement.tags.sort((a, b) => TAG_PRIORITY_ORDER.indexOf(a.toUpperCase()) - TAG_PRIORITY_ORDER.indexOf(b.toUpperCase())).map(tag => (
                       <Tag tag={tag} key={tag} />
                     ))}
                   </span>
