@@ -76,10 +76,6 @@ export default function Tag({ tag, onClick, tabIndex, clickable, state }) {
           cursor: pointer;
           box-shadow: 0 2px 8px rgba(0,0,0,0.18);
         }
-        .tag-clickable:focus {
-          outline: 2px solid #fff;
-          outline-offset: 2px;
-        }
         .tag-clickable:hover {
           opacity: 0.85;
           filter: brightness(1.1);
