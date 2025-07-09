@@ -44,7 +44,6 @@ export default function Tag({ tag }) {
           padding: 4px 10px;
           border-radius: 8px;
           margin-right: 4px;
-          border: 1px solid #343A52;
           box-shadow: 0 1px 3px rgba(0,0,0,0.10);
           color: #fff;
           background: linear-gradient(135deg, #23283E 0%, #2E3451 100%);
@@ -59,46 +58,46 @@ export default function Tag({ tag }) {
           filter: drop-shadow(0 2px 4px rgba(0,0,0,0.7)) drop-shadow(0 0px 1px #000);
         }
 .tag-level {
-  background: linear-gradient(135deg, #43e97b 0%,rgb(33, 156, 136) 100%);
+  background: linear-gradient(135deg, #43e97b 0%,rgb(37, 164, 180) 100%);
 }
 .tag-challenge {
-  background: linear-gradient(135deg, #ffb347 0%,rgb(255, 127, 95) 100%);
+  background: linear-gradient(135deg, #ffb347 0%,rgb(255, 95, 162) 100%);
 }
 .tag-low-hertz {
-  background: linear-gradient(135deg,rgb(175, 45, 226) 0%,rgb(140, 56, 189) 100%);
+  background: linear-gradient(135deg,rgb(215, 36, 231) 0%,rgb(98, 50, 209) 100%);
 }
 .tag-mobile {
   background: linear-gradient(135deg, #4facfe 0%,rgb(28, 92, 175) 100%);
 }
 .tag-speedhack {
-  background: linear-gradient(135deg, #ff6a00 0%,rgb(219, 125, 48) 100%);
+  background: linear-gradient(135deg, #ff6a00 0%,rgb(192, 82, 31) 100%);
 }
 .tag-noclip {
   background: linear-gradient(135deg, #e52d27 0%,rgb(139, 0, 46) 100%);
 }
 .tag-miscellaneous {
-  background: linear-gradient(135deg, #c6cbd4 0%,rgb(134, 147, 153) 100%);
+  background: linear-gradient(135deg,rgb(168, 172, 179) 0%,rgb(99, 107, 110) 100%);
 }
 .tag-progress {
   background: linear-gradient(135deg, #6dd5ed 0%, #4682b4 100%);
 }
 .tag-consistency {
-  background: linear-gradient(135deg, #8f94fb 0%, #4e54c8 100%);
+  background: linear-gradient(135deg, #8f94fb 0%,rgb(48, 55, 180) 100%);
 }
 .tag-2p {
-  background: linear-gradient(135deg, #ffb347 0%, #ff7e00 100%);
+  background: linear-gradient(135deg,rgb(245, 122, 41) 0%,rgb(190, 88, 40) 100%);
 }
 .tag-cbf {
   background: linear-gradient(135deg, #ff758c 0%, #db303f 100%);
 }
 .tag-rated {
-  background: linear-gradient(135deg, #ffe259 0%, #e6b83c 100%);
+  background: linear-gradient(135deg,rgb(255, 183, 89) 0%,rgb(179, 145, 51) 100%);
 }
 .tag-formerly-rated {
   background: linear-gradient(135deg, #ff9966 0%, #833325 100%);
 }
 .tag-outdated-version {
-  background: linear-gradient(135deg, #f9d423 0%,rgb(206, 155, 47) 100%);
+  background: linear-gradient(135deg,rgb(138, 134, 115) 0%,rgb(206, 155, 47) 100%);
 }
       `}</style>
         </>
