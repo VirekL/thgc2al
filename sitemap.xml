@@ -1,1 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://hardest-achievements-list.pages.dev/list</loc></url><url><loc>https://hardest-achievements-list.pages.dev/leaderboard</loc></url><url><loc>https://hardest-achievements-list.pages.dev/submission-stats</loc></url><url><loc>https://hardest-achievements-list.pages.dev/timeline</loc></url><url><loc>https://hardest-achievements-list.pages.dev/about-us</loc></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://thal.netlify.app/list</loc>
+  </url>
+  <url>
+    <loc>https://thal.netlify.app/leaderboard</loc>
+  </url>
+  <url>
+    <loc>https://thal.netlify.app/submission-stats</loc>
+  </url>
+  <url>
+    <loc>https://thal.netlify.app/timeline</loc>
+  </url>
+  <url>
+    <loc>https://thal.netlify.app/about-us</loc>
+  </url>
+</urlset>
