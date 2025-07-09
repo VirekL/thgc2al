@@ -1,3 +1,9 @@
+const TAG_PRIORITY_ORDER = [
+  'LEVEL', 'CHALLENGE', 'LOW HERTZ', 'MOBILE', 'SPEEDHACK',
+  'NOCLIP', 'MISCELLANEOUS', 'PROGRESS', 'CONSISTENCY', '2P', 'CBF',
+  'RATED', 'FORMERLY RATED', 'OUTDATED VERSION'
+];
+
 const TAG_DEFINITIONS = {
   LEVEL: { color: 'rgb(34, 139, 34)', text: 'Level' },
   CHALLENGE: { color: 'rgb(255, 165, 0)', text: 'Challenge' },
@@ -43,4 +49,4 @@ export default function Tag({ tag }) {
   );
 }
 
-export { TAG_DEFINITIONS };
+export { TAG_DEFINITIONS, TAG_PRIORITY_ORDER };
