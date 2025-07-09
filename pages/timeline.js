@@ -4,56 +4,13 @@ import { useDateFormat } from '../components/DateFormatContext';
 import Background from '../components/Background';
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
+import Tag from '../components/Tag';
 
 const TAG_PRIORITY_ORDER = [
   'LEVEL', 'CHALLENGE', 'LOW HERTZ', 'MOBILE', 'SPEEDHACK',
   'NOCLIP', 'MISCELLANEOUS', 'PROGRESS', 'CONSISTENCY', '2P', 'CBF',
   'RATED', 'FORMERLY RATED', 'OUTDATED VERSION'
 ];
-
-function Tag({ tag }) {
-  const TAG_DEFINITIONS = {
-    LEVEL: { color: 'rgb(34, 139, 34)' },
-    CHALLENGE: { color: 'rgb(255, 165, 0)' },
-    'LOW HERTZ': { color: 'rgb(128, 0, 128)' },
-    MOBILE: { color: 'rgb(0, 191, 255)' },
-    SPEEDHACK: { color: 'rgb(255, 69, 0)' },
-    NOCLIP: { color: 'rgb(139, 0, 0)' },
-    MISCELLANEOUS: { color: 'rgb(105, 105, 105)' },
-    PROGRESS: { color: 'rgb(70, 130, 180)' },
-    CONSISTENCY: { color: 'rgb(75, 0, 130)' },
-    '2P': { color: 'rgb(230, 115, 39)', icon: '/assets/2p-icon.png' },
-    CBF: { color: 'rgb(219, 48, 63)', icon: '/assets/cbf-logo.png' },
-    RATED: { color: 'rgb(230, 184, 60)', icon: '/assets/rated-icon.png' },
-    'FORMERLY RATED': { color: 'rgb(131, 51, 37)', icon: '/assets/formerly-rated-icon.png' },
-    'OUTDATED VERSION': { color: 'rgb(110, 103, 33)', icon: '/assets/outdated-version-icon.png' },
-  };
-  const def = TAG_DEFINITIONS[tag.toUpperCase()];
-  return (
-    <span
-      className="tag"
-      style={{
-        background: def?.icon ? undefined : def?.color || undefined,
-        color: '#fff',
-        display: 'inline-flex',
-        alignItems: 'center',
-        gap: 4,
-        fontWeight: 500,
-        fontSize: 13,
-        padding: '4px 10px',
-        borderRadius: 8,
-        marginRight: 4,
-        border: '1px solid #343A52',
-        boxShadow: '0 1px 3px rgba(0,0,0,0.10)'
-      }}
-    >
-      {def?.icon && (
-        <img src={def.icon} alt={tag} style={{ width: 16, height: 16, verticalAlign: 'middle', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.7)) drop-shadow(0 0px 1px #000)' }} />
-      )}
-      <span>{def?.text || tag}</span>
-    </span>
-  );
-}
 
 function calculateDaysLasted(currentDate, previousDate) {
   if (!currentDate || !previousDate) return 'N/A';
