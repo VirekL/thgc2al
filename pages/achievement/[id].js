@@ -94,7 +94,32 @@ export default function AchievementPage({ achievement, placement }) {
     'OUTDATED VERSION': { color: 'rgb(110, 103, 33)', icon: '/assets/outdated-version-icon.png', text: 'Outdated Version' },
   };
   function Tag({ tag }) {
-    return <span className="tag">{tag}</span>;
+    const def = TAG_DEFINITIONS[tag.toUpperCase()];
+    return (
+      <span
+        className="tag"
+        style={{
+          background: def?.icon ? undefined : def?.color || undefined,
+          backgroundImage: def?.icon ? undefined : undefined,
+          color: '#fff',
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: 4,
+          fontWeight: 500,
+          fontSize: 13,
+          padding: '4px 10px',
+          borderRadius: 8,
+          marginRight: 4,
+          border: '1px solid #343A52',
+          boxShadow: '0 1px 3px rgba(0,0,0,0.10)'
+        }}
+      >
+        {def?.icon && (
+          <img src={def.icon} alt={def.text} style={{ width: 16, height: 16, verticalAlign: 'middle', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.7)) drop-shadow(0 0px 1px #000)' }} />
+        )}
+        <span>{def?.text || tag}</span>
+      </span>
+    );
   }
   function getEmbedLink(url) {
     if (!url) return null;
