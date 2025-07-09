@@ -27,40 +27,8 @@ const TAG_PRIORITY_ORDER = [
   'RATED', 'FORMERLY RATED', 'OUTDATED VERSION'
 ];
 
-function Tag({ tag, state = 'neutral', onClick, tabIndex = -1, clickable = false }) {
-  const def = TAG_DEFINITIONS[tag.toUpperCase()];
-  let border = state === 'include' ? '2px solid #fff' : state === 'exclude' ? '2px solid #f55' : '1px solid #343A52';
-  let opacity = state === 'exclude' ? 0.5 : 1;
-  return (
-    <span
-      className={`tag-filter-pill ${state}`}
-      style={{
-        cursor: clickable ? 'pointer' : 'default',
-        padding: '4px 10px',
-        borderRadius: 20,
-        background: def?.color || '#2E3451',
-        color: '#fff',
-        border,
-        opacity,
-        display: 'inline-flex',
-        alignItems: 'center',
-        gap: 4,
-        fontWeight: 500,
-        fontSize: 13,
-        marginRight: 4,
-        boxShadow: '0 1px 3px rgba(0,0,0,0.10)'
-      }}
-      onClick={clickable ? onClick : undefined}
-      tabIndex={clickable ? tabIndex : -1}
-      aria-label={`${tag} tag${state !== 'neutral' ? ' ' + state : ''}`}
-      onKeyDown={clickable ? e => { if (e.key === ' ' || e.key === 'Enter') { onClick(); e.preventDefault(); } } : undefined}
-    >
-      {def?.icon && (
-        <img src={def.icon} alt={def.text} style={{ width: 16, height: 16, verticalAlign: 'middle' }} />
-      )}
-      <span>{def?.text || tag}</span>
-    </span>
-  );
+function Tag({ tag }) {
+  return <span className="tag">{tag}</span>;
 }
 
 function TagFilterPills({ allTags, filterTags, setFilterTags, isMobile, show, setShow }) {
