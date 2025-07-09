@@ -1007,6 +1007,7 @@ main {
   border: 1.5px solid transparent;
   box-shadow: 0 1px 3px rgba(0,0,0,0.10);
   transition: background 0.3s, border 0.2s, opacity 0.2s;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.85), 0 1px 2px #000;
 }
 .tag-filter-pill.neutral {
   /* fallback for neutral, will be overridden inline if tag color is set */
@@ -1024,6 +1025,9 @@ main {
 .tag-filter-pill:hover, .tag-filter-pill:focus {
   filter: brightness(1.1) drop-shadow(0 2px 6px rgba(0,0,0,0.15));
   outline: none;
+}
+.tag-filter-pill img {
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.7)) drop-shadow(0 0px 1px #000);
 }
 @media (max-width: 900px) {
   .search-filter-container {
