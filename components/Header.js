@@ -31,7 +31,7 @@ export default function Header({ children }) {
 
   return (
     <header className="main-header">
-      <div className="header-bar">
+      <div className="header-bar" style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
         <button
           id="mobile-hamburger-btn"
           className="mobile-hamburger-btn"
@@ -46,10 +46,14 @@ export default function Header({ children }) {
           <img src="/assets/favicon-96x96.png" alt="The Hardest Achievements List Logo" title="The Hardest Achievements List Logo" className="logo-img" />
         </div>
         <h1 className="title main-title">The Hardest Achievements List</h1>
-        {children && <div className="header-children">{children}</div>}
-      </div>
-      <div style={{ display: "flex", alignItems: "center", marginLeft: "auto" }}>
-        <div className="splash-text">{splashText}</div>
+        {children && (
+          <div style={{ flex: 1, marginLeft: 24, marginRight: 24, display: 'flex', alignItems: 'center' }}>
+            {children}
+          </div>
+        )}
+        <div style={{ display: "flex", alignItems: "center", marginLeft: "auto" }}>
+          <div className="splash-text">{splashText}</div>
+        </div>
       </div>
       {/* Mobile Sidebar Overlay */}
       {isMobile && showSidebar && (
