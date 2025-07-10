@@ -227,29 +227,6 @@ main {
   background: linear-gradient(90deg, rgba(46,52,81,0.7) 0%, rgba(46,52,81,0.0) 100%);
   z-index: 3;
 }
-.achievement-item::before-right, .achievement-item::after-right {
-  pointer-events: none;
-}
-.achievement-item::before-right {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: var(--solid-block-width, 6%);
-  height: 100%;
-  background: linear-gradient(270deg, var(--accent-bg) 0%, rgba(46,52,81,0.7) 100%);
-  z-index: 2;
-}
-.achievement-item::after-right {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: var(--solid-block-width, 6%);
-  width: var(--fade-length, 18%);
-  height: 100%;
-  background: linear-gradient(270deg, rgba(46,52,81,0.7) 0%, rgba(46,52,81,0.0) 100%);
-  z-index: 3;
-}
 .text {
   position: relative;
   z-index: 4;
@@ -829,7 +806,7 @@ main {
 }
 
 .hidden-row a {
-    color: inherit;
+    color: var(--text-color);
     text-decoration: none;
     cursor: pointer;
 }
