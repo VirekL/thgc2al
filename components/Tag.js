@@ -51,7 +51,7 @@ export default function Tag({ tag, onClick, tabIndex, clickable, state }) {
                 {def.icon && (
                     <img src={def.icon} alt={def.text} />
                 )}
-                <span className="tag-text">{def.text || tag}</span>
+                <span>{def.text || tag}</span>
             </span>
             <style jsx>{`
         .tag {
@@ -71,9 +71,6 @@ export default function Tag({ tag, onClick, tabIndex, clickable, state }) {
           transition: background 0.3s, border 0.2s, opacity 0.2s;
           outline: none;
           cursor: default;
-        }
-        .tag-text {
-          display: inline-block;
         }
         .tag-clickable {
           cursor: pointer;
@@ -152,20 +149,6 @@ export default function Tag({ tag, onClick, tabIndex, clickable, state }) {
             padding: 2px 6px;
             border-radius: 6px;
             gap: 2px;
-            min-width: 0;
-            max-width: 100%;
-            flex-shrink: 1;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-          }
-          .tag-text {
-            min-width: 0;
-            max-width: 100%;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            display: inline-block;
           }
           .tag img {
             width: 13px;
