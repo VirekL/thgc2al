@@ -198,6 +198,30 @@ export default function List() {
           </div>
           <h1 className="title main-title">The Hardest Achievements List</h1>
         </div>
+        <div className="search-bar">
+          <input
+            type="text"
+            placeholder="Search achievements..."
+            value={search}
+            onChange={e => setSearch(e.target.value)}
+            aria-label="Search achievements"
+            className="search-input"
+          />
+          {isMobile && (
+            <button
+              ref={mobileBtnRef}
+              id="mobile-filter-toggle-btn"
+              aria-label={showMobileFilters ? 'Hide Filters' : 'Show Filters'}
+              onClick={handleMobileToggle}
+              className="mobile-filter-toggle"
+              dangerouslySetInnerHTML={{
+                __html: showMobileFilters
+                  ? '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-up.svg" alt="Hide Filters" class="arrow-img" /></span>'
+                  : '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-down.svg" alt="Show Filters" class="arrow-img" /></span>'
+              }}
+            />
+          )}
+        </div>
         <div className="tag-filter-pills-container">
           <TagFilterPills
             allTags={allTags}
@@ -212,30 +236,6 @@ export default function List() {
       <main className="main-content achievements-main">
         <Sidebar />
         <section className="achievements achievements-section">
-          <div className="achievements-search-bar">
-            <input
-              type="text"
-              placeholder="Search achievements..."
-              value={search}
-              onChange={e => setSearch(e.target.value)}
-              aria-label="Search achievements"
-              className="search-input"
-            />
-            {isMobile && (
-              <button
-                ref={mobileBtnRef}
-                id="mobile-filter-toggle-btn"
-                aria-label={showMobileFilters ? 'Hide Filters' : 'Show Filters'}
-                onClick={handleMobileToggle}
-                className="mobile-filter-toggle"
-                dangerouslySetInnerHTML={{
-                  __html: showMobileFilters
-                    ? '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-up.svg" alt="Hide Filters" class="arrow-img" /></span>'
-                    : '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-down.svg" alt="Show Filters" class="arrow-img" /></span>'
-                }}
-              />
-            )}
-          </div>
           {isPending ? (
             <div className="no-achievements">Loading...</div>
           ) : filtered.length === 0 ? (
