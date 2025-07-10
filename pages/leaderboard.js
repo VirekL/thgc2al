@@ -101,7 +101,7 @@ export default function Leaderboard() {
       <Header />
       <main className="main-content">
         <Sidebar />
-        <section id="leaderboard-section" className="leaderboard-container" style={{flexGrow: 1, padding: '2rem'}}>
+        <section id="leaderboard-section" className="leaderboard-container" style={{padding: '2rem'}}>
           <table className="leaderboard-table" style={{width: '100%', borderCollapse: 'collapse'}}>
             <thead>
               <tr>
