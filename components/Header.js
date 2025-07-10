@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Sidebar from "./Sidebar";
 
-export default function Header() {
+export default function Header({ children }) {
   // Splash text state
   const [splashText, setSplashText] = useState("");
   const [showSidebar, setShowSidebar] = useState(false);
@@ -30,8 +30,8 @@ export default function Header() {
   }, []);
 
   return (
-    <header style={{ position: "relative", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", padding: "1rem 2rem", backgroundColor: "var(--secondary-bg)", boxShadow: "var(--shadow)" }}>
-      <div className="header-left">
+    <header className="main-header">
+      <div className="header-bar">
         <button
           id="mobile-hamburger-btn"
           className="mobile-hamburger-btn"
@@ -40,14 +40,14 @@ export default function Header() {
           title="Open sidebar menu"
           onClick={() => isMobile && setShowSidebar(true)}
         >
-          <span className="bi bi-list" style={{fontSize: "2rem", color: "#DFE3F5"}} aria-hidden="true"></span>
+          <span className="bi bi-list hamburger-icon" aria-hidden="true"></span>
         </button>
         <div className="logo">
-          <img src="/assets/favicon-96x96.png" alt="The Hardest Achievements List Logo" title="The Hardest Achievements List Logo" />
+          <img src="/assets/favicon-96x96.png" alt="The Hardest Achievements List Logo" title="The Hardest Achievements List Logo" className="logo-img" />
         </div>
-        <h1 className="title">The Hardest Achievements List</h1>
+        <h1 className="title main-title">The Hardest Achievements List</h1>
+        {children && <div className="header-children">{children}</div>}
       </div>
-      {/* Splash text only, settings button removed */}
       <div style={{ display: "flex", alignItems: "center", marginLeft: "auto" }}>
         <div className="splash-text">{splashText}</div>
       </div>
