@@ -175,7 +175,6 @@ main {
   position: relative;
   display: flex;
   align-items: center;
-  background-color: var(--accent-bg);
   border-radius: var(--border-radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -215,7 +214,7 @@ main {
   left: 0;
   width: var(--solid-block-width, 10%);
   height: 100%;
-  background-color: var(--accent-bg);
+  background: linear-gradient(90deg, var(--accent-bg) 0%, rgba(46,52,81,0.95) 60%, rgba(46,52,81,0.7) 100%);
   z-index: 2;
 }
 .achievement-item::after {
@@ -225,7 +224,7 @@ main {
   left: var(--solid-block-width, 10%);
   width: var(--fade-length, 40%);
   height: 100%;
-  background: linear-gradient(to right, rgba(46, 52, 81, 1), rgba(46, 52, 81, 0));
+  background: linear-gradient(90deg, rgba(46,52,81,0.95) 0%, rgba(46,52,81,0.5) 60%, rgba(46,52,81,0) 100%);
   z-index: 3;
 }
 .text {
