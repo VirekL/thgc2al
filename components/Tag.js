@@ -81,14 +81,17 @@ export default function Tag({ tag, onClick, tabIndex, clickable, state }) {
           filter: brightness(1.1);
         }
         .tag-include {
-          border: 2px solid #43e97b;
+          border: none;
+          box-shadow: 0 0 0 3px rgba(67, 233, 123, 0.35);
         }
         .tag-exclude {
-          border: 2px solid #e52d27;
+          border: none;
+          box-shadow: 0 0 0 3px rgba(229, 45, 39, 0.25);
           opacity: 0.7;
         }
         .tag-neutral {
-          border: 2px solid transparent;
+          border: none;
+          box-shadow: none;
         }
         .tag img {
           width: 16px;
