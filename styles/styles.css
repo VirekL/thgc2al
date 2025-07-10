@@ -1386,7 +1386,7 @@ main {
   }
 }
 
-/* --- Mobile Sidebar Fullscreen Fix (non-destructive) --- */
+/* --- Mobile Sidebar Fullscreen Fix (improved) --- */
 @media (max-width: 768px) {
   .sidebar.sidebar-mobile-fullscreen {
     display: block !important;
@@ -1401,8 +1401,51 @@ main {
     box-shadow: none !important;
     z-index: 3000 !important;
     background: var(--secondary-bg);
-    padding-bottom: 0;
-    overflow-y: auto;
+    padding: 2.5rem 0.5rem 1rem 0.5rem !important;
+    overflow-y: auto !important;
     transition: left 0.3s, width 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .sidebar-mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 2999;
+    display: block;
+    transition: opacity 0.3s;
+  }
+  .sidebar .sidebar-link {
+    font-size: 1.2rem;
+    padding: 1.2rem 1.2rem;
+    margin-bottom: 1.2rem;
+    text-align: left;
+  }
+  .sidebar .sidebar-link:last-child {
+    margin-bottom: 0;
+  }
+  .sidebar .settings-modal-overlay {
+    z-index: 4000 !important;
+  }
+}
+
+/* Sidebar close button for mobile */
+@media (max-width: 768px) {
+  .sidebar .sidebar-close-btn {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    background: none;
+    border: none;
+    color: #DFE3F5;
+    font-size: 2.2rem;
+    cursor: pointer;
+    z-index: 3100;
+    padding: 0;
+    line-height: 1;
   }
 }
