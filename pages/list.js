@@ -212,7 +212,7 @@ export default function List() {
       <main className="main-content achievements-main">
         <Sidebar />
         <section className="achievements achievements-section">
-          <div className="search-bar achievements-search-bar">
+          <div className="achievements-search-bar">
             <input
               type="text"
               placeholder="Search achievements..."
@@ -247,32 +247,6 @@ export default function List() {
           )}
         </section>
       </main>
-      <style jsx>{`
-        .achievements-search-bar {
-          display: flex;
-          align-items: center;
-          justify-content: flex-start;
-          margin-bottom: 18px;
-          background: rgba(0,0,0,0.7);
-          border-radius: 10px;
-          padding: 10px 16px;
-          box-shadow: 0 2px 8px rgba(0,0,0,0.18);
-          max-width: 500px;
-        }
-        .achievements-search-bar .search-input {
-          background: transparent;
-          border: none;
-          color: #fff;
-          font-size: 16px;
-          width: 100%;
-          outline: none;
-          padding: 6px 0;
-        }
-        .achievements-search-bar .search-input::placeholder {
-          color: #ccc;
-          opacity: 1;
-        }
-      `}</style>
     </>
   );
 }
