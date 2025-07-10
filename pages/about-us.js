@@ -65,8 +65,6 @@ export default function AboutUs() {
           </section>
         </div>
       </main>
-      <div id="dynamic-background"></div>
-      <div id="blue-tint-overlay"></div>
     </>
   );
 }
