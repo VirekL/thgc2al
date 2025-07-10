@@ -148,7 +148,6 @@ main {
   white-space: nowrap;
 }
 .achievements {
-  flex-grow: 1;
   max-width: none;
   width: 70%;
   max-width: 1000px;
