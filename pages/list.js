@@ -198,30 +198,6 @@ export default function List() {
           </div>
           <h1 className="title main-title">The Hardest Achievements List</h1>
         </div>
-        <div className="search-bar">
-          <input
-            type="text"
-            placeholder="Search achievements..."
-            value={search}
-            onChange={e => setSearch(e.target.value)}
-            aria-label="Search achievements"
-            className="search-input"
-          />
-          {isMobile && (
-            <button
-              ref={mobileBtnRef}
-              id="mobile-filter-toggle-btn"
-              aria-label={showMobileFilters ? 'Hide Filters' : 'Show Filters'}
-              onClick={handleMobileToggle}
-              className="mobile-filter-toggle"
-              dangerouslySetInnerHTML={{
-                __html: showMobileFilters
-                  ? '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-up.svg" alt="Hide Filters" class="arrow-img" /></span>'
-                  : '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-down.svg" alt="Show Filters" class="arrow-img" /></span>'
-              }}
-            />
-          )}
-        </div>
         <div className="tag-filter-pills-container">
           <TagFilterPills
             allTags={allTags}
@@ -236,6 +212,30 @@ export default function List() {
       <main className="main-content achievements-main">
         <Sidebar />
         <section className="achievements achievements-section">
+          <div className="search-bar achievements-search-bar">
+            <input
+              type="text"
+              placeholder="Search achievements..."
+              value={search}
+              onChange={e => setSearch(e.target.value)}
+              aria-label="Search achievements"
+              className="search-input"
+            />
+            {isMobile && (
+              <button
+                ref={mobileBtnRef}
+                id="mobile-filter-toggle-btn"
+                aria-label={showMobileFilters ? 'Hide Filters' : 'Show Filters'}
+                onClick={handleMobileToggle}
+                className="mobile-filter-toggle"
+                dangerouslySetInnerHTML={{
+                  __html: showMobileFilters
+                    ? '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-up.svg" alt="Hide Filters" class="arrow-img" /></span>'
+                    : '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-down.svg" alt="Show Filters" class="arrow-img" /></span>'
+                }}
+              />
+            )}
+          </div>
           {isPending ? (
             <div className="no-achievements">Loading...</div>
           ) : filtered.length === 0 ? (
@@ -247,6 +247,32 @@ export default function List() {
           )}
         </section>
       </main>
+      <style jsx>{`
+        .achievements-search-bar {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin-bottom: 18px;
+          background: rgba(0,0,0,0.7);
+          border-radius: 10px;
+          padding: 10px 16px;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+          max-width: 500px;
+        }
+        .achievements-search-bar .search-input {
+          background: transparent;
+          border: none;
+          color: #fff;
+          font-size: 16px;
+          width: 100%;
+          outline: none;
+          padding: 6px 0;
+        }
+        .achievements-search-bar .search-input::placeholder {
+          color: #ccc;
+          opacity: 1;
+        }
+      `}</style>
     </>
   );
 }
