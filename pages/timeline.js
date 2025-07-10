@@ -133,17 +133,18 @@ export default function Timeline() {
         />
       </Head>
       <Background />
-      <Header />
-      <div className="search-bar" style={{margin: '2rem auto 0 auto', maxWidth: 1000}}>
-        <input
-          type="text"
-          placeholder="Search achievements..."
-          value={search}
-          onChange={e => setSearch(e.target.value)}
-          aria-label="Search achievements"
-          style={{padding: '0.75rem', borderRadius: 8, border: '2px solid #343A52', width: '100%'}}
-        />
-      </div>
+      <Header>
+        <div className="search-bar">
+          <input
+            type="text"
+            placeholder="Search achievements..."
+            value={search}
+            onChange={e => setSearch(e.target.value)}
+            aria-label="Search achievements"
+            className="search-input"
+          />
+        </div>
+      </Header>
       <main className="main-content" style={{display: 'flex', gap: '2rem', padding: '2rem', justifyContent: 'center', alignItems: 'flex-start'}}>
         <Sidebar />
         <section className="achievements" style={{flexGrow: 1, width: '70%', maxWidth: '1000px', display: 'flex', flexDirection: 'column', gap: '1rem', padding: '2rem', maxHeight: 'calc(100vh - 150px)', overflowY: 'auto'}}>
