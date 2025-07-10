@@ -82,11 +82,11 @@ export default function Tag({ tag, onClick, tabIndex, clickable, state }) {
         }
         .tag-include {
           border: none;
-          box-shadow: 0 0 0 3px rgba(67, 233, 123, 0.35);
+          box-shadow: 0 0 0 3px rgb(94, 255, 62);
         }
         .tag-exclude {
           border: none;
-          box-shadow: 0 0 0 3px rgba(229, 45, 39, 0.25);
+          box-shadow: 0 0 0 3px rgb(233, 64, 59);
           opacity: 0.7;
         }
         .tag-neutral {
