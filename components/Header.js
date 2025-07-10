@@ -49,7 +49,7 @@ export default function Header({ children }) {
         {children && <div className="header-children">{children}</div>}
       </div>
       <div style={{ display: "flex", alignItems: "center", marginLeft: "auto" }}>
-        <div className="splash-text">{splashText}</div>
+        {!isMobile && <div className="splash-text">{splashText}</div>}
       </div>
       {/* Mobile Sidebar Overlay */}
       {isMobile && showSidebar && (
