@@ -1311,7 +1311,6 @@ main {
   align-items: flex-start;
 }
 .achievements-section {
-  flex-grow: 1;
   width: 70%;
   max-width: 1000px;
   display: flex;
