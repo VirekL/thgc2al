@@ -31,14 +31,29 @@ function formatDate(date, dateFormat) {
 
 function TimelineAchievementCard({ achievement, previousAchievement }) {
   const { dateFormat } = useDateFormat();
-  const lastedDays = previousAchievement ? calculateDaysLasted(achievement.date, previousAchievement.date) : 'N/A';
+  let lastedDays, lastedLabel;
+  if (previousAchievement) {
+    lastedDays = calculateDaysLasted(achievement.date, previousAchievement.date);
+    lastedLabel = `Lasted ${lastedDays} days`;
+  } else {
+    // Calculate days from achievement date to today
+    const today = new Date();
+    const achievementDate = new Date(achievement.date);
+    if (!achievement.date || isNaN(achievementDate)) {
+      lastedLabel = 'Lasting N/A days';
+    } else {
+      const diffTime = Math.abs(today - achievementDate);
+      const days = Math.max(1, Math.ceil(diffTime / (1000 * 60 * 60 * 24)));
+      lastedLabel = `Lasting ${days} days`;
+    }
+  }
   return (
     <div className="achievement-item" tabIndex={0} style={{cursor: 'pointer'}}>
       <div className="rank-date-container">
         <div className="achievement-length">
           {achievement.length ? `${Math.floor(achievement.length / 60)}:${(achievement.length % 60).toString().padStart(2, '0')}` : 'N/A'}
         </div>
-        <div className="lasted-days">Lasted {lastedDays} days</div>
+        <div className="lasted-days">{lastedLabel}</div>
         <div className="rank"><strong>{achievement.date ? formatDate(achievement.date, dateFormat) : 'N/A'}</strong></div>
       </div>
       <div className="tag-container">
@@ -119,19 +134,19 @@ export default function Timeline() {
       </Head>
       <Background />
       <Header />
+      <div className="search-bar" style={{margin: '2rem auto 0 auto', maxWidth: 1000}}>
+        <input
+          type="text"
+          placeholder="Search achievements..."
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+          aria-label="Search achievements"
+          style={{padding: '0.75rem', borderRadius: 8, border: '2px solid #343A52', width: '100%'}}
+        />
+      </div>
       <main className="main-content" style={{display: 'flex', gap: '2rem', padding: '2rem', justifyContent: 'center', alignItems: 'flex-start'}}>
         <Sidebar />
         <section className="achievements" style={{flexGrow: 1, width: '70%', maxWidth: '1000px', display: 'flex', flexDirection: 'column', gap: '1rem', padding: '2rem', maxHeight: 'calc(100vh - 150px)', overflowY: 'auto'}}>
-          <div className="search-bar" style={{marginBottom: 16}}>
-            <input
-              type="text"
-              placeholder="Search achievements..."
-              value={search}
-              onChange={e => setSearch(e.target.value)}
-              aria-label="Search achievements"
-              style={{padding: '0.75rem', borderRadius: 8, border: '2px solid #343A52', width: '100%'}}
-            />
-          </div>
           <div className="tag-filter-pills" style={{marginBottom: 16, display: 'flex', flexWrap: 'wrap', gap: 8}}>
             {allTags.sort((a, b) => TAG_PRIORITY_ORDER.indexOf(a.toUpperCase()) - TAG_PRIORITY_ORDER.indexOf(b.toUpperCase())).map(tag => {
               let state = 'neutral';
@@ -158,8 +173,6 @@ export default function Timeline() {
           )}
         </section>
       </main>
-      <div id="blue-tint-overlay"></div>
-      <div id="dynamic-background"></div>
     </>
   );
 }
