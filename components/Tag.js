@@ -63,7 +63,7 @@ export default function Tag({ tag, onClick, tabIndex, clickable, state }) {
           padding: 4px 10px;
           border-radius: 8px;
           margin-right: 4px;
-          box-shadow: 0 1px 3px rgba(0,0,0,0.10);
+          box-shadow: 0 2px 8px rgba(0,0,0,0.22), 0 4px 16px rgba(0,0,0,0.10); /* Enhanced drop shadow */
           color: #fff;
           background: linear-gradient(135deg, #23283E 0%, #2E3451 100%);
           text-transform: uppercase;
