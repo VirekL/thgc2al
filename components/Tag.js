@@ -142,6 +142,20 @@ export default function Tag({ tag, onClick, tabIndex, clickable, state }) {
   background: linear-gradient(135deg,rgb(138, 134, 115) 0%,rgb(206, 155, 47) 100%);
 }
       `}</style>
+      <style jsx>{`
+        @media (max-width: 600px) {
+          .tag {
+            font-size: 11px;
+            padding: 2px 6px;
+            border-radius: 6px;
+            gap: 2px;
+          }
+          .tag img {
+            width: 13px;
+            height: 13px;
+          }
+        }
+      `}</style>
         </>
     );
 }
