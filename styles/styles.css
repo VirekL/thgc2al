@@ -1374,21 +1374,3 @@ main {
   gap: 0.5rem;
   z-index: 6;
 }
-@media (max-width: 600px) {
-  .achievement-item .tag-container {
-    gap: 0.08rem;
-  }
-  .achievement-item .tag {
-    font-size: 0.38rem;
-    padding: 0.07rem 0.18rem;
-    margin-bottom: 0.07rem;
-    border-radius: 0.22rem;
-    gap: 1px;
-    min-width: 0;
-    line-height: 1.1;
-  }
-  .achievement-item .tag img {
-    width: 8px;
-    height: 8px;
-  }
-}
