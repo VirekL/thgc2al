@@ -780,6 +780,15 @@ main {
     background-color: var(--hover-bg);
 }
 
+.leaderboard-table td a {
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+.leaderboard-table td a:hover {
+    text-decoration: underline;
+}
+
 .hidden-row {
     user-select: text;
     transition: all 0.3s ease-in-out;
