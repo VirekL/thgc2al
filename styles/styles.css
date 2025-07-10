@@ -991,16 +991,6 @@ main {
     pointer-events: auto;
     padding: 0.3rem 0.1rem 0.1rem 0.1rem;
   }
-  .tag {
-    font-size: 11px;
-    padding: 2px 7px;
-    border-radius: 6px;
-    gap: 2px;
-  }
-  .tag img {
-    width: 13px;
-    height: 13px;
-  }
 }
 
 .tag-include-box, .tag-exclude-box {
@@ -1384,28 +1374,19 @@ main {
   gap: 0.5rem;
   z-index: 6;
 }
-
-@media (max-width: 900px) {
-  .tag {
-    font-size: 11px;
-    padding: 2px 7px;
-    border-radius: 6px;
+@media (max-width: 600px) {
+  .achievement-item .tag-container {
+    gap: 0.15rem;
+  }
+  .achievement-item .tag {
+    font-size: 0.55rem;
+    padding: 0.12rem 0.32rem;
+    margin-bottom: 0.12rem;
+    border-radius: 0.4rem;
     gap: 2px;
   }
-  .tag img {
-    width: 13px;
-    height: 13px;
-  }
-}
-@media (max-width: 600px) {
-  .tag {
-    font-size: 10px;
-    padding: 1px 5px;
-    border-radius: 5px;
-    gap: 1px;
-  }
-  .tag img {
-    width: 11px;
-    height: 11px;
+  .achievement-item .tag img {
+    width: 12px;
+    height: 12px;
   }
 }
