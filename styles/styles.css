@@ -148,6 +148,7 @@ main {
   white-space: nowrap;
 }
 .achievements {
+  flex-grow: 1;
   max-width: none;
   width: 70%;
   max-width: 1000px;
@@ -1311,6 +1312,7 @@ main {
   align-items: flex-start;
 }
 .achievements-section {
+  flex-grow: 1;
   width: 70%;
   max-width: 1000px;
   display: flex;
