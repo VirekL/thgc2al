@@ -134,7 +134,7 @@ export default function Timeline() {
       </Head>
       <Background />
       <Header>
-        <div className="search-bar" style={{ flex: 1 }}>
+        <div className="search-bar" style={{flex: 1, display: 'flex', alignItems: 'center', gap: '0.5rem', marginLeft: '1rem'}}>
           <input
             type="text"
             placeholder="Search achievements..."
@@ -142,7 +142,6 @@ export default function Timeline() {
             onChange={e => setSearch(e.target.value)}
             aria-label="Search achievements"
             className="search-input"
-            style={{ width: '100%', flex: 1 }}
           />
         </div>
       </Header>
