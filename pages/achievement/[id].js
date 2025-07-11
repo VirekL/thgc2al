@@ -39,7 +39,6 @@ export async function getStaticProps({ params }) {
 
   const achievement = achievements.find(a => a.id.toString() === params.id) || null;
 
-  // Compute placement (rank) in the filtered list
   let placement = null;
   if (achievement) {
     const index = achievements.findIndex(a => a.id.toString() === params.id);
@@ -52,9 +51,6 @@ export async function getStaticProps({ params }) {
 export default function AchievementPage({ achievement, placement }) {
   const [copyMsg, setCopyMsg] = useState('');
   const { dateFormat } = useDateFormat();
-  // Sidebar open state for mobile
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-
   function showCopyNotification(text) {
     setCopyMsg(text);
     setTimeout(() => setCopyMsg(''), 1800);
@@ -71,7 +67,6 @@ export default function AchievementPage({ achievement, placement }) {
     if (dateFormat === 'YYYY/MM/DD') return `${yyyy}/${mm}/${dd}`;
     if (dateFormat === 'MM/DD/YY') return `${mm}/${dd}/${yy}`;
     if (dateFormat === 'DD/MM/YY') return `${dd}/${mm}/${yy}`;
-    // Default: Month D, Yr
     return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
   }
   function formatLength(length) {
@@ -102,7 +97,7 @@ export default function AchievementPage({ achievement, placement }) {
         </Head>
         <Background />
         <Header />
-        <Sidebar open={sidebarOpen} setOpen={setSidebarOpen} />
+        <Sidebar />
         <div>Achievement not found.</div>
         <Link href="/list">← Back to List</Link>
       </div>
@@ -118,17 +113,8 @@ export default function AchievementPage({ achievement, placement }) {
       </Head>
       <Background bgImage={bgImage} />
       <Header />
-      {/* Hamburger button for mobile */}
-      <button
-        className="mobile-hamburger-btn"
-        style={{ position: 'fixed', top: 18, left: 18, zIndex: 1200, background: 'var(--secondary-bg)', border: 'none', borderRadius: 8, padding: 8, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-        aria-label="Open sidebar"
-        onClick={() => setSidebarOpen(true)}
-      >
-        <span style={{ fontSize: 32, color: '#DFE3F5' }}>☰</span>
-      </button>
       <main style={{ display: 'flex', gap: '2rem', padding: '2rem', justifyContent: 'center', alignItems: 'flex-start', minHeight: '100vh', overflowY: 'auto' }}>
-        <Sidebar open={sidebarOpen} setOpen={setSidebarOpen} />
+        <Sidebar />
         <section style={{ flex: '1 1 0%', maxWidth: 900, overflowY: 'auto', maxHeight: 'calc(100vh - 4rem)', position: 'relative' }}>
           <div
             className="achievement-card"
@@ -139,7 +125,7 @@ export default function AchievementPage({ achievement, placement }) {
               minWidth: 320,
               minHeight: 400,
               maxHeight: 'calc(100vh - 4rem)',
-              paddingBottom: '3rem' // Increased bottom padding for more space
+              paddingBottom: '3rem'
             }}
           >
             <div style={{ position: 'relative', zIndex: 1 }}>
@@ -171,7 +157,6 @@ export default function AchievementPage({ achievement, placement }) {
                 </div>
               )}
               { }
-              {/* Level Info: ID, Date, Length, Version (copyable, fancy) */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 12, marginTop: 12 }}>
                 {achievement.levelID && (
                   <div style={{ marginBottom: 4, display: 'flex', alignItems: 'center', gap: 8 }}>
