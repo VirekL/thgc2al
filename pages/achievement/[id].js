@@ -52,6 +52,9 @@ export async function getStaticProps({ params }) {
 export default function AchievementPage({ achievement, placement }) {
   const [copyMsg, setCopyMsg] = useState('');
   const { dateFormat } = useDateFormat();
+  // Sidebar open state for mobile
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
   function showCopyNotification(text) {
     setCopyMsg(text);
     setTimeout(() => setCopyMsg(''), 1800);
@@ -99,7 +102,7 @@ export default function AchievementPage({ achievement, placement }) {
         </Head>
         <Background />
         <Header />
-        <Sidebar />
+        <Sidebar open={sidebarOpen} setOpen={setSidebarOpen} />
         <div>Achievement not found.</div>
         <Link href="/list">← Back to List</Link>
       </div>
@@ -115,8 +118,17 @@ export default function AchievementPage({ achievement, placement }) {
       </Head>
       <Background bgImage={bgImage} />
       <Header />
+      {/* Hamburger button for mobile */}
+      <button
+        className="mobile-hamburger-btn"
+        style={{ position: 'fixed', top: 18, left: 18, zIndex: 1200, background: 'var(--secondary-bg)', border: 'none', borderRadius: 8, padding: 8, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+        aria-label="Open sidebar"
+        onClick={() => setSidebarOpen(true)}
+      >
+        <span style={{ fontSize: 32, color: '#DFE3F5' }}>☰</span>
+      </button>
       <main style={{ display: 'flex', gap: '2rem', padding: '2rem', justifyContent: 'center', alignItems: 'flex-start', minHeight: '100vh', overflowY: 'auto' }}>
-        <Sidebar />
+        <Sidebar open={sidebarOpen} setOpen={setSidebarOpen} />
         <section style={{ flex: '1 1 0%', maxWidth: 900, overflowY: 'auto', maxHeight: 'calc(100vh - 4rem)', position: 'relative' }}>
           <div
             className="achievement-card"
