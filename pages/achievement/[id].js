@@ -110,6 +110,11 @@ export default function AchievementPage({ achievement, placement }) {
       <Head>
         <title>{achievement.name} · The Hardest Achievements List</title>
         <meta name="description" content={`${achievement.name} done by ${achievement.player} on ${formatDate(achievement.date)}. View Geometry Dash details, videos, and more on The Hardest Achievements List.`} />
+        <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+        <link rel="shortcut icon" href="/assets/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="THAL" />
+        <link rel="manifest" href="/assets/site.webmanifest" />
       </Head>
       <Background bgImage={bgImage} />
       <Header />
