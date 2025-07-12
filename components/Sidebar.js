@@ -27,12 +27,12 @@ export default function Sidebar() {
 
   return (
     <nav className="sidebar">
-      <Link href="/list" className="sidebar-link"><i className="bi bi-list-ul" style={{marginRight:8}}></i> Main List</Link>
-      <Link href="/timeline" className="sidebar-link"><i className="bi bi-clock-history" style={{marginRight:8}}></i> Timeline</Link>
-      <Link href="/leaderboard" className="sidebar-link"><i className="bi bi-trophy" style={{marginRight:8}}></i> Leaderboard</Link>
-      <Link href="/submission-stats" className="sidebar-link"><i className="bi bi-bar-chart-line" style={{marginRight:8}}></i> Submission Stats</Link>
-      <a href="#" id="random-achievement-btn" className="sidebar-link" onClick={handleRandomClick} role="button" tabIndex={0}><i className="bi bi-shuffle" style={{marginRight:8}}></i> Random</a>
-      <Link href="/about-us" className="sidebar-link"><i className="bi bi-people" style={{marginRight:8}}></i> About Us</Link>
+      <Link href="/list" className="sidebar-link">Main List</Link>
+      <Link href="/timeline" className="sidebar-link">Timeline</Link>
+      <Link href="/leaderboard" className="sidebar-link">Leaderboard</Link>
+      <Link href="/submission-stats" className="sidebar-link">Submission Stats</Link>
+      <a href="#" id="random-achievement-btn" className="sidebar-link" onClick={handleRandomClick} role="button" tabIndex={0}>Random</a>
+      <Link href="/about-us" className="sidebar-link">About Us</Link>
       {/* Settings button as a sidebar-link */}
       <a
         href="#"
@@ -43,7 +43,7 @@ export default function Sidebar() {
         tabIndex={0}
         role="button"
       >
-        <i className="bi bi-gear" style={{marginRight:8}}></i> Settings
+        Settings
       </a>
       {showSettings && (
         <div
