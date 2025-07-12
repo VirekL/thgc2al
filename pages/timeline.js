@@ -206,12 +206,20 @@ export default function Timeline() {
               aria-label={showMobileFilters ? 'Hide Filters' : 'Show Filters'}
               onClick={handleMobileToggle}
               className="mobile-filter-toggle"
-              dangerouslySetInnerHTML={{
-                __html: showMobileFilters
-                  ? '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-up.svg" alt="Hide Filters" class="arrow-img" /></span>'
-                  : '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-down.svg" alt="Show Filters" class="arrow-img" /></span>'
-              }}
-            />
+              type="button"
+              style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'none', border: 'none', padding: 0, marginTop: 8 }}
+            >
+              <span className="arrow-img-wrapper">
+                <img
+                  src={showMobileFilters
+                    ? 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-up.svg'
+                    : 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-down.svg'}
+                  alt={showMobileFilters ? 'Hide Filters' : 'Show Filters'}
+                  className="arrow-img"
+                  style={{ width: 28, height: 28 }}
+                />
+              </span>
+            </button>
           </>
         ) : (
           <div className="search-bar">
