@@ -187,9 +187,19 @@ export default function Timeline() {
           </div>
           <h1 className="title main-title">The Hardest Achievements List</h1>
         </div>
-        {/* Mobile: Arrow first, then search bar below */}
+        {/* Mobile: Search bar first, then arrow below */}
         {isMobile ? (
           <>
+            <div className="search-bar" style={{ marginTop: 8 }}>
+              <input
+                type="text"
+                placeholder="Search achievements..."
+                value={search}
+                onChange={e => setSearch(e.target.value)}
+                aria-label="Search achievements"
+                className="search-input"
+              />
+            </div>
             <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: 8 }}>
               <button
                 ref={mobileBtnRef}
@@ -202,16 +212,6 @@ export default function Timeline() {
                     ? '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-up.svg" alt="Hide Filters" class="arrow-img" /></span>'
                     : '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-down.svg" alt="Show Filters" class="arrow-img" /></span>'
                 }}
-              />
-            </div>
-            <div className="search-bar" style={{ marginTop: 8 }}>
-              <input
-                type="text"
-                placeholder="Search achievements..."
-                value={search}
-                onChange={e => setSearch(e.target.value)}
-                aria-label="Search achievements"
-                className="search-input"
               />
             </div>
           </>
