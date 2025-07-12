@@ -207,17 +207,24 @@ export default function Timeline() {
               onClick={handleMobileToggle}
               className="mobile-filter-toggle"
               type="button"
-              style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'none', border: 'none', padding: 0, marginTop: 8 }}
+              style={{ background: 'none', border: 'none', padding: 0, marginTop: 4 }}
             >
               <span className="arrow-img-wrapper">
-                <img
-                  src={showMobileFilters
-                    ? 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-up.svg'
-                    : 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-down.svg'}
-                  alt={showMobileFilters ? 'Hide Filters' : 'Show Filters'}
+                {/* Dropdown arrow SVG from list.js */}
+                <svg
                   className="arrow-img"
-                  style={{ width: 28, height: 28 }}
-                />
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  style={{ transform: showMobileFilters ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }}
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M1.646 5.146a.5.5 0 0 1 .708 0L8 10.793l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
               </span>
             </button>
           </>
