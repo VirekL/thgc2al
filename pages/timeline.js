@@ -74,6 +74,40 @@ function TimelineAchievementCard({ achievement, previousAchievement }) {
   );
 }
 
+function TagFilterPills({ allTags, filterTags, setFilterTags }) {
+  const tagStates = {};
+  allTags.forEach(tag => {
+    if (filterTags.include.includes(tag)) tagStates[tag] = 'include';
+    else if (filterTags.exclude.includes(tag)) tagStates[tag] = 'exclude';
+    else tagStates[tag] = 'neutral';
+  });
+
+  function handlePillClick(tag) {
+    if (tagStates[tag] === 'neutral') setFilterTags(prev => ({ ...prev, include: [...prev.include, tag] }));
+    else if (tagStates[tag] === 'include') setFilterTags(prev => ({ ...prev, include: prev.include.filter(t => t !== tag), exclude: [...prev.exclude, tag] }));
+    else setFilterTags(prev => ({ ...prev, exclude: prev.exclude.filter(t => t !== tag) }));
+  }
+
+  return (
+    <div className="tag-filter-pills" style={{marginBottom: 16, display: 'flex', flexWrap: 'wrap', gap: 8}}>
+      {allTags.length === 0 ? (
+        <span style={{ color: '#aaa', fontSize: 13 }}>Loading tags...</span>
+      ) : (
+        allTags.sort((a, b) => TAG_PRIORITY_ORDER.indexOf(a.toUpperCase()) - TAG_PRIORITY_ORDER.indexOf(b.toUpperCase())).map(tag => (
+          <Tag
+            key={tag}
+            tag={tag}
+            state={tagStates[tag]}
+            onClick={() => handlePillClick(tag)}
+            tabIndex={0}
+            clickable={true}
+          />
+        ))
+      )}
+    </div>
+  );
+}
+
 export default function Timeline() {
   const [achievements, setAchievements] = useState([]);
   const [search, setSearch] = useState('');
@@ -104,18 +138,6 @@ export default function Timeline() {
     });
   }, [achievements, search, filterTags]);
 
-  function handleTagClick(tag) {
-    setFilterTags(prev => {
-      if (prev.include.includes(tag)) {
-        return { ...prev, include: prev.include.filter(t => t !== tag), exclude: [...prev.exclude, tag] };
-      } else if (prev.exclude.includes(tag)) {
-        return { ...prev, exclude: prev.exclude.filter(t => t !== tag) };
-      } else {
-        return { ...prev, include: [...prev.include, tag] };
-      }
-    });
-  }
-
   return (
     <>
       <Head>
@@ -134,7 +156,7 @@ export default function Timeline() {
       </Head>
       <Background />
       <Header>
-        <div className="search-bar" style={{flex: 1, display: 'flex', alignItems: 'center', gap: '0.5rem', marginLeft: '1rem'}}>
+        <div className="search-bar">
           <input
             type="text"
             placeholder="Search achievements..."
@@ -148,23 +170,11 @@ export default function Timeline() {
       <main className="main-content" style={{display: 'flex', gap: '2rem', padding: '2rem', justifyContent: 'center', alignItems: 'flex-start'}}>
         <Sidebar />
         <section className="achievements" style={{flexGrow: 1, width: '70%', maxWidth: '1000px', display: 'flex', flexDirection: 'column', gap: '1rem', padding: '2rem', maxHeight: 'calc(100vh - 150px)', overflowY: 'auto'}}>
-          <div className="tag-filter-pills" style={{marginBottom: 16, display: 'flex', flexWrap: 'wrap', gap: 8}}>
-            {allTags.sort((a, b) => TAG_PRIORITY_ORDER.indexOf(a.toUpperCase()) - TAG_PRIORITY_ORDER.indexOf(b.toUpperCase())).map(tag => {
-              let state = 'neutral';
-              if (filterTags.include.includes(tag)) state = 'include';
-              if (filterTags.exclude.includes(tag)) state = 'exclude';
-              return (
-                <Tag
-                  key={tag}
-                  tag={tag}
-                  state={state}
-                  onClick={() => handleTagClick(tag)}
-                  clickable={true}
-                  tabIndex={0}
-                />
-              );
-            })}
-          </div>
+          <TagFilterPills
+            allTags={allTags}
+            filterTags={filterTags}
+            setFilterTags={setFilterTags}
+          />
           {filtered.length === 0 ? (
             <div style={{color: '#aaa'}}>No achievements found.</div>
           ) : (
