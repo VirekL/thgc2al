@@ -4,7 +4,12 @@
         "name": "GRIEF 56-100% + 67%",
         "player": "Doggie",
         "thumbnail": "https://tjcsucht.net/levelthumbs/103524537.png",
-        "tags": ["CBF", "2P", "Level", "Consistency"],
+        "tags": [
+            "CBF",
+            "2P",
+            "Level",
+            "Consistency"
+        ],
         "length": "200",
         "version": "2.2",
         "date": "2025-04-23",
@@ -16,7 +21,12 @@
         "name": "GRIEF 25-100%",
         "player": "Doggie",
         "thumbnail": "https://tjcsucht.net/levelthumbs/102303428.png",
-        "tags": ["CBF", "2P", "Level", "Progress"],
+        "tags": [
+            "CBF",
+            "2P",
+            "Level",
+            "Progress"
+        ],
         "length": "117",
         "version": "2.2",
         "date": "2025-02-26",
@@ -28,7 +38,12 @@
         "name": "GRIEF 17-92%",
         "player": "Doggie",
         "thumbnail": "https://tjcsucht.net/levelthumbs/103311946.png",
-        "tags": ["CBF", "2P", "Level", "Progress"],
+        "tags": [
+            "CBF",
+            "2P",
+            "Level",
+            "Progress"
+        ],
         "length": "116",
         "version": "2.2",
         "date": "2025-01-19",
@@ -40,7 +55,12 @@
         "name": "GRIEF 80%",
         "player": "Doggie",
         "thumbnail": "https://tjcsucht.net/levelthumbs/102686349.png",
-        "tags": ["CBF", "2P", "Level", "Progress"],
+        "tags": [
+            "CBF",
+            "2P",
+            "Level",
+            "Progress"
+        ],
         "length": "134",
         "version": "2.2",
         "date": "2024-11-24",
@@ -52,7 +72,12 @@
         "name": "GRIEF madness 85%",
         "player": "Doggie",
         "thumbnail": "https://i.ytimg.com/vi/qcz9L0KUBVQ/hq720.jpg",
-        "tags": ["CBF", "2P", "Level", "Progress"],
+        "tags": [
+            "CBF",
+            "2P",
+            "Level",
+            "Progress"
+        ],
         "length": "138",
         "version": "2.2",
         "date": "2024-11-01",
@@ -62,7 +87,10 @@
         "id": "tidal-wave",
         "name": "Tidal Wave",
         "player": "Zoink",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "181",
         "version": "2.1",
         "date": "2023-09-10",
@@ -75,7 +103,11 @@
         "name": "Tidal Wave 95%",
         "player": "Zoink",
         "thumbnail": "https://tjcsucht.net/levelthumbs/99564598.png",
-        "tags": ["Level", "Rated", "Progress"],
+        "tags": [
+            "Level",
+            "Rated",
+            "Progress"
+        ],
         "length": "166",
         "version": "2.1",
         "date": "2023-08-13",
@@ -88,7 +120,11 @@
         "name": "Tidal Wave 90%",
         "player": "Zoink",
         "thumbnail": "https://tjcsucht.net/levelthumbs/100152198.png",
-        "tags": ["Level", "Rated", "Progress"],
+        "tags": [
+            "Level",
+            "Rated",
+            "Progress"
+        ],
         "length": "158",
         "version": "2.1",
         "date": "2023-08-11",
@@ -101,7 +137,11 @@
         "name": "Tidal Wave 74%",
         "player": "Zoink",
         "thumbnail": "https://tjcsucht.net/levelthumbs/93697393.png",
-        "tags": ["Level", "Rated", "Progress"],
+        "tags": [
+            "Level",
+            "Rated",
+            "Progress"
+        ],
         "length": "134",
         "version": "2.1",
         "date": "2023-08-04",
@@ -114,7 +154,11 @@
         "name": "Tidal Wave 67%",
         "player": "Zoink",
         "thumbnail": "https://tjcsucht.net/levelthumbs/98241044.png",
-        "tags": ["Level", "Rated", "Progress"],
+        "tags": [
+            "Level",
+            "Rated",
+            "Progress"
+        ],
         "length": "121",
         "version": "2.1",
         "date": "2023-07-29",
@@ -126,7 +170,11 @@
         "name": "Silent clubstep 5-25%x2, 5-64%",
         "id": "silent-clubstep-5-25x2-5-64",
         "player": "Vision",
-        "tags": ["Level", "Consistency", "Rated"],
+        "tags": [
+            "Level",
+            "Consistency",
+            "Rated"
+        ],
         "length": "90",
         "version": "2.1",
         "date": "2023-01-02",
@@ -138,7 +186,10 @@
         "id": "acheron-2-1",
         "name": "Acheron 2.1",
         "player": "Zoink",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "67",
         "version": "2.1",
         "date": "2022-08-22",
@@ -151,7 +202,11 @@
         "name": "Acheron 2.1 97%",
         "player": "Zoink",
         "thumbnail": "https://tjcsucht.net/levelthumbs/73674577.png",
-        "tags": ["Level", "Rated", "Progress"],
+        "tags": [
+            "Level",
+            "Rated",
+            "Progress"
+        ],
         "length": "65",
         "version": "2.1",
         "date": "2022-08-18",
@@ -164,7 +219,11 @@
         "name": "Acheron 2.1 96%",
         "player": "Zoink",
         "thumbnail": "https://tjcsucht.net/levelthumbs/100087118.png",
-        "tags": ["Level", "Rated", "Progress"],
+        "tags": [
+            "Level",
+            "Rated",
+            "Progress"
+        ],
         "length": "64",
         "version": "2.1",
         "date": "2022-06-10",
@@ -177,7 +236,11 @@
         "name": "Acheron 2.1 91%",
         "player": "Zoink",
         "thumbnail": "https://tjcsucht.net/levelthumbs/99609280.png",
-        "tags": ["Level", "Rated", "Progress"],
+        "tags": [
+            "Level",
+            "Rated",
+            "Progress"
+        ],
         "length": "60",
         "version": "2.1",
         "date": "2022-06-03",
@@ -189,7 +252,12 @@
         "id": "bloodlust-72hz-95",
         "name": "Bloodlust 72hz 95%",
         "player": "AGSEcho",
-        "tags": ["Level", "Rated", "Progress", "Low Hertz"],
+        "tags": [
+            "Level",
+            "Rated",
+            "Progress",
+            "Low Hertz"
+        ],
         "length": "167",
         "version": "2.1",
         "date": "2022-05-10",
@@ -201,7 +269,10 @@
         "id": "abyss-of-darkness",
         "name": "Abyss of Darkness",
         "player": "Cursed",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "125",
         "version": "2.1",
         "date": "2022-04-03",
@@ -213,7 +284,10 @@
         "id": "old-aod-98",
         "name": "Old AoD 98%",
         "player": "Dils thik",
-        "tags": ["Progress", "Level"],
+        "tags": [
+            "Progress",
+            "Level"
+        ],
         "length": "122",
         "version": "2.1",
         "date": "2021-07-21",
@@ -226,7 +300,10 @@
         "name": "Old AoD 95%",
         "player": "Dils thik",
         "thumbnail": "https://tjcsucht.net/levelthumbs/79477817.png",
-        "tags": ["Progress", "Level"],
+        "tags": [
+            "Progress",
+            "Level"
+        ],
         "length": "120",
         "version": "2.1",
         "date": "2021-03-19",
@@ -238,7 +315,9 @@
         "id": "blind-blizzard",
         "name": "Blind Blizzard",
         "player": "Bradenbowl",
-        "tags": ["Level"],
+        "tags": [
+            "Level"
+        ],
         "length": "100",
         "version": "2.1",
         "date": "2020-12-09",
@@ -250,7 +329,10 @@
         "id": "blind-blizzard-97",
         "name": "Blind Blizzard 97%",
         "player": "Bradenbowl",
-        "tags": ["Progress", "Level"],
+        "tags": [
+            "Progress",
+            "Level"
+        ],
         "length": "97",
         "version": "2.1",
         "date": "2020-12-05",
@@ -262,7 +344,10 @@
         "id": "blind-blizzard-79",
         "name": "Blind Blizzard 79%",
         "player": "Bradenbowl",
-        "tags": ["Progress", "Level"],
+        "tags": [
+            "Progress",
+            "Level"
+        ],
         "length": "76",
         "version": "2.1",
         "date": "2020-11-27",
@@ -274,7 +359,9 @@
         "id": "3sh-in-hell",
         "name": "3SH in Hell",
         "player": "UFokinWotM8",
-        "tags": ["Challenge"],
+        "tags": [
+            "Challenge"
+        ],
         "length": "12",
         "version": "2.1",
         "date": "2020-05-17",
@@ -286,7 +373,10 @@
         "id": "tartarus",
         "name": "Tartarus",
         "player": "Dolphy",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "87",
         "version": "2.1",
         "date": "2020-01-06",
@@ -299,7 +389,11 @@
         "name": "Tartarus 98%",
         "player": "Dolphy",
         "thumbnail": "https://i.ytimg.com/vi/sz66-l_kdrk/hq720.jpg",
-        "tags": ["Progress", "Level", "Rated"],
+        "tags": [
+            "Progress",
+            "Level",
+            "Rated"
+        ],
         "length": "86",
         "version": "2.1",
         "date": "2019-12-30",
@@ -312,7 +406,11 @@
         "name": "Tartarus 97%",
         "player": "Mullsy",
         "thumbnail": "https://i.ytimg.com/vi/p8Gfnigsiwg/maxresdefault.jpg",
-        "tags": ["Progress", "Level", "Rated"],
+        "tags": [
+            "Progress",
+            "Level",
+            "Rated"
+        ],
         "length": "85",
         "version": "2.1",
         "date": "2019-07-27",
@@ -325,7 +423,11 @@
         "name": "Tartarus 91%",
         "player": "Mullsy",
         "thumbnail": "https://tjcsucht.net/levelthumbs/59616322.png",
-        "tags": ["Progress", "Level", "Rated"],
+        "tags": [
+            "Progress",
+            "Level",
+            "Rated"
+        ],
         "length": "79",
         "version": "2.1",
         "date": "2019-03-30",
@@ -338,7 +440,11 @@
         "name": "Tartarus 73%",
         "player": "Mullsy",
         "thumbnail": "https://tjcsucht.net/levelthumbs/41507422.png",
-        "tags": ["Progress", "Level", "Rated"],
+        "tags": [
+            "Progress",
+            "Level",
+            "Rated"
+        ],
         "length": "64",
         "version": "2.1",
         "date": "2019-03-09",
@@ -351,7 +457,11 @@
         "name": "Tartarus 64%",
         "player": "Mullsy",
         "thumbnail": "https://i.ytimg.com/vi/eCy7RO1ctGQ/maxresdefault.jpg",
-        "tags": ["Progress", "Level", "Rated"],
+        "tags": [
+            "Progress",
+            "Level",
+            "Rated"
+        ],
         "length": "62",
         "version": "2.1",
         "date": "2019-03-04",
@@ -364,7 +474,11 @@
         "name": "Tartarus 61%",
         "player": "Mullsy",
         "thumbnail": "https://tjcsucht.net/levelthumbs/41514680.png",
-        "tags": ["Progress", "Level", "Rated"],
+        "tags": [
+            "Progress",
+            "Level",
+            "Rated"
+        ],
         "length": "60",
         "version": "2.1",
         "date": "2019-02-20",
@@ -372,26 +486,28 @@
         "video": "https://youtu.be/BuZ7e9cMjdg",
         "showcaseVideo": "https://youtu.be/lm1498Rfl0s"
     },
-{
-  "name": "Bloodlust (Layout) 60hz 48-89%",
-  "player": "ant off",
-  "length": "64",
-  "version": "2.1",
-  "video": "https://youtu.be/oQF-AZ59wyM",
-  "date": "2018-05-13",
-  "submitter": "kyle1saurus",
-  "pointLoss": false,
-  "tags": [
-    "Level",
-    "Progress",
-    "Low Hertz"
-  ]
-},
+    {
+        "name": "Bloodlust (Layout) 60hz 48-89%",
+        "player": "ant off",
+        "length": "64",
+        "version": "2.1",
+        "video": "https://youtu.be/oQF-AZ59wyM",
+        "date": "2018-05-13",
+        "submitter": "kyle1saurus",
+        "pointLoss": false,
+        "tags": [
+            "Level",
+            "Progress",
+            "Low Hertz"
+        ]
+    },
     {
         "id": "crimson-planet-unnerfed-92",
         "name": "Crimson Planet (Unnerfed) 92%",
         "player": "Wooshi",
-        "tags": ["Level"],
+        "tags": [
+            "Level"
+        ],
         "length": "67",
         "version": "2.1",
         "date": "2018-04-22",
@@ -402,7 +518,12 @@
         "id": "plasma-pulse-finale-60hz-72",
         "name": "Plasma Pulse Finale 60hz 72%",
         "player": "hotball1",
-        "tags": ["Low Hertz Progress", "Level", "Rated"],
+        "tags": [
+            "Low Hertz",
+            "Progress",
+            "Level",
+            "Rated"
+        ],
         "length": "86",
         "version": "2.1",
         "date": "2017-11-04",
@@ -415,7 +536,12 @@
         "name": "Plasma Pulse Finale 60hz 66%",
         "player": "hotball1",
         "thumbnail": "https://i.ytimg.com/vi/pSGPEkuwtrs/maxresdefault.jpg",
-        "tags": ["Low Hertz Progress", "Level", "Rated"],
+        "tags": [
+            "Low Hertz",
+            "Progress",
+            "Level",
+            "Rated"
+        ],
         "length": "77",
         "version": "2.1",
         "date": "2017-11-03",
@@ -428,7 +554,12 @@
         "name": "Plasma Pulse Finale 60hz 57%",
         "player": "hotball1",
         "thumbnail": "https://pm1.aminoapps.com/7504/1dd701f2047b621d08ad986a4c298da627941b4ar1-1280-720v2_hq.jpg",
-        "tags": ["Low Hertz Progress", "Level", "Rated"],
+        "tags": [
+            "Low Hertz",
+            "Progress",
+            "Level",
+            "Rated"
+        ],
         "length": "68",
         "version": "2.1",
         "date": "2017-11-03",
@@ -440,7 +571,11 @@
         "id": "bloodlust-98",
         "name": "Bloodlust 98%",
         "player": "knobbelboy",
-        "tags": ["Progress", "Level", "Rated"],
+        "tags": [
+            "Progress",
+            "Level",
+            "Rated"
+        ],
         "length": "168",
         "version": "2.1",
         "date": "2017-06-09",
@@ -453,7 +588,11 @@
         "name": "Bloodlust 97%",
         "player": "knobbelboy",
         "thumbnail": "https://i.ytimg.com/vi/wNSSwERjDT4/maxresdefault.jpg",
-        "tags": ["Progress", "Level", "Rated"],
+        "tags": [
+            "Progress",
+            "Level",
+            "Rated"
+        ],
         "length": "167",
         "version": "2.1",
         "date": "2017-06-09",
@@ -466,7 +605,11 @@
         "name": "Bloodlust 76%",
         "player": "knobbelboy",
         "thumbnail": "https://tjcsucht.net/levelthumbs/19678264.png",
-        "tags": ["Progress", "Level", "Rated"],
+        "tags": [
+            "Progress",
+            "Level",
+            "Rated"
+        ],
         "length": "134",
         "version": "2.1",
         "date": "2017-06-06",
@@ -478,7 +621,10 @@
         "id": "sonic-wave-mefewe-98",
         "name": "Sonic Wave (Mefewe) 98%",
         "player": "Mefewe",
-        "tags": ["Progress", "Level"],
+        "tags": [
+            "Progress",
+            "Level"
+        ],
         "length": "121",
         "version": "2.0",
         "date": "2016-03-25",
@@ -490,7 +636,11 @@
         "id": "sonic-wave-75",
         "name": "Sonic Wave 75%",
         "player": "Mefewe",
-        "tags": ["Progress", "Level", "Rated"],
+        "tags": [
+            "Progress",
+            "Level",
+            "Rated"
+        ],
         "length": "90",
         "version": "2.0",
         "date": "2015-12-08",
@@ -502,7 +652,11 @@
         "id": "sonic-wave-72",
         "name": "Sonic Wave 72%",
         "player": "Mefewe",
-        "tags": ["Progress", "Level", "Rated"],
+        "tags": [
+            "Progress",
+            "Level",
+            "Rated"
+        ],
         "length": "87",
         "version": "2.0",
         "date": "2015-12-08",
@@ -515,7 +669,10 @@
         "id": "bloodbath",
         "name": "Bloodbath",
         "player": "Riot",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "112",
         "version": "1.9",
         "date": "2015-08-12",
@@ -528,7 +685,10 @@
         "name": "Bloodbath 94%",
         "player": "Riot",
         "thumbnail": "https://tjcsucht.net/levelthumbs/10978435.png",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "105",
         "version": "1.9",
         "date": "2015-08-08",
@@ -541,7 +701,10 @@
         "name": "Bloodbath 91%",
         "player": "Riot",
         "thumbnail": "https://tjcsucht.net/levelthumbs/10792915.png",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "100",
         "version": "1.9",
         "date": "2015-08-07",
@@ -554,7 +717,10 @@
         "name": "Bloodbath 65%",
         "player": "Riot",
         "thumbnail": "https://tjcsucht.net/levelthumbs/27610379.png",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "74",
         "version": "1.9",
         "date": "2015-08-03",
@@ -567,7 +733,10 @@
         "name": "Bloodbath 58%",
         "player": "Riot",
         "thumbnail": "https://tjcsucht.net/levelthumbs/81086394.png",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "69",
         "version": "1.9",
         "date": "2015-07-13",
@@ -580,7 +749,10 @@
         "name": "Cataclysm (Old)",
         "player": "Giron",
         "thumbnail": "https://tjcsucht.net/levelthumbs/37830175.png",
-        "tags": ["Level", "Outdated Version"],
+        "tags": [
+            "Level",
+            "Outdated Version"
+        ],
         "length": "79",
         "version": "1.9",
         "date": "2015-05-14",
@@ -588,11 +760,14 @@
         "video": "https://youtu.be/B68E2wqkFiY",
         "showcaseVideo": "https://youtu.be/gRozCOZKL3I"
     },
-        {
+    {
         "id": "alphabet-x",
         "name": "Alphabet X",
         "player": "Zobros",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "91",
         "version": "1.9",
         "date": "2015-05-09",
@@ -604,7 +779,10 @@
         "id": "necropolis",
         "name": "Necropolis",
         "player": "GMDElite",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "95",
         "version": "1.9",
         "date": "2015-03-14",
@@ -616,7 +794,10 @@
         "id": "necropolis-92",
         "name": "Necropolis 92%",
         "player": "GMDElite",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "88",
         "version": "1.9",
         "date": "2015-03-02",
@@ -629,7 +810,10 @@
         "id": "acropolis",
         "name": "Acropolis",
         "player": "Zobros",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "74",
         "version": "1.9",
         "date": "2015-02-21",
@@ -641,7 +825,10 @@
         "id": "necropolis-73",
         "name": "Necropolis 73%",
         "player": "GMDElite",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "70",
         "version": "1.9",
         "date": "2015-02-21",
@@ -654,7 +841,10 @@
         "id": "stalemate",
         "name": "Stalemate",
         "player": "Nox",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "95",
         "version": "1.9",
         "date": "2015-01-29",
@@ -665,7 +855,10 @@
         "id": "deadly-clubstep",
         "name": "Deadly ClubStep",
         "player": "LunarSimg",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "86",
         "version": "1.7",
         "date": "2014-07-09",
@@ -677,7 +870,10 @@
         "id": "primary-maze",
         "name": "Primary Maze",
         "player": "Centuple",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "",
         "version": "1.6",
         "date": "2014-06-01",
@@ -688,7 +884,10 @@
         "id": "xyz-step-infinity-old",
         "name": "XYZ Step Infinity (Old)",
         "player": "OrcaSN",
-        "tags": ["Level", "Outdated Version"],
+        "tags": [
+            "Level",
+            "Outdated Version"
+        ],
         "length": "75",
         "version": "1.6",
         "date": "2014-04-22",
@@ -699,7 +898,10 @@
         "id": "pg-clubstep-old",
         "name": "pg clubstep (Old)",
         "player": "pg1004",
-        "tags": ["Level", "Outdated Version"],
+        "tags": [
+            "Level",
+            "Outdated Version"
+        ],
         "length": "87",
         "version": "1.6",
         "date": "2014-04-08",
@@ -711,7 +913,10 @@
         "id": "bizarre-milestone-old",
         "name": "bizarre milestone (Old)",
         "player": "Rabbitical",
-        "tags": ["Level", "Outdated Version"],
+        "tags": [
+            "Level",
+            "Outdated Version"
+        ],
         "length": "94",
         "version": "1.5",
         "date": "2014-02-27",
@@ -723,7 +928,9 @@
         "id": "pink-world",
         "name": "Pink World",
         "player": "GW Popomon",
-        "tags": ["Level"],
+        "tags": [
+            "Level"
+        ],
         "length": "69",
         "version": "1.5",
         "date": "2014-02-15",
@@ -734,7 +941,10 @@
         "id": "definite-integral",
         "name": "Definite Integral",
         "player": "Rabbitical",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "87",
         "version": "1.4",
         "date": "2014-01-29",
@@ -746,7 +956,9 @@
         "id": "rythem-time-machine",
         "name": "Rythem Time Machine",
         "player": "GW Popomon",
-        "tags": ["Level"],
+        "tags": [
+            "Level"
+        ],
         "length": "96",
         "version": "1.4",
         "date": "2014-01-06",
@@ -758,7 +970,10 @@
         "id": "bicycle",
         "name": "Bicycle",
         "player": "Back",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "78",
         "version": "1.4",
         "date": "2013-12-26",
@@ -769,7 +984,10 @@
         "id": "demon-world",
         "name": "demon world",
         "player": "superhexagon",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "97",
         "version": "1.3",
         "date": "2013-11-24",
@@ -780,7 +998,10 @@
         "id": "extreme-park",
         "name": "Extreme Park",
         "player": "Rabbitical",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "87",
         "version": "1.2",
         "date": "2013-11-16",
@@ -791,7 +1012,10 @@
         "id": "l",
         "name": "L",
         "player": "-",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "94",
         "version": "1.2",
         "date": "2013-10-30",
@@ -802,7 +1026,10 @@
         "id": "to-the-grave",
         "name": "To the Grave",
         "player": "darnoc2",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "93",
         "version": "1.1",
         "date": "2013-10-19",
@@ -813,7 +1040,10 @@
         "id": "demon-park",
         "name": "demon park",
         "player": "M2coL",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "96",
         "version": "1.1",
         "date": "2013-10-17",
@@ -825,7 +1055,9 @@
         "id": "d",
         "name": "D",
         "player": "die",
-        "tags": ["Level"],
+        "tags": [
+            "Level"
+        ],
         "length": "44",
         "version": "1.1",
         "date": "2013-09-29",
@@ -836,7 +1068,9 @@
         "id": "q",
         "name": "Q",
         "player": "inq",
-        "tags": ["Level"],
+        "tags": [
+            "Level"
+        ],
         "length": "55",
         "version": "1.0",
         "date": "2013-09-19",
@@ -847,7 +1081,10 @@
         "id": "the-rainbow-road",
         "name": "The Rainbow Road",
         "player": "CarbonELiTE",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "60",
         "version": "1.0",
         "date": "2013-08-27",
@@ -858,7 +1095,10 @@
         "id": "the-first-3-trials",
         "name": "The first 3 Trials",
         "player": "CarbonELiTE",
-        "tags": ["Level", "Rated"],
+        "tags": [
+            "Level",
+            "Rated"
+        ],
         "length": "52",
         "version": "1.0",
         "date": "2013-08-20",
@@ -870,7 +1110,10 @@
         "id": "the-first",
         "name": "The First",
         "player": "Clatchet",
-        "tags": ["Level", "Formerly Rated"],
+        "tags": [
+            "Level",
+            "Formerly Rated"
+        ],
         "length": "55",
         "version": "1.0",
         "date": "2013-08-14",
@@ -881,7 +1124,10 @@
         "id": "cant-let-go-old",
         "name": "Cant Let Go (Old)",
         "player": "RobTop",
-        "tags": ["Level", "Outdated Version"],
+        "tags": [
+            "Level",
+            "Outdated Version"
+        ],
         "length": "80",
         "version": "Beta",
         "date": "2013-08-02",
@@ -893,7 +1139,9 @@
         "id": "ultimate-destruction",
         "name": "Ultiate Destruction",
         "player": "RobTop",
-        "tags": ["Level"],
+        "tags": [
+            "Level"
+        ],
         "length": "65",
         "version": "Beta",
         "date": "2013-04-29",
