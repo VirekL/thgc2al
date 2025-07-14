@@ -171,26 +171,80 @@ export default function Timeline() {
       </Head>
       <Background />
       <header className="main-header">
-        <div className="header-bar">
-          <button
-            id="mobile-hamburger-btn"
-            className="mobile-hamburger-btn"
-            type="button"
-            aria-label="Open sidebar"
-            title="Open sidebar menu"
-            onClick={() => isMobile && setShowSidebar(true)}
-          >
-            <span className="bi bi-list hamburger-icon" aria-hidden="true"></span>
-          </button>
-          <div className="logo">
-            <img src="/assets/favicon-96x96.png" alt="The Hardest Achievements List Logo" title="The Hardest Achievements List Logo" className="logo-img" />
+        <div
+          className="header-bar"
+          style={{
+            display: 'flex',
+            flexDirection: isMobile ? 'column' : 'row',
+            alignItems: isMobile ? 'flex-start' : 'center',
+            gap: isMobile ? 0 : 16,
+            width: '100%',
+            paddingBottom: isMobile ? 8 : 0
+          }}
+        >
+          <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', width: isMobile ? '100%' : 'auto' }}>
+            <button
+              id="mobile-hamburger-btn"
+              className="mobile-hamburger-btn"
+              type="button"
+              aria-label="Open sidebar"
+              title="Open sidebar menu"
+              onClick={() => isMobile && setShowSidebar(true)}
+              style={{ marginRight: 12 }}
+            >
+              <span className="bi bi-list hamburger-icon" aria-hidden="true"></span>
+            </button>
+            <div className="logo">
+              <img src="/assets/favicon-96x96.png" alt="The Hardest Achievements List Logo" title="The Hardest Achievements List Logo" className="logo-img" />
+            </div>
+            <h1 className="title main-title" style={{ marginLeft: 12, fontSize: isMobile ? 22 : undefined, lineHeight: 1.1 }}>
+              The Hardest Achievements List
+            </h1>
           </div>
-          <h1 className="title main-title">The Hardest Achievements List</h1>
-        </div>
-        {/* Mobile: Search bar first, then arrow below (copied logic from list.js) */}
-        {isMobile ? (
-          <>
-            <div className="search-bar" style={{ marginTop: 8 }}>
+          {/* Only show search bar, tag pills, and arrow below on mobile */}
+          {isMobile && (
+            <div style={{ width: '100%', marginTop: 12 }}>
+              <div className="search-bar" style={{ width: '100%', maxWidth: 400, margin: '0 auto' }}>
+                <input
+                  type="text"
+                  placeholder="Search achievements..."
+                  value={search}
+                  onChange={e => setSearch(e.target.value)}
+                  aria-label="Search achievements"
+                  className="search-input"
+                  style={{ width: '100%' }}
+                />
+              </div>
+              {/* Tag filter pills below search bar, above arrow */}
+              <div className="tag-filter-pills-container" style={{ width: '100%' }}>
+                <TagFilterPills
+                  allTags={allTags}
+                  filterTags={filterTags}
+                  setFilterTags={setFilterTags}
+                  isMobile={isMobile}
+                  show={showMobileFilters}
+                  setShow={setShowMobileFilters}
+                />
+              </div>
+              <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: 8 }}>
+                <button
+                  ref={mobileBtnRef}
+                  id="mobile-filter-toggle-btn"
+                  aria-label={showMobileFilters ? 'Hide Filters' : 'Show Filters'}
+                  onClick={handleMobileToggle}
+                  className="mobile-filter-toggle"
+                  dangerouslySetInnerHTML={{
+                    __html: showMobileFilters
+                      ? '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-up.svg" alt="Hide Filters" class="arrow-img" /></span>'
+                      : '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-down.svg" alt="Show Filters" class="arrow-img" /></span>'
+                  }}
+                />
+              </div>
+            </div>
+          )}
+          {/* Desktop search bar stays in header-bar */}
+          {!isMobile && (
+            <div className="search-bar" style={{ width: '100%', maxWidth: 400, marginLeft: 'auto' }}>
               <input
                 type="text"
                 placeholder="Search achievements..."
@@ -198,58 +252,24 @@ export default function Timeline() {
                 onChange={e => setSearch(e.target.value)}
                 aria-label="Search achievements"
                 className="search-input"
+                style={{ width: '100%' }}
               />
             </div>
-            <button
-              ref={mobileBtnRef}
-              id="mobile-filter-toggle-btn"
-              aria-label={showMobileFilters ? 'Hide Filters' : 'Show Filters'}
-              onClick={handleMobileToggle}
-              className="mobile-filter-toggle"
-              type="button"
-              style={{ background: 'none', border: 'none', padding: 0, marginTop: 4 }}
-            >
-              <span className="arrow-img-wrapper">
-                {/* Dropdown arrow SVG from list.js */}
-                <svg
-                  className="arrow-img"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  viewBox="0 0 16 16"
-                  style={{ transform: showMobileFilters ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }}
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M1.646 5.146a.5.5 0 0 1 .708 0L8 10.793l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-                  />
-                </svg>
-              </span>
-            </button>
-          </>
-        ) : (
-          <div className="search-bar">
-            <input
-              type="text"
-              placeholder="Search achievements..."
-              value={search}
-              onChange={e => setSearch(e.target.value)}
-              aria-label="Search achievements"
-              className="search-input"
+          )}
+        </div>
+        {/* Desktop: tag filter pills below header-bar, mobile: handled above */}
+        {!isMobile && (
+          <div className="tag-filter-pills-container">
+            <TagFilterPills
+              allTags={allTags}
+              filterTags={filterTags}
+              setFilterTags={setFilterTags}
+              isMobile={isMobile}
+              show={showMobileFilters}
+              setShow={setShowMobileFilters}
             />
           </div>
         )}
-        <div className="tag-filter-pills-container">
-          <TagFilterPills
-            allTags={allTags}
-            filterTags={filterTags}
-            setFilterTags={setFilterTags}
-            isMobile={isMobile}
-            show={showMobileFilters}
-            setShow={setShowMobileFilters}
-          />
-        </div>
       </header>
       {/* Mobile Sidebar Overlay */}
       {isMobile && showSidebar && (
