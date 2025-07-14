@@ -1112,7 +1112,7 @@ main {
   .achievement-card {
     max-width: 100vw;
     width: 100%;
-    padding: 1rem 0.5rem 1rem 0.5rem;
+    padding: 1rem 0.5rem;
     border-radius: 0.7rem;
     box-sizing: border-box;
     margin: 0 auto;
@@ -1165,6 +1165,27 @@ main {
     font-size: 0.9rem;
     padding: 0.4rem 0.7rem;
     bottom: 0.5rem;
+  }
+  .leaderboard-container {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 0.5rem 0.1rem !important;
+    overflow-x: auto !important;
+    min-width: 0 !important;
+  }
+  .leaderboard-table {
+    min-width: 320px;
+    width: 100%;
+    max-width: 100vw !important;
+    overflow-x: auto;
+    display: block;
+  }
+  .leaderboard-table th, .leaderboard-table td {
+    padding: 0.7rem 0.3rem !important;
+    font-size: 0.95rem !important;
+    word-break: break-word;
   }
 }
 
