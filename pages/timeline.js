@@ -88,7 +88,18 @@ function TagFilterPills({ allTags, filterTags, setFilterTags }) {
   }
 
   return (
-    <div className="tag-filter-pills" style={{marginBottom: 16, display: 'flex', flexWrap: 'wrap', gap: 8}}>
+    <div
+      className="tag-filter-pills"
+      style={{
+        minHeight: 40,
+        marginBottom: 16,
+        display: isMobile ? (show ? 'flex' : 'none') : 'flex',
+        flexWrap: 'wrap',
+        gap: 8,
+        alignItems: 'center',
+        transition: 'all 0.2s',
+      }}
+    >
       {allTags.length === 0 ? (
         <span style={{ color: '#aaa', fontSize: 13 }}>Loading tags...</span>
       ) : (
