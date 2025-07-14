@@ -25,6 +25,7 @@ body {
   overflow: hidden;
   z-index: 0; 
 }
+
 @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
@@ -36,15 +37,16 @@ body {
     background-position: 0% 50%;
   }
 }
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  background-color: var(--secondary-bg);
-  box-shadow: var(--shadow);
-  flex-wrap: wrap;
-  position: relative; 
+
+@media (max-width: 768px) {
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .achievement-card {
+    margin-top: 0 !important;
+    padding-top: 0.5rem !important;
+  }
 }
 .header-left {
   display: flex;
