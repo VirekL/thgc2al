@@ -206,28 +206,35 @@ export default function List() {
           </div>
           <h1 className="title main-title">The Hardest Achievements List</h1>
         </div>
-        <div className="search-bar">
-          <input
-            type="text"
-            placeholder="Search achievements..."
-            value={search}
-            onChange={e => setSearch(e.target.value)}
-            aria-label="Search achievements"
-            className="search-input"
-          />
-          {isMobile && (
-            <button
-              ref={mobileBtnRef}
-              id="mobile-filter-toggle-btn"
-              aria-label={showMobileFilters ? 'Hide Filters' : 'Show Filters'}
-              onClick={handleMobileToggle}
-              className="mobile-filter-toggle"
-              dangerouslySetInnerHTML={{
-                __html: showMobileFilters
-                  ? '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-up.svg" alt="Hide Filters" class="arrow-img" /></span>'
-                  : '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-down.svg" alt="Show Filters" class="arrow-img" /></span>'
-              }}
+        {/* Move search bar below logo */}
+        <div className="search-bar-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
+          <div className="search-bar" style={{ width: '100%', maxWidth: 400 }}>
+            <input
+              type="text"
+              placeholder="Search achievements..."
+              value={search}
+              onChange={e => setSearch(e.target.value)}
+              aria-label="Search achievements"
+              className="search-input"
+              style={{ width: '100%' }}
             />
+          </div>
+          {/* Move arrow below search bar */}
+          {isMobile && (
+            <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: 8 }}>
+              <button
+                ref={mobileBtnRef}
+                id="mobile-filter-toggle-btn"
+                aria-label={showMobileFilters ? 'Hide Filters' : 'Show Filters'}
+                onClick={handleMobileToggle}
+                className="mobile-filter-toggle"
+                dangerouslySetInnerHTML={{
+                  __html: showMobileFilters
+                    ? '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-up.svg" alt="Hide Filters" class="arrow-img" /></span>'
+                    : '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-down.svg" alt="Show Filters" class="arrow-img" /></span>'
+                }}
+              />
+            </div>
           )}
         </div>
         <div className="tag-filter-pills-container">
