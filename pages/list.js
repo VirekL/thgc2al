@@ -234,6 +234,17 @@ export default function List() {
                   style={{ width: '100%' }}
                 />
               </div>
+              {/* Tag filter pills below search bar, above arrow */}
+              <div className="tag-filter-pills-container" style={{ width: '100%' }}>
+                <TagFilterPills
+                  allTags={allTags}
+                  filterTags={filterTags}
+                  setFilterTags={setFilterTags}
+                  isMobile={isMobile}
+                  show={showMobileFilters}
+                  setShow={setShowMobileFilters}
+                />
+              </div>
               <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: 8 }}>
                 <button
                   ref={mobileBtnRef}
@@ -265,16 +276,19 @@ export default function List() {
             </div>
           )}
         </div>
-        <div className="tag-filter-pills-container">
-          <TagFilterPills
-            allTags={allTags}
-            filterTags={filterTags}
-            setFilterTags={setFilterTags}
-            isMobile={isMobile}
-            show={showMobileFilters}
-            setShow={setShowMobileFilters}
-          />
-        </div>
+        {/* Desktop: tag filter pills below header-bar, mobile: handled above */}
+        {!isMobile && (
+          <div className="tag-filter-pills-container">
+            <TagFilterPills
+              allTags={allTags}
+              filterTags={filterTags}
+              setFilterTags={setFilterTags}
+              isMobile={isMobile}
+              show={showMobileFilters}
+              setShow={setShowMobileFilters}
+            />
+          </div>
+        )}
       </header>
       {/* Mobile Sidebar Overlay */}
       {isMobile && showSidebar && (
