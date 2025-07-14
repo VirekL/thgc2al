@@ -73,7 +73,7 @@ function TimelineAchievementCard({ achievement, previousAchievement }) {
   );
 }
 
-function TagFilterPills({ allTags, filterTags, setFilterTags }) {
+function TagFilterPills({ allTags, filterTags, setFilterTags, isMobile, show, setShow }) {
   const tagStates = {};
   allTags.forEach(tag => {
     if (filterTags.include.includes(tag)) tagStates[tag] = 'include';
