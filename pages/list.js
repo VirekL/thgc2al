@@ -190,49 +190,77 @@ export default function List() {
       </Head>
       <Background />
       <header className="main-header">
-        <div className="header-bar">
-          <button
-            id="mobile-hamburger-btn"
-            className="mobile-hamburger-btn"
-            type="button"
-            aria-label="Open sidebar"
-            title="Open sidebar menu"
-            onClick={() => isMobile && setShowSidebar(true)}
-          >
-            <span className="bi bi-list hamburger-icon" aria-hidden="true"></span>
-          </button>
-          <div className="logo">
-            <img src="/assets/favicon-96x96.png" alt="The Hardest Achievements List Logo" title="The Hardest Achievements List Logo" className="logo-img" />
+        <div
+          className="header-bar"
+          style={{
+            display: 'flex',
+            flexDirection: isMobile ? 'column' : 'row',
+            alignItems: isMobile ? 'flex-start' : 'center',
+            gap: isMobile ? 0 : 16,
+            width: '100%',
+            paddingBottom: isMobile ? 8 : 0
+          }}
+        >
+          <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', width: isMobile ? '100%' : 'auto' }}>
+            <button
+              id="mobile-hamburger-btn"
+              className="mobile-hamburger-btn"
+              type="button"
+              aria-label="Open sidebar"
+              title="Open sidebar menu"
+              onClick={() => isMobile && setShowSidebar(true)}
+              style={{ marginRight: 12 }}
+            >
+              <span className="bi bi-list hamburger-icon" aria-hidden="true"></span>
+            </button>
+            <div className="logo">
+              <img src="/assets/favicon-96x96.png" alt="The Hardest Achievements List Logo" title="The Hardest Achievements List Logo" className="logo-img" />
+            </div>
+            <h1 className="title main-title" style={{ marginLeft: 12, fontSize: isMobile ? 22 : undefined, lineHeight: 1.1 }}>
+              The Hardest Achievements List
+            </h1>
           </div>
-          <h1 className="title main-title">The Hardest Achievements List</h1>
-        </div>
-        {/* Move search bar below logo */}
-        <div className="search-bar-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
-          <div className="search-bar" style={{ width: '100%', maxWidth: 400 }}>
-            <input
-              type="text"
-              placeholder="Search achievements..."
-              value={search}
-              onChange={e => setSearch(e.target.value)}
-              aria-label="Search achievements"
-              className="search-input"
-              style={{ width: '100%' }}
-            />
-          </div>
-          {/* Move arrow below search bar */}
+          {/* Only show search bar and arrow below on mobile */}
           {isMobile && (
-            <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: 8 }}>
-              <button
-                ref={mobileBtnRef}
-                id="mobile-filter-toggle-btn"
-                aria-label={showMobileFilters ? 'Hide Filters' : 'Show Filters'}
-                onClick={handleMobileToggle}
-                className="mobile-filter-toggle"
-                dangerouslySetInnerHTML={{
-                  __html: showMobileFilters
-                    ? '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-up.svg" alt="Hide Filters" class="arrow-img" /></span>'
-                    : '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-down.svg" alt="Show Filters" class="arrow-img" /></span>'
-                }}
+            <div style={{ width: '100%', marginTop: 12 }}>
+              <div className="search-bar" style={{ width: '100%', maxWidth: 400, margin: '0 auto' }}>
+                <input
+                  type="text"
+                  placeholder="Search achievements..."
+                  value={search}
+                  onChange={e => setSearch(e.target.value)}
+                  aria-label="Search achievements"
+                  className="search-input"
+                  style={{ width: '100%' }}
+                />
+              </div>
+              <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: 8 }}>
+                <button
+                  ref={mobileBtnRef}
+                  id="mobile-filter-toggle-btn"
+                  aria-label={showMobileFilters ? 'Hide Filters' : 'Show Filters'}
+                  onClick={handleMobileToggle}
+                  className="mobile-filter-toggle"
+                  dangerouslySetInnerHTML={{
+                    __html: showMobileFilters
+                      ? '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-up.svg" alt="Hide Filters" class="arrow-img" /></span>'
+                      : '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-down.svg" alt="Show Filters" class="arrow-img" /></span>'
+                  }}
+                />
+              </div>
+            </div>
+          )}
+          {/* Desktop search bar stays in header-bar */}
+          {!isMobile && (
+            <div className="search-bar" style={{ width: '100%', maxWidth: 400, marginLeft: 'auto' }}>
+              <input
+                type="text"
+                placeholder="Search achievements..."
+                value={search}
+                onChange={e => setSearch(e.target.value)}
+                aria-label="Search achievements"
+                className="search-input"
+                style={{ width: '100%' }}
               />
             </div>
           )}
