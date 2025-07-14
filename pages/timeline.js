@@ -28,11 +28,11 @@ function formatDate(date, dateFormat) {
   return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
-function TimelineAchievementCard({ achievement, previousAchievement, isFirst }) {
+function TimelineAchievementCard({ achievement, previousAchievement, isTrulyFirst }) {
   const { dateFormat } = useDateFormat();
-  let lastedDays, lastedLabel;
-  if (isFirst) {
-    // Always show 'Lasting # days' for the first visible achievement
+  let lastedLabel;
+  if (isTrulyFirst) {
+    // Calculate days from achievement date to today
     const today = new Date();
     const achievementDate = new Date(achievement.date);
     if (!achievement.date || isNaN(achievementDate)) {
@@ -43,10 +43,9 @@ function TimelineAchievementCard({ achievement, previousAchievement, isFirst }) 
       lastedLabel = `Lasting ${days} days`;
     }
   } else if (previousAchievement) {
-    lastedDays = calculateDaysLasted(achievement.date, previousAchievement.date);
+    const lastedDays = calculateDaysLasted(achievement.date, previousAchievement.date);
     lastedLabel = `Lasted ${lastedDays} days`;
   } else {
-    // Fallback (shouldn't happen)
     lastedLabel = '';
   }
   return (
@@ -351,14 +350,18 @@ export default function Timeline() {
           {filtered.length === 0 ? (
             <div style={{color: '#aaa'}}>No achievements found.</div>
           ) : (
-            filtered.map((a, i) => (
-              <TimelineAchievementCard
-                achievement={a}
-                previousAchievement={i > 0 ? filtered[i-1] : null}
-                isFirst={i === 0}
-                key={a.id || i}
-              />
-            ))
+            filtered.map((a, i) => {
+              // Only the very first achievement in the full, unfiltered list gets 'Lasting # days'
+              const isTrulyFirst = achievements.length > 0 && a.id === achievements[0].id;
+              return (
+                <TimelineAchievementCard
+                  achievement={a}
+                  previousAchievement={filtered[i-1]}
+                  isTrulyFirst={isTrulyFirst}
+                  key={a.id || i}
+                />
+              );
+            })
           )}
         </section>
       </main>
