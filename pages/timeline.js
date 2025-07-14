@@ -97,7 +97,9 @@ function TagFilterPills({ allTags, filterTags, setFilterTags, isMobile, show, se
         flexWrap: 'wrap',
         gap: 8,
         alignItems: 'center',
+        justifyContent: 'center',
         transition: 'all 0.2s',
+        width: '100%',
       }}
     >
       {allTags.length === 0 ? (
