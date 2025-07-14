@@ -728,11 +728,14 @@ main {
     color: var(--text-color);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
-    max-height: 87vh; 
-    overflow-y: auto; 
-    scrollbar-width: thin; 
-    scrollbar-color: var(--hover-bg) transparent; 
-    overflow-x: auto; 
+    max-width: 600px;
+    width: 100%;
+    margin: 2rem auto;
+    max-height: 80vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--hover-bg) transparent;
+    overflow-x: auto;
 }
 
 .leaderboard-container::-webkit-scrollbar {
@@ -997,7 +1000,8 @@ main {
   max-width: 400px; 
   height: 32px;
   display: flex;
-  align-items: center;
+    max-width: 520px;
+    margin: 0 auto;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
@@ -1167,49 +1171,26 @@ main {
     bottom: 0.5rem;
   }
   .leaderboard-container {
-    width: 100vw !important;
-    max-width: 100vw !important;
-    border-radius: 0.5rem !important;
-    box-shadow: none !important;
-    padding: 1.1rem 0.5rem 1.5rem 0.5rem !important;
-    margin: 0.5rem 0 !important;
-    overflow-x: auto !important;
+    width: 98vw !important;
+    max-width: 98vw !important;
+    border-radius: 0.7rem !important;
+    box-shadow: var(--shadow) !important;
+    padding: 1rem 0.2rem !important;
+    margin: 1rem auto !important;
     min-width: 0 !important;
   }
   .leaderboard-table {
-    min-width: 320px;
+    min-width: 280px;
     width: 100%;
-    max-width: 100vw !important;
+    max-width: 98vw !important;
+    margin: 0 auto;
     overflow-x: auto;
     display: block;
-    border-radius: 0.5rem;
-    background: var(--primary-bg);
-    margin: 0 auto;
   }
   .leaderboard-table th, .leaderboard-table td {
-    padding: 1.1rem 0.6rem !important;
-    font-size: 1.05rem !important;
+    padding: 0.6rem 0.2rem !important;
+    font-size: 0.92rem !important;
     word-break: break-word;
-    border-bottom: 1px solid var(--hover-bg);
-  }
-  .leaderboard-table th {
-    background-color: var(--secondary-bg);
-    color: var(--text-color);
-    font-size: 1.1rem !important;
-    font-weight: bold;
-    letter-spacing: 0.02em;
-  }
-  .leaderboard-table tr {
-    margin-bottom: 0.5rem;
-    border-radius: 0.5rem;
-    display: table-row;
-  }
-  .leaderboard-table tr.clickable-row {
-    margin-bottom: 0.7rem;
-  }
-  .hidden-row ul {
-    margin-top: 0.7rem;
-    margin-bottom: 0.7rem;
   }
 }
 
