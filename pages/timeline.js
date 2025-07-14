@@ -28,14 +28,11 @@ function formatDate(date, dateFormat) {
   return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
-function TimelineAchievementCard({ achievement, previousAchievement }) {
+function TimelineAchievementCard({ achievement, previousAchievement, isFirst }) {
   const { dateFormat } = useDateFormat();
   let lastedDays, lastedLabel;
-  if (previousAchievement) {
-    lastedDays = calculateDaysLasted(achievement.date, previousAchievement.date);
-    lastedLabel = `Lasted ${lastedDays} days`;
-  } else {
-    // Calculate days from achievement date to today
+  if (isFirst) {
+    // Always show 'Lasting # days' for the first visible achievement
     const today = new Date();
     const achievementDate = new Date(achievement.date);
     if (!achievement.date || isNaN(achievementDate)) {
@@ -45,6 +42,12 @@ function TimelineAchievementCard({ achievement, previousAchievement }) {
       const days = Math.max(1, Math.ceil(diffTime / (1000 * 60 * 60 * 24)));
       lastedLabel = `Lasting ${days} days`;
     }
+  } else if (previousAchievement) {
+    lastedDays = calculateDaysLasted(achievement.date, previousAchievement.date);
+    lastedLabel = `Lasted ${lastedDays} days`;
+  } else {
+    // Fallback (shouldn't happen)
+    lastedLabel = '';
   }
   return (
     <div className="achievement-item" tabIndex={0} style={{cursor: 'pointer'}}>
@@ -349,7 +352,12 @@ export default function Timeline() {
             <div style={{color: '#aaa'}}>No achievements found.</div>
           ) : (
             filtered.map((a, i) => (
-              <TimelineAchievementCard achievement={a} previousAchievement={filtered[i-1]} key={a.id || i} />
+              <TimelineAchievementCard
+                achievement={a}
+                previousAchievement={i > 0 ? filtered[i-1] : null}
+                isFirst={i === 0}
+                key={a.id || i}
+              />
             ))
           )}
         </section>
