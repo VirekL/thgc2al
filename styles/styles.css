@@ -1194,12 +1194,35 @@ main {
   }
 }
 
+/* --- Zoomed out leaderboard styles --- */
+.leaderboard-container {
+  font-size: 0.85rem;
+  padding: 0.7rem 0.5rem;
+  margin: 1rem auto;
+  max-height: 70vh;
+}
+.leaderboard-table {
+  font-size: 0.85rem;
+}
+.leaderboard-table th, .leaderboard-table td {
+  padding: 0.5rem 0.3rem;
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
 @media (max-width: 600px) {
+  .leaderboard-container {
+    font-size: 0.75rem !important;
+    padding: 0.3rem 0.1rem !important;
+    margin: 0.5rem auto !important;
+    max-height: 60vh !important;
+  }
   .leaderboard-table {
-    min-width: 320px;
+    font-size: 0.75rem !important;
   }
   .leaderboard-table th, .leaderboard-table td {
-    padding: 1.75rem 0.66rem;
+    padding: 0.3rem 0.1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1.1;
   }
 }
 
