@@ -1112,7 +1112,7 @@ main {
   .achievement-card {
     max-width: 100vw;
     width: 100%;
-    padding: 1rem 0.5rem;
+    padding: 1rem 0.5rem 1rem 0.5rem;
     border-radius: 0.7rem;
     box-sizing: border-box;
     margin: 0 auto;
