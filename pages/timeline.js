@@ -28,7 +28,7 @@ function formatDate(date, dateFormat) {
   return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
-function TimelineAchievementCard({ achievement, previousAchievement }) {
+function TimelineAchievementCard({ achievement, previousAchievement, isFirst }) {
   const { dateFormat } = useDateFormat();
   let lastedDays, lastedLabel;
   if (previousAchievement) {
