@@ -1329,20 +1329,24 @@ main {
   display: block;
 }
 .search-bar {
-  margin: 0.5rem 2rem 0 2rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  width: auto;
+margin: 0.5rem 2rem 0 2rem;
+display: flex;
+align-items: center;
+gap: 8px;
+flex: 1 1 0%;
+width: 100%;
+max-width: none;
 }
 .search-input {
-  padding: 0.75rem;
-  border-radius: 8px;
-  border: 2px solid var(--hover-bg);
-  width: 100%;
-  background: var(--primary-bg);
-  color: var(--text-color);
-  font-size: 1rem;
+padding: 0.75rem;
+border-radius: 8px;
+border: 2px solid var(--hover-bg);
+width: 100%;
+background: var(--primary-bg);
+color: var(--text-color);
+font-size: 1rem;
+flex: 1 1 0%;
+min-width: 0;
 }
 .tag-filter-pills-container {
   margin: 0.5rem 2rem 0 2rem;
