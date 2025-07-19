@@ -68,31 +68,91 @@ function formatDate(date, dateFormat) {
 
 function AchievementCard({ achievement, onClick }) {
   const { dateFormat } = useDateFormat();
+  // Helper for tooltips on less obvious tags, using About Us page definitions
+  const TAG_TOOLTIPS = {
+    LEVEL: 'A traditional level, which spans 30+ seconds.',
+    CHALLENGE: 'Tiny or short length level; a level that spans under 30 seconds.',
+    'LOW HERTZ': 'Done at a low hz. It can be added if it adds a lot more difficulty to the level.',
+    MOBILE: 'Played on mobile.',
+    SPEEDHACK: 'Altered speed using hacks.',
+    NOCLIP: 'Done with noclip on.',
+    MISCELLANEOUS: 'An achievement that doesn\'t fit with any other types.',
+    PROGRESS: 'Parts of the level completed.',
+    CONSISTENCY: 'Progress done in a row.',
+    '2P': 'Level uses 2 player mode.',
+    CBF: 'Achievement uses Geode mod Click Between Frames, which allows players to input actions in between visual frames, effectively increasing input precision.',
+    RATED: 'Level is rated ingame.',
+    'FORMERLY RATED': 'Level was rated, but had its rating status removed.',
+    'OUTDATED VERSION': 'Level is rated and is on an older version than the current one.'
+  };
+
   return (
     <Link href={`/achievement/${achievement.id}`} passHref legacyBehavior>
       <a style={{ textDecoration: 'none', color: 'inherit' }}>
-        <div className="achievement-item" tabIndex={0} style={{cursor: 'pointer'}}>
-          <div className="rank-date-container">
-            <div className="achievement-length">
-              {achievement.length ? `${Math.floor(achievement.length / 60)}:${(achievement.length % 60).toString().padStart(2, '0')}` : 'N/A'}
-            </div>
-            <div className="achievement-date">
-              {achievement.date ? formatDate(achievement.date, dateFormat) : 'N/A'}
-            </div>
-            <div className="rank"><strong>#{achievement.rank}</strong></div>
+        <div
+          className="achievement-item improved-card"
+          tabIndex={0}
+          style={{ cursor: 'pointer', marginBottom: '2rem', boxShadow: '0 4px 16px rgba(0,0,0,0.18)', borderRadius: '12px', padding: '1.5rem', background: 'var(--accent-bg)', display: 'flex', alignItems: 'center', minHeight: '140px' }}
+        >
+          <div className="thumbnail-container" style={{ flex: '0 0 180px', height: '110px', marginRight: '2rem', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 2px 8px rgba(0,0,0,0.22)' }}>
+            <img
+              src={achievement.thumbnail || (achievement.levelID ? `https://tjcsucht.net/levelthumbs/${achievement.levelID}.png` : '/assets/default-thumbnail.png')}
+              alt={achievement.name}
+              loading="lazy"
+              style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '10px' }}
+            />
           </div>
-          <div className="tag-container">
-            {(achievement.tags || []).sort((a, b) => TAG_PRIORITY_ORDER.indexOf(a.toUpperCase()) - TAG_PRIORITY_ORDER.indexOf(b.toUpperCase())).map(tag => (
-              <Tag tag={tag} key={tag} />
-            ))}
-          </div>
-          <div className="achievement-details">
-            <div className="text">
-              <h2>{achievement.name}</h2>
-              <p>{achievement.player}</p>
+          <div className="achievement-details" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '0.5rem' }}>
+            <div className="text" style={{ marginBottom: '0.5rem', display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
+              <h2 style={{ fontSize: '1.6rem', marginBottom: '0.2rem', textAlign: 'left', fontWeight: 700 }}>{achievement.name}</h2>
+              <p style={{ fontSize: '1.1rem', color: 'var(--text-color)', textAlign: 'left', marginBottom: 0 }}>{achievement.player}</p>
             </div>
-            <div className="thumbnail-container">
-              <img src={achievement.thumbnail || (achievement.levelID ? `https://tjcsucht.net/levelthumbs/${achievement.levelID}.png` : '/assets/default-thumbnail.png')} alt={achievement.name} loading="lazy" />
+            <div className="tag-container" style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.2rem' }}>
+              {(achievement.tags || [])
+                .sort((a, b) => TAG_PRIORITY_ORDER.indexOf(a.toUpperCase()) - TAG_PRIORITY_ORDER.indexOf(b.toUpperCase()))
+                .map(tag => (
+                  <span key={tag} style={{ position: 'relative' }}>
+                    <Tag
+                      tag={tag}
+                      {...(TAG_TOOLTIPS[tag.toUpperCase()] ? {
+                        tabIndex: 0,
+                        clickable: false,
+                        onMouseEnter: e => {
+                          const tooltip = document.createElement('div');
+                          tooltip.className = 'tag-tooltip';
+                          tooltip.innerText = TAG_TOOLTIPS[tag.toUpperCase()];
+                          tooltip.style.position = 'absolute';
+                          tooltip.style.bottom = '120%';
+                          tooltip.style.left = '50%';
+                          tooltip.style.transform = 'translateX(-50%)';
+                          tooltip.style.background = 'rgba(30,30,40,0.97)';
+                          tooltip.style.color = '#fff';
+                          tooltip.style.padding = '6px 12px';
+                          tooltip.style.borderRadius = '8px';
+                          tooltip.style.fontSize = '13px';
+                          tooltip.style.boxShadow = '0 2px 8px rgba(0,0,0,0.22)';
+                          tooltip.style.zIndex = '9999';
+                          e.currentTarget.appendChild(tooltip);
+                        },
+                        onMouseLeave: e => {
+                          const tooltips = e.currentTarget.querySelectorAll('.tag-tooltip');
+                          tooltips.forEach(t => t.remove());
+                        }
+                      } : {})}
+                    />
+                  </span>
+                ))}
+            </div>
+            <div className="rank-date-container" style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', marginTop: '0.2rem' }}>
+              <div className="achievement-length" style={{ fontWeight: 500, fontSize: '1.05rem', color: '#b8c6e0' }}>
+                {achievement.length ? `${Math.floor(achievement.length / 60)}:${(achievement.length % 60).toString().padStart(2, '0')}` : 'N/A'}
+              </div>
+              <div className="achievement-date" style={{ fontSize: '1.05rem', color: '#b8c6e0' }}>
+                {achievement.date ? formatDate(achievement.date, dateFormat) : 'N/A'}
+              </div>
+              <div className="rank" style={{ fontWeight: 700, fontSize: '1.1rem', color: '#ffc800' }}>
+                <strong>#{achievement.rank}</strong>
+              </div>
             </div>
           </div>
         </div>
