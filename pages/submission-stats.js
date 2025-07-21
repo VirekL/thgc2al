@@ -50,9 +50,7 @@ export default function SubmissionStats() {
       <Header />
       <main className="main-content">
         <Sidebar />
-        <section id="submission-stats-section" className="leaderboard-container" style={{padding: '2rem'}}>
-          <Leaderboard submitters={Array.isArray(submitters) ? submitters : []} />
-        </section>
+        <Leaderboard submitters={Array.isArray(submitters) ? submitters : []} />
       </main>
     </>
   );
