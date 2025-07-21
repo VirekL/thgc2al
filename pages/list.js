@@ -136,9 +136,6 @@ export default function List() {
   const [showNewForm, setShowNewForm] = useState(false);
   // Track hovered achievement index for dev controls
   const [hoveredIdx, setHoveredIdx] = useState(null);
-  // Editing achievement state
-  const [editIdx, setEditIdx] = useState(null);
-  const [editForm, setEditForm] = useState(null);
   const [newForm, setNewForm] = useState({
     name: '', id: '', player: '', length: '', version: '2.', video: '', showcaseVideo: '', date: '', submitter: '', levelID: '', thumbnail: '', tags: []
   });
@@ -679,32 +676,6 @@ const newFormPreview = useMemo(() => {
                     transition: 'background 0.2s, border 0.2s',
                   }}>
                     <button
-                      title="Edit"
-                      style={{
-                        background: 'var(--primary, #222)',
-                        border: 'none',
-                        color: 'var(--primary-accent, #e67e22)',
-                        fontSize: 44,
-                        cursor: 'pointer',
-                        opacity: 1,
-                        borderRadius: '50%',
-                        width: 64,
-                        height: 64,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        boxShadow: '0 2px 8px #0006',
-                        transition: 'background 0.15s, transform 0.1s',
-                        outline: 'none',
-                        marginRight: 0,
-                      }}
-                      onClick={e => {
-                        e.stopPropagation();
-                        setEditIdx(i);
-                        setEditForm({ ...(devAchievements[i] || {}) });
-                      }}
-                    >✏️</button>
-                    <button
                       title="Duplicate"
                       style={{
                         background: 'var(--primary-accent, #e67e22)',
@@ -752,107 +723,6 @@ const newFormPreview = useMemo(() => {
                     >🗑️</button>
                   </div>
                 )}
-      {/* Edit Achievement Modal */}
-      {devMode && editIdx !== null && editForm && (
-        <div style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          width: '100vw',
-          height: '100vh',
-          background: 'rgba(0,0,0,0.7)',
-          zIndex: 3000,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-          onClick={() => { setEditIdx(null); setEditForm(null); }}
-        >
-          <div
-            style={{
-              background: 'var(--secondary-bg, #232323)',
-              borderRadius: 14,
-              padding: 32,
-              minWidth: 340,
-              maxWidth: 420,
-              boxShadow: '0 4px 32px #000b',
-              border: '2px solid var(--primary-accent, #e67e22)',
-              color: '#fff',
-              position: 'relative',
-            }}
-            onClick={e => e.stopPropagation()}
-          >
-            <button
-              style={{
-                position: 'absolute',
-                top: 12,
-                right: 12,
-                background: 'none',
-                border: 'none',
-                color: '#fff',
-                fontSize: 28,
-                cursor: 'pointer',
-                zIndex: 1,
-              }}
-              title="Close"
-              onClick={() => { setEditIdx(null); setEditForm(null); }}
-            >×</button>
-            <h2 style={{marginTop:0, color:'var(--primary-accent, #e67e22)', fontSize:22, marginBottom:18}}>Edit Achievement</h2>
-            <form onSubmit={e => {
-              e.preventDefault();
-              setReordered(prev => {
-                if (!prev) return prev;
-                const arr = [...prev];
-                arr[editIdx] = { ...arr[editIdx], ...editForm };
-                return arr;
-              });
-              setEditIdx(null);
-              setEditForm(null);
-            }}>
-              <label style={{display:'block',fontSize:14,marginTop:8}}>Name
-                <input type="text" name="name" value={editForm.name || ''} onChange={e => setEditForm(f => ({...f, name: e.target.value}))} required style={{width:'100%',fontSize:15,padding:5,marginTop:2,boxSizing:'border-box',borderRadius:5,border:'1px solid #888',background:'#181818',color:'#fff'}} />
-              </label>
-              <label style={{display:'block',fontSize:14,marginTop:8}}>ID
-                <input type="text" name="id" value={editForm.id || ''} onChange={e => setEditForm(f => ({...f, id: e.target.value}))} required style={{width:'100%',fontSize:15,padding:5,marginTop:2,boxSizing:'border-box',borderRadius:5,border:'1px solid #888',background:'#181818',color:'#fff'}} />
-              </label>
-              <label style={{display:'block',fontSize:14,marginTop:8}}>Player
-                <input type="text" name="player" value={editForm.player || ''} onChange={e => setEditForm(f => ({...f, player: e.target.value}))} style={{width:'100%',fontSize:15,padding:5,marginTop:2,boxSizing:'border-box',borderRadius:5,border:'1px solid #888',background:'#181818',color:'#fff'}} />
-              </label>
-              <label style={{display:'block',fontSize:14,marginTop:8}}>Tags
-                <input type="text" name="tags" value={Array.isArray(editForm.tags) ? editForm.tags.join(', ') : ''} onChange={e => setEditForm(f => ({...f, tags: e.target.value.split(',').map(t => t.trim()).filter(Boolean)}))} style={{width:'100%',fontSize:15,padding:5,marginTop:2,boxSizing:'border-box',borderRadius:5,border:'1px solid #888',background:'#181818',color:'#fff'}} placeholder="Comma separated" />
-              </label>
-              <label style={{display:'block',fontSize:14,marginTop:8}}>Length
-                <input type="text" name="length" value={editForm.length || ''} onChange={e => setEditForm(f => ({...f, length: e.target.value}))} style={{width:'100%',fontSize:15,padding:5,marginTop:2,boxSizing:'border-box',borderRadius:5,border:'1px solid #888',background:'#181818',color:'#fff'}} />
-              </label>
-              <label style={{display:'block',fontSize:14,marginTop:8}}>Version
-                <input type="text" name="version" value={editForm.version || ''} onChange={e => setEditForm(f => ({...f, version: e.target.value}))} style={{width:'100%',fontSize:15,padding:5,marginTop:2,boxSizing:'border-box',borderRadius:5,border:'1px solid #888',background:'#181818',color:'#fff'}} />
-              </label>
-              <label style={{display:'block',fontSize:14,marginTop:8}}>Video URL
-                <input type="text" name="video" value={editForm.video || ''} onChange={e => setEditForm(f => ({...f, video: e.target.value}))} style={{width:'100%',fontSize:15,padding:5,marginTop:2,boxSizing:'border-box',borderRadius:5,border:'1px solid #888',background:'#181818',color:'#fff'}} />
-              </label>
-              <label style={{display:'block',fontSize:14,marginTop:8}}>Showcase Video
-                <input type="text" name="showcaseVideo" value={editForm.showcaseVideo || ''} onChange={e => setEditForm(f => ({...f, showcaseVideo: e.target.value}))} style={{width:'100%',fontSize:15,padding:5,marginTop:2,boxSizing:'border-box',borderRadius:5,border:'1px solid #888',background:'#181818',color:'#fff'}} />
-              </label>
-              <label style={{display:'block',fontSize:14,marginTop:8}}>Date (YYYY-MM-DD)
-                <input type="text" name="date" value={editForm.date || ''} onChange={e => setEditForm(f => ({...f, date: e.target.value}))} style={{width:'100%',fontSize:15,padding:5,marginTop:2,boxSizing:'border-box',borderRadius:5,border:'1px solid #888',background:'#181818',color:'#fff'}} />
-              </label>
-              <label style={{display:'block',fontSize:14,marginTop:8}}>Submitter
-                <input type="text" name="submitter" value={editForm.submitter || ''} onChange={e => setEditForm(f => ({...f, submitter: e.target.value}))} style={{width:'100%',fontSize:15,padding:5,marginTop:2,boxSizing:'border-box',borderRadius:5,border:'1px solid #888',background:'#181818',color:'#fff'}} />
-              </label>
-              <label style={{display:'block',fontSize:14,marginTop:8}}>Level ID
-                <input type="text" name="levelID" value={editForm.levelID || ''} onChange={e => setEditForm(f => ({...f, levelID: e.target.value}))} style={{width:'100%',fontSize:15,padding:5,marginTop:2,boxSizing:'border-box',borderRadius:5,border:'1px solid #888',background:'#181818',color:'#fff'}} />
-              </label>
-              <label style={{display:'block',fontSize:14,marginTop:8}}>Thumbnail
-                <input type="text" name="thumbnail" value={editForm.thumbnail || ''} onChange={e => setEditForm(f => ({...f, thumbnail: e.target.value}))} style={{width:'100%',fontSize:15,padding:5,marginTop:2,boxSizing:'border-box',borderRadius:5,border:'1px solid #888',background:'#181818',color:'#fff'}} />
-              </label>
-              <div style={{marginTop:18,display:'flex',gap:12,justifyContent:'flex-end'}}>
-                <button type="button" onClick={() => { setEditIdx(null); setEditForm(null); }} style={{padding:'7px 18px',fontSize:15,borderRadius:6,border:'1px solid #aaa',background:'#222',color:'#fff',cursor:'pointer'}}>Cancel</button>
-                <button type="submit" style={{padding:'7px 18px',fontSize:15,borderRadius:6,border:'1px solid var(--primary-accent, #e67e22)',background:'var(--primary-accent, #e67e22)',color:'#fff',cursor:'pointer'}}>Save</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      )}
                 <AchievementCard achievement={a} />
               </div>
             ))
