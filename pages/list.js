@@ -139,6 +139,8 @@ export default function List() {
   });
   const [newFormTags, setNewFormTags] = useState([]);
   const [newFormCustomTags, setNewFormCustomTags] = useState('');
+  const [insertIdx, setInsertIdx] = useState(null); // For new achievement insert position
+  const achievementRefs = useRef([]);
 
   useEffect(() => {
     fetch('/achievements.json')
@@ -248,31 +250,38 @@ export default function List() {
   function handleNewFormCustomTagsChange(e) {
     setNewFormCustomTags(e.target.value);
   }
-function handleNewFormAdd() {
-  // Compose tags
-  let tags = [...newFormTags];
-  if (typeof newFormCustomTags === 'string' && newFormCustomTags.trim()) {
-    newFormCustomTags.split(',').map(t => (typeof t === 'string' ? t.trim() : t)).filter(Boolean).forEach(t => {
-      if (!tags.includes(t)) tags.push(t);
-    });
-  }
-  // Compose entry
-  const entry = {};
-  Object.entries(newForm).forEach(([k, v]) => {
-    if (typeof v === 'string') {
-      if (v.trim() !== '') entry[k] = v.trim();
-    } else if (v !== undefined && v !== null && v !== '') {
-      entry[k] = v;
+  function handleNewFormAdd() {
+    // Compose tags
+    let tags = [...newFormTags];
+    if (typeof newFormCustomTags === 'string' && newFormCustomTags.trim()) {
+      newFormCustomTags.split(',').map(t => (typeof t === 'string' ? t.trim() : t)).filter(Boolean).forEach(t => {
+        if (!tags.includes(t)) tags.push(t);
+      });
     }
-  });
-  if (tags.length > 0) entry.tags = tags;
-  // Add to reordered list
-  setReordered(prev => prev ? [...prev, entry] : [entry]);
-  setShowNewForm(false);
-  setNewForm({ name: '', id: '', player: '', length: '', version: '2.', video: '', showcaseVideo: '', date: '', submitter: '', levelID: '', thumbnail: '', tags: [] });
-  setNewFormTags([]);
-  setNewFormCustomTags('');
-}
+    // Compose entry
+    const entry = {};
+    Object.entries(newForm).forEach(([k, v]) => {
+      if (typeof v === 'string') {
+        if (v.trim() !== '') entry[k] = v.trim();
+      } else if (v !== undefined && v !== null && v !== '') {
+        entry[k] = v;
+      }
+    });
+    if (tags.length > 0) entry.tags = tags;
+    // Insert at insertIdx or end
+    setReordered(prev => {
+      if (!prev) return [entry];
+      if (insertIdx === null || insertIdx < 0 || insertIdx > prev.length - 1) return [...prev, entry];
+      const arr = [...prev];
+      arr.splice(insertIdx + 1, 0, entry);
+      return arr;
+    });
+    setShowNewForm(false);
+    setNewForm({ name: '', id: '', player: '', length: '', version: '2.', video: '', showcaseVideo: '', date: '', submitter: '', levelID: '', thumbnail: '', tags: [] });
+    setNewFormTags([]);
+    setNewFormCustomTags('');
+    setInsertIdx(null);
+  }
   function handleNewFormCancel() {
     setShowNewForm(false);
     setNewForm({ name: '', id: '', player: '', length: '', version: '2.', video: '', showcaseVideo: '', date: '', submitter: '', levelID: '', thumbnail: '', tags: [] });
@@ -316,6 +325,28 @@ const newFormPreview = useMemo(() => {
       document.body.removeChild(textarea);
       alert('Copied new achievements.json to clipboard!');
     }
+  }
+
+  // Find the most visible achievement card in viewport
+  function getMostVisibleIdx() {
+    if (!achievementRefs.current) return null;
+    let maxVisible = 0;
+    let bestIdx = null;
+    achievementRefs.current.forEach((ref, idx) => {
+      if (!ref) return;
+      const rect = ref.getBoundingClientRect();
+      const visible = Math.max(0, Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0));
+      if (visible > maxVisible) {
+        maxVisible = visible;
+        bestIdx = idx;
+      }
+    });
+    return bestIdx;
+  }
+  // When opening the new form, set insertIdx to the most visible card
+  function handleShowNewForm() {
+    setInsertIdx(getMostVisibleIdx());
+    setShowNewForm(true);
   }
 
   return (
@@ -500,11 +531,14 @@ const newFormPreview = useMemo(() => {
         {/* Desktop sidebar only */}
         {!isMobile && <Sidebar />}
         <section className="achievements achievements-section">
+          {/* Floating dev mode controls */}
           {devMode && (
-            <div style={{marginBottom: 16, display: 'flex', alignItems: 'center', gap: 12}}>
-              <span style={{color: '#e67e22', fontWeight: 600}}>Developer Mode Enabled (SHIFT+M)</span>
-              <button onClick={handleCopyJson} style={{padding: '6px 14px', borderRadius: 6, border: '1px solid #aaa', background: '#222', color: '#fff', cursor: 'pointer'}}>Copy achievements.json</button>
-              <button onClick={() => setShowNewForm(true)} style={{padding: '6px 14px', borderRadius: 6, border: '1px solid #aaa', background: '#222', color: '#fff', cursor: 'pointer'}}>New Achievement</button>
+            <div style={{position:'fixed',zIndex:2000,bottom:24,right:24,background:'#232323',borderRadius:10,padding:'16px 20px',boxShadow:'0 2px 12px #0006',display:'flex',flexDirection:'column',alignItems:'flex-end',gap:10,minWidth:220}}>
+              <span style={{color:'#e67e22',fontWeight:600,marginBottom:2}}>Developer Mode Enabled (SHIFT+M)</span>
+              <div style={{display:'flex',gap:8}}>
+                <button onClick={handleCopyJson} style={{padding:'6px 14px',borderRadius:6,border:'1px solid #aaa',background:'#222',color:'#fff',cursor:'pointer'}}>Copy achievements.json</button>
+                <button onClick={handleShowNewForm} style={{padding:'6px 14px',borderRadius:6,border:'1px solid #aaa',background:'#222',color:'#fff',cursor:'pointer'}}>New Achievement</button>
+              </div>
             </div>
           )}
           {devMode && showNewForm && (
@@ -553,6 +587,9 @@ const newFormPreview = useMemo(() => {
             devAchievements.map((a, i) => (
               <div
                 key={a.id || i}
+                ref={el => {
+                  achievementRefs.current[i] = el;
+                }}
                 draggable
                 onDragStart={() => handleDragStart(i)}
                 onDragOver={e => handleDragOver(i, e)}
