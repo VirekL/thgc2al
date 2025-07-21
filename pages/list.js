@@ -659,9 +659,68 @@ const newFormPreview = useMemo(() => {
                 onMouseLeave={() => setHoveredIdx(v => v === i ? null : v)}
               >
                 {(hoveredIdx === i) && (
-                  <div style={{position:'absolute',top:8,right:8,display:'flex',gap:6,zIndex:2}}>
-                    <button title="Duplicate" style={{background:'none',border:'none',color:'#fff',fontSize:18,cursor:'pointer',opacity:0.95}} onClick={e => {e.stopPropagation(); handleDuplicateAchievement(i);}}>📄</button>
-                    <button title="Remove" style={{background:'none',border:'none',color:'#fff',fontSize:18,cursor:'pointer',opacity:0.95}} onClick={e => {e.stopPropagation(); handleRemoveAchievement(i);}}>🗑️</button>
+                  <div style={{
+                    position: 'absolute',
+                    top: '50%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
+                    display: 'flex',
+                    gap: 32,
+                    zIndex: 2,
+                    background: 'var(--secondary-bg, #232323)',
+                    borderRadius: '1.5rem',
+                    padding: '22px 40px',
+                    boxShadow: '0 4px 24px #000b',
+                    alignItems: 'center',
+                    border: '2px solid var(--primary-accent, #e67e22)',
+                    transition: 'background 0.2s, border 0.2s',
+                  }}>
+                    <button
+                      title="Duplicate"
+                      style={{
+                        background: 'var(--primary-accent, #e67e22)',
+                        border: 'none',
+                        color: '#fff',
+                        fontSize: 44,
+                        cursor: 'pointer',
+                        opacity: 1,
+                        borderRadius: '50%',
+                        width: 64,
+                        height: 64,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        boxShadow: '0 2px 8px #0006',
+                        transition: 'background 0.15s, transform 0.1s',
+                        outline: 'none',
+                      }}
+                      onMouseOver={e => e.currentTarget.style.background = 'var(--primary-accent-hover, #ff9800)'}
+                      onMouseOut={e => e.currentTarget.style.background = 'var(--primary-accent, #e67e22)'}
+                      onClick={e => {e.stopPropagation(); handleDuplicateAchievement(i);}}
+                    >📄</button>
+                    <button
+                      title="Remove"
+                      style={{
+                        background: 'var(--danger, #c0392b)',
+                        border: 'none',
+                        color: '#fff',
+                        fontSize: 44,
+                        cursor: 'pointer',
+                        opacity: 1,
+                        borderRadius: '50%',
+                        width: 64,
+                        height: 64,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        boxShadow: '0 2px 8px #0006',
+                        transition: 'background 0.15s, transform 0.1s',
+                        outline: 'none',
+                      }}
+                      onMouseOver={e => e.currentTarget.style.background = 'var(--danger-hover, #e74c3c)'}
+                      onMouseOut={e => e.currentTarget.style.background = 'var(--danger, #c0392b)'}
+                      onClick={e => {e.stopPropagation(); handleRemoveAchievement(i);}}
+                    >🗑️</button>
                   </div>
                 )}
                 <AchievementCard achievement={a} />
