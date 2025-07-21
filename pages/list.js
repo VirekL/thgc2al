@@ -248,27 +248,31 @@ export default function List() {
   function handleNewFormCustomTagsChange(e) {
     setNewFormCustomTags(e.target.value);
   }
-  function handleNewFormAdd() {
-    // Compose tags
-    let tags = [...newFormTags];
-    if (newFormCustomTags.trim()) {
-      newFormCustomTags.split(',').map(t => t.trim()).filter(Boolean).forEach(t => {
-        if (!tags.includes(t)) tags.push(t);
-      });
-    }
-    // Compose entry
-    const entry = {};
-    Object.entries(newForm).forEach(([k, v]) => {
-      if (v && v.trim() !== '') entry[k] = v.trim();
+function handleNewFormAdd() {
+  // Compose tags
+  let tags = [...newFormTags];
+  if (typeof newFormCustomTags === 'string' && newFormCustomTags.trim()) {
+    newFormCustomTags.split(',').map(t => (typeof t === 'string' ? t.trim() : t)).filter(Boolean).forEach(t => {
+      if (!tags.includes(t)) tags.push(t);
     });
-    if (tags.length > 0) entry.tags = tags;
-    // Add to reordered list
-    setReordered(prev => prev ? [...prev, entry] : [entry]);
-    setShowNewForm(false);
-    setNewForm({ name: '', id: '', player: '', length: '', version: '2.', video: '', showcaseVideo: '', date: '', submitter: '', levelID: '', thumbnail: '', tags: [] });
-    setNewFormTags([]);
-    setNewFormCustomTags('');
   }
+  // Compose entry
+  const entry = {};
+  Object.entries(newForm).forEach(([k, v]) => {
+    if (typeof v === 'string') {
+      if (v.trim() !== '') entry[k] = v.trim();
+    } else if (v !== undefined && v !== null && v !== '') {
+      entry[k] = v;
+    }
+  });
+  if (tags.length > 0) entry.tags = tags;
+  // Add to reordered list
+  setReordered(prev => prev ? [...prev, entry] : [entry]);
+  setShowNewForm(false);
+  setNewForm({ name: '', id: '', player: '', length: '', version: '2.', video: '', showcaseVideo: '', date: '', submitter: '', levelID: '', thumbnail: '', tags: [] });
+  setNewFormTags([]);
+  setNewFormCustomTags('');
+}
   function handleNewFormCancel() {
     setShowNewForm(false);
     setNewForm({ name: '', id: '', player: '', length: '', version: '2.', video: '', showcaseVideo: '', date: '', submitter: '', levelID: '', thumbnail: '', tags: [] });
@@ -276,20 +280,24 @@ export default function List() {
     setNewFormCustomTags('');
   }
   // Live preview for new achievement
-  const newFormPreview = useMemo(() => {
-    let tags = [...newFormTags];
-    if (newFormCustomTags.trim()) {
-      newFormCustomTags.split(',').map(t => t.trim()).filter(Boolean).forEach(t => {
-        if (!tags.includes(t)) tags.push(t);
-      });
-    }
-    const entry = {};
-    Object.entries(newForm).forEach(([k, v]) => {
-      if (v && v.trim() !== '') entry[k] = v.trim();
+const newFormPreview = useMemo(() => {
+  let tags = [...newFormTags];
+  if (typeof newFormCustomTags === 'string' && newFormCustomTags.trim()) {
+    newFormCustomTags.split(',').map(t => (typeof t === 'string' ? t.trim() : t)).filter(Boolean).forEach(t => {
+      if (!tags.includes(t)) tags.push(t);
     });
-    if (tags.length > 0) entry.tags = tags;
-    return entry;
-  }, [newForm, newFormTags, newFormCustomTags]);
+  }
+  const entry = {};
+  Object.entries(newForm).forEach(([k, v]) => {
+    if (typeof v === 'string') {
+      if (v.trim() !== '') entry[k] = v.trim();
+    } else if (v !== undefined && v !== null && v !== '') {
+      entry[k] = v;
+    }
+  });
+  if (tags.length > 0) entry.tags = tags;
+  return entry;
+}, [newForm, newFormTags, newFormCustomTags]);
 
   // Copy JSON to clipboard
   function handleCopyJson() {
