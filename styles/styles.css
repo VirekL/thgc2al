@@ -50,14 +50,17 @@
   left: 24px;
   background: var(--secondary-bg, #232323);
   border-radius: 10px;
-  padding: 14px 14px 10px 14px;
+  padding: 10px 32px 6px 32px;
   margin-bottom: 0;
-  max-width: 370px;
-  width: 94vw;
+  max-width: 600px;
+  width: 96vw;
+  min-width: 320px;
   box-shadow: 0 2px 12px #0006;
   border: 1.5px solid var(--primary-accent, #e67e22);
   color: var(--text-color, #DFE3F5);
   font-size: 0.97rem;
+  max-height: 80vh;
+  overflow-y: auto;
 }
 .devmode-form-title {
   margin-top: 0;
