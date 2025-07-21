@@ -27,9 +27,7 @@ export default function Leaderboard() {
       <Header />
       <main className="main-content">
         <Sidebar />
-        <section id="leaderboard-section" className="leaderboard-container" style={{padding: '2rem'}}>
-          <LeaderboardSection />
-        </section>
+        <LeaderboardSection />
       </main>
     </>
   );
