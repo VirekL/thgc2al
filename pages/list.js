@@ -648,18 +648,18 @@ const newFormPreview = useMemo(() => {
         <section className="achievements achievements-section">
           {/* Floating dev mode controls */}
           {devMode && (
-            <div style={{position:'fixed',zIndex:2000,bottom:24,right:24,background:'#232323',borderRadius:10,padding:'16px 20px',boxShadow:'0 2px 12px #0006',display:'flex',flexDirection:'column',alignItems:'flex-end',gap:10,minWidth:220}}>
-              <span style={{color:'#e67e22',fontWeight:600,marginBottom:2}}>Developer Mode Enabled (SHIFT+M)</span>
-              <div style={{display:'flex',gap:8}}>
-                <button onClick={handleCopyJson} style={{padding:'6px 14px',borderRadius:6,border:'1px solid #aaa',background:'#222',color:'#fff',cursor:'pointer'}}>Copy achievements.json</button>
-                <button onClick={handleShowNewForm} style={{padding:'6px 14px',borderRadius:6,border:'1px solid #aaa',background:'#222',color:'#fff',cursor:'pointer'}}>New Achievement</button>
+            <div className="devmode-floating-panel">
+              <span className="devmode-title">Developer Mode Enabled (SHIFT+M)</span>
+              <div className="devmode-btn-row">
+                <button className="devmode-btn" onClick={handleCopyJson}>Copy achievements.json</button>
+                <button className="devmode-btn" onClick={handleShowNewForm}>New Achievement</button>
               </div>
             </div>
           )}
           {/* Edit achievement form (dev mode) */}
           {devMode && editIdx !== null && editForm && (
-            <div style={{position:'fixed',zIndex:2001,bottom:24,left:24,background:'#232323',borderRadius:8,padding:18,marginBottom:0,maxWidth:600,boxShadow:'0 2px 8px #0002'}}>
-              <h3 style={{marginTop:0, color:'#e67e22'}}>Edit Achievement</h3>
+            <div className="devmode-form-panel">
+              <h3 className="devmode-form-title">Edit Achievement</h3>
               <form onSubmit={e => {e.preventDefault(); handleEditFormSave();}} autoComplete="off">
                 <label style={{display:'block',fontSize:13,marginTop:6}}>Name<input type="text" name="name" value={editForm.name || ''} onChange={handleEditFormChange} required placeholder="Naracton Diablo X 99%" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
                 <label style={{display:'block',fontSize:13,marginTop:6}}>ID<input type="text" name="id" value={editForm.id || ''} onChange={handleEditFormChange} required placeholder="naracton-diablo-x-99" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
@@ -685,12 +685,12 @@ const newFormPreview = useMemo(() => {
                 <label style={{display:'block',fontSize:13,marginTop:6}}>Submitter<input type="text" name="submitter" value={editForm.submitter || ''} onChange={handleEditFormChange} placeholder="kyle1saurus" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
                 <label style={{display:'block',fontSize:13,marginTop:6}}>Level ID<input type="text" name="levelID" value={editForm.levelID || ''} onChange={handleEditFormChange} placeholder="86407629" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
                 <label style={{display:'block',fontSize:13,marginTop:6}}>Thumbnail<input type="text" name="thumbnail" value={editForm.thumbnail || ''} onChange={handleEditFormChange} placeholder="Image URL" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <div style={{marginTop:10,display:'flex',gap:8}}>
-                  <button type="submit" style={{padding:'6px 12px',fontSize:12}}>Save</button>
-                  <button type="button" onClick={handleEditFormCancel} style={{padding:'6px 12px',fontSize:12}}>Cancel</button>
+                <div className="devmode-form-btn-row">
+                  <button className="devmode-btn" type="submit">Save</button>
+                  <button className="devmode-btn" type="button" onClick={handleEditFormCancel}>Cancel</button>
                 </div>
               </form>
-              <div style={{marginTop:15,background:'#eee',padding:10,fontSize:13,whiteSpace:'pre-wrap',wordBreak:'break-word',borderRadius:4}}>
+              <div className="devmode-preview-box">
                 <strong>Preview:</strong>
                 <br />
                 {JSON.stringify({
@@ -710,8 +710,8 @@ const newFormPreview = useMemo(() => {
           )}
           {/* New achievement form (dev mode) */}
           {devMode && showNewForm && !editForm && (
-            <div style={{position:'fixed',zIndex:2001,bottom:24,left:24,background:'#232323',borderRadius:8,padding:18,marginBottom:0,maxWidth:600,boxShadow:'0 2px 8px #0002'}}>
-              <h3 style={{marginTop:0, color:'#e67e22'}}>New Achievement</h3>
+            <div className="devmode-form-panel">
+              <h3 className="devmode-form-title">New Achievement</h3>
               <form onSubmit={e => {e.preventDefault(); handleNewFormAdd();}} autoComplete="off">
                 <label style={{display:'block',fontSize:13,marginTop:6}}>Name<input type="text" name="name" value={newForm.name} onChange={handleNewFormChange} required placeholder="Naracton Diablo X 99%" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
                 <label style={{display:'block',fontSize:13,marginTop:6}}>ID<input type="text" name="id" value={newForm.id} onChange={handleNewFormChange} required placeholder="naracton-diablo-x-99" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
@@ -737,12 +737,12 @@ const newFormPreview = useMemo(() => {
                 <label style={{display:'block',fontSize:13,marginTop:6}}>Submitter<input type="text" name="submitter" value={newForm.submitter} onChange={handleNewFormChange} placeholder="kyle1saurus" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
                 <label style={{display:'block',fontSize:13,marginTop:6}}>Level ID<input type="text" name="levelID" value={newForm.levelID} onChange={handleNewFormChange} placeholder="86407629" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
                 <label style={{display:'block',fontSize:13,marginTop:6}}>Thumbnail<input type="text" name="thumbnail" value={newForm.thumbnail} onChange={handleNewFormChange} placeholder="Image URL" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <div style={{marginTop:10,display:'flex',gap:8}}>
-                  <button type="submit" style={{padding:'6px 12px',fontSize:12}}>Add</button>
-                  <button type="button" onClick={handleNewFormCancel} style={{padding:'6px 12px',fontSize:12}}>Cancel</button>
+                <div className="devmode-form-btn-row">
+                  <button className="devmode-btn" type="submit">Add</button>
+                  <button className="devmode-btn" type="button" onClick={handleNewFormCancel}>Cancel</button>
                 </div>
               </form>
-              <div style={{marginTop:15,background:'#eee',padding:10,fontSize:13,whiteSpace:'pre-wrap',wordBreak:'break-word',borderRadius:4}}>
+              <div className="devmode-preview-box">
                 <strong>Preview:</strong>
                 <br />
                 {JSON.stringify(newFormPreview, null, 2)}
