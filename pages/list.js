@@ -123,6 +123,10 @@ export default function List() {
   const [isPending, startTransition] = typeof useTransition === 'function' ? useTransition() : [false, fn => fn()];
   const { dateFormat, setDateFormat } = useDateFormat();
   const [showSettings, setShowSettings] = useState(false);
+  // Developer mode state
+  const [devMode, setDevMode] = useState(false);
+  const [draggedIdx, setDraggedIdx] = useState(null);
+  const [reordered, setReordered] = useState(null); // null = not in dev mode, else array
 
   useEffect(() => {
     fetch('/achievements.json')
@@ -136,6 +140,23 @@ export default function List() {
         setAllTags(Array.from(tags));
       });
   }, []);
+
+  // Listen for SHIFT+M to toggle dev mode
+  useEffect(() => {
+    function handleKeyDown(e) {
+      if (e.shiftKey && (e.key === 'M' || e.key === 'm')) {
+        setDevMode(v => {
+          const next = !v;
+          if (!next) setReordered(null); // Reset on exit
+          else setReordered(achievements);
+          return next;
+        });
+      }
+    }
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+    // eslint-disable-next-line
+  }, [achievements]);
 
   useEffect(() => {
     function handleResize() {
@@ -168,8 +189,50 @@ export default function List() {
     return achievements.filter(filterFn);
   }, [achievements, filterFn]);
 
+  // For dev mode, use reordered list
+  const devAchievements = devMode && reordered ? reordered : achievements;
+
   function handleMobileToggle() {
     setShowMobileFilters(v => !v);
+  }
+
+  // Drag and drop handlers (dev mode)
+  function handleDragStart(idx) {
+    setDraggedIdx(idx);
+  }
+  function handleDragOver(idx, e) {
+    e.preventDefault();
+    if (draggedIdx === null || draggedIdx === idx) return;
+    setReordered(prev => {
+      if (!prev) return prev;
+      const arr = [...prev];
+      const [dragged] = arr.splice(draggedIdx, 1);
+      arr.splice(idx, 0, dragged);
+      setDraggedIdx(idx);
+      return arr;
+    });
+  }
+  function handleDrop() {
+    setDraggedIdx(null);
+  }
+
+  // Copy JSON to clipboard
+  function handleCopyJson() {
+    if (!reordered) return;
+    const json = JSON.stringify(reordered.map(({rank, ...rest}) => rest), null, 2);
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(json);
+      alert('Copied new achievements.json to clipboard!');
+    } else {
+      // fallback
+      const textarea = document.createElement('textarea');
+      textarea.value = json;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+      alert('Copied new achievements.json to clipboard!');
+    }
   }
 
   return (
@@ -354,15 +417,43 @@ export default function List() {
         {/* Desktop sidebar only */}
         {!isMobile && <Sidebar />}
         <section className="achievements achievements-section">
+          {devMode && (
+            <div style={{marginBottom: 16, display: 'flex', alignItems: 'center', gap: 12}}>
+              <span style={{color: '#e67e22', fontWeight: 600}}>Developer Mode Enabled (SHIFT+M)</span>
+              <button onClick={handleCopyJson} style={{padding: '6px 14px', borderRadius: 6, border: '1px solid #aaa', background: '#222', color: '#fff', cursor: 'pointer'}}>Copy achievements.json</button>
+            </div>
+          )}
           {isPending ? (
             <div className="no-achievements">Loading...</div>
-          ) : filtered.length === 0 ? (
-            <div className="no-achievements">No achievements found.</div>
-          ) : (
-            filtered.map((a, i) => (
-              <AchievementCard achievement={a} key={a.id || i} />
+          ) : (devMode ? (
+            devAchievements.map((a, i) => (
+              <div
+                key={a.id || i}
+                draggable
+                onDragStart={() => handleDragStart(i)}
+                onDragOver={e => handleDragOver(i, e)}
+                onDrop={handleDrop}
+                style={{
+                  opacity: draggedIdx === i ? 0.5 : 1,
+                  border: draggedIdx === i ? '2px dashed #e67e22' : '1px solid #333',
+                  marginBottom: 8,
+                  background: '#181818',
+                  cursor: 'move',
+                  borderRadius: 8
+                }}
+              >
+                <AchievementCard achievement={a} />
+              </div>
             ))
-          )}
+          ) : (
+            filtered.length === 0 ? (
+              <div className="no-achievements">No achievements found.</div>
+            ) : (
+              filtered.map((a, i) => (
+                <AchievementCard achievement={a} key={a.id || i} />
+              ))
+            )
+          ))}
         </section>
       </main>
     </>
