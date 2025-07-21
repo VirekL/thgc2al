@@ -1,5 +1,11 @@
 import Head from 'next/head';
 import { useEffect, useState, useMemo, useRef, useCallback, useTransition } from 'react';
+
+const AVAILABLE_TAGS = [
+  "Level", "Challenge", "Low Hertz", "Mobile", "Speedhack",
+  "Noclip", "Miscellaneous", "Progress", "Consistency",
+  "2P", "CBF", "Rated", "Formerly Rated", "Outdated Version"
+];
 import Link from 'next/link';
 import Sidebar from '../components/Sidebar';
 import Background from '../components/Background';
@@ -127,6 +133,12 @@ export default function List() {
   const [devMode, setDevMode] = useState(false);
   const [draggedIdx, setDraggedIdx] = useState(null);
   const [reordered, setReordered] = useState(null); // null = not in dev mode, else array
+  const [showNewForm, setShowNewForm] = useState(false);
+  const [newForm, setNewForm] = useState({
+    name: '', id: '', player: '', length: '', version: '2.', video: '', showcaseVideo: '', date: '', submitter: '', levelID: '', thumbnail: '', tags: []
+  });
+  const [newFormTags, setNewFormTags] = useState([]);
+  const [newFormCustomTags, setNewFormCustomTags] = useState('');
 
   useEffect(() => {
     fetch('/achievements.json')
@@ -196,12 +208,21 @@ export default function List() {
     setShowMobileFilters(v => !v);
   }
 
-  // Drag and drop handlers (dev mode)
+  // Drag and drop handlers (dev mode) with auto-scroll
   function handleDragStart(idx) {
     setDraggedIdx(idx);
   }
   function handleDragOver(idx, e) {
     e.preventDefault();
+    // Auto-scroll if near top/bottom
+    const y = e.clientY;
+    const scrollMargin = 60;
+    const scrollSpeed = 18;
+    if (y < scrollMargin) {
+      window.scrollBy({ top: -scrollSpeed, behavior: 'smooth' });
+    } else if (window.innerHeight - y < scrollMargin) {
+      window.scrollBy({ top: scrollSpeed, behavior: 'smooth' });
+    }
     if (draggedIdx === null || draggedIdx === idx) return;
     setReordered(prev => {
       if (!prev) return prev;
@@ -215,6 +236,60 @@ export default function List() {
   function handleDrop() {
     setDraggedIdx(null);
   }
+
+  // New achievement form handlers
+  function handleNewFormChange(e) {
+    const { name, value } = e.target;
+    setNewForm(f => ({ ...f, [name]: value }));
+  }
+  function handleNewFormTagClick(tag) {
+    setNewFormTags(tags => tags.includes(tag) ? tags.filter(t => t !== tag) : [...tags, tag]);
+  }
+  function handleNewFormCustomTagsChange(e) {
+    setNewFormCustomTags(e.target.value);
+  }
+  function handleNewFormAdd() {
+    // Compose tags
+    let tags = [...newFormTags];
+    if (newFormCustomTags.trim()) {
+      newFormCustomTags.split(',').map(t => t.trim()).filter(Boolean).forEach(t => {
+        if (!tags.includes(t)) tags.push(t);
+      });
+    }
+    // Compose entry
+    const entry = {};
+    Object.entries(newForm).forEach(([k, v]) => {
+      if (v && v.trim() !== '') entry[k] = v.trim();
+    });
+    if (tags.length > 0) entry.tags = tags;
+    // Add to reordered list
+    setReordered(prev => prev ? [...prev, entry] : [entry]);
+    setShowNewForm(false);
+    setNewForm({ name: '', id: '', player: '', length: '', version: '2.', video: '', showcaseVideo: '', date: '', submitter: '', levelID: '', thumbnail: '', tags: [] });
+    setNewFormTags([]);
+    setNewFormCustomTags('');
+  }
+  function handleNewFormCancel() {
+    setShowNewForm(false);
+    setNewForm({ name: '', id: '', player: '', length: '', version: '2.', video: '', showcaseVideo: '', date: '', submitter: '', levelID: '', thumbnail: '', tags: [] });
+    setNewFormTags([]);
+    setNewFormCustomTags('');
+  }
+  // Live preview for new achievement
+  const newFormPreview = useMemo(() => {
+    let tags = [...newFormTags];
+    if (newFormCustomTags.trim()) {
+      newFormCustomTags.split(',').map(t => t.trim()).filter(Boolean).forEach(t => {
+        if (!tags.includes(t)) tags.push(t);
+      });
+    }
+    const entry = {};
+    Object.entries(newForm).forEach(([k, v]) => {
+      if (v && v.trim() !== '') entry[k] = v.trim();
+    });
+    if (tags.length > 0) entry.tags = tags;
+    return entry;
+  }, [newForm, newFormTags, newFormCustomTags]);
 
   // Copy JSON to clipboard
   function handleCopyJson() {
@@ -421,6 +496,47 @@ export default function List() {
             <div style={{marginBottom: 16, display: 'flex', alignItems: 'center', gap: 12}}>
               <span style={{color: '#e67e22', fontWeight: 600}}>Developer Mode Enabled (SHIFT+M)</span>
               <button onClick={handleCopyJson} style={{padding: '6px 14px', borderRadius: 6, border: '1px solid #aaa', background: '#222', color: '#fff', cursor: 'pointer'}}>Copy achievements.json</button>
+              <button onClick={() => setShowNewForm(true)} style={{padding: '6px 14px', borderRadius: 6, border: '1px solid #aaa', background: '#222', color: '#fff', cursor: 'pointer'}}>New Achievement</button>
+            </div>
+          )}
+          {devMode && showNewForm && (
+            <div style={{background: '#232323', borderRadius: 8, padding: 18, marginBottom: 18, maxWidth: 600, boxShadow: '0 2px 8px #0002'}}>
+              <h3 style={{marginTop:0, color:'#e67e22'}}>New Achievement</h3>
+              <form onSubmit={e => {e.preventDefault(); handleNewFormAdd();}} autoComplete="off">
+                <label style={{display:'block',fontSize:13,marginTop:6}}>Name<input type="text" name="name" value={newForm.name} onChange={handleNewFormChange} required placeholder="Naracton Diablo X 99%" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
+                <label style={{display:'block',fontSize:13,marginTop:6}}>ID<input type="text" name="id" value={newForm.id} onChange={handleNewFormChange} required placeholder="naracton-diablo-x-99" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
+                <label style={{display:'block',fontSize:13,marginTop:6}}>Player<input type="text" name="player" value={newForm.player} onChange={handleNewFormChange} placeholder="Zoink" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
+                <label style={{display:'block',fontSize:13,marginTop:6}}>Tags
+                  <div style={{display:'flex',flexWrap:'wrap',gap:5,marginTop:4}}>
+                    {AVAILABLE_TAGS.map(tag => (
+                      <button type="button" key={tag} onClick={() => handleNewFormTagClick(tag)} style={{fontSize:11,padding:'3px 6px',backgroundColor:newFormTags.includes(tag)?'#007bff':'#eee',color:newFormTags.includes(tag)?'#fff':'#222',border:'1px solid #ccc',borderRadius:3,cursor:'pointer'}}>{tag}</button>
+                    ))}
+                  </div>
+                  <input type="text" value={newFormCustomTags} onChange={handleNewFormCustomTagsChange} placeholder="Or type custom tags separated by commas" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} />
+                  <div style={{marginTop:4,fontSize:13}}>
+                    {newFormTags.map(tag => (
+                      <span key={tag} style={{display:'inline-block',background:'#ddd',padding:'2px 6px',margin:'2px',borderRadius:4,cursor:'pointer'}} title="Click to remove" onClick={() => handleNewFormTagClick(tag)}>{tag}</span>
+                    ))}
+                  </div>
+                </label>
+                <label style={{display:'block',fontSize:13,marginTop:6}}>Length<input type="text" name="length" value={newForm.length} onChange={handleNewFormChange} placeholder="69" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
+                <label style={{display:'block',fontSize:13,marginTop:6}}>Version<input type="text" name="version" value={newForm.version} onChange={handleNewFormChange} placeholder="2.2" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
+                <label style={{display:'block',fontSize:13,marginTop:6}}>Video URL<input type="text" name="video" value={newForm.video} onChange={handleNewFormChange} placeholder="https://youtu.be/..." style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
+                <label style={{display:'block',fontSize:13,marginTop:6}}>Showcase Video<input type="text" name="showcaseVideo" value={newForm.showcaseVideo} onChange={handleNewFormChange} placeholder="https://youtu.be/..." style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
+                <label style={{display:'block',fontSize:13,marginTop:6}}>Date (YYYY-MM-DD)<input type="text" name="date" value={newForm.date} onChange={handleNewFormChange} placeholder="2023-12-19" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
+                <label style={{display:'block',fontSize:13,marginTop:6}}>Submitter<input type="text" name="submitter" value={newForm.submitter} onChange={handleNewFormChange} placeholder="kyle1saurus" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
+                <label style={{display:'block',fontSize:13,marginTop:6}}>Level ID<input type="text" name="levelID" value={newForm.levelID} onChange={handleNewFormChange} placeholder="86407629" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
+                <label style={{display:'block',fontSize:13,marginTop:6}}>Thumbnail<input type="text" name="thumbnail" value={newForm.thumbnail} onChange={handleNewFormChange} placeholder="Image URL" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
+                <div style={{marginTop:10,display:'flex',gap:8}}>
+                  <button type="submit" style={{padding:'6px 12px',fontSize:12}}>Add</button>
+                  <button type="button" onClick={handleNewFormCancel} style={{padding:'6px 12px',fontSize:12}}>Cancel</button>
+                </div>
+              </form>
+              <div style={{marginTop:15,background:'#eee',padding:10,fontSize:13,whiteSpace:'pre-wrap',wordBreak:'break-word',borderRadius:4}}>
+                <strong>Preview:</strong>
+                <br />
+                {JSON.stringify(newFormPreview, null, 2)}
+              </div>
             </div>
           )}
           {isPending ? (
