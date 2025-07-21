@@ -28,6 +28,8 @@ function SubmitterRow({ submitter, count, achievements, rank, tdStyle }) {
 }
 
 export default function Leaderboard({ submitters, tableStyle, thStyle, tdStyle }) {
+  // Defensive: always use an array for submitters
+  const safeSubmitters = Array.isArray(submitters) ? submitters : [];
   // Default styles for section, heading, table, th, and td
   const defaultSectionStyle = {
     padding: '3rem 2.5rem',
@@ -96,7 +98,7 @@ export default function Leaderboard({ submitters, tableStyle, thStyle, tdStyle }
             </tr>
           </thead>
           <tbody>
-            {submitters.map((row) => (
+            {safeSubmitters.map((row) => (
               <SubmitterRow key={row.submitter} {...row} tdStyle={{ ...defaultTdStyle, ...(tdStyle || {}) }} />
             ))}
           </tbody>
