@@ -84,6 +84,23 @@
         "video": "https://youtu.be/YHH5CFQidU4"
     },
     {
+        "name": "Slaughterhouse 300%",
+        "id": "slaughterhouse-300",
+        "player": "wPopoff",
+        "length": "210",
+        "version": "2.1",
+        "video": "https://www.youtube.com/watch?v=Yu_p9yrVL0w",
+        "showcaseVideo": "https://www.youtube.com/watch?v=ctmNCG3_1Gg",
+        "date": "2024-04-27",
+        "submitter": "kyle1saurus",
+        "levelID": "27690100",
+        "tags": [
+            "Level",
+            "Consistency",
+            "Rated"
+        ]
+    },
+    {
         "id": "tidal-wave",
         "name": "Tidal Wave",
         "player": "Zoink",
@@ -312,6 +329,22 @@
         "showcaseVideo": "https://youtu.be/9xnaAgxqqJs"
     },
     {
+        "id": "old-aod-76",
+        "name": "Old AoD 76%",
+        "player": "Dils thik",
+        "thumbnail": "https://tjcsucht.net/levelthumbs/79477817.png",
+        "tags": [
+            "Progress",
+            "Level"
+        ],
+        "length": "98",
+        "version": "2.1",
+        "date": "2021-01-31",
+        "levelID": "76680844",
+        "video": "https://youtu.be/JsOjKOLOo4s",
+        "showcaseVideo": "https://youtu.be/9xnaAgxqqJs"
+    },
+    {
         "id": "blind-blizzard",
         "name": "Blind Blizzard",
         "player": "Bradenbowl",
@@ -494,7 +527,6 @@
         "video": "https://youtu.be/oQF-AZ59wyM",
         "date": "2018-05-13",
         "submitter": "kyle1saurus",
-        "pointLoss": false,
         "tags": [
             "Level",
             "Progress",
@@ -709,7 +741,25 @@
         "version": "1.9",
         "date": "2015-08-07",
         "levelID": "10565740",
+        "submitter": "jak",
         "video": "https://youtu.be/yP-oRWxVeHk",
+        "showcaseVideo": "https://youtu.be/Js7TtZ99J04"
+    },
+    {
+        "id": "bloodbath-90",
+        "name": "Bloodbath 90%",
+        "player": "Riot",
+        "thumbnail": "https://tjcsucht.net/levelthumbs/10792915.png",
+        "tags": [
+            "Level",
+            "Rated"
+        ],
+        "length": "99",
+        "version": "1.9",
+        "date": "2015-08-06",
+        "levelID": "10565740",
+        "submitter": "Anceps",
+        "video": "https://youtu.be/lZCBqIa_Jfk?t=951",
         "showcaseVideo": "https://youtu.be/Js7TtZ99J04"
     },
     {
@@ -725,6 +775,7 @@
         "version": "1.9",
         "date": "2015-08-03",
         "levelID": "10565740",
+        "submitter": "Anceps",
         "video": "https://youtu.be/lZCBqIa_Jfk&t=944s",
         "showcaseVideo": "https://youtu.be/Js7TtZ99J04"
     },
@@ -740,6 +791,7 @@
         "length": "69",
         "version": "1.9",
         "date": "2015-07-13",
+        "submitter": "jak",
         "levelID": "10565740",
         "video": "https://youtu.be/pOuwvDPXw8c",
         "showcaseVideo": "https://youtu.be/Js7TtZ99J04"
@@ -756,24 +808,46 @@
         "length": "79",
         "version": "1.9",
         "date": "2015-05-14",
+        "submitter": "Anceps",
         "levelID": "115539783",
         "video": "https://youtu.be/B68E2wqkFiY",
         "showcaseVideo": "https://youtu.be/gRozCOZKL3I"
     },
     {
-        "id": "alphabet-x",
-        "name": "Alphabet X",
-        "player": "Zobros",
+        "id": "cataclysm-old-71",
+        "name": "Cataclysm (Old) 71%",
+        "player": "Giron",
+        "thumbnail": "https://tjcsucht.net/levelthumbs/37830175.png",
         "tags": [
             "Level",
-            "Rated"
+            "Progress",
+            "Outdated Version"
         ],
-        "length": "91",
+        "length": "54",
         "version": "1.9",
-        "date": "2015-05-09",
-        "levelID": "523638",
-        "video": "https://youtu.be/LaYo5cp5fIw",
-        "showcaseVideo": "https://youtu.be/Q0AdbQMq4EQ"
+        "date": "2015-05-04",
+        "levelID": "115539783",
+        "submitter": "Anceps",
+        "video": "https://www.twitch.tv/videos/44180500",
+        "showcaseVideo": "https://youtu.be/gRozCOZKL3I"
+    },
+    {
+        "id": "cataclysm-old-70",
+        "name": "Cataclysm (Old) 70%",
+        "player": "Giron",
+        "thumbnail": "https://tjcsucht.net/levelthumbs/37830175.png",
+        "tags": [
+            "Level",
+            "Progress",
+            "Outdated Version"
+        ],
+        "length": "52",
+        "version": "1.9",
+        "date": "2015-04-28",
+        "submitter": "Anceps",
+        "levelID": "115539783",
+        "video": "https://www.twitch.tv/videos/44274877",
+        "showcaseVideo": "https://youtu.be/gRozCOZKL3I"
     },
     {
         "id": "necropolis",
@@ -786,6 +860,7 @@
         "length": "95",
         "version": "1.9",
         "date": "2015-03-14",
+        "submitter": "Anceps",
         "levelID": "2241592",
         "video": "https://youtu.be/aks6z1fv5Wg",
         "showcaseVideo": "https://youtu.be/j3SgupWqHJw"
@@ -802,6 +877,7 @@
         "version": "1.9",
         "date": "2015-03-02",
         "levelID": "2241592",
+        "submitter": "Anceps",
         "thumbnail": "https://i.ytimg.com/vi/bVUVS5dG7qQ/maxresdefault.jpg",
         "video": "https://youtu.be/FP2kZqdiAKE",
         "showcaseVideo": "https://youtu.be/j3SgupWqHJw"
@@ -817,6 +893,7 @@
         "length": "74",
         "version": "1.9",
         "date": "2015-02-21",
+        "submitter": "Anceps",
         "levelID": "5155022",
         "video": "https://youtu.be/4v39XU7LW7M",
         "showcaseVideo": "https://youtu.be/WOuerC9uuFY"
@@ -832,24 +909,40 @@
         "length": "70",
         "version": "1.9",
         "date": "2015-02-21",
+        "submitter": "Anceps",
         "levelID": "2241592",
         "thumbnail": "https://i.ytimg.com/vi/S2EO10Z3M74/maxresdefault.jpg",
         "video": "https://youtu.be/Q2oTRkJHmPUE",
         "showcaseVideo": "https://youtu.be/j3SgupWqHJw"
     },
     {
-        "id": "stalemate",
-        "name": "Stalemate",
-        "player": "Nox",
+        "name": "Ice cream",
+        "id": "ice-cream",
+        "player": "Zobros",
+        "length": "78",
+        "version": "1.9",
+        "video": "https://youtu.be/u2AxUUrsku8",
+        "showcaseVideo": "https://youtu.be/LT3pUWbQJcI",
+        "date": "2015-02-01",
+        "levelID": "69936244",
         "tags": [
             "Level",
             "Rated"
-        ],
-        "length": "95",
+        ]
+    },
+    {
+        "name": "Stereo Demoness",
+        "id": "stereo-demoness",
+        "player": "Crack",
+        "length": "87",
         "version": "1.9",
-        "date": "2015-01-29",
-        "levelID": "4545425",
-        "showcaseVideo": "https://youtu.be/1XCYBh4aHd0"
+        "showcaseVideo": "https://youtu.be/fgnkJ1tCrpw",
+        "date": "2014-12-16",
+        "levelID": "260693",
+        "tags": [
+            "Level",
+            "Rated"
+        ]
     },
     {
         "id": "deadly-clubstep",
@@ -862,6 +955,7 @@
         "length": "86",
         "version": "1.7",
         "date": "2014-07-09",
+        "submitter": "Anceps",
         "levelID": "1299298",
         "video": "https://web.archive.org/web/20230521063728/https://media.discordapp.net/attachments/598716749554384906/937155369954848768/unknown.png",
         "showcaseVideo": "https://youtu.be/kaT1dmmAI2k"
@@ -876,6 +970,7 @@
         ],
         "length": "",
         "version": "1.6",
+        "submitter": "Anceps",
         "date": "2014-06-01",
         "levelID": "928589",
         "showcaseVideo": "https://youtu.be/bLys1KJTrdE"
@@ -891,6 +986,7 @@
         "length": "75",
         "version": "1.6",
         "date": "2014-04-22",
+        "submitter": "Anceps",
         "levelID": "84619534",
         "showcaseVideo": "https://youtu.be/tH-QfWdw5o0"
     },
@@ -905,6 +1001,7 @@
         "length": "87",
         "version": "1.6",
         "date": "2014-04-08",
+        "submitter": "Anceps",
         "levelID": "82961922",
         "video": "https://web.archive.org/web/20220525033039/https://youtu.be/mRJU7yhritk",
         "showcaseVideo": "https://youtu.be/UnhLHTybSJY"
@@ -919,6 +1016,7 @@
         ],
         "length": "94",
         "version": "1.5",
+        "submitter": "Anceps",
         "date": "2014-02-27",
         "levelID": "84619568",
         "video": "https://youtu.be/BaMT1dMfqJY",
@@ -933,6 +1031,7 @@
         ],
         "length": "69",
         "version": "1.5",
+        "submitter": "Anceps",
         "date": "2014-02-15",
         "levelID": "232002",
         "showcaseVideo": "https://youtu.be/ml9kkg3F_to"
@@ -948,6 +1047,7 @@
         "length": "87",
         "version": "1.4",
         "date": "2014-01-29",
+        "submitter": "Anceps",
         "levelID": "180857",
         "video": "https://youtu.be/LXfNdXiWHwQ",
         "showcaseVideo": "https://youtu.be/DcxyJps7FWk"
@@ -962,6 +1062,7 @@
         "length": "96",
         "version": "1.4",
         "date": "2014-01-06",
+        "submitter": "Anceps",
         "levelID": "139804",
         "video": "https://m.cafe.naver.com/geometrydw/3609",
         "showcaseVideo": "https://youtu.be/-04PnHXMGD8"
@@ -991,36 +1092,24 @@
         "length": "97",
         "version": "1.3",
         "date": "2013-11-24",
+        "submitter": "Grave",
         "levelID": "72540",
         "showcaseVideo": "https://youtu.be/bUMT_NRt5_0"
     },
     {
-        "id": "extreme-park",
         "name": "Extreme Park",
+        "id": "extreme-park",
         "player": "Rabbitical",
-        "tags": [
-            "Level",
-            "Rated"
-        ],
         "length": "87",
         "version": "1.2",
+        "showcaseVideo": "https://www.youtube.com/watch?v=OIr92lnPOyU",
         "date": "2013-11-16",
         "levelID": "56287",
-        "showcaseVideo": "https://youtu.be/OIr92lnPOyU"
-    },
-    {
-        "id": "l",
-        "name": "L",
-        "player": "-",
+        "submitter": "Anceps",
         "tags": [
             "Level",
             "Rated"
-        ],
-        "length": "94",
-        "version": "1.2",
-        "date": "2013-10-30",
-        "levelID": "25824",
-        "showcaseVideo": "https://youtu.be/yYQXbHw9bn0"
+        ]
     },
     {
         "id": "to-the-grave",
@@ -1033,6 +1122,7 @@
         "length": "93",
         "version": "1.1",
         "date": "2013-10-19",
+        "submitter": "Anceps",
         "levelID": "12556",
         "showcaseVideo": "https://youtu.be/9OSvZkmwZuE"
     },
@@ -1048,6 +1138,7 @@
         "version": "1.1",
         "date": "2013-10-17",
         "levelID": "10109",
+        "submitter": "Anceps",
         "video": "https://youtu.be/1Ota3kIHlY0",
         "showcaseVideo": "https://youtu.be/szsx6ZbPWy0"
     },
@@ -1065,17 +1156,16 @@
         "showcaseVideo": "https://youtu.be/qE5RZE3PqYM"
     },
     {
-        "id": "q",
-        "name": "Q",
-        "player": "inq",
+        "name": "Level 5",
+        "id": "level-5",
+        "player": "Matty",
+        "length": "93",
+        "version": "1.0",
+        "date": "2013-09-13",
+        "levelID": "2172",
         "tags": [
             "Level"
-        ],
-        "length": "55",
-        "version": "1.0",
-        "date": "2013-09-19",
-        "levelID": "2902",
-        "showcaseVideo": "https://youtu.be/j8evI2h63Uo"
+        ]
     },
     {
         "id": "the-rainbow-road",
@@ -1089,6 +1179,7 @@
         "version": "1.0",
         "date": "2013-08-27",
         "levelID": "718",
+        "submitter": "Anceps",
         "showcaseVideo": "https://youtu.be/DQpmcZ0e4-o"
     },
     {
@@ -1103,8 +1194,24 @@
         "version": "1.0",
         "date": "2013-08-20",
         "levelID": "308",
+        "submitter": "Anceps",
         "video": "https://web.archive.org/web/20230521063805/https://cdn.discordapp.com/attachments/893466525720256582/1023533150854463498/unknown-55.png",
         "showcaseVideo": "https://youtu.be/yskjxCar_Cw"
+    },
+    {
+        "name": "chill out",
+        "id": "chill-out",
+        "player": "Darnoc",
+        "length": "45",
+        "version": "1.0",
+        "date": "2023-08-14",
+        "submitter": "Grave",
+        "levelID": "146",
+        "showcaseVideo": "https://youtu.be/l7-xeNjg50E",
+        "tags": [
+            "Level",
+            "Rated"
+        ]
     },
     {
         "id": "the-first",
@@ -1118,6 +1225,7 @@
         "version": "1.0",
         "date": "2013-08-14",
         "levelID": "83583279",
+        "submitter": "Anceps",
         "showcaseVideo": "https://youtu.be/zgQCAvkIfFw"
     },
     {
@@ -1132,6 +1240,7 @@
         "version": "Beta",
         "date": "2013-08-02",
         "levelID": "77237542",
+        "submitter": "Anceps",
         "video": "https://youtu.be/k90y6PIzIaE?t=45",
         "showcaseVideo": "https://youtu.be/RIeZSWzs50g"
     },
@@ -1146,6 +1255,7 @@
         "version": "Beta",
         "date": "2013-04-29",
         "levelID": "115525374",
+        "submitter": "Anceps",
         "video": "https://youtu.be/727pUHwWSVg"
     }
 ]
