@@ -542,7 +542,7 @@ const newFormPreview = useMemo(() => {
             </div>
           )}
           {devMode && showNewForm && (
-            <div style={{background: '#232323', borderRadius: 8, padding: 18, marginBottom: 18, maxWidth: 600, boxShadow: '0 2px 8px #0002'}}>
+            <div style={{position:'fixed',zIndex:2001,bottom:24,left:24,background:'#232323',borderRadius:8,padding:18,marginBottom:0,maxWidth:600,boxShadow:'0 2px 8px #0002'}}>
               <h3 style={{marginTop:0, color:'#e67e22'}}>New Achievement</h3>
               <form onSubmit={e => {e.preventDefault(); handleNewFormAdd();}} autoComplete="off">
                 <label style={{display:'block',fontSize:13,marginTop:6}}>Name<input type="text" name="name" value={newForm.name} onChange={handleNewFormChange} required placeholder="Naracton Diablo X 99%" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
