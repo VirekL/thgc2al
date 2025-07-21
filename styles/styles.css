@@ -46,9 +46,8 @@
 .devmode-form-panel {
   position: fixed;
   z-index: 2001;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 24px;
+  left: 24px;
   background: var(--secondary-bg, #232323);
   border-radius: 10px;
   padding: 10px 32px 6px 32px;
