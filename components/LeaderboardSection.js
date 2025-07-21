@@ -27,8 +27,41 @@ function SubmitterRow({ submitter, count, achievements, rank, tdStyle }) {
   );
 }
 
+import { useEffect, useState } from 'react';
+
 export default function Leaderboard({ submitters, tableStyle, thStyle, tdStyle }) {
-  // Defensive: always use an array for submitters
+  // If submitters prop is provided, show submitter leaderboard (submission-stats page)
+  // If not, fetch and show player leaderboard (leaderboard page)
+  const [playerStats, setPlayerStats] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const showPlayerLeaderboard = typeof submitters === 'undefined';
+  useEffect(() => {
+    if (showPlayerLeaderboard) {
+      setLoading(true);
+      fetch('/achievements.json')
+        .then(res => res.json())
+        .then(achievements => {
+          // Build leaderboard: group by player, count achievements, sort by count desc
+          const playerMap = {};
+          achievements.forEach(ach => {
+            if (!ach.player) return;
+            if (!playerMap[ach.player]) {
+              playerMap[ach.player] = { player: ach.player, count: 1, achievements: [ach], rank: 0 };
+            } else {
+              playerMap[ach.player].count += 1;
+              playerMap[ach.player].achievements.push(ach);
+            }
+          });
+          const sortedPlayers = Object.values(playerMap)
+            .sort((a, b) => b.count - a.count)
+            .map((p, i) => ({ ...p, rank: i + 1 }));
+          setPlayerStats(sortedPlayers);
+          setLoading(false);
+        })
+        .catch(e => { setError('Failed to load leaderboard'); setLoading(false); });
+    }
+  }, [showPlayerLeaderboard]);
   const safeSubmitters = Array.isArray(submitters) ? submitters : [];
   // Default styles for section, heading, table, th, and td
   const defaultSectionStyle = {
@@ -78,6 +111,48 @@ export default function Leaderboard({ submitters, tableStyle, thStyle, tdStyle }
     border: 'none',
     borderRadius: '7px',
   };
+  // Render player leaderboard if no submitters prop
+  if (showPlayerLeaderboard) {
+    return (
+      <section
+        id="leaderboard-section"
+        className="leaderboard-container leaderboard-section-enhanced"
+        style={defaultSectionStyle}
+      >
+        <h2 style={defaultHeadingStyle}>Top Players</h2>
+        <div style={{ overflowX: 'auto' }}>
+          {loading ? (
+            <div style={{ color: '#FFC800', textAlign: 'center', padding: '2rem' }}>Loading...</div>
+          ) : error ? (
+            <div style={{ color: 'red', textAlign: 'center', padding: '2rem' }}>{error}</div>
+          ) : (
+            <table
+              className="leaderboard-table"
+              style={{ ...defaultTableStyle, ...(tableStyle || {}) }}
+            >
+              <thead>
+                <tr>
+                  <th style={{ ...defaultThStyle, ...(thStyle || {}) }}>#</th>
+                  <th style={{ ...defaultThStyle, ...(thStyle || {}) }}>Player</th>
+                  <th style={{ ...defaultThStyle, ...(thStyle || {}) }}>Achievements</th>
+                </tr>
+              </thead>
+              <tbody>
+                {playerStats.map((row) => (
+                  <tr key={row.player} className="clickable-row" style={{ cursor: 'pointer' }}>
+                    <td style={defaultTdStyle}>#{row.rank}</td>
+                    <td style={defaultTdStyle}>{row.player}</td>
+                    <td style={defaultTdStyle}>{row.count}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+        </div>
+      </section>
+    );
+  }
+  // Otherwise, render submitter leaderboard (submission-stats page)
   return (
     <section
       id="submission-stats-section"
