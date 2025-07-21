@@ -141,6 +141,8 @@ export default function List() {
   const [newFormCustomTags, setNewFormCustomTags] = useState('');
   const [insertIdx, setInsertIdx] = useState(null); // For new achievement insert position
   const achievementRefs = useRef([]);
+  // Track the last added/duplicated achievement index for scrolling
+  const [scrollToIdx, setScrollToIdx] = useState(null);
 
   useEffect(() => {
     fetch('/achievements.json')
@@ -270,10 +272,17 @@ export default function List() {
     if (tags.length > 0) entry.tags = tags;
     // Insert at insertIdx or end
     setReordered(prev => {
-      if (!prev) return [entry];
-      if (insertIdx === null || insertIdx < 0 || insertIdx > prev.length - 1) return [...prev, entry];
+      if (!prev) {
+        setScrollToIdx(0);
+        return [entry];
+      }
+      if (insertIdx === null || insertIdx < 0 || insertIdx > prev.length - 1) {
+        setScrollToIdx(prev.length);
+        return [...prev, entry];
+      }
       const arr = [...prev];
       arr.splice(insertIdx + 1, 0, entry);
+      setScrollToIdx(insertIdx + 1);
       return arr;
     });
     setShowNewForm(false);
@@ -347,6 +356,36 @@ const newFormPreview = useMemo(() => {
   function handleShowNewForm() {
     setInsertIdx(getMostVisibleIdx());
     setShowNewForm(true);
+  }
+
+  // Scroll to the new/duplicated achievement after it's added
+  useEffect(() => {
+    if (scrollToIdx !== null && achievementRefs.current[scrollToIdx]) {
+      achievementRefs.current[scrollToIdx].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      setScrollToIdx(null);
+    }
+  }, [scrollToIdx, devAchievements]);
+
+  // Remove achievement at index
+  function handleRemoveAchievement(idx) {
+    setReordered(prev => {
+      if (!prev) return prev;
+      const arr = [...prev];
+      arr.splice(idx, 1);
+      return arr;
+    });
+  }
+
+  // Duplicate achievement at index
+  function handleDuplicateAchievement(idx) {
+    setReordered(prev => {
+      if (!prev) return prev;
+      const arr = [...prev];
+      const copy = { ...arr[idx], id: arr[idx].id + '-copy' };
+      arr.splice(idx + 1, 0, copy);
+      setScrollToIdx(idx + 1);
+      return arr;
+    });
   }
 
   return (
@@ -600,9 +639,17 @@ const newFormPreview = useMemo(() => {
                   marginBottom: 8,
                   background: '#181818',
                   cursor: 'move',
-                  borderRadius: 8
+                  borderRadius: 8,
+                  position: 'relative'
+                }}
+                onClick={() => {
+                  if (showNewForm && scrollToIdx === i) setShowNewForm(false);
                 }}
               >
+                <div style={{position:'absolute',top:8,right:8,display:'flex',gap:6}}>
+                  <button title="Duplicate" style={{background:'none',border:'none',color:'#fff',fontSize:18,cursor:'pointer'}} onClick={e => {e.stopPropagation(); handleDuplicateAchievement(i);}}>📄</button>
+                  <button title="Remove" style={{background:'none',border:'none',color:'#fff',fontSize:18,cursor:'pointer'}} onClick={e => {e.stopPropagation(); handleRemoveAchievement(i);}}>🗑️</button>
+                </div>
                 <AchievementCard achievement={a} />
               </div>
             ))
