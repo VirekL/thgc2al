@@ -136,15 +136,81 @@ export default function List() {
   const [showNewForm, setShowNewForm] = useState(false);
   // Track hovered achievement index for dev controls
   const [hoveredIdx, setHoveredIdx] = useState(null);
+  // New achievement form state
   const [newForm, setNewForm] = useState({
     name: '', id: '', player: '', length: '', version: '2.', video: '', showcaseVideo: '', date: '', submitter: '', levelID: '', thumbnail: '', tags: []
   });
   const [newFormTags, setNewFormTags] = useState([]);
   const [newFormCustomTags, setNewFormCustomTags] = useState('');
   const [insertIdx, setInsertIdx] = useState(null); // For new achievement insert position
+  // Edit achievement state
+  const [editIdx, setEditIdx] = useState(null); // index of achievement being edited
+  const [editForm, setEditForm] = useState(null); // form state for editing
+  const [editFormTags, setEditFormTags] = useState([]);
+  const [editFormCustomTags, setEditFormCustomTags] = useState('');
   const achievementRefs = useRef([]);
   // Track the last added/duplicated achievement index for scrolling
   const [scrollToIdx, setScrollToIdx] = useState(null);
+  // Edit achievement handlers
+  function handleEditAchievement(idx) {
+    if (!reordered || !reordered[idx]) return;
+    const a = reordered[idx];
+    setEditIdx(idx);
+    setEditForm({ ...a });
+    setEditFormTags(Array.isArray(a.tags) ? [...a.tags] : []);
+    setEditFormCustomTags('');
+    setShowNewForm(false); // Hide new form if open
+  }
+
+  function handleEditFormChange(e) {
+    const { name, value } = e.target;
+    setEditForm(f => ({ ...f, [name]: value }));
+  }
+
+  function handleEditFormTagClick(tag) {
+    setEditFormTags(tags => tags.includes(tag) ? tags.filter(t => t !== tag) : [...tags, tag]);
+  }
+
+  function handleEditFormCustomTagsChange(e) {
+    setEditFormCustomTags(e.target.value);
+  }
+
+  function handleEditFormSave() {
+    // Compose tags
+    let tags = [...editFormTags];
+    if (typeof editFormCustomTags === 'string' && editFormCustomTags.trim()) {
+      editFormCustomTags.split(',').map(t => (typeof t === 'string' ? t.trim() : t)).filter(Boolean).forEach(t => {
+        if (!tags.includes(t)) tags.push(t);
+      });
+    }
+    // Compose entry
+    const entry = {};
+    Object.entries(editForm).forEach(([k, v]) => {
+      if (typeof v === 'string') {
+        if (v.trim() !== '') entry[k] = v.trim();
+      } else if (v !== undefined && v !== null && v !== '') {
+        entry[k] = v;
+      }
+    });
+    if (tags.length > 0) entry.tags = tags;
+    setReordered(prev => {
+      if (!prev) return prev;
+      const arr = [...prev];
+      arr[editIdx] = entry;
+      return arr;
+    });
+    setEditIdx(null);
+    setEditForm(null);
+    setEditFormTags([]);
+    setEditFormCustomTags('');
+  }
+
+  function handleEditFormCancel() {
+    setEditIdx(null);
+    setEditForm(null);
+    setEditFormTags([]);
+    setEditFormCustomTags('');
+  }
 
   useEffect(() => {
     fetch('/achievements.json')
@@ -590,7 +656,60 @@ const newFormPreview = useMemo(() => {
               </div>
             </div>
           )}
-          {devMode && showNewForm && (
+          {/* Edit achievement form (dev mode) */}
+          {devMode && editIdx !== null && editForm && (
+            <div style={{position:'fixed',zIndex:2001,bottom:24,left:24,background:'#232323',borderRadius:8,padding:18,marginBottom:0,maxWidth:600,boxShadow:'0 2px 8px #0002'}}>
+              <h3 style={{marginTop:0, color:'#e67e22'}}>Edit Achievement</h3>
+              <form onSubmit={e => {e.preventDefault(); handleEditFormSave();}} autoComplete="off">
+                <label style={{display:'block',fontSize:13,marginTop:6}}>Name<input type="text" name="name" value={editForm.name || ''} onChange={handleEditFormChange} required placeholder="Naracton Diablo X 99%" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
+                <label style={{display:'block',fontSize:13,marginTop:6}}>ID<input type="text" name="id" value={editForm.id || ''} onChange={handleEditFormChange} required placeholder="naracton-diablo-x-99" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
+                <label style={{display:'block',fontSize:13,marginTop:6}}>Player<input type="text" name="player" value={editForm.player || ''} onChange={handleEditFormChange} placeholder="Zoink" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
+                <label style={{display:'block',fontSize:13,marginTop:6}}>Tags
+                  <div style={{display:'flex',flexWrap:'wrap',gap:5,marginTop:4}}>
+                    {AVAILABLE_TAGS.map(tag => (
+                      <button type="button" key={tag} onClick={() => handleEditFormTagClick(tag)} style={{fontSize:11,padding:'3px 6px',backgroundColor:editFormTags.includes(tag)?'#007bff':'#eee',color:editFormTags.includes(tag)?'#fff':'#222',border:'1px solid #ccc',borderRadius:3,cursor:'pointer'}}>{tag}</button>
+                    ))}
+                  </div>
+                  <input type="text" value={editFormCustomTags} onChange={handleEditFormCustomTagsChange} placeholder="Or type custom tags separated by commas" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} />
+                  <div style={{marginTop:4,fontSize:13}}>
+                    {editFormTags.map(tag => (
+                      <span key={tag} style={{display:'inline-block',background:'#ddd',padding:'2px 6px',margin:'2px',borderRadius:4,cursor:'pointer'}} title="Click to remove" onClick={() => handleEditFormTagClick(tag)}>{tag}</span>
+                    ))}
+                  </div>
+                </label>
+                <label style={{display:'block',fontSize:13,marginTop:6}}>Length<input type="text" name="length" value={editForm.length || ''} onChange={handleEditFormChange} placeholder="69" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
+                <label style={{display:'block',fontSize:13,marginTop:6}}>Version<input type="text" name="version" value={editForm.version || ''} onChange={handleEditFormChange} placeholder="2.2" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
+                <label style={{display:'block',fontSize:13,marginTop:6}}>Video URL<input type="text" name="video" value={editForm.video || ''} onChange={handleEditFormChange} placeholder="https://youtu.be/..." style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
+                <label style={{display:'block',fontSize:13,marginTop:6}}>Showcase Video<input type="text" name="showcaseVideo" value={editForm.showcaseVideo || ''} onChange={handleEditFormChange} placeholder="https://youtu.be/..." style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
+                <label style={{display:'block',fontSize:13,marginTop:6}}>Date (YYYY-MM-DD)<input type="text" name="date" value={editForm.date || ''} onChange={handleEditFormChange} placeholder="2023-12-19" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
+                <label style={{display:'block',fontSize:13,marginTop:6}}>Submitter<input type="text" name="submitter" value={editForm.submitter || ''} onChange={handleEditFormChange} placeholder="kyle1saurus" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
+                <label style={{display:'block',fontSize:13,marginTop:6}}>Level ID<input type="text" name="levelID" value={editForm.levelID || ''} onChange={handleEditFormChange} placeholder="86407629" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
+                <label style={{display:'block',fontSize:13,marginTop:6}}>Thumbnail<input type="text" name="thumbnail" value={editForm.thumbnail || ''} onChange={handleEditFormChange} placeholder="Image URL" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
+                <div style={{marginTop:10,display:'flex',gap:8}}>
+                  <button type="submit" style={{padding:'6px 12px',fontSize:12}}>Save</button>
+                  <button type="button" onClick={handleEditFormCancel} style={{padding:'6px 12px',fontSize:12}}>Cancel</button>
+                </div>
+              </form>
+              <div style={{marginTop:15,background:'#eee',padding:10,fontSize:13,whiteSpace:'pre-wrap',wordBreak:'break-word',borderRadius:4}}>
+                <strong>Preview:</strong>
+                <br />
+                {JSON.stringify({
+                  ...editForm,
+                  tags: (() => {
+                    let tags = [...editFormTags];
+                    if (typeof editFormCustomTags === 'string' && editFormCustomTags.trim()) {
+                      editFormCustomTags.split(',').map(t => (typeof t === 'string' ? t.trim() : t)).filter(Boolean).forEach(t => {
+                        if (!tags.includes(t)) tags.push(t);
+                      });
+                    }
+                    return tags;
+                  })()
+                }, null, 2)}
+              </div>
+            </div>
+          )}
+          {/* New achievement form (dev mode) */}
+          {devMode && showNewForm && !editForm && (
             <div style={{position:'fixed',zIndex:2001,bottom:24,left:24,background:'#232323',borderRadius:8,padding:18,marginBottom:0,maxWidth:600,boxShadow:'0 2px 8px #0002'}}>
               <h3 style={{marginTop:0, color:'#e67e22'}}>New Achievement</h3>
               <form onSubmit={e => {e.preventDefault(); handleNewFormAdd();}} autoComplete="off">
@@ -675,6 +794,29 @@ const newFormPreview = useMemo(() => {
                     border: '2px solid var(--primary-accent, #e67e22)',
                     transition: 'background 0.2s, border 0.2s',
                   }}>
+                    <button
+                      title="Edit"
+                      style={{
+                        background: 'var(--info, #2980b9)',
+                        border: 'none',
+                        color: '#fff',
+                        fontSize: 44,
+                        cursor: 'pointer',
+                        opacity: 1,
+                        borderRadius: '50%',
+                        width: 64,
+                        height: 64,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        boxShadow: '0 2px 8px #0006',
+                        transition: 'background 0.15s, transform 0.1s',
+                        outline: 'none',
+                      }}
+                      onMouseOver={e => e.currentTarget.style.background = 'var(--info-hover, #3498db)'}
+                      onMouseOut={e => e.currentTarget.style.background = 'var(--info, #2980b9)'}
+                      onClick={e => {e.stopPropagation(); handleEditAchievement(i);}}
+                    >✏️</button>
                     <button
                       title="Duplicate"
                       style={{
