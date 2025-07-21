@@ -134,6 +134,8 @@ export default function List() {
   const [draggedIdx, setDraggedIdx] = useState(null);
   const [reordered, setReordered] = useState(null); // null = not in dev mode, else array
   const [showNewForm, setShowNewForm] = useState(false);
+  // Track hovered achievement index for dev controls
+  const [hoveredIdx, setHoveredIdx] = useState(null);
   const [newForm, setNewForm] = useState({
     name: '', id: '', player: '', length: '', version: '2.', video: '', showcaseVideo: '', date: '', submitter: '', levelID: '', thumbnail: '', tags: []
   });
@@ -354,6 +356,14 @@ const newFormPreview = useMemo(() => {
   }
   // When opening the new form, set insertIdx to the most visible card
   function handleShowNewForm() {
+    if (showNewForm) {
+      setShowNewForm(false);
+      setInsertIdx(null);
+      setNewForm({ name: '', id: '', player: '', length: '', version: '2.', video: '', showcaseVideo: '', date: '', submitter: '', levelID: '', thumbnail: '', tags: [] });
+      setNewFormTags([]);
+      setNewFormCustomTags('');
+      return;
+    }
     setInsertIdx(getMostVisibleIdx());
     setShowNewForm(true);
   }
@@ -645,11 +655,15 @@ const newFormPreview = useMemo(() => {
                 onClick={() => {
                   if (showNewForm && scrollToIdx === i) setShowNewForm(false);
                 }}
+                onMouseEnter={() => setHoveredIdx(i)}
+                onMouseLeave={() => setHoveredIdx(v => v === i ? null : v)}
               >
-                <div style={{position:'absolute',top:8,right:8,display:'flex',gap:6}}>
-                  <button title="Duplicate" style={{background:'none',border:'none',color:'#fff',fontSize:18,cursor:'pointer'}} onClick={e => {e.stopPropagation(); handleDuplicateAchievement(i);}}>📄</button>
-                  <button title="Remove" style={{background:'none',border:'none',color:'#fff',fontSize:18,cursor:'pointer'}} onClick={e => {e.stopPropagation(); handleRemoveAchievement(i);}}>🗑️</button>
-                </div>
+                {(hoveredIdx === i) && (
+                  <div style={{position:'absolute',top:8,right:8,display:'flex',gap:6,zIndex:2}}>
+                    <button title="Duplicate" style={{background:'none',border:'none',color:'#fff',fontSize:18,cursor:'pointer',opacity:0.95}} onClick={e => {e.stopPropagation(); handleDuplicateAchievement(i);}}>📄</button>
+                    <button title="Remove" style={{background:'none',border:'none',color:'#fff',fontSize:18,cursor:'pointer',opacity:0.95}} onClick={e => {e.stopPropagation(); handleRemoveAchievement(i);}}>🗑️</button>
+                  </div>
+                )}
                 <AchievementCard achievement={a} />
               </div>
             ))
