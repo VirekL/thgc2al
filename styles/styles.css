@@ -104,14 +104,15 @@
   font-family: 'Comfortaa', Arial, sans-serif;
 }
 body {
-  background: none; 
+  background: var(--primary-bg, #23283E);
   color: white;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   position: relative;
-  overflow: hidden;
-  z-index: 0; 
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 0;
 }
 
 @keyframes gradientAnimation {
@@ -222,6 +223,9 @@ main {
   padding: 2rem;
   justify-content: center;
   align-items: flex-start;
+  background: var(--primary-bg, #23283E);
+  min-height: calc(100vh - 80px);
+  box-sizing: border-box;
 }
 .rank-date-container {
   display: flex;
@@ -250,6 +254,8 @@ main {
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--hover-bg) transparent;
+  background: var(--primary-bg, #23283E);
+  box-sizing: border-box;
 }
 .achievements::-webkit-scrollbar {
   width: 8px;
@@ -1394,8 +1400,9 @@ main {
   padding: 0 0 1rem 0;
   margin-bottom: 0;
   box-shadow: 0 2px 8px 0 #181a24;
-  z-index: 10;
-  position: relative;
+  z-index: 100;
+  position: sticky;
+  top: 0;
   display: flex;
 }
 .header-bar {
