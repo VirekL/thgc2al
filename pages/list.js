@@ -76,9 +76,18 @@ function formatDate(date, dateFormat) {
 
 function AchievementCard({ achievement, onClick }) {
   const { dateFormat } = useDateFormat();
+  // If devMode is true, disable normal click navigation (but allow ctrl+click and middle click)
+  const { devMode } = AchievementCard;
+  const handleClick = e => {
+    if (devMode) {
+      // Allow ctrl+click and middle click
+      if (e.ctrlKey || e.button === 1) return;
+      e.preventDefault();
+    }
+  };
   return (
     <Link href={`/achievement/${achievement.id}`} passHref legacyBehavior>
-      <a style={{ textDecoration: 'none', color: 'inherit' }}>
+      <a style={{ textDecoration: 'none', color: 'inherit' }} onClick={handleClick} onMouseDown={handleClick}>
         <div className="achievement-item" tabIndex={0} style={{cursor: 'pointer'}}>
           <div className="rank-date-container">
             <div className="achievement-length">
@@ -303,6 +312,8 @@ export default function List() {
       const arr = [...prev];
       const [dragged] = arr.splice(draggedIdx, 1);
       arr.splice(idx, 0, dragged);
+      // Update ranks after reordering
+      arr.forEach((a, i) => { a.rank = i + 1; });
       setDraggedIdx(idx);
       return arr;
     });
@@ -802,7 +813,7 @@ const newFormPreview = useMemo(() => {
                     >🗑️</button>
                   </div>
                 )}
-                <AchievementCard achievement={a} />
+                <AchievementCard achievement={a} devMode={devMode} />
               </div>
             ))
           ) : (
@@ -810,7 +821,7 @@ const newFormPreview = useMemo(() => {
               <div className="no-achievements">No achievements found.</div>
             ) : (
               filtered.map((a, i) => (
-                <AchievementCard achievement={a} key={a.id || i} />
+                <AchievementCard achievement={a} key={a.id || i} devMode={devMode} />
               ))
             )
           ))}
