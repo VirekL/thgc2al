@@ -6,10 +6,10 @@
     "video": "https://youtu.be/aqg-2kThaSc",
     "showcaseVideo": "https://youtu.be/1GolW8jKK7k",
     "tags": [
-      "CBF",
-      "2P",
       "Level",
-      "Consistency"
+      "Consistency",
+      "2P",
+      "CBF"
     ],
     "date": "2025-04-23",
     "length": "200",
@@ -18,16 +18,33 @@
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/grief-unbuffed1.avif"
   },
   {
+    "name": "Amethyst 100%",
+    "id": "amethyst-100",
+    "player": "wPopoff",
+    "video": "https://youtu.be/4lfkzz1VCbA",
+    "showcaseVideo": "https://www.youtube.com/watch?v=2Z7NGo83ZnU",
+    "tags": [
+      "Level",
+      "Rated"
+    ],
+    "date": "2025-05-25",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/amethyst-trick1.avif",
+    "length": "102",
+    "version": "2.2",
+    "submitter": "TYATYAPKA",
+    "levelID": "119550490"
+  },
+  {
     "name": "GRIEF 25-100%",
     "id": "grief-25-100",
     "player": "Doggie",
     "video": "https://youtu.be/JZ6rLQoP7Y0",
     "showcaseVideo": "https://youtu.be/1GolW8jKK7k",
     "tags": [
-      "CBF",
-      "2P",
       "Level",
-      "Progress"
+      "Progress",
+      "2P",
+      "CBF"
     ],
     "date": "2025-02-26",
     "length": "117",
@@ -42,10 +59,10 @@
     "video": "https://youtu.be/ssE2G3-y5dE",
     "showcaseVideo": "https://youtu.be/1GolW8jKK7k",
     "tags": [
-      "CBF",
-      "2P",
       "Level",
-      "Progress"
+      "Progress",
+      "2P",
+      "CBF"
     ],
     "submitter": "Scarlett",
     "date": "2025-01-19",
@@ -54,32 +71,16 @@
     "thumbnail": "https://tjcsucht.net/levelthumbs/103524537.png"
   },
   {
-    "name": "Amethyst 77%",
-    "id": "amethyst-77",
-    "player": "wPopoff",
-    "video": "https://youtu.be/oCBsYJ12iDA&t=300s",
-    "showcaseVideo": "https://youtu.be/2Z7NGo83ZnU",
-    "tags": [
-      "Level",
-      "Progress"
-    ],
-    "date": "2025-05-01",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/amethyst-trick1.avif",
-    "length": "72",
-    "version": "2.2",
-    "submitter": "TYATYAPKA"
-  },
-  {
     "name": "GRIEF 80%",
     "id": "grief-80",
     "player": "Doggie",
     "video": "https://youtu.be/5gx07ZNiuJY",
     "showcaseVideo": "https://youtu.be/1GolW8jKK7k",
     "tags": [
-      "CBF",
-      "2P",
       "Level",
-      "Progress"
+      "Progress",
+      "2P",
+      "CBF"
     ],
     "date": "2024-11-24",
     "length": "134",
@@ -93,10 +94,10 @@
     "player": "Doggie",
     "video": "https://youtu.be/YHH5CFQidU4",
     "tags": [
-      "CBF",
-      "2P",
       "Level",
-      "Progress"
+      "Progress",
+      "2P",
+      "CBF"
     ],
     "date": "2024-11-01",
     "length": "138",
@@ -804,9 +805,9 @@
     "levelID": "45866767",
     "tags": [
       "Level",
-      "Rated",
       "Low Hertz",
-      "Mobile"
+      "Mobile",
+      "Rated"
     ]
   },
   {
@@ -823,9 +824,9 @@
     "tags": [
       "Level",
       "Low Hertz",
-      "Rated",
+      "Mobile",
       "Consistency",
-      "Mobile"
+      "Rated"
     ]
   },
   {
@@ -841,8 +842,8 @@
     "levelID": "38692301",
     "tags": [
       "Level",
-      "CBF",
-      "Progress"
+      "Progress",
+      "CBF"
     ]
   },
   {
@@ -905,8 +906,8 @@
     "submitter": "kittycatiscute",
     "tags": [
       "Level",
-      "CBF",
-      "Consistency"
+      "Consistency",
+      "CBF"
     ]
   },
   {
@@ -1002,8 +1003,8 @@
     "submitter": "nensa",
     "tags": [
       "Level",
-      "CBF",
-      "Progress"
+      "Progress",
+      "CBF"
     ]
   },
   {
@@ -1094,8 +1095,8 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
-      "Progress",
       "Low Hertz",
+      "Progress",
       "Rated"
     ]
   },
@@ -1191,9 +1192,9 @@
     "submitter": "Tr1bto",
     "tags": [
       "Level",
+      "Low Hertz",
       "Progress",
-      "Rated",
-      "Low Hertz"
+      "Rated"
     ]
   },
   {
@@ -1239,8 +1240,8 @@
     "showcaseVideo": "https://youtu.be/8lNHaYbvQE0",
     "submitter": "Brachiozaur",
     "tags": [
-      "Progress",
-      "Level"
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -1314,9 +1315,9 @@
     "showcaseVideo": "https://youtu.be/NDgTSUSu8-4",
     "submitter": "TYATYAPKA",
     "tags": [
-      "CBF",
       "Level",
-      "Progress"
+      "Progress",
+      "CBF"
     ]
   },
   {
@@ -1346,9 +1347,9 @@
     "showcaseVideo": "https://youtu.be/ZpeknSJF-2U",
     "submitter": "TYATYAPKA",
     "tags": [
+      "Level",
       "Consistency",
-      "CBF",
-      "Level"
+      "CBF"
     ]
   },
   {
@@ -1392,8 +1393,8 @@
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
-      "CBF",
-      "Noclip"
+      "Noclip",
+      "CBF"
     ]
   },
   {
@@ -1613,8 +1614,8 @@
     "video": "https://youtu.be/KDa5c0CJTHs",
     "showcaseVideo": "https://youtu.be/RBeyMGug3J0",
     "tags": [
-      "Rated",
-      "Level"
+      "Level",
+      "Rated"
     ]
   },
   {
@@ -1648,8 +1649,8 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
-      "Noclip",
       "Speedhack",
+      "Noclip",
       "Progress",
       "Rated"
     ]
@@ -1943,11 +1944,11 @@
     "showcaseVideo": "https://youtu.be/ix6VZzXNHkI",
     "submitter": "YoumanJY",
     "tags": [
-      "Rated",
       "Level",
       "Low Hertz",
+      "Mobile",
       "Progress",
-      "Mobile"
+      "Rated"
     ]
   },
   {
@@ -2040,9 +2041,9 @@
     "video": "https://youtu.be/c2pc6LSqBl8",
     "submitter": "gdspeedcuber",
     "tags": [
-      "CBF",
       "Level",
-      "Progress"
+      "Progress",
+      "CBF"
     ]
   },
   {
@@ -2072,8 +2073,8 @@
     "showcaseVideo": "https://youtu.be/GbtLlQQezTA",
     "submitter": "notmaxwell",
     "tags": [
-      "Low Hertz",
       "Challenge",
+      "Low Hertz",
       "Progress"
     ]
   },
@@ -2392,8 +2393,8 @@
       "Level",
       "Speedhack",
       "Progress",
-      "Rated",
-      "CBF"
+      "CBF",
+      "Rated"
     ]
   },
   {
@@ -2551,9 +2552,9 @@
     "showcaseVideo": "https://youtu.be/lINTj6fiTes",
     "tags": [
       "Level",
-      "Rated",
       "Low Hertz",
-      "Mobile"
+      "Mobile",
+      "Rated"
     ]
   },
   {
@@ -2613,10 +2614,10 @@
     "showcaseVideo": "https://youtu.be/jlAYQoYtvq8",
     "submitter": "isabelle",
     "tags": [
-      "Outdated Version",
       "Level",
       "Low Hertz",
-      "Mobile"
+      "Mobile",
+      "Outdated Version"
     ]
   },
   {
@@ -2664,9 +2665,9 @@
     "showcaseVideo": "https://youtu.be/ZpeknSJF-2U",
     "submitter": "Skylar",
     "tags": [
+      "Level",
       "Speedhack",
-      "Progress",
-      "Level"
+      "Progress"
     ]
   },
   {
@@ -2710,8 +2711,8 @@
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
-      "Progress",
-      "Speedhack"
+      "Speedhack",
+      "Progress"
     ]
   },
   {
@@ -2756,8 +2757,8 @@
     "showcaseVideo": "https://youtu.be/40qdK8T6gL0",
     "submitter": "TYATYAPKA",
     "tags": [
-      "CBF",
-      "Level"
+      "Level",
+      "CBF"
     ]
   },
   {
@@ -2786,8 +2787,8 @@
     "date": "2025-05-10",
     "submitter": "kittycatiscute",
     "tags": [
-      "CBF",
-      "Level"
+      "Level",
+      "CBF"
     ]
   },
   {
@@ -2897,9 +2898,9 @@
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
-      "Rated",
       "Speedhack",
-      "Progress"
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -3021,8 +3022,8 @@
     "video": "https://youtu.be/jQlXNrJvlvw?t=74",
     "showcaseVideo": "https://youtu.be/J537fh0y1hA",
     "tags": [
-      "CBF",
-      "Level"
+      "Level",
+      "CBF"
     ]
   },
   {
@@ -3068,8 +3069,8 @@
     "showcaseVideo": "https://youtu.be/m9Yld1T1eZU",
     "submitter": "TYATYAPKA",
     "tags": [
-      "CBF",
-      "Challenge"
+      "Challenge",
+      "CBF"
     ]
   },
   {
@@ -3321,8 +3322,8 @@
     "showcaseVideo": "https://youtu.be/qDcewR4PUYY",
     "tags": [
       "Level",
-      "Formerly Rated",
-      "CBF"
+      "CBF",
+      "Formerly Rated"
     ]
   },
   {
@@ -3443,9 +3444,9 @@
     "showcaseVideo": "https://youtu.be/A5bn2ayPdu8",
     "submitter": "kyle1saurus",
     "tags": [
-      "CBF",
+      "Challenge",
       "Progress",
-      "Challenge"
+      "CBF"
     ]
   },
   {
@@ -3477,8 +3478,8 @@
     "video": "https://youtu.be/HCyh7UPGPcE",
     "showcaseVideo": "https://youtu.be/b66_Oe4Xo1w",
     "tags": [
-      "Consistency",
       "Level",
+      "Consistency",
       "Rated"
     ]
   },
@@ -3542,9 +3543,9 @@
     "submitter": "Cejelost",
     "tags": [
       "Level",
-      "Rated",
       "Low Hertz",
-      "Progress"
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -3589,8 +3590,8 @@
     "submitter": "Emp",
     "tags": [
       "Level",
-      "CBF",
-      "Progress"
+      "Progress",
+      "CBF"
     ]
   },
   {
@@ -3633,10 +3634,10 @@
     "video": "https://youtu.be/TNqFHVrt2ng",
     "showcaseVideo": "https://youtu.be/ozGsB1IBLEE",
     "tags": [
-      "Rated",
       "Level",
       "Low Hertz",
-      "Mobile"
+      "Mobile",
+      "Rated"
     ]
   },
   {
@@ -3844,10 +3845,10 @@
     "submitter": "tmtsps12",
     "tags": [
       "Level",
-      "2P",
-      "CBF",
       "Speedhack",
-      "Progress"
+      "Progress",
+      "2P",
+      "CBF"
     ]
   },
   {
@@ -3911,9 +3912,9 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
-      "Rated",
       "Low Hertz",
-      "Progress"
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -3963,8 +3964,8 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
-      "Rated",
-      "Low Hertz"
+      "Low Hertz",
+      "Rated"
     ]
   },
   {
@@ -4040,11 +4041,11 @@
     "showcaseVideo": "https://youtu.be/SgWZkTPHNaM?t=113",
     "submitter": "TYATYAPKA",
     "tags": [
-      "Rated",
       "Level",
       "Low Hertz",
       "Mobile",
-      "Progress"
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -4105,9 +4106,9 @@
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
-      "Rated",
+      "Low Hertz",
       "Mobile",
-      "Low Hertz"
+      "Rated"
     ]
   },
   {
@@ -4137,8 +4138,8 @@
     "submitter": "vaughn",
     "tags": [
       "Level",
-      "CBF",
       "Consistency",
+      "CBF",
       "Rated"
     ]
   },
@@ -4199,8 +4200,8 @@
     "video": "https://youtu.be/Soc-JeRJtqM",
     "showcaseVideo": "https://youtu.be/pncIrL1iWVg",
     "tags": [
-      "Formerly Rated",
-      "Level"
+      "Level",
+      "Formerly Rated"
     ]
   },
   {
@@ -4398,8 +4399,8 @@
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
-      "CBF",
-      "Progress"
+      "Progress",
+      "CBF"
     ]
   },
   {
@@ -4428,8 +4429,8 @@
     "showcaseVideo": "https://youtu.be/FgkACdloQug",
     "submitter": "Swift",
     "tags": [
-      "Consistency",
       "Level",
+      "Consistency",
       "CBF",
       "Rated"
     ]
@@ -4525,10 +4526,10 @@
     "levelID": "91351939",
     "tags": [
       "Level",
-      "Rated",
-      "Mobile",
       "Low Hertz",
-      "Progress"
+      "Mobile",
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -4637,11 +4638,11 @@
     "showcaseVideo": "https://youtu.be/vXg5nJqRizI",
     "submitter": "kyle1saurus",
     "tags": [
-      "Rated",
       "Level",
       "Low Hertz",
       "Mobile",
-      "Progress"
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -4674,8 +4675,8 @@
     "submitter": "TYATYAPKA",
     "tags": [
       "Challenge",
-      "CBF",
-      "Progress"
+      "Progress",
+      "CBF"
     ]
   },
   {
@@ -4735,9 +4736,9 @@
     "date": "2025-05-05",
     "submitter": "TYATYAPKA",
     "tags": [
-      "CBF",
       "Challenge",
-      "Progress"
+      "Progress",
+      "CBF"
     ]
   },
   {
@@ -4752,9 +4753,9 @@
     "submitter": "kyle1saurus",
     "showcaseVideo": "https://youtu.be/1MR6qKNWpG8",
     "tags": [
-      "Rated",
       "Level",
-      "Low Hertz"
+      "Low Hertz",
+      "Rated"
     ]
   },
   {
@@ -4814,9 +4815,9 @@
     "date": "2025-05-05",
     "submitter": "TYATYAPKA",
     "tags": [
-      "CBF",
       "Challenge",
-      "Progress"
+      "Progress",
+      "CBF"
     ]
   },
   {
@@ -4939,9 +4940,9 @@
     "showcaseVideo": "https://youtu.be/GKQc2JECHLs",
     "submitter": "YoumanJY",
     "tags": [
-      "Rated",
       "Level",
-      "Consistency"
+      "Consistency",
+      "Rated"
     ]
   },
   {
@@ -4954,21 +4955,6 @@
     "version": 2.2,
     "video": "https://youtu.be/L4zX5okgCD4",
     "showcaseVideo": "https://youtu.be/Ecwn-Ea8xY0",
-    "tags": [
-      "Challenge"
-    ]
-  },
-  {
-    "name": 50,
-    "id": "50",
-    "player": "MoonFrost",
-    "levelID": 110460436,
-    "date": "2024-09-23",
-    "length": 5,
-    "version": 2.1,
-    "video": "https://youtu.be/w6ZW2KV8oGU",
-    "showcaseVideo": "https://youtu.be/n8_JxVxQrx4",
-    "submitter": "kyle1saurus",
     "tags": [
       "Challenge"
     ]
@@ -5140,8 +5126,8 @@
     "tags": [
       "Level",
       "Low Hertz",
-      "Rated",
-      "Progress"
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -5470,8 +5456,8 @@
     "video": "https://youtu.be/T9-75lfKVQg",
     "showcaseVideo": "https://youtu.be/ULW2gj0bJNs",
     "tags": [
-      "CBF",
-      "Level"
+      "Level",
+      "CBF"
     ]
   },
   {
@@ -5487,8 +5473,8 @@
     "levelID": "20846131",
     "tags": [
       "Level",
-      "CBF",
-      "Progress"
+      "Progress",
+      "CBF"
     ]
   },
   {
@@ -5597,10 +5583,10 @@
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
+      "Low Hertz",
       "Mobile",
       "Progress",
-      "Rated",
-      "Low Hertz"
+      "Rated"
     ]
   },
   {
@@ -5694,8 +5680,8 @@
     "tags": [
       "Level",
       "Speedhack",
-      "Rated",
-      "Progress"
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -5787,9 +5773,9 @@
     "submitter": "soth",
     "tags": [
       "Level",
+      "Low Hertz",
       "Mobile",
-      "Rated",
-      "Low Hertz"
+      "Rated"
     ]
   },
   {
@@ -5961,9 +5947,9 @@
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
-      "Rated",
       "Low Hertz",
-      "Progress"
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -6383,10 +6369,10 @@
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
+      "Low Hertz",
       "Mobile",
       "Progress",
-      "Rated",
-      "Low Hertz"
+      "Rated"
     ]
   },
   {
@@ -6450,9 +6436,9 @@
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
+      "Low Hertz",
       "Mobile",
-      "Rated",
-      "Low Hertz"
+      "Rated"
     ]
   },
   {
@@ -6574,10 +6560,10 @@
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
-      "Rated",
       "Low Hertz",
       "Mobile",
-      "Progress"
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -6592,9 +6578,9 @@
     "submitter": "kyle1saurus",
     "levelID": "79771070",
     "tags": [
-      "Rated",
       "Level",
-      "Consistency"
+      "Consistency",
+      "Rated"
     ]
   },
   {
@@ -6610,9 +6596,9 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
-      "Rated",
+      "Low Hertz",
       "Progress",
-      "Low Hertz"
+      "Rated"
     ]
   },
   {
@@ -6627,9 +6613,9 @@
     "showcaseVideo": "https://youtu.be/Bg6GtOpM0Zo",
     "submitter": "Brachiozaur",
     "tags": [
-      "Rated",
+      "Level",
       "Low Hertz",
-      "Level"
+      "Rated"
     ]
   },
   {
@@ -6703,8 +6689,8 @@
     "video": "https://youtu.be/jlAYQoYtvq8",
     "submitter": "Brachiozaur",
     "tags": [
-      "Outdated Version",
-      "Level"
+      "Level",
+      "Outdated Version"
     ]
   },
   {
@@ -6874,8 +6860,8 @@
     "submitter": "Brachiozaur",
     "tags": [
       "Level",
-      "Rated",
-      "2P"
+      "2P",
+      "Rated"
     ]
   },
   {
@@ -6906,8 +6892,8 @@
     "submitter": "Brachiozaur",
     "tags": [
       "Level",
-      "Rated",
-      "Low Hertz"
+      "Low Hertz",
+      "Rated"
     ]
   },
   {
@@ -6923,9 +6909,9 @@
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
-      "Rated",
+      "Low Hertz",
       "Mobile",
-      "Low Hertz"
+      "Rated"
     ]
   },
   {
@@ -7007,8 +6993,8 @@
     "tags": [
       "Level",
       "Low Hertz",
-      "Rated",
-      "Mobile"
+      "Mobile",
+      "Rated"
     ]
   },
   {
@@ -7039,10 +7025,10 @@
     "showcaseVideo": "https://youtu.be/knHAfFHWLj0",
     "submitter": "Brachiozaur",
     "tags": [
-      "Rated",
       "Level",
       "Low Hertz",
-      "Progress"
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -7057,10 +7043,10 @@
     "showcaseVideo": "https://youtu.be/knHAfFHWLj0",
     "submitter": "Brachiozaur",
     "tags": [
-      "Rated",
       "Level",
       "Low Hertz",
-      "Progress"
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -7076,10 +7062,10 @@
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
-      "Rated",
       "Low Hertz",
       "Mobile",
-      "Progress"
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -7111,9 +7097,9 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
-      "Rated",
       "Speedhack",
-      "Progress"
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -7190,8 +7176,8 @@
     "showcaseVideo": "https://youtu.be/pZlRHWuVDn4",
     "submitter": "kyle1saurus",
     "tags": [
-      "Consistency",
       "Level",
+      "Consistency",
       "Rated"
     ]
   },
@@ -7254,8 +7240,8 @@
     "submitter": "jak",
     "tags": [
       "Level",
-      "Rated",
-      "Consistency"
+      "Consistency",
+      "Rated"
     ]
   },
   {
@@ -7301,8 +7287,8 @@
     "showcaseVideo": "https://youtu.be/k3ebBTBeUTg",
     "tags": [
       "Level",
-      "Rated",
-      "Low Hertz"
+      "Low Hertz",
+      "Rated"
     ]
   },
   {
@@ -7317,8 +7303,8 @@
     "submitter": "zXdasfsa",
     "tags": [
       "Level",
-      "Progress",
-      "Speedhack"
+      "Speedhack",
+      "Progress"
     ]
   },
   {
@@ -7365,9 +7351,9 @@
     "showcaseVideo": "https://youtu.be/3YQtDDnUEm4",
     "tags": [
       "Level",
-      "Rated",
+      "Low Hertz",
       "Mobile",
-      "Low Hertz"
+      "Rated"
     ]
   },
   {
@@ -7384,9 +7370,9 @@
     "tags": [
       "Level",
       "Low Hertz",
-      "Rated",
       "Mobile",
-      "Progress"
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -7431,10 +7417,10 @@
     "showcaseVideo": "https://youtu.be/r2cRWrjCEwk",
     "submitter": "TYATYAPKA",
     "tags": [
+      "Level",
       "Low Hertz",
       "Mobile",
       "Progress",
-      "Level",
       "Rated"
     ]
   },
@@ -7641,8 +7627,8 @@
     "video": "https://youtu.be/KSsSJ_c1S6c",
     "submitter": "SirDoodle2920",
     "tags": [
-      "Progress",
-      "Challenge"
+      "Challenge",
+      "Progress"
     ]
   },
   {
@@ -7704,10 +7690,10 @@
     "showcaseVideo": "https://youtu.be/Q5LqZ9aKn78",
     "submitter": "kyle1saurus",
     "tags": [
-      "Rated",
+      "Level",
       "Low Hertz",
       "Mobile",
-      "Level"
+      "Rated"
     ]
   },
   {
@@ -7804,10 +7790,10 @@
     "video": "https://youtu.be/vWsAAcPGy5s",
     "showcaseVideo": "https://youtu.be/0rvqYWQWswA",
     "tags": [
-      "Rated",
+      "Level",
       "Low Hertz",
       "Mobile",
-      "Level"
+      "Rated"
     ]
   },
   {
@@ -7837,9 +7823,9 @@
     "showcaseVideo": "https://youtu.be/zOB0eLE_mKM",
     "submitter": "SirDoodle2920",
     "tags": [
-      "Rated",
+      "Level",
       "2P",
-      "Level"
+      "Rated"
     ]
   },
   {
@@ -7853,9 +7839,9 @@
     "showcaseVideo": "https://youtu.be/r5wqyu4-rrE",
     "submitter": "TYATYAPKA",
     "tags": [
-      "CBF",
       "Level",
-      "Progress"
+      "Progress",
+      "CBF"
     ]
   },
   {
@@ -7871,9 +7857,9 @@
     "submitter": "Brachiozaur",
     "tags": [
       "Level",
-      "Rated",
       "Low Hertz",
-      "Mobile"
+      "Mobile",
+      "Rated"
     ]
   },
   {
@@ -7888,8 +7874,8 @@
     "showcaseVideo": "https://youtu.be/eJe3i5KyKOk",
     "tags": [
       "Level",
-      "Rated",
-      "Low Hertz"
+      "Low Hertz",
+      "Rated"
     ]
   },
   {
@@ -7902,9 +7888,9 @@
     "video": "https://x.com/DasherDoggie/status/1893022569420210487",
     "submitter": "Brachiozaur",
     "tags": [
-      "CBF",
       "Level",
-      "Progress"
+      "Progress",
+      "CBF"
     ]
   },
   {
@@ -7918,8 +7904,8 @@
     "showcaseVideo": "https://youtu.be/9xNMF78VvOA",
     "submitter": "sydno",
     "tags": [
-      "Progress",
-      "Level"
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -7934,10 +7920,10 @@
     "showcaseVideo": "https://youtu.be/PFHlkdz9UqM",
     "submitter": "jak",
     "tags": [
-      "Rated",
-      "Progress",
+      "Level",
       "Speedhack",
-      "Level"
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -7982,8 +7968,8 @@
     "showcaseVideo": "https://youtu.be/Qi6yu86LUZY",
     "submitter": "Exiled_Shade",
     "tags": [
-      "Progress",
-      "Level"
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -8074,9 +8060,9 @@
     "showcaseVideo": "https://youtu.be/p4QgFtKL5kE",
     "submitter": "Exiled_Shade",
     "tags": [
-      "CBF",
       "Level",
-      "Progress"
+      "Progress",
+      "CBF"
     ]
   },
   {
@@ -8092,10 +8078,10 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
-      "Progress",
-      "Rated",
+      "Low Hertz",
       "Mobile",
-      "Low Hertz"
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -8126,10 +8112,10 @@
     "submitter": "kittycatiscute",
     "levelID": "77618325",
     "tags": [
-      "CBF",
       "Level",
       "Noclip",
-      "Progress"
+      "Progress",
+      "CBF"
     ]
   },
   {
@@ -8173,10 +8159,10 @@
     "video": " https://youtu.be/BX_zkpKL8bI",
     "showcaseVideo": "https://youtu.be/tPFN83k6DWo",
     "tags": [
-      "Rated",
       "Level",
+      "Low Hertz",
       "Mobile",
-      "Low Hertz"
+      "Rated"
     ]
   },
   {
@@ -8190,9 +8176,9 @@
     "video": "https://youtu.be/3BZUDV3UnC0",
     "showcaseVideo": "https://youtu.be/tPFN83k6DWo",
     "tags": [
-      "Rated",
       "Level",
-      "Low Hertz"
+      "Low Hertz",
+      "Rated"
     ]
   },
   {
@@ -8268,9 +8254,9 @@
     "showcaseVideo": "https://youtu.be/8NBuqpGb1KY",
     "submitter": "kyle1saurus",
     "tags": [
-      "CBF",
       "Level",
-      "Progress"
+      "Progress",
+      "CBF"
     ]
   },
   {
@@ -8329,8 +8315,8 @@
     "video": "https://youtu.be/_cquHx1jXAg",
     "showcaseVideo": "https://youtu.be/io11u-GLJkM",
     "tags": [
-      "Formerly Rated",
-      "Level"
+      "Level",
+      "Formerly Rated"
     ]
   },
   {
@@ -8362,8 +8348,8 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
-      "Rated",
-      "Low Hertz"
+      "Low Hertz",
+      "Rated"
     ]
   },
   {
@@ -8379,8 +8365,8 @@
     "showcaseVideo": "https://youtu.be/4smOc0VDhP0",
     "tags": [
       "Level",
-      "CBF",
       "Consistency",
+      "CBF",
       "Rated"
     ]
   },
@@ -8500,9 +8486,9 @@
     "submitter": "Swift",
     "tags": [
       "Challenge",
+      "Noclip",
       "Progress",
-      "CBF",
-      "Noclip"
+      "CBF"
     ]
   },
   {
@@ -8564,10 +8550,10 @@
     "showcaseVideo": "https://youtu.be/yu_p61ch144",
     "submitter": "kyle1saurus",
     "tags": [
-      "Low Hertz",
       "Level",
-      "Rated",
-      "Progress"
+      "Low Hertz",
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -8651,8 +8637,8 @@
       "Level",
       "Low Hertz",
       "Mobile",
-      "Rated",
-      "Progress"
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -8700,9 +8686,9 @@
     "tags": [
       "Level",
       "Low Hertz",
+      "Mobile",
       "Progress",
-      "Rated",
-      "Mobile"
+      "Rated"
     ]
   },
   {
@@ -8718,9 +8704,9 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
-      "Rated",
       "Low Hertz",
-      "Progress"
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -8827,8 +8813,8 @@
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
-      "Mobile",
       "Low Hertz",
+      "Mobile",
       "Progress",
       "Rated"
     ]
@@ -8846,8 +8832,8 @@
     "submitter": "ScorchBTD",
     "tags": [
       "Challenge",
-      "Mobile",
-      "Low Hertz"
+      "Low Hertz",
+      "Mobile"
     ]
   },
   {
@@ -8863,8 +8849,8 @@
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
-      "Mobile",
       "Low Hertz",
+      "Mobile",
       "Progress",
       "Rated"
     ]
@@ -8986,10 +8972,10 @@
     "showcaseVideo": "https://youtu.be/9ZX_EHHpf04",
     "submitter": "kyle1saurus",
     "tags": [
+      "Level",
       "Low Hertz",
       "Mobile",
       "Progress",
-      "Level",
       "Rated"
     ]
   },
@@ -9068,10 +9054,10 @@
     "showcaseVideo": "https://youtu.be/ti5G-c3wcM0",
     "tags": [
       "Level",
-      "2P",
       "Low Hertz",
-      "Rated",
-      "Progress"
+      "Progress",
+      "2P",
+      "Rated"
     ]
   },
   {
@@ -9100,8 +9086,8 @@
     "showcaseVideo": "https://youtu.be/Vfqn-3JN75U",
     "submitter": "kyle1saurus",
     "tags": [
-      "Outdated Version",
-      "Level"
+      "Level",
+      "Outdated Version"
     ]
   },
   {
@@ -9161,8 +9147,8 @@
     "video": "https://youtu.be/dGBPjQZUsVE",
     "showcaseVideo": "https://youtu.be/g2OE21U9e5w",
     "tags": [
-      "Speedhack",
       "Level",
+      "Speedhack",
       "Progress",
       "Rated"
     ]
@@ -9377,9 +9363,9 @@
     "showcaseVideo": "https://youtu.be/qS3mHt8CeFU",
     "submitter": "TYATYAPKA",
     "tags": [
-      "CBF",
       "Level",
-      "Progress"
+      "Progress",
+      "CBF"
     ]
   },
   {
@@ -9396,8 +9382,8 @@
       "Level",
       "Low Hertz",
       "Mobile",
-      "Rated",
-      "2P"
+      "2P",
+      "Rated"
     ]
   },
   {
@@ -9594,8 +9580,8 @@
     "showcaseVideo": "https://youtu.be/4ngzCQDdMVA",
     "tags": [
       "Level",
-      "Rated",
-      "Low Hertz"
+      "Low Hertz",
+      "Rated"
     ]
   },
   {
@@ -9673,8 +9659,8 @@
     "showcaseVideo": "https://youtu.be/bINkwwDFW3E",
     "tags": [
       "Level",
-      "Rated",
-      "Low Hertz"
+      "Low Hertz",
+      "Rated"
     ]
   },
   {
@@ -9901,8 +9887,8 @@
     "showcaseVideo": "https://youtu.be/GH_TXlJ5cDE",
     "submitter": "TYATYAPKA",
     "tags": [
-      "Progress",
-      "Level"
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -10026,8 +10012,8 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
-      "Mobile",
       "Low Hertz",
+      "Mobile",
       "Rated"
     ]
   },
@@ -10071,8 +10057,8 @@
     "showcaseVideo": "https://youtu.be/cYe-BUOqixc",
     "submitter": "Emp",
     "tags": [
-      "Consistency",
-      "Challenge"
+      "Challenge",
+      "Consistency"
     ]
   },
   {
@@ -10419,8 +10405,8 @@
     "submitter": "TYATYAPKA",
     "tags": [
       "Challenge",
-      "Mobile",
-      "Low Hertz"
+      "Low Hertz",
+      "Mobile"
     ]
   },
   {
@@ -10542,8 +10528,8 @@
     "showcaseVideo": "https://youtu.be/Odrwj2wHzyU",
     "submitter": "kyle1saurus",
     "tags": [
-      "CBF",
-      "Level"
+      "Level",
+      "CBF"
     ]
   },
   {
@@ -10699,9 +10685,9 @@
     "video": "https://youtu.be/p8f3g_oYtNQ",
     "showcaseVideo": "https://youtu.be/U6-UrdnGLoY",
     "tags": [
-      "Mobile",
       "Level",
-      "Low Hertz"
+      "Low Hertz",
+      "Mobile"
     ]
   },
   {
@@ -10731,8 +10717,8 @@
     "showcaseVideo": "https://youtu.be/6v_pWirR72Q",
     "submitter": "vaughn",
     "tags": [
-      "Consistency",
       "Level",
+      "Consistency",
       "Rated"
     ]
   },
@@ -10749,8 +10735,8 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
-      "Rated",
-      "Consistency"
+      "Consistency",
+      "Rated"
     ]
   },
   {
@@ -10781,9 +10767,9 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
-      "Rated",
+      "Low Hertz",
       "Progress",
-      "Low Hertz"
+      "Rated"
     ]
   },
   {
@@ -10878,8 +10864,8 @@
     "showcaseVideo": "https://youtu.be/5jd1xU6JCAI",
     "submitter": "inco",
     "tags": [
-      "Consistency",
       "Level",
+      "Consistency",
       "Rated"
     ]
   },
@@ -10911,10 +10897,10 @@
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
-      "Rated",
       "Low Hertz",
       "Mobile",
-      "Progress"
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -10944,10 +10930,10 @@
     "showcaseVideo": "https://youtu.be/XI_CWZX_3bQ",
     "submitter": "kyle1saurus",
     "tags": [
-      "Mobile",
+      "Level",
       "Low Hertz",
-      "Rated",
-      "Level"
+      "Mobile",
+      "Rated"
     ]
   },
   {
@@ -11041,8 +11027,8 @@
     "submitter": "kittycatiscute",
     "tags": [
       "Level",
-      "CBF",
-      "Progress"
+      "Progress",
+      "CBF"
     ]
   },
   {
@@ -11088,8 +11074,8 @@
     "submitter": "TYATYAPKA",
     "tags": [
       "Challenge",
-      "Progress",
-      "Speedhack"
+      "Speedhack",
+      "Progress"
     ]
   },
   {
@@ -11105,8 +11091,8 @@
     "submitter": "Brachiozaur",
     "tags": [
       "Level",
-      "Mobile",
-      "Low Hertz"
+      "Low Hertz",
+      "Mobile"
     ]
   },
   {
@@ -11216,8 +11202,8 @@
     "submitter": "tricklength",
     "tags": [
       "Level",
-      "Progress",
-      "Noclip"
+      "Noclip",
+      "Progress"
     ]
   },
   {
@@ -11248,10 +11234,10 @@
     "showcaseVideo": "https://youtu.be/EnTxkYZ7JNE",
     "tags": [
       "Level",
-      "Rated",
-      "Mobile",
       "Low Hertz",
-      "Progress"
+      "Mobile",
+      "Progress",
+      "Rated"
     ]
   },
   {
