@@ -7,10 +7,12 @@ const AVAILABLE_TAGS = [
   "2P", "CBF", "Rated", "Formerly Rated", "Outdated Version"
 ];
 import Link from 'next/link';
+
 import Sidebar from '../components/Sidebar';
 import Background from '../components/Background';
 import { useDateFormat } from '../components/DateFormatContext';
 import Tag, { TAG_PRIORITY_ORDER } from '../components/Tag';
+import DevModePanel from '../components/DevModePanel';
 
 function TagFilterPills({ allTags, filterTags, setFilterTags, isMobile, show, setShow }) {
   const tagStates = {};
@@ -646,230 +648,150 @@ const newFormPreview = useMemo(() => {
         {/* Desktop sidebar only */}
         {!isMobile && <Sidebar />}
         <section className="achievements achievements-section">
-          {/* Floating dev mode controls */}
-          {devMode && (
-            <div className="devmode-floating-panel">
-              <span className="devmode-title">Developer Mode Enabled (SHIFT+M)</span>
-              <div className="devmode-btn-row">
-                <button className="devmode-btn" onClick={handleCopyJson}>Copy achievements.json</button>
-                <button className="devmode-btn" onClick={handleShowNewForm}>New Achievement</button>
-              </div>
-            </div>
-          )}
-          {/* Edit achievement form (dev mode) */}
-          {devMode && editIdx !== null && editForm && (
-            <div className="devmode-form-panel">
-              <h3 className="devmode-form-title">Edit Achievement</h3>
-              <form onSubmit={e => {e.preventDefault(); handleEditFormSave();}} autoComplete="off">
-                <label style={{display:'block',fontSize:13,marginTop:6}}>Name<input type="text" name="name" value={editForm.name || ''} onChange={handleEditFormChange} required placeholder="Naracton Diablo X 99%" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <label style={{display:'block',fontSize:13,marginTop:6}}>ID<input type="text" name="id" value={editForm.id || ''} onChange={handleEditFormChange} required placeholder="naracton-diablo-x-99" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <label style={{display:'block',fontSize:13,marginTop:6}}>Player<input type="text" name="player" value={editForm.player || ''} onChange={handleEditFormChange} placeholder="Zoink" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <label style={{display:'block',fontSize:13,marginTop:6}}>Tags
-                  <div style={{display:'flex',flexWrap:'wrap',gap:5,marginTop:4}}>
-                    {AVAILABLE_TAGS.map(tag => (
-                      <button type="button" key={tag} onClick={() => handleEditFormTagClick(tag)} style={{fontSize:11,padding:'3px 6px',backgroundColor:editFormTags.includes(tag)?'#007bff':'#eee',color:editFormTags.includes(tag)?'#fff':'#222',border:'1px solid #ccc',borderRadius:3,cursor:'pointer'}}>{tag}</button>
-                    ))}
-                  </div>
-                  <input type="text" value={editFormCustomTags} onChange={handleEditFormCustomTagsChange} placeholder="Or type custom tags separated by commas" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} />
-                  <div style={{marginTop:4,fontSize:13}}>
-                    {editFormTags.map(tag => (
-                      <span key={tag} style={{display:'inline-block',background:'#ddd',padding:'2px 6px',margin:'2px',borderRadius:4,cursor:'pointer'}} title="Click to remove" onClick={() => handleEditFormTagClick(tag)}>{tag}</span>
-                    ))}
-                  </div>
-                </label>
-                <label style={{display:'block',fontSize:13,marginTop:6}}>Length<input type="text" name="length" value={editForm.length || ''} onChange={handleEditFormChange} placeholder="69" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <label style={{display:'block',fontSize:13,marginTop:6}}>Version<input type="text" name="version" value={editForm.version || ''} onChange={handleEditFormChange} placeholder="2.2" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <label style={{display:'block',fontSize:13,marginTop:6}}>Video URL<input type="text" name="video" value={editForm.video || ''} onChange={handleEditFormChange} placeholder="https://youtu.be/..." style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <label style={{display:'block',fontSize:13,marginTop:6}}>Showcase Video<input type="text" name="showcaseVideo" value={editForm.showcaseVideo || ''} onChange={handleEditFormChange} placeholder="https://youtu.be/..." style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <label style={{display:'block',fontSize:13,marginTop:6}}>Date (YYYY-MM-DD)<input type="text" name="date" value={editForm.date || ''} onChange={handleEditFormChange} placeholder="2023-12-19" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <label style={{display:'block',fontSize:13,marginTop:6}}>Submitter<input type="text" name="submitter" value={editForm.submitter || ''} onChange={handleEditFormChange} placeholder="kyle1saurus" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <label style={{display:'block',fontSize:13,marginTop:6}}>Level ID<input type="text" name="levelID" value={editForm.levelID || ''} onChange={handleEditFormChange} placeholder="86407629" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <label style={{display:'block',fontSize:13,marginTop:6}}>Thumbnail<input type="text" name="thumbnail" value={editForm.thumbnail || ''} onChange={handleEditFormChange} placeholder="Image URL" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <div className="devmode-form-btn-row">
-                  <button className="devmode-btn" type="submit">Save</button>
-                  <button className="devmode-btn" type="button" onClick={handleEditFormCancel}>Cancel</button>
-                </div>
-              </form>
-              <div className="devmode-preview-box">
-                <strong>Preview:</strong>
-                <br />
-                {JSON.stringify({
-                  ...editForm,
-                  tags: (() => {
-                    let tags = [...editFormTags];
-                    if (typeof editFormCustomTags === 'string' && editFormCustomTags.trim()) {
-                      editFormCustomTags.split(',').map(t => (typeof t === 'string' ? t.trim() : t)).filter(Boolean).forEach(t => {
-                        if (!tags.includes(t)) tags.push(t);
-                      });
-                    }
-                    return tags;
-                  })()
-                }, null, 2)}
-              </div>
-            </div>
-          )}
-          {/* New achievement form (dev mode) */}
-          {devMode && showNewForm && !editForm && (
-            <div className="devmode-form-panel">
-              <h3 className="devmode-form-title">New Achievement</h3>
-              <form onSubmit={e => {e.preventDefault(); handleNewFormAdd();}} autoComplete="off">
-                <label style={{display:'block',fontSize:13,marginTop:6}}>Name<input type="text" name="name" value={newForm.name} onChange={handleNewFormChange} required placeholder="Naracton Diablo X 99%" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <label style={{display:'block',fontSize:13,marginTop:6}}>ID<input type="text" name="id" value={newForm.id} onChange={handleNewFormChange} required placeholder="naracton-diablo-x-99" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <label style={{display:'block',fontSize:13,marginTop:6}}>Player<input type="text" name="player" value={newForm.player} onChange={handleNewFormChange} placeholder="Zoink" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <label style={{display:'block',fontSize:13,marginTop:6}}>Tags
-                  <div style={{display:'flex',flexWrap:'wrap',gap:5,marginTop:4}}>
-                    {AVAILABLE_TAGS.map(tag => (
-                      <button type="button" key={tag} onClick={() => handleNewFormTagClick(tag)} style={{fontSize:11,padding:'3px 6px',backgroundColor:newFormTags.includes(tag)?'#007bff':'#eee',color:newFormTags.includes(tag)?'#fff':'#222',border:'1px solid #ccc',borderRadius:3,cursor:'pointer'}}>{tag}</button>
-                    ))}
-                  </div>
-                  <input type="text" value={newFormCustomTags} onChange={handleNewFormCustomTagsChange} placeholder="Or type custom tags separated by commas" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} />
-                  <div style={{marginTop:4,fontSize:13}}>
-                    {newFormTags.map(tag => (
-                      <span key={tag} style={{display:'inline-block',background:'#ddd',padding:'2px 6px',margin:'2px',borderRadius:4,cursor:'pointer'}} title="Click to remove" onClick={() => handleNewFormTagClick(tag)}>{tag}</span>
-                    ))}
-                  </div>
-                </label>
-                <label style={{display:'block',fontSize:13,marginTop:6}}>Length<input type="text" name="length" value={newForm.length} onChange={handleNewFormChange} placeholder="69" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <label style={{display:'block',fontSize:13,marginTop:6}}>Version<input type="text" name="version" value={newForm.version} onChange={handleNewFormChange} placeholder="2.2" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <label style={{display:'block',fontSize:13,marginTop:6}}>Video URL<input type="text" name="video" value={newForm.video} onChange={handleNewFormChange} placeholder="https://youtu.be/..." style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <label style={{display:'block',fontSize:13,marginTop:6}}>Showcase Video<input type="text" name="showcaseVideo" value={newForm.showcaseVideo} onChange={handleNewFormChange} placeholder="https://youtu.be/..." style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <label style={{display:'block',fontSize:13,marginTop:6}}>Date (YYYY-MM-DD)<input type="text" name="date" value={newForm.date} onChange={handleNewFormChange} placeholder="2023-12-19" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <label style={{display:'block',fontSize:13,marginTop:6}}>Submitter<input type="text" name="submitter" value={newForm.submitter} onChange={handleNewFormChange} placeholder="kyle1saurus" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <label style={{display:'block',fontSize:13,marginTop:6}}>Level ID<input type="text" name="levelID" value={newForm.levelID} onChange={handleNewFormChange} placeholder="86407629" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <label style={{display:'block',fontSize:13,marginTop:6}}>Thumbnail<input type="text" name="thumbnail" value={newForm.thumbnail} onChange={handleNewFormChange} placeholder="Image URL" style={{width:'100%',fontSize:14,padding:4,marginTop:2,boxSizing:'border-box'}} /></label>
-                <div className="devmode-form-btn-row">
-                  <button className="devmode-btn" type="submit">Add</button>
-                  <button className="devmode-btn" type="button" onClick={handleNewFormCancel}>Cancel</button>
-                </div>
-              </form>
-              <div className="devmode-preview-box">
-                <strong>Preview:</strong>
-                <br />
-                {JSON.stringify(newFormPreview, null, 2)}
-              </div>
-            </div>
-          )}
+          <DevModePanel
+            devMode={devMode}
+            editIdx={editIdx}
+            editForm={editForm}
+            editFormTags={editFormTags}
+            editFormCustomTags={editFormCustomTags}
+            AVAILABLE_TAGS={AVAILABLE_TAGS}
+            handleEditFormChange={handleEditFormChange}
+            handleEditFormTagClick={handleEditFormTagClick}
+            handleEditFormCustomTagsChange={handleEditFormCustomTagsChange}
+            handleEditFormSave={handleEditFormSave}
+            handleEditFormCancel={handleEditFormCancel}
+            showNewForm={showNewForm}
+            newForm={newForm}
+            newFormTags={newFormTags}
+            newFormCustomTags={newFormCustomTags}
+            handleNewFormChange={handleNewFormChange}
+            handleNewFormTagClick={handleNewFormTagClick}
+            handleNewFormCustomTagsChange={handleNewFormCustomTagsChange}
+            handleNewFormAdd={handleNewFormAdd}
+            handleNewFormCancel={handleNewFormCancel}
+            handleCopyJson={handleCopyJson}
+            handleShowNewForm={handleShowNewForm}
+            newFormPreview={newFormPreview}
+          />
           {isPending ? (
             <div className="no-achievements">Loading...</div>
           ) : (devMode ? (
-            <div style={{maxHeight:'calc(100vh - 220px)',overflowY:'auto',width:'100%'}}>
-              {devAchievements.map((a, i) => (
-                <div
-                  key={a.id || i}
-                  ref={el => {
-                    achievementRefs.current[i] = el;
-                  }}
-                  draggable
-                  onDragStart={() => handleDragStart(i)}
-                  onDragOver={e => handleDragOver(i, e)}
-                  onDrop={handleDrop}
-                  style={{
-                    opacity: draggedIdx === i ? 0.5 : 1,
-                    border: draggedIdx === i ? '2px dashed #e67e22' : '1px solid #333',
-                    marginBottom: 8,
-                    background: '#181818',
-                    cursor: 'move',
-                    borderRadius: 8,
-                    position: 'relative'
-                  }}
-                  onClick={() => {
-                    if (showNewForm && scrollToIdx === i) setShowNewForm(false);
-                  }}
-                  onMouseEnter={() => setHoveredIdx(i)}
-                  onMouseLeave={() => setHoveredIdx(v => v === i ? null : v)}
-                >
-                  {(hoveredIdx === i) && (
-                    <div style={{
-                      position: 'absolute',
-                      top: '50%',
-                      left: '50%',
-                      transform: 'translate(-50%, -50%)',
-                      display: 'flex',
-                      gap: 32,
-                      zIndex: 2,
-                      background: 'var(--secondary-bg, #232323)',
-                      borderRadius: '1.5rem',
-                      padding: '22px 40px',
-                      boxShadow: '0 4px 24px #000b',
-                      alignItems: 'center',
-                      border: '2px solid var(--primary-accent, #e67e22)',
-                      transition: 'background 0.2s, border 0.2s',
-                    }}>
-                      <button
-                        title="Edit"
-                        style={{
-                          background: 'var(--info, #2980b9)',
-                          border: 'none',
-                          color: '#fff',
-                          fontSize: 44,
-                          cursor: 'pointer',
-                          opacity: 1,
-                          borderRadius: '50%',
-                          width: 64,
-                          height: 64,
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          boxShadow: '0 2px 8px #0006',
-                          transition: 'background 0.15s, transform 0.1s',
-                          outline: 'none',
-                        }}
-                        onMouseOver={e => e.currentTarget.style.background = 'var(--info-hover, #3498db)'}
-                        onMouseOut={e => e.currentTarget.style.background = 'var(--info, #2980b9)'}
-                        onClick={e => {e.stopPropagation(); handleEditAchievement(i);}}
-                      >✏️</button>
-                      <button
-                        title="Duplicate"
-                        style={{
-                          background: 'var(--primary-accent, #e67e22)',
-                          border: 'none',
-                          color: '#fff',
-                          fontSize: 44,
-                          cursor: 'pointer',
-                          opacity: 1,
-                          borderRadius: '50%',
-                          width: 64,
-                          height: 64,
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          boxShadow: '0 2px 8px #0006',
-                          transition: 'background 0.15s, transform 0.1s',
-                          outline: 'none',
-                        }}
-                        onMouseOver={e => e.currentTarget.style.background = 'var(--primary-accent-hover, #ff9800)'}
-                        onMouseOut={e => e.currentTarget.style.background = 'var(--primary-accent, #e67e22)'}
-                        onClick={e => {e.stopPropagation(); handleDuplicateAchievement(i);}}
-                      >📄</button>
-                      <button
-                        title="Remove"
-                        style={{
-                          background: 'var(--danger, #c0392b)',
-                          border: 'none',
-                          color: '#fff',
-                          fontSize: 44,
-                          cursor: 'pointer',
-                          opacity: 1,
-                          borderRadius: '50%',
-                          width: 64,
-                          height: 64,
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          boxShadow: '0 2px 8px #0006',
-                          transition: 'background 0.15s, transform 0.1s',
-                          outline: 'none',
-                        }}
-                        onMouseOver={e => e.currentTarget.style.background = 'var(--danger-hover, #e74c3c)'}
-                        onMouseOut={e => e.currentTarget.style.background = 'var(--danger, #c0392b)'}
-                        onClick={e => {e.stopPropagation(); handleRemoveAchievement(i);}}
-                      >🗑️</button>
-                    </div>
-                  )}
-                  <AchievementCard achievement={a} />
-                </div>
-              ))}
-            </div>
+            devAchievements.map((a, i) => (
+              <div
+                key={a.id || i}
+                ref={el => {
+                  achievementRefs.current[i] = el;
+                }}
+                draggable
+                onDragStart={() => handleDragStart(i)}
+                onDragOver={e => handleDragOver(i, e)}
+                onDrop={handleDrop}
+                style={{
+                  opacity: draggedIdx === i ? 0.5 : 1,
+                  border: draggedIdx === i ? '2px dashed #e67e22' : '1px solid #333',
+                  marginBottom: 8,
+                  background: '#181818',
+                  cursor: 'move',
+                  borderRadius: 8,
+                  position: 'relative'
+                }}
+                onClick={() => {
+                  if (showNewForm && scrollToIdx === i) setShowNewForm(false);
+                }}
+                onMouseEnter={() => setHoveredIdx(i)}
+                onMouseLeave={() => setHoveredIdx(v => v === i ? null : v)}
+              >
+                {(hoveredIdx === i) && (
+                  <div style={{
+                    position: 'absolute',
+                    top: '50%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
+                    display: 'flex',
+                    gap: 32,
+                    zIndex: 2,
+                    background: 'var(--secondary-bg, #232323)',
+                    borderRadius: '1.5rem',
+                    padding: '22px 40px',
+                    boxShadow: '0 4px 24px #000b',
+                    alignItems: 'center',
+                    border: '2px solid var(--primary-accent, #e67e22)',
+                    transition: 'background 0.2s, border 0.2s',
+                  }}>
+                    <button
+                      title="Edit"
+                      style={{
+                        background: 'var(--info, #2980b9)',
+                        border: 'none',
+                        color: '#fff',
+                        fontSize: 44,
+                        cursor: 'pointer',
+                        opacity: 1,
+                        borderRadius: '50%',
+                        width: 64,
+                        height: 64,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        boxShadow: '0 2px 8px #0006',
+                        transition: 'background 0.15s, transform 0.1s',
+                        outline: 'none',
+                      }}
+                      onMouseOver={e => e.currentTarget.style.background = 'var(--info-hover, #3498db)'}
+                      onMouseOut={e => e.currentTarget.style.background = 'var(--info, #2980b9)'}
+                      onClick={e => {e.stopPropagation(); handleEditAchievement(i);}}
+                    >✏️</button>
+                    <button
+                      title="Duplicate"
+                      style={{
+                        background: 'var(--primary-accent, #e67e22)',
+                        border: 'none',
+                        color: '#fff',
+                        fontSize: 44,
+                        cursor: 'pointer',
+                        opacity: 1,
+                        borderRadius: '50%',
+                        width: 64,
+                        height: 64,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        boxShadow: '0 2px 8px #0006',
+                        transition: 'background 0.15s, transform 0.1s',
+                        outline: 'none',
+                      }}
+                      onMouseOver={e => e.currentTarget.style.background = 'var(--primary-accent-hover, #ff9800)'}
+                      onMouseOut={e => e.currentTarget.style.background = 'var(--primary-accent, #e67e22)'}
+                      onClick={e => {e.stopPropagation(); handleDuplicateAchievement(i);}}
+                    >📄</button>
+                    <button
+                      title="Remove"
+                      style={{
+                        background: 'var(--danger, #c0392b)',
+                        border: 'none',
+                        color: '#fff',
+                        fontSize: 44,
+                        cursor: 'pointer',
+                        opacity: 1,
+                        borderRadius: '50%',
+                        width: 64,
+                        height: 64,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        boxShadow: '0 2px 8px #0006',
+                        transition: 'background 0.15s, transform 0.1s',
+                        outline: 'none',
+                      }}
+                      onMouseOver={e => e.currentTarget.style.background = 'var(--danger-hover, #e74c3c)'}
+                      onMouseOut={e => e.currentTarget.style.background = 'var(--danger, #c0392b)'}
+                      onClick={e => {e.stopPropagation(); handleRemoveAchievement(i);}}
+                    >🗑️</button>
+                  </div>
+                )}
+                <AchievementCard achievement={a} />
+              </div>
+            ))
           ) : (
             filtered.length === 0 ? (
               <div className="no-achievements">No achievements found.</div>
