@@ -187,13 +187,6 @@ export default function List() {
   }
 
   function handleEditFormSave() {
-    // Compose tags
-    let tags = [...editFormTags];
-    if (typeof editFormCustomTags === 'string' && editFormCustomTags.trim()) {
-      editFormCustomTags.split(',').map(t => (typeof t === 'string' ? t.trim() : t)).filter(Boolean).forEach(t => {
-        if (!tags.includes(t)) tags.push(t);
-      });
-    }
     // Compose entry
     const entry = {};
     Object.entries(editForm).forEach(([k, v]) => {
@@ -203,11 +196,29 @@ export default function List() {
         entry[k] = v;
       }
     });
+    // Compose tags
+    let tags = [...editFormTags];
+    if (typeof editFormCustomTags === 'string' && editFormCustomTags.trim()) {
+      editFormCustomTags.split(',').map(t => (typeof t === 'string' ? t.trim() : t)).filter(Boolean).forEach(t => {
+        if (!tags.includes(t)) tags.push(t);
+      });
+    }
     if (tags.length > 0) entry.tags = tags;
+
     setReordered(prev => {
       if (!prev) return prev;
       const arr = [...prev];
-      arr[editIdx] = entry;
+      // Remove the achievement from its old position
+      const [removed] = arr.splice(editIdx, 1);
+      // Update the removed achievement with new values
+      const updated = { ...removed, ...entry };
+      // Determine new rank (default to end if invalid)
+      let newRank = parseInt(updated.rank, 10);
+      if (isNaN(newRank) || newRank < 1) newRank = arr.length + 1;
+      // Insert at new position (rank - 1)
+      arr.splice(newRank - 1, 0, updated);
+      // Recalculate ranks for all achievements
+      arr.forEach((a, i) => { a.rank = i + 1; });
       return arr;
     });
     setEditIdx(null);
@@ -383,18 +394,27 @@ export default function List() {
     } else if (window.innerHeight - y < scrollMargin) {
       window.scrollBy({ top: scrollSpeed, behavior: 'smooth' });
     }
-    if (draggedIdx === null || draggedIdx === idx) return;
+    if (draggedIdx === null) return;
     setReordered(prev => {
       if (!prev) return prev;
-      // Improved drag experience: swap dragged achievement with hovered achievement
       const arr = [...prev];
-      if (draggedIdx < 0 || draggedIdx >= arr.length || idx < 0 || idx >= arr.length) return prev;
-      // Swap logic: move dragged achievement to idx, shift others accordingly
+      // Clamp idx to valid range (0 to arr.length)
+      let targetIdx = idx;
+      if (targetIdx < 0) targetIdx = 0;
+      if (targetIdx > arr.length) targetIdx = arr.length;
+      // If dragging past the end, insert at end
+      if (draggedIdx === targetIdx || draggedIdx === targetIdx - 1) return arr;
       const [dragged] = arr.splice(draggedIdx, 1);
-      arr.splice(idx, 0, dragged);
+      // If dragging to end, insert at arr.length
+      if (targetIdx >= arr.length) {
+        arr.push(dragged);
+        setDraggedIdx(arr.length - 1);
+      } else {
+        arr.splice(targetIdx, 0, dragged);
+        setDraggedIdx(targetIdx);
+      }
       // Recalculate ranks for all
       arr.forEach((a, i) => { a.rank = i + 1; });
-      setDraggedIdx(idx);
       return arr;
     });
   }
