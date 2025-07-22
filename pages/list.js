@@ -250,8 +250,85 @@ export default function List() {
     }
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-    // eslint-disable-next-line
   }, [achievements]);
+
+  // Mobile gesture: pinch, swipe left, then right to activate dev mode
+  useEffect(() => {
+    if (!isMobile) return;
+    let pinchActive = false;
+    let lastTouches = [];
+    let swipeSequence = [];
+    let pinchStartDist = null;
+    let pinchEndDist = null;
+    let gestureTimeout = null;
+
+    function getDistance(touches) {
+      if (touches.length < 2) return 0;
+      const dx = touches[0].clientX - touches[1].clientX;
+      const dy = touches[0].clientY - touches[1].clientY;
+      return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    function handleTouchStart(e) {
+      if (e.touches.length === 2) {
+        pinchActive = true;
+        pinchStartDist = getDistance(e.touches);
+        swipeSequence = [];
+        if (gestureTimeout) clearTimeout(gestureTimeout);
+      }
+      lastTouches = Array.from(e.touches);
+    }
+
+    function handleTouchMove(e) {
+      if (pinchActive && e.touches.length === 2) {
+        pinchEndDist = getDistance(e.touches);
+      }
+      lastTouches = Array.from(e.touches);
+    }
+
+    function handleTouchEnd(e) {
+      // Pinch detection: fingers move closer together
+      if (pinchActive && pinchStartDist && pinchEndDist && pinchEndDist < pinchStartDist - 40) {
+        // Pinch detected
+        swipeSequence = [];
+        pinchActive = false;
+        pinchStartDist = null;
+        pinchEndDist = null;
+        gestureTimeout = setTimeout(() => { swipeSequence = []; }, 2000);
+        return;
+      }
+      // Swipe detection (after pinch)
+      if (e.changedTouches.length === 1 && !pinchActive && swipeSequence.length < 2) {
+        const touch = e.changedTouches[0];
+        if (lastTouches.length === 1) {
+          const dx = touch.clientX - lastTouches[0].clientX;
+          if (Math.abs(dx) > 60) {
+            swipeSequence.push(dx < 0 ? 'left' : 'right');
+            gestureTimeout = setTimeout(() => { swipeSequence = []; }, 2000);
+          }
+        }
+        // If sequence is left then right (or right then left), activate dev mode
+        if ((swipeSequence[0] === 'left' && swipeSequence[1] === 'right') || (swipeSequence[0] === 'right' && swipeSequence[1] === 'left')) {
+          setDevMode(true);
+          setReordered(achievements.map(a => ({ ...a })));
+          alert('Developer mode activated by gesture!');
+          swipeSequence = [];
+          if (gestureTimeout) clearTimeout(gestureTimeout);
+        }
+      }
+      lastTouches = Array.from(e.touches);
+    }
+
+    window.addEventListener('touchstart', handleTouchStart, { passive: false });
+    window.addEventListener('touchmove', handleTouchMove, { passive: false });
+    window.addEventListener('touchend', handleTouchEnd, { passive: false });
+    return () => {
+      window.removeEventListener('touchstart', handleTouchStart);
+      window.removeEventListener('touchmove', handleTouchMove);
+      window.removeEventListener('touchend', handleTouchEnd);
+      if (gestureTimeout) clearTimeout(gestureTimeout);
+    };
+  }, [isMobile, achievements]);
 
   useEffect(() => {
     function handleResize() {
