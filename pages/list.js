@@ -672,6 +672,19 @@ const newFormPreview = useMemo(() => {
             handleCopyJson={handleCopyJson}
             handleShowNewForm={handleShowNewForm}
             newFormPreview={newFormPreview}
+            onImportAchievementsJson={json => {
+              // Accepts array or object
+              let imported = Array.isArray(json) ? json : (json.achievements || []);
+              if (!Array.isArray(imported)) {
+                alert('Invalid achievements.json format.');
+                return;
+              }
+              // Add rank property
+              imported = imported.map((a, i) => ({ ...a, rank: i + 1 }));
+              setReordered(imported);
+              setDevMode(true);
+              alert('Imported achievements.json!');
+            }}
           />
           {isPending ? (
             <div className="no-achievements">Loading...</div>
