@@ -18,8 +18,8 @@
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/grief-unbuffed1.avif"
   },
   {
-    "name": "Amethyst 100%",
-    "id": "amethyst-100",
+    "name": "Amethyst",
+    "id": "amethyst",
     "player": "wPopoff",
     "video": "https://youtu.be/4lfkzz1VCbA",
     "showcaseVideo": "https://www.youtube.com/watch?v=2Z7NGo83ZnU",
@@ -106,39 +106,6 @@
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/grief-unbuffed2.avif"
   },
   {
-    "name": "Amethyst 59%, 54%",
-    "id": "amethyst-59-54",
-    "player": "wPopoff",
-    "length": "123",
-    "version": "2.2",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/amethyst-trick2.avif",
-    "video": "https://www.youtube.com/live/lYtYOAYQqr8?t=1772",
-    "showcaseVideo": "https://www.youtube.com/watch?v=2Z7NGo83ZnU",
-    "date": "2025-05-06",
-    "submitter": "BigmacGd",
-    "tags": [
-      "Level",
-      "Consistency"
-    ]
-  },
-  {
-    "name": "GRIEF 65-100%x3",
-    "id": "grief-65-99x3",
-    "player": "Doggie",
-    "length": "189",
-    "version": "2.2",
-    "video": "https://www.youtube.com/live/gzmPWZeAczU?t=7157",
-    "showcaseVideo": "https://youtu.be/1GolW8jKK7k",
-    "date": "2025-05-23",
-    "submitter": "tmtsps12",
-    "tags": [
-      "Level",
-      "Consistency",
-      "2P",
-      "CBF"
-    ]
-  },
-  {
     "name": "FLAMEWALL 57%, 43%, 25%, 43%",
     "id": "flamewall-57-43-25-43",
     "player": "Cuatrocientos",
@@ -153,6 +120,81 @@
     "version": "2.2",
     "submitter": "Cuatrocientos",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/flamewall-unbuffed1.avif"
+  },
+  {
+    "name": "Thinking Space II",
+    "id": "thinking-space-ii",
+    "player": "Zoink",
+    "length": "70",
+    "version": "2.2",
+    "video": "https://youtu.be/CELNmHwln_c",
+    "showcaseVideo": "https://www.youtube.com/watch?v=7xZ-xgeDyuc",
+    "date": "2025-05-24",
+    "tags": [
+      "Level"
+    ],
+    "levelID": "119544028"
+  },
+  {
+    "name": "Slaughterhouse 300%",
+    "id": "slaughterhouse-300",
+    "player": "wPopoff",
+    "video": "https://youtu.be/Yu_p9yrVL0w",
+    "showcaseVideo": "https://youtu.be/ctmNCG3_1Gg",
+    "tags": [
+      "Level",
+      "Consistency",
+      "Rated"
+    ],
+    "submitter": "Anceps",
+    "levelID": "27690100",
+    "date": "2024-04-27",
+    "length": "210",
+    "version": "2.1"
+  },
+  {
+    "name": "Thinking Space II (Old) 77%",
+    "id": "thinking-space-ii-old-77",
+    "player": "Zoink",
+    "length": "61",
+    "version": "2.2",
+    "video": "https://www.youtube.com/live/_hsc3cvQIn4?t=3546",
+    "showcaseVideo": "https://youtu.be/F05aMR0F6YM",
+    "date": "2025-02-13",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
+    "name": "FLAMEWALL 3-86%",
+    "id": "flamewall-3-86",
+    "player": "Cuatrocientos",
+    "video": "https://youtu.be/dlVnGdWRLeQ",
+    "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "date": "2024-09-10",
+    "length": "333",
+    "submitter": "Anceps",
+    "version": "2.2"
+  },
+  {
+    "name": "FLAMEWALL 76%",
+    "id": "flamewall-76",
+    "player": "Cuatrocientos",
+    "video": "https://youtu.be/MV9wSXitcSc",
+    "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "date": "2025-07-08",
+    "length": "320",
+    "version": "2.2",
+    "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
   },
   {
     "name": "Tidal Wave buffed",
@@ -204,74 +246,11 @@
     "thumbnail": "https://tjcsucht.net/levelthumbs/99564598.png"
   },
   {
-    "name": "Amethyst 25-100%",
-    "id": "amethyst-25-100",
-    "player": "wPopoff",
-    "video": "https://youtu.be/iowU6QN1RkM",
-    "showcaseVideo": "https://youtu.be/2Z7NGo83ZnU",
-    "tags": [
-      "Level",
-      "Progress"
-    ],
-    "date": "2025-04-07",
-    "length": "67",
-    "version": "2.2",
-    "submitter": "kittycatiscute"
-  },
-  {
-    "name": "Slaughterhouse 300%",
-    "id": "slaughterhouse-300",
-    "player": "wPopoff",
-    "video": "https://youtu.be/Yu_p9yrVL0w",
-    "showcaseVideo": "https://youtu.be/ctmNCG3_1Gg",
-    "tags": [
-      "Level",
-      "Consistency",
-      "Rated"
-    ],
-    "submitter": "Anceps",
-    "levelID": "27690100",
-    "date": "2024-04-27",
-    "length": "210",
-    "version": "2.1"
-  },
-  {
-    "name": "FLAMEWALL 3-86%",
-    "id": "flamewall-3-86",
-    "player": "Cuatrocientos",
-    "video": "https://youtu.be/dlVnGdWRLeQ",
-    "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
-    "tags": [
-      "Level",
-      "Progress"
-    ],
-    "date": "2024-09-10",
-    "length": "333",
-    "submitter": "Anceps",
-    "version": "2.2"
-  },
-  {
-    "name": "FLAMEWALL 62%",
-    "id": "flamewall-62",
-    "player": "Cuatrocientos",
-    "submitter": "Anceps",
-    "video": "https://youtu.be/MV9wSXitcSc",
-    "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
-    "tags": [
-      "Level",
-      "Progress"
-    ],
-    "date": "2025-01-26",
-    "length": "209",
-    "version": "2.2",
-    "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
-  },
-  {
-    "name": "Acheron 60hz 44%",
-    "id": "acheron-60hz-44",
+    "name": "Acheron 60hz 50%",
+    "id": "acheron-60hz-50",
     "player": "Llqne",
-    "video": "https://youtu.be/HVNRPS3cm-E",
-    "showcaseVideo": "https://youtu.be/YQElFvT5ynk",
+    "video": "https://youtu.be/g9tPTVjdnVA?si=RtkRoB8E5b8LGwxu",
+    "showcaseVideo": "https://youtu.be/ZHAMV_Jw9PM",
     "tags": [
       "Level",
       "Low Hertz",
@@ -279,10 +258,26 @@
       "Rated"
     ],
     "levelID": "73667628",
-    "date": "2024-09-04",
-    "length": "31",
+    "date": "2025-07-20",
+    "length": "36",
+    "version": "2.2"
+  },
+  {
+    "name": "GRIEF 65-100%x3",
+    "id": "grief-65-99x3",
+    "player": "Doggie",
+    "length": "189",
     "version": "2.2",
-    "submitter": "kyle1saurus"
+    "video": "https://www.youtube.com/live/gzmPWZeAczU?t=7157",
+    "showcaseVideo": "https://youtu.be/1GolW8jKK7k",
+    "date": "2025-05-23",
+    "submitter": "tmtsps12",
+    "tags": [
+      "Level",
+      "Consistency",
+      "2P",
+      "CBF"
+    ]
   },
   {
     "name": "Nullscapes",
@@ -392,6 +387,21 @@
     "showcaseVideo": "https://youtu.be/7W5bZJY2IPI",
     "date": "2023-10-08",
     "levelID": "70436808",
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "Quanteuse processing",
+    "id": "quanteuse-processing",
+    "player": "Zoink",
+    "length": "103",
+    "version": "2.2",
+    "video": "https://youtu.be/j5NC0u1Q91Q",
+    "showcaseVideo": "https://youtu.be/XLdekslmFqg",
+    "date": "2024-12-31",
+    "submitter": "Brachiozaur",
+    "levelID": "113710822",
     "tags": [
       "Level"
     ]
@@ -523,21 +533,6 @@
     ]
   },
   {
-    "name": "Thinking Space II 95%",
-    "id": "thinking-space-ii-95",
-    "player": "Zoink",
-    "length": "47",
-    "version": "2.2",
-    "video": "https://youtu.be/CELNmHwln_c",
-    "showcaseVideo": "https://youtu.be/7xZ-xgeDyuc",
-    "date": "2025-05-03",
-    "submitter": "tmtsps12",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Anathema",
     "id": "anathema",
     "player": "Whizkid05",
@@ -652,21 +647,6 @@
     ]
   },
   {
-    "name": "Quanteuse processing",
-    "id": "quanteuse-processing",
-    "player": "Zoink",
-    "length": "103",
-    "version": "2.2",
-    "video": "https://youtu.be/j5NC0u1Q91Q",
-    "showcaseVideo": "https://youtu.be/XLdekslmFqg",
-    "date": "2024-12-31",
-    "submitter": "Brachiozaur",
-    "levelID": "113710822",
-    "tags": [
-      "Level"
-    ]
-  },
-  {
     "name": "Renevant 60hz 85%",
     "id": "renevant-60hz-85",
     "player": "Cejelost",
@@ -682,20 +662,6 @@
       "Low Hertz",
       "Progress",
       "Rated"
-    ]
-  },
-  {
-    "name": "Thinking Space II (Old) 77%",
-    "id": "thinking-space-ii-old-77",
-    "player": "Zoink",
-    "length": "45",
-    "version": "2.2",
-    "video": "https://www.youtube.com/live/_hsc3cvQIn4?t=3546",
-    "showcaseVideo": "https://youtu.be/F05aMR0F6YM",
-    "date": "2025-02-13",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -1118,21 +1084,6 @@
     ]
   },
   {
-    "name": "KOCMOC UNLEASHED 33-91%",
-    "id": "kocmoc-unleashed-33-91",
-    "player": "Arshadow",
-    "date": "2025-05-09",
-    "length": 38,
-    "version": 2.2,
-    "video": "https://youtu.be/GFzBnEWr8ZM?t=54",
-    "showcaseVideo": "https://youtu.be/bYswI_NVbQ4",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Aquamarine (deco) 70%",
     "id": "aquamarine-deco-70",
     "player": "ROZE GD",
@@ -1141,6 +1092,21 @@
     "version": 2.2,
     "video": "https://youtu.be/uYCcsB7ShpI",
     "showcaseVideo": "https://youtu.be/DWdG8PVwhy0",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
+    "name": "KOCMOC UNLEASHED 33-91%",
+    "id": "kocmoc-unleashed-33-91",
+    "player": "Arshadow",
+    "date": "2025-05-09",
+    "length": 38,
+    "version": 2.2,
+    "video": "https://youtu.be/GFzBnEWr8ZM?t=54",
+    "showcaseVideo": "https://youtu.be/bYswI_NVbQ4",
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
