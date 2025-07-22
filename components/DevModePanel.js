@@ -23,7 +23,8 @@ export default function DevModePanel({
   handleNewFormCancel,
   handleCopyJson,
   handleShowNewForm,
-  newFormPreview
+  newFormPreview,
+  onImportAchievementsJson
 }) {
   return (
     <>
@@ -31,8 +32,34 @@ export default function DevModePanel({
       {devMode && (
         <div className="devmode-floating-panel">
           <span className="devmode-title">Developer Mode Enabled (SHIFT+M)</span>
-          <div className="devmode-btn-row">
+          <div className="devmode-btn-row" style={{gap: 8}}>
             <button className="devmode-btn" onClick={handleCopyJson}>Copy achievements.json</button>
+            <label className="devmode-btn" style={{display:'inline-block',cursor:'pointer',margin:0}}>
+              Import achievements.json
+              <input
+                type="file"
+                accept="application/json,.json"
+                style={{display:'none'}}
+                onChange={e => {
+                  const file = e.target.files && e.target.files[0];
+                  if (!file) return;
+                  const reader = new FileReader();
+                  reader.onload = evt => {
+                    try {
+                      const json = JSON.parse(evt.target.result);
+                      if (typeof onImportAchievementsJson === 'function') {
+                        onImportAchievementsJson(json);
+                      }
+                    } catch (err) {
+                      alert('Invalid achievements.json file.');
+                    }
+                  };
+                  reader.readAsText(file);
+                  // Reset input so user can re-import same file if needed
+                  e.target.value = '';
+                }}
+              />
+            </label>
             <button className="devmode-btn" onClick={handleShowNewForm}>New Achievement</button>
           </div>
         </div>
