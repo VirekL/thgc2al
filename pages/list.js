@@ -309,10 +309,13 @@ export default function List() {
     if (draggedIdx === null || draggedIdx === idx) return;
     setReordered(prev => {
       if (!prev) return prev;
+      // Improved drag experience: swap dragged achievement with hovered achievement
       const arr = [...prev];
+      if (draggedIdx < 0 || draggedIdx >= arr.length || idx < 0 || idx >= arr.length) return prev;
+      // Swap logic: move dragged achievement to idx, shift others accordingly
       const [dragged] = arr.splice(draggedIdx, 1);
       arr.splice(idx, 0, dragged);
-      // Update ranks after reordering
+      // Recalculate ranks for all
       arr.forEach((a, i) => { a.rank = i + 1; });
       setDraggedIdx(idx);
       return arr;
@@ -353,18 +356,21 @@ export default function List() {
     if (tags.length > 0) entry.tags = tags;
     // Insert at insertIdx or end
     setReordered(prev => {
+      let newArr;
       if (!prev) {
         setScrollToIdx(0);
-        return [entry];
-      }
-      if (insertIdx === null || insertIdx < 0 || insertIdx > prev.length - 1) {
+        newArr = [entry];
+      } else if (insertIdx === null || insertIdx < 0 || insertIdx > prev.length - 1) {
         setScrollToIdx(prev.length);
-        return [...prev, entry];
+        newArr = [...prev, entry];
+      } else {
+        newArr = [...prev];
+        newArr.splice(insertIdx + 1, 0, entry);
+        setScrollToIdx(insertIdx + 1);
       }
-      const arr = [...prev];
-      arr.splice(insertIdx + 1, 0, entry);
-      setScrollToIdx(insertIdx + 1);
-      return arr;
+      // Assign rank property to all achievements
+      newArr.forEach((a, i) => { a.rank = i + 1; });
+      return newArr;
     });
     setShowNewForm(false);
     setNewForm({ name: '', id: '', player: '', length: '', version: '2.', video: '', showcaseVideo: '', date: '', submitter: '', levelID: '', thumbnail: '', tags: [] });
