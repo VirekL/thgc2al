@@ -380,25 +380,62 @@ export default function List() {
   }
 
   // Drag and drop handlers (dev mode) with optimized performance and feedback
-  function handleDragStart(idx) {
+  const [isMiddleDragging, setIsMiddleDragging] = useState(false);
+  const [middleDragStartY, setMiddleDragStartY] = useState(null);
+  const achievementsSectionRef = useRef();
+
+  function handleDragStart(idx, e) {
     setDraggedIdx(idx);
     // Add dragging class for feedback
     if (achievementRefs.current[idx]) {
       achievementRefs.current[idx].classList.add('dragging');
     }
+    // Middle mouse drag start
+    if (e && e.button === 1) {
+      setIsMiddleDragging(true);
+      setMiddleDragStartY(e.clientY);
+      document.body.style.cursor = 'ns-resize';
+    }
   }
+
+  function handleMouseMove(e) {
+    if (isMiddleDragging && achievementsSectionRef.current) {
+      const deltaY = e.clientY - middleDragStartY;
+      achievementsSectionRef.current.scrollTop -= deltaY;
+      setMiddleDragStartY(e.clientY);
+    }
+  }
+
+  function handleMouseUp(e) {
+    if (isMiddleDragging) {
+      setIsMiddleDragging(false);
+      setMiddleDragStartY(null);
+      document.body.style.cursor = '';
+    }
+  }
+
+  useEffect(() => {
+    if (isMiddleDragging) {
+      window.addEventListener('mousemove', handleMouseMove);
+      window.addEventListener('mouseup', handleMouseUp);
+      return () => {
+        window.removeEventListener('mousemove', handleMouseMove);
+        window.removeEventListener('mouseup', handleMouseUp);
+      };
+    }
+  }, [isMiddleDragging, middleDragStartY]);
+
   function handleDragOver(idx, e) {
     e.preventDefault();
     if (draggedIdx === null || draggedIdx === idx) return;
     // Auto-scroll if near top/bottom
     const y = e.clientY;
     const scrollMargin = 60;
-    // Increase scroll speed for faster movement
-    const fastScrollSpeed = 60;
+    const scrollSpeed = 18;
     if (y < scrollMargin) {
-      window.scrollBy({ top: -fastScrollSpeed, behavior: 'auto' });
+      window.scrollBy({ top: -scrollSpeed, behavior: 'smooth' });
     } else if (window.innerHeight - y < scrollMargin) {
-      window.scrollBy({ top: fastScrollSpeed, behavior: 'auto' });
+      window.scrollBy({ top: scrollSpeed, behavior: 'smooth' });
     }
     // Only update if idx is different
     setReordered(prev => {
@@ -416,6 +453,9 @@ export default function List() {
       if (ref) ref.classList.remove('dragging');
     });
     setDraggedIdx(null);
+    setIsMiddleDragging(false);
+    setMiddleDragStartY(null);
+    document.body.style.cursor = '';
   }
 
   // New achievement form handlers
@@ -757,7 +797,7 @@ const newFormPreview = useMemo(() => {
       <main className="main-content achievements-main">
         {/* Desktop sidebar only */}
         {!isMobile && <Sidebar />}
-        <section className="achievements achievements-section">
+        <section className="achievements achievements-section" ref={achievementsSectionRef}>
           <DevModePanel
             devMode={devMode}
             editIdx={editIdx}
@@ -806,7 +846,7 @@ const newFormPreview = useMemo(() => {
                   achievementRefs.current[i] = el;
                 }}
                 draggable
-                onDragStart={() => handleDragStart(i)}
+                onDragStart={e => handleDragStart(i, e)}
                 onDragOver={e => handleDragOver(i, e)}
                 onDrop={handleDrop}
                 className={draggedIdx === i ? 'achievement-item dragging' : 'achievement-item'}
@@ -814,8 +854,8 @@ const newFormPreview = useMemo(() => {
                   opacity: draggedIdx === i ? 0.5 : 1,
                   border: draggedIdx === i ? '2px dashed #e67e22' : '1px solid #333',
                   marginBottom: 8,
-                  background: 'none', // Fix: don't override background in dev mode
-                  cursor: 'move',
+                  background: '#181818',
+                  cursor: isMiddleDragging ? 'ns-resize' : 'move',
                   borderRadius: 8,
                   position: 'relative',
                   transition: 'box-shadow 0.15s',
