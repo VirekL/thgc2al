@@ -393,11 +393,12 @@ export default function List() {
     // Auto-scroll if near top/bottom
     const y = e.clientY;
     const scrollMargin = 60;
-    const scrollSpeed = 18;
+    // Increase scroll speed for faster movement
+    const fastScrollSpeed = 60;
     if (y < scrollMargin) {
-      window.scrollBy({ top: -scrollSpeed, behavior: 'smooth' });
+      window.scrollBy({ top: -fastScrollSpeed, behavior: 'auto' });
     } else if (window.innerHeight - y < scrollMargin) {
-      window.scrollBy({ top: scrollSpeed, behavior: 'smooth' });
+      window.scrollBy({ top: fastScrollSpeed, behavior: 'auto' });
     }
     // Only update if idx is different
     setReordered(prev => {
@@ -813,7 +814,7 @@ const newFormPreview = useMemo(() => {
                   opacity: draggedIdx === i ? 0.5 : 1,
                   border: draggedIdx === i ? '2px dashed #e67e22' : '1px solid #333',
                   marginBottom: 8,
-                  background: '#181818',
+                  background: 'none', // Fix: don't override background in dev mode
                   cursor: 'move',
                   borderRadius: 8,
                   position: 'relative',
