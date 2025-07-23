@@ -263,6 +263,20 @@
     "version": "2.2"
   },
   {
+    "name": "FLAMEWALL 17-95%",
+    "id": "flamewall-17-95",
+    "player": "Cuatrocientos",
+    "length": "260",
+    "version": "2.2",
+    "video": "https://www.youtube.com/live/lvFDeVc6qqQ?t=4110",
+    "showcaseVideo": "https://www.youtube.com/watch?v=c5qQh7h0zYM",
+    "date": "2025-07-07",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "GRIEF 65-100%x3",
     "id": "grief-65-99x3",
     "player": "Doggie",
@@ -277,6 +291,23 @@
       "Consistency",
       "2P",
       "CBF"
+    ]
+  },
+  {
+    "name": "KOCMOC 224%",
+    "id": "kocmoc-224",
+    "player": "Netermind",
+    "levelID": 87665224,
+    "date": "2024-12-09",
+    "length": 194,
+    "version": 2.2,
+    "video": "https://www.youtube.com/live/DYI1IPtInws&t=5649",
+    "showcaseVideo": "https://youtu.be/ulaXL0SdzZk",
+    "submitter": "Swift",
+    "tags": [
+      "Level",
+      "Consistency",
+      "Rated"
     ]
   },
   {
@@ -361,6 +392,21 @@
     ]
   },
   {
+    "name": "Heliopolis 48-87%",
+    "id": "heliopolis-48-87",
+    "player": "Thnnder",
+    "date": "2025-02-04",
+    "length": 40,
+    "version": 2.2,
+    "video": "https://www.youtube.com/live/R-hg3r25hMs?t=13963",
+    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Every End",
     "id": "every-end",
     "player": "HamiltonHqmy",
@@ -407,6 +453,22 @@
     ]
   },
   {
+    "name": "Subsuming Vortex (Renn241) 96%",
+    "id": "subsuming-vortex-renn241-96",
+    "player": "Cursed",
+    "levelID": 66422816,
+    "date": "2025-07-13",
+    "length": "55",
+    "version": 2.2,
+    "video": "https://youtu.be/PvE_1H_ZNwU",
+    "showcaseVideo": "https://m.youtube.com/watch?si=rcNNt1_lbY9uXLOx&v=3dKj12cQSII&feature=youtu.be",
+    "submitter": "SeptaGon7",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "andromeda",
     "id": "114283297",
     "player": "Taiago",
@@ -440,8 +502,8 @@
     ]
   },
   {
-    "name": "Acheron (Riot) 8-82%",
-    "id": "acheron-riot-8-82",
+    "name": "Acheron (Riot) 9-82%",
+    "id": "acheron-riot-9-82",
     "player": "LOL123",
     "length": "48",
     "version": "2.2",
@@ -470,6 +532,23 @@
     "tags": [
       "Level",
       "Consistency",
+      "Rated"
+    ]
+  },
+  {
+    "name": "Renevant 60hz",
+    "id": "renevant-60hz",
+    "player": "Cejelost",
+    "length": "98",
+    "version": "2.2",
+    "video": "https://youtu.be/KNxagzLV3H0",
+    "showcaseVideo": "https://youtu.be/FgkACdloQug",
+    "date": "2025-06-06",
+    "submitter": "kyle1saurus",
+    "levelID": "58161496",
+    "tags": [
+      "Level",
+      "Low Hertz",
       "Rated"
     ]
   },
@@ -598,32 +677,16 @@
     ]
   },
   {
-    "name": "Sakupen circles (Old) 82%",
-    "id": "sakupen-circles-old-82",
-    "player": "totalgd",
-    "length": "39",
-    "version": "2.2",
-    "video": "https://youtu.be/P9iazmh05LM",
-    "showcaseVideo": "https://youtu.be/WX5RCDxobSA",
-    "date": "2025-05-18",
-    "submitter": "Emp",
-    "levelID": "10887708",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
-    "name": "Sakupen circles (Old) 37-100%",
-    "id": "sakupen-circles-old-37-100",
-    "player": "totalgd",
-    "length": "28",
-    "version": "2.2",
-    "video": "https://youtu.be/Nf54Mi7YXs8",
-    "showcaseVideo": "https://youtu.be/WX5RCDxobSA",
-    "date": "2025-03-24",
-    "submitter": "kyle1saurus",
-    "levelID": "10887708",
+    "name": "Aeternus 72-98%",
+    "id": "aeternus-72-98",
+    "player": "Trick",
+    "levelID": 102647436,
+    "date": "2025-06-20",
+    "length": "16",
+    "version": 2.2,
+    "video": "https://www.youtube.com/live/eAZXXIFUWmg?t=3985s",
+    "showcaseVideo": "https://youtu.be/p4QgFtKL5kE",
+    "submitter": "Exiled_Shade",
     "tags": [
       "Level",
       "Progress",
@@ -631,37 +694,35 @@
     ]
   },
   {
-    "name": "Sakupen circles (Old) 1 death, 99.98 accuracy",
-    "id": "sakupen circles-old-1-death-99-98-accuracy",
-    "player": "Skylar",
-    "length": "49",
+    "name": "Aquamarine",
+    "id": "aquamarine",
+    "player": "seels",
+    "length": "56",
     "version": "2.2",
-    "video": "https://youtu.be/C4LjXAG6UIU",
-    "showcaseVideo": "https://youtu.be/WX5RCDxobSA",
-    "date": "2024-06-12",
-    "submitter": "Anceps",
-    "levelID": "10887708",
+    "video": "https://youtu.be/Q__EnRojGt4",
+    "showcaseVideo": "https://youtu.be/80YeaP2DLvQ",
+    "date": "2024-10-08",
+    "submitter": "kyle1saurus",
+    "levelID": "77331805",
     "tags": [
       "Level",
-      "Noclip"
+      "CBF"
     ]
   },
   {
-    "name": "Renevant 60hz 85%",
-    "id": "renevant-60hz-85",
-    "player": "Cejelost",
-    "length": "60",
+    "name": "Sakupen circles (Old)",
+    "id": "sakupen-circles-old",
+    "player": "ad3usgmd",
+    "length": "49",
     "version": "2.2",
-    "video": "https://youtu.be/JQOlkQ7nfAY",
-    "showcaseVideo": "https://youtu.be/FgkACdloQug",
-    "date": "2025-03-23",
-    "submitter": "kyle1saurus",
-    "levelID": "58161496",
+    "video": "https://youtu.be/AdrmZsy52EY",
+    "showcaseVideo": "https://youtu.be/WX5RCDxobSA",
+    "date": "2025-07-15",
+    "submitter": "Emp",
+    "levelID": "10887708",
     "tags": [
       "Level",
-      "Low Hertz",
-      "Progress",
-      "Rated"
+      "CBF"
     ]
   },
   {
@@ -723,22 +784,6 @@
     "tags": [
       "Level",
       "Progress"
-    ]
-  },
-  {
-    "name": "Aquamarine",
-    "id": "aquamarine",
-    "player": "seels",
-    "length": "56",
-    "version": "2.2",
-    "video": "https://youtu.be/Q__EnRojGt4",
-    "showcaseVideo": "https://youtu.be/80YeaP2DLvQ",
-    "date": "2024-10-08",
-    "submitter": "kyle1saurus",
-    "levelID": "77331805",
-    "tags": [
-      "Level",
-      "CBF"
     ]
   },
   {
@@ -1004,22 +1049,6 @@
     ]
   },
   {
-    "name": "Subsuming Vortex (Renn241) 35-96%",
-    "id": "subsuming-vortex-renn241-35-96",
-    "player": "Cursed",
-    "levelID": 66422816,
-    "date": "2025-04-17",
-    "length": 31,
-    "version": 2.2,
-    "video": "https://youtu.be/guXZ4nuG8gI",
-    "showcaseVideo": "https://youtu.be/jvAIOmx4zi8",
-    "submitter": "SeptaGon7",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "VSC x2 76%",
     "id": "vsc-x2-76",
     "player": "Nev",
@@ -1111,23 +1140,6 @@
     "tags": [
       "Level",
       "Progress"
-    ]
-  },
-  {
-    "name": "KOCMOC 224%",
-    "id": "kocmoc-224",
-    "player": "Netermind",
-    "levelID": 87665224,
-    "date": "2024-12-09",
-    "length": 194,
-    "version": 2.2,
-    "video": "https://www.youtube.com/live/DYI1IPtInws&t=5649",
-    "showcaseVideo": "https://youtu.be/ulaXL0SdzZk",
-    "submitter": "Swift",
-    "tags": [
-      "Level",
-      "Consistency",
-      "Rated"
     ]
   },
   {
@@ -1284,21 +1296,6 @@
       "Level",
       "Progress",
       "CBF"
-    ]
-  },
-  {
-    "name": "Heliopolis 48-87%",
-    "id": "heliopolis-48-87",
-    "player": "Thnnder",
-    "date": "2025-02-04",
-    "length": 40,
-    "version": 2.2,
-    "video": "https://www.youtube.com/live/R-hg3r25hMs?t=13963",
-    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -8012,23 +8009,6 @@
     "tags": [
       "Level",
       "Progress"
-    ]
-  },
-  {
-    "name": "Aeternus 79-98%",
-    "id": "aeternus-79-98",
-    "player": "surroundedgd",
-    "levelID": 102647436,
-    "date": "2025-05-21",
-    "length": 13,
-    "version": 2.2,
-    "video": "https://x.com/surroundedgd/status/1925218442648391822",
-    "showcaseVideo": "https://youtu.be/p4QgFtKL5kE",
-    "submitter": "Exiled_Shade",
-    "tags": [
-      "Level",
-      "Progress",
-      "CBF"
     ]
   },
   {
