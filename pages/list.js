@@ -379,12 +379,17 @@ export default function List() {
     setShowMobileFilters(v => !v);
   }
 
-  // Drag and drop handlers (dev mode) with auto-scroll
+  // Drag and drop handlers (dev mode) with optimized performance and feedback
   function handleDragStart(idx) {
     setDraggedIdx(idx);
+    // Add dragging class for feedback
+    if (achievementRefs.current[idx]) {
+      achievementRefs.current[idx].classList.add('dragging');
+    }
   }
   function handleDragOver(idx, e) {
     e.preventDefault();
+    if (draggedIdx === null || draggedIdx === idx) return;
     // Auto-scroll if near top/bottom
     const y = e.clientY;
     const scrollMargin = 60;
@@ -394,31 +399,21 @@ export default function List() {
     } else if (window.innerHeight - y < scrollMargin) {
       window.scrollBy({ top: scrollSpeed, behavior: 'smooth' });
     }
-    if (draggedIdx === null) return;
+    // Only update if idx is different
     setReordered(prev => {
-      if (!prev) return prev;
+      if (!prev || draggedIdx === null || draggedIdx === idx) return prev;
       const arr = [...prev];
-      // Clamp idx to valid range (0 to arr.length)
-      let targetIdx = idx;
-      if (targetIdx < 0) targetIdx = 0;
-      if (targetIdx > arr.length) targetIdx = arr.length;
-      // If dragging past the end, insert at end
-      if (draggedIdx === targetIdx || draggedIdx === targetIdx - 1) return arr;
-      const [dragged] = arr.splice(draggedIdx, 1);
-      // If dragging to end, insert at arr.length
-      if (targetIdx >= arr.length) {
-        arr.push(dragged);
-        setDraggedIdx(arr.length - 1);
-      } else {
-        arr.splice(targetIdx, 0, dragged);
-        setDraggedIdx(targetIdx);
-      }
-      // Recalculate ranks for all
-      arr.forEach((a, i) => { a.rank = i + 1; });
+      const [removed] = arr.splice(draggedIdx, 1);
+      arr.splice(idx, 0, removed);
       return arr;
     });
+    setDraggedIdx(idx);
   }
   function handleDrop() {
+    // Remove dragging class from all refs
+    achievementRefs.current.forEach(ref => {
+      if (ref) ref.classList.remove('dragging');
+    });
     setDraggedIdx(null);
   }
 
@@ -813,6 +808,7 @@ const newFormPreview = useMemo(() => {
                 onDragStart={() => handleDragStart(i)}
                 onDragOver={e => handleDragOver(i, e)}
                 onDrop={handleDrop}
+                className={draggedIdx === i ? 'achievement-item dragging' : 'achievement-item'}
                 style={{
                   opacity: draggedIdx === i ? 0.5 : 1,
                   border: draggedIdx === i ? '2px dashed #e67e22' : '1px solid #333',
@@ -820,7 +816,10 @@ const newFormPreview = useMemo(() => {
                   background: '#181818',
                   cursor: 'move',
                   borderRadius: 8,
-                  position: 'relative'
+                  position: 'relative',
+                  transition: 'box-shadow 0.15s',
+                  boxShadow: draggedIdx === i ? '0 0 16px #e67e22' : 'none',
+                  zIndex: draggedIdx === i ? 10 : 1
                 }}
                 onClick={() => {
                   if (showNewForm && scrollToIdx === i) setShowNewForm(false);
@@ -836,7 +835,7 @@ const newFormPreview = useMemo(() => {
                     transform: 'translate(-50%, -50%)',
                     display: 'flex',
                     gap: 32,
-                    zIndex: 2,
+                    zIndex: 20,
                     background: 'var(--secondary-bg, #232323)',
                     borderRadius: '1.5rem',
                     padding: '22px 40px',
