@@ -379,55 +379,12 @@ export default function List() {
     setShowMobileFilters(v => !v);
   }
 
-  // Drag and drop handlers (dev mode) with optimized performance and feedback
-  const [isMiddleDragging, setIsMiddleDragging] = useState(false);
-  const [middleDragStartY, setMiddleDragStartY] = useState(null);
-  const achievementsSectionRef = useRef();
-
-  function handleDragStart(idx, e) {
+  // Drag and drop handlers (dev mode) with auto-scroll
+  function handleDragStart(idx) {
     setDraggedIdx(idx);
-    // Add dragging class for feedback
-    if (achievementRefs.current[idx]) {
-      achievementRefs.current[idx].classList.add('dragging');
-    }
-    // Middle mouse drag start
-    if (e && e.button === 1) {
-      setIsMiddleDragging(true);
-      setMiddleDragStartY(e.clientY);
-      document.body.style.cursor = 'ns-resize';
-    }
   }
-
-  function handleMouseMove(e) {
-    if (isMiddleDragging && achievementsSectionRef.current) {
-      const deltaY = e.clientY - middleDragStartY;
-      achievementsSectionRef.current.scrollTop -= deltaY;
-      setMiddleDragStartY(e.clientY);
-    }
-  }
-
-  function handleMouseUp(e) {
-    if (isMiddleDragging) {
-      setIsMiddleDragging(false);
-      setMiddleDragStartY(null);
-      document.body.style.cursor = '';
-    }
-  }
-
-  useEffect(() => {
-    if (isMiddleDragging) {
-      window.addEventListener('mousemove', handleMouseMove);
-      window.addEventListener('mouseup', handleMouseUp);
-      return () => {
-        window.removeEventListener('mousemove', handleMouseMove);
-        window.removeEventListener('mouseup', handleMouseUp);
-      };
-    }
-  }, [isMiddleDragging, middleDragStartY]);
-
   function handleDragOver(idx, e) {
     e.preventDefault();
-    if (draggedIdx === null || draggedIdx === idx) return;
     // Auto-scroll if near top/bottom
     const y = e.clientY;
     const scrollMargin = 60;
@@ -437,26 +394,71 @@ export default function List() {
     } else if (window.innerHeight - y < scrollMargin) {
       window.scrollBy({ top: scrollSpeed, behavior: 'smooth' });
     }
-    // Only update if idx is different
+    if (draggedIdx === null) return;
     setReordered(prev => {
-      if (!prev || draggedIdx === null || draggedIdx === idx) return prev;
+      if (!prev) return prev;
       const arr = [...prev];
-      const [removed] = arr.splice(draggedIdx, 1);
-      arr.splice(idx, 0, removed);
+      // Clamp idx to valid range (0 to arr.length)
+      let targetIdx = idx;
+      if (targetIdx < 0) targetIdx = 0;
+      if (targetIdx > arr.length) targetIdx = arr.length;
+      // If dragging past the end, insert at end
+      if (draggedIdx === targetIdx || draggedIdx === targetIdx - 1) return arr;
+      const [dragged] = arr.splice(draggedIdx, 1);
+      // If dragging to end, insert at arr.length
+      if (targetIdx >= arr.length) {
+        arr.push(dragged);
+        setDraggedIdx(arr.length - 1);
+      } else {
+        arr.splice(targetIdx, 0, dragged);
+        setDraggedIdx(targetIdx);
+      }
+      // Recalculate ranks for all
+      arr.forEach((a, i) => { a.rank = i + 1; });
       return arr;
     });
-    setDraggedIdx(idx);
   }
   function handleDrop() {
-    // Remove dragging class from all refs
-    achievementRefs.current.forEach(ref => {
-      if (ref) ref.classList.remove('dragging');
-    });
     setDraggedIdx(null);
-    setIsMiddleDragging(false);
-    setMiddleDragStartY(null);
-    document.body.style.cursor = '';
   }
+
+  // Middle mouse drag scroll (dev mode)
+  useEffect(() => {
+    if (!devMode || draggedIdx === null) return;
+    let isMiddleMouseDown = false;
+    let lastY = null;
+    function handleMouseDown(e) {
+      if (e.button === 1) { // Middle mouse
+        isMiddleMouseDown = true;
+        lastY = e.clientY;
+        document.body.style.cursor = 'ns-resize';
+        e.preventDefault();
+      }
+    }
+    function handleMouseUp(e) {
+      if (e.button === 1) {
+        isMiddleMouseDown = false;
+        lastY = null;
+        document.body.style.cursor = '';
+      }
+    }
+    function handleMouseMove(e) {
+      if (isMiddleMouseDown && lastY !== null) {
+        const deltaY = e.clientY - lastY;
+        window.scrollBy({ top: -deltaY, behavior: 'auto' });
+        lastY = e.clientY;
+      }
+    }
+    window.addEventListener('mousedown', handleMouseDown);
+    window.addEventListener('mouseup', handleMouseUp);
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => {
+      window.removeEventListener('mousedown', handleMouseDown);
+      window.removeEventListener('mouseup', handleMouseUp);
+      window.removeEventListener('mousemove', handleMouseMove);
+      document.body.style.cursor = '';
+    };
+  }, [devMode, draggedIdx]);
 
   // New achievement form handlers
   function handleNewFormChange(e) {
@@ -797,7 +799,7 @@ const newFormPreview = useMemo(() => {
       <main className="main-content achievements-main">
         {/* Desktop sidebar only */}
         {!isMobile && <Sidebar />}
-        <section className="achievements achievements-section" ref={achievementsSectionRef}>
+        <section className="achievements achievements-section">
           <DevModePanel
             devMode={devMode}
             editIdx={editIdx}
@@ -846,21 +848,17 @@ const newFormPreview = useMemo(() => {
                   achievementRefs.current[i] = el;
                 }}
                 draggable
-                onDragStart={e => handleDragStart(i, e)}
+                onDragStart={() => handleDragStart(i)}
                 onDragOver={e => handleDragOver(i, e)}
                 onDrop={handleDrop}
-                className={draggedIdx === i ? 'achievement-item dragging' : 'achievement-item'}
                 style={{
                   opacity: draggedIdx === i ? 0.5 : 1,
                   border: draggedIdx === i ? '2px dashed #e67e22' : '1px solid #333',
                   marginBottom: 8,
                   background: '#181818',
-                  cursor: isMiddleDragging ? 'ns-resize' : 'move',
+                  cursor: 'move',
                   borderRadius: 8,
-                  position: 'relative',
-                  transition: 'box-shadow 0.15s',
-                  boxShadow: draggedIdx === i ? '0 0 16px #e67e22' : 'none',
-                  zIndex: draggedIdx === i ? 10 : 1
+                  position: 'relative'
                 }}
                 onClick={() => {
                   if (showNewForm && scrollToIdx === i) setShowNewForm(false);
@@ -876,7 +874,7 @@ const newFormPreview = useMemo(() => {
                     transform: 'translate(-50%, -50%)',
                     display: 'flex',
                     gap: 32,
-                    zIndex: 20,
+                    zIndex: 2,
                     background: 'var(--secondary-bg, #232323)',
                     borderRadius: '1.5rem',
                     padding: '22px 40px',
