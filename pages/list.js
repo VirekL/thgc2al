@@ -1,5 +1,19 @@
 import Head from 'next/head';
 import { useEffect, useState, useMemo, useRef, useCallback, useTransition } from 'react';
+import {
+  DndContext,
+  closestCenter,
+  PointerSensor,
+  useSensor,
+  useSensors
+} from '@dnd-kit/core';
+import {
+  arrayMove,
+  SortableContext,
+  sortableKeyboardCoordinates,
+  verticalListSortingStrategy
+} from '@dnd-kit/sortable';
+import { SortableAchievement } from '../components/SortableAchievement';
 
 const AVAILABLE_TAGS = [
   "Level", "Challenge", "Low Hertz", "Mobile", "Speedhack",
@@ -379,47 +393,24 @@ export default function List() {
     setShowMobileFilters(v => !v);
   }
 
-  // Drag and drop handlers (dev mode) with auto-scroll
-  function handleDragStart(idx) {
-    setDraggedIdx(idx);
-  }
-  function handleDragOver(idx, e) {
-    e.preventDefault();
-    // Auto-scroll if near top/bottom
-    const y = e.clientY;
-    const scrollMargin = 60;
-    const scrollSpeed = 18;
-    if (y < scrollMargin) {
-      window.scrollBy({ top: -scrollSpeed, behavior: 'smooth' });
-    } else if (window.innerHeight - y < scrollMargin) {
-      window.scrollBy({ top: scrollSpeed, behavior: 'smooth' });
-    }
-    if (draggedIdx === null) return;
+  // DnD-Kit sensors
+  const sensors = useSensors(
+    useSensor(PointerSensor, { activationConstraint: { distance: 8 } })
+  );
+
+  // DnD-Kit drag end handler
+  function handleDragEnd(event) {
+    const { active, over } = event;
+    if (!active || !over || active.id === over.id) return;
     setReordered(prev => {
       if (!prev) return prev;
-      const arr = [...prev];
-      // Clamp idx to valid range (0 to arr.length)
-      let targetIdx = idx;
-      if (targetIdx < 0) targetIdx = 0;
-      if (targetIdx > arr.length) targetIdx = arr.length;
-      // If dragging past the end, insert at end
-      if (draggedIdx === targetIdx || draggedIdx === targetIdx - 1) return arr;
-      const [dragged] = arr.splice(draggedIdx, 1);
-      // If dragging to end, insert at arr.length
-      if (targetIdx >= arr.length) {
-        arr.push(dragged);
-        setDraggedIdx(arr.length - 1);
-      } else {
-        arr.splice(targetIdx, 0, dragged);
-        setDraggedIdx(targetIdx);
-      }
-      // Recalculate ranks for all
+      const oldIndex = prev.findIndex(a => a.id === active.id);
+      const newIndex = prev.findIndex(a => a.id === over.id);
+      if (oldIndex === -1 || newIndex === -1) return prev;
+      const arr = arrayMove(prev, oldIndex, newIndex);
       arr.forEach((a, i) => { a.rank = i + 1; });
       return arr;
     });
-  }
-  function handleDrop() {
-    setDraggedIdx(null);
   }
 
   // New achievement form handlers
@@ -803,122 +794,35 @@ const newFormPreview = useMemo(() => {
           {isPending ? (
             <div className="no-achievements">Loading...</div>
           ) : (devMode ? (
-            devAchievements.map((a, i) => (
-              <div
-                key={a.id || i}
-                ref={el => {
-                  achievementRefs.current[i] = el;
-                }}
-                draggable
-                onDragStart={() => handleDragStart(i)}
-                onDragOver={e => handleDragOver(i, e)}
-                onDrop={handleDrop}
-                style={{
-                  opacity: draggedIdx === i ? 0.5 : 1,
-                  border: draggedIdx === i ? '2px dashed #e67e22' : '1px solid #333',
-                  marginBottom: 8,
-                  background: '#181818',
-                  cursor: 'move',
-                  borderRadius: 8,
-                  position: 'relative'
-                }}
-                onClick={() => {
-                  if (showNewForm && scrollToIdx === i) setShowNewForm(false);
-                }}
-                onMouseEnter={() => setHoveredIdx(i)}
-                onMouseLeave={() => setHoveredIdx(v => v === i ? null : v)}
+            <DndContext
+              sensors={sensors}
+              collisionDetection={closestCenter}
+              onDragEnd={handleDragEnd}
+            >
+              <SortableContext
+                items={devAchievements.map(a => a.id)}
+                strategy={verticalListSortingStrategy}
               >
-                {(hoveredIdx === i) && (
-                  <div style={{
-                    position: 'absolute',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    display: 'flex',
-                    gap: 32,
-                    zIndex: 2,
-                    background: 'var(--secondary-bg, #232323)',
-                    borderRadius: '1.5rem',
-                    padding: '22px 40px',
-                    boxShadow: '0 4px 24px #000b',
-                    alignItems: 'center',
-                    border: '2px solid var(--primary-accent, #e67e22)',
-                    transition: 'background 0.2s, border 0.2s',
-                  }}>
-                    <button
-                      title="Edit"
-                      style={{
-                        background: 'var(--info, #2980b9)',
-                        border: 'none',
-                        color: '#fff',
-                        fontSize: 44,
-                        cursor: 'pointer',
-                        opacity: 1,
-                        borderRadius: '50%',
-                        width: 64,
-                        height: 64,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        boxShadow: '0 2px 8px #0006',
-                        transition: 'background 0.15s, transform 0.1s',
-                        outline: 'none',
-                      }}
-                      onMouseOver={e => e.currentTarget.style.background = 'var(--info-hover, #3498db)'}
-                      onMouseOut={e => e.currentTarget.style.background = 'var(--info, #2980b9)'}
-                      onClick={e => {e.stopPropagation(); handleEditAchievement(i);}}
-                    >✏️</button>
-                    <button
-                      title="Duplicate"
-                      style={{
-                        background: 'var(--primary-accent, #e67e22)',
-                        border: 'none',
-                        color: '#fff',
-                        fontSize: 44,
-                        cursor: 'pointer',
-                        opacity: 1,
-                        borderRadius: '50%',
-                        width: 64,
-                        height: 64,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        boxShadow: '0 2px 8px #0006',
-                        transition: 'background 0.15s, transform 0.1s',
-                        outline: 'none',
-                      }}
-                      onMouseOver={e => e.currentTarget.style.background = 'var(--primary-accent-hover, #ff9800)'}
-                      onMouseOut={e => e.currentTarget.style.background = 'var(--primary-accent, #e67e22)'}
-                      onClick={e => {e.stopPropagation(); handleDuplicateAchievement(i);}}
-                    >📄</button>
-                    <button
-                      title="Remove"
-                      style={{
-                        background: 'var(--danger, #c0392b)',
-                        border: 'none',
-                        color: '#fff',
-                        fontSize: 44,
-                        cursor: 'pointer',
-                        opacity: 1,
-                        borderRadius: '50%',
-                        width: 64,
-                        height: 64,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        boxShadow: '0 2px 8px #0006',
-                        transition: 'background 0.15s, transform 0.1s',
-                        outline: 'none',
-                      }}
-                      onMouseOver={e => e.currentTarget.style.background = 'var(--danger-hover, #e74c3c)'}
-                      onMouseOut={e => e.currentTarget.style.background = 'var(--danger, #c0392b)'}
-                      onClick={e => {e.stopPropagation(); handleRemoveAchievement(i);}}
-                    >🗑️</button>
-                  </div>
-                )}
-                <AchievementCard achievement={a} devMode={devMode} />
-              </div>
-            ))
+                {devAchievements.map((a, i) => (
+                  <SortableAchievement
+                    key={a.id || i}
+                    id={a.id}
+                    achievement={a}
+                    index={i}
+                    devMode={devMode}
+                    hoveredIdx={hoveredIdx}
+                    setHoveredIdx={setHoveredIdx}
+                    handleEditAchievement={handleEditAchievement}
+                    handleDuplicateAchievement={handleDuplicateAchievement}
+                    handleRemoveAchievement={handleRemoveAchievement}
+                    achievementRefs={achievementRefs}
+                    showNewForm={showNewForm}
+                    scrollToIdx={scrollToIdx}
+                    setShowNewForm={setShowNewForm}
+                  />
+                ))}
+              </SortableContext>
+            </DndContext>
           ) : (
             filtered.length === 0 ? (
               <div className="no-achievements">No achievements found.</div>
