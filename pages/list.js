@@ -88,17 +88,16 @@ function AchievementCard({ achievement, devMode }) {
   return (
     <Link href={`/achievement/${achievement.id}`} passHref legacyBehavior>
       <a
-        style={{ textDecoration: 'none', color: 'inherit', cursor: devMode ? 'grab' : 'pointer', userSelect: devMode ? 'none' : undefined }}
+        style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }}
         onClick={handleClick}
         onMouseDown={handleClick}
         tabIndex={devMode ? -1 : 0}
         aria-disabled={devMode ? 'true' : undefined}
-        draggable={false}
       >
         <div
           className="achievement-item"
           tabIndex={0}
-          style={{ cursor: devMode ? 'grab' : 'pointer' }}
+          style={{ cursor: 'pointer' }}
         >
           <div className="rank-date-container">
             <div className="achievement-length">
@@ -153,7 +152,6 @@ export default function List() {
   const [showSettings, setShowSettings] = useState(false);
   // Developer mode state
   const [devMode, setDevMode] = useState(false);
-  const [draggedIdx, setDraggedIdx] = useState(null);
   const [reordered, setReordered] = useState(null); // null = not in dev mode, else array
   const [showNewForm, setShowNewForm] = useState(false);
   // Track hovered achievement index for dev controls
@@ -390,86 +388,7 @@ export default function List() {
     setShowMobileFilters(v => !v);
   }
 
-  // Drag and drop handlers (dev mode) with auto-scroll
-  function handleDragStart(idx) {
-    setDraggedIdx(idx);
-  }
-  function handleDragOver(idx, e) {
-    e.preventDefault();
-    // Auto-scroll if near top/bottom
-    const y = e.clientY;
-    const scrollMargin = 60;
-    const scrollSpeed = 18;
-    if (y < scrollMargin) {
-      window.scrollBy({ top: -scrollSpeed, behavior: 'smooth' });
-    } else if (window.innerHeight - y < scrollMargin) {
-      window.scrollBy({ top: scrollSpeed, behavior: 'smooth' });
-    }
-    if (draggedIdx === null) return;
-    setReordered(prev => {
-      if (!prev) return prev;
-      const arr = [...prev];
-      // Clamp idx to valid range (0 to arr.length)
-      let targetIdx = idx;
-      if (targetIdx < 0) targetIdx = 0;
-      if (targetIdx > arr.length) targetIdx = arr.length;
-      // If dragging past the end, insert at end
-      if (draggedIdx === targetIdx || draggedIdx === targetIdx - 1) return arr;
-      const [dragged] = arr.splice(draggedIdx, 1);
-      // If dragging to end, insert at arr.length
-      if (targetIdx >= arr.length) {
-        arr.push(dragged);
-        setDraggedIdx(arr.length - 1);
-      } else {
-        arr.splice(targetIdx, 0, dragged);
-        setDraggedIdx(targetIdx);
-      }
-      // Recalculate ranks for all
-      arr.forEach((a, i) => { a.rank = i + 1; });
-      return arr;
-    });
-  }
-  function handleDrop() {
-    setDraggedIdx(null);
-  }
-
-  // Middle mouse drag scroll (dev mode)
-  useEffect(() => {
-    if (!devMode || draggedIdx === null) return;
-    let isMiddleMouseDown = false;
-    let lastY = null;
-    function handleMouseDown(e) {
-      if (e.button === 1) { // Middle mouse
-        isMiddleMouseDown = true;
-        lastY = e.clientY;
-        document.body.style.cursor = 'ns-resize';
-        e.preventDefault();
-      }
-    }
-    function handleMouseUp(e) {
-      if (e.button === 1) {
-        isMiddleMouseDown = false;
-        lastY = null;
-        document.body.style.cursor = '';
-      }
-    }
-    function handleMouseMove(e) {
-      if (isMiddleMouseDown && lastY !== null) {
-        const deltaY = e.clientY - lastY;
-        window.scrollBy({ top: -deltaY, behavior: 'auto' });
-        lastY = e.clientY;
-      }
-    }
-    window.addEventListener('mousedown', handleMouseDown);
-    window.addEventListener('mouseup', handleMouseUp);
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => {
-      window.removeEventListener('mousedown', handleMouseDown);
-      window.removeEventListener('mouseup', handleMouseUp);
-      window.removeEventListener('mousemove', handleMouseMove);
-      document.body.style.cursor = '';
-    };
-  }, [devMode, draggedIdx]);
+  // Dev mode functionality
 
   // New achievement form handlers
   function handleNewFormChange(e) {
@@ -858,16 +777,10 @@ const newFormPreview = useMemo(() => {
                 ref={el => {
                   achievementRefs.current[i] = el;
                 }}
-                draggable
-                onDragStart={() => handleDragStart(i)}
-                onDragOver={e => handleDragOver(i, e)}
-                onDrop={handleDrop}
                 style={{
-                  opacity: draggedIdx === i ? 0.5 : 1,
-                  border: draggedIdx === i ? '2px dashed #e67e22' : '1px solid #333',
+                  border: '1px solid #333',
                   marginBottom: 8,
                   background: '#181818',
-                  cursor: 'move',
                   borderRadius: 8,
                   position: 'relative'
                 }}
