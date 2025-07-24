@@ -74,53 +74,48 @@ export default function AboutUs() {
               </p>
             </section>
             <section style={{marginBottom: '1.5em'}}>
-              <h4>External Factors</h4>
+              <h4><span style={{fontWeight:700, color:'#e67e22'}}>External Factors</span></h4>
               <p>
-                Achievements that rely on artificially increased difficulty through external limitations are not eligible. This includes (but is not limited to):
+                <strong>Achievements that rely on artificially increased difficulty through external limitations are <span style={{color:'#e74c3c'}}>not eligible</span>.</strong>
+                <br />
+                <span style={{fontStyle:'italic', color:'#aaa'}}>This includes (but is not limited to):</span>
               </p>
-              <ul>
-                <li>Using a low-polling-rate mouse</li>
-                <li>Playing blindfolded or with the monitor turned off</li>
-                <li>Impaired setup</li>
+              <ul style={{marginLeft:'1.2em', marginBottom:'0.7em'}}>
+                <li><span style={{fontWeight:500}}>Using a low-polling-rate mouse</span></li>
+                <li><span style={{fontWeight:500}}>Playing blindfolded or with the monitor turned off</span></li>
+                <li><span style={{fontWeight:500}}>Impaired setup</span></li>
               </ul>
-              <h5>Exception</h5>
-              <p>
-                Low-hertz achievements performed on mobile devices are exempt from this rule due to the inherent input latency of touchscreen controls. These achievements are recognized separately and marked with a dedicated mobile tag.
-              </p>
+              <div style={{margin:'0.7em 0 0.2em 0'}}>
+                <span style={{fontWeight:600, color:'#34d058'}}>Exception:</span> <span style={{fontStyle:'italic'}}>Low-hertz achievements performed on mobile devices are exempt from this rule due to the inherent input latency of touchscreen controls. These achievements are recognized separately and marked with a dedicated <span style={{fontWeight:600, color:'#2980b9'}}>mobile</span> tag.</span>
+              </div>
             </section>
             <section style={{marginBottom: '1.5em'}}>
-              <h4>Consistency</h4>
-              <h5>Significant Difficulty Increase</h5>
-              <p>
-                A consistency achievement must represent a clear and substantial increase in difficulty compared to the standard execution of the level.
-              </p>
-              <h5>One Achievement Per Level</h5>
-              <p>
-                Only one consistency achievement may be active per level at any given time.
-              </p>
-              <h5>Achievement Replacement</h5>
-              <p>
-                If a new consistency achievement is validated as more difficult than the current one, it will replace the existing achievement. Submissions that are less difficult than the current achievement will not be accepted.
-              </p>
-              <h5>Allowed Actions</h5>
-              <p>
-                The following actions are permitted during attempts, provided they aren’t meaningful attempts:
-              </p>
-              <ul>
-                <li>Re-entering the level</li>
-                <li>Restarting</li>
-                <li>Switching start positions</li>
-                <li>Filler deaths (e.g., No clicking, random clicking)</li>
-              </ul>
-              <h5>Performance Threshold</h5>
-              <p>
-                All attempts must demonstrate performance closely comparable in difficulty to the highest-performing run.<br />
-                Examples of unacceptable attempts include wildly inconsistent performances (e.g., 215%, 8%, 100%), as they do not reflect true consistency. In such cases, only the highest-performing run (e.g., 215%) will be considered.
-              </p>
-              <h5>Moderation &amp; Discretion</h5>
-              <p>
-                In cases of ambiguity, borderline performance, or disputed claims, a dedicated moderation team will review and evaluate the submission.
-              </p>
+              <h4><span style={{fontWeight:700, color:'#e67e22'}}>Consistency</span></h4>
+              <div style={{marginBottom:'0.7em'}}>
+                <strong>Significant Difficulty Increase:</strong> <span style={{fontStyle:'italic'}}>A consistency achievement must represent a <span style={{color:'#e74c3c'}}>clear and substantial increase in difficulty</span> compared to the standard execution of the level.</span>
+              </div>
+              <div style={{marginBottom:'0.7em'}}>
+                <strong>One Achievement Per Level:</strong> <span style={{fontStyle:'italic'}}>Only one consistency achievement may be active per level at any given time.</span>
+              </div>
+              <div style={{marginBottom:'0.7em'}}>
+                <strong>Achievement Replacement:</strong> <span style={{fontStyle:'italic'}}>If a new consistency achievement is validated as more difficult than the current one, it will replace the existing achievement. Submissions that are less difficult than the current achievement will not be accepted.</span>
+              </div>
+              <div style={{marginBottom:'0.7em'}}>
+                <strong>Allowed Actions:</strong> <span style={{fontStyle:'italic'}}>The following actions are permitted during attempts, provided they aren’t meaningful attempts:</span>
+                <ul style={{marginLeft:'1.2em', marginTop:'0.3em'}}>
+                  <li><span style={{fontWeight:500}}>Re-entering the level</span></li>
+                  <li><span style={{fontWeight:500}}>Restarting</span></li>
+                  <li><span style={{fontWeight:500}}>Switching start positions</span></li>
+                  <li><span style={{fontWeight:500}}>Filler deaths (e.g., No clicking, random clicking)</span></li>
+                </ul>
+              </div>
+              <div style={{marginBottom:'0.7em'}}>
+                <strong>Performance Threshold:</strong> <span style={{fontStyle:'italic'}}>All attempts must demonstrate performance closely comparable in difficulty to the highest-performing run.</span><br />
+                <span style={{color:'#aaa'}}>Examples of unacceptable attempts include <b>wildly inconsistent performances</b> (e.g., 215%, 8%, 100%), as they do not reflect true consistency. In such cases, only the highest-performing run (e.g., 215%) will be considered.</span>
+              </div>
+              <div style={{marginBottom:'0.7em'}}>
+                <strong>Moderation &amp; Discretion:</strong> <span style={{fontStyle:'italic'}}>In cases of ambiguity, borderline performance, or disputed claims, a dedicated moderation team will review and evaluate the submission.</span>
+              </div>
             </section>
           </section>
         </div>
