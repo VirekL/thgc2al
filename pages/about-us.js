@@ -57,11 +57,71 @@ export default function AboutUs() {
               <li><strong>Outdated Version</strong>: Level is rated and is on an older version than the current one.</li>
             </ul>
             <h3>Rules</h3>
-            <ul>
-              <li>All achievements must be done in <strong>Geometry Dash</strong> levels (no platformers, ingame achievements, other games, etc.).</li>
-              <li>Achievements must be considered more difficult to complete than the lowest achievement in order to be placed. If the baseline reaches or nears 1000, a new baseline will be decided, and achievements that fall below the new baseline will be moved to the legacy list.</li>
-              <li>Anything made more difficult by using external factors will not be considered. Examples include using a low polling rate mouse or turning off a monitor while playing. <strong>Low hertz achievements done on mobile are exempt</strong> from this rule due to the inherent input latency associated with touchscreen controls.</li>
-            </ul>
+            <section style={{marginBottom: '1.5em'}}>
+              <h4>Geometry Dash</h4>
+              <p>
+                Only achievements within the levels of the official Geometry Dash series are eligible. Submissions from platformer levels, other metrics (e.g., creator points, in-game achievements, stars), or other games will not be accepted.
+              </p>
+            </section>
+            <section style={{marginBottom: '1.5em'}}>
+              <h4>Baseline</h4>
+              <p>
+                To be included in the main list, an achievement must be more difficult than the lowest-ranked current entry.
+              </p>
+              <h4>One Thousand Achievements Limit</h4>
+              <p>
+                If the baseline rank approaches or reaches 1000, a new baseline will be reassessed &amp; established, and any achievements falling below this updated threshold will be moved to the Legacy List.
+              </p>
+            </section>
+            <section style={{marginBottom: '1.5em'}}>
+              <h4>External Factors</h4>
+              <p>
+                Achievements that rely on artificially increased difficulty through external limitations are not eligible. This includes (but is not limited to):
+              </p>
+              <ul>
+                <li>Using a low-polling-rate mouse</li>
+                <li>Playing blindfolded or with the monitor turned off</li>
+                <li>Impaired setup</li>
+              </ul>
+              <h5>Exception</h5>
+              <p>
+                Low-hertz achievements performed on mobile devices are exempt from this rule due to the inherent input latency of touchscreen controls. These achievements are recognized separately and marked with a dedicated mobile tag.
+              </p>
+            </section>
+            <section style={{marginBottom: '1.5em'}}>
+              <h4>Consistency</h4>
+              <h5>Significant Difficulty Increase</h5>
+              <p>
+                A consistency achievement must represent a clear and substantial increase in difficulty compared to the standard execution of the level.
+              </p>
+              <h5>One Achievement Per Level</h5>
+              <p>
+                Only one consistency achievement may be active per level at any given time.
+              </p>
+              <h5>Achievement Replacement</h5>
+              <p>
+                If a new consistency achievement is validated as more difficult than the current one, it will replace the existing achievement. Submissions that are less difficult than the current achievement will not be accepted.
+              </p>
+              <h5>Allowed Actions</h5>
+              <p>
+                The following actions are permitted during attempts, provided they aren’t meaningful attempts:
+              </p>
+              <ul>
+                <li>Re-entering the level</li>
+                <li>Restarting</li>
+                <li>Switching start positions</li>
+                <li>Filler deaths (e.g., No clicking, random clicking)</li>
+              </ul>
+              <h5>Performance Threshold</h5>
+              <p>
+                All attempts must demonstrate performance closely comparable in difficulty to the highest-performing run.<br />
+                Examples of unacceptable attempts include wildly inconsistent performances (e.g., 215%, 8%, 100%), as they do not reflect true consistency. In such cases, only the highest-performing run (e.g., 215%) will be considered.
+              </p>
+              <h5>Moderation &amp; Discretion</h5>
+              <p>
+                In cases of ambiguity, borderline performance, or disputed claims, a dedicated moderation team will review and evaluate the submission.
+              </p>
+            </section>
           </section>
         </div>
       </main>
