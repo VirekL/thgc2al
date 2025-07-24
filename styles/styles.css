@@ -1080,19 +1080,21 @@ main {
   padding: 0;
 }
 
+
 .about-us ul li {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  padding: 0.5rem;
-  background-color: var(--hover-bg);
-  border-radius: var(--border-radius);
-  text-align: center;
-  transition: var(--transition);
+  /* Remove background and box for rules lists */
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  text-align: left;
+  transition: none;
 }
 
 .about-us ul li:hover {
-  background-color: var(--active-bg);
-  transform: scale(1.05);
+  background: none;
+  transform: none;
 }
 
 .achievements-container {
