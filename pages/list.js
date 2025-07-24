@@ -818,9 +818,6 @@ const newFormPreview = useMemo(() => {
                 onMouseEnter={() => setHoveredIdx(i)}
                 onMouseLeave={() => setHoveredIdx(v => v === i ? null : v)}
               >
-                <div style={{ position: 'relative', zIndex: 1 }}>
-                  <AchievementCard achievement={a} devMode={devMode} />
-                </div>
                 {(hoveredIdx === i) && (
                   <div style={{
                     position: 'absolute',
@@ -829,7 +826,7 @@ const newFormPreview = useMemo(() => {
                     transform: 'translate(-50%, -50%)',
                     display: 'flex',
                     gap: 32,
-                    zIndex: 10,
+                    zIndex: 3,
                     background: 'var(--secondary-bg, #232323)',
                     borderRadius: '1.5rem',
                     padding: '22px 40px',
@@ -955,7 +952,14 @@ const newFormPreview = useMemo(() => {
                     >🗑️</button>
                   </div>
                 )}
-                <AchievementCard achievement={a} devMode={devMode} />
+                <div style={{ 
+                  opacity: hoveredIdx === i ? 0.3 : 1,
+                  transition: 'opacity 0.2s',
+                  position: 'relative',
+                  zIndex: 1
+                }}>
+                  <AchievementCard achievement={a} devMode={devMode} />
+                </div>
               </div>
             ))
           ) : (
