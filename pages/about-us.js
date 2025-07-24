@@ -81,9 +81,9 @@ export default function AboutUs() {
                 <span style={{fontStyle:'italic'}}>This includes (but is not limited to):</span>
               </p>
               <ul style={{marginLeft:'1.2em', marginBottom:'0.7em'}}>
-                <li><span style={{fontWeight:500}}>— Using a low-polling-rate mouse</span></li>
-                <li><span style={{fontWeight:500}}>— Playing blindfolded or with the monitor turned off</span></li>
-                <li><span style={{fontWeight:500}}>— Impaired setup</span></li>
+                <li><span style={{fontWeight:500}}>Using a low-polling-rate mouse</span></li>
+                <li><span style={{fontWeight:500}}>Playing blindfolded or with the monitor turned off</span></li>
+                <li><span style={{fontWeight:500}}>Impaired setup</span></li>
               </ul>
               <div style={{margin:'0.7em 0 0.2em 0'}}>
                 <span style={{fontWeight:600}}>Exception:</span> <span style={{fontStyle:'italic'}}>Low-hertz achievements performed on mobile devices are exempt from this rule due to the inherent input latency of touchscreen controls. These achievements are recognized separately and marked with a dedicated <b>mobile</b> tag.</span>
@@ -103,10 +103,10 @@ export default function AboutUs() {
               <div style={{marginBottom:'0.7em'}}>
                 <strong>Allowed Actions:</strong> <span style={{fontStyle:'italic'}}>The following actions are permitted during attempts, provided they aren’t meaningful attempts:</span>
                 <ul style={{marginLeft:'1.2em', marginTop:'0.3em'}}>
-                  <li><span style={{fontWeight:500}}>— Re-entering the level</span></li>
-                  <li><span style={{fontWeight:500}}>— Restarting</span></li>
-                  <li><span style={{fontWeight:500}}>— Switching start positions</span></li>
-                  <li><span style={{fontWeight:500}}>— Filler deaths (e.g., No clicking, random clicking)</span></li>
+                  <li><span style={{fontWeight:500}}>Re-entering the level</span></li>
+                  <li><span style={{fontWeight:500}}>Restarting</span></li>
+                  <li><span style={{fontWeight:500}}>Switching start positions</span></li>
+                  <li><span style={{fontWeight:500}}>Filler deaths (e.g., No clicking, random clicking)</span></li>
                 </ul>
               </div>
               <div style={{marginBottom:'0.7em'}}>
