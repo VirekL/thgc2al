@@ -169,6 +169,34 @@ export default function List() {
   const [editFormTags, setEditFormTags] = useState([]);
   const [editFormCustomTags, setEditFormCustomTags] = useState('');
   const achievementRefs = useRef([]);
+
+  // Move achievement up
+  function handleMoveAchievementUp(idx) {
+    setReordered(prev => {
+      if (!prev || idx <= 0) return prev;
+      const arr = [...prev];
+      const temp = arr[idx - 1];
+      arr[idx - 1] = arr[idx];
+      arr[idx] = temp;
+      // Reassign ranks
+      arr.forEach((a, i) => { a.rank = i + 1; });
+      return arr;
+    });
+  }
+
+  // Move achievement down
+  function handleMoveAchievementDown(idx) {
+    setReordered(prev => {
+      if (!prev || idx >= prev.length - 1) return prev;
+      const arr = [...prev];
+      const temp = arr[idx + 1];
+      arr[idx + 1] = arr[idx];
+      arr[idx] = temp;
+      // Reassign ranks
+      arr.forEach((a, i) => { a.rank = i + 1; });
+      return arr;
+    });
+  }
   // Track the last added/duplicated achievement index for scrolling
   const [scrollToIdx, setScrollToIdx] = useState(null);
   // Edit achievement handlers
@@ -807,6 +835,52 @@ const newFormPreview = useMemo(() => {
                     border: '2px solid var(--primary-accent, #e67e22)',
                     transition: 'background 0.2s, border 0.2s',
                   }}>
+                    <button
+                      title="Move Up"
+                      style={{
+                        background: 'var(--primary-accent, #e67e22)',
+                        border: 'none',
+                        color: '#fff',
+                        fontSize: 36,
+                        cursor: 'pointer',
+                        opacity: 1,
+                        borderRadius: '50%',
+                        width: 48,
+                        height: 48,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        boxShadow: '0 2px 8px #0006',
+                        transition: 'background 0.15s, transform 0.1s',
+                        outline: 'none',
+                        marginRight: 8,
+                      }}
+                      disabled={i === 0}
+                      onClick={e => {e.stopPropagation(); handleMoveAchievementUp(i);}}
+                    >▲</button>
+                    <button
+                      title="Move Down"
+                      style={{
+                        background: 'var(--primary-accent, #e67e22)',
+                        border: 'none',
+                        color: '#fff',
+                        fontSize: 36,
+                        cursor: 'pointer',
+                        opacity: 1,
+                        borderRadius: '50%',
+                        width: 48,
+                        height: 48,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        boxShadow: '0 2px 8px #0006',
+                        transition: 'background 0.15s, transform 0.1s',
+                        outline: 'none',
+                        marginRight: 8,
+                      }}
+                      disabled={i === devAchievements.length - 1}
+                      onClick={e => {e.stopPropagation(); handleMoveAchievementDown(i);}}
+                    >▼</button>
                     <button
                       title="Edit"
                       style={{
