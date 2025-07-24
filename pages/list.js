@@ -74,21 +74,27 @@ function formatDate(date, dateFormat) {
   return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
-function AchievementCard({ achievement, onClick }) {
+function AchievementCard({ achievement, devMode }) {
   const { dateFormat } = useDateFormat();
-  // If devMode is true, disable normal click navigation (but allow ctrl+click and middle click)
-  const { devMode } = AchievementCard;
+  // Disable navigation in devMode (but allow ctrl+click and middle click)
   const handleClick = e => {
     if (devMode) {
       // Allow ctrl+click and middle click
       if (e.ctrlKey || e.button === 1) return;
       e.preventDefault();
+      e.stopPropagation();
     }
   };
   return (
     <Link href={`/achievement/${achievement.id}`} passHref legacyBehavior>
-      <a style={{ textDecoration: 'none', color: 'inherit' }} onClick={handleClick} onMouseDown={handleClick}>
-        <div className="achievement-item" tabIndex={0} style={{cursor: 'pointer'}}>
+      <a
+        style={{ textDecoration: 'none', color: 'inherit', cursor: devMode ? 'not-allowed' : 'pointer' }}
+        onClick={handleClick}
+        onMouseDown={handleClick}
+        tabIndex={devMode ? -1 : 0}
+        aria-disabled={devMode ? 'true' : undefined}
+      >
+        <div className="achievement-item" tabIndex={0} style={{cursor: devMode ? 'not-allowed' : 'pointer'}}>
           <div className="rank-date-container">
             <div className="achievement-length">
               {achievement.length ? `${Math.floor(achievement.length / 60)}:${(achievement.length % 60).toString().padStart(2, '0')}` : 'N/A'}
