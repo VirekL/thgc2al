@@ -88,13 +88,18 @@ function AchievementCard({ achievement, devMode }) {
   return (
     <Link href={`/achievement/${achievement.id}`} passHref legacyBehavior>
       <a
-        style={{ textDecoration: 'none', color: 'inherit', cursor: devMode ? 'not-allowed' : 'pointer' }}
+        style={{ textDecoration: 'none', color: 'inherit', cursor: devMode ? 'grab' : 'pointer', userSelect: devMode ? 'none' : undefined }}
         onClick={handleClick}
         onMouseDown={handleClick}
         tabIndex={devMode ? -1 : 0}
         aria-disabled={devMode ? 'true' : undefined}
+        draggable={false}
       >
-        <div className="achievement-item" tabIndex={0} style={{cursor: devMode ? 'not-allowed' : 'pointer'}}>
+        <div
+          className="achievement-item"
+          tabIndex={0}
+          style={{ cursor: devMode ? 'grab' : 'pointer' }}
+        >
           <div className="rank-date-container">
             <div className="achievement-length">
               {achievement.length ? `${Math.floor(achievement.length / 60)}:${(achievement.length % 60).toString().padStart(2, '0')}` : 'N/A'}
