@@ -1,7 +1,7 @@
 /* Developer Mode UI (devmode-*) */
 .devmode-floating-panel {
   position: fixed;
-  z-index: 2000;
+  z-index: 3000;
   bottom: 24px;
   right: 24px;
   background: var(--secondary-bg, #232323);
@@ -51,7 +51,7 @@
 
 .devmode-form-panel {
   position: fixed;
-  z-index: 2001;
+  z-index: 3001;
   bottom: 24px;
   left: 24px;
   background: var(--secondary-bg, #232323);
@@ -639,6 +639,8 @@ main {
   }
 
   .achievement-details .text h2 {
+  position: relative;
+  z-index: 1;
     font-size: 1rem;
   }
 
