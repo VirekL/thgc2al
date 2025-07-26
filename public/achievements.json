@@ -797,6 +797,7 @@
     },
     {
         "name": "Silent clubstep\n24-100% + 24-72% + 24-65% + 24-66% + 24-40% + 24-100% + 24-65%",
+        "id": "silent-clubstep-24-100-24-72-24-65-24-66-24-40-24-100-24-65",
         "player": "ImJuls",
         "date": "2025-05-04",
         "length": "266",
@@ -1421,6 +1422,7 @@
     },
     {
         "name": "Acheron (Riot)\n47-100%",
+        "id": "acheron-riot-47-100",
         "player": "xalval",
         "date": "2025-06-28",
         "length": "30",
@@ -1491,6 +1493,7 @@
     },
     {
         "name": "Silent Acropolis unn\n1-65%",
+        "id": "silent-acropolis-unn-1-65",
         "player": "SeptaGon7",
         "date": "2024-06-19",
         "length": "59",
@@ -1547,6 +1550,7 @@
     },
     {
         "name": "surface\n17-86%",
+        "id": "surface-17-86",
         "player": "zXdasfsa",
         "date": "2025-06-06",
         "length": "20",
@@ -1792,6 +1796,7 @@
     },
     {
         "name": "Tidal Wave (Ultrabuffed)      22-61%",
+        "id": "tidal-wave-ultrabuffed-22-61",
         "player": "Loliklee",
         "date": "2025-06-22",
         "length": "74",
@@ -1816,6 +1821,7 @@
     },
     {
         "name": "Acheron (Wolvez)\n96%",
+        "id": "acheron-wolvez-96",
         "player": "Wolvez",
         "date": "2022-04-09",
         "length": "67",
@@ -1824,6 +1830,7 @@
     },
     {
         "name": "Tidal Wave (Ultrabuffed)         40%",
+        "id": "tidal-wave-ultrabuffed-40",
         "player": "A6",
         "date": "2025-06-25",
         "length": "74",
@@ -1847,6 +1854,7 @@
     },
     {
         "name": "Slaughterhouse (Unfixed)",
+        "id": "slaughterhouse-unfixed",
         "player": "Zoink",
         "date": "2023-12-23",
         "length": "70",
@@ -2033,6 +2041,7 @@
   },
     {
         "name": "Acheron (serpentical)",
+        "id": "acheron-serpentical",
         "player": "serpentical",
         "date": "2025-07-08",
         "length": "67",
@@ -2041,6 +2050,7 @@
     },
     {
         "name": "vsc superbuff                                3 deaths, 99.87 accuracy",
+        "id": "vsc-superbuff-3-deaths-99-87-accuracy",
         "player": "JACKSONAMORE",
         "date": "2025-06-01",
         "length": "16",
@@ -2235,6 +2245,7 @@
   },
     {
         "name": "VSC nerfed",
+        "id": "vsc-nerfed",
         "player": "Nev",
         "date": "2023-08-02",
         "length": "16",
@@ -2260,6 +2271,7 @@
   },
     {
         "name": "VSC\n144hz 54%",
+        "id": "vsc-144hz-54",
         "player": "Nev",
         "date": "2022-10-15",
         "length": "10",
@@ -2284,6 +2296,7 @@
   },
     {
         "name": "INTERCONNECTED",
+        "id": "interconnected",
         "player": "NucGDStuff",
         "date": "2025-06-20",
         "length": "18",
@@ -2369,6 +2382,7 @@
   },
     {
         "name": "vsc superbuff                                48%",
+        "id": "vsc-superbuff-48",
         "player": "loststraggler",
         "date": "2025-05-31",
         "length": "9",
@@ -2391,6 +2405,7 @@
   },
     {
         "name": "Im Hard                                       92%",
+        "id": "im-hard-92",
         "player": "totalgd",
         "date": "2025-05-27",
         "length": "23",
@@ -2494,6 +2509,7 @@
   },
     {
         "name": "⚠️ last stop                                    5 deaths, 99.80 accuracy",
+        "id": "last-stop-5-deaths-99-80-accuracy",
         "player": "aytch0008",
         "date": "2025-06-20",
         "length": "23",
@@ -2551,6 +2567,7 @@
   },
     {
         "name": "Deimos                                            46%, 100%",
+        "id": "deimos-46-100",
         "player": "ViperVenom95",
         "date": "2024-02-18",
         "length": "200",
@@ -2576,6 +2593,7 @@
   },
     {
         "name": "KOCMOC publicrelease\n32-76%",
+        "id": "kocmoc-publicrelease-32-76",
         "player": "goldix",
         "date": "2024-11-01",
         "length": "26",
@@ -2663,6 +2681,7 @@
   },
     {
         "name": "inv skc 10 op\n97%",
+        "id": "inv-skc-10-op-97",
         "player": "ad3usgmd",
         "date": "2024-09-04",
         "length": "27",
@@ -2717,6 +2736,7 @@
   },
     {
         "name": "Exens limit                                  68%x3",
+        "id": "exens-limit-68-x3",
         "player": "Skylar",
         "date": "2025-05-03",
         "length": "49",
@@ -2773,6 +2793,7 @@
   },
     {
         "name": "lgbt circles                           65-71%x6 + 65-70%",
+        "id": "lgbt-circles-65-71-x6-65-70",
         "player": "vvay",
         "date": "2025-07-07",
         "length": "20",
@@ -2813,6 +2834,7 @@
   },
     {
         "name": "⚠️ last stop                              37-100%",
+        "id": "last-stop-37-100",
         "player": "aytch0008",
         "date": "2025-05-22",
         "length": "14",
@@ -2821,6 +2843,7 @@
     },
     {
         "name": "Sakupen circles wave\n54%",
+        "id": "sakupen-circles-wave-54",
         "player": "ad3usgmd",
         "date": "2025-06-02",
         "length": "16",
@@ -2829,6 +2852,7 @@
     },
     {
         "name": "KOCMOC publicrelease\n14-63%",
+        "id": "kocmoc-publicrelease-14-63",
         "player": "goldix",
         "date": "2024-11-01",
         "length": "29",
@@ -2852,6 +2876,7 @@
   },
     {
         "name": "Justin Camp",
+        "id": "justin-camp",
         "player": "xaern",
         "date": "2025-07-22",
         "length": "5",
@@ -2923,6 +2948,7 @@
   },
     {
         "name": "⚠️ Defeated Circles",
+        "id": "defeated-circles",
         "player": "Zoink",
         "date": "2025-05-31",
         "length": "60",
@@ -3083,6 +3109,7 @@
   },
     {
         "name": "ConClusion                              60hz Mobile 87%",
+        "id": "conclusion-60hz-mobile-87",
         "player": "Dominionxx",
         "date": "2025-06-28",
         "length": "67",
@@ -3232,6 +3259,7 @@
   },
     {
         "name": "Sonic Wave Infinity\n120hz Mobile 77%",
+        "id": "sonic-wave-infinity-120hz-mobile-77",
         "player": "Rotys",
         "date": "2025-07-23",
         "length": "113",
@@ -3256,6 +3284,7 @@
   },
     {
         "name": "ConClusion                              60hz Mobile 31-100%",
+        "id": "conclusion-60hz-mobile-31-100",
         "player": "Dominionxx",
         "date": "2025-07-18",
         "length": "57",
@@ -3280,6 +3309,7 @@
   },
     {
         "name": "Saul Goodman                               41-100%, 100%",
+        "id": "saul-goodman-41-100-100",
         "player": "Slithium",
         "date": "2024-07-17",
         "length": "86",
@@ -3288,6 +3318,7 @@
     },
     {
         "name": "Angelicide (Kaza)                           37-65%",
+        "id": "angelicide-kaza-37-65",
         "player": "Kaza",
         "date": "2025-06-29",
         "length": "26",
@@ -3313,6 +3344,7 @@
   },
     {
         "name": "Flashbang                                   45-100%",
+        "id": "flashbang-45-100",
         "player": "Noctal",
         "date": "2025-07-10",
         "length": "84",
@@ -3321,6 +3353,7 @@
     },
     {
         "name": "Flashbang                                   46%",
+        "id": "flashbang-46",
         "player": "Noctal",
         "date": "2025-07-25",
         "length": "72",
@@ -3345,6 +3378,7 @@
   },
     {
         "name": "Vehemence\n33-60%",
+        "id": "vehemence-33-60",
         "player": "wPopoff",
         "date": "2025-07-15",
         "length": "90",
@@ -3383,6 +3417,7 @@
   },
     {
         "name": "LIMBO                                               144hz",
+        "id": "limbo-144hz",
         "player": "Leslie",
         "date": "2023-04-05",
         "length": "207",
@@ -3516,6 +3551,7 @@
   },
     {
         "name": "i n j u r y (Layout)\n95%",
+        "id": "i-n-j-u-r-y-layout-95",
         "player": "Cryostaz",
         "date": "2025-06-19",
         "length": "35",
@@ -3524,6 +3560,7 @@
     },
     {
         "name": "limbo but uwu ig idk                        60hz Mobile 62%",
+        "id": "limbo-but-uwu-ig-idk-60hz-mobile-62",
         "player": "geometrydasj",
         "date": "2025-06-30",
         "length": "54",
@@ -3547,6 +3584,7 @@
   },
     {
         "name": "⚠️ FLAMEWALL (Agent009)\n42%",
+        "id": "flamewall-agent009-42",
         "player": "Agent009",
         "date": "2025-07-10",
         "length": "150",
@@ -3677,6 +3715,7 @@
   },
     {
         "name": "Heliopolis\n17%",
+        "id": "heliopolis-17",
         "player": "Thnnder",
         "date": "2024-11-15",
         "length": "20",
@@ -3700,6 +3739,7 @@
   },
     {
         "name": "Vehemence\n24-55%",
+        "id": "vehemence-24-55",
         "player": "wPopoff",
         "date": "2025-07-21",
         "length": "32",
@@ -3708,6 +3748,7 @@
     },
     {
         "name": "Snowbound",
+        "id": "snowbound",
         "player": "Amplitron",
         "date": "2025-06-04",
         "length": "142",
@@ -3716,6 +3757,7 @@
     },
     {
         "name": "Heliopolis (Garbag)\n17%",
+        "id": "heliopolis-garbag-17",
         "player": "Garbag",
         "date": "2025-07-18",
         "length": "16",
@@ -3724,6 +3766,7 @@
     },
     {
         "name": "Infinite Chaos",
+        "id": "infinite-chaos",
         "player": "Victurkey",
         "date": "2025-05-26",
         "length": "140",
@@ -3769,6 +3812,7 @@
   },
     {
         "name": "Cognition                                   60hz Mobile 8-79%",
+        "id": "cognition-60hz-mobile-8-79",
         "player": "Siaxid",
         "date": "2025-07-18",
         "length": "43",
@@ -3794,6 +3838,7 @@
   },
     {
         "name": "Acheron my\n79%",
+        "id": "acheron-my-79",
         "player": "OneAlphaHelix",
         "date": "2022-08-18",
         "length": "54",
@@ -3833,6 +3878,7 @@
   },
     {
         "name": "FLAMEWALL (Agent009)\n15-49%",
+        "id": "flamewall-agent009-15-49",
         "player": "Agent009",
         "date": "2024-09-17",
         "length": "140",
@@ -3856,6 +3902,7 @@
   },
     {
         "name": "Tunnel of Despair                                          144hz Mobile 18-84%",
+        "id": "tunnel-of-despair-144hz-mobile-18-84",
         "player": "VERTOP",
         "date": "2025-05-15",
         "length": "50",
@@ -3988,6 +4035,7 @@
   },
     {
         "name": "Vehemence\n14-38%",
+        "id": "vehemence-14-38",
         "player": "wPopoff",
         "date": "2025-07-21",
         "length": "31",
@@ -4028,6 +4076,7 @@
   },
     {
         "name": "Sevvend Clubstep",
+        "id": "sevvend-clubstep",
         "player": "Vorten",
         "date": "2025-06-04",
         "length": "64",
@@ -4155,6 +4204,7 @@
   },
     {
         "name": "Itsumade",
+        "id": "itsumade",
         "player": "CaveMelv",
         "date": "2025-06-09",
         "length": "188",
@@ -4226,6 +4276,7 @@
   },
     {
         "name": "COMBUSTION                             44%, 100%",
+        "id": "combustion-44-100",
         "player": "gotsmile",
         "date": "2025-06-01",
         "length": "80",
@@ -4265,6 +4316,7 @@
   },
     {
         "name": "Gay Acheron\n17-100%",
+        "id": "gay-acheron-17-100",
         "player": "turtl",
         "date": "2025-05-30",
         "length": "55",
@@ -4420,6 +4472,7 @@
   },
     {
         "name": "Heliopolis (Abdieldevil)\n15%",
+        "id": "heliopolis-abdieldevil-15",
         "player": "Abdieldevil",
         "date": "2025-07-15",
         "length": "16",
@@ -4508,6 +4561,7 @@
   },
     {
         "name": "VSC\n1.1x 46%",
+        "id": "vsc-11x-46",
         "player": "Nev",
         "date": "2022-10-09",
         "length": "7",
@@ -4567,6 +4621,7 @@
   },
     {
         "name": "Waterfall\n120hz Mobile",
+        "id": "waterfall-120hz-mobile",
         "player": "GameGuru",
         "date": "2025-05-31",
         "length": "97",
@@ -4575,6 +4630,7 @@
     },
     {
         "name": "Natural Disaster                        (Full Detail)",
+        "id": "natural-disaster-full-detail",
         "player": "Cobrablitz",
         "date": "2025-06-25",
         "length": "81",
@@ -4711,6 +4767,7 @@
   },
     {
         "name": "Sakupen Circles (Cursed)               44-70%",
+        "id": "sakpen-circles-cursed-44-70",
         "player": "Emp",
         "date": "2025-07-24",
         "length": "9",
@@ -4719,6 +4776,7 @@
     },
     {
         "name": "Heliopolis (Abdieldevil)\n10-25%",
+        "id": "heliopolis-abdieldevil-10-25",
         "player": "Abdieldevil",
         "date": "2025-07-15",
         "length": "16",
@@ -4915,6 +4973,7 @@
   },
     {
         "name": "Codependence                        48%, 100%",
+        "id": "codependence-48-100",
         "player": "Pukklez",
         "date": "2023-06-04",
         "length": "186",
@@ -4923,6 +4982,7 @@
     },
     {
         "name": "50",
+        "id": "50",
         "player": "MoonFrost",
         "date": "2024-09-23",
         "length": "5",
@@ -4946,6 +5006,7 @@
   },
     {
         "name": "Aeternus\n79-100%",
+        "id": "aeternus-79-100",
         "player": "Trick",
         "date": "2025-06-19",
         "length": "15",
@@ -5018,6 +5079,7 @@
   },
     {
         "name": "SUPERHATEMEWORLD            144hz Mobile 94%",
+        "id": "superhatemeworld-144hz-mobile-94",
         "player": "Zafsa",
         "date": "2025-07-20",
         "length": "72",
@@ -5106,6 +5168,7 @@
   },
     {
         "name": "Flashbang                                   28-78%",
+        "id": "flashbang-28-78",
         "player": "Noctal",
         "date": "2025-07-19",
         "length": "80",
@@ -5132,6 +5195,7 @@
   },
     {
         "name": "KOCMOC UNLEASHED Layout (Old) 41%",
+        "id": "kocmoc-unleashed-layout-old-41",
         "player": "Arshadow",
         "date": "2024-06-10",
         "length": "31",
@@ -5140,6 +5204,7 @@
     },
     {
         "name": "Snowblind                                   84%",
+        "id": "snowblind-84",
         "player": "Hippo",
         "date": "2025-07-13",
         "length": "47",
@@ -5164,6 +5229,7 @@
   },
     {
         "name": "Fragile\n60hz Mobile 93%",
+        "id": "fragile-60hz-mobile-93",
         "player": "ZAX1",
         "date": "2025-05-12",
         "length": "97",
@@ -5202,6 +5268,7 @@
   },
     {
         "name": "Azure Flare (polar)             25-47%",
+        "id": "azure-flare-polar-25-47",
         "player": "polar",
         "date": "2025-07-26",
         "length": "14",
@@ -5226,6 +5293,7 @@
   },
     {
         "name": "Silent clubstep (Old)                      11-65%",
+        "id": "silent-clubstep-old-11-65",
         "player": "Vision",
         "date": "2024-05-11",
         "length": "48",
@@ -5282,6 +5350,7 @@
   },
     {
         "name": "ReTraY WaVe\n39-74%",
+        "id": "retray-wave-39-74",
         "player": "Caleger",
         "date": "2025-04-13",
         "length": "7",
@@ -5290,6 +5359,7 @@
     },
     {
         "name": "Silent Circles\n1st Coin 27-51%",
+        "id": "silent-circles-1st-coin-27-51",
         "player": "SeptaGon7",
         "date": "2025-06-06",
         "length": "12",
@@ -5298,6 +5368,7 @@
     },
     {
         "name": "uskc 37-67 x2\n72%",
+        "id": "uskc-37-67-x2-72",
         "player": "Emp",
         "date": "2024-11-03",
         "length": "27",
@@ -5322,6 +5393,7 @@
   },
     {
         "name": "Tartarus                                            144hz",
+        "id": "tartarus-144hz",
         "player": "5shine",
         "date": "2023-07-09",
         "length": "87",
@@ -5330,6 +5402,7 @@
     },
     {
         "name": "Sakupen Circles (Cursed)               37-59%",
+        "id": "sakupen-circles-cursed-37-59",
         "player": "Emp",
         "date": "2025-07-24",
         "length": "11",
@@ -5371,6 +5444,7 @@
   },
     {
         "name": "⚠️Frigid Thrills\n38-86%",
+        "id": "frigid-thrills-38-86",
         "player": "zXdasfsa",
         "date": "2025-07-07",
         "length": "50",
@@ -5379,6 +5453,7 @@
     },
     {
         "name": "I N J U R Y\n18-81%",
+        "id": "i-n-j-u-r-y-18-81",
         "player": "zXdasfsa",
         "date": "2025-06-16",
         "length": "18",
@@ -5387,6 +5462,7 @@
     },
     {
         "name": "Gaggatrondra",
+        "id": "gaggatrondra",
         "player": "Zeronium",
         "date": "2025-02-09",
         "length": "61",
@@ -5395,6 +5471,7 @@
     },
     {
         "name": "The Salt Factory (Layout)               23-86%",
+        "id": "the-salt-factory-layout-23-86",
         "player": "nickname",
         "date": "2025-03-18",
         "length": "43",
@@ -5403,6 +5480,7 @@
     },
     {
         "name": "Moonflower",
+        "id": "moonflower",
         "player": "TFIBB",
         "date": "2023-11-25",
         "length": "300",
@@ -5411,6 +5489,7 @@
     },
     {
         "name": "Tartarus                                             46%, 100%",
+        "id": "tartarus-46-100",
         "player": "Zoink",
         "date": "2022-02-04",
         "length": "110",
@@ -5419,6 +5498,7 @@
     },
     {
         "name": "DEATHWISH",
+        "id": "deathwish",
         "player": "Wooshi",
         "date": "2025-03-15",
         "length": "74",
@@ -5427,6 +5507,7 @@
     },
     {
         "name": "Unnerfed Cobwebs\n85%",
+        "id": "unnerfed-cobwebs-85",
         "player": "Cursed",
         "date": "2022-07-24",
         "length": "25",
@@ -5435,6 +5516,7 @@
     },
     {
         "name": "Sonic Wave Infinity\n120hz Mobile 24-100%",
+        "id": "sonic-wave-infinity-120hz-mobile-24-100",
         "player": "Rotys",
         "date": "2025-07-05",
         "length": "100",
@@ -5443,6 +5525,7 @@
     },
     {
         "name": "Nightfall\n74%",
+        "id": "nightfall-74",
         "player": "nei",
         "date": "2025-07-01",
         "length": "30",
@@ -5451,6 +5534,7 @@
     },
     {
         "name": "Thinking Space II                      144hz Mobile 79-98%",
+        "id": "thinking-space-ii-144hz-mobile-79-98",
         "player": "VERTOP",
         "date": "2025-06-07",
         "length": "10",
@@ -5459,6 +5543,7 @@
     },
     {
         "name": "⚠️ The Catacombs",
+        "id": "the-catacombs",
         "player": "Slithium",
         "date": "2024-04-20",
         "length": "73",
@@ -5467,6 +5552,7 @@
     },
     {
         "name": "Silent AcropoliX                         51%",
+        "id": "silent-acropolix-51",
         "player": "SeptaGon7",
         "date": "2025-05-15",
         "length": "38",
@@ -5475,6 +5561,7 @@
     },
     {
         "name": "Netherix",
+        "id": "netherix",
         "player": "MostDefinitelyAlbert",
         "date": "2025-07-07",
         "length": "106",
@@ -5483,6 +5570,7 @@
     },
     {
         "name": "Bonus Level                                   41-100%",
+        "id": "bonus-level-41-100",
         "player": "nensa",
         "date": "2025-07-09",
         "length": "31",
@@ -5491,6 +5579,7 @@
     },
     {
         "name": "Bloodlust\n120hz Mobile",
+        "id": "bloodlust-120hz-mobile",
         "player": "Exectorr",
         "date": "2025-07-15",
         "length": "170",
@@ -5499,6 +5588,7 @@
     },
     {
         "name": "Edge of Destiny",
+        "id": "edge-of-destiny",
         "player": "polterghast",
         "date": "2023-03-09",
         "length": "126",
@@ -5507,6 +5597,7 @@
     },
     {
         "name": "Buffed Misanthrope\n24-66%",
+        "id": "buffed-misanthrope-24-66",
         "player": "BigMacGD",
         "date": "2025-02-10",
         "length": "117",
@@ -5515,6 +5606,7 @@
     },
     {
         "name": "mystic haze",
+        "id": "mystic-haze",
         "player": "seels",
         "date": "2024-01-29",
         "length": "28",
@@ -5523,6 +5615,7 @@
     },
     {
         "name": "Bonus Level                                 67%",
+        "id": "bonus-level-67",
         "player": "nensa",
         "date": "2025-07-12",
         "length": "33",
@@ -5531,6 +5624,7 @@
     },
     {
         "name": "Stercore",
+        "id": "stercore",
         "player": "anix",
         "date": "2022-06-12",
         "length": "14",
@@ -5539,6 +5633,7 @@
     },
     {
         "name": "Stellar Night",
+        "id": "stellar-night",
         "player": "Tuggy75",
         "date": "2022-08-29",
         "length": "63",
@@ -5547,6 +5642,7 @@
     },
     {
         "name": "kinesthetipendence\n51%",
+        "id": "kinesthetipendence-51",
         "player": "Aurorae",
         "date": "2025-04-09",
         "length": "44",
@@ -5555,6 +5651,7 @@
     },
     {
         "name": "Lithium                                      60hz Mobile 73%",
+        "id": "lithium-60hz-mobile-73",
         "player": "Archermence",
         "date": "2025-05-15",
         "length": "84",
@@ -5563,6 +5660,7 @@
     },
     {
         "name": "Sakupen Circles                        120hz Mobile 37-70%",
+        "id": "sakupen-circles-120hz-mobile-37-70",
         "player": "ROZE GD",
         "date": "2024-11-16",
         "length": "14",
@@ -5571,6 +5669,7 @@
     },
     {
         "name": "Codependence",
+        "id": "codependence",
         "player": "Pukklez",
         "date": "2023-06-04",
         "length": "125",
@@ -5579,6 +5678,7 @@
     },
     {
         "name": "Unnerfed Vehemence\n62-100%",
+        "id": "unnerfed-vehemence-62-100",
         "player": "Radium",
         "date": "2023-06-24",
         "length": "89",
@@ -5587,6 +5687,7 @@
     },
     {
         "name": "Invisible Wasureta\n17-100%",
+        "id": "invisible-wasureta-17-100",
         "player": "fanatic72",
         "date": "2025-07-12",
         "length": "47",
@@ -5595,6 +5696,7 @@
     },
     {
         "name": "Invisible Wasureta\n63%",
+        "id": "invisible-wasureta-63",
         "player": "Aqua",
         "date": "2024-08-22",
         "length": "35",
@@ -5603,6 +5705,7 @@
     },
     {
         "name": "Heavenly Sakupen\n22-100%",
+        "id": "heavenly-sakupen-22-100",
         "player": "Slithium",
         "date": "2024-07-10",
         "length": "31",
@@ -5611,6 +5714,7 @@
     },
     {
         "name": "riverlasting",
+        "id": "riverlasting",
         "player": "seels",
         "date": "2024-01-26",
         "length": "39",
@@ -5619,6 +5723,7 @@
     },
     {
         "name": "Firework\n1.1x 64%",
+        "id": "firework-11x-64",
         "player": "Trick",
         "date": "2022-02-20",
         "length": "67",
@@ -5627,6 +5732,7 @@
     },
     {
         "name": "Mayhem",
+        "id": "mayhem",
         "player": "LordVadercraft",
         "date": "2022-08-07",
         "length": "89",
@@ -5635,6 +5741,7 @@
     },
     {
         "name": "Firework (Bradenbowl)\n64%",
+        "id": "firework-bradenbowl-64",
         "player": "Bradenbowl",
         "date": "2021-12-12",
         "length": "73",
@@ -5643,6 +5750,7 @@
     },
     {
         "name": "MIGRAINE\n50%",
+        "id": "migraine-50",
         "player": "Hover",
         "date": "2025-07-07",
         "length": "42",
@@ -5651,6 +5759,7 @@
     },
     {
         "name": "walter white",
+        "id": "walter-white",
         "player": "iliLaserili",
         "date": "2022-07-02",
         "length": "124",
@@ -5659,6 +5768,7 @@
     },
     {
         "name": "mystic haze (Phonetic)\n72%",
+        "id": "mystic-haze-phonetic-72",
         "player": "Phonetic",
         "date": "2022-04-15",
         "length": "21",
@@ -5667,6 +5777,7 @@
     },
     {
         "name": "Vomit Rose",
+        "id": "vomit-rose",
         "player": "Dark Bear",
         "date": "2025-02-11",
         "length": "15",
@@ -5675,6 +5786,7 @@
     },
     {
         "name": "THE DEVIL (buffed)\n54-100%",
+        "id": "the-devil-buffed-54-100",
         "player": "Jenath",
         "date": "2025-04-14",
         "length": "24",
@@ -5683,6 +5795,7 @@
     },
     {
         "name": "Deadlier Clubstep",
+        "id": "deadlier-clubstep",
         "player": "Jenath",
         "date": "2023-10-20",
         "length": "104",
@@ -5691,6 +5804,7 @@
     },
     {
         "name": "THE DEVIL\n41-100%",
+        "id": "the-devil-41-100",
         "player": "Jenath",
         "date": "2025-03-02",
         "length": "28",
@@ -5699,6 +5813,7 @@
     },
     {
         "name": "⚠️ Riots Demise (noname old)      84%",
+        "id": "riots-demise-noname-old-84",
         "player": "noname228gg",
         "date": "2025-07-12",
         "length": "100",
@@ -5707,6 +5822,7 @@
     },
     {
         "name": "Silent Acropolis\n38%",
+        "id": "silent-acropolis-38",
         "player": "SeptaGon7",
         "date": "2025-04-13",
         "length": "34",
@@ -5715,6 +5831,7 @@
     },
     {
         "name": "surface (Old)\n55-86% + 55-89%",
+        "id": "surface-old-55-86-55-89",
         "player": "zXdasfsa",
         "date": "2024-09-10",
         "length": "18",
@@ -5723,6 +5840,7 @@
     },
     {
         "name": "Vomit Rose (Old)",
+        "id": "vomit-rose-old",
         "player": "Dark Bear",
         "date": "2024-05-31",
         "length": "15",
@@ -5731,6 +5849,7 @@
     },
     {
         "name": "THE DEVIL (buffed)\n37%",
+        "id": "the-devil-buffed-37",
         "player": "Jenath",
         "date": "2025-04-30",
         "length": "40",
@@ -5739,6 +5858,7 @@
     },
     {
         "name": "THE DEVIL (buffed)\n41-83%",
+        "id": "the-devil-buffed-41-83",
         "player": "Jenath",
         "date": "2025-07-03",
         "length": "43",
@@ -5747,6 +5867,7 @@
     },
     {
         "name": "⚠️ VSC Nev Finale X\n22%",
+        "id": "vsc-nev-finale-x-22",
         "player": "tricklength",
         "date": "2025-02-13",
         "length": "3",
@@ -5755,6 +5876,7 @@
     },
     {
         "name": "MIGRAINE\n48-100%",
+        "id": "migraine-48-100",
         "player": "Hover",
         "date": "2025-07-07",
         "length": "46",
@@ -5763,6 +5885,7 @@
     },
     {
         "name": "⚠️ Riots Demise (noname)",
+        "id": "riots-demise-noname",
         "player": "noname228gg",
         "date": "2025-07-17",
         "length": "113",
@@ -5771,6 +5894,7 @@
     },
     {
         "name": "qoUEO\n120hz Mobile",
+        "id": "qoueo-120hz-mobile",
         "player": "DENISKA",
         "date": "2025-07-21",
         "length": "52",
@@ -5779,6 +5903,7 @@
     },
     {
         "name": "⚠️ ad3us limit                          62%",
+        "id": "ad3us-limit-62",
         "player": "ad3usgmd",
         "date": "2025-06-17",
         "length": "33",
@@ -5787,6 +5912,7 @@
     },
     {
         "name": "PSYCHOPATH",
+        "id": "psychopath",
         "player": "BONN",
         "date": "2024-05-16",
         "length": "126",
@@ -5795,6 +5921,7 @@
     },
     {
         "name": "⚠️ lure in ohio",
+        "id": "lure-in-ohio",
         "player": "aytch0008",
         "date": "2024-06-15",
         "length": "59",
@@ -5803,6 +5930,7 @@
     },
     {
         "name": "The Yangire\n144%",
+        "id": "the-yangire-144",
         "player": "Thnnder",
         "date": "2024-10-29",
         "length": "214",
@@ -5811,6 +5939,7 @@
     },
     {
         "name": "The Yangire",
+        "id": "the-yangire",
         "player": "Dorami",
         "date": "2024-09-25",
         "length": "149",
@@ -5819,6 +5948,7 @@
     },
     {
         "name": "MUD\n54-100%",
+        "id": "mud-54-100",
         "player": "Cryonix",
         "date": "2024-10-03",
         "length": "44",
@@ -5827,6 +5957,7 @@
     },
     {
         "name": "Fragile\n60hz Mobile 24-96%",
+        "id": "fragile-60hz-mobile-24-96",
         "player": "ZAX1",
         "date": "2025-05-12",
         "length": "60",
@@ -5835,6 +5966,7 @@
     },
     {
         "name": "Bad Tr1p\n60%",
+        "id": "bad-tr1p-60",
         "player": "exsii",
         "date": "2025-02-01",
         "length": "36",
@@ -5843,6 +5975,7 @@
     },
     {
         "name": "Escalator (Swiborg)\n48-100%",
+        "id": "escalator-swiborg-48-100",
         "player": "swiborg",
         "date": "2024-08-09",
         "length": "39",
@@ -5851,6 +5984,7 @@
     },
     {
         "name": "FLEX",
+        "id": "flex",
         "player": "babapro",
         "date": "2025-03-05",
         "length": "10",
@@ -5859,6 +5993,7 @@
     },
     {
         "name": "⚠️ Azure Flare (polar)                      38%",
+        "id": "azure-flare-polar-38",
         "player": "polar",
         "date": "2025-07-21",
         "length": "25",
@@ -5867,6 +6002,7 @@
     },
     {
         "name": "Decks Dark",
+        "id": "decks-dark",
         "player": "Whizkid05",
         "date": "2023-10-24",
         "length": "133",
@@ -5875,6 +6011,7 @@
     },
     {
         "name": "3SH in Hell                                    60hz Mobile",
+        "id": "3sh-in-hell-60hz-mobile",
         "player": "cring",
         "date": "2022-08-19",
         "length": "12",
@@ -5883,6 +6020,7 @@
     },
     {
         "name": "3SH in Hell",
+        "id": "3sh-in-hell",
         "player": "UFokinWotM8",
         "date": "2020-05-17",
         "length": "12",
@@ -5891,6 +6029,7 @@
     },
     {
         "name": "SARYYX NEVER CLEAR",
+        "id": "saryyx-never-clear",
         "player": "skzyl",
         "date": "2023-10-29",
         "length": "97",
@@ -5899,6 +6038,7 @@
     },
     {
         "name": "Meltryllis Dance",
+        "id": "meltryllis-dance",
         "player": "Hyperlith",
         "date": "2021-08-05",
         "length": "28",
@@ -5907,6 +6047,7 @@
     },
     {
         "name": "Cannon Bay                                         120hz Mobile 34-92%",
+        "id": "cannon-bay-120hz-mobile-34-92",
         "player": "Que2Yo",
         "date": "2024-06-28",
         "length": "41",
@@ -5915,6 +6056,7 @@
     },
     {
         "name": "Fertane Never Clear",
+        "id": "fertane-never-clear",
         "player": "jeyk",
         "date": "2024-11-03",
         "length": "31",
@@ -5923,6 +6065,7 @@
     },
     {
         "name": "Collapse",
+        "id": "collapse",
         "player": "Nexel",
         "date": "2024-12-20",
         "length": "123",
@@ -5931,6 +6074,7 @@
     },
     {
         "name": "ORDINARY",
+        "id": "ordinary",
         "player": "wPopoff",
         "date": "2024-05-22",
         "length": "78",
@@ -5939,6 +6083,7 @@
     },
     {
         "name": "Firework (Pre-Balance)\n54%",
+        "id": "firework-pre-balance-54",
         "player": "Trick",
         "date": "2022-08-28",
         "length": "68",
@@ -5947,6 +6092,7 @@
     },
     {
         "name": "Chromium",
+        "id": "chromium",
         "player": "finleyy",
         "date": "2024-10-17",
         "length": "13",
@@ -5955,6 +6101,7 @@
     },
     {
         "name": "⚠️ Nullscapes                         60hz Mobile 18-51%",
+        "id": "nullscapes-60hz-mobile-18-51",
         "player": "Cookie",
         "date": "2025-07-22",
         "length": "35",
@@ -5963,6 +6110,7 @@
     },
     {
         "name": "The Plunge",
+        "id": "the-plunge",
         "player": "Gokill",
         "date": "2024-12-18",
         "length": "64",
@@ -5971,6 +6119,7 @@
     },
     {
         "name": "Rest in Peace                     29-100%",
+        "id": "rest-in-peace-29-100",
         "player": "Zytrox",
         "date": "2025-04-10",
         "length": "173",
@@ -5979,6 +6128,7 @@
     },
     {
         "name": "Falling Illusion",
+        "id": "falling-illusion",
         "player": "GMDomy",
         "date": "2022-08-15",
         "length": "29",
@@ -5987,6 +6137,7 @@
     },
     {
         "name": "BRITNEY NO SCLEARS            74%",
+        "id": "britney-no-sclears-74",
         "player": "Scotchtape",
         "date": "2025-06-05",
         "length": "58",
@@ -5995,6 +6146,7 @@
     },
     {
         "name": "Iridescent",
+        "id": "iridescent",
         "player": "serpentical",
         "date": "2025-07-23",
         "length": "59",
@@ -6003,6 +6155,7 @@
     },
     {
         "name": "Midnight",
+        "id": "midnight",
         "player": "nei",
         "date": "2023-11-02",
         "length": "66",
@@ -6011,6 +6164,7 @@
     },
     {
         "name": "Escalator (Swiborg)\n38-76%",
+        "id": "escalator-swiborg-38-76",
         "player": "swiborg",
         "date": "2024-08-09",
         "length": "25",
@@ -6019,6 +6173,7 @@
     },
     {
         "name": "RUST\n315%",
+        "id": "rust-315",
         "player": "Quivert",
         "date": "2024-03-22",
         "length": "263",
@@ -6027,6 +6182,7 @@
     },
     {
         "name": "Buffed Misanthrope\n12-52%",
+        "id": "buffed-misanthrope-12-52",
         "player": "BigMacGD",
         "date": "2025-06-13",
         "length": "109",
@@ -6035,6 +6191,7 @@
     },
     {
         "name": "Sinister Silence (Old)",
+        "id": "sinister-silence-old",
         "player": "DarkTD",
         "date": "2022-11-26",
         "length": "525",
@@ -6043,6 +6200,7 @@
     },
     {
         "name": "Sinister Silence",
+        "id": "sinister-silence",
         "player": "wwdonut",
         "date": "2023-08-03",
         "length": "525",
@@ -6051,6 +6209,7 @@
     },
     {
         "name": "Acheron 2.1                                  120hz Mobile 32%",
+        "id": "acheron-21-120hz-mobile-32",
         "player": "VERTOP",
         "date": "2023-08-14",
         "length": "24",
@@ -6059,6 +6218,7 @@
     },
     {
         "name": "GRIM",
+        "id": "grim",
         "player": "NucGDStuff",
         "date": "2024-07-30",
         "length": "19",
@@ -6067,6 +6227,7 @@
     },
     {
         "name": "Silent Oppenheimer\n36%",
+        "id": "silemt-oppenheimer-36",
         "player": "Destro",
         "date": "2025-02-19",
         "length": "40",
@@ -6075,6 +6236,7 @@
     },
     {
         "name": "Our Special Place",
+        "id": "our-special-place",
         "player": "D a G",
         "date": "2023-09-09",
         "length": "29",
@@ -6083,6 +6245,7 @@
     },
     {
         "name": "Old Blade of Justice\n21-81%",
+        "id": "old-blade-of-justice-21-81",
         "player": "AGSEcho",
         "date": "2024-09-22",
         "length": "73",
@@ -6091,6 +6254,7 @@
     },
     {
         "name": "Armageddon Tarnish C",
+        "id": "armageddon-tarnish-c",
         "player": "TFIBB",
         "date": "2025-05-13",
         "length": "46",
@@ -6099,6 +6263,7 @@
     },
     {
         "name": "Acheron 2.1                                  120hz Mobile 51-85%",
+        "id": "acheron-21-120hz-mobile-51-85",
         "player": "VERTOP",
         "date": "2023-04-30",
         "length": "24",
@@ -6107,6 +6272,7 @@
     },
     {
         "name": "arcturus",
+        "id": "arcturus",
         "player": "ultrakawaHD",
         "date": "2021-08-08",
         "length": "60",
@@ -6115,6 +6281,7 @@
     },
     {
         "name": "Firework (Fash)\n55-91%",
+        "id": "firework-fash-55-91",
         "player": "Fash",
         "date": "2023-07-17",
         "length": "45",
@@ -6123,6 +6290,7 @@
     },
     {
         "name": "Crystal Edge",
+        "id": "crystal-edge",
         "player": "UFokinWotM8",
         "date": "2021-07-13",
         "length": "68",
@@ -6131,6 +6299,7 @@
     },
     {
         "name": "Shukketsu\n120hz Mobile 87%",
+        "id": "shukketsu-120hz-mobile-87",
         "player": "fronly",
         "date": "2024-09-08",
         "length": "50",
@@ -6139,6 +6308,7 @@
     },
     {
         "name": "Aerial Gleam                              69%, 100%",
+        "id": "aerial-gleam-69-100",
         "player": "Cuatrocientos",
         "date": "2025-01-02",
         "length": "107",
@@ -6147,6 +6317,7 @@
     },
     {
         "name": "Firework\n75hz 45-100%",
+        "id": "firework-75hz-45-100",
         "player": "wwdonut",
         "date": "2023-12-18",
         "length": "69",
@@ -6155,6 +6326,7 @@
     },
     {
         "name": "Calculator Core\n75hz",
+        "id": "calculator-core-75hz",
         "player": "wwdonut",
         "date": "2022-04-29",
         "length": "204",
@@ -6163,6 +6335,7 @@
     },
     {
         "name": "THE DEVIL\n48%",
+        "id": "the-devil-48",
         "player": "Jenath",
         "date": "2025-03-02",
         "length": "31",
@@ -6171,6 +6344,7 @@
     },
     {
         "name": "ANTARCTIC LIGHTS\n49-100%",
+        "id": "antarctic-lights-49-100",
         "player": "Axinity",
         "date": "2024-03-22",
         "length": "27",
@@ -6179,6 +6353,7 @@
     },
     {
         "name": "Exasperation\n47-67%",
+        "id": "exasperation-47-67",
         "player": "Zoink",
         "date": "2025-03-02",
         "length": "58",
@@ -6187,6 +6362,7 @@
     },
     {
         "name": "Aerial Gleam (Unnerfed)",
+        "id": "aerial-gleam-unnerfed",
         "player": "Doggie",
         "date": "2022-04-26",
         "length": "65",
@@ -6195,6 +6371,7 @@
     },
     {
         "name": "Silent Oppenheimer\n57-100%",
+        "id": "silent-oppenheimer-57-100",
         "player": "Destro",
         "date": "2025-02-02",
         "length": "32",
@@ -6203,6 +6380,7 @@
     },
     {
         "name": "⚠️ Funky Amalgamation",
+        "id": "funky-amalgamation",
         "player": "turtl",
         "date": "2025-02-26",
         "length": "46",
@@ -6211,6 +6389,7 @@
     },
     {
         "name": "Escalator\n61-100%",
+        "id": "escalator-61-100",
         "player": "teraaa",
         "date": "2025-03-09",
         "length": "44",
@@ -6219,6 +6398,7 @@
     },
     {
         "name": "Spectrolux",
+        "id": "spectrolux",
         "player": "fusion425",
         "date": "2025-01-29",
         "length": "76",
@@ -6227,6 +6407,7 @@
     },
     {
         "name": "Silent Oppenheimer\n32-57%",
+        "id": "silent-oppenheimer-32-57",
         "player": "Destro",
         "date": "2025-01-14",
         "length": "30",
@@ -6235,6 +6416,7 @@
     },
     {
         "name": "Bad Tr1p\n25-100%",
+        "id": "bad-tr1p-25-100",
         "player": "exsii",
         "date": "2025-03-15",
         "length": "47",
@@ -6243,6 +6425,7 @@
     },
     {
         "name": "FINAL FLIGHT",
+        "id": "final-flight",
         "player": "Caleger",
         "date": "2024-04-27",
         "length": "10",
@@ -6251,6 +6434,7 @@
     },
     {
         "name": "⚠️ Femboy Friday                    99%",
+        "id": "femboy-friday-99",
         "player": "Infinny",
         "date": "2025-07-13",
         "length": "223",
@@ -6259,6 +6443,7 @@
     },
     {
         "name": "Sonic Wave\n60hz Mobile",
+        "id": "sonic-wave-60hz-mobile",
         "player": "Biprex",
         "date": "2021-11-18",
         "length": "121",
@@ -6267,6 +6452,7 @@
     },
     {
         "name": "Sonic Wave\n60hz",
+        "id": "sonic-wave-60hz",
         "player": "Galaxy",
         "date": "2021-07-14",
         "length": "121",
@@ -6275,6 +6461,7 @@
     },
     {
         "name": "BEELINE",
+        "id": "beeline",
         "player": "Motor8",
         "date": "2024-11-14",
         "length": "71",
@@ -6283,6 +6470,7 @@
     },
     {
         "name": "RUTHLESS Unnerfed ",
+        "id": "ruthless-unnerfed",
         "player": "LordVadercraft",
         "date": "2022-11-12",
         "length": "125",
@@ -6291,6 +6479,7 @@
     },
     {
         "name": "Ragnarok\n75hz",
+        "id": "ragnarok-75hz",
         "player": "wwdonut",
         "date": "2021-10-31",
         "length": "191",
@@ -6299,6 +6488,7 @@
     },
     {
         "name": "Levigo",
+        "id": "levigo",
         "player": "DragoonGD",
         "date": "2023-12-05",
         "length": "97",
@@ -6307,6 +6497,7 @@
     },
     {
         "name": "Sonic Wave Infinity (Pre-Nerf)\n82%",
+        "id": "sonic-wave-infinity-pre-nerf-82",
         "player": "Xanii",
         "date": "2021-05-28",
         "length": "121",
@@ -6315,6 +6506,7 @@
     },
     {
         "name": "Sonic Wave Infinity",
+        "id": "sonic-wave-infinity",
         "player": "Xanii",
         "date": "2021-05-30",
         "length": "148",
@@ -6323,6 +6515,7 @@
     },
     {
         "name": "Sonic Wave Infinity (Legacy)",
+        "id": "sonic-wave-infinity-legacy",
         "player": "Bigthunder556",
         "date": "2022-12-18",
         "length": "148",
@@ -6331,6 +6524,7 @@
     },
     {
         "name": "⚠️ ROCKBOTTOM",
+        "id": "rockbottom",
         "player": "ZazaGD",
         "date": "2025-07-02",
         "length": "64",
@@ -6339,6 +6533,7 @@
     },
     {
         "name": "⚠️ The Only Wish",
+        "id": "the-only-wish",
         "player": "VxMasTeR",
         "date": "2025-03-30",
         "length": "74",
@@ -6347,6 +6542,7 @@
     },
     {
         "name": "Tidal Wave                                   1.2x 77-95%",
+        "id": "tidal-wave-12x-77-95",
         "player": "Zoink",
         "date": "2025-04-14",
         "length": "22",
@@ -6355,6 +6551,7 @@
     },
     {
         "name": "Sigma\n60hz Mobile",
+        "id": "sigma-60hz-mobile",
         "player": "Biprex",
         "date": "2022-02-10",
         "length": "155",
@@ -6363,6 +6560,7 @@
     },
     {
         "name": "Exens limit                                  1.2x 58-100%",
+        "id": "exens-limit-12x-58-100",
         "player": "Skylar",
         "date": "2025-05-13",
         "length": "15",
@@ -6371,6 +6569,7 @@
     },
     {
         "name": "Hard Machine 2.1",
+        "id": "hard-machine-21",
         "player": "Varium",
         "date": "2021-08-19",
         "length": "77",
@@ -6379,6 +6578,7 @@
     },
     {
         "name": "Axinie                                          144hz Mobile 83%",
+        "id": "axinie-144hz-mobile-83",
         "player": "Mateex",
         "date": "2025-05-06",
         "length": "75",
@@ -6387,6 +6587,7 @@
     },
     {
         "name": "Kyouki\n1.1x 30-78%",
+        "id": "kyouki-11x-30-78",
         "player": "goldix",
         "date": "2024-08-13",
         "length": "37",
@@ -6395,6 +6596,7 @@
     },
     {
         "name": "Kyouki\n1.1x 49-93%",
+        "id": "kyouki-11x-49-93",
         "player": "goldix",
         "date": "2024-08-11",
         "length": "39",
@@ -6403,6 +6605,7 @@
     },
     {
         "name": "lobotomy\n37%",
+        "id": "lobotomy-37",
         "player": "SeptaGon7",
         "date": "2023-12-26",
         "length": "12",
@@ -6411,6 +6614,7 @@
     },
     {
         "name": "Bloodlust\n323%",
+        "id": "bloodlust-323",
         "player": "JesseGaming GD",
         "date": "2024-09-23",
         "length": "510",
@@ -6419,6 +6623,7 @@
     },
     {
         "name": "Aftermath v2",
+        "id": "aftermath-v2",
         "player": "Mewtwo557",
         "date": "2025-04-07",
         "length": "63",
@@ -6427,6 +6632,7 @@
     },
     {
         "name": "Sakupen Silhouette                            37-100%                                               2 deaths, 99.88 accuracy",
+        "id": "sakupen-silhouette-37-100-2-deaths-99-88-accuracy",
         "player": "sobot",
         "date": "2024-10-29",
         "length": "28",
@@ -6435,6 +6641,7 @@
     },
     {
         "name": "lava",
+        "id": "lava",
         "player": "seels",
         "date": "2025-04-20",
         "length": "14",
@@ -6443,6 +6650,7 @@
     },
     {
         "name": "⚠️ Tidal Wave                           60hz Mobile 72-100%",
+        "id": "tidal-wave-60hz-mobile-72-100",
         "player": "Cookie",
         "date": "2024-09-09",
         "length": "51",
@@ -6451,6 +6659,7 @@
     },
     {
         "name": "Old Orochi\n36-100%",
+        "id": "old-orochi-36-100",
         "player": "Diamond",
         "date": "2025-02-02",
         "length": "60",
@@ -6459,6 +6668,7 @@
     },
     {
         "name": "Waterfall\n153%",
+        "id": "waterfall-153",
         "player": "Zoink",
         "date": "2024-12-17",
         "length": "148",
@@ -6467,6 +6677,7 @@
     },
     {
         "name": "⚠️ Tidal Wave                          60hz Mobile 23-39%",
+        "id": "tidal-wave-60hz-mobile-23-39",
         "player": "Cookie",
         "date": "2024-09-09",
         "length": "25",
@@ -6475,6 +6686,7 @@
     },
     {
         "name": "Gamma\n60hz",
+        "id": "gamma-60hz",
         "player": "Samamba",
         "date": "2023-10-10",
         "length": "103",
@@ -6483,6 +6695,7 @@
     },
     {
         "name": "The Wonder of You (Unnerfed)\n79%",
+        "id": "the-wonder-of-you-unnerfed-79",
         "player": "Helix",
         "date": "2023-08-26",
         "length": "64",
@@ -6491,6 +6704,7 @@
     },
     {
         "name": "Congregation\n75hz",
+        "id": "congregation-75hz",
         "player": "wwdonut",
         "date": "2022-06-28",
         "length": "185",
@@ -6499,6 +6713,7 @@
     },
     {
         "name": "i n j u r y (Layout)\n1.25x 26-70% ",
+        "id": "i-n-j-u-r-y-layout-125x-26-70",
         "player": "zXdasfsa",
         "date": "2025-04-22",
         "length": "11",
@@ -6507,6 +6722,7 @@
     },
     {
         "name": "Buffbath",
+        "id": "buffbath",
         "player": "AGSEcho",
         "date": "2024-08-02",
         "length": "112",
@@ -6515,6 +6731,7 @@
     },
     {
         "name": "Jesse Pinkman\n60hz Mobile",
+        "id": "jesse-pinkman-60hz-mobile",
         "player": "Biprex",
         "date": "2022-12-10",
         "length": "72",
@@ -6523,6 +6740,7 @@
     },
     {
         "name": "Hard Machine\n75hz 48-100%",
+        "id": "hard-machine-75hz-48-100",
         "player": "wwdonut",
         "date": "2022-10-15",
         "length": "40",
@@ -6531,6 +6749,7 @@
     },
     {
         "name": "Hard Machine\n75hz 54%",
+        "id": "hard-machine-75hz-54",
         "player": "wwdonut",
         "date": "2023-02-04",
         "length": "41",
@@ -6539,6 +6758,7 @@
     },
     {
         "name": "Kenos\n120hz Mobile 27-100%",
+        "id": "kenos-120hz-mobile-27-100",
         "player": "DashY",
         "date": "2022-11-19",
         "length": "87",
@@ -6547,6 +6767,7 @@
     },
     {
         "name": "Silent Circles\n70%",
+        "id": "silent-circles-70",
         "player": "Dolphy",
         "date": "2021-11-14",
         "length": "80",
@@ -6555,6 +6776,7 @@
     },
     {
         "name": "Kenos\n120hz Mobile 20-92%",
+        "id": "kenos-120hz-mobile-20-92",
         "player": "DashY",
         "date": "2022-11-19",
         "length": "81",
@@ -6563,6 +6785,7 @@
     },
     {
         "name": "The Wonder of You",
+        "id": "the-wonder-of-you",
         "player": "Helix",
         "date": "2023-09-26",
         "length": "64",
@@ -6571,6 +6794,7 @@
     },
     {
         "name": "⚠️ Fully Invisible Paraballa\n24-74%",
+        "id": "fully-invisible-paraballa-24-74",
         "player": "MoonFrost",
         "date": "2024-09-28",
         "length": "7",
@@ -6579,6 +6803,7 @@
     },
     {
         "name": "Damascus",
+        "id": "damascus",
         "player": "Timo",
         "date": "2023-08-13",
         "length": "309",
@@ -6587,6 +6812,7 @@
     },
     {
         "name": "Fragile\n60hz Mobile 37-100%",
+        "id": "fragile-60hz-mobile-37-100",
         "player": "ZAX1",
         "date": "2025-05-14",
         "length": "60",
@@ -6595,6 +6821,7 @@
     },
     {
         "name": "SADOMASOCHISM\n1.1x 50%",
+        "id": "sadomasochism-11x-50",
         "player": "iblitzion",
         "date": "2025-02-17",
         "length": "8",
@@ -6603,6 +6830,7 @@
     },
     {
         "name": "Skystrike",
+        "id": "skystrike",
         "player": "fusion425",
         "date": "2025-01-16",
         "length": "81",
@@ -6611,6 +6839,7 @@
     },
     {
         "name": "Eternal Night\n63-100%",
+        "id": "eternal-night-63-100",
         "player": "Thnnder",
         "date": "2022-09-08",
         "length": "33",
@@ -6619,6 +6848,7 @@
     },
     {
         "name": "Eternal Flame",
+        "id": "eternal-flame",
         "player": "veshel",
         "date": "2024-08-26",
         "length": "37",
@@ -6627,6 +6857,7 @@
     },
     {
         "name": "Silent Clubstep II                          51-100%",
+        "id": "silent-clubstep-ii-51-100",
         "player": "SkittleCatastrophe",
         "date": "2025-06-27",
         "length": "35",
@@ -6635,6 +6866,7 @@
     },
     {
         "name": "Forsaken Frost\n88%",
+        "id": "forsaken-frost-88",
         "player": "Viwi",
         "date": "2024-10-05",
         "length": "80",
@@ -6643,6 +6875,7 @@
     },
     {
         "name": "E N D",
+        "id": "e-n-d",
         "player": "KARMAKAZE",
         "date": "2025-04-15",
         "length": "52",
@@ -6651,6 +6884,7 @@
     },
     {
         "name": "Widestep                                   60hz 68%",
+        "id": "widestep-60hz-68",
         "player": "Th3on3C",
         "date": "2025-03-31",
         "length": "52",
@@ -6659,6 +6893,7 @@
     },
     {
         "name": "Dreamopolis",
+        "id": "dreamopolis",
         "player": "Sirplus",
         "date": "2023-12-21",
         "length": "84",
@@ -6667,6 +6902,7 @@
     },
     {
         "name": "Kingdom of Miracalis (Layout)               58-100%",
+        "id": "kingdom-of-miracalis-layout-58-100",
         "player": "wPopoff",
         "date": "2023-04-01",
         "length": "49",
@@ -6675,6 +6911,7 @@
     },
     {
         "name": "abicto",
+        "id": "abicto",
         "player": "Raluca",
         "date": "2024-02-27",
         "length": "70",
@@ -6683,6 +6920,7 @@
     },
     {
         "name": "racketeering v3\n44-100%",
+        "id": "racketeering-v3-44-100",
         "player": "seels",
         "date": "2025-01-25",
         "length": "10",
@@ -6691,6 +6929,7 @@
     },
     {
         "name": "Silent Clubstep II                          18-37%",
+        "id": "silent-clubstep-ii-18-37",
         "player": "SkittleCatastrophe",
         "date": "2025-07-18",
         "length": "16",
@@ -6699,6 +6938,7 @@
     },
     {
         "name": "VENUS",
+        "id": "venus",
         "player": "SeazeIsCool",
         "date": "2023-03-04",
         "length": "11",
@@ -6707,6 +6947,7 @@
     },
     {
         "name": "Firework (Kurumi)\n68%",
+        "id": "firework-kurumi-68",
         "player": "Kurumi",
         "date": "2020-12-30",
         "length": "86",
@@ -6715,6 +6956,7 @@
     },
     {
         "name": "Waterfall",
+        "id": "waterfall",
         "player": "LordVadercraft",
         "date": "2024-10-11",
         "length": "97",
@@ -6723,6 +6965,7 @@
     },
     {
         "name": "Acheron                                    144hz Mobile 68-100%",
+        "id": "acheron-144hz-mobile-68-100",
         "player": "MAXDASH07",
         "date": "2024-11-11",
         "length": "21",
@@ -6731,6 +6974,7 @@
     },
     {
         "name": "Kuzureta\n60hz Mobile",
+        "id": "kuzureta-60hz-mobile",
         "player": "Hydrus73",
         "date": "2025-04-11",
         "length": "69",
@@ -6739,6 +6983,7 @@
     },
     {
         "name": "Kuzureta\n60hz",
+        "id": "kuzureta-60hz",
         "player": "Ikarya",
         "date": "2024-02-28",
         "length": "69",
@@ -6747,6 +6992,7 @@
     },
     {
         "name": "Widestep                                   60hz 31-91%",
+        "id": "widestep-60hz-31-91",
         "player": "Th3on3C",
         "date": "2025-03-31",
         "length": "52",
@@ -6755,6 +7001,7 @@
     },
     {
         "name": "Silent Clubstep II                          24%",
+        "id": "silent-clubstep-ii-24",
         "player": "SkittleCatastrophe",
         "date": "2025-07-16",
         "length": "25",
@@ -6763,6 +7010,7 @@
     },
     {
         "name": "Sweeping Demon 2 (Taiago)\n49-91%",
+        "id": "sweeping-demon-2-taiago-49-91",
         "player": "Taiago",
         "date": "2025-07-22",
         "length": "28",
@@ -6771,6 +7019,7 @@
     },
     {
         "name": "Coalescence",
+        "id": "coalescence",
         "player": "Amplitron",
         "date": "2024-08-05",
         "length": "93",
@@ -6779,6 +7028,7 @@
     },
     {
         "name": "The Salt Factory (Layout)               54-100%",
+        "id": "the-salt-factory-layout-54-100",
         "player": "nickname",
         "date": "2024-06-01",
         "length": "43",
@@ -6787,6 +7037,7 @@
     },
     {
         "name": "NEUTRA\n120hz Mobile 16-80%",
+        "id": "neutra-120hz-mobile-16-80",
         "player": "DENISKA",
         "date": "2024-09-18",
         "length": "40",
@@ -6795,6 +7046,7 @@
     },
     {
         "name": "xo\n60hz Mobile",
+        "id": "xo-60hz-mobile",
         "player": "pigchefer",
         "date": "2021-03-26",
         "length": "157",
@@ -6803,6 +7055,7 @@
     },
     {
         "name": "Riots Demise (Nerfed)\n99%",
+        "id": "riots-demise-nerfed-99",
         "player": "noname228gg",
         "date": "2024-12-02",
         "length": "111",
@@ -6811,6 +7064,7 @@
     },
     {
         "name": "Crystal Crusher",
+        "id": "crystal-crusher",
         "player": "GuitGuit",
         "date": "2025-01-13",
         "length": "62",
@@ -6819,6 +7073,7 @@
     },
     {
         "name": "ZAPHKIEL\n60hz",
+        "id": "zaphkiel-60hz",
         "player": "Sevant",
         "date": "2024-08-13",
         "length": "76",
@@ -6827,6 +7082,7 @@
     },
     {
         "name": "⚠️ Blooming Blossoms                             67%",
+        "id": "blooming-blossoms-67",
         "player": "piesy",
         "date": "2025-07-12",
         "length": "65",
@@ -6835,6 +7091,7 @@
     },
     {
         "name": "Aronia\n60hz Mobile",
+        "id": "aronia-60hz-mobile",
         "player": "Biprex",
         "date": "2021-08-18",
         "length": "79",
@@ -6843,6 +7100,7 @@
     },
     {
         "name": "Aronia\n60hz",
+        "id": "aronia-60hz",
         "player": "Lavaclaw",
         "date": "2021-02-21",
         "length": "79",
@@ -6851,6 +7109,7 @@
     },
     {
         "name": "Slaughterhouse (Buffed) 60-100%",
+        "id": "slaughterhouse-buffed-60-100",
         "player": "Doggie",
         "date": "2025-02-21",
         "length": "24",
@@ -6859,6 +7118,7 @@
     },
     {
         "name": "Tremor\n55%",
+        "id": "tremor-55",
         "player": "VoltrixAce",
         "date": "2024-07-01",
         "length": "10",
@@ -6867,6 +7127,7 @@
     },
     {
         "name": "Gumi\n86%",
+        "id": "gumi-86",
         "player": "Thnnder",
         "date": "2025-07-19",
         "length": "40",
@@ -6908,6 +7169,7 @@
     },
     {
         "name": "Snowblind (old)                            59%",
+        "id": "snowblind-old-59",
         "player": "Hippo",
         "date": "2025-05-13",
         "length": "36",
@@ -6916,6 +7178,7 @@
     },
     {
         "name": "Cimmerian Shade                         142%",
+        "id": "cimmerian-shade-142",
         "player": "Zoink",
         "date": "2025-06-06",
         "length": "120",
@@ -6968,6 +7231,7 @@
     },
     {
         "name": "UNKNOWN                               46%, 100%",
+        "id": "unknown-46-100",
         "player": "Litoks",
         "date": "2025-04-26",
         "length": "63",
@@ -6976,6 +7240,7 @@
     },
     {
         "name": "Trueffet                                      41%, 100%",
+        "id": "trueffet-41-100",
         "player": "Cursed",
         "date": "2022-02-05",
         "length": "92",
@@ -7000,6 +7265,7 @@
     },
     {
         "name": "Subterminal buffed                    23-60%",
+        "id": "subterminal-buffed-23-60",
         "player": "ChopBlox",
         "date": "2025-05-23",
         "length": "21",
@@ -7105,6 +7371,7 @@
     },
     {
         "name": "Mayhem                                        144hz Mobile 43-100%",
+        "id": "mayhem-144hz-mobile-43-100",
         "player": "Mateex",
         "date": "2025-06-04",
         "length": "40",
@@ -7113,6 +7380,7 @@
     },
     {
         "name": "Renevant                                     120hz Mobile",
+        "id": "renevant-120hz-mobile",
         "player": "SoulRise",
         "date": "2025-05-16",
         "length": "98",
@@ -7121,6 +7389,7 @@
     },
     {
         "name": "Calculator Core\n120hz Mobile",
+        "id": "calculator-core-120hz-mobile",
         "player": "Prmak",
         "date": "2025-07-07",
         "length": "204",
@@ -7144,6 +7413,7 @@
     },
     {
         "name": "Lunatic Eyes",
+        "id": "lunatic-eyes",
         "player": "DNM121",
         "date": "2025-07-23",
         "length": "86",
@@ -7245,6 +7515,7 @@
     },
     {
         "name": "Cerulean GR",
+        "id": "cerulean-gr",
         "player": "Xyhil",
         "date": "2021-08-29",
         "length": "4",
@@ -7267,6 +7538,7 @@
     },
     {
         "name": "Frigid Thrills (Layout)\n37-63%",
+        "id": "frigid-thrills-layout-37-63",
         "player": "zXdasfsa",
         "date": "2025-06-21",
         "length": "26",
@@ -7275,6 +7547,7 @@
     },
     {
         "name": "Delta",
+        "id": "delta",
         "player": "Doggie",
         "date": "2023-08-30",
         "length": "145",
@@ -7315,6 +7588,7 @@
     },
     {
         "name": "Gumi\n32-96%",
+        "id": "gumi-32-96",
         "player": "lolwut",
         "date": "2025-07-19",
         "length": "30",
@@ -7323,6 +7597,7 @@
     },
     {
         "name": "Erebus\n60hz Mobile",
+        "id": "erebus-60hz-mobile",
         "player": "Biprex",
         "date": "2021-10-10",
         "length": "70",
@@ -7366,6 +7641,7 @@
     },
     {
         "name": "Peaceful Mode",
+        "id": "peaceful-mode",
         "player": "SoggyDash",
         "date": "2025-06-18",
         "length": "45",
@@ -7374,6 +7650,7 @@
     },
     {
         "name": "⚠️ Glass Chapel (Layout)                      65-100%",
+        "id": "glass-chapel-layout-65-100",
         "player": "iliLaserili",
         "date": "2025-07-09",
         "length": "68",
@@ -7398,6 +7675,7 @@
     },
     {
         "name": "Sakupen Circles fi (TrotskyGD)",
+        "id": "sakupen-circles-fi-trotskygd",
         "player": "Brian_Cheese",
         "date": "2025-06-12",
         "length": "50",
@@ -7435,6 +7713,7 @@
     },
     {
         "name": "Verdant Landscape                     120hz Mobile 44-86%",
+        "id": "verdant-landscape-120hz-mobile-44-86",
         "player": "Que2Yo",
         "date": "2024-11-23",
         "length": "44",
@@ -7474,6 +7753,7 @@
     },
     {
         "name": "UNKNOWN                              86-96% + 86-97% + 86-100% x6 + 86-96%",
+        "id": "unknown-86-96-86-97-86-100-x6-86-96",
         "player": "Clarelol",
         "date": "2025-06-14",
         "length": "44",
@@ -7482,6 +7762,7 @@
     },
     {
         "name": "BPATA MPAKA",
+        "id": "bpata-mpaka",
         "player": "Maybee",
         "date": "2024-10-26",
         "length": "107",
@@ -7505,6 +7786,7 @@
     },
     {
         "name": "Cimmerian Shade",
+        "id": "cimmerian-shade",
         "player": "spcreat",
         "date": "2023-08-12",
         "length": "77",
@@ -7513,6 +7795,7 @@
     },
     {
         "name": "Disturb",
+        "id": "disturb",
         "player": "fusion425",
         "date": "2025-05-15",
         "length": "70",
@@ -7598,6 +7881,7 @@
     },
     {
         "name": "Sweeping Demon 2 (Taiago)\n43%",
+        "id": "sweeping-demon-2-taiago-43",
         "player": "Taiago",
         "date": "2025-07-13",
         "length": "38",
@@ -7642,6 +7926,7 @@
     },
     {
         "name": "Sweeping Demon 2\n59-100%",
+        "id": "sweeping-demon-2-59-100",
         "player": "Helix",
         "date": "2022-09-10",
         "length": "29",
@@ -7650,6 +7935,7 @@
     },
     {
         "name": "Sweeping Demon 2 (Taiago)\n59-100%",
+        "id": "sweeping-demon-2-taiago-59-100",
         "player": "Taiago",
         "date": "2025-07-12",
         "length": "28",
@@ -7658,6 +7944,7 @@
     },
     {
         "name": "Viprin UFO",
+        "id": "viprin-ufo",
         "player": "TheGoldenBo",
         "date": "2024-06-30",
         "length": "97",
@@ -7666,6 +7953,7 @@
     },
     {
         "name": "Sweeping Demon II\n47-74%",
+        "id": "sweeping-demon-2-47-74",
         "player": "Bradenbowl",
         "date": "2025-01-16",
         "length": "19",
@@ -7690,6 +7978,7 @@
     },
     {
         "name": "Sweeping Demon 2 (Thnnder) 59-92%",
+        "id": "sweeping-demon-2-thnnder-59-92",
         "player": "Thnnder",
         "date": "2022-07-20",
         "length": "22",
@@ -7785,6 +8074,7 @@
     },
     {
         "name": "Checked Steam                           45%, 100%",
+        "id": "checked-steam-45-100",
         "player": "Zoink",
         "date": "2024-09-10",
         "length": "100",
@@ -7853,6 +8143,7 @@
     },
     {
         "name": "last stop                                   49%",
+        "id": "last-stop-49",
         "player": "aytch0008",
         "date": "2023-08-31",
         "length": "11",
@@ -7861,6 +8152,7 @@
     },
     {
         "name": "Katarsis",
+        "id": "katarsis",
         "player": "LordVadercraft",
         "date": "2025-05-18",
         "length": "304",
@@ -7869,6 +8161,7 @@
     },
     {
         "name": "last memory is dead                          70%",
+        "id": "last-memory-is-dead-70",
         "player": "Thnnder",
         "date": "2025-06-17",
         "length": "33",
@@ -7877,6 +8170,7 @@
     },
     {
         "name": "Fracture",
+        "id": "fracture",
         "player": "Dezstro",
         "date": "2025-06-02",
         "length": "85",
@@ -8023,6 +8317,7 @@
     },
     {
         "name": "Exens limit                                    1.2x 53%",
+        "id": "exens-limit-12x-53",
         "player": "Skylar",
         "date": "2025-05-13",
         "length": "24",
@@ -8112,6 +8407,7 @@
     },
     {
         "name": "Delusion                                       144hz Mobile",
+        "id": "delusion-144hz-mobile",
         "player": "ATaMAn",
         "date": "2024-04-26",
         "length": "15",
@@ -8154,6 +8450,7 @@
     },
     {
         "name": "⚠️ Oblivion\n60hz Mobile 49-100%",
+        "id": "oblivion-60hz-mobile-49-100",
         "player": "Bigthunder556",
         "date": "2022-06-27",
         "length": "31",
@@ -8192,6 +8489,7 @@
     },
     {
         "name": "SWI Slithium Version                          45-93%",
+        "id": "swi-slithium-version-45-93",
         "player": "Jevan",
         "date": "2025-07-21",
         "length": "42",
@@ -8214,6 +8512,7 @@
     },
     {
         "name": "ORDINARY                                                Mobile 120hz 49%",
+        "id": "hazard",
         "player": "Mobileplayer0623",
         "date": "2025-04-24",
         "length": "37",
@@ -8237,6 +8536,7 @@
     },
     {
         "name": "⚠️ Zodiac\n60hz Mobile 58%",
+        "id": "zodiac-60hz-mobile-58",
         "player": "Bigthunder556",
         "date": "2024-11-02",
         "length": "124",
@@ -8341,6 +8641,7 @@
     },
     {
         "name": "⚠️ Zodiac\n60hz Mobile 54-100%",
+        "id": "zodiac-60hz-mobile-54-100",
         "player": "Bigthunder556",
         "date": "2024-11-17",
         "length": "124",
@@ -8396,6 +8697,7 @@
     },
     {
         "name": "Eudemonic                                    62-100%",
+        "id": "eudemonic-62-100",
         "player": "seels",
         "date": "2025-07-12",
         "length": "53",
@@ -8404,6 +8706,7 @@
     },
     {
         "name": "HAZARD",
+        "id": "hazard",
         "player": "finleyy",
         "date": "2025-03-25",
         "length": "16",
@@ -8426,6 +8729,7 @@
     },
     {
         "name": "Henken",
+        "id": "henken",
         "player": "Gokill",
         "date": "2022-06-03",
         "length": "76",
@@ -8434,6 +8738,7 @@
     },
     {
         "name": "Eudemonic                                   60%",
+        "id": "eudemonic-60",
         "player": "seels",
         "date": "2025-07-10",
         "length": "81",
@@ -8458,6 +8763,7 @@
     },
     {
         "name": "⚠️ The Golden                           60hz Mobile 49-82%",
+        "id": "the-golden-60hz-mobile-49-82",
         "player": "Bigthunder556",
         "date": "2023-05-31",
         "length": "25",
@@ -8466,6 +8772,7 @@
     },
     {
         "name": "surface (old)\n22%, 24%, 22%",
+        "id": "surface-old-22-24-22",
         "player": "zXdasfsa",
         "date": "2024-09-29",
         "length": "21",
@@ -8584,6 +8891,7 @@
     },
     {
         "name": "THE JET ENGINE",
+        "id": "the-jet-engine",
         "player": "eviljoe",
         "date": "2025-07-15",
         "length": "86",
@@ -8637,6 +8945,7 @@
     },
     {
         "name": "Slaughterhouse (noxell)    23-75%",
+        "id": "slaughterhouse-noxell-23-75",
         "player": "noxell",
         "date": "2025-05-29",
         "length": "28",
@@ -8817,6 +9126,7 @@
     },
     {
         "name": "FAIRY KNIFE HELL\n42-59%",
+        "id": "fairy-knife-hell-42-59",
         "player": "enzollz",
         "date": "2025-04-25",
         "length": "40",
@@ -8841,6 +9151,7 @@
     },
     {
         "name": "Slaughterhouse (noxell)   45-100%",
+        "id": "slaughterhouse-noxell-45-100",
         "player": "noxell",
         "date": "2025-05-29",
         "length": "31",
@@ -8911,6 +9222,7 @@
     },
     {
         "name": "⚠️ The Golden                           120hz Mobile 49-84%",
+        "id": "the-golden-120hz-mobile-49-84",
         "player": "Abstract",
         "date": "2025-05-24",
         "length": "26",
@@ -8919,6 +9231,7 @@
     },
     {
         "name": "ConClusion                              120hz Mobile",
+        "id": "conclusion-120hz-mobile",
         "player": "Que2Yo",
         "date": "2025-07-04",
         "length": "85",
@@ -9002,6 +9315,7 @@
     },
     {
         "name": "CITRA                                         60hz 73%",
+        "id": "citra-60hz-73",
         "player": "Clock0822",
         "date": "2025-05-27",
         "length": "28",
@@ -9148,6 +9462,7 @@
     },
     {
         "name": "⚠️ Labyrinth\n61-100%",
+        "id": "labyrinth-61-100",
         "player": "HamiltonHqmy",
         "date": "2025-03-01",
         "length": "30",
@@ -9170,6 +9485,7 @@
     },
     {
         "name": "⚠️ Apocalyptic Trilogy (Old)      39-100%",
+        "id": "apocalyptic-trilogy-old-39-100",
         "player": "ViZeris",
         "date": "2025-01-24",
         "length": "172",
@@ -9271,6 +9587,7 @@
     },
     {
         "name": "Wavterminal\n74%",
+        "id": "wavterminal-74",
         "player": "Frice",
         "date": "2025-06-04",
         "length": "70",
@@ -9338,6 +9655,7 @@
     },
     {
         "name": "IT MEANS EVERYTHING\n54-80%",
+        "id": "it-means-everything-54-80",
         "player": "Vel",
         "date": "2025-05-16",
         "length": "16",
@@ -9651,6 +9969,7 @@
     },
     {
         "name": "Unnerfed Diabolic ClubStep 74%",
+        "id": "unnerfed-diabolic-clubstep-74",
         "player": "Sevant",
         "date": "2025-06-17",
         "length": "67",
@@ -9783,6 +10102,7 @@
     },
     {
         "name": "limbo but uwu ig idk",
+        "id": "limbo-but-uwu-ig-idk",
         "player": "ViperVenom95",
         "date": "2024-10-02",
         "length": "89",
@@ -9855,6 +10175,7 @@
     },
     {
         "name": "Sonic Wave                                1.5x 28-96%",
+        "id": "sonic-wave-15x-28-96",
         "player": "HipoAR",
         "date": "2024-07-01",
         "length": "52",
@@ -9897,6 +10218,7 @@
     },
     {
         "name": "Unnerfed Diabolic ClubStep 42-100%",
+        "id": "unnerfed-diabolic-clubstep-42-100",
         "player": "Sevant",
         "date": "2025-06-07",
         "length": "51",
@@ -9905,6 +10227,7 @@
     },
     {
         "name": "Trueffet                                         64%, 38%, 37%, 66%",
+        "id": "trueffet-64-38-37-66",
         "player": "Mental",
         "date": "2025-05-16",
         "length": "158",
@@ -9945,6 +10268,7 @@
     },
     {
         "name": "Spectrum Cyclone                       60hz Mobile 28-100%",
+        "id": "spectrum-cyclone-60hz-mobile-28-100",
         "player": "Cedric22",
         "date": "2025-07-22",
         "length": "85",
@@ -9985,6 +10309,7 @@
     },
     {
         "name": "⚠️IT MEANS EVERYTHING\n65-100%",
+        "id": "it-means-everything-65-100",
         "player": "Vel",
         "date": "2025-05-16",
         "length": "24",
@@ -10010,6 +10335,7 @@
     },
     {
         "name": "⚠️ Cobwebs                                 144hz Mobile",
+        "id": "cobwebs-144hz-mobile",
         "player": "sitzukii",
         "date": "2025-07-14",
         "length": "30",
@@ -10067,6 +10393,7 @@
     },
     {
         "name": "⚠️Storming Summit\n60hz Mobile 64%",
+        "id": "storming-summit-60hz-mobile-64",
         "player": "Hydrus73",
         "date": "2024-05-17",
         "length": "106",
@@ -10093,6 +10420,7 @@
     },
     {
         "name": "FACESHOPPING                         95%, 96%",
+        "id": "faceshopping-95-96",
         "player": "HipoAR",
         "date": "2024-09-15",
         "length": "120",
@@ -10149,6 +10477,7 @@
     },
     {
         "name": "Thinking Space                                      85%, 100%",
+        "id": "thinking-space-85-100",
         "player": "zLevii",
         "date": "2025-07-11",
         "length": "140",
@@ -10219,6 +10548,7 @@
     },
     {
         "name": "Plasma Pulse Finale\n60hz",
+        "id": "plasma-pulse-finale-60hz",
         "player": "Luqualizer",
         "date": "2020-06-21",
         "length": "127",
@@ -10244,6 +10574,7 @@
     },
     {
         "name": "Fate",
+        "id": "fate",
         "player": "Paranoiac",
         "date": "2025-04-19",
         "length": "97",
@@ -10252,6 +10583,7 @@
     },
     {
         "name": "⚠️Benevolence                                      50%",
+        "id": "benevolence-50",
         "player": "Caleger",
         "date": "2025-06-05",
         "length": "6",
@@ -10321,6 +10653,7 @@
     },
     {
         "name": "poocubed                              120hz Mobile 19-55%",
+        "id": "poocubed-120hz-mobile-19-55",
         "player": "DENISKA",
         "date": "2025-06-04",
         "length": "30",
@@ -10360,6 +10693,7 @@
     },
     {
         "name": "⚠️Benevolence                                      19-100%",
+        "id": "benevolence-19-100",
         "player": "Caleger",
         "date": "2025-06-05",
         "length": "11",
@@ -10368,6 +10702,7 @@
     },
     {
         "name": "Silent Circles (skeletonlol)                27-70%                                                7 deaths, 99.66 accuracy",
+        "id": "silent-circles-skeletonlol-27-70-7-deaths-99-66-accuracy",
         "player": "tricklength",
         "date": "2025-02-28",
         "length": "25",
@@ -10391,14 +10726,26 @@
     },
     {
         "name": "poocubed                              120hz Mobile 33%",
+        "id": "poocubed-120hz-mobile-33",
         "player": "DENISKA",
+        "levelID": "85133223",
         "date": "2025-06-09",
         "length": "32",
         "version": "2.2",
-        "levelID": "85133223"
+        "video": "https://youtu.be/KOzXPZJQEOY?si=SZ7VUwMPn0jaMNBu",
+        "showcaseVideo": "https://www.youtube.com/watch?v=WM1KcNGkP08",
+        "submitter": "kyle1saurus",
+        "tags": [
+            "Level",
+            "Low Hertz",
+            "Mobile",
+            "Progress",
+            "Rated"
+        ]
     },
     {
         "name": "Lust\n57%",
+        "id": "lust-57",
         "player": "DenseCabbage",
         "date": "2025-07-04",
         "length": "11",
