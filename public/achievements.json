@@ -891,6 +891,15 @@
     ]
   },
   {
+    "name": "Heliopolis 17%",
+    "id": "heliopolis-17",
+    "player": "Thnnder",
+    "date": "2024-11-15",
+    "length": "20",
+    "version": "2.2",
+    "levelID": "N/A"
+  },
+  {
     "name": "FLAMEWALL 37-100%",
     "id": "flamewall-37-100",
     "player": "Cuatrocientos",
@@ -905,6 +914,22 @@
     "version": "2.2",
     "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg",
     "submitter": "kyle1saurus"
+  },
+  {
+    "name": "Heliopolis (Abdieldevil) 19%",
+    "id": "heliopolis-abdieldevil-19",
+    "player": "Abdieldevil",
+    "date": "2025-07-27",
+    "length": "19",
+    "version": "2.2",
+    "levelID": "N/A",
+    "video": "https://youtu.be/l4wL_SFA9As",
+    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw?si=QpUgAYG7dbF74qln",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Blue Avernus 88%",
@@ -3731,15 +3756,6 @@
     ]
   },
   {
-    "name": "Heliopolis\n17%",
-    "id": "heliopolis-17",
-    "player": "Thnnder",
-    "date": "2024-11-15",
-    "length": "20",
-    "version": "2.2",
-    "levelID": "N/A"
-  },
-  {
     "name": "NOMAD",
     "id": "nomad",
     "player": "Laniakea",
@@ -4477,15 +4493,6 @@
       "Progress",
       "Rated"
     ]
-  },
-  {
-    "name": "Heliopolis (Abdieldevil)\n15%",
-    "id": "heliopolis-abdieldevil-15",
-    "player": "Abdieldevil",
-    "date": "2025-07-15",
-    "length": "16",
-    "version": "2.2",
-    "levelID": "N/A"
   },
   {
     "name": "Trueffet 144hz Mobile 74%",
@@ -6495,6 +6502,22 @@
     "levelID": "55624478"
   },
   {
+    "name": "Climax",
+    "id": "climax",
+    "player": "Wain",
+    "levelID": 95049815,
+    "date": "2023-10-02",
+    "length": 67,
+    "version": 2.1,
+    "submitter": "Anceps",
+    "video": "https://youtu.be/E4ppq2WeAAs",
+    "showcaseVideo": "https://youtu.be/SrwxNt0MLFQ",
+    "tags": [
+      "Level",
+      "Rated"
+    ]
+  },
+  {
     "name": "Levigo",
     "id": "levigo",
     "player": "DragoonGD",
@@ -7427,22 +7450,6 @@
     "length": "86",
     "version": "2.2",
     "levelID": "N/A"
-  },
-  {
-    "name": "Climax",
-    "id": "climax",
-    "player": "Wain",
-    "levelID": 95049815,
-    "date": "2023-10-02",
-    "length": 67,
-    "version": 2.1,
-    "submitter": "Anceps",
-    "video": "https://youtu.be/E4ppq2WeAAs",
-    "showcaseVideo": "https://youtu.be/SrwxNt0MLFQ",
-    "tags": [
-      "Level",
-      "Rated"
-    ]
   },
   {
     "name": "Death Corridor Easy 64%",
