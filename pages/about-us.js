@@ -36,7 +36,7 @@ export default function AboutUs() {
             <h3>List Editors</h3>
             <ul>
               <li><strong>Anceps</strong></li>
-              <li><strong>Brachiozaur</strong></li>
+              <li><strong>Arcadie</strong></li>
               <li><strong>kyle1saurus</strong></li>
             </ul>
             <h3>Tag Definitions</h3>
@@ -91,31 +91,42 @@ export default function AboutUs() {
             </section>
             <section style={{marginBottom: '1.5em'}}>
               <h4><b>Consistency</b></h4>
-              <div style={{marginBottom:'0.7em'}}>
-                <b>Significant Difficulty Increase:</b> A consistency achievement must represent a <u>clear and substantial increase in difficulty</u> compared to the standard execution of the level.
-              </div>
-              <div style={{marginBottom:'0.7em'}}>
-                <b>One Achievement Per Level:</b> Only one consistency achievement may be active per level at any given time.
-              </div>
-              <div style={{marginBottom:'0.7em'}}>
-                <b>Achievement Replacement:</b> If a new consistency achievement is validated as more difficult than the current one, it will replace the existing achievement. Submissions that are less difficult than the current achievement will not be accepted.
-              </div>
-              <div style={{marginBottom:'0.7em'}}>
-                <b>Allowed Actions:</b> The following actions are permitted during attempts, provided they aren’t meaningful attempts:
-                <ul style={{marginLeft:'1.2em', marginTop:'0.3em'}}>
-                  <li>Re-entering the level</li>
-                  <li>Restarting</li>
-                  <li>Switching start positions</li>
-                  <li>Filler deaths (e.g., No clicking, random clicking)</li>
-                </ul>
-              </div>
-              <div style={{marginBottom:'0.7em'}}>
-                <b>Performance Threshold:</b> All attempts must demonstrate performance closely comparable in difficulty to the highest-performing run.<br />
-                Examples of unacceptable attempts include <b>wildly inconsistent performances</b> (e.g., 215%, 8%, 100%), as they do not reflect true consistency. In such cases, only the highest-performing run (e.g., 215%) will be considered.
-              </div>
-              <div style={{marginBottom:'0.7em'}}>
-                <b>Moderation & Discretion:</b> In cases of ambiguity, borderline performance, or disputed claims, a dedicated moderation team will review and evaluate the submission.
-              </div>
+              <ol style={{marginLeft:'1.2em', marginBottom:'1.2em'}}>
+                <li>
+                  <b>Significant Difficulty Increase</b>
+                  <p>A consistency achievement must represent a clear and substantial increase in difficulty compared to the standard execution of the level. (e.g., 60% then 100%, 145%, 75 spots above)</p>
+                </li>
+                <li>
+                  <b>One Achievement Per Level</b>
+                  <p>Only one consistency achievement may be active per level at any given time.</p>
+                </li>
+                <li>
+                  <b>Achievement Replacement</b>
+                  <ul style={{marginLeft:'1.2em', marginBottom:'0.7em'}}>
+                    <li>If a new consistency achievement is validated as more difficult than the current one, it will <b>replace</b> the existing achievement.</li>
+                    <li>Submissions that are less difficult than the current achievement will <b>not be accepted</b>.</li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Allowed Actions</b>
+                  <p>The following actions are permitted during attempts, provided they aren’t meaningful attempts:</p>
+                  <ul style={{marginLeft:'1.2em', marginBottom:'0.7em'}}>
+                    <li>Re-entering the level</li>
+                    <li>Restarting</li>
+                    <li>Switching start positions</li>
+                    <li>Filler deaths (e.g., No clicking, random clicking)</li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Performance Threshold</b>
+                  <p>All attempts must demonstrate performance closely comparable in difficulty to the highest-performing run.</p>
+                  <p>Examples of unacceptable attempts include <b>wildly inconsistent performances</b> (e.g., 215%, 8%, 100%), as they do not reflect true consistency. In such cases, only the highest-performing run (e.g., 215%) will be considered.</p>
+                </li>
+                <li>
+                  <b>Moderation & Discretion</b>
+                  <p>In cases of ambiguity, borderline performance, or disputed claims, a dedicated moderation team will review and evaluate the submission.</p>
+                </li>
+              </ol>
             </section>
           </section>
         </div>
