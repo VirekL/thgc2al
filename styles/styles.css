@@ -280,8 +280,8 @@ main {
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--hover-bg) transparent;
-  background: var(--primary-bg) !important;
-  /* Prevent background color from changing in dev mode */
+  background: transparent !important;
+  /* Ensure background stays consistent on mobile/dev mode */
   position: relative;
   /* Prevent shifting upward when dev tools are open */
   box-sizing: border-box;
