@@ -153,6 +153,23 @@
     "version": "2.1"
   },
   {
+    "name": "Sakupen Circles 69%, 67%, 69%, 80%",
+    "id": "sakupen-circles-69-67-69-80",
+    "player": "ad3usgmd",
+    "length": "151",
+    "version": "2.2",
+    "video": "https://youtu.be/WwHQ2jiRSeo?t=4609",
+    "showcaseVideo": "https://youtu.be/b66_Oe4Xo1w",
+    "date": "2025-06-19",
+    "submitter": "ad3usgmd",
+    "levelID": "76962930",
+    "tags": [
+      "Level",
+      "Consistency",
+      "Rated"
+    ]
+  },
+  {
     "name": "Thinking Space II (Old) 77%",
     "id": "thinking-space-ii-old-77",
     "player": "Zoink",
@@ -262,6 +279,22 @@
     "date": "2025-07-20",
     "length": "36",
     "version": "2.2"
+  },
+  {
+    "name": "Sakupen circles (Old) 37-66%, 37-69%, 70%",
+    "id": "sakupen-circles-old-37-66-37-69-70",
+    "player": "ad3usgmd",
+    "length": "91",
+    "version": "2.2",
+    "video": "https://youtu.be/QYs7UyGMrqw",
+    "showcaseVideo": "https://youtu.be/WX5RCDxobSA",
+    "date": "2025-06-27",
+    "submitter": "TYATYAPKA",
+    "levelID": "10887708",
+    "tags": [
+      "Consistency",
+      "CBF"
+    ]
   },
   {
     "name": "FLAMEWALL 17-95%",
@@ -817,7 +850,7 @@
   },
   {
     "name": "Sakupen circles (Old)",
-    "id": "sakupen-circles-old",
+    "id": "sakupen-circles-old-copy",
     "player": "ad3usgmd",
     "length": "49",
     "version": "2.2",
@@ -2659,7 +2692,7 @@
     ]
   },
   {
-    "name": "⚠️ last stop 5 deaths, 99.80 accuracy",
+    "name": "last stop 5 deaths, 99.80 accuracy",
     "id": "last-stop-5-deaths-99-80-accuracy",
     "player": "aytch0008",
     "date": "2025-06-20",
@@ -2720,23 +2753,6 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
-      "Rated"
-    ]
-  },
-  {
-    "name": "Deimos 46%, 100%",
-    "id": "deimos-46-100",
-    "player": "ViperVenom95",
-    "date": "2024-02-18",
-    "length": "200",
-    "version": "2.1",
-    "levelID": "93091893",
-    "video": "https://youtu.be/98ZV-Ah3OgA",
-    "showcaseVideo": "https://youtu.be/CQJqSSBFHQ8",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Consistency",
       "Rated"
     ]
   },
@@ -2994,7 +3010,7 @@
     ]
   },
   {
-    "name": "⚠️ last stop 37-100%",
+    "name": "last stop 37-100%",
     "id": "last-stop-37-100",
     "player": "aytch0008",
     "date": "2025-05-22",
@@ -3133,7 +3149,7 @@
     ]
   },
   {
-    "name": "⚠️ Defeated Circles",
+    "name": "Defeated Circles",
     "id": "defeated-circles",
     "player": "Zoink",
     "date": "2025-05-31",
@@ -3643,13 +3659,13 @@
   {
     "name": "Firework",
     "id": "firework",
-    "player": "Hyperlith",
+    "player": "Trick",
     "levelID": 105547415,
     "date": "2024-05-23",
     "length": 127,
     "version": 2.2,
     "submitter": "Anceps",
-    "video": " https://youtu.be/Kbb3eXeMHQo",
+    "video": "https://youtu.be/QBe5x2o9v2w",
     "showcaseVideo": "https://youtu.be/DU6mRmGHy74",
     "tags": [
       "Level",
@@ -3862,7 +3878,7 @@
     ]
   },
   {
-    "name": "⚠️ FLAMEWALL (Agent009) 42%",
+    "name": "FLAMEWALL (Agent009) 42%",
     "id": "flamewall-agent009-42",
     "player": "Agent009",
     "date": "2025-07-10",
@@ -4629,23 +4645,6 @@
     ]
   },
   {
-    "name": "COMBUSTION 44%, 100%",
-    "id": "combustion-44-100",
-    "player": "gotsmile",
-    "date": "2025-06-01",
-    "length": "80",
-    "version": "2.2",
-    "levelID": "94359172",
-    "video": "https://youtu.be/f7Ne-0NcxtE",
-    "showcaseVideo": "https://youtu.be/KaWAdxssH2w",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Consistency",
-      "Rated"
-    ]
-  },
-  {
     "name": "SWI Slithium Version 65%",
     "id": "swi-slithium-version-65",
     "player": "HipoAR",
@@ -5116,22 +5115,6 @@
     ]
   },
   {
-    "name": "Sodium Oxybutyrate 35%x3, 36%",
-    "id": "sodium-oxybutyrate-35x3-36",
-    "player": "MoonFrost",
-    "date": "2025-04-24",
-    "length": 10,
-    "version": 2.2,
-    "video": "https://youtu.be/s7vGjlJqy9g",
-    "showcaseVideo": "https://youtu.be/8kXWQ_y2w00",
-    "submitter": "MoonFrost",
-    "levelID": "117982339",
-    "tags": [
-      "Challenge",
-      "Consistency"
-    ]
-  },
-  {
     "name": "CSE 63%",
     "id": "cse-63",
     "player": "seels",
@@ -5364,24 +5347,6 @@
     "tags": [
       "Level",
       "Consistency",
-      "Rated"
-    ]
-  },
-  {
-    "name": "Codependence 48%, 100%",
-    "id": "codependence-48-100",
-    "player": "Pukklez",
-    "date": "2023-06-04",
-    "length": "186",
-    "version": "2.1",
-    "levelID": "62556400",
-    "video": "https://www.youtube.com/watch?v=IKGk41hSnDo",
-    "showcaseVideo": "https://www.youtube.com/watch?v=ti5G-c3wcM0",
-    "submitter": "kittycatiscute",
-    "tags": [
-      "Level",
-      "Consistency",
-      "2P",
       "Rated"
     ]
   },
@@ -5930,7 +5895,7 @@
     ]
   },
   {
-    "name": "⚠️ Frigid Thrills 38-86%",
+    "name": "Frigid Thrills 38-86%",
     "id": "frigid-thrills-38-86",
     "player": "zXdasfsa",
     "date": "2025-07-07",
@@ -6564,7 +6529,7 @@
     ]
   },
   {
-    "name": "⚠️ Riots Demise (noname Old) 84%",
+    "name": "Riots Demise (noname Old) 84%",
     "id": "riots-demise-noname-old-84",
     "player": "noname228gg",
     "date": "2025-07-12",
@@ -6673,7 +6638,7 @@
     ]
   },
   {
-    "name": "⚠️ Riots Demise (noname)",
+    "name": "Riots Demise (noname)",
     "id": "riots-demise-noname",
     "player": "noname228gg",
     "date": "2025-07-17",
@@ -6707,7 +6672,7 @@
     ]
   },
   {
-    "name": "⚠️ ad3us limit 62%",
+    "name": "ad3us limit 62%",
     "id": "ad3us-limit-62",
     "player": "ad3usgmd",
     "date": "2025-06-17",
@@ -7028,7 +6993,7 @@
     ]
   },
   {
-    "name": "⚠️ Nullscapes 60hz Mobile 18-51%",
+    "name": "Nullscapes 60hz Mobile 18-51%",
     "id": "nullscapes-60hz-mobile-18-51",
     "player": "Cookie",
     "date": "2025-07-22",
@@ -7615,7 +7580,7 @@
     ]
   },
   {
-    "name": "⚠️ Femboy Friday 99%",
+    "name": "Femboy Friday 99%",
     "id": "femboy-friday-99",
     "player": "Infinny",
     "date": "2025-07-13",
@@ -7790,7 +7755,7 @@
     ]
   },
   {
-    "name": "⚠️ ROCKBOTTOM",
+    "name": "ROCKBOTTOM",
     "id": "rockbottom",
     "player": "ZazaGD",
     "date": "2025-07-02",
@@ -8026,7 +7991,7 @@
     ]
   },
   {
-    "name": "⚠️ Tidal Wave 60hz Mobile 72-100%",
+    "name": "Tidal Wave 60hz Mobile 72-100%",
     "id": "tidal-wave-60hz-mobile-72-100",
     "player": "Cookie",
     "date": "2024-09-09",
@@ -8077,7 +8042,7 @@
     ]
   },
   {
-    "name": "⚠️ Tidal Wave 60hz Mobile 23-39%",
+    "name": "Tidal Wave 60hz Mobile 23-39%",
     "id": "tidal-wave-60hz-mobile-23-39",
     "player": "Cookie",
     "date": "2024-09-09",
@@ -8790,7 +8755,7 @@
     ]
   },
   {
-    "name": "⚠️ Blooming Blossoms 67%",
+    "name": "Blooming Blossoms 67%",
     "id": "blooming-blossoms-67",
     "player": "piesy",
     "date": "2025-07-12",
@@ -9009,24 +8974,6 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level"
-    ]
-  },
-  {
-    "name": "UNKNOWN 46%, 100%",
-    "id": "unknown-46-100",
-    "player": "Litoks",
-    "date": "2025-04-26",
-    "length": "63",
-    "version": "2.2",
-    "levelID": "88203501",
-    "video": "https://youtu.be/r05t7GjO6qA",
-    "showcaseVideo": "https://www.youtube.com/watch?v=7K7UWZmK9eU",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Consistency",
-      "CBF",
-      "Rated"
     ]
   },
   {
@@ -9512,7 +9459,7 @@
     ]
   },
   {
-    "name": "⚠️ Glass Chapel (Layout) 65-100%",
+    "name": "Glass Chapel (Layout) 65-100%",
     "id": "glass-chapel-layout-65-100",
     "player": "iliLaserili",
     "date": "2025-07-09",
@@ -10431,7 +10378,7 @@
     ]
   },
   {
-    "name": "⚠️ Oblivion 60hz Mobile 49-100%",
+    "name": "Oblivion 60hz Mobile 49-100%",
     "id": "oblivion-60hz-mobile-49-100",
     "player": "Bigthunder556",
     "date": "2022-06-27",
@@ -10545,7 +10492,7 @@
     ]
   },
   {
-    "name": "⚠️ Zodiac 60hz Mobile 58%",
+    "name": "Zodiac 60hz Mobile 58%",
     "id": "zodiac-60hz-mobile-58",
     "player": "Bigthunder556",
     "date": "2024-11-02",
@@ -10660,7 +10607,7 @@
     ]
   },
   {
-    "name": "⚠️ Zodiac\n60hz Mobile 54-100%",
+    "name": "Zodiac 60hz Mobile 54-100%",
     "id": "zodiac-60hz-mobile-54-100",
     "player": "Bigthunder556",
     "date": "2024-11-17",
@@ -10810,7 +10757,7 @@
     ]
   },
   {
-    "name": "⚠️ The Golden 60hz Mobile 49-82%",
+    "name": "The Golden 60hz Mobile 49-82%",
     "id": "the-golden-60hz-mobile-49-82",
     "player": "Bigthunder556",
     "date": "2023-05-31",
@@ -11295,7 +11242,7 @@
     ]
   },
   {
-    "name": "⚠️ The Golden 120hz Mobile 49-84%",
+    "name": "The Golden 120hz Mobile 49-84%",
     "id": "the-golden-120hz-mobile-49-84",
     "player": "Abstract",
     "date": "2025-05-24",
@@ -11563,7 +11510,7 @@
     ]
   },
   {
-    "name": "⚠️ Labyrinth 61-100%",
+    "name": "Labyrinth 61-100%",
     "id": "labyrinth-61-100",
     "player": "HamiltonHqmy",
     "date": "2025-03-01",
@@ -11592,7 +11539,7 @@
     ]
   },
   {
-    "name": "⚠️ Apocalyptic Trilogy (Old) 39-100%",
+    "name": "Apocalyptic Trilogy (Old) 39-100%",
     "id": "apocalyptic-trilogy-old-39-100",
     "player": "ViZeris",
     "date": "2025-01-24",
@@ -11618,22 +11565,6 @@
     "tags": [
       "Level",
       "CBF"
-    ]
-  },
-  {
-    "name": "Hell Ball Finale 63%, 48%",
-    "id": "hell-ball-finale-63-48",
-    "player": "MoonFrost",
-    "levelID": 86047466,
-    "date": "2023-08-28",
-    "length": 30,
-    "version": 2.1,
-    "video": "https://youtu.be/RODF9foeeRM",
-    "showcaseVideo": "https://youtu.be/cYe-BUOqixc",
-    "submitter": "Emp",
-    "tags": [
-      "Challenge",
-      "Consistency"
     ]
   },
   {
@@ -12202,23 +12133,6 @@
     ]
   },
   {
-    "name": "Singularity 57%, 52%, 54%, 53%",
-    "id": "singularity-57-52-54-53",
-    "player": "SeptaGon7",
-    "levelID": 67432669,
-    "date": "2025-03-13",
-    "length": 148,
-    "version": 2.2,
-    "video": "https://youtu.be/zuic_tCePFI",
-    "showcaseVideo": "https://youtu.be/6z4DI13isLc",
-    "submitter": "SeptaGon7",
-    "tags": [
-      "Level",
-      "Consistency",
-      "CBF"
-    ]
-  },
-  {
     "name": "RUST 60hz Mobile",
     "id": "rust-60hz-mobile",
     "player": "Biprex",
@@ -12485,7 +12399,7 @@
     ]
   },
   {
-    "name": "⚠️ IT MEANS EVERYTHING 65-100%",
+    "name": "IT MEANS EVERYTHING 65-100%",
     "id": "it-means-everything-65-100",
     "player": "Vel",
     "date": "2025-05-16",
@@ -12567,7 +12481,7 @@
     ]
   },
   {
-    "name": "⚠️ Storming Summit 60hz Mobile 64%",
+    "name": "Storming Summit 60hz Mobile 64%",
     "id": "storming-summit-60hz-mobile-64",
     "player": "Hydrus73",
     "date": "2024-05-17",
@@ -12796,7 +12710,7 @@
     ]
   },
   {
-    "name": "⚠️ Benevolence 50%",
+    "name": "Benevolence 50%",
     "id": "benevolence-50",
     "player": "Caleger",
     "date": "2025-06-05",
@@ -12923,7 +12837,7 @@
     ]
   },
   {
-    "name": "⚠️ Benevolence 19-100%",
+    "name": "Benevolence 19-100%",
     "id": "benevolence-19-100",
     "player": "Caleger",
     "date": "2025-06-05",
