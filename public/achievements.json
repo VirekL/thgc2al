@@ -228,20 +228,21 @@
     "version": "2.1"
   },
   {
-    "name": "Tidal Wave 39%, 41%, 42%, 62%, 40%",
-    "id": "tidal-wave-39-41-42-62-40",
+    "name": "Tidal Wave 39%, 41%, 50%, 52%, 61%",
+    "id": "tidal-wave-39-41-50-52-61",
     "player": "SerVax",
-    "video": "https://youtu.be/gEDo-1gLSEM",
+    "video": "https://www.youtube.com/live/eqYOeCm6qmQ?t=5718",
     "showcaseVideo": "https://youtu.be/PFHlkdz9UqM",
     "tags": [
       "Level",
       "Consistency",
+      "CBF",
       "Rated"
     ],
     "levelID": "86407629",
-    "date": "2024-06-11",
+    "date": "2025-05-03",
     "length": "300",
-    "version": "2.1",
+    "version": "2.2",
     "submitter": "jak",
     "thumbnail": "https://tjcsucht.net/levelthumbs/99564598.png"
   },
@@ -367,7 +368,7 @@
     "video": "https://youtu.be/20fYiqLAo_E",
     "showcaseVideo": "https://youtu.be/XKAHGBiRuAo",
     "date": "2024-10-05",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "levelID": "110816181",
     "tags": [
       "Level",
@@ -429,7 +430,7 @@
     "video": "https://youtu.be/j5NC0u1Q91Q",
     "showcaseVideo": "https://youtu.be/XLdekslmFqg",
     "date": "2024-12-31",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "levelID": "113710822",
     "tags": [
       "Level"
@@ -460,7 +461,7 @@
     "video": "https://youtu.be/mk3TDemdkC0",
     "showcaseVideo": "https://youtu.be/xqQNv-Puq44",
     "date": "2025-01-19",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "levelID": "114283297",
     "tags": [
       "Level",
@@ -679,13 +680,22 @@
     ]
   },
   {
-    "name": "Silent clubstep\n24-100% + 24-72% + 24-65% + 24-66% + 24-40% + 24-100% + 24-65%",
+    "name": "Silent clubstep 24-100%, 24-72%, 24-65%, 24-66%, 24-40%, 24-100%, 24-65%",
     "id": "silent-clubstep-24-100-24-72-24-65-24-66-24-40-24-100-24-65",
     "player": "ImJuls",
     "date": "2025-05-04",
     "length": "266",
     "version": "2.2",
-    "levelID": "4125776"
+    "levelID": "4125776",
+    "video": "https://youtu.be/_4k0LUp9Tq0",
+    "showcaseVideo": "https://youtu.be/xtwyN8Dh1WE",
+    "submitter": "kittycatiscute",
+    "tags": [
+      "Level",
+      "Consistency",
+      "CBF",
+      "Rated"
+    ]
   },
   {
     "name": "Anathema",
@@ -728,7 +738,7 @@
     "video": "https://www.youtube.com/live/WfnaiwqDHaE?t=5876s",
     "showcaseVideo": "https://youtu.be/8lNHaYbvQE0",
     "date": "2024-12-22",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "levelID": "113341338",
     "tags": [
       "Level",
@@ -897,7 +907,13 @@
     "date": "2024-11-15",
     "length": "20",
     "version": "2.2",
-    "levelID": "N/A"
+    "submitter": "TYATYAPKA",
+    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
+    "video": "https://www.youtube.com/live/IQLEFiJ9a98?t=4678s",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "FLAMEWALL 37-100%",
@@ -922,7 +938,6 @@
     "date": "2025-07-27",
     "length": "19",
     "version": "2.2",
-    "levelID": "N/A",
     "video": "https://youtu.be/l4wL_SFA9As",
     "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw?si=QpUgAYG7dbF74qln",
     "submitter": "TYATYAPKA",
@@ -1079,7 +1094,6 @@
   {
     "name": "Slaughterhouse 25-100%, GRIEF 65-100%",
     "id": "slaughterhouse-25-100-grief-65-100",
-    "levelID": "",
     "player": "Doggie",
     "date": "2025-04-21",
     "length": 87,
@@ -1256,7 +1270,7 @@
     "version": 2.2,
     "video": "https://www.youtube.com/live/WfnaiwqDHaE&t=5135",
     "showcaseVideo": "https://youtu.be/8lNHaYbvQE0",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "tags": [
       "Level",
       "Progress"
@@ -1463,13 +1477,21 @@
     ]
   },
   {
-    "name": "Acheron (Riot)\n47-100%",
+    "name": "Acheron (Riot) 47-100%",
     "id": "acheron-riot-47-100",
     "player": "xalval",
     "date": "2025-06-28",
     "length": "30",
     "version": "2.2",
-    "levelID": "82758705"
+    "levelID": "82758705",
+    "video": "https://youtu.be/Y3IBLK3t40U?t=50",
+    "showcaseVideo": "https://youtu.be/Pui-sfRR_kQ",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
   },
   {
     "name": "Acheron (Riot) 67%",
@@ -1534,13 +1556,20 @@
     ]
   },
   {
-    "name": "Silent Acropolis unn\n1-65%",
+    "name": "Silent Acropolis unn 1-65%",
     "id": "silent-acropolis-unn-1-65",
     "player": "SeptaGon7",
     "date": "2024-06-19",
     "length": "59",
     "version": "2.2",
-    "levelID": "83143127"
+    "levelID": "83143127",
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/mkcHD2b3UH8",
+    "showcaseVideo": "https://youtu.be/PZ6EjmesjVE",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Slaughterhouse 1.1x",
@@ -1591,13 +1620,20 @@
     ]
   },
   {
-    "name": "surface\n17-86%",
+    "name": "surface 17-86%",
     "id": "surface-17-86",
     "player": "zXdasfsa",
     "date": "2025-06-06",
     "length": "20",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/VrSCfOEHnN4",
+    "showcaseVideo": "https://youtu.be/VrDdQrTBEJY",
+    "submitter": "tmtsps12",
+    "tags": [
+      "Challenge",
+      "Progress",
+      "CBF"
+    ]
   },
   {
     "name": "Azure Flare (Vertop) 36-76%",
@@ -1837,13 +1873,18 @@
     ]
   },
   {
-    "name": "Tidal Wave (Ultrabuffed)      22-61%",
+    "name": "Tidal Wave (Ultrabuffed) 22-61%",
     "id": "tidal-wave-ultrabuffed-22-61",
     "player": "Loliklee",
     "date": "2025-06-22",
     "length": "74",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/OqodbR8-Tmc",
+    "submitter": "tmtsps12",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Azure Flare (Vertop) 45%",
@@ -1862,22 +1903,34 @@
     ]
   },
   {
-    "name": "Acheron (Wolvez)\n96%",
+    "name": "Acheron (Wolvez) 96%",
     "id": "acheron-wolvez-96",
     "player": "Wolvez",
     "date": "2022-04-09",
     "length": "67",
     "version": "2.2",
-    "levelID": "79312442"
+    "levelID": "79312442",
+    "showcaseVideo": "https://youtu.be/EuZY748OnYU",
+    "video": "https://youtu.be/Hjmtt7q5boA",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
-    "name": "Tidal Wave (Ultrabuffed)         40%",
+    "name": "Tidal Wave (Ultrabuffed) 40%",
     "id": "tidal-wave-ultrabuffed-40",
     "player": "A6",
     "date": "2025-06-25",
     "length": "74",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/wgNI_7Bh4wc",
+    "submitter": "tmtsps12",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "FLAMEWALL (Unbuffed) 60%",
@@ -1901,7 +1954,14 @@
     "date": "2023-12-23",
     "length": "70",
     "version": "2.2",
-    "levelID": "120271175"
+    "levelID": "120271175",
+    "video": "https://youtu.be/d_DACF-nQZY",
+    "showcaseVideo": "https://youtu.be/RDQFLjcJrYY",
+    "submitter": "Anceps",
+    "tags": [
+      "Level",
+      "Outdated Version"
+    ]
   },
   {
     "name": "christmashouse",
@@ -2088,16 +2148,30 @@
     "date": "2025-07-08",
     "length": "67",
     "version": "2.2",
-    "levelID": "122490465"
+    "levelID": "122490465",
+    "video": "https://youtu.be/APtUnzAP9bM",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "CBF"
+    ]
   },
   {
-    "name": "vsc superbuff                                3 deaths, 99.87 accuracy",
+    "name": "vsc superbuff 3 deaths, 99.87 accuracy",
     "id": "vsc-superbuff-3-deaths-99-87-accuracy",
     "player": "JACKSONAMORE",
     "date": "2025-06-01",
     "length": "16",
     "version": "2.2",
-    "levelID": "74130902"
+    "levelID": "74130902",
+    "submitter": "Staminix",
+    "showcaseVideo": "https://youtu.be/_r53HfiSHiE",
+    "video": "https://youtu.be/FXRaUrKUEdc",
+    "tags": [
+      "Challenge",
+      "Noclip",
+      "CBF"
+    ]
   },
   {
     "name": "VSC 144hz 24-100%",
@@ -2292,7 +2366,13 @@
     "date": "2023-08-02",
     "length": "16",
     "version": "2.1",
-    "levelID": "93006113"
+    "levelID": "93006113",
+    "showcaseVideo": "https://youtu.be/gTmHcwyymX0",
+    "video": "https://youtu.be/IB5GvwzrB9c",
+    "submitter": "Anceps",
+    "tags": [
+      "Challenge"
+    ]
   },
   {
     "name": "VSC 1.1x 2 deaths, 99.84 accuracy",
@@ -2312,13 +2392,21 @@
     ]
   },
   {
-    "name": "VSC\n144hz 54%",
+    "name": "VSC 144hz 54%",
     "id": "vsc-144hz-54",
     "player": "Nev",
     "date": "2022-10-15",
     "length": "10",
     "version": "2.1",
-    "levelID": "60805571"
+    "levelID": "60805571",
+    "showcaseVideo": "https://youtu.be/GbtLlQQezTA",
+    "video": "https://youtu.be/A9f2CYbI8r0",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Challenge",
+      "Low Hertz",
+      "Progress"
+    ]
   },
   {
     "name": "Azure Flare 46%",
@@ -2343,7 +2431,14 @@
     "date": "2025-06-20",
     "length": "18",
     "version": "2.2",
-    "levelID": "121310778"
+    "levelID": "121310778",
+    "video": "https://youtu.be/7Hb3g7aXsf8",
+    "showcaseVideo": "https://youtu.be/7kzhozGgHR8",
+    "submitter": "rainityyy",
+    "tags": [
+      "Challenge",
+      "CBF"
+    ]
   },
   {
     "name": "MINUS WORLD 67-91%",
@@ -2423,13 +2518,21 @@
     ]
   },
   {
-    "name": "vsc superbuff                                48%",
+    "name": "vsc superbuff 48%",
     "id": "vsc-superbuff-48",
     "player": "loststraggler",
     "date": "2025-05-31",
     "length": "9",
     "version": "2.2",
-    "levelID": "74130902"
+    "levelID": "74130902",
+    "video": "https://youtu.be/dhqzHwcgNTk",
+    "showcaseVideo": "https://youtu.be/_r53HfiSHiE",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Challenge",
+      "Progress",
+      "CBF"
+    ]
   },
   {
     "name": "Demotivation Dance",
@@ -2446,13 +2549,19 @@
     ]
   },
   {
-    "name": "Im Hard                                       92%",
+    "name": "Im Hard 92%",
     "id": "im-hard-92",
     "player": "totalgd",
     "date": "2025-05-27",
     "length": "23",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtube.com/clip/Ugkx2rM7MSPrJ7whHc7GYe_AWn2-KC9jvDPa",
+    "submitter": "ggdotlol",
+    "tags": [
+      "Challenge",
+      "Progress",
+      "CBF"
+    ]
   },
   {
     "name": "Azure Flare (Vertop) 44-90%",
@@ -2464,7 +2573,7 @@
     "video": "https://youtu.be/DEiKsJ8SPu0",
     "levelID": 97429207,
     "showcaseVideo": "https://youtu.be/sJkeRnrAqWQ",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "tags": [
       "Level",
       "Progress"
@@ -2550,13 +2659,20 @@
     ]
   },
   {
-    "name": "⚠️ last stop                                    5 deaths, 99.80 accuracy",
+    "name": "⚠️ last stop 5 deaths, 99.80 accuracy",
     "id": "last-stop-5-deaths-99-80-accuracy",
     "player": "aytch0008",
     "date": "2025-06-20",
     "length": "23",
     "version": "2.1",
-    "levelID": "64815983"
+    "levelID": "64815983",
+    "showcaseVideo": "https://youtu.be/QyDnUJqBd60",
+    "video": "https://youtu.be/FNRBXG2KC1U",
+    "submitter": "Aytch0008",
+    "tags": [
+      "Challenge",
+      "Noclip"
+    ]
   },
   {
     "name": "Based After Based",
@@ -2608,13 +2724,21 @@
     ]
   },
   {
-    "name": "Deimos                                            46%, 100%",
+    "name": "Deimos 46%, 100%",
     "id": "deimos-46-100",
     "player": "ViperVenom95",
     "date": "2024-02-18",
     "length": "200",
     "version": "2.1",
-    "levelID": "93091893"
+    "levelID": "93091893",
+    "video": "https://youtu.be/98ZV-Ah3OgA",
+    "showcaseVideo": "https://youtu.be/CQJqSSBFHQ8",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Consistency",
+      "Rated"
+    ]
   },
   {
     "name": "Exens limit 1.1x 70%",
@@ -2634,13 +2758,19 @@
     ]
   },
   {
-    "name": "KOCMOC publicrelease\n32-76%",
+    "name": "KOCMOC publicrelease 32-76%",
     "id": "kocmoc-publicrelease-32-76",
     "player": "goldix",
     "date": "2024-11-01",
     "length": "26",
     "version": "2.2",
-    "levelID": "69196070"
+    "levelID": "69196070",
+    "video": "https://youtu.be/NdUyGLwSJZg",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "KOCMOC",
@@ -2722,13 +2852,20 @@
     ]
   },
   {
-    "name": "inv skc 10 op\n97%",
+    "name": "inv skc 10 op 97%",
     "id": "inv-skc-10-op-97",
     "player": "ad3usgmd",
     "date": "2024-09-04",
     "length": "27",
     "version": "2.2",
-    "levelID": "120546085"
+    "levelID": "120546085",
+    "video": "https://youtu.be/i9fGVzhOmAQ",
+    "showcaseVideo": "https://youtu.be/7WgD_7Z0Emg",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Exens limit",
@@ -2775,15 +2912,6 @@
     "tags": [
       "Level"
     ]
-  },
-  {
-    "name": "Exens limit                                  68%x3",
-    "id": "exens-limit-68-x3",
-    "player": "Skylar",
-    "date": "2025-05-03",
-    "length": "49",
-    "version": "2.2",
-    "levelID": "97338077"
   },
   {
     "name": "I N J U R Y 74%",
@@ -2834,15 +2962,6 @@
     ]
   },
   {
-    "name": "lgbt circles                           65-71%x6 + 65-70%",
-    "id": "lgbt-circles-65-71-x6-65-70",
-    "player": "vvay",
-    "date": "2025-07-07",
-    "length": "20",
-    "version": "2.2",
-    "levelID": "113421585"
-  },
-  {
     "name": "RANDOM WAVE 516%",
     "id": "random-wave-516",
     "player": "Zoink",
@@ -2875,31 +2994,50 @@
     ]
   },
   {
-    "name": "⚠️ last stop                              37-100%",
+    "name": "⚠️ last stop 37-100%",
     "id": "last-stop-37-100",
     "player": "aytch0008",
     "date": "2025-05-22",
     "length": "14",
     "version": "2.1",
-    "levelID": "64815983"
+    "levelID": "64815983",
+    "showcaseVideo": "https://youtu.be/QyDnUJqBd60",
+    "video": "https://youtu.be/Zx2tCV0YFTk",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Challenge",
+      "Progress"
+    ]
   },
   {
-    "name": "Sakupen circles wave\n54%",
+    "name": "Sakupen circles wave 54%",
     "id": "sakupen-circles-wave-54",
     "player": "ad3usgmd",
     "date": "2025-06-02",
     "length": "16",
     "version": "2.2",
-    "levelID": "10887708"
+    "levelID": "10887708",
+    "video": "https://youtu.be/9EyMComWMOc",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Challenge",
+      "Progress"
+    ]
   },
   {
-    "name": "KOCMOC publicrelease\n14-63%",
+    "name": "KOCMOC publicrelease 14-63%",
     "id": "kocmoc-publicrelease-14-63",
     "player": "goldix",
     "date": "2024-11-01",
     "length": "29",
     "version": "2.2",
-    "levelID": "69196070"
+    "levelID": "69196070",
+    "video": "https://youtu.be/NdUyGLwSJZg",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "EXPIRATION DATE",
@@ -2923,7 +3061,13 @@
     "date": "2025-07-22",
     "length": "5",
     "version": "2.2",
-    "levelID": "119160569"
+    "levelID": "119160569",
+    "video": "https://youtu.be/--xEEzM5tT8",
+    "showcaseVideo": "https://youtu.be/uHW6Y7z1-us",
+    "submitter": "nensa",
+    "tags": [
+      "Challenge"
+    ]
   },
   {
     "name": "bosco busch",
@@ -2995,7 +3139,12 @@
     "date": "2025-05-31",
     "length": "60",
     "version": "2.2",
-    "levelID": "120012581"
+    "levelID": "120012581",
+    "video": "https://youtu.be/nU5AQPzd2YA",
+    "showcaseVideo": "https://youtu.be/R8BMscOkTrA",
+    "tags": [
+      "Level"
+    ]
   },
   {
     "name": "CorroZ B",
@@ -3150,13 +3299,23 @@
     ]
   },
   {
-    "name": "ConClusion                              60hz Mobile 87%",
+    "name": "ConClusion 60hz Mobile 87%",
     "id": "conclusion-60hz-mobile-87",
     "player": "Dominionxx",
     "date": "2025-06-28",
     "length": "67",
     "version": "2.2",
-    "levelID": "96471171"
+    "levelID": "96471171",
+    "video": "https://youtu.be/qc424awbRCE",
+    "showcaseVideo": "https://youtu.be/6zHr7dmhUn0",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "Sonic Wave Infinity 120hz",
@@ -3300,13 +3459,23 @@
     ]
   },
   {
-    "name": "Sonic Wave Infinity\n120hz Mobile 77%",
+    "name": "Sonic Wave Infinity 120hz Mobile 77%",
     "id": "sonic-wave-infinity-120hz-mobile-77",
     "player": "Rotys",
     "date": "2025-07-23",
     "length": "113",
     "version": "2.2",
-    "levelID": "69685815"
+    "levelID": "69685815",
+    "video": "https://youtu.be/smY8eURYZ8U",
+    "showcaseVideo": "https://youtu.be/QYd2YdKtj8Y",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "Zero Factorial (LAMINGTON) 36-100%",
@@ -3325,13 +3494,23 @@
     ]
   },
   {
-    "name": "ConClusion                              60hz Mobile 31-100%",
+    "name": "ConClusion 60hz Mobile 31-100%",
     "id": "conclusion-60hz-mobile-31-100",
     "player": "Dominionxx",
     "date": "2025-07-18",
     "length": "57",
     "version": "2.2",
-    "levelID": "96471171"
+    "levelID": "96471171",
+    "showcaseVideo": "https://youtu.be/6zHr7dmhUn0",
+    "video": "https://youtu.be/tD6mDmmuEfU",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "CYBERPSYCHOSIS 70%",
@@ -3350,22 +3529,37 @@
     ]
   },
   {
-    "name": "Saul Goodman                               41-100%, 100%",
+    "name": "Saul Goodman 41-100%, 100%",
     "id": "saul-goodman-41-100-100",
     "player": "Slithium",
     "date": "2024-07-17",
     "length": "86",
     "version": "2.2",
-    "levelID": "90477539"
+    "levelID": "90477539",
+    "showcaseVideo": "https://youtu.be/ktVdIYE9P-I",
+    "video": "https://youtu.be/1qUQccpP9mA",
+    "submitter": "53ek",
+    "tags": [
+      "Level",
+      "Consistency",
+      "CBF",
+      "Rated"
+    ]
   },
   {
-    "name": "Angelicide (Kaza)                           37-65%",
+    "name": "Angelicide (Kaza) 37-65%",
     "id": "angelicide-kaza-37-65",
     "player": "Kaza",
     "date": "2025-06-29",
     "length": "26",
     "version": "2.2",
-    "levelID": "N/A"
+    "showcaseVideo": "https://youtu.be/678hOIaKzUk",
+    "video": "https://youtu.be/D7zVa1N6I9k",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Zodiac 75hz",
@@ -3385,22 +3579,34 @@
     ]
   },
   {
-    "name": "Flashbang                                   45-100%",
+    "name": "Flashbang 45-100%",
     "id": "flashbang-45-100",
     "player": "Noctal",
     "date": "2025-07-10",
     "length": "84",
     "version": "2.2",
-    "levelID": "N/A"
+    "showcaseVideo": "https://youtu.be/2j9nLPyE2Tw",
+    "video": "https://youtu.be/Fjl5LbxcnrM",
+    "submitter": "goofygdplayer_",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
-    "name": "Flashbang                                   46%",
+    "name": "Flashbang 46%",
     "id": "flashbang-46",
     "player": "Noctal",
     "date": "2025-07-25",
     "length": "72",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/4tyRrH6jb00",
+    "showcaseVideo": "https://youtu.be/2j9nLPyE2Tw",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "CYBERPSYCHOSIS 36-100%",
@@ -3419,13 +3625,20 @@
     ]
   },
   {
-    "name": "Vehemence\n33-60%",
+    "name": "Vehemence 33-60%",
     "id": "vehemence-33-60",
     "player": "wPopoff",
     "date": "2025-07-15",
     "length": "90",
     "version": "2.2",
-    "levelID": "96572223"
+    "levelID": "96572223",
+    "showcaseVideo": "https://www.youtube.com/watch?v=9SxqlWV5OxI",
+    "video": "https://www.youtube.com/live/hC2Cy4-RlTg?t=5754",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Firework",
@@ -3458,13 +3671,21 @@
     ]
   },
   {
-    "name": "LIMBO                                               144hz",
+    "name": "LIMBO 144hz",
     "id": "limbo-144hz",
     "player": "Leslie",
     "date": "2023-04-05",
     "length": "207",
     "version": "2.1",
-    "levelID": "86084399"
+    "levelID": "86084399",
+    "video": "https://youtu.be/3HKqUUySSrc",
+    "showcaseVideo": "https://youtu.be/gGz9rPR4pbw",
+    "submitter": "Arcadie",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Rated"
+    ]
   },
   {
     "name": "Im Deaf (superbuffed) 2 deaths, 99.69 accuracy",
@@ -3592,22 +3813,38 @@
     ]
   },
   {
-    "name": "i n j u r y (Layout)\n95%",
+    "name": "i n j u r y (Layout) 95%",
     "id": "i-n-j-u-r-y-layout-95",
     "player": "Cryostaz",
     "date": "2025-06-19",
     "length": "35",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/6d-hPUQTQEc",
+    "showcaseVideo": "https://youtu.be/44L7NaTxHUQ",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
-    "name": "limbo but uwu ig idk                        60hz Mobile 62%",
+    "name": "limbo but uwu ig idk 60hz Mobile 62%",
     "id": "limbo-but-uwu-ig-idk-60hz-mobile-62",
     "player": "geometrydasj",
     "date": "2025-06-30",
     "length": "54",
     "version": "2.2",
-    "levelID": "110705712"
+    "levelID": "110705712",
+    "video": "https://youtu.be/Innx1KCZjFQ",
+    "showcaseVideo": "https://youtu.be/-nja3I-CK50",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "Sakupen Circles fi",
@@ -3625,13 +3862,18 @@
     ]
   },
   {
-    "name": "⚠️ FLAMEWALL (Agent009)\n42%",
+    "name": "⚠️ FLAMEWALL (Agent009) 42%",
     "id": "flamewall-agent009-42",
     "player": "Agent009",
     "date": "2025-07-10",
     "length": "150",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtube.com/shorts/xPSosha_Fjo",
+    "showcaseVideo": "https://www.youtube.com/watch?v=c5qQh7h0zYM",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Determination Dance",
@@ -3701,7 +3943,7 @@
     "version": 2.2,
     "video": "https://youtu.be/O-IQeUdEGvI",
     "showcaseVideo": "https://youtu.be/AQy4C5APekM",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "tags": [
       "Level"
     ]
@@ -3771,13 +4013,20 @@
     ]
   },
   {
-    "name": "Vehemence\n24-55%",
+    "name": "Vehemence 24-55%",
     "id": "vehemence-24-55",
     "player": "wPopoff",
     "date": "2025-07-21",
     "length": "32",
     "version": "2.2",
-    "levelID": "96572223"
+    "levelID": "96572223",
+    "video": "https://www.youtube.com/live/0A9WtwjR-X0?t=2639",
+    "showcaseVideo": "https://www.youtube.com/watch?v=9SxqlWV5OxI",
+    "submitter": "tmtsps12",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Snowbound",
@@ -3786,16 +4035,28 @@
     "date": "2025-06-04",
     "length": "142",
     "version": "2.2",
-    "levelID": "120289520"
+    "levelID": "120289520",
+    "video": "https://youtu.be/cjHwgbtAkXU?t=198",
+    "showcaseVideo": "https://youtu.be/cjHwgbtAkXU",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level"
+    ]
   },
   {
-    "name": "Heliopolis (Garbag)\n17%",
+    "name": "Heliopolis (Garbag) 17%",
     "id": "heliopolis-garbag-17",
     "player": "Garbag",
     "date": "2025-07-18",
     "length": "16",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/XeFwkfX_17g",
+    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Infinite Chaos",
@@ -3804,7 +4065,13 @@
     "date": "2025-05-26",
     "length": "140",
     "version": "2.2",
-    "levelID": "119689515"
+    "levelID": "119689515",
+    "video": "https://youtu.be/wOMVERxU5IA",
+    "showcaseVideo": "https://youtu.be/MQE8pRKzW0Q",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Level"
+    ]
   },
   {
     "name": "Verdant Landscape 75hz 72%",
@@ -3844,13 +4111,23 @@
     ]
   },
   {
-    "name": "Cognition                                   60hz Mobile 8-79%",
+    "name": "Cognition 60hz Mobile 8-79%",
     "id": "cognition-60hz-mobile-8-79",
     "player": "Siaxid",
     "date": "2025-07-18",
     "length": "43",
     "version": "2.2",
-    "levelID": "57600307"
+    "levelID": "57600307",
+    "video": "https://youtu.be/yPi-3Rss3hg",
+    "showcaseVideo": "https://youtu.be/_fY_jzKmBuU",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "Esfera 75hz",
@@ -3870,13 +4147,20 @@
     ]
   },
   {
-    "name": "Acheron my\n79%",
+    "name": "Acheron my 79%",
     "id": "acheron-my-79",
     "player": "OneAlphaHelix",
     "date": "2022-08-18",
     "length": "54",
     "version": "2.1",
-    "levelID": "82709695"
+    "levelID": "82709695",
+    "video": "https://www.youtube.com/watch?v=DfXZ_al6yGg",
+    "showcaseVideo": "https://youtu.be/YOPnKJgsKck",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Map of Problematique",
@@ -3888,7 +4172,7 @@
     "version": 2.2,
     "video": "https://youtu.be/Sm0UvvwOE08",
     "showcaseVideo": "https://youtu.be/IACMmAG9uro",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "tags": [
       "Level",
       "CBF"
@@ -3910,13 +4194,19 @@
     ]
   },
   {
-    "name": "FLAMEWALL (Agent009)\n15-49%",
+    "name": "FLAMEWALL (Agent009) 15-49%",
     "id": "flamewall-agent009-15-49",
     "player": "Agent009",
     "date": "2024-09-17",
     "length": "140",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/omuHLccWYfE",
+    "showcaseVideo": "https://youtu.be/c5qQh7h0zYM",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Centipede",
@@ -3934,13 +4224,23 @@
     ]
   },
   {
-    "name": "Tunnel of Despair                                          144hz Mobile 18-84%",
+    "name": "Tunnel of Despair 144hz Mobile 18-84%",
     "id": "tunnel-of-despair-144hz-mobile-18-84",
     "player": "VERTOP",
     "date": "2025-05-15",
     "length": "50",
     "version": "2.2",
-    "levelID": "91351939"
+    "levelID": "91351939",
+    "video": "https://www.youtube.com/watch?v=aeezvldppr4",
+    "showcaseVideo": "https://youtu.be/SgWZkTPHNaM?t=113",
+    "submitter": "kittycatiscute",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "HAZARD DUTY PAY",
@@ -4105,7 +4405,14 @@
     "date": "2025-06-04",
     "length": "64",
     "version": "2.2",
-    "levelID": "120255728"
+    "levelID": "120255728",
+    "video": "https://youtu.be/TvA8EJTJFCc",
+    "showcaseVideo": "https://youtu.be/r5wqyu4-rrE",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Rated"
+    ]
   },
   {
     "name": "The Salt Factory",
@@ -4227,13 +4534,36 @@
     ]
   },
   {
+    "name": "The Golden 120hz",
+    "id": "the-golden-120hz",
+    "player": "Sid125",
+    "length": "76",
+    "version": "2.1",
+    "video": "https://youtu.be/GEguIRtbjk8",
+    "showcaseVideo": "https://youtu.be/lbrN3kasxR0",
+    "date": "2021-05-26",
+    "submitter": "jak",
+    "levelID": "60978746",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Rated"
+    ]
+  },
+  {
     "name": "Itsumade",
     "id": "itsumade",
     "player": "CaveMelv",
     "date": "2025-06-09",
     "length": "188",
     "version": "2.2",
-    "levelID": "120590716"
+    "levelID": "120590716",
+    "video": "https://youtu.be/Oh8t09JF-EA",
+    "showcaseVideo": "https://youtu.be/qS3mHt8CeFU",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level"
+    ]
   },
   {
     "name": "Unnerfed unknown 38%",
@@ -4299,13 +4629,21 @@
     ]
   },
   {
-    "name": "COMBUSTION                             44%, 100%",
+    "name": "COMBUSTION 44%, 100%",
     "id": "combustion-44-100",
     "player": "gotsmile",
     "date": "2025-06-01",
     "length": "80",
     "version": "2.2",
-    "levelID": "94359172"
+    "levelID": "94359172",
+    "video": "https://youtu.be/f7Ne-0NcxtE",
+    "showcaseVideo": "https://youtu.be/KaWAdxssH2w",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Consistency",
+      "Rated"
+    ]
   },
   {
     "name": "SWI Slithium Version 65%",
@@ -4339,13 +4677,18 @@
     ]
   },
   {
-    "name": "Gay Acheron\n17-100%",
+    "name": "Gay Acheron 17-100%",
     "id": "gay-acheron-17-100",
     "player": "turtl",
     "date": "2025-05-30",
     "length": "55",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://x.com/turtelgd/status/1928258896210096638",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Green Acheron 17-100%",
@@ -4575,13 +4918,21 @@
     ]
   },
   {
-    "name": "VSC\n1.1x 46%",
+    "name": "VSC 1.1x 46%",
     "id": "vsc-11x-46",
     "player": "Nev",
     "date": "2022-10-09",
     "length": "7",
     "version": "2.1",
-    "levelID": "60805571"
+    "levelID": "60805571",
+    "video": "https://youtu.be/2jml0YFq_eQ",
+    "showcaseVideo": "https://youtu.be/GbtLlQQezTA",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Challenge",
+      "Speedhack",
+      "Progress"
+    ]
   },
   {
     "name": "Silent Circles 42%",
@@ -4635,22 +4986,38 @@
     ]
   },
   {
-    "name": "Waterfall\n120hz Mobile",
+    "name": "Waterfall 120hz Mobile",
     "id": "waterfall-120hz-mobile",
-    "player": "GameGuru",
+    "player": "BBGameGuru",
     "date": "2025-05-31",
     "length": "97",
     "version": "2.2",
-    "levelID": "110991117"
+    "levelID": "110991117",
+    "video": "https://youtu.be/Z08iJYxCn00",
+    "showcaseVideo": "https://youtu.be/vXg5nJqRizI",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Rated"
+    ]
   },
   {
-    "name": "Natural Disaster                        (Full Detail)",
+    "name": "Natural Disaster (Full Detail)",
     "id": "natural-disaster-full-detail",
     "player": "Cobrablitz",
     "date": "2025-06-25",
     "length": "81",
     "version": "2.2",
-    "levelID": "107741051"
+    "levelID": "107741051",
+    "video": "https://youtu.be/2hWTB6zYTVA",
+    "showcaseVideo": "https://youtu.be/S2ODuYBF-nA",
+    "submitter": "kittycatiscute",
+    "tags": [
+      "Level",
+      "Rated"
+    ]
   },
   {
     "name": "Silent poltergeist",
@@ -4781,22 +5148,36 @@
     ]
   },
   {
-    "name": "Sakupen Circles (Cursed)               44-70%",
+    "name": "Sakupen Circles (Cursed) 44-70%",
     "id": "sakpen-circles-cursed-44-70",
     "player": "Emp",
     "date": "2025-07-24",
     "length": "9",
     "version": "2.2",
-    "levelID": "123070864"
+    "levelID": "123070864",
+    "video": "https://youtu.be/WeqKiZTqc1A?t=30",
+    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
+    "submitter": "Emp",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
   },
   {
-    "name": "Heliopolis (Abdieldevil)\n10-25%",
+    "name": "Heliopolis (Abdieldevil) 10-25%",
     "id": "heliopolis-abdieldevil-10-25",
     "player": "Abdieldevil",
     "date": "2025-07-15",
     "length": "16",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/WeqKiZTqc1A?t=30",
+    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Silent Circles 24-51%",
@@ -4987,13 +5368,22 @@
     ]
   },
   {
-    "name": "Codependence                        48%, 100%",
+    "name": "Codependence 48%, 100%",
     "id": "codependence-48-100",
     "player": "Pukklez",
     "date": "2023-06-04",
     "length": "186",
     "version": "2.1",
-    "levelID": "62556400"
+    "levelID": "62556400",
+    "video": "https://www.youtube.com/watch?v=IKGk41hSnDo",
+    "showcaseVideo": "https://www.youtube.com/watch?v=ti5G-c3wcM0",
+    "submitter": "kittycatiscute",
+    "tags": [
+      "Level",
+      "Consistency",
+      "2P",
+      "Rated"
+    ]
   },
   {
     "name": "50",
@@ -5002,7 +5392,13 @@
     "date": "2024-09-23",
     "length": "5",
     "version": "2.1",
-    "levelID": "110460436"
+    "levelID": "110460436",
+    "video": "https://youtu.be/w6ZW2KV8oGU",
+    "showcaseVideo": "https://youtu.be/n8_JxVxQrx4",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Challenge"
+    ]
   },
   {
     "name": "EVIL",
@@ -5020,13 +5416,20 @@
     ]
   },
   {
-    "name": "Aeternus\n79-100%",
+    "name": "Aeternus 79-100%",
     "id": "aeternus-79-100",
     "player": "Trick",
     "date": "2025-06-19",
     "length": "15",
     "version": "2.2",
-    "levelID": "102647436"
+    "levelID": "102647436",
+    "video": "https://youtu.be/L4a6UY8KSXQ",
+    "showcaseVideo": "https://youtu.be/p4QgFtKL5kE",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Lightning Machine 48-100%",
@@ -5093,13 +5496,22 @@
     ]
   },
   {
-    "name": "SUPERHATEMEWORLD            144hz Mobile 94%",
+    "name": "SUPERHATEMEWORLD 144hz Mobile 94%",
     "id": "superhatemeworld-144hz-mobile-94",
     "player": "Zafsa",
     "date": "2025-07-20",
     "length": "72",
     "version": "2.2",
-    "levelID": "57571983"
+    "levelID": "57571983",
+    "video": "https://youtu.be/VPKDPKD2P-8",
+    "showcaseVideo": "https://youtu.be/2EYDg9cnt5E",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "The Hallucination",
@@ -5182,13 +5594,19 @@
     ]
   },
   {
-    "name": "Flashbang                                   28-78%",
+    "name": "Flashbang 28-78%",
     "id": "flashbang-28-78",
     "player": "Noctal",
     "date": "2025-07-19",
     "length": "80",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/92EZAYy3tBQ?t=80",
+    "showcaseVideo": "https://youtu.be/2j9nLPyE2Tw",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Singularity 61%",
@@ -5209,22 +5627,35 @@
     ]
   },
   {
-    "name": "KOCMOC UNLEASHED Layout (Old) 41%",
-    "id": "kocmoc-unleashed-layout-old-41",
+    "name": "KOCMOC publicrelease 41%",
+    "id": "kocmoc-publicrelease-41",
     "player": "Arshadow",
     "date": "2024-06-10",
     "length": "31",
     "version": "2.2",
-    "levelID": "69196070"
+    "levelID": "69196070",
+    "video": "https://youtu.be/Z-LOnJKawIE",
+    "showcaseVideo": "https://youtu.be/WfwYZBeIhxo",
+    "submitter": "TheShadowRealm",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
-    "name": "Snowblind                                   84%",
+    "name": "Snowblind 84%",
     "id": "snowblind-84",
     "player": "Hippo",
     "date": "2025-07-13",
     "length": "47",
     "version": "2.2",
-    "levelID": "N/A"
+    "showcaseVideo": "https://youtu.be/Qi6yu86LUZY",
+    "video": "https://youtu.be/Cb0dFP6BaI0",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Lightning Machine 48%",
@@ -5241,15 +5672,6 @@
       "Progress",
       "CBF"
     ]
-  },
-  {
-    "name": "Fragile\n60hz Mobile 93%",
-    "id": "fragile-60hz-mobile-93",
-    "player": "ZAX1",
-    "date": "2025-05-12",
-    "length": "97",
-    "version": "2.2",
-    "levelID": "65588448"
   },
   {
     "name": "Sightless Sandstorm",
@@ -5282,13 +5704,19 @@
     ]
   },
   {
-    "name": "Azure Flare (polar)             25-47%",
+    "name": "Azure Flare (polar) 25-47%",
     "id": "azure-flare-polar-25-47",
     "player": "polar",
     "date": "2025-07-26",
     "length": "14",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://www.youtube.com/watch?v=9MZpfYfOfss",
+    "showcaseVideo": "https://www.youtube.com/watch?v=sXEE5F9Zg9E",
+    "submitter": "polar",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Solar Flare",
@@ -5307,13 +5735,20 @@
     ]
   },
   {
-    "name": "Silent clubstep (Old)                      11-65%",
+    "name": "Silent clubstep (Old) 11-65%",
     "id": "silent-clubstep-old-11-65",
     "player": "Vision",
     "date": "2024-05-11",
     "length": "48",
     "version": "2.1",
-    "levelID": "38692301"
+    "levelID": "38692301",
+    "video": "https://youtu.be/cbpknzRbF0o",
+    "showcaseVideo": "https://youtu.be/mTkrql917bE",
+    "submitter": "jak",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Apocalyptic Trilogy",
@@ -5364,31 +5799,52 @@
     ]
   },
   {
-    "name": "ReTraY WaVe\n39-74%",
+    "name": "ReTraY WaVe 39-74%",
     "id": "retray-wave-39-74",
     "player": "Caleger",
     "date": "2025-04-13",
     "length": "7",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/-yChFnq6N5w",
+    "showcaseVideo": "https://youtu.be/c3F9s7jqIFk",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Challenge",
+      "Progress"
+    ]
   },
   {
-    "name": "Silent Circles\n1st Coin 27-51%",
+    "name": "Silent Circles 1st Coin 27-51%",
     "id": "silent-circles-1st-coin-27-51",
     "player": "SeptaGon7",
     "date": "2025-06-06",
     "length": "12",
     "version": "2.2",
-    "levelID": "84316225"
+    "levelID": "84316225",
+    "video": "https://youtu.be/ucXQLsF_aOw",
+    "showcaseVideo": "https://youtu.be/5UnmtdUZs7c",
+    "submitter": "Aytch0008",
+    "tags": [
+      "Level",
+      "Miscellaneous",
+      "Progress",
+      "2P",
+      "CBF"
+    ]
   },
   {
-    "name": "uskc 37-67 x2\n72%",
+    "name": "uskc 37-67 x2 72%",
     "id": "uskc-37-67-x2-72",
     "player": "Emp",
     "date": "2024-11-03",
     "length": "27",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/Rja047bLTKo",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Challenge",
+      "Progress"
+    ]
   },
   {
     "name": "LIMBO",
@@ -5407,22 +5863,38 @@
     ]
   },
   {
-    "name": "Tartarus                                            144hz",
+    "name": "Tartarus 144hz",
     "id": "tartarus-144hz",
     "player": "5shine",
     "date": "2023-07-09",
     "length": "87",
     "version": "2.1",
-    "levelID": "59075347"
+    "levelID": "59075347",
+    "video": "https://youtu.be/UcoLCDQsJpg",
+    "showcaseVideo": "https://www.youtube.com/watch?v=lm1498Rfl0s",
+    "submitter": "MaruiG",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Rated"
+    ]
   },
   {
-    "name": "Sakupen Circles (Cursed)               37-59%",
+    "name": "Sakupen Circles (Cursed) 37-59%",
     "id": "sakupen-circles-cursed-37-59",
     "player": "Emp",
     "date": "2025-07-24",
     "length": "11",
     "version": "2.2",
-    "levelID": "123070864"
+    "levelID": "123070864",
+    "video": "https://youtu.be/cDn4l4VYZW0",
+    "showcaseVideo": "https://youtu.be/KDxOtDFwajE",
+    "submitter": "tricklength",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
   },
   {
     "name": "Silent Circles (Anceps) 27-52%",
@@ -5458,22 +5930,34 @@
     ]
   },
   {
-    "name": "⚠️Frigid Thrills\n38-86%",
+    "name": "⚠️ Frigid Thrills 38-86%",
     "id": "frigid-thrills-38-86",
     "player": "zXdasfsa",
     "date": "2025-07-07",
     "length": "50",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/gbHYgSXCAB4",
+    "showcaseVideo": "https://youtu.be/Rj-L8JctLMA",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
-    "name": "I N J U R Y\n18-81%",
+    "name": "I N J U R Y 18-81%",
     "id": "i-n-j-u-r-y-18-81",
     "player": "zXdasfsa",
     "date": "2025-06-16",
     "length": "18",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/tXzRtJGmP9M",
+    "showcaseVideo": "https://youtu.be/NxTslIsVMeI",
+    "submitter": "zXdasfsa",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Gaggatrondra",
@@ -5485,7 +5969,7 @@
     "version": 2.2,
     "video": "https://youtu.be/A4G41vw6Cf0",
     "showcaseVideo": "https://youtu.be/z_EkJcLJz2g",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "tags": [
       "Level",
       "Rated"
@@ -5545,13 +6029,20 @@
     ]
   },
   {
-    "name": "Unnerfed Cobwebs\n85%",
+    "name": "Unnerfed Cobwebs 85%",
     "id": "unnerfed-cobwebs-85",
     "player": "Cursed",
     "date": "2022-07-24",
     "length": "25",
     "version": "2.1",
-    "levelID": "82173373"
+    "levelID": "82173373",
+    "video": "https://youtu.be/KSm59ySAXs8",
+    "showcaseVideo": "https://youtu.be/iTvXj34Gm8E",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Sonic Wave Infinity\n120hz Mobile 24-100%",
@@ -5563,22 +6054,37 @@
     "levelID": "69685815"
   },
   {
-    "name": "Nightfall\n74%",
+    "name": "Nightfall 74%",
     "id": "nightfall-74",
     "player": "nei",
     "date": "2025-07-01",
     "length": "30",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/DBMYoTPGVT8",
+    "submitter": "kyle1saurus",
+    "showcaseVideo": "https://youtu.be/ml4bpWYi-4Q",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
-    "name": "Thinking Space II                      144hz Mobile 79-98%",
+    "name": "Thinking Space II 144hz Mobile 79-98%",
     "id": "thinking-space-ii-144hz-mobile-79-98",
     "player": "VERTOP",
     "date": "2025-06-07",
     "length": "10",
     "version": "2.2",
-    "levelID": "119544028"
+    "levelID": "119544028",
+    "video": "https://youtu.be/80Fip_0zcaU",
+    "showcaseVideo": "https://youtu.be/7xZ-xgeDyuc",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress"
+    ]
   },
   {
     "name": "The Catacombs",
@@ -5620,25 +6126,48 @@
     "date": "2025-07-07",
     "length": "106",
     "version": "2.2",
-    "levelID": "122506177"
+    "levelID": "122506177",
+    "video": "https://youtu.be/mNiyj653aSo",
+    "showcaseVideo": "https://youtu.be/O8zUAsBdIDE",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level"
+    ]
   },
   {
-    "name": "Bonus Level                                   41-100%",
+    "name": "Bonus Level 41-100%",
     "id": "bonus-level-41-100",
     "player": "nensa",
     "date": "2025-07-09",
     "length": "31",
     "version": "2.2",
-    "levelID": "81287932"
+    "levelID": "81287932",
+    "showcaseVideo": "https://youtu.be/l_jMJSStQBk",
+    "video": "https://youtu.be/sixgYizzJKE",
+    "submitter": "nensa",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
   },
   {
-    "name": "Bloodlust\n120hz Mobile",
+    "name": "Bloodlust 120hz Mobile",
     "id": "bloodlust-120hz-mobile",
     "player": "Exectorr",
     "date": "2025-07-15",
     "length": "170",
     "version": "2.2",
-    "levelID": "42584142"
+    "levelID": "42584142",
+    "video": "https://youtu.be/cDi8TaMlo2M",
+    "showcaseVideo": "https://youtu.be/kTToIer9QfY",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Rated"
+    ]
   },
   {
     "name": "Edge of Destiny",
@@ -5686,13 +6215,20 @@
     ]
   },
   {
-    "name": "Bonus Level                                 67%",
+    "name": "Bonus Level 67%",
     "id": "bonus-level-67",
     "player": "nensa",
     "date": "2025-07-12",
     "length": "33",
     "version": "2.2",
-    "levelID": "81287932"
+    "levelID": "81287932",
+    "video": "https://youtu.be/2qMtu_-ueT4",
+    "showcaseVideo": "https://youtu.be/l_jMJSStQBk",
+    "submitter": "nensa",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Stercore",
@@ -5742,13 +6278,23 @@
     ]
   },
   {
-    "name": "Lithium                                      60hz Mobile 73%",
+    "name": "Lithium 60hz Mobile 73%",
     "id": "lithium-60hz-mobile-73",
     "player": "Archermence",
     "date": "2025-05-15",
     "length": "84",
     "version": "2.2",
-    "levelID": "97364686"
+    "levelID": "97364686",
+    "video": "https://youtu.be/x3Znu-HbnwU",
+    "showcaseVideo": "https://youtu.be/IHqODLf_ZLY",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "Sakupen Circles 120hz Mobile 37-70%",
@@ -5802,13 +6348,19 @@
     ]
   },
   {
-    "name": "Invisible Wasureta\n17-100%",
+    "name": "Invisible Wasureta 17-100%",
     "id": "invisible-wasureta-17-100",
     "player": "fanatic72",
     "date": "2025-07-12",
     "length": "47",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/iq8292y4Ljo",
+    "showcaseVideo": "https://youtu.be/A4x2x8GUQTk",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Invisible Wasureta 63%",
@@ -5905,13 +6457,19 @@
     ]
   },
   {
-    "name": "MIGRAINE\n50%",
+    "name": "MIGRAINE 50%",
     "id": "migraine-50",
     "player": "Hover",
     "date": "2025-07-07",
     "length": "42",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/rAxT71yjkcU",
+    "showcaseVideo": "https://youtu.be/yM3p_sJRv3I",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "walter white",
@@ -5954,7 +6512,7 @@
     "version": 2.1,
     "video": "https://youtu.be/7ar_0g8JTXs",
     "showcaseVideo": "https://youtu.be/7ar_0g8JTXs",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "tags": [
       "Challenge"
     ]
@@ -6006,22 +6564,36 @@
     ]
   },
   {
-    "name": "⚠️ Riots Demise (noname old)      84%",
+    "name": "⚠️ Riots Demise (noname Old) 84%",
     "id": "riots-demise-noname-old-84",
     "player": "noname228gg",
     "date": "2025-07-12",
     "length": "100",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/7NlSMZRKI2E",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
   },
   {
-    "name": "Silent Acropolis\n38%",
+    "name": "Silent Acropolis 38%",
     "id": "silent-acropolis-38",
     "player": "SeptaGon7",
     "date": "2025-04-13",
     "length": "34",
     "version": "2.2",
-    "levelID": "111237270"
+    "levelID": "111237270",
+    "video": "https://youtu.be/jv-FNzqDDZ0",
+    "showcaseVideo": "https://youtu.be/E2guz5tw6c8",
+    "submitter": "SeptaGon7",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
   },
   {
     "name": "Vomit Rose (Old)",
@@ -6054,13 +6626,19 @@
     ]
   },
   {
-    "name": "THE DEVIL (buffed)\n41-83%",
+    "name": "THE DEVIL (Buffed) 41-83%",
     "id": "the-devil-buffed-41-83",
     "player": "Jenath",
     "date": "2025-07-03",
     "length": "43",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/MKa-rc0HBas",
+    "showcaseVideo": "https://x.com/Jenath_JD/status/1910800091650158909",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "VSC Nev Finale X 22%",
@@ -6080,13 +6658,19 @@
     ]
   },
   {
-    "name": "MIGRAINE\n48-100%",
+    "name": "MIGRAINE 48-100%",
     "id": "migraine-48-100",
     "player": "Hover",
     "date": "2025-07-07",
     "length": "46",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/rAxT71yjkcU?t=105",
+    "showcaseVideo": "https://youtu.be/yM3p_sJRv3I",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "⚠️ Riots Demise (noname)",
@@ -6095,25 +6679,47 @@
     "date": "2025-07-17",
     "length": "113",
     "version": "2.2",
-    "levelID": "123042674"
+    "levelID": "123042674",
+    "showcaseVideo": "https://youtu.be/kJ4d9OJVa48",
+    "video": "https://youtu.be/N1ez3CTV9pw",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "CBF"
+    ]
   },
   {
-    "name": "qoUEO\n120hz Mobile",
+    "name": "qoUEO 120hz Mobile",
     "id": "qoueo-120hz-mobile",
     "player": "DENISKA",
     "date": "2025-07-21",
     "length": "52",
     "version": "2.2",
-    "levelID": "81721025"
+    "levelID": "81721025",
+    "video": "https://youtu.be/rX_NEeaxXmU",
+    "showcaseVideo": "https://youtu.be/-foVEwyJS_A",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Rated"
+    ]
   },
   {
-    "name": "⚠️ ad3us limit                          62%",
+    "name": "⚠️ ad3us limit 62%",
     "id": "ad3us-limit-62",
     "player": "ad3usgmd",
     "date": "2025-06-17",
     "length": "33",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/nqFR6igEZtw",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
   },
   {
     "name": "PSYCHOPATH",
@@ -6193,15 +6799,6 @@
       "Level",
       "Progress"
     ]
-  },
-  {
-    "name": "Fragile\n60hz Mobile 24-96%",
-    "id": "fragile-60hz-mobile-24-96",
-    "player": "ZAX1",
-    "date": "2025-05-12",
-    "length": "60",
-    "version": "2.2",
-    "levelID": "65588448"
   },
   {
     "name": "Bad Tr1p 60%",
@@ -6340,19 +6937,27 @@
     ]
   },
   {
-    "name": "Cannon Bay                                         120hz Mobile 34-92%",
+    "name": "Cannon Bay 120hz Mobile 34-92%",
     "id": "cannon-bay-120hz-mobile-34-92",
     "player": "Que2Yo",
     "date": "2024-06-28",
     "length": "41",
     "version": "2.2",
-    "levelID": "83403926"
+    "levelID": "83403926",
+    "video": "https://youtu.be/3aUi8QXmXIY",
+    "showcaseVideo": "https://youtu.be/wez4Dd3cDBg",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress"
+    ]
   },
   {
     "name": "Fertane Never Clear",
     "id": "fertane-never-clear",
     "player": "jeyk",
-    "date": "",
     "length": 31,
     "version": 2.2,
     "video": "https://youtu.be/8JOq9d61C-k",
@@ -6423,13 +7028,24 @@
     ]
   },
   {
-    "name": "⚠️ Nullscapes                         60hz Mobile 18-51%",
+    "name": "⚠️ Nullscapes 60hz Mobile 18-51%",
     "id": "nullscapes-60hz-mobile-18-51",
     "player": "Cookie",
     "date": "2025-07-22",
     "length": "35",
     "version": "2.2",
-    "levelID": "109780665"
+    "levelID": "109780665",
+    "video": "https://youtu.be/m1oQE9LgKfk",
+    "showcaseVideo": "https://youtu.be/C-KDhWkXlvI",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "CBF",
+      "Rated"
+    ]
   },
   {
     "name": "The Plunge",
@@ -6441,7 +7057,7 @@
     "version": 2.2,
     "video": "https://youtu.be/8gW1-_u1K0Y",
     "showcaseVideo": "https://youtu.be/S_pBi3nlEDo",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "tags": [
       "Level",
       "Rated"
@@ -6478,13 +7094,19 @@
     ]
   },
   {
-    "name": "BRITNEY NO SCLEARS            74%",
+    "name": "BRITNEY NO SCLEARS 74%",
     "id": "britney-no-sclears-74",
     "player": "Scotchtape",
     "date": "2025-06-05",
     "length": "58",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/IQ_CqIwlqUM",
+    "showcaseVideo": "https://youtu.be/UPZJHVYJyhw",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Iridescent",
@@ -6493,7 +7115,13 @@
     "date": "2025-07-23",
     "length": "59",
     "version": "2.2",
-    "levelID": "123430601"
+    "levelID": "123430601",
+    "video": "https://youtu.be/tf2md44JU2g",
+    "showcaseVideo": "https://youtu.be/9EgxpC9nEnU",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level"
+    ]
   },
   {
     "name": "Midnight",
@@ -6544,13 +7172,19 @@
     ]
   },
   {
-    "name": "Buffed Misanthrope\n12-52%",
+    "name": "Buffed Misanthrope 12-52%",
     "id": "buffed-misanthrope-12-52",
     "player": "BigMacGD",
     "date": "2025-06-13",
     "length": "109",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://x.com/BigMacGD1/status/1933664236779065491",
+    "showcaseVideo": "https://youtu.be/qp-gY1MrS3A",
+    "submitter": "tmtsps12",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Sinister Silence (Old)",
@@ -6585,13 +7219,23 @@
     ]
   },
   {
-    "name": "Acheron 2.1                                  120hz Mobile 32%",
+    "name": "Acheron 2.1 120hz Mobile 32%",
     "id": "acheron-21-120hz-mobile-32",
     "player": "VERTOP",
     "date": "2023-08-14",
     "length": "24",
     "version": "2.1",
-    "levelID": "73667628"
+    "levelID": "73667628",
+    "video": "https://youtu.be/9uggRujaxD4",
+    "showcaseVideo": "https://youtu.be/YQElFvT5ynk",
+    "submitter": "Isabella",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Outdated Version"
+    ]
   },
   {
     "name": "GRIM",
@@ -6663,20 +7307,30 @@
     "video": "https://youtu.be/FlgH7PxLWvQ",
     "showcaseVideo": "https://youtu.be/fNMLTlqWAW0",
     "date": "2025-05-13",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "levelID": "82367248",
     "tags": [
       "Level"
     ]
   },
   {
-    "name": "Acheron 2.1                                  120hz Mobile 51-85%",
+    "name": "Acheron 2.1 120hz Mobile 51-85%",
     "id": "acheron-21-120hz-mobile-51-85",
     "player": "VERTOP",
     "date": "2023-04-30",
     "length": "24",
     "version": "2.1",
-    "levelID": "73667628"
+    "levelID": "73667628",
+    "video": "https://youtu.be/7H11BMYVxr0",
+    "showcaseVideo": "https://youtu.be/YQElFvT5ynk",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Outdated Version"
+    ]
   },
   {
     "name": "arcturus",
@@ -6787,7 +7441,7 @@
     "version": 2.1,
     "video": "https://youtu.be/TQSHhStgmvY",
     "showcaseVideo": "https://youtu.be/Bg6GtOpM0Zo",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "tags": [
       "Level",
       "Low Hertz",
@@ -6849,7 +7503,7 @@
     "length": 65,
     "version": 2.1,
     "video": "https://youtu.be/jlAYQoYtvq8",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "tags": [
       "Level",
       "Outdated Version"
@@ -6961,13 +7615,19 @@
     ]
   },
   {
-    "name": "⚠️ Femboy Friday                    99%",
+    "name": "⚠️ Femboy Friday 99%",
     "id": "femboy-friday-99",
     "player": "Infinny",
     "date": "2025-07-13",
     "length": "223",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/rlbZFBhx6vM",
+    "showcaseVideo": "https://youtu.be/RqDn6fXf7xU",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Sonic Wave 60hz Mobile",
@@ -6979,7 +7639,7 @@
     "version": 2.1,
     "video": " https://youtu.be/4v-J6vj8iMQ",
     "showcaseVideo": "https://youtu.be/6v_pWirR72Q",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "tags": [
       "Level",
       "Low Hertz",
@@ -7012,7 +7672,7 @@
     "version": 2.2,
     "video": "https://youtu.be/nt6T9YDb6gw",
     "showcaseVideo": "https://youtu.be/GcJyKYkbyfE",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "tags": [
       "Level",
       "2P",
@@ -7044,7 +7704,7 @@
     "version": 2.1,
     "video": "https://youtu.be/1tETyrqgxdI",
     "showcaseVideo": "https://youtu.be/1pOAl0njt_Q",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "tags": [
       "Level",
       "Low Hertz",
@@ -7136,7 +7796,13 @@
     "date": "2025-07-02",
     "length": "64",
     "version": "2.2",
-    "levelID": "122196131"
+    "levelID": "122196131",
+    "video": "https://youtu.be/HAyxOJ1XuBk",
+    "showcaseVideo": "https://youtu.be/gA_icsg3HYs",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level"
+    ]
   },
   {
     "name": "The Only Wish",
@@ -7181,7 +7847,7 @@
     "version": 2.1,
     "video": "https://youtu.be/k-WrHoaKkIo",
     "showcaseVideo": "https://youtu.be/6Lv2Q_88nS4",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "tags": [
       "Level",
       "Low Hertz",
@@ -7190,13 +7856,21 @@
     ]
   },
   {
-    "name": "Exens limit                                  1.2x 58-100%",
+    "name": "Exens limit 1.2x 58-100%",
     "id": "exens-limit-12x-58-100",
     "player": "Skylar",
     "date": "2025-05-13",
     "length": "15",
     "version": "2.2",
-    "levelID": "97338077"
+    "levelID": "97338077",
+    "video": "https://youtu.be/3XHN2gkHzNk",
+    "showcaseVideo": "https://youtu.be/ZpeknSJF-2U",
+    "submitter": "kittycatiscute",
+    "tags": [
+      "Level",
+      "Speedhack",
+      "Progress"
+    ]
   },
   {
     "name": "Hard Machine 2.1",
@@ -7234,13 +7908,22 @@
     ]
   },
   {
-    "name": "Kyouki\n1.1x 30-78%",
+    "name": "Kyouki 1.1x 30-78%",
     "id": "kyouki-11x-30-78",
     "player": "goldix",
     "date": "2024-08-13",
     "length": "37",
     "version": "2.1",
-    "levelID": "86018142"
+    "levelID": "86018142",
+    "video": "https://youtu.be/9MGw5yHS5uQ",
+    "showcaseVideo": "https://youtu.be/RBeyMGug3J0",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Speedhack",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "Kyouki 1.1x 49-93%",
@@ -7309,13 +7992,22 @@
     ]
   },
   {
-    "name": "Sakupen Silhouette                            37-100%                                               2 deaths, 99.88 accuracy",
+    "name": "Sakupen Silhouette 37-100% 2 deaths, 99.88 accuracy",
     "id": "sakupen-silhouette-37-100-2-deaths-99-88-accuracy",
     "player": "sobot",
     "date": "2024-10-29",
     "length": "28",
     "version": "2.2",
-    "levelID": "92199224"
+    "levelID": "92199224",
+    "video": "https://youtu.be/vv0Zx8LqqWw",
+    "showcaseVideo": "https://youtu.be/LptlyojZcNw",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Noclip",
+      "Progress",
+      "CBF"
+    ]
   },
   {
     "name": "lava",
@@ -7334,13 +8026,23 @@
     ]
   },
   {
-    "name": "⚠️ Tidal Wave                           60hz Mobile 72-100%",
+    "name": "⚠️ Tidal Wave 60hz Mobile 72-100%",
     "id": "tidal-wave-60hz-mobile-72-100",
     "player": "Cookie",
     "date": "2024-09-09",
     "length": "51",
     "version": "2.2",
-    "levelID": "86407629"
+    "levelID": "86407629",
+    "video": "https://youtu.be/q2kLvzvlESU",
+    "showcaseVideo": "https://youtu.be/PFHlkdz9UqM",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ],
+    "submitter": "kaliulti"
   },
   {
     "name": "Old Orochi 36-100%",
@@ -7375,13 +8077,23 @@
     ]
   },
   {
-    "name": "⚠️ Tidal Wave                          60hz Mobile 23-39%",
+    "name": "⚠️ Tidal Wave 60hz Mobile 23-39%",
     "id": "tidal-wave-60hz-mobile-23-39",
     "player": "Cookie",
     "date": "2024-09-09",
     "length": "25",
     "version": "2.2",
-    "levelID": "86407629"
+    "levelID": "86407629",
+    "video": "https://youtu.be/ol2t4_rp5sc",
+    "showcaseVideo": "https://youtu.be/PFHlkdz9UqM",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ],
+    "submitter": "kaliulti"
   },
   {
     "name": "Gamma 60hz",
@@ -7489,7 +8201,7 @@
     "version": 2.1,
     "video": "https://youtu.be/sTy3rimH2nQ",
     "showcaseVideo": "https://youtu.be/knHAfFHWLj0",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "tags": [
       "Level",
       "Low Hertz",
@@ -7507,7 +8219,7 @@
     "version": 2.1,
     "video": "https://youtu.be/luCldwwn1ok",
     "showcaseVideo": "https://youtu.be/knHAfFHWLj0",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "tags": [
       "Level",
       "Low Hertz",
@@ -7614,15 +8326,6 @@
     ]
   },
   {
-    "name": "Fragile\n60hz Mobile 37-100%",
-    "id": "fragile-60hz-mobile-37-100",
-    "player": "ZAX1",
-    "date": "2025-05-14",
-    "length": "60",
-    "version": "2.2",
-    "levelID": "65588448"
-  },
-  {
     "name": "SADOMASOCHISM 1.1x 50%",
     "id": "sadomasochism-1-1x-50",
     "player": "iblitzion",
@@ -7683,13 +8386,21 @@
     ]
   },
   {
-    "name": "Silent Clubstep II                          51-100%",
+    "name": "Silent Clubstep II 51-100%",
     "id": "silent-clubstep-ii-51-100",
     "player": "SkittleCatastrophe",
     "date": "2025-06-27",
     "length": "35",
     "version": "2.2",
-    "levelID": "78614226"
+    "levelID": "78614226",
+    "video": "https://youtu.be/NVC373E4FYI",
+    "showcaseVideo": "https://youtu.be/mCj_PjC3rs0",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
   },
   {
     "name": "Forsaken Frost 88%",
@@ -7721,13 +8432,22 @@
     ]
   },
   {
-    "name": "Widestep                                   60hz 68%",
+    "name": "Widestep 60hz 68%",
     "id": "widestep-60hz-68",
     "player": "Th3on3C",
     "date": "2025-03-31",
     "length": "52",
     "version": "2.2",
-    "levelID": "69289606"
+    "levelID": "69289606",
+    "video": "https://youtu.be/RQvHmSkyznw",
+    "showcaseVideo": "https://youtu.be/uAwHbCTkmzc",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "Dreamopolis",
@@ -7788,13 +8508,20 @@
     ]
   },
   {
-    "name": "Silent Clubstep II                          18-37%",
+    "name": "Silent Clubstep II 18-37%",
     "id": "silent-clubstep-ii-18-37",
     "player": "SkittleCatastrophe",
     "date": "2025-07-18",
     "length": "16",
     "version": "2.2",
-    "levelID": "78614226"
+    "levelID": "78614226",
+    "video": "https://youtu.be/iXXE0wBtClE",
+    "showcaseVideo": "https://youtu.be/mCj_PjC3rs0",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "VENUS",
@@ -7844,13 +8571,22 @@
     ]
   },
   {
-    "name": "Acheron                                    144hz Mobile 68-100%",
+    "name": "Acheron 144hz Mobile 68-100%",
     "id": "acheron-144hz-mobile-68-100",
     "player": "MAXDASH07",
     "date": "2024-11-11",
     "length": "21",
     "version": "2.2",
-    "levelID": "73667628"
+    "levelID": "73667628",
+    "video": "https://youtu.be/dKQvOX0S9Tg",
+    "showcaseVideo": "https://youtu.be/YQElFvT5ynk",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "Kuzureta 60hz Mobile",
@@ -7888,31 +8624,54 @@
     ]
   },
   {
-    "name": "Widestep                                   60hz 31-91%",
+    "name": "Widestep 60hz 31-91%",
     "id": "widestep-60hz-31-91",
     "player": "Th3on3C",
     "date": "2025-03-31",
     "length": "52",
     "version": "2.2",
-    "levelID": "69289606"
+    "levelID": "69289606",
+    "video": "https://youtu.be/RQvHmSkyznw?t=78",
+    "showcaseVideo": "https://youtu.be/uAwHbCTkmzc",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Progress",
+      "Rated"
+    ]
   },
   {
-    "name": "Silent Clubstep II                          24%",
+    "name": "Silent Clubstep II 24%",
     "id": "silent-clubstep-ii-24",
     "player": "SkittleCatastrophe",
     "date": "2025-07-16",
     "length": "25",
     "version": "2.2",
-    "levelID": "78614226"
+    "levelID": "78614226",
+    "video": "https://youtu.be/FQPS9WrxU64",
+    "showcaseVideo": "https://youtu.be/mCj_PjC3rs0",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
   },
   {
-    "name": "Sweeping Demon 2 (Taiago)\n49-91%",
+    "name": "Sweeping Demon 2 (Taiago) 49-91%",
     "id": "sweeping-demon-2-taiago-49-91",
     "player": "Taiago",
     "date": "2025-07-22",
     "length": "28",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/b-f1C2Bg7rE",
+    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Coalescence",
@@ -8014,22 +8773,36 @@
     ]
   },
   {
-    "name": "ZAPHKIEL\n60hz",
+    "name": "ZAPHKIEL 60hz",
     "id": "zaphkiel-60hz",
     "player": "Sevant",
     "date": "2024-08-13",
     "length": "76",
     "version": "2.2",
-    "levelID": "36329434"
+    "levelID": "36329434",
+    "video": "https://www.youtube.com/watch?v=wYFVQ9H7qms",
+    "showcaseVideo": "https://www.youtube.com/watch?v=1MR6qKNWpG8",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Rated"
+    ]
   },
   {
-    "name": "⚠️ Blooming Blossoms                             67%",
+    "name": "⚠️ Blooming Blossoms 67%",
     "id": "blooming-blossoms-67",
     "player": "piesy",
     "date": "2025-07-12",
     "length": "65",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/2ojRBVdsu0w",
+    "showcaseVideo": "https://youtu.be/yFSErX4trnQ",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Aronia 60hz Mobile",
@@ -8041,7 +8814,7 @@
     "version": 2.1,
     "video": " https://youtu.be/SXTAoR0XSVk",
     "showcaseVideo": "https://youtu.be/eJe3i5KyKOk",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "tags": [
       "Level",
       "Low Hertz",
@@ -8073,7 +8846,7 @@
     "length": 24,
     "version": 2.2,
     "video": "https://x.com/DasherDoggie/status/1893022569420210487",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "tags": [
       "Level",
       "Progress",
@@ -8096,13 +8869,38 @@
     ]
   },
   {
-    "name": "Gumi\n86%",
+    "name": "Trueffet 1.3x 28-100%",
+    "id": "trueffet-13x-28-100",
+    "player": "Arshadow",
+    "length": "39",
+    "version": "2.2",
+    "video": "https://youtu.be/mXBSMLYrsvg",
+    "showcaseVideo": "https://youtu.be/qkQidB9aPLA",
+    "date": "2025-07-27",
+    "submitter": "TYATYAPKA",
+    "levelID": "71434979",
+    "tags": [
+      "Level",
+      "Speedhack",
+      "Progress",
+      "CBF",
+      "Rated"
+    ]
+  },
+  {
+    "name": "Gumi 86%",
     "id": "gumi-86",
     "player": "Thnnder",
     "date": "2025-07-19",
     "length": "40",
     "version": "2.2",
-    "levelID": "75330074"
+    "levelID": "75330074",
+    "video": "https://www.youtube.com/live/y1Nl5An8-zc?t=4644s",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Tidal Wave 1.2x 62-80%",
@@ -8138,22 +8936,36 @@
     ]
   },
   {
-    "name": "Snowblind (old)                            59%",
+    "name": "Snowblind (Old) 59%",
     "id": "snowblind-old-59",
     "player": "Hippo",
     "date": "2025-05-13",
     "length": "36",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://fxtwitter.com/hipppoooo9/status/1922049706965835867",
+    "showcaseVideo": "https://youtu.be/Qi6yu86LUZY",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
-    "name": "Cimmerian Shade                         142%",
+    "name": "Cimmerian Shade 142%",
     "id": "cimmerian-shade-142",
     "player": "Zoink",
     "date": "2025-06-06",
     "length": "120",
     "version": "2.2",
-    "levelID": "93340783"
+    "levelID": "93340783",
+    "video": "https://www.youtube.com/live/L32T5dYadLg?t=7217",
+    "showcaseVideo": "https://youtu.be/CcvGGDzxOJo",
+    "submitter": "Emp",
+    "tags": [
+      "Level",
+      "Consistency",
+      "Rated"
+    ]
   },
   {
     "name": "Blue Tartarus",
@@ -8200,22 +9012,39 @@
     ]
   },
   {
-    "name": "UNKNOWN                               46%, 100%",
+    "name": "UNKNOWN 46%, 100%",
     "id": "unknown-46-100",
     "player": "Litoks",
     "date": "2025-04-26",
     "length": "63",
     "version": "2.2",
-    "levelID": "88203501"
+    "levelID": "88203501",
+    "video": "https://youtu.be/r05t7GjO6qA",
+    "showcaseVideo": "https://www.youtube.com/watch?v=7K7UWZmK9eU",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Consistency",
+      "CBF",
+      "Rated"
+    ]
   },
   {
-    "name": "Trueffet                                      41%, 100%",
+    "name": "Trueffet 41%, 100%",
     "id": "trueffet-41-100",
     "player": "Cursed",
     "date": "2022-02-05",
     "length": "92",
     "version": "2.1",
-    "levelID": "71434979"
+    "levelID": "71434979",
+    "video": "https://youtu.be/NmfZfT5byS4",
+    "showcaseVideo": "https://youtu.be/qkQidB9aPLA",
+    "submitter": "zXdasfsa",
+    "tags": [
+      "Level",
+      "Consistency",
+      "Rated"
+    ]
   },
   {
     "name": "Subsuming Vortex 49%",
@@ -8234,13 +9063,20 @@
     ]
   },
   {
-    "name": "Subterminal buffed                    23-60%",
+    "name": "Subterminal buffed 23-60%",
     "id": "subterminal-buffed-23-60",
     "player": "ChopBlox",
     "date": "2025-05-23",
     "length": "21",
     "version": "2.2",
-    "levelID": "119502876"
+    "levelID": "119502876",
+    "video": "https://youtu.be/wObm1cdLGr0",
+    "showcaseVideo": "https://youtu.be/pGtG6HdIN2A",
+    "submitter": "goofygdplayer_",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Triathlon 67%",
@@ -8340,31 +9176,59 @@
     ]
   },
   {
-    "name": "Mayhem                                        144hz Mobile 43-100%",
+    "name": "Mayhem 144hz Mobile 43-100%",
     "id": "mayhem-144hz-mobile-43-100",
     "player": "Mateex",
     "date": "2025-06-04",
     "length": "40",
     "version": "2.1",
-    "levelID": "82544060"
+    "levelID": "82544060",
+    "video": "https://youtu.be/Ch_z2T536jY",
+    "showcaseVideo": "https://youtu.be/pKJUmSJR22Y",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
   },
   {
-    "name": "Renevant                                     120hz Mobile",
+    "name": "Renevant 120hz Mobile",
     "id": "renevant-120hz-mobile",
     "player": "SoulRise",
     "date": "2025-05-16",
     "length": "98",
     "version": "2.2",
-    "levelID": "58161496"
+    "levelID": "58161496",
+    "video": "https://youtu.be/uZZZqTbwCuY",
+    "showcaseVideo": "https://youtu.be/FgkACdloQug",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Rated"
+    ]
   },
   {
-    "name": "Calculator Core\n120hz Mobile",
+    "name": "Calculator Core 120hz Mobile",
     "id": "calculator-core-120hz-mobile",
     "player": "Prmak",
     "date": "2025-07-07",
     "length": "204",
     "version": "2.2",
-    "levelID": "58355141"
+    "levelID": "58355141",
+    "video": "https://youtu.be/xPWGBC8RRxs",
+    "showcaseVideo": "https://youtu.be/Bg6GtOpM0Zo",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Rated"
+    ]
   },
   {
     "name": "Misanthrope 65-100%",
@@ -8375,7 +9239,7 @@
     "version": 2.1,
     "video": "https://youtu.be/jJxubCsEiHc",
     "showcaseVideo": "https://youtu.be/wh1B_Q9gwD8",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "tags": [
       "Level",
       "Progress"
@@ -8388,7 +9252,12 @@
     "date": "2025-07-23",
     "length": "86",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/0M1sMbchs68",
+    "showcaseVideo": "https://youtu.be/q3M4_gezvLc",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level"
+    ]
   },
   {
     "name": "Death Corridor Easy 64%",
@@ -8474,7 +9343,13 @@
     "date": "2021-08-29",
     "length": "4",
     "version": "2.1",
-    "levelID": "73113904"
+    "levelID": "73113904",
+    "video": "https://youtu.be/4xgc3kER5a8",
+    "showcaseVideo": "https://youtu.be/wAISI6ke55Y",
+    "submitter": "Anceps",
+    "tags": [
+      "Challenge"
+    ]
   },
   {
     "name": "Fried lEgg",
@@ -8485,19 +9360,26 @@
     "length": 3,
     "version": 2.1,
     "video": "https://youtu.be/harwFhCwYlA",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "tags": [
       "Challenge"
     ]
   },
   {
-    "name": "Frigid Thrills (Layout)\n37-63%",
+    "name": "Frigid Thrills (Layout) 37-63%",
     "id": "frigid-thrills-layout-37-63",
     "player": "zXdasfsa",
     "date": "2025-06-21",
     "length": "26",
     "version": "2.2",
-    "levelID": "64315677"
+    "levelID": "64315677",
+    "video": "https://youtu.be/qIM0Fo94fXU",
+    "showcaseVideo": "https://youtu.be/Rj-L8JctLMA",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Delta",
@@ -8506,7 +9388,14 @@
     "date": "2023-08-30",
     "length": "145",
     "version": "2.1",
-    "levelID": "93917362"
+    "levelID": "93917362",
+    "video": "https://www.youtube.com/watch?v=_rr3J8DkIm4",
+    "showcaseVideo": "https://www.youtube.com/watch?v=SYhxEhywmrQ",
+    "submitter": "Anceps",
+    "tags": [
+      "Level",
+      "Rated"
+    ]
   },
   {
     "name": "Theory Of Darkness (Old)",
@@ -8541,22 +9430,36 @@
     ]
   },
   {
-    "name": "Gumi\n32-96%",
+    "name": "Gumi 32-96%",
     "id": "gumi-32-96",
     "player": "lolwut",
     "date": "2025-07-19",
     "length": "30",
     "version": "2.2",
-    "levelID": "75330074"
+    "levelID": "75330074",
+    "video": "https://youtu.be/AEkKhZm0IGc",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
-    "name": "Erebus\n60hz Mobile",
+    "name": "Erebus 60hz Mobile",
     "id": "erebus-60hz-mobile",
     "player": "Biprex",
     "date": "2021-10-10",
     "length": "70",
     "version": "2.1",
-    "levelID": "31462941"
+    "levelID": "31462941",
+    "video": "https://youtu.be/jaP0R3svguA",
+    "showcaseVideo": "https://youtu.be/a2t8FSLtDiQ",
+    "submitter": "Arcadie",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Rated"
+    ]
   },
   {
     "name": "Erebus 60hz",
@@ -8600,16 +9503,28 @@
     "date": "2025-06-18",
     "length": "45",
     "version": "2.2",
-    "levelID": "94900837"
+    "levelID": "94900837",
+    "video": "https://youtu.be/Foxb05FLnFU",
+    "showcaseVideo": "https://youtu.be/KYeZH4cSXkI",
+    "submitter": "kittycatiscute",
+    "tags": [
+      "Level"
+    ]
   },
   {
-    "name": "⚠️ Glass Chapel (Layout)                      65-100%",
+    "name": "⚠️ Glass Chapel (Layout) 65-100%",
     "id": "glass-chapel-layout-65-100",
     "player": "iliLaserili",
     "date": "2025-07-09",
     "length": "68",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/RFLo0l1HL9w",
+    "showcaseVideo": "https://youtu.be/RJmidmH5DfA",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Jigsaw",
@@ -8634,7 +9549,13 @@
     "date": "2025-06-12",
     "length": "50",
     "version": "2.2",
-    "levelID": "63702523"
+    "levelID": "63702523",
+    "video": "https://youtu.be/LosiqyqaqV0",
+    "showcaseVideo": "https://youtu.be/TYlMnbQdKWw",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level"
+    ]
   },
   {
     "name": "Silent Club Plus (Layout) 48%",
@@ -8666,13 +9587,23 @@
     ]
   },
   {
-    "name": "Verdant Landscape                     120hz Mobile 44-86%",
+    "name": "Verdant Landscape 120hz Mobile 44-86%",
     "id": "verdant-landscape-120hz-mobile-44-86",
     "player": "Que2Yo",
     "date": "2024-11-23",
     "length": "44",
     "version": "2.2",
-    "levelID": "76543324"
+    "levelID": "76543324",
+    "video": "https://youtu.be/8CXiooJE1Ec",
+    "showcaseVideo": "https://youtu.be/dSbox0NKuXs",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "UNKNOWN",
@@ -8706,22 +9637,20 @@
     ]
   },
   {
-    "name": "UNKNOWN                              86-96% + 86-97% + 86-100% x6 + 86-96%",
-    "id": "unknown-86-96-86-97-86-100-x6-86-96",
-    "player": "Clarelol",
-    "date": "2025-06-14",
-    "length": "44",
-    "version": "2.2",
-    "levelID": "88203501"
-  },
-  {
     "name": "BPATA MPAKA",
     "id": "bpata-mpaka",
     "player": "Maybee",
     "date": "2024-10-26",
     "length": "107",
     "version": "2.2",
-    "levelID": "109947627"
+    "levelID": "109947627",
+    "video": "https://www.youtube.com/watch?v=sSbHYzYgYfA",
+    "showcaseVideo": "https://youtu.be/SlpYDNeZP8w",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Rated"
+    ]
   },
   {
     "name": "Shadow Illusion 48-100%",
@@ -8745,7 +9674,14 @@
     "date": "2023-08-12",
     "length": "77",
     "version": "2.1",
-    "levelID": "93340783"
+    "levelID": "93340783",
+    "video": "https://youtu.be/lUNvV1k19HA?t=32",
+    "showcaseVideo": "https://youtu.be/CcvGGDzxOJo",
+    "submitter": "Anceps",
+    "tags": [
+      "Level",
+      "Rated"
+    ]
   },
   {
     "name": "Disturb",
@@ -8754,7 +9690,13 @@
     "date": "2025-05-15",
     "length": "70",
     "version": "2.2",
-    "levelID": "118951928"
+    "levelID": "118951928",
+    "video": "https://youtu.be/ZAaAkJXCVJc",
+    "showcaseVideo": "https://youtu.be/m6LhRymWHfk",
+    "tags": [
+      "Level"
+    ],
+    "submitter": "kyle1saurus"
   },
   {
     "name": "Torrent",
@@ -8834,13 +9776,19 @@
     ]
   },
   {
-    "name": "Sweeping Demon 2 (Taiago)\n43%",
+    "name": "Sweeping Demon 2 (Taiago) 43%",
     "id": "sweeping-demon-2-taiago-43",
     "player": "Taiago",
     "date": "2025-07-13",
     "length": "38",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/yDdqpTM9F20",
+    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Lotus Flower 60hz 58%",
@@ -8879,22 +9827,35 @@
     ]
   },
   {
-    "name": "Sweeping Demon 2\n59-100%",
+    "name": "Sweeping Demon 2 59-100%",
     "id": "sweeping-demon-2-59-100",
     "player": "Helix",
     "date": "2022-09-10",
     "length": "29",
     "version": "2.1",
-    "levelID": "81842690"
+    "levelID": "81842690",
+    "video": "https://youtu.be/6Cng8N7HoBU",
+    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
-    "name": "Sweeping Demon 2 (Taiago)\n59-100%",
+    "name": "Sweeping Demon 2 (Taiago) 59-100%",
     "id": "sweeping-demon-2-taiago-59-100",
     "player": "Taiago",
     "date": "2025-07-12",
     "length": "28",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/AAOoAfdHFjM",
+    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Viprin UFO",
@@ -8903,16 +9864,30 @@
     "date": "2024-06-30",
     "length": "97",
     "version": "2.2",
-    "levelID": "107238250"
+    "levelID": "107238250",
+    "video": "https://youtu.be/LTMW9Py-nHE",
+    "showcaseVideo": "https://youtu.be/wZt4DOqwePc",
+    "submitter": "Anceps",
+    "tags": [
+      "Level",
+      "Rated"
+    ]
   },
   {
-    "name": "Sweeping Demon II\n47-74%",
+    "name": "Sweeping Demon II 47-74%",
     "id": "sweeping-demon-2-47-74",
     "player": "Bradenbowl",
     "date": "2025-01-16",
     "length": "19",
     "version": "2.2",
-    "levelID": "81842690"
+    "levelID": "81842690",
+    "video": "https://youtu.be/tGT0C9bSDSE",
+    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Sweeping Demon 2 50%",
@@ -8937,7 +9912,13 @@
     "date": "2022-07-20",
     "length": "22",
     "version": "2.1",
-    "levelID": "N/A"
+    "video": "https://youtu.be/BNv3kyMreuk",
+    "showcaseVideo": "https://youtu.be/uzhaj0VgK7Q",
+    "submitter": "Swift",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Zodiac 144hz Mobile 77%",
@@ -9027,13 +10008,21 @@
     ]
   },
   {
-    "name": "Checked Steam                           45%, 100%",
+    "name": "Checked Steam 45%, 100%",
     "id": "checked-steam-45-100",
     "player": "Zoink",
     "date": "2024-09-10",
     "length": "100",
     "version": "2.2",
-    "levelID": "105748155"
+    "levelID": "105748155",
+    "video": "https://www.youtube.com/watch?v=UD9MpywC_XU",
+    "showcaseVideo": "https://www.youtube.com/watch?v=yN1grKb8UTQ",
+    "submitter": "kittycatiscute",
+    "tags": [
+      "Level",
+      "Consistency",
+      "Rated"
+    ]
   },
   {
     "name": "cry me a river",
@@ -9096,13 +10085,20 @@
     ]
   },
   {
-    "name": "last stop                                   49%",
+    "name": "last stop 49%",
     "id": "last-stop-49",
     "player": "aytch0008",
     "date": "2023-08-31",
     "length": "11",
     "version": "2.1",
-    "levelID": "64815983"
+    "levelID": "64815983",
+    "video": "https://x.com/aytch0008/status/1697164735161270349?t=_EgyQ59Ii7n5wdK9OIOs8g",
+    "showcaseVideo": "https://youtu.be/QyDnUJqBd60",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Challenge",
+      "Progress"
+    ]
   },
   {
     "name": "Katarsis",
@@ -9111,16 +10107,26 @@
     "date": "2025-05-18",
     "length": "304",
     "version": "2.2",
-    "levelID": "119174956"
+    "levelID": "119174956",
+    "video": "https://youtu.be/8xRtf2OqdfQ",
+    "showcaseVideo": "https://youtu.be/b42vcmYPHjA",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Level"
+    ]
   },
   {
-    "name": "last memory is dead                          70%",
+    "name": "last memory is dead 70%",
     "id": "last-memory-is-dead-70",
     "player": "Thnnder",
     "date": "2025-06-17",
     "length": "33",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://x.com/Thnnder_/status/1934774769649349005",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Fracture",
@@ -9129,7 +10135,12 @@
     "date": "2025-06-02",
     "length": "85",
     "version": "2.2",
-    "levelID": "99703915"
+    "levelID": "99703915",
+    "video": "https://youtu.be/R_-chk3SRFI",
+    "showcaseVideo": "https://youtu.be/TroRY2oC4KM",
+    "tags": [
+      "Level"
+    ]
   },
   {
     "name": "Frigid Thrills 55-77%",
@@ -9270,13 +10281,22 @@
     ]
   },
   {
-    "name": "Exens limit                                    1.2x 53%",
+    "name": "Exens limit 1.2x 53%",
     "id": "exens-limit-12x-53",
     "player": "Skylar",
     "date": "2025-05-13",
     "length": "24",
     "version": "2.2",
-    "levelID": "97338077"
+    "levelID": "97338077",
+    "video": "https://youtu.be/3XHN2gkHzNk",
+    "showcaseVideo": "https://youtu.be/ZpeknSJF-2U",
+    "submitter": "kittycatiscute",
+    "tags": [
+      "Level",
+      "Speedhack",
+      "Progress",
+      "CBF"
+    ]
   },
   {
     "name": "Hitorigoto",
@@ -9360,13 +10380,21 @@
     ]
   },
   {
-    "name": "Delusion                                       144hz Mobile",
+    "name": "Delusion 144hz Mobile",
     "id": "delusion-144hz-mobile",
     "player": "ATaMAn",
     "date": "2024-04-26",
     "length": "15",
     "version": "2.2",
-    "levelID": "65348932"
+    "levelID": "65348932",
+    "video": "https://youtu.be/yxTLdkmGxuA",
+    "showcaseVideo": "https://youtu.be/z624rRd1Z2U",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Challenge",
+      "Low Hertz",
+      "Mobile"
+    ]
   },
   {
     "name": "Achenus",
@@ -9403,13 +10431,23 @@
     ]
   },
   {
-    "name": "⚠️ Oblivion\n60hz Mobile 49-100%",
+    "name": "⚠️ Oblivion 60hz Mobile 49-100%",
     "id": "oblivion-60hz-mobile-49-100",
     "player": "Bigthunder556",
     "date": "2022-06-27",
     "length": "31",
     "version": "2.1",
-    "levelID": "71025973"
+    "levelID": "71025973",
+    "video": "https://youtu.be/ovARIcUT-6k",
+    "showcaseVideo": "https://youtu.be/QNs14m3HxJE",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "Deimos (Tygrysek)",
@@ -9442,13 +10480,21 @@
     ]
   },
   {
-    "name": "SWI Slithium Version                          45-93%",
+    "name": "SWI Slithium Version 45-93%",
     "id": "swi-slithium-version-45-93",
     "player": "Jevan",
     "date": "2025-07-21",
     "length": "42",
     "version": "2.2",
-    "levelID": "69693819"
+    "levelID": "69693819",
+    "video": "https://youtu.be/boAlbHqWBWw",
+    "showcaseVideo": "https://www.youtube.com/watch?v=Ag381Ey-pWs",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
   },
   {
     "name": "No Love",
@@ -9465,13 +10511,23 @@
     ]
   },
   {
-    "name": "ORDINARY                                                Mobile 120hz 49%",
-    "id": "ordinary-mobile-120hz-49",
+    "name": "ORDINARY 120hz Mobile 49%",
+    "id": "ordinary-120hz-mobile-49",
     "player": "Mobileplayer0623",
     "date": "2025-04-24",
     "length": "37",
     "version": "2.2",
-    "levelID": "105593215"
+    "levelID": "105593215",
+    "video": "https://youtu.be/nZJbcL2X3Kg",
+    "showcaseVideo": "https://youtu.be/pjdZ50zoWyc",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "EXCEPTIONAL",
@@ -9489,13 +10545,23 @@
     ]
   },
   {
-    "name": "⚠️ Zodiac\n60hz Mobile 58%",
+    "name": "⚠️ Zodiac 60hz Mobile 58%",
     "id": "zodiac-60hz-mobile-58",
     "player": "Bigthunder556",
     "date": "2024-11-02",
     "length": "124",
     "version": "2.2",
-    "levelID": "52374843"
+    "levelID": "52374843",
+    "video": "https://youtu.be/zT9F7dlGfY8",
+    "showcaseVideo": "https://youtu.be/CtUP_7wSUII",
+    "submitter": "vaughn",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "Flyleaf 18-73%",
@@ -9523,7 +10589,7 @@
     "version": 2.1,
     "submitter": "Anceps",
     "video": "https://youtu.be/dGBPjQZUsVE",
-    "showcaseVideo": "https://youtu.be/g2OE21U9e5w",
+    "showcaseVideo": "https://youtu.be/lbrN3kasxR0",
     "tags": [
       "Level",
       "Speedhack",
@@ -9650,13 +10716,21 @@
     ]
   },
   {
-    "name": "Eudemonic                                    62-100%",
+    "name": "Eudemonic 62-100%",
     "id": "eudemonic-62-100",
     "player": "seels",
     "date": "2025-07-12",
     "length": "53",
     "version": "2.2",
-    "levelID": "62667940"
+    "levelID": "62667940",
+    "video": "https://youtu.be/pBpUoeDhLpY",
+    "showcaseVideo": "https://youtu.be/tNR50q4ewWU",
+    "submitter": "tmtsps12",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
   },
   {
     "name": "HAZARD",
@@ -9665,7 +10739,13 @@
     "date": "2025-03-25",
     "length": "16",
     "version": "2.2",
-    "levelID": "116511814"
+    "levelID": "116511814",
+    "video": "https://youtu.be/RNdMztbZrTk",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Challenge",
+      "CBF"
+    ]
   },
   {
     "name": "Silent Club Plus (Layout) 43-100%",
@@ -9688,16 +10768,30 @@
     "date": "2022-06-03",
     "length": "76",
     "version": "2.1",
-    "levelID": "80714349"
+    "levelID": "80714349",
+    "video": "https://www.youtube.com/watch?v=M--2oQKrV68",
+    "showcaseVideo": "https://www.youtube.com/watch?v=-HhIFBFXDJg",
+    "submitter": "Anceps",
+    "tags": [
+      "Level"
+    ]
   },
   {
-    "name": "Eudemonic                                   60%",
+    "name": "Eudemonic 60%",
     "id": "eudemonic-60",
     "player": "seels",
     "date": "2025-07-10",
     "length": "81",
     "version": "2.2",
-    "levelID": "62667940"
+    "levelID": "62667940",
+    "video": "https://youtu.be/4kjSf6luuQ8",
+    "showcaseVideo": "https://youtu.be/tNR50q4ewWU",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
   },
   {
     "name": "The Golden",
@@ -9716,22 +10810,23 @@
     ]
   },
   {
-    "name": "⚠️ The Golden                           60hz Mobile 49-82%",
+    "name": "⚠️ The Golden 60hz Mobile 49-82%",
     "id": "the-golden-60hz-mobile-49-82",
     "player": "Bigthunder556",
     "date": "2023-05-31",
     "length": "25",
     "version": "2.1",
-    "levelID": "60978746"
-  },
-  {
-    "name": "surface (old)\n22%, 24%, 22%",
-    "id": "surface-old-22-24-22",
-    "player": "zXdasfsa",
-    "date": "2024-09-29",
-    "length": "21",
-    "version": "2.2",
-    "levelID": "81683082"
+    "levelID": "60978746",
+    "video": "https://youtu.be/JJS1ilGjcNA",
+    "showcaseVideo": "https://youtu.be/g2OE21U9e5w",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "Murder Mitten",
@@ -9844,15 +10939,6 @@
     ]
   },
   {
-    "name": "THE JET ENGINE",
-    "id": "the-jet-engine",
-    "player": "eviljoe",
-    "date": "2025-07-15",
-    "length": "86",
-    "version": "2.2",
-    "levelID": "122941596"
-  },
-  {
     "name": "The Golden (Unnerfed) 62%",
     "id": "the-golden-unnerfed-62",
     "player": "swiborg",
@@ -9866,6 +10952,21 @@
     "tags": [
       "Level",
       "Progress"
+    ]
+  },
+  {
+    "name": "THE JET ENGINE",
+    "id": "the-jet-engine",
+    "player": "eviljoe",
+    "date": "2025-07-15",
+    "length": "86",
+    "version": "2.2",
+    "levelID": "122941596",
+    "video": "https://youtu.be/8Q20XU__LoQ",
+    "showcaseVideo": "https://youtu.be/ot4cwsfoZeQ",
+    "submitter": "goofygdplayer_",
+    "tags": [
+      "Level"
     ]
   },
   {
@@ -9898,13 +10999,19 @@
     ]
   },
   {
-    "name": "Slaughterhouse (noxell)    23-75%",
+    "name": "Slaughterhouse (noxell) 23-75%",
     "id": "slaughterhouse-noxell-23-75",
     "player": "noxell",
     "date": "2025-05-29",
     "length": "28",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/pzvehka3u7Y&t=98",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
   },
   {
     "name": "Unnerfed BoJ",
@@ -10079,13 +11186,20 @@
     ]
   },
   {
-    "name": "FAIRY KNIFE HELL\n42-59%",
+    "name": "FAIRY KNIFE HELL 42-59%",
     "id": "fairy-knife-hell-42-59",
     "player": "enzollz",
     "date": "2025-04-25",
     "length": "40",
     "version": "2.2",
-    "levelID": "111680151"
+    "levelID": "111680151",
+    "video": "https://youtu.be/svciy2WmvEs",
+    "showcaseVideo": "https://youtu.be/mD8bMlCV8Jc",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "ATOMIC CANNON Mk III",
@@ -10104,13 +11218,19 @@
     ]
   },
   {
-    "name": "Slaughterhouse (noxell)   45-100%",
+    "name": "Slaughterhouse (noxell) 45-100%",
     "id": "slaughterhouse-noxell-45-100",
     "player": "noxell",
     "date": "2025-05-29",
     "length": "31",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/pzvehka3u7Y&t=71",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
   },
   {
     "name": "Bellatrix 52-100%",
@@ -10175,22 +11295,41 @@
     ]
   },
   {
-    "name": "⚠️ The Golden                           120hz Mobile 49-84%",
+    "name": "⚠️ The Golden 120hz Mobile 49-84%",
     "id": "the-golden-120hz-mobile-49-84",
     "player": "Abstract",
     "date": "2025-05-24",
     "length": "26",
     "version": "2.2",
-    "levelID": "60978746"
+    "levelID": "60978746",
+    "video": "https://youtu.be/gZIJUwa4EXo",
+    "showcaseVideo": "https://youtu.be/g2OE21U9e5w",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
   },
   {
-    "name": "ConClusion                              120hz Mobile",
+    "name": "ConClusion 120hz Mobile",
     "id": "conclusion-120hz-mobile",
     "player": "Que2Yo",
     "date": "2025-07-04",
     "length": "85",
     "version": "2.2",
-    "levelID": "96471171"
+    "levelID": "96471171",
+    "video": "https://youtu.be/0EHn7JZTTfc",
+    "showcaseVideo": "https://youtu.be/6zHr7dmhUn0",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Rated"
+    ]
   },
   {
     "name": "Titan Complex 75hz",
@@ -10268,13 +11407,22 @@
     ]
   },
   {
-    "name": "CITRA                                         60hz 73%",
+    "name": "CITRA 60hz 73%",
     "id": "citra-60hz-73",
     "player": "Clock0822",
     "date": "2025-05-27",
     "length": "28",
     "version": "2.2",
-    "levelID": "80966089"
+    "levelID": "80966089",
+    "video": "https://youtu.be/QEs9Z5SB5Iw",
+    "showcaseVideo": "https://youtu.be/HQenD3w0uFQ",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "abicto (Old)",
@@ -10415,13 +11563,19 @@
     ]
   },
   {
-    "name": "⚠️ Labyrinth\n61-100%",
+    "name": "⚠️ Labyrinth 61-100%",
     "id": "labyrinth-61-100",
     "player": "HamiltonHqmy",
     "date": "2025-03-01",
     "length": "30",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/XbFLaJpgM5I",
+    "showcaseVideo": "https://youtu.be/hcZWawS26hU",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "BLEED",
@@ -10438,13 +11592,19 @@
     ]
   },
   {
-    "name": "⚠️ Apocalyptic Trilogy (Old)      39-100%",
+    "name": "⚠️ Apocalyptic Trilogy (Old) 39-100%",
     "id": "apocalyptic-trilogy-old-39-100",
     "player": "ViZeris",
     "date": "2025-01-24",
     "length": "172",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/61N3te5hm_M",
+    "showcaseVideo": "https://youtu.be/ddXFwEnVjpE",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "THE ROCK HOUSE (Old)",
@@ -10540,13 +11700,19 @@
     ]
   },
   {
-    "name": "Wavterminal\n74%",
+    "name": "Wavterminal 74%",
     "id": "wavterminal-74",
     "player": "Frice",
     "date": "2025-06-04",
     "length": "70",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://www.youtube.com/live/G54F6TenmBI?t=590",
+    "showcaseVideo": "https://youtu.be/EfrKH-CuT50",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "ReTraY WaVe 44-100%",
@@ -10608,13 +11774,20 @@
     ]
   },
   {
-    "name": "IT MEANS EVERYTHING\n54-80%",
+    "name": "IT MEANS EVERYTHING 54-80%",
     "id": "it-means-everything-54-80",
     "player": "Vel",
     "date": "2025-05-16",
     "length": "16",
     "version": "2.2",
-    "levelID": "106165639"
+    "levelID": "106165639",
+    "video": "https://youtu.be/Cn3B0z9QbrE",
+    "showcaseVideo": "https://youtu.be/9nSkkXZ628E",
+    "submitter": "kittycatiscute",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "Apocalypse",
@@ -10746,7 +11919,7 @@
     "version": 2.2,
     "video": "https://youtu.be/F6fe7LugwdY",
     "showcaseVideo": "https://youtu.be/YZ_ad0HV3ok",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "tags": [
       "Level"
     ]
@@ -10928,7 +12101,14 @@
     "date": "2025-06-17",
     "length": "67",
     "version": "2.2",
-    "levelID": "78149361"
+    "levelID": "78149361",
+    "video": "https://youtu.be/EzluIaZ6w3Q",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
   },
   {
     "name": "Diabolic ClubStep",
@@ -11061,7 +12241,14 @@
     "date": "2024-10-02",
     "length": "89",
     "version": "2.2",
-    "levelID": "110705712"
+    "levelID": "110705712",
+    "video": "https://youtu.be/3B36N-qfOD8",
+    "showcaseVideo": "https://youtu.be/-nja3I-CK50",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Rated"
+    ]
   },
   {
     "name": "Cobwebs (blazenik) 62%",
@@ -11128,13 +12315,22 @@
     ]
   },
   {
-    "name": "Sonic Wave                                1.5x 28-96%",
+    "name": "Sonic Wave 1.5x 28-96%",
     "id": "sonic-wave-15x-28-96",
     "player": "HipoAR",
     "date": "2024-07-01",
     "length": "52",
     "version": "2.1",
-    "levelID": "26681070"
+    "levelID": "26681070",
+    "video": "https://youtu.be/_0gVHdAd-bo",
+    "showcaseVideo": "https://youtu.be/6v_pWirR72Q",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Speedhack",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "Sonic Wave Rebirth 60hz 71%",
@@ -11177,16 +12373,32 @@
     "date": "2025-06-07",
     "length": "51",
     "version": "2.2",
-    "levelID": "78149361"
+    "levelID": "78149361",
+    "video": "https://youtu.be/j6JO9fkYqxw",
+    "showcaseVideo": "https://youtu.be/npT81PyBnw4",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
   },
   {
-    "name": "Trueffet                                         64%, 38%, 37%, 66%",
+    "name": "Trueffet 64%, 38%, 37%, 66%",
     "id": "trueffet-64-38-37-66",
     "player": "Mental",
     "date": "2025-05-16",
     "length": "158",
     "version": "2.2",
-    "levelID": "71434979"
+    "levelID": "71434979",
+    "video": "https://youtu.be/922wxi-6ONg",
+    "showcaseVideo": "https://youtu.be/qkQidB9aPLA",
+    "submitter": "Mental",
+    "tags": [
+      "Level",
+      "Consistency",
+      "Rated"
+    ]
   },
   {
     "name": "Trueffet",
@@ -11221,13 +12433,23 @@
     ]
   },
   {
-    "name": "Spectrum Cyclone                       60hz Mobile 28-100%",
+    "name": "Spectrum Cyclone 60hz Mobile 28-100%",
     "id": "spectrum-cyclone-60hz-mobile-28-100",
     "player": "Cedric22",
     "date": "2025-07-22",
     "length": "85",
     "version": "2.2",
-    "levelID": "59209010"
+    "levelID": "59209010",
+    "video": "https://youtu.be/QTKtWTc6zJM",
+    "showcaseVideo": "https://youtu.be/wvNwc4NaJaw",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "Spectrum Cyclone 60hz 80%",
@@ -11243,7 +12465,8 @@
     "tags": [
       "Level",
       "Low Hertz",
-      "Progress"
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -11262,13 +12485,20 @@
     ]
   },
   {
-    "name": "⚠️IT MEANS EVERYTHING\n65-100%",
+    "name": "⚠️ IT MEANS EVERYTHING 65-100%",
     "id": "it-means-everything-65-100",
     "player": "Vel",
     "date": "2025-05-16",
     "length": "24",
     "version": "2.2",
-    "levelID": "106165639"
+    "levelID": "106165639",
+    "video": "https://youtu.be/Cn3B0z9QbrE",
+    "showcaseVideo": "https://youtu.be/9nSkkXZ628E",
+    "submitter": "kittycatiscute",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
   },
   {
     "name": "NEUTRA 160%",
@@ -11286,15 +12516,6 @@
       "Consistency",
       "Rated"
     ]
-  },
-  {
-    "name": "⚠️ Cobwebs                                 144hz Mobile",
-    "id": "cobwebs-144hz-mobile",
-    "player": "sitzukii",
-    "date": "2025-07-14",
-    "length": "30",
-    "version": "2.2",
-    "levelID": "82172844"
   },
   {
     "name": "Destruction 19",
@@ -11346,13 +12567,23 @@
     ]
   },
   {
-    "name": "⚠️Storming Summit\n60hz Mobile 64%",
+    "name": "⚠️ Storming Summit 60hz Mobile 64%",
     "id": "storming-summit-60hz-mobile-64",
     "player": "Hydrus73",
     "date": "2024-05-17",
     "length": "106",
     "version": "2.2",
-    "levelID": "76653933"
+    "levelID": "76653933",
+    "video": "https://youtu.be/HMNUF5lHwTs",
+    "showcaseVideo": "https://youtu.be/f0Qx4K3livA",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "Frozen Cave 60hz Mobile",
@@ -11373,13 +12604,20 @@
     ]
   },
   {
-    "name": "FACESHOPPING                         95%, 96%",
+    "name": "FACESHOPPING 95%, 96%",
     "id": "faceshopping-95-96",
     "player": "HipoAR",
     "date": "2024-09-15",
     "length": "120",
     "version": "2.2",
-    "levelID": "82139734"
+    "levelID": "82139734",
+    "video": "https://youtu.be/dCvgGmaLi1M?t=68",
+    "showcaseVideo": "https://youtu.be/xMikXBDrHsI",
+    "submitter": "Emp",
+    "tags": [
+      "Level",
+      "Consistency"
+    ]
   },
   {
     "name": "ExtraSonic",
@@ -11430,13 +12668,21 @@
     ]
   },
   {
-    "name": "Thinking Space                                      85%, 100%",
+    "name": "Thinking Space 85%, 100%",
     "id": "thinking-space-85-100",
     "player": "zLevii",
     "date": "2025-07-11",
     "length": "140",
     "version": "2.2",
-    "levelID": "54953085"
+    "levelID": "54953085",
+    "video": "https://youtu.be/lqJ1e5aQeVU",
+    "showcaseVideo": "https://youtu.be/rxcW9xgRZYI",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Level",
+      "Consistency",
+      "Rated"
+    ]
   },
   {
     "name": "The Paroxysm of Rage",
@@ -11493,21 +12739,29 @@
     "version": 2.1,
     "video": "https://youtu.be/3iSBTSz42rY",
     "showcaseVideo": "https://youtu.be/8wq3lNvpxT8",
-    "submitter": "Brachiozaur",
+    "submitter": "Arcadie",
     "tags": [
       "Level",
       "Low Hertz",
-      "Mobile"
+      "Mobile",
+      "Rated"
     ]
   },
   {
-    "name": "Plasma Pulse Finale\n60hz",
+    "name": "Plasma Pulse Finale 60hz",
     "id": "plasma-pulse-finale-60hz",
     "player": "Luqualizer",
     "date": "2020-06-21",
     "length": "127",
     "version": "2.1",
-    "levelID": "38655495"
+    "levelID": "38655495",
+    "video": "https://youtu.be/8wq3lNvpxT8",
+    "showcaseVideo": "https://youtu.be/Ccu1Td-q2Nk",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Rated"
+    ]
   },
   {
     "name": "The Golden 1.25x 36-76%",
@@ -11533,16 +12787,29 @@
     "date": "2025-04-19",
     "length": "97",
     "version": "2.2",
-    "levelID": "49856549"
+    "levelID": "49856549",
+    "video": "https://youtu.be/lqHosZ1gN6A",
+    "showcaseVideo": "https://youtu.be/2NEl6HQNnAQ",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level"
+    ]
   },
   {
-    "name": "⚠️Benevolence                                      50%",
+    "name": "⚠️ Benevolence 50%",
     "id": "benevolence-50",
     "player": "Caleger",
     "date": "2025-06-05",
     "length": "6",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/QkLCWvgj8Ag",
+    "showcaseVideo": "https://youtu.be/QkLCWvgj8Ag",
+    "submitter": "Caleger",
+    "tags": [
+      "Challenge",
+      "Progress",
+      "CBF"
+    ]
   },
   {
     "name": "Sweeping Demon 2 (Thnnder) 71-100%",
@@ -11606,13 +12873,23 @@
     ]
   },
   {
-    "name": "poocubed                              120hz Mobile 19-55%",
+    "name": "poocubed 120hz Mobile 19-55%",
     "id": "poocubed-120hz-mobile-19-55",
     "player": "DENISKA",
     "date": "2025-06-04",
     "length": "30",
     "version": "2.2",
-    "levelID": "85133223"
+    "levelID": "85133223",
+    "video": "https://youtu.be/S4J_m4ESAqI",
+    "showcaseVideo": "https://youtu.be/WM1KcNGkP08",
+    "submitter": "jak",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "Wavterminal 33-100%",
@@ -11646,22 +12923,35 @@
     ]
   },
   {
-    "name": "⚠️Benevolence                                      19-100%",
+    "name": "⚠️ Benevolence 19-100%",
     "id": "benevolence-19-100",
     "player": "Caleger",
     "date": "2025-06-05",
     "length": "11",
     "version": "2.2",
-    "levelID": "N/A"
+    "video": "https://youtu.be/QkLCWvgj8Ag?t=9",
+    "submitter": "Caleger",
+    "tags": [
+      "Challenge",
+      "Progress",
+      "CBF"
+    ]
   },
   {
-    "name": "Silent Circles (skeletonlol)                27-70%                                                7 deaths, 99.66 accuracy",
+    "name": "Silent Circles (skeletonlol) 27-70% 7 deaths, 99.66 accuracy",
     "id": "silent-circles-skeletonlol-27-70-7-deaths-99-66-accuracy",
     "player": "tricklength",
     "date": "2025-02-28",
     "length": "25",
     "version": "2.2",
-    "levelID": "80856489"
+    "levelID": "80856489",
+    "video": "https://youtu.be/ylxdbNcx85w",
+    "showcaseVideo": "https://youtu.be/qPwbXQvqX8E",
+    "tags": [
+      "Level",
+      "Noclip",
+      "Progress"
+    ]
   },
   {
     "name": "LESOPOWAL 78% (Abstract)",
@@ -11698,13 +12988,19 @@
     ]
   },
   {
-    "name": "Lust\n57%",
+    "name": "Lust 57%",
     "id": "lust-57",
     "player": "DenseCabbage",
     "date": "2025-07-04",
     "length": "11",
     "version": "2.1",
-    "levelID": "N/A"
+    "showcaseVideo": "https://youtu.be/05o99giT0aM",
+    "video": "https://youtu.be/biQV1dh78TE",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Challenge",
+      "Progress"
+    ]
   },
   {
     "name": "FAIRY KNIFE HELL 32-48%",
