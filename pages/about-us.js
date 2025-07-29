@@ -38,18 +38,19 @@ export default function AboutUs() {
               <li><strong>Anceps</strong></li>
               <li><strong>Arcadie</strong></li>
               <li><strong>kyle1saurus</strong></li>
+              <li><strong>jak</strong></li>
             </ul>
             <h3>Tag Definitions</h3>
-            <ul style={{marginLeft:'1.2em', marginBottom:'1.2em', listStyle:'disc'}}>
-              <li><b>Level</b> — A traditional level, which spans 30+ seconds. <span style={{color:'#aaa'}}>(Acheron)</span></li>
-              <li><b>Challenge</b> — Tiny or short length level; a level that spans under 30 seconds. <span style={{color:'#aaa'}}>(VSC)</span></li>
-              <li><b>Low Hertz</b> — Done at a low hz. It can be added if it adds a lot more difficulty to the level. <span style={{color:'#aaa'}}>(The Rupture 60hz)</span></li>
-              <li><b>Mobile</b> — Played on mobile. <span style={{color:'#aaa'}}>(Hard Machine 144hz Mobile)</span></li>
-              <li><b>Speedhack</b> — Altered speed using hacks. <span style={{color:'#aaa'}}>(Sonic Wave 1.35x)</span></li>
-              <li><b>Noclip</b> — Done with noclip on. <span style={{color:'#aaa'}}>(vsc superbuff 6 deaths, 99.79 accuracy)</span></li>
+            <ul>
+              <li><b>Level</b> — A traditional level, which spans 30+ seconds. (Acheron)</li>
+              <li><b>Challenge</b> — Tiny or short length level; a level that spans under 30 seconds. (VSC)</li>
+              <li><b>Low Hertz</b> — Done at a low hz. It can be added if it adds a lot more difficulty to the level. (The Rupture 60hz)</li>
+              <li><b>Mobile</b> — Played on mobile. (Hard Machine 144hz Mobile)</li>
+              <li><b>Speedhack</b> — Altered speed using hacks. (Sonic Wave 1.35x)</li>
+              <li><b>Noclip</b> — Done with noclip on. (vsc superbuff 6 deaths, 99.79 accuracy)</li>
               <li><b>Miscellaneous</b> — An achievement that doesn't fit with any other types.</li>
-              <li><b>Progress</b> — Parts of the level completed. <span style={{color:'#aaa'}}>(Singularity 61%)</span></li>
-              <li><b>Consistency</b> — Progress done in a row. <span style={{color:'#aaa'}}>(Slaughterhouse 300%, Extra Mile 77% + 69% + 53%)</span></li>
+              <li><b>Progress</b> — Parts of the level completed. (Singularity 61%)</li>
+              <li><b>Consistency</b> — Progress done in a row. (Slaughterhouse 300%, Extra Mile 77% + 69% + 53%)</li>
               <li><b>2P</b> — Level uses 2 player mode.</li>
               <li><b>CBF</b> — Achievement uses Geode mod Click Between Frames, which allows players to input actions in between visual frames, effectively increasing input precision.</li>
               <li><b>Rated</b> — Level is rated ingame.</li>
@@ -57,13 +58,13 @@ export default function AboutUs() {
               <li><b>Outdated Version</b> — Level is rated and is on an older version than the current one.</li>
             </ul>
             <h3>Rules</h3>
-            <section style={{marginBottom: '1.5em'}}>
+            <section>
               <h4>Geometry Dash</h4>
               <p>
                 Only achievements within the levels of the official Geometry Dash series are eligible. Submissions from platformer levels, other metrics (e.g., creator points, in-game achievements, stars), or other games will not be accepted.
               </p>
             </section>
-            <section style={{marginBottom: '1.5em'}}>
+            <section>
               <h4>Baseline</h4>
               <p>
                 To be included in the main list, an achievement must be more difficult than the lowest-ranked current entry.
@@ -73,25 +74,25 @@ export default function AboutUs() {
                 If the baseline rank approaches or reaches 1000, a new baseline will be reassessed &amp; established, and any achievements falling below this updated threshold will be moved to the Legacy List.
               </p>
             </section>
-            <section style={{marginBottom: '1.5em'}}>
+            <section>
               <h4><b>External Factors</b></h4>
               <p>
                 <b>Achievements that rely on artificially increased difficulty through external limitations are <u>not eligible</u>.</b>
                 <br />
                 This includes (but is not limited to):
               </p>
-              <ul style={{marginLeft:'1.2em', marginBottom:'0.7em'}}>
+              <ul>
                 <li>Using a low-polling-rate mouse</li>
                 <li>Playing blindfolded or with the monitor turned off</li>
                 <li>Impaired setup</li>
               </ul>
-              <div style={{margin:'0.7em 0 0.2em 0'}}>
+              <div>
                 <b>Exception:</b> Low-hertz achievements performed on mobile devices are exempt from this rule due to the inherent input latency of touchscreen controls. These achievements are recognized separately and marked with a dedicated <b>mobile</b> tag.
               </div>
             </section>
-            <section style={{marginBottom: '1.5em'}}>
+            <section>
               <h4><b>Consistency</b></h4>
-              <ol style={{marginLeft:'1.2em', marginBottom:'1.2em'}}>
+              <ol>
                 <li>
                   <b>Significant Difficulty Increase</b>
                   <p>A consistency achievement must represent a clear and substantial increase in difficulty compared to the standard execution of the level. (e.g., 60% then 100%, 145%, 75 spots above)</p>
@@ -102,7 +103,7 @@ export default function AboutUs() {
                 </li>
                 <li>
                   <b>Achievement Replacement</b>
-                  <ul style={{marginLeft:'1.2em', marginBottom:'0.7em'}}>
+                  <ul>
                     <li>If a new consistency achievement is validated as more difficult than the current one, it will <b>replace</b> the existing achievement.</li>
                     <li>Submissions that are less difficult than the current achievement will <b>not be accepted</b>.</li>
                   </ul>
@@ -110,7 +111,7 @@ export default function AboutUs() {
                 <li>
                   <b>Allowed Actions</b>
                   <p>The following actions are permitted during attempts, provided they aren’t meaningful attempts:</p>
-                  <ul style={{marginLeft:'1.2em', marginBottom:'0.7em'}}>
+                  <ul>
                     <li>Re-entering the level</li>
                     <li>Restarting</li>
                     <li>Switching start positions</li>
