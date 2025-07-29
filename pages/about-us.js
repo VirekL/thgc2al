@@ -41,20 +41,20 @@ export default function AboutUs() {
             </ul>
             <h3>Tag Definitions</h3>
             <ul style={{marginLeft:'1.2em', marginBottom:'1.2em', listStyle:'disc'}}>
-              <li><b>Level</b> — <span style={{fontStyle:'italic'}}>A traditional level, which spans 30+ seconds.</span> <span style={{color:'#aaa'}}>(Acheron)</span></li>
-              <li><b>Challenge</b> — <span style={{fontStyle:'italic'}}>Tiny or short length level; a level that spans under 30 seconds.</span> <span style={{color:'#aaa'}}>(VSC)</span></li>
-              <li><b>Low Hertz</b> — <span style={{fontStyle:'italic'}}>Done at a low hz. It can be added if it adds a lot more difficulty to the level.</span> <span style={{color:'#aaa'}}>(The Rupture 60hz)</span></li>
-              <li><b>Mobile</b> — <span style={{fontStyle:'italic'}}>Played on mobile.</span> <span style={{color:'#aaa'}}>(Hard Machine 144hz Mobile)</span></li>
-              <li><b>Speedhack</b> — <span style={{fontStyle:'italic'}}>Altered speed using hacks.</span> <span style={{color:'#aaa'}}>(Sonic Wave 1.35x)</span></li>
-              <li><b>Noclip</b> — <span style={{fontStyle:'italic'}}>Done with noclip on.</span> <span style={{color:'#aaa'}}>(vsc superbuff 6 deaths, 99.79 accuracy)</span></li>
-              <li><b>Miscellaneous</b> — <span style={{fontStyle:'italic'}}>An achievement that doesn't fit with any other types.</span></li>
-              <li><b>Progress</b> — <span style={{fontStyle:'italic'}}>Parts of the level completed.</span> <span style={{color:'#aaa'}}>(Singularity 61%)</span></li>
-              <li><b>Consistency</b> — <span style={{fontStyle:'italic'}}>Progress done in a row.</span> <span style={{color:'#aaa'}}>(Slaughterhouse 300%, Extra Mile 77% + 69% + 53%)</span></li>
-              <li><b>2P</b> — <span style={{fontStyle:'italic'}}>Level uses 2 player mode.</span></li>
-              <li><b>CBF</b> — <span style={{fontStyle:'italic'}}>Achievement uses Geode mod Click Between Frames, which allows players to input actions in between visual frames, effectively increasing input precision.</span></li>
-              <li><b>Rated</b> — <span style={{fontStyle:'italic'}}>Level is rated ingame.</span></li>
-              <li><b>Formerly rated</b> — <span style={{fontStyle:'italic'}}>Level was rated, but had its rating status removed.</span></li>
-              <li><b>Outdated Version</b> — <span style={{fontStyle:'italic'}}>Level is rated and is on an older version than the current one.</span></li>
+              <li><b>Level</b> — A traditional level, which spans 30+ seconds. <span style={{color:'#aaa'}}>(Acheron)</span></li>
+              <li><b>Challenge</b> — Tiny or short length level; a level that spans under 30 seconds. <span style={{color:'#aaa'}}>(VSC)</span></li>
+              <li><b>Low Hertz</b> — Done at a low hz. It can be added if it adds a lot more difficulty to the level. <span style={{color:'#aaa'}}>(The Rupture 60hz)</span></li>
+              <li><b>Mobile</b> — Played on mobile. <span style={{color:'#aaa'}}>(Hard Machine 144hz Mobile)</span></li>
+              <li><b>Speedhack</b> — Altered speed using hacks. <span style={{color:'#aaa'}}>(Sonic Wave 1.35x)</span></li>
+              <li><b>Noclip</b> — Done with noclip on. <span style={{color:'#aaa'}}>(vsc superbuff 6 deaths, 99.79 accuracy)</span></li>
+              <li><b>Miscellaneous</b> — An achievement that doesn't fit with any other types.</li>
+              <li><b>Progress</b> — Parts of the level completed. <span style={{color:'#aaa'}}>(Singularity 61%)</span></li>
+              <li><b>Consistency</b> — Progress done in a row. <span style={{color:'#aaa'}}>(Slaughterhouse 300%, Extra Mile 77% + 69% + 53%)</span></li>
+              <li><b>2P</b> — Level uses 2 player mode.</li>
+              <li><b>CBF</b> — Achievement uses Geode mod Click Between Frames, which allows players to input actions in between visual frames, effectively increasing input precision.</li>
+              <li><b>Rated</b> — Level is rated ingame.</li>
+              <li><b>Formerly rated</b> — Level was rated, but had its rating status removed.</li>
+              <li><b>Outdated Version</b> — Level is rated and is on an older version than the current one.</li>
             </ul>
             <h3>Rules</h3>
             <section style={{marginBottom: '1.5em'}}>
@@ -74,47 +74,47 @@ export default function AboutUs() {
               </p>
             </section>
             <section style={{marginBottom: '1.5em'}}>
-              <h4><span style={{fontWeight:700}}>External Factors</span></h4>
+              <h4><b>External Factors</b></h4>
               <p>
-                <strong>Achievements that rely on artificially increased difficulty through external limitations are <u>not eligible</u>.</strong>
+                <b>Achievements that rely on artificially increased difficulty through external limitations are <u>not eligible</u>.</b>
                 <br />
-                <span style={{fontStyle:'italic'}}>This includes (but is not limited to):</span>
+                This includes (but is not limited to):
               </p>
               <ul style={{marginLeft:'1.2em', marginBottom:'0.7em'}}>
-                <li><span style={{fontWeight:500}}>Using a low-polling-rate mouse</span></li>
-                <li><span style={{fontWeight:500}}>Playing blindfolded or with the monitor turned off</span></li>
-                <li><span style={{fontWeight:500}}>Impaired setup</span></li>
+                <li>Using a low-polling-rate mouse</li>
+                <li>Playing blindfolded or with the monitor turned off</li>
+                <li>Impaired setup</li>
               </ul>
               <div style={{margin:'0.7em 0 0.2em 0'}}>
-                <span style={{fontWeight:600}}>Exception:</span> <span style={{fontStyle:'italic'}}>Low-hertz achievements performed on mobile devices are exempt from this rule due to the inherent input latency of touchscreen controls. These achievements are recognized separately and marked with a dedicated <b>mobile</b> tag.</span>
+                <b>Exception:</b> Low-hertz achievements performed on mobile devices are exempt from this rule due to the inherent input latency of touchscreen controls. These achievements are recognized separately and marked with a dedicated <b>mobile</b> tag.
               </div>
             </section>
             <section style={{marginBottom: '1.5em'}}>
-              <h4><span style={{fontWeight:700}}>Consistency</span></h4>
+              <h4><b>Consistency</b></h4>
               <div style={{marginBottom:'0.7em'}}>
-                <strong>Significant Difficulty Increase:</strong> <span style={{fontStyle:'italic'}}>A consistency achievement must represent a <u>clear and substantial increase in difficulty</u> compared to the standard execution of the level.</span>
+                <b>Significant Difficulty Increase:</b> A consistency achievement must represent a <u>clear and substantial increase in difficulty</u> compared to the standard execution of the level.
               </div>
               <div style={{marginBottom:'0.7em'}}>
-                <strong>One Achievement Per Level:</strong> <span style={{fontStyle:'italic'}}>Only one consistency achievement may be active per level at any given time.</span>
+                <b>One Achievement Per Level:</b> Only one consistency achievement may be active per level at any given time.
               </div>
               <div style={{marginBottom:'0.7em'}}>
-                <strong>Achievement Replacement:</strong> <span style={{fontStyle:'italic'}}>If a new consistency achievement is validated as more difficult than the current one, it will replace the existing achievement. Submissions that are less difficult than the current achievement will not be accepted.</span>
+                <b>Achievement Replacement:</b> If a new consistency achievement is validated as more difficult than the current one, it will replace the existing achievement. Submissions that are less difficult than the current achievement will not be accepted.
               </div>
               <div style={{marginBottom:'0.7em'}}>
-                <strong>Allowed Actions:</strong> <span style={{fontStyle:'italic'}}>The following actions are permitted during attempts, provided they aren’t meaningful attempts:</span>
+                <b>Allowed Actions:</b> The following actions are permitted during attempts, provided they aren’t meaningful attempts:
                 <ul style={{marginLeft:'1.2em', marginTop:'0.3em'}}>
-                  <li><span style={{fontWeight:500}}>Re-entering the level</span></li>
-                  <li><span style={{fontWeight:500}}>Restarting</span></li>
-                  <li><span style={{fontWeight:500}}>Switching start positions</span></li>
-                  <li><span style={{fontWeight:500}}>Filler deaths (e.g., No clicking, random clicking)</span></li>
+                  <li>Re-entering the level</li>
+                  <li>Restarting</li>
+                  <li>Switching start positions</li>
+                  <li>Filler deaths (e.g., No clicking, random clicking)</li>
                 </ul>
               </div>
               <div style={{marginBottom:'0.7em'}}>
-                <strong>Performance Threshold:</strong> <span style={{fontStyle:'italic'}}>All attempts must demonstrate performance closely comparable in difficulty to the highest-performing run.</span><br />
-                <span>Examples of unacceptable attempts include <b>wildly inconsistent performances</b> (e.g., 215%, 8%, 100%), as they do not reflect true consistency. In such cases, only the highest-performing run (e.g., 215%) will be considered.</span>
+                <b>Performance Threshold:</b> All attempts must demonstrate performance closely comparable in difficulty to the highest-performing run.<br />
+                Examples of unacceptable attempts include <b>wildly inconsistent performances</b> (e.g., 215%, 8%, 100%), as they do not reflect true consistency. In such cases, only the highest-performing run (e.g., 215%) will be considered.
               </div>
               <div style={{marginBottom:'0.7em'}}>
-                <strong>Moderation &amp; Discretion:</strong> <span style={{fontStyle:'italic'}}>In cases of ambiguity, borderline performance, or disputed claims, a dedicated moderation team will review and evaluate the submission.</span>
+                <b>Moderation & Discretion:</b> In cases of ambiguity, borderline performance, or disputed claims, a dedicated moderation team will review and evaluate the submission.
               </div>
             </section>
           </section>
