@@ -245,25 +245,6 @@
     "version": "2.1"
   },
   {
-    "name": "Tidal Wave 39%, 41%, 50%, 52%, 61%",
-    "id": "tidal-wave-39-41-50-52-61",
-    "player": "SerVax",
-    "video": "https://www.youtube.com/live/eqYOeCm6qmQ?t=5718",
-    "showcaseVideo": "https://youtu.be/PFHlkdz9UqM",
-    "tags": [
-      "Level",
-      "Consistency",
-      "CBF",
-      "Rated"
-    ],
-    "levelID": "86407629",
-    "date": "2025-05-03",
-    "length": "300",
-    "version": "2.2",
-    "submitter": "jak",
-    "thumbnail": "https://tjcsucht.net/levelthumbs/99564598.png"
-  },
-  {
     "name": "Acheron 60hz 50%",
     "id": "acheron-60hz-50",
     "player": "Llqne",
@@ -1622,22 +1603,6 @@
     ]
   },
   {
-    "name": "VSC 38%, 44%, 38%, 55%",
-    "id": "vsc-38-44-38-55",
-    "player": "zStucc",
-    "levelID": 60805571,
-    "date": "2024-07-10",
-    "length": 42,
-    "version": 2.2,
-    "video": "https://youtu.be/wclc1b7syyI&t=27",
-    "showcaseVideo": "https://youtu.be/GbtLlQQezTA",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Challenge",
-      "Consistency"
-    ]
-  },
-  {
     "name": "surface 62%",
     "id": "surface-62",
     "player": "zXdasfsa",
@@ -2610,22 +2575,6 @@
     "tags": [
       "Level",
       "Progress"
-    ]
-  },
-  {
-    "name": "True Innards 58%, 56%",
-    "id": "true-innards-58-56",
-    "player": "Microzz",
-    "levelID": 88216956,
-    "date": "2022-01-04",
-    "length": 112,
-    "version": 2.1,
-    "video": "https://youtu.be/3ap1LKPFXow",
-    "showcaseVideo": "https://youtu.be/P5qLACDcdGg",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Consistency"
     ]
   },
   {
@@ -12295,23 +12244,6 @@
       "Level",
       "Progress",
       "CBF"
-    ]
-  },
-  {
-    "name": "Trueffet 64%, 38%, 37%, 66%",
-    "id": "trueffet-64-38-37-66",
-    "player": "Mental",
-    "date": "2025-05-16",
-    "length": "158",
-    "version": "2.2",
-    "levelID": "71434979",
-    "video": "https://youtu.be/922wxi-6ONg",
-    "showcaseVideo": "https://youtu.be/qkQidB9aPLA",
-    "submitter": "Mental",
-    "tags": [
-      "Level",
-      "Consistency",
-      "Rated"
     ]
   },
   {
