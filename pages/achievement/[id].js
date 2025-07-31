@@ -8,21 +8,29 @@ import path from 'path';
 import { useState } from 'react';
 import { useDateFormat } from '../../components/DateFormatContext';
 import Tag, { TAG_PRIORITY_ORDER } from '../../components/Tag';
-import { promises as fsPromises } from 'fs';
 
 export async function getStaticPaths() {
   const achievementsPath = path.join(process.cwd(), 'public', 'achievements.json');
+  const timelinePath = path.join(process.cwd(), 'public', 'timeline.json');
   let achievements = [];
+  let timeline = [];
+
   try {
     const achievementsData = fs.readFileSync(achievementsPath, 'utf8');
     achievements = JSON.parse(achievementsData);
-  } catch (e) {
+  } catch (e) {}
 
-  }
+  try {
+    const timelineData = fs.readFileSync(timelinePath, 'utf8');
+    timeline = JSON.parse(timelineData);
+  } catch (e) {}
 
-  const paths = achievements
+  const combinedData = [...achievements, ...timeline];
+
+  const paths = combinedData
     .filter(a => a && a.id && a.name)
     .map(a => ({ params: { id: a.id.toString() } }));
+
   return { paths, fallback: false };
 }
 
@@ -33,30 +41,22 @@ export async function getStaticProps({ params }) {
   let timeline = [];
 
   try {
-    const achievementsData = await fsPromises.readFile(achievementsPath, 'utf8');
+    const achievementsData = fs.readFileSync(achievementsPath, 'utf8');
     achievements = JSON.parse(achievementsData);
-  } catch (e) {
-    console.error('Error reading achievements.json:', e);
-  }
+  } catch (e) {}
 
   try {
-    const timelineData = await fsPromises.readFile(timelinePath, 'utf8');
+    const timelineData = fs.readFileSync(timelinePath, 'utf8');
     timeline = JSON.parse(timelineData);
-  } catch (e) {
-    console.error('Error reading timeline.json:', e);
-  }
+  } catch (e) {}
 
-  achievements = achievements.filter(a => a && a.id && a.name);
-  timeline = timeline.filter(a => a && a.id && a.name);
+  const combinedData = [...achievements, ...timeline].filter(a => a && a.id && a.name);
 
-  const achievement =
-    achievements.find(a => a.id.toString() === params.id) ||
-    timeline.find(a => a.id.toString() === params.id) ||
-    null;
+  const achievement = combinedData.find(a => a.id.toString() === params.id) || null;
 
   let placement = null;
   if (achievement) {
-    const index = achievements.findIndex(a => a.id.toString() === params.id);
+    const index = combinedData.findIndex(a => a.id.toString() === params.id);
     if (index !== -1) placement = index + 1;
   }
 
