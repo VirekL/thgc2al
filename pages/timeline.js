@@ -147,13 +147,13 @@ export default function Timeline() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [devMode, setDevMode] = useState(false);
   const [reordered, setReordered] = useState(null);
-  const [hoveredIdx, setHoveredIdx] = useState(null);
+  const [hoveredIdx, setHoveredIdx] = useState(null); // Track hovered achievement index for dev controls
   const [newForm, setNewForm] = useState({
     name: '', id: '', player: '', length: 0, version: 2, video: '', showcaseVideo: '', date: '', submitter: '', levelID: 0, thumbnail: '', tags: []
   });
   const [newFormTags, setNewFormTags] = useState([]);
   const [newFormCustomTags, setNewFormCustomTags] = useState('');
-  const [insertIdx, setInsertIdx] = useState(null);
+  const [insertIdx, setInsertIdx] = useState(null); // For new achievement insert position
   const [editIdx, setEditIdx] = useState(null);
   const [editForm, setEditForm] = useState(null);
   const [editFormTags, setEditFormTags] = useState([]);
@@ -313,10 +313,13 @@ export default function Timeline() {
   function handleNewFormAdd() {
     const newAchievement = { ...newForm, tags: [...newFormTags, ...newFormCustomTags.split(',').map(t => t.trim()).filter(Boolean)] };
     setAchievements(prev => {
-      const updated = [...prev];
-      if (insertIdx !== null) updated.splice(insertIdx, 0, newAchievement);
-      else updated.push(newAchievement);
-      return updated;
+      if (insertIdx !== null) {
+        const updated = [...prev];
+        updated.splice(insertIdx, 0, newAchievement);
+        return updated;
+      } else {
+        return [...prev, newAchievement];
+      }
     });
     setNewForm({ name: '', id: '', player: '', length: 0, version: 2, video: '', showcaseVideo: '', date: '', submitter: '', levelID: 0, thumbnail: '', tags: [] });
     setNewFormTags([]);
@@ -329,6 +332,21 @@ export default function Timeline() {
     setNewFormTags([]);
     setNewFormCustomTags('');
     setInsertIdx(null);
+  }
+
+  function handleRemoveAchievement(idx) {
+    setAchievements(prev => prev.filter((_, i) => i !== idx));
+  }
+
+  function handleDuplicateAchievement(idx) {
+    setAchievements(prev => {
+      const duplicated = { ...prev[idx], id: `${prev[idx].id}-copy` };
+      return [...prev.slice(0, idx + 1), duplicated, ...prev.slice(idx + 1)];
+    });
+  }
+
+  function handleHover(idx) {
+    setHoveredIdx(idx === hoveredIdx ? null : idx);
   }
 
   return (
@@ -516,14 +534,26 @@ export default function Timeline() {
             <div style={{color: '#aaa'}}>No achievements found.</div>
           ) : (
             filtered.map((a, i) => (
-              <TimelineAchievementCard
-                achievement={a}
-                previousAchievement={filtered[i-1]}
+              <div
                 key={a.id || i}
-                onEdit={() => handleEditAchievement(i)}
-                onHover={() => setHoveredIdx(i === hoveredIdx ? null : i)}
-                isHovered={i === hoveredIdx}
-              />
+                onMouseEnter={() => handleHover(i)}
+                onMouseLeave={() => setHoveredIdx(null)}
+                style={{ position: 'relative' }}
+              >
+                <TimelineAchievementCard
+                  achievement={a}
+                  previousAchievement={filtered[i-1]}
+                  onEdit={() => handleEditAchievement(i)}
+                  isHovered={i === hoveredIdx}
+                />
+                {devMode && i === hoveredIdx && (
+                  <div className="devmode-hover-controls" style={{ position: 'absolute', top: 0, right: 0, display: 'flex', gap: 8 }}>
+                    <button onClick={() => handleEditAchievement(i)}>Edit</button>
+                    <button onClick={() => handleDuplicateAchievement(i)}>Duplicate</button>
+                    <button onClick={() => handleRemoveAchievement(i)}>Remove</button>
+                  </div>
+                )}
+              </div>
             ))
           )}
         </section>
