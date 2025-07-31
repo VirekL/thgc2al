@@ -63,6 +63,7 @@ function formatDate(date, dateFormat) {
   if (!date) return 'N/A';
   const d = new Date(date);
   if (isNaN(d)) return 'N/A';
+  d.setDate(d.getDate() + 1); // Adjust for offset issue
   const yy = String(d.getFullYear()).slice(-2);
   const yyyy = d.getFullYear();
   const mm = String(d.getMonth() + 1).padStart(2, '0');
