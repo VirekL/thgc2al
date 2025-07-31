@@ -133,6 +133,15 @@ export default function Timeline() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [devMode, setDevMode] = useState(false);
   const [reordered, setReordered] = useState(null);
+  const [editIdx, setEditIdx] = useState(null);
+  const [editForm, setEditForm] = useState(null);
+  const [editFormTags, setEditFormTags] = useState([]);
+  const [editFormCustomTags, setEditFormCustomTags] = useState('');
+  const [newForm, setNewForm] = useState({
+    name: '', id: '', player: '', length: 0, version: '', video: '', showcaseVideo: '', date: '', submitter: '', levelID: '', thumbnail: '', tags: []
+  });
+  const [newFormTags, setNewFormTags] = useState([]);
+  const [newFormCustomTags, setNewFormCustomTags] = useState('');
   const mobileBtnRef = useRef();
 
   useEffect(() => {
@@ -234,6 +243,69 @@ export default function Timeline() {
 
   function handleMobileToggle() {
     setShowMobileFilters(v => !v);
+  }
+
+  function handleEditAchievement(idx) {
+    setEditIdx(idx);
+    setEditForm(achievements[idx]);
+    setEditFormTags(achievements[idx].tags || []);
+    setEditFormCustomTags('');
+  }
+
+  function handleEditFormChange(e) {
+    const { name, value } = e.target;
+    setEditForm(prev => ({ ...prev, [name]: value }));
+  }
+
+  function handleEditFormTagClick(tag) {
+    setEditFormTags(prev => prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag]);
+  }
+
+  function handleEditFormCustomTagsChange(e) {
+    setEditFormCustomTags(e.target.value);
+  }
+
+  function handleEditFormSave() {
+    const updated = { ...editForm, tags: [...editFormTags, ...editFormCustomTags.split(',').map(t => t.trim()).filter(Boolean)] };
+    setAchievements(prev => prev.map((a, i) => (i === editIdx ? updated : a)));
+    setEditIdx(null);
+    setEditForm(null);
+    setEditFormTags([]);
+    setEditFormCustomTags('');
+  }
+
+  function handleEditFormCancel() {
+    setEditIdx(null);
+    setEditForm(null);
+    setEditFormTags([]);
+    setEditFormCustomTags('');
+  }
+
+  function handleNewFormChange(e) {
+    const { name, value } = e.target;
+    setNewForm(prev => ({ ...prev, [name]: value }));
+  }
+
+  function handleNewFormTagClick(tag) {
+    setNewFormTags(prev => prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag]);
+  }
+
+  function handleNewFormCustomTagsChange(e) {
+    setNewFormCustomTags(e.target.value);
+  }
+
+  function handleNewFormAdd() {
+    const newAchievement = { ...newForm, tags: [...newFormTags, ...newFormCustomTags.split(',').map(t => t.trim()).filter(Boolean)] };
+    setAchievements(prev => [newAchievement, ...prev]);
+    setNewForm({ name: '', id: '', player: '', length: 0, version: '', video: '', showcaseVideo: '', date: '', submitter: '', levelID: '', thumbnail: '', tags: [] });
+    setNewFormTags([]);
+    setNewFormCustomTags('');
+  }
+
+  function handleNewFormCancel() {
+    setNewForm({ name: '', id: '', player: '', length: 0, version: '', video: '', showcaseVideo: '', date: '', submitter: '', levelID: '', thumbnail: '', tags: [] });
+    setNewFormTags([]);
+    setNewFormCustomTags('');
   }
 
   return (
@@ -441,6 +513,24 @@ export default function Timeline() {
               />
             </label>
           </div>
+          {editIdx !== null && (
+            <form onSubmit={e => { e.preventDefault(); handleEditFormSave(); }}>
+              <input type="text" name="name" value={editForm.name || ''} onChange={handleEditFormChange} placeholder="Name" />
+              <input type="text" name="id" value={editForm.id || ''} onChange={handleEditFormChange} placeholder="ID" />
+              {/* Add other fields similarly */}
+              <button type="submit">Save</button>
+              <button type="button" onClick={handleEditFormCancel}>Cancel</button>
+            </form>
+          )}
+          {editIdx === null && (
+            <form onSubmit={e => { e.preventDefault(); handleNewFormAdd(); }}>
+              <input type="text" name="name" value={newForm.name} onChange={handleNewFormChange} placeholder="Name" />
+              <input type="text" name="id" value={newForm.id} onChange={handleNewFormChange} placeholder="ID" />
+              {/* Add other fields similarly */}
+              <button type="submit">Add</button>
+              <button type="button" onClick={handleNewFormCancel}>Cancel</button>
+            </form>
+          )}
         </div>
       )}
     </>
