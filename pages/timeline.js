@@ -5,7 +5,6 @@ import Background from '../components/Background';
 import Sidebar from '../components/Sidebar';
 import Tag, { TAG_PRIORITY_ORDER } from '../components/Tag';
 import Link from 'next/link';
-import DevModePanel from '../components/DevModePanel';
 
 function calculateDaysLasted(currentDate, previousDate) {
   if (!currentDate || !previousDate) return 'N/A';
@@ -559,31 +558,50 @@ export default function Timeline() {
           )}
         </section>
       </main>
-      <DevModePanel
-        devMode={devMode}
-        editIdx={editIdx}
-        editForm={editForm}
-        editFormTags={editFormTags}
-        editFormCustomTags={editFormCustomTags}
-        handleEditFormChange={handleEditFormChange}
-        handleEditFormTagClick={handleEditFormTagClick}
-        handleEditFormCustomTagsChange={handleEditFormCustomTagsChange}
-        handleEditFormSave={handleEditFormSave}
-        handleEditFormCancel={handleEditFormCancel}
-        showNewForm={showNewForm}
-        newForm={newForm}
-        newFormTags={newFormTags}
-        newFormCustomTags={newFormCustomTags}
-        handleNewFormChange={handleNewFormChange}
-        handleNewFormTagClick={handleNewFormTagClick}
-        handleNewFormCustomTagsChange={handleNewFormCustomTagsChange}
-        handleNewFormAdd={handleNewFormAdd}
-        handleNewFormCancel={handleNewFormCancel}
-        handleCopyJson={handleCopyJson}
-        handleShowNewForm={handleShowNewForm}
-        newFormPreview={newFormPreview}
-        onImportAchievementsJson={onImportAchievementsJson}
-      />
+      {devMode && (
+        <div className="devmode-floating-panel">
+          <span className="devmode-title">Developer Mode Enabled (SHIFT+M)</span>
+          <div className="devmode-btn-row" style={{ gap: 8 }}>
+            <button className="devmode-btn" onClick={() => console.log('Copy JSON')}>Copy timeline.json</button>
+            <label className="devmode-btn" style={{ display: 'inline-block', cursor: 'pointer', margin: 0 }}>
+              Import timeline.json
+              <input
+                type="file"
+                accept="application/json,.json"
+                style={{ display: 'none' }}
+                onChange={e => console.log('Import JSON', e.target.files)}
+              />
+            </label>
+            <button className="devmode-btn" onClick={() => setInsertIdx(achievements.length)}>New Achievement</button>
+          </div>
+        </div>
+      )}
+      {devMode && editIdx !== null && (
+        <div className="devmode-form-panel">
+          <h3 className="devmode-form-title">Edit Achievement</h3>
+          <form onSubmit={e => { e.preventDefault(); handleEditFormSave(); }} autoComplete="off">
+            <label>Name<input type="text" name="name" value={editForm.name || ''} onChange={handleEditFormChange} required /></label>
+            <label>ID<input type="text" name="id" value={editForm.id || ''} onChange={handleEditFormChange} required /></label>
+            <label>Player<input type="text" name="player" value={editForm.player || ''} onChange={handleEditFormChange} /></label>
+            <label>Tags<input type="text" value={editFormCustomTags} onChange={handleEditFormCustomTagsChange} /></label>
+            <button type="submit">Save</button>
+            <button type="button" onClick={handleEditFormCancel}>Cancel</button>
+          </form>
+        </div>
+      )}
+      {devMode && insertIdx !== null && (
+        <div className="devmode-form-panel">
+          <h3 className="devmode-form-title">New Achievement</h3>
+          <form onSubmit={e => { e.preventDefault(); handleNewFormAdd(); }} autoComplete="off">
+            <label>Name<input type="text" name="name" value={newForm.name} onChange={handleNewFormChange} required /></label>
+            <label>ID<input type="text" name="id" value={newForm.id} onChange={handleNewFormChange} required /></label>
+            <label>Player<input type="text" name="player" value={newForm.player} onChange={handleNewFormChange} /></label>
+            <label>Tags<input type="text" value={newFormCustomTags} onChange={handleNewFormCustomTagsChange} /></label>
+            <button type="submit">Add</button>
+            <button type="button" onClick={handleNewFormCancel}>Cancel</button>
+          </form>
+        </div>
+      )}
     </>
   );
 }
