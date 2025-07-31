@@ -131,6 +131,8 @@ export default function Timeline() {
   const [isMobile, setIsMobile] = useState(false);
   const [showMobileFilters, setShowMobileFilters] = useState(false);
   const [showSidebar, setShowSidebar] = useState(false);
+  const [devMode, setDevMode] = useState(false);
+  const [reordered, setReordered] = useState(null);
   const mobileBtnRef = useRef();
 
   useEffect(() => {
@@ -154,6 +156,71 @@ export default function Timeline() {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  useEffect(() => {
+    function handleKeyDown(e) {
+      if (e.shiftKey && (e.key === 'M' || e.key === 'm')) {
+        setDevMode(v => {
+          const next = !v;
+          if (!next) setReordered(null);
+          else setReordered(achievements);
+          return next;
+        });
+      }
+    }
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [achievements]);
+
+  useEffect(() => {
+    if (!isMobile) return;
+    let pinchActive = false;
+    let lastTouches = [];
+    let swipeSequence = [];
+    let pinchStartDist = null;
+    let gestureTimeout = null;
+
+    function getDistance(touches) {
+      if (touches.length < 2) return 0;
+      const dx = touches[0].clientX - touches[1].clientX;
+      const dy = touches[0].clientY - touches[1].clientY;
+      return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    function handleTouchStart(e) {
+      if (e.touches.length === 2) {
+        pinchActive = true;
+        pinchStartDist = getDistance(e.touches);
+        swipeSequence = [];
+        if (gestureTimeout) clearTimeout(gestureTimeout);
+      }
+      lastTouches = Array.from(e.touches);
+    }
+
+    function handleTouchMove(e) {
+      if (pinchActive && e.touches.length === 2) {
+        const pinchEndDist = getDistance(e.touches);
+        if (pinchEndDist > pinchStartDist * 1.5) {
+          setDevMode(true);
+          pinchActive = false;
+        }
+      }
+    }
+
+    function handleTouchEnd() {
+      pinchActive = false;
+    }
+
+    window.addEventListener('touchstart', handleTouchStart);
+    window.addEventListener('touchmove', handleTouchMove);
+    window.addEventListener('touchend', handleTouchEnd);
+
+    return () => {
+      window.removeEventListener('touchstart', handleTouchStart);
+      window.removeEventListener('touchmove', handleTouchMove);
+      window.removeEventListener('touchend', handleTouchEnd);
+    };
+  }, [isMobile]);
 
   const filtered = useMemo(() => {
     return achievements.filter(a => {
@@ -359,6 +426,23 @@ export default function Timeline() {
           )}
         </section>
       </main>
+      {devMode && (
+        <div className="devmode-floating-panel">
+          <span className="devmode-title">Developer Mode Enabled (SHIFT+M)</span>
+          <div className="devmode-btn-row" style={{ gap: 8 }}>
+            <button className="devmode-btn" onClick={() => console.log('Copy JSON')}>Copy timeline.json</button>
+            <label className="devmode-btn" style={{ display: 'inline-block', cursor: 'pointer', margin: 0 }}>
+              Import timeline.json
+              <input
+                type="file"
+                accept="application/json,.json"
+                style={{ display: 'none' }}
+                onChange={e => console.log('Import JSON', e.target.files)}
+              />
+            </label>
+          </div>
+        </div>
+      )}
     </>
   );
 }
