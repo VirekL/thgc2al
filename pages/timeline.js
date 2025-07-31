@@ -4,6 +4,7 @@ import { useDateFormat } from '../components/DateFormatContext';
 import Background from '../components/Background';
 import Sidebar from '../components/Sidebar';
 import Tag, { TAG_PRIORITY_ORDER } from '../components/Tag';
+import Link from 'next/link';
 
 function calculateDaysLasted(currentDate, previousDate) {
   if (!currentDate || !previousDate) return 'N/A';
@@ -47,29 +48,31 @@ function TimelineAchievementCard({ achievement, previousAchievement }) {
     }
   }
   return (
-    <div className="achievement-item" tabIndex={0} style={{cursor: 'pointer'}}>
-      <div className="rank-date-container">
-        <div className="achievement-length">
-          {achievement.length ? `${Math.floor(achievement.length / 60)}:${(achievement.length % 60).toString().padStart(2, '0')}` : 'N/A'}
+    <Link href={`/achievement/${achievement.id}`} passHref>
+      <div className="achievement-item" tabIndex={0} style={{cursor: 'pointer'}}>
+        <div className="rank-date-container">
+          <div className="achievement-length">
+            {achievement.length ? `${Math.floor(achievement.length / 60)}:${(achievement.length % 60).toString().padStart(2, '0')}` : 'N/A'}
+          </div>
+          <div className="lasted-days">{lastedLabel}</div>
+          <div className="rank"><strong>{achievement.date ? formatDate(achievement.date, dateFormat) : 'N/A'}</strong></div>
         </div>
-        <div className="lasted-days">{lastedLabel}</div>
-        <div className="rank"><strong>{achievement.date ? formatDate(achievement.date, dateFormat) : 'N/A'}</strong></div>
-      </div>
-      <div className="tag-container">
-        {(achievement.tags || []).sort((a, b) => TAG_PRIORITY_ORDER.indexOf(a.toUpperCase()) - TAG_PRIORITY_ORDER.indexOf(b.toUpperCase())).map(tag => (
-          <Tag tag={tag} key={tag} />
-        ))}
-      </div>
-      <div className="achievement-details">
-        <div className="text">
-          <h2>{achievement.name}</h2>
-          <p>{achievement.player}</p>
+        <div className="tag-container">
+          {(achievement.tags || []).sort((a, b) => TAG_PRIORITY_ORDER.indexOf(a.toUpperCase()) - TAG_PRIORITY_ORDER.indexOf(b.toUpperCase())).map(tag => (
+            <Tag tag={tag} key={tag} />
+          ))}
         </div>
-        <div className="thumbnail-container">
-          <img src={achievement.thumbnail || (achievement.levelID ? `https://tjcsucht.net/levelthumbs/${achievement.levelID}.png` : '/assets/default-thumbnail.png')} alt={achievement.name} loading="lazy" />
+        <div className="achievement-details">
+          <div className="text">
+            <h2>{achievement.name}</h2>
+            <p>{achievement.player}</p>
+          </div>
+          <div className="thumbnail-container">
+            <img src={achievement.thumbnail || (achievement.levelID ? `https://tjcsucht.net/levelthumbs/${achievement.levelID}.png` : '/assets/default-thumbnail.png')} alt={achievement.name} loading="lazy" />
+          </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
