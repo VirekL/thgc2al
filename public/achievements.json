@@ -153,23 +153,6 @@
     "version": "2.1"
   },
   {
-    "name": "Sakupen Circles 69%, 67%, 69%, 80%",
-    "id": "sakupen-circles-69-67-69-80",
-    "player": "ad3usgmd",
-    "length": "151",
-    "version": "2.2",
-    "video": "https://youtu.be/WwHQ2jiRSeo?t=4609",
-    "showcaseVideo": "https://youtu.be/b66_Oe4Xo1w",
-    "date": "2025-06-19",
-    "submitter": "ad3usgmd",
-    "levelID": "76962930",
-    "tags": [
-      "Level",
-      "Consistency",
-      "Rated"
-    ]
-  },
-  {
     "name": "Thinking Space II (Old) 77%",
     "id": "thinking-space-ii-old-77",
     "player": "Zoink",
@@ -289,6 +272,23 @@
     "tags": [
       "Level",
       "Progress"
+    ]
+  },
+  {
+    "name": "Sakupen Circles 69%, 67%, 69%, 80%",
+    "id": "sakupen-circles-69-67-69-80",
+    "player": "ad3usgmd",
+    "length": "151",
+    "version": "2.2",
+    "video": "https://youtu.be/WwHQ2jiRSeo?t=4609",
+    "showcaseVideo": "https://youtu.be/b66_Oe4Xo1w",
+    "date": "2025-06-19",
+    "submitter": "ad3usgmd",
+    "levelID": "76962930",
+    "tags": [
+      "Level",
+      "Consistency",
+      "Rated"
     ]
   },
   {
@@ -534,23 +534,6 @@
     ]
   },
   {
-    "name": "Silent clubstep 5-25%x2, 5-64%",
-    "id": "silent-clubstep-5-25-x2-5-64",
-    "player": "Vision",
-    "length": "90",
-    "version": "2.1",
-    "video": "https://youtu.be/fKN9T_w5wnE",
-    "showcaseVideo": "https://youtu.be/xtwyN8Dh1WE",
-    "date": "2023-01-02",
-    "submitter": "ImJuls",
-    "levelID": "4125776",
-    "tags": [
-      "Level",
-      "Consistency",
-      "Rated"
-    ]
-  },
-  {
     "name": "Silent clubstep 16%, 95%",
     "id": "silent-clubstep-16-95",
     "player": "faukkk",
@@ -690,24 +673,6 @@
     "levelID": "4125776",
     "tags": [
       "Level",
-      "Rated"
-    ]
-  },
-  {
-    "name": "Silent clubstep 24-100%, 24-72%, 24-65%, 24-66%, 24-40%, 24-100%, 24-65%",
-    "id": "silent-clubstep-24-100-24-72-24-65-24-66-24-40-24-100-24-65",
-    "player": "ImJuls",
-    "date": "2025-05-04",
-    "length": "266",
-    "version": "2.2",
-    "levelID": "4125776",
-    "video": "https://youtu.be/_4k0LUp9Tq0",
-    "showcaseVideo": "https://youtu.be/xtwyN8Dh1WE",
-    "submitter": "kittycatiscute",
-    "tags": [
-      "Level",
-      "Consistency",
-      "CBF",
       "Rated"
     ]
   },
@@ -6447,6 +6412,23 @@
     ]
   },
   {
+    "name": "The Yangire 144%",
+    "id": "the-yangire-144",
+    "player": "Thnnder",
+    "levelID": 110500920,
+    "date": "2024-10-29",
+    "length": 214,
+    "version": 2.2,
+    "video": "https://youtu.be/btN_Cnx8-hA",
+    "showcaseVideo": "https://youtu.be/hkfdKYqQARA",
+    "submitter": "gdspeedcuber",
+    "tags": [
+      "Level",
+      "Consistency",
+      "Rated"
+    ]
+  },
+  {
     "name": "Deadlier Clubstep",
     "id": "deadlier-clubstep",
     "player": "Jenath",
@@ -6664,23 +6646,6 @@
     "showcaseVideo": "https://youtu.be/d9Fg3qod44E",
     "tags": [
       "Level"
-    ]
-  },
-  {
-    "name": "The Yangire 144%",
-    "id": "the-yangire-144",
-    "player": "Thnnder",
-    "levelID": 110500920,
-    "date": "2024-10-29",
-    "length": 214,
-    "version": 2.2,
-    "video": "https://youtu.be/btN_Cnx8-hA",
-    "showcaseVideo": "https://youtu.be/hkfdKYqQARA",
-    "submitter": "gdspeedcuber",
-    "tags": [
-      "Level",
-      "Consistency",
-      "Rated"
     ]
   },
   {
@@ -8926,23 +8891,6 @@
     ]
   },
   {
-    "name": "Trueffet 41%, 100%",
-    "id": "trueffet-41-100",
-    "player": "Cursed",
-    "date": "2022-02-05",
-    "length": "92",
-    "version": "2.1",
-    "levelID": "71434979",
-    "video": "https://youtu.be/NmfZfT5byS4",
-    "showcaseVideo": "https://youtu.be/qkQidB9aPLA",
-    "submitter": "zXdasfsa",
-    "tags": [
-      "Level",
-      "Consistency",
-      "Rated"
-    ]
-  },
-  {
     "name": "Subsuming Vortex 49%",
     "id": "subsuming-vortex-49",
     "player": "Cursed",
@@ -9900,23 +9848,6 @@
       "Level",
       "Low Hertz",
       "Progress",
-      "Rated"
-    ]
-  },
-  {
-    "name": "Checked Steam 45%, 100%",
-    "id": "checked-steam-45-100",
-    "player": "Zoink",
-    "date": "2024-09-10",
-    "length": "100",
-    "version": "2.2",
-    "levelID": "105748155",
-    "video": "https://www.youtube.com/watch?v=UD9MpywC_XU",
-    "showcaseVideo": "https://www.youtube.com/watch?v=yN1grKb8UTQ",
-    "submitter": "kittycatiscute",
-    "tags": [
-      "Level",
-      "Consistency",
       "Rated"
     ]
   },
