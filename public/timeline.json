@@ -797,6 +797,21 @@
         "showcaseVideo": "https://youtu.be/Js7TtZ99J04"
     },
     {
+        "id": "ice-carbon-diablo-x",
+        "name": "ICE Carbon Diablo X",
+        "player": "Riot",
+        "tags": [
+            "Level",
+            "Rated"
+        ],
+        "length": "87",
+        "version": "1.9",
+        "date": "2015-05-24",
+        "levelID": "814678",
+        "video": "https://youtu.be/ykwlYeTJblc",
+	    "showcaseVideo": "https://youtu.be/gSZVFyZg8ys"
+    },
+    {
         "id": "cataclysm-old",
         "name": "Cataclysm (Old)",
         "player": "Giron",
@@ -945,20 +960,19 @@
         ]
     },
     {
-        "id": "deadly-clubstep",
-        "name": "Deadly ClubStep",
-        "player": "LunarSimg",
+        "id": "dual-hexagon-force",
+        "name": "Dual Hexagon Force",
+        "player": "dhk2725",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+            "2P"
         ],
-        "length": "86",
-        "version": "1.7",
-        "date": "2014-07-09",
-        "submitter": "Anceps",
-        "levelID": "1299298",
-        "video": "https://web.archive.org/web/20230521063728/https://media.discordapp.net/attachments/598716749554384906/937155369954848768/unknown.png",
-        "showcaseVideo": "https://youtu.be/kaT1dmmAI2k"
+        "length": "88",
+        "version": "1.8",
+        "date": "2014-08-20",
+        "levelID": "1782468",
+	    "showcaseVideo": "https://youtu.be/xrXOPg6SGyU?si=ngr5BkfjhmvYVbIf"
     },
     {
         "id": "primary-maze",
@@ -991,6 +1005,19 @@
         "showcaseVideo": "https://youtu.be/tH-QfWdw5o0"
     },
     {
+        "id": "eclipse",
+        "name": "eclipse",
+        "player": "Darkflame",
+        "tags": [
+            "Level"
+        ],
+        "length": "73",
+        "version": "1.6",
+        "date": "2014-04-12",
+        "levelID": "535596",
+	    "showcaseVideo": "https://youtu.be/HGAxTsdB_6o?si=dmwjAQY7oR579wOR"
+    },
+    {
         "id": "pg-clubstep-old",
         "name": "pg clubstep (Old)",
         "player": "pg1004",
@@ -1005,6 +1032,35 @@
         "levelID": "82961922",
         "video": "https://web.archive.org/web/20220525033039/https://youtu.be/mRJU7yhritk",
         "showcaseVideo": "https://youtu.be/UnhLHTybSJY"
+    },
+    {
+        "id": "demon-sunrise",
+        "name": "Demon Sunrise",
+        "player": "Crepuscule",
+        "tags": [
+            "Level",
+            "Rated"
+        ],
+        "length": "95",
+        "version": "1.5",
+        "date": "2014-03-02",
+        "levelID": "296176",
+        "video": "https://youtu.be/qcfbTR7D_W8?si=RjlkvERAIXlWJ7S8",
+	    "showcaseVideo": "https://youtu.be/s5CBobn6D4c?si=MOXvuQqHGPWkRkDT"
+    },
+    {
+        "id": "simg-factorial-6",
+        "name": "SIMG Factorial 6",
+        "player": "LunarSIMG",
+        "tags": [
+            "Level",
+            "Rated"
+        ],
+        "length": "97",
+        "version": "1.5",
+        "date": "2014-03-02",
+        "levelID": "295984",
+        "showcaseVideo": "https://youtu.be/WqpoqktKUk0"
     },
     {
         "id": "bizarre-milestone-old",
@@ -1037,6 +1093,19 @@
         "showcaseVideo": "https://youtu.be/ml9kkg3F_to"
     },
     {
+        "id": "simg-factorial-5-old",
+        "name": "SIMG Factorial 5 (Old)",
+        "player": "LunarSIMG",
+        "tags": [
+            "Level",
+            "Outdated Version"
+        ],
+        "length": "97",
+        "version": "1.4",
+        "date": "2014-02-14",
+        "levelID": "88356137"
+    },
+    {
         "id": "definite-integral",
         "name": "Definite Integral",
         "player": "Rabbitical",
@@ -1051,6 +1120,33 @@
         "levelID": "180857",
         "video": "https://youtu.be/LXfNdXiWHwQ",
         "showcaseVideo": "https://youtu.be/DcxyJps7FWk"
+    },
+    {
+        "id": "demons-dry-out",
+        "name": "demons dry out",
+        "player": "bbddee",
+        "tags": [
+            "Level",
+            "Rated"
+        ],
+        "length": "75",
+        "version": "1.4",
+        "date": "2014-01-15",
+        "levelID": "153697",
+        "showcaseVideo": "https://youtu.be/L2xD-bUEVl4"
+    },
+    {
+        "id": "simg-factorial-4-old",
+        "name": "SIMG Factorial 4 (Old)",
+        "player": "LunarSIMG",
+        "tags": [
+            "Level",
+            "Outdated Version"
+        ],
+        "length": "81",
+        "version": "1.4",
+        "date": "2014-01-14",
+        "showcaseVideo": "https://youtu.be/I2773lgoM2I?si=JACNsuV8s5F_K3K9"
     },
     {
         "id": "rythem-time-machine",
@@ -1112,6 +1208,19 @@
         ]
     },
     {
+        "id": "cave-adventure",
+        "name": "cave adventure",
+        "player": "gomchi",
+        "tags": [
+            "Level"
+        ],
+        "length": "46",
+        "version": "1.2",
+        "date": "2013-10-26",
+        "levelID": "19617",
+        "showcaseVideo": "https://youtu.be/1B0_S17smqg"
+    },
+    {
         "id": "to-the-grave",
         "name": "To the Grave",
         "player": "darnoc2",
@@ -1120,27 +1229,24 @@
             "Rated"
         ],
         "length": "93",
-        "version": "1.1",
+        "version": "1.2",
         "date": "2013-10-19",
         "submitter": "Anceps",
         "levelID": "12556",
         "showcaseVideo": "https://youtu.be/9OSvZkmwZuE"
     },
     {
-        "id": "demon-park",
-        "name": "demon park",
-        "player": "M2coL",
+        "id": "b",
+        "name": "B",
+        "player": "ChunSonghun",
         "tags": [
-            "Level",
-            "Rated"
+            "Level"
         ],
-        "length": "96",
+        "length": "97",
         "version": "1.1",
-        "date": "2013-10-17",
-        "levelID": "10109",
-        "submitter": "Anceps",
-        "video": "https://youtu.be/1Ota3kIHlY0",
-        "showcaseVideo": "https://youtu.be/szsx6ZbPWy0"
+        "date": "2013-10-15",
+        "levelID": "9173",
+        "showcaseVideo": "https://youtu.be/R-E8rIoEky4"
     },
     {
         "id": "d",
@@ -1154,18 +1260,6 @@
         "date": "2013-09-29",
         "levelID": "4266",
         "showcaseVideo": "https://youtu.be/qE5RZE3PqYM"
-    },
-    {
-        "name": "Level 5",
-        "id": "level-5",
-        "player": "Matty",
-        "length": "93",
-        "version": "1.0",
-        "date": "2013-09-13",
-        "levelID": "2172",
-        "tags": [
-            "Level"
-        ]
     },
     {
         "id": "the-rainbow-road",
