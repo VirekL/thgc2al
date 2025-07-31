@@ -298,6 +298,23 @@
         "showcaseVideo": "https://youtu.be/A7i2m-yL-mA"
     },
     {
+        "id": "abyss-of-darkness-95",
+        "name": "Abyss of Darkness 95%",
+        "player": "Cursed",
+        "tags": [
+            "Progress",
+            "Level",
+            "Rated"
+        ],
+        "length": "120",
+        "version": "2.1",
+        "date": "2022-03-05",
+        "submitter": "Arcadie",
+        "levelID": "49896559",
+        "video": "https://youtu.be/bYVZztfvx1Q?si=J_kDffAxRt8lrgAL",
+	    "showcaseVideo": "https://youtu.be/A7i2m-yL-mA"
+    },
+    {
         "id": "old-aod-98",
         "name": "Old AoD 98%",
         "player": "Dils thik",
@@ -1339,7 +1356,7 @@
         "showcaseVideo": "https://youtu.be/RIeZSWzs50g"
     },
     {
-        "id": "ultimate-destruction",
+        "id": "ultiate-destruction",
         "name": "Ultiate Destruction",
         "player": "RobTop",
         "tags": [
