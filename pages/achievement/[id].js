@@ -8,6 +8,7 @@ import path from 'path';
 import { useState } from 'react';
 import { useDateFormat } from '../../components/DateFormatContext';
 import Tag, { TAG_PRIORITY_ORDER } from '../../components/Tag';
+import { promises as fsPromises } from 'fs';
 
 export async function getStaticPaths() {
   const achievementsPath = path.join(process.cwd(), 'public', 'achievements.json');
@@ -27,17 +28,31 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const achievementsPath = path.join(process.cwd(), 'public', 'achievements.json');
+  const timelinePath = path.join(process.cwd(), 'public', 'timeline.json');
   let achievements = [];
+  let timeline = [];
+
   try {
-    const achievementsData = fs.readFileSync(achievementsPath, 'utf8');
+    const achievementsData = await fsPromises.readFile(achievementsPath, 'utf8');
     achievements = JSON.parse(achievementsData);
   } catch (e) {
+    console.error('Error reading achievements.json:', e);
+  }
 
+  try {
+    const timelineData = await fsPromises.readFile(timelinePath, 'utf8');
+    timeline = JSON.parse(timelineData);
+  } catch (e) {
+    console.error('Error reading timeline.json:', e);
   }
 
   achievements = achievements.filter(a => a && a.id && a.name);
+  timeline = timeline.filter(a => a && a.id && a.name);
 
-  const achievement = achievements.find(a => a.id.toString() === params.id) || null;
+  const achievement =
+    achievements.find(a => a.id.toString() === params.id) ||
+    timeline.find(a => a.id.toString() === params.id) ||
+    null;
 
   let placement = null;
   if (achievement) {
