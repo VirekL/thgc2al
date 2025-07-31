@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { useEffect, useState, useMemo, useRef } from 'react';
+import { useEffect, useState, useMemo, useRef, useCallback } from 'react';
 import { useDateFormat } from '../components/DateFormatContext';
 import Background from '../components/Background';
 import Sidebar from '../components/Sidebar';
@@ -29,7 +29,7 @@ function formatDate(date, dateFormat) {
   return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
-function TimelineAchievementCard({ achievement, previousAchievement }) {
+function TimelineAchievementCard({ achievement, previousAchievement, onEdit, onHover, isHovered }) {
   const { dateFormat } = useDateFormat();
   let lastedDays, lastedLabel;
   if (previousAchievement) {
@@ -50,7 +50,13 @@ function TimelineAchievementCard({ achievement, previousAchievement }) {
   return (
     <Link href={`/achievement/${achievement.id}`} passHref legacyBehavior>
       <a style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }}>
-        <div className="achievement-item" tabIndex={0} style={{ cursor: 'pointer' }}>
+        <div
+          className={`achievement-item ${isHovered ? 'hovered' : ''}`}
+          tabIndex={0}
+          style={{ cursor: 'pointer' }}
+          onMouseEnter={onHover}
+          onMouseLeave={onHover}
+        >
           <div className="rank-date-container">
             <div className="achievement-length">
               {achievement.length ? `${Math.floor(achievement.length / 60)}:${(achievement.length % 60).toString().padStart(2, '0')}` : 'N/A'}
@@ -72,6 +78,14 @@ function TimelineAchievementCard({ achievement, previousAchievement }) {
               <img src={achievement.thumbnail || (achievement.levelID ? `https://tjcsucht.net/levelthumbs/${achievement.levelID}.png` : '/assets/default-thumbnail.png')} alt={achievement.name} loading="lazy" />
             </div>
           </div>
+          {/* Developer mode hover menu */}
+          {onEdit && (
+            <div className="hover-menu" style={{ display: isHovered ? 'flex' : 'none' }}>
+              <button className="hover-menu-btn" onClick={onEdit} title="Edit achievement">
+                <span className="bi bi-pencil" aria-hidden="true"></span>
+              </button>
+            </div>
+          )}
         </div>
       </a>
     </Link>
@@ -133,15 +147,17 @@ export default function Timeline() {
   const [showSidebar, setShowSidebar] = useState(false);
   const [devMode, setDevMode] = useState(false);
   const [reordered, setReordered] = useState(null);
+  const [hoveredIdx, setHoveredIdx] = useState(null);
+  const [newForm, setNewForm] = useState({
+    name: '', id: '', player: '', length: 0, version: 2, video: '', showcaseVideo: '', date: '', submitter: '', levelID: 0, thumbnail: '', tags: []
+  });
+  const [newFormTags, setNewFormTags] = useState([]);
+  const [newFormCustomTags, setNewFormCustomTags] = useState('');
+  const [insertIdx, setInsertIdx] = useState(null);
   const [editIdx, setEditIdx] = useState(null);
   const [editForm, setEditForm] = useState(null);
   const [editFormTags, setEditFormTags] = useState([]);
   const [editFormCustomTags, setEditFormCustomTags] = useState('');
-  const [newForm, setNewForm] = useState({
-    name: '', id: '', player: '', length: 0, version: '', video: '', showcaseVideo: '', date: '', submitter: '', levelID: '', thumbnail: '', tags: []
-  });
-  const [newFormTags, setNewFormTags] = useState([]);
-  const [newFormCustomTags, setNewFormCustomTags] = useState('');
   const mobileBtnRef = useRef();
 
   useEffect(() => {
@@ -296,16 +312,23 @@ export default function Timeline() {
 
   function handleNewFormAdd() {
     const newAchievement = { ...newForm, tags: [...newFormTags, ...newFormCustomTags.split(',').map(t => t.trim()).filter(Boolean)] };
-    setAchievements(prev => [newAchievement, ...prev]);
-    setNewForm({ name: '', id: '', player: '', length: 0, version: '', video: '', showcaseVideo: '', date: '', submitter: '', levelID: '', thumbnail: '', tags: [] });
+    setAchievements(prev => {
+      const updated = [...prev];
+      if (insertIdx !== null) updated.splice(insertIdx, 0, newAchievement);
+      else updated.push(newAchievement);
+      return updated;
+    });
+    setNewForm({ name: '', id: '', player: '', length: 0, version: 2, video: '', showcaseVideo: '', date: '', submitter: '', levelID: 0, thumbnail: '', tags: [] });
     setNewFormTags([]);
     setNewFormCustomTags('');
+    setInsertIdx(null);
   }
 
   function handleNewFormCancel() {
-    setNewForm({ name: '', id: '', player: '', length: 0, version: '', video: '', showcaseVideo: '', date: '', submitter: '', levelID: '', thumbnail: '', tags: [] });
+    setNewForm({ name: '', id: '', player: '', length: 0, version: 2, video: '', showcaseVideo: '', date: '', submitter: '', levelID: 0, thumbnail: '', tags: [] });
     setNewFormTags([]);
     setNewFormCustomTags('');
+    setInsertIdx(null);
   }
 
   return (
@@ -493,7 +516,14 @@ export default function Timeline() {
             <div style={{color: '#aaa'}}>No achievements found.</div>
           ) : (
             filtered.map((a, i) => (
-              <TimelineAchievementCard achievement={a} previousAchievement={filtered[i-1]} key={a.id || i} />
+              <TimelineAchievementCard
+                achievement={a}
+                previousAchievement={filtered[i-1]}
+                key={a.id || i}
+                onEdit={() => handleEditAchievement(i)}
+                onHover={() => setHoveredIdx(i === hoveredIdx ? null : i)}
+                isHovered={i === hoveredIdx}
+              />
             ))
           )}
         </section>
@@ -512,25 +542,34 @@ export default function Timeline() {
                 onChange={e => console.log('Import JSON', e.target.files)}
               />
             </label>
+            <button className="devmode-btn" onClick={() => setInsertIdx(achievements.length)}>New Achievement</button>
           </div>
-          {editIdx !== null && (
-            <form onSubmit={e => { e.preventDefault(); handleEditFormSave(); }}>
-              <input type="text" name="name" value={editForm.name || ''} onChange={handleEditFormChange} placeholder="Name" />
-              <input type="text" name="id" value={editForm.id || ''} onChange={handleEditFormChange} placeholder="ID" />
-              {/* Add other fields similarly */}
-              <button type="submit">Save</button>
-              <button type="button" onClick={handleEditFormCancel}>Cancel</button>
-            </form>
-          )}
-          {editIdx === null && (
-            <form onSubmit={e => { e.preventDefault(); handleNewFormAdd(); }}>
-              <input type="text" name="name" value={newForm.name} onChange={handleNewFormChange} placeholder="Name" />
-              <input type="text" name="id" value={newForm.id} onChange={handleNewFormChange} placeholder="ID" />
-              {/* Add other fields similarly */}
-              <button type="submit">Add</button>
-              <button type="button" onClick={handleNewFormCancel}>Cancel</button>
-            </form>
-          )}
+        </div>
+      )}
+      {devMode && editIdx !== null && (
+        <div className="devmode-form-panel">
+          <h3 className="devmode-form-title">Edit Achievement</h3>
+          <form onSubmit={e => { e.preventDefault(); handleEditFormSave(); }} autoComplete="off">
+            <label>Name<input type="text" name="name" value={editForm.name || ''} onChange={handleEditFormChange} required /></label>
+            <label>ID<input type="text" name="id" value={editForm.id || ''} onChange={handleEditFormChange} required /></label>
+            <label>Player<input type="text" name="player" value={editForm.player || ''} onChange={handleEditFormChange} /></label>
+            <label>Tags<input type="text" value={editFormCustomTags} onChange={handleEditFormCustomTagsChange} /></label>
+            <button type="submit">Save</button>
+            <button type="button" onClick={handleEditFormCancel}>Cancel</button>
+          </form>
+        </div>
+      )}
+      {devMode && insertIdx !== null && (
+        <div className="devmode-form-panel">
+          <h3 className="devmode-form-title">New Achievement</h3>
+          <form onSubmit={e => { e.preventDefault(); handleNewFormAdd(); }} autoComplete="off">
+            <label>Name<input type="text" name="name" value={newForm.name} onChange={handleNewFormChange} required /></label>
+            <label>ID<input type="text" name="id" value={newForm.id} onChange={handleNewFormChange} required /></label>
+            <label>Player<input type="text" name="player" value={newForm.player} onChange={handleNewFormChange} /></label>
+            <label>Tags<input type="text" value={newFormCustomTags} onChange={handleNewFormCustomTagsChange} /></label>
+            <button type="submit">Add</button>
+            <button type="button" onClick={handleNewFormCancel}>Cancel</button>
+          </form>
         </div>
       )}
     </>
