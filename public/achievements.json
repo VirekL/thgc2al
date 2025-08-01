@@ -325,8 +325,26 @@
     "submitter": "kyle1saurus"
   },
   {
-    "name": "Banshee 86%",
-    "id": "banshee-86",
+    "name": "Banshee 77%",
+    "id": "banshee-77",
+    "player": "spcreat",
+    "video": "https://www.youtube.com/live/i5Xd9I4Zx1w?t=6032",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "date": "2025-07-31",
+    "submitter": "rook_saneless",
+    "length": 70,
+    "version": 2.2,
+    "thumbnail": "https://i.ytimg.com/vi/i8TGgQNAzDg/maxresdefault.jpg",
+    "rank": 21,
+    "levelID": 0,
+    "showcaseVideo": "https://youtu.be/h14lmGH31_M?si=0Dn8l73E5iRFCMIx"
+  },
+  {
+    "name": "Banshee (Old) 86%",
+    "id": "banshee-old-86",
     "player": "spcreat",
     "video": "https://youtu.be/AkAcvx32BII",
     "tags": [
