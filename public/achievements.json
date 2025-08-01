@@ -1432,7 +1432,7 @@
     "length": 126,
     "version": 2.2,
     "video": "https://youtu.be/aTxt76U3e2Q",
-    "showcaseVideo": "https://youtu.be/A4Vorz8sdh0",
+    "showcaseVideo": "https://youtu.be/1H0UpLzDEQw",
     "submitter": "shortweekly",
     "tags": [
       "Level",
@@ -2036,7 +2036,9 @@
     "tags": [
       "Level",
       "Progress"
-    ]
+    ],
+    "levelID": 0,
+    "showcaseVideo": "https://www.youtube.com/watch?v=l6poOVWISJA"
   },
   {
     "name": "Acheron 60hz 69-100%",
@@ -2103,22 +2105,25 @@
       "Level",
       "Progress",
       "CBF"
-    ]
+    ],
+    "levelID": 0,
+    "showcaseVideo": "https://youtu.be/lR70uK1NuKU"
   },
   {
     "name": "Acheron (serpentical)",
     "id": "acheron-serpentical",
     "player": "serpentical",
     "date": "2025-07-08",
-    "length": "67",
-    "version": "2.2",
-    "levelID": "122490465",
+    "length": 67,
+    "version": 2.2,
+    "levelID": 122490465,
     "video": "https://youtu.be/APtUnzAP9bM",
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
       "CBF"
-    ]
+    ],
+    "showcaseVideo": "https://youtu.be/CxdvSP7nLvI"
   },
   {
     "name": "vsc superbuff 3 deaths, 99.87 accuracy",
@@ -2166,7 +2171,8 @@
     "video": "https://youtu.be/oXTEP51YbZY",
     "tags": [
       "Challenge"
-    ]
+    ],
+    "showcaseVideo": "https://www.youtube.com/watch?v=28q8-ccS83I"
   },
   {
     "name": "j0nahh challenge",
@@ -2180,7 +2186,8 @@
     "video": "https://youtu.be/svZh5TMUPWo",
     "tags": [
       "Challenge"
-    ]
+    ],
+    "showcaseVideo": "https://youtu.be/w2dejE2NZYE"
   },
   {
     "name": "Like if you camt bea 92%",
@@ -2208,7 +2215,8 @@
     "video": "https://youtu.be/IWjhhj0aHPc",
     "tags": [
       "Challenge"
-    ]
+    ],
+    "showcaseVideo": "https://www.youtube.com/watch?v=J4aWEJUS_2E"
   },
   {
     "name": "VSC Nev Finale 25-67%",
@@ -2223,7 +2231,8 @@
     "tags": [
       "Challenge",
       "Progress"
-    ]
+    ],
+    "showcaseVideo": "https://www.youtube.com/watch?v=MuFaJ57ItPU"
   },
   {
     "name": "VSC Out",
@@ -2237,7 +2246,8 @@
     "video": "https://youtu.be/ktD6Lb5MzAs",
     "tags": [
       "Challenge"
-    ]
+    ],
+    "showcaseVideo": "https://www.youtube.com/watch?v=FTJEXVRizyo"
   },
   {
     "name": "VSC Geist",
@@ -2251,7 +2261,8 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Challenge"
-    ]
+    ],
+    "showcaseVideo": "https://www.youtube.com/watch?v=Vdk0TvRbTZs"
   },
   {
     "name": "VSC Madness",
@@ -2265,7 +2276,8 @@
     "video": "https://youtu.be/A-QIy2BjRLg",
     "tags": [
       "Challenge"
-    ]
+    ],
+    "showcaseVideo": "https://www.youtube.com/watch?v=u9O1OHE20fw"
   },
   {
     "name": "VSC on Track",
@@ -2279,6 +2291,23 @@
     "video": "https://youtu.be/ZH788q4wRd8",
     "tags": [
       "Challenge"
+    ],
+    "showcaseVideo": "https://www.youtube.com/watch?v=USXvXPKulKw"
+  },
+  {
+    "name": "VSC Lost Sense Deco",
+    "id": "vsc-lost-sense-deco",
+    "player": "JACKSONAMORE",
+    "length": 16,
+    "version": 2.2,
+    "video": "https://youtu.be/WO5kCdWHvR4",
+    "showcaseVideo": "https://youtu.be/ncrjA6pmrZI",
+    "date": "2025-05-30",
+    "submitter": "kyle1saurus",
+    "levelID": 82200638,
+    "tags": [
+      "Challenge",
+      "CBF"
     ]
   },
   {
@@ -2321,7 +2350,8 @@
     "video": "https://youtu.be/70c4SvUe-EA",
     "tags": [
       "Challenge"
-    ]
+    ],
+    "showcaseVideo": "https://youtu.be/pBxYLz2Q-ak"
   },
   {
     "name": "VSC nerfed",
@@ -2382,7 +2412,7 @@
     "version": 2.1,
     "submitter": "Anceps",
     "video": "https://youtu.be/VHgRQfFy9xc",
-    "showcaseVideo": "https://youtu.be/VcQ3-nRRrE0",
+    "showcaseVideo": "https://youtu.be/sJkeRnrAqWQ",
     "tags": [
       "Level",
       "Progress"
@@ -2775,7 +2805,7 @@
     "length": 50,
     "version": 2.2,
     "video": "https://youtu.be/40qdK8T6gL0",
-    "showcaseVideo": "https://youtu.be/40qdK8T6gL0",
+    "showcaseVideo": "https://www.youtube.com/watch?v=zvczRYrvmr4",
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
@@ -2868,7 +2898,7 @@
     "version": 2.1,
     "submitter": "TYATYAPKA",
     "video": "https://youtu.be/t14fOaQx9uc",
-    "showcaseVideo": "https://youtu.be/VcQ3-nRRrE0",
+    "showcaseVideo": "https://youtu.be/sJkeRnrAqWQ",
     "tags": [
       "Level",
       "Progress"
@@ -3046,7 +3076,8 @@
       "Level",
       "Noclip",
       "Progress"
-    ]
+    ],
+    "showcaseVideo": "https://www.youtube.com/watch?v=c6x3GyDpf5Y"
   },
   {
     "name": "Oblivers",
@@ -3197,7 +3228,8 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Challenge"
-    ]
+    ],
+    "showcaseVideo": "https://www.youtube.com/watch?v=1f460nBGjvA"
   },
   {
     "name": "Vehemence 53-100%",
@@ -3367,8 +3399,8 @@
     "date": "2024-09-28",
     "length": 15,
     "version": 2.1,
-    "video": " https://youtu.be/TopbGGcqBIE",
-    "showcaseVideo": "https://youtu.be/TopbGGcqBIE",
+    "video": "https://youtu.be/TopbGGcqBIE",
+    "showcaseVideo": "https://www.youtube.com/watch?v=MO1NGfsITR8",
     "submitter": "kyle1saurus",
     "tags": [
       "Challenge"
@@ -3452,7 +3484,7 @@
     "length": 63,
     "version": 2.2,
     "video": "https://youtu.be/H8f2oC2yElA",
-    "showcaseVideo": "https://youtu.be/prdJRdhkdwA",
+    "showcaseVideo": "https://youtu.be/HaV2qba3hMw",
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
@@ -3533,7 +3565,7 @@
     "length": 63,
     "version": 2.2,
     "video": "https://youtu.be/-PzQgzjzWNA",
-    "showcaseVideo": "https://youtu.be/prdJRdhkdwA",
+    "showcaseVideo": "https://youtu.be/HaV2qba3hMw",
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
@@ -3581,10 +3613,11 @@
     "length": 127,
     "version": 2.2,
     "submitter": "TYATYAPKA",
-    "video": " https://youtu.be/sHFY_vOMLCo",
+    "video": "https://youtu.be/sHFY_vOMLCo",
     "tags": [
       "Level"
-    ]
+    ],
+    "showcaseVideo": "https://www.youtube.com/watch?v=RHmVk0pUIPI"
   },
   {
     "name": "Flashbang 46%",
@@ -4280,7 +4313,9 @@
     "tags": [
       "Level",
       "Progress"
-    ]
+    ],
+    "levelID": 0,
+    "showcaseVideo": "https://www.youtube.com/watch?v=sXEE5F9Zg9E"
   },
   {
     "name": "i suggest",
@@ -4953,15 +4988,16 @@
     "id": "flashbang-28-78",
     "player": "Noctal",
     "date": "2025-07-19",
-    "length": "80",
-    "version": "2.2",
+    "length": 80,
+    "version": 2.2,
     "video": "https://youtu.be/92EZAYy3tBQ?t=80",
     "showcaseVideo": "https://youtu.be/2j9nLPyE2Tw",
     "submitter": "Exiled_Shade",
     "tags": [
       "Level",
       "Progress"
-    ]
+    ],
+    "levelID": 0
   },
   {
     "name": "Saul Goodman",
@@ -5011,7 +5047,9 @@
       "Challenge",
       "Progress",
       "CBF"
-    ]
+    ],
+    "levelID": 60811038,
+    "showcaseVideo": "https://youtu.be/ZFjjdfEqwhQ"
   },
   {
     "name": "Our Special Place 64%, 66%",
@@ -5117,8 +5155,8 @@
     "date": "2024-12-04",
     "length": 29,
     "version": 2.2,
-    "video": " https://youtu.be/lTnBDdcAYBc",
-    "showcaseVideo": " https://youtu.be/lTnBDdcAYBc",
+    "video": "https://youtu.be/lTnBDdcAYBc",
+    "showcaseVideo": "https://www.youtube.com/watch?v=MuTE1Ud6g28",
     "submitter": "ScorchBTD",
     "tags": [
       "Challenge"
@@ -5133,7 +5171,7 @@
     "length": 29,
     "version": 2.1,
     "video": "https://youtu.be/pSGZ7-pHlks",
-    "showcaseVideo": "https://youtu.be/pSGZ7-pHlks",
+    "showcaseVideo": "https://youtu.be/kEY4AVKYlFo",
     "submitter": "kyle1saurus",
     "tags": [
       "Challenge"
@@ -5147,8 +5185,8 @@
     "date": "2024-12-25",
     "length": 47,
     "version": 2.2,
-    "video": "https://youtu.be/hQJJXdKLQW8&ab_channel=jeyk",
-    "showcaseVideo": "https://youtu.be/hQJJXdKLQW8&ab_channel=jeyk",
+    "video": "https://youtu.be/hQJJXdKLQW8",
+    "showcaseVideo": "https://youtu.be/dDKxyKOsd9Q",
     "submitter": "jeyk",
     "tags": [
       "Level",
@@ -5588,15 +5626,16 @@
     "id": "azure-flare-polar-25-47",
     "player": "polar",
     "date": "2025-07-26",
-    "length": "14",
-    "version": "2.2",
+    "length": 14,
+    "version": 2.2,
     "video": "https://www.youtube.com/watch?v=9MZpfYfOfss",
     "showcaseVideo": "https://www.youtube.com/watch?v=sXEE5F9Zg9E",
     "submitter": "polar",
     "tags": [
       "Level",
       "Progress"
-    ]
+    ],
+    "levelID": 0
   },
   {
     "name": "Solar Flare",
@@ -6232,15 +6271,16 @@
     "id": "invisible-wasureta-17-100",
     "player": "fanatic72",
     "date": "2025-07-12",
-    "length": "47",
-    "version": "2.2",
+    "length": 47,
+    "version": 2.2,
     "video": "https://youtu.be/iq8292y4Ljo",
     "showcaseVideo": "https://youtu.be/A4x2x8GUQTk",
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Progress"
-    ]
+    ],
+    "levelID": 0
   },
   {
     "name": "Invisible Wasureta 63%",
@@ -6250,12 +6290,13 @@
     "length": 35,
     "version": 2.2,
     "video": "https://youtu.be/s9VbUQ_lPqs",
-    "showcaseVideo": "https://youtu.be/kXd8eWv72nA",
+    "showcaseVideo": "https://youtu.be/A4x2x8GUQTk",
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Progress"
-    ]
+    ],
+    "levelID": 0
   },
   {
     "name": "Heavenly Sakupen 22-100%",
@@ -6285,7 +6326,8 @@
     "video": "https://youtu.be/pwMc6S7mUF8&t=347s",
     "tags": [
       "Level"
-    ]
+    ],
+    "showcaseVideo": "https://youtu.be/vMciL0VKO1g"
   },
   {
     "name": "Firework 1.1x 64%",
@@ -6391,7 +6433,7 @@
     "length": 15,
     "version": 2.1,
     "video": "https://youtu.be/7ar_0g8JTXs",
-    "showcaseVideo": "https://youtu.be/7ar_0g8JTXs",
+    "showcaseVideo": "https://youtu.be/5BBg5KOJifo",
     "submitter": "Arcadie",
     "tags": [
       "Challenge"
@@ -6547,7 +6589,7 @@
     "version": 2.2,
     "submitter": "tricklength",
     "video": "https://youtu.be/9KjxX-YkOS0",
-    "showcaseVideo": "https://youtu.be/LFkHqZ1L7Ug",
+    "showcaseVideo": "https://www.youtube.com/watch?v=7fS-J7FqITU",
     "tags": [
       "Challenge",
       "Progress",
@@ -6574,9 +6616,9 @@
     "id": "riots-demise-noname",
     "player": "noname228gg",
     "date": "2025-07-17",
-    "length": "113",
-    "version": "2.2",
-    "levelID": "123042674",
+    "length": 113,
+    "version": 2.2,
+    "levelID": 123042674,
     "showcaseVideo": "https://youtu.be/kJ4d9OJVa48",
     "video": "https://youtu.be/N1ez3CTV9pw",
     "submitter": "TYATYAPKA",
@@ -6737,7 +6779,9 @@
     "tags": [
       "Level",
       "Progress"
-    ]
+    ],
+    "levelID": 0,
+    "showcaseVideo": "https://www.youtube.com/watch?v=sXEE5F9Zg9E"
   },
   {
     "name": "Decks Dark",
@@ -6814,7 +6858,8 @@
     "submitter": "jak",
     "tags": [
       "Challenge"
-    ]
+    ],
+    "showcaseVideo": "https://youtu.be/K5MFdFgfdto"
   },
   {
     "name": "Cannon Bay 120hz Mobile 34-92%",
@@ -6890,7 +6935,9 @@
     "tags": [
       "Level",
       "Progress"
-    ]
+    ],
+    "levelID": 0,
+    "showcaseVideo": "https://youtu.be/_Fgb3DCCkxA"
   },
   {
     "name": "Chromium",
@@ -7488,7 +7535,7 @@
     "length": 10,
     "version": 2.1,
     "video": "https://youtu.be/Nwy9t3gMYQ4",
-    "showcaseVideo": "https://youtu.be/ho6rZGHQlsY?t=5",
+    "showcaseVideo": "https://youtu.be/-znBIHZDUfw",
     "submitter": "kyle1saurus",
     "tags": [
       "Challenge"
@@ -8808,12 +8855,13 @@
     "length": 42,
     "version": 2.2,
     "video": "https://youtu.be/T6O6xxI1vCY",
-    "showcaseVideo": "https://youtu.be/YG1Tj0hYI7o",
+    "showcaseVideo": "https://www.youtube.com/watch?v=KmF8wZ-al3M",
     "submitter": "MyntiFresh",
     "tags": [
       "Level",
       "Progress"
-    ]
+    ],
+    "levelID": 0
   },
   {
     "name": "Snowblind (Old) 59%",
@@ -8859,7 +8907,8 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level"
-    ]
+    ],
+    "showcaseVideo": "https://www.youtube.com/watch?v=l2zswV7eQZU"
   },
   {
     "name": "Tartarus",
@@ -8889,7 +8938,8 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level"
-    ]
+    ],
+    "showcaseVideo": "https://youtu.be/RcIF9OcLsuQ"
   },
   {
     "name": "Subsuming Vortex 49%",
@@ -10336,7 +10386,8 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level"
-    ]
+    ],
+    "showcaseVideo": "https://youtu.be/hbsoTBl84xE"
   },
   {
     "name": "ORDINARY 120hz Mobile 49%",
@@ -10470,7 +10521,8 @@
     "submitter": "MoonFrost",
     "tags": [
       "Challenge"
-    ]
+    ],
+    "showcaseVideo": "https://www.youtube.com/watch?v=BkHzOE376Ik"
   },
   {
     "name": "Buffed Misanthrope 34-70%",
@@ -10541,7 +10593,8 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Challenge"
-    ]
+    ],
+    "showcaseVideo": "https://youtu.be/aWdu1hYO-M4"
   },
   {
     "name": "Eudemonic 62-100%",
@@ -10565,15 +10618,16 @@
     "id": "hazard",
     "player": "finleyy",
     "date": "2025-03-25",
-    "length": "16",
-    "version": "2.2",
-    "levelID": "116511814",
+    "length": 16,
+    "version": 2.2,
+    "levelID": 116511814,
     "video": "https://youtu.be/RNdMztbZrTk",
     "submitter": "kyle1saurus",
     "tags": [
       "Challenge",
       "CBF"
-    ]
+    ],
+    "showcaseVideo": "https://www.youtube.com/watch?v=p2pM7qzVvf0"
   },
   {
     "name": "Silent Club Plus (Layout) 43-100%",
@@ -11083,12 +11137,13 @@
     "length": 47,
     "version": 2.1,
     "video": "https://youtu.be/MOL7fdAgcls",
-    "showcaseVideo": "https://youtu.be/r-vliM13XZk",
+    "showcaseVideo": "https://youtu.be/VcQ3-nRRrE0",
     "submitter": "jak",
     "tags": [
       "Level",
       "Progress"
-    ]
+    ],
+    "levelID": 0
   },
   {
     "name": "FAIRY KNIFE HELL 78-100%",
@@ -11115,7 +11170,7 @@
     "length": 58,
     "version": 2.2,
     "video": "https://youtu.be/33q7mh2_lww",
-    "showcaseVideo": "https://youtu.be/iDADEDEjBw0",
+    "showcaseVideo": "https://www.youtube.com/watch?v=Mi49wryCl0E",
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
@@ -11273,12 +11328,13 @@
     "length": 49,
     "version": 2.1,
     "video": "https://youtu.be/859X7i1r8K4",
-    "showcaseVideo": "https://youtu.be/GH_TXlJ5cDE",
+    "showcaseVideo": "https://youtu.be/VcQ3-nRRrE0",
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
       "Progress"
-    ]
+    ],
+    "levelID": 0
   },
   {
     "name": "FINGERDASH V5 44%",
@@ -11304,7 +11360,7 @@
     "length": 4,
     "version": 2.2,
     "video": "https://youtu.be/XajxK7MuPpU",
-    "showcaseVideo": "https://youtu.be/XajxK7MuPpU",
+    "showcaseVideo": "https://www.youtube.com/watch?v=BHff4Giass8",
     "submitter": "MoonFrost",
     "tags": [
       "Challenge"
@@ -11613,7 +11669,8 @@
     "submitter": "TYATYAPKA",
     "tags": [
       "Challenge"
-    ]
+    ],
+    "showcaseVideo": "https://www.youtube.com/watch?v=mdJbQHJS1CA"
   },
   {
     "name": "626c7572 48%",
@@ -11673,7 +11730,8 @@
     "video": "https://youtu.be/y4kHcfFSjpE",
     "tags": [
       "Challenge"
-    ]
+    ],
+    "showcaseVideo": "https://www.youtube.com/watch?v=as-foZIIKDE"
   },
   {
     "name": "C Sharp",
@@ -11949,7 +12007,9 @@
     "tags": [
       "Level",
       "Progress"
-    ]
+    ],
+    "levelID": 0,
+    "showcaseVideo": "https://youtu.be/1g-QVICgBzM"
   },
   {
     "name": "Critical Heat",
@@ -12008,7 +12068,7 @@
     "length": 13,
     "version": 2.1,
     "video": "https://youtu.be/GM0GFMkWJZ8",
-    "showcaseVideo": "https://youtu.be/ubPJmWI8knk",
+    "showcaseVideo": "https://www.youtube.com/watch?v=OVCv_K4fm0g",
     "tags": [
       "Challenge"
     ]
@@ -12643,7 +12703,7 @@
     "length": 69,
     "version": 2.2,
     "video": "https://youtu.be/MzzY8nWfxnk",
-    "showcaseVideo": "https://youtu.be/Vfqn-3JN75U",
+    "showcaseVideo": "https://youtu.be/HZR72ujXJA4",
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
