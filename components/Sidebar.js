@@ -58,7 +58,7 @@ export default function Sidebar() {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            zIndex: 1000
+            zIndex: 99999
           }}
           onClick={() => setShowSettings(false)}
         >
