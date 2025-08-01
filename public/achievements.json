@@ -3525,21 +3525,6 @@
     ]
   },
   {
-    "name": "Flashbang 46%",
-    "id": "flashbang-46",
-    "player": "Noctal",
-    "date": "2025-07-25",
-    "length": "72",
-    "version": "2.2",
-    "video": "https://youtu.be/4tyRrH6jb00",
-    "showcaseVideo": "https://youtu.be/2j9nLPyE2Tw",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "CYBERPSYCHOSIS 36-100%",
     "id": "cyberpsychosis-36-100",
     "player": "GuillExprex52",
@@ -3599,6 +3584,21 @@
     "video": " https://youtu.be/sHFY_vOMLCo",
     "tags": [
       "Level"
+    ]
+  },
+  {
+    "name": "Flashbang 46%",
+    "id": "flashbang-46",
+    "player": "Noctal",
+    "date": "2025-07-25",
+    "length": "72",
+    "version": "2.2",
+    "video": "https://youtu.be/4tyRrH6jb00",
+    "showcaseVideo": "https://youtu.be/2j9nLPyE2Tw",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -4949,6 +4949,21 @@
     ]
   },
   {
+    "name": "Flashbang 28-78%",
+    "id": "flashbang-28-78",
+    "player": "Noctal",
+    "date": "2025-07-19",
+    "length": "80",
+    "version": "2.2",
+    "video": "https://youtu.be/92EZAYy3tBQ?t=80",
+    "showcaseVideo": "https://youtu.be/2j9nLPyE2Tw",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Saul Goodman",
     "id": "saul-goodman",
     "player": "Jori",
@@ -5471,21 +5486,6 @@
     "tags": [
       "Level",
       "Rated"
-    ]
-  },
-  {
-    "name": "Flashbang 28-78%",
-    "id": "flashbang-28-78",
-    "player": "Noctal",
-    "date": "2025-07-19",
-    "length": "80",
-    "version": "2.2",
-    "video": "https://youtu.be/92EZAYy3tBQ?t=80",
-    "showcaseVideo": "https://youtu.be/2j9nLPyE2Tw",
-    "submitter": "Exiled_Shade",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
