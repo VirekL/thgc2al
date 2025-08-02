@@ -1666,6 +1666,23 @@
     ]
   },
   {
+    "name": "Firework 2.1 82%, 100%",
+    "id": "firework-2.1-82-100",
+    "player": "Trick",
+    "levelID": 75206202,
+    "date": "2021-10-30",
+    "length": 220,
+    "version": 2.1,
+    "submitter": "kittycatiscute",
+    "video": "https://youtu.be/PaieCfSUBdg?t=13150",
+    "showcaseVideo": "https://youtu.be/DU6mRmGHy74",
+    "tags": [
+      "Level",
+      "Outdated Version",
+      "Consistency"
+    ]
+  },
+  {
     "name": "Kyouki",
     "id": "kyouki",
     "player": "{出見塩}Demishio",
@@ -3624,12 +3641,12 @@
   {
     "name": "Firework",
     "id": "firework",
-    "player": "Trick",
+    "player": "Hyperlith",
     "levelID": 105547415,
     "date": "2024-05-23",
     "length": 127,
     "version": 2.2,
-    "submitter": "Anceps",
+    "submitter": "TYATYAPKA",
     "video": "https://youtu.be/QBe5x2o9v2w",
     "showcaseVideo": "https://youtu.be/DU6mRmGHy74",
     "tags": [
@@ -3651,6 +3668,22 @@
       "Level"
     ],
     "showcaseVideo": "https://www.youtube.com/watch?v=RHmVk0pUIPI"
+  },
+  {
+    "name": "Firework 2.1",
+    "id": "firework-2.1",
+    "player": "Trick",
+    "levelID": 75206202,
+    "date": "2021-10-30",
+    "length": 127,
+    "version": 2.1,
+    "submitter": "Anceps",
+    "video": "https://youtu.be/QBe5x2o9v2w",
+    "showcaseVideo": "https://youtu.be/DU6mRmGHy74",
+    "tags": [
+      "Level",
+      "Outdated Version"
+    ]
   },
   {
     "name": "Flashbang 46%",
@@ -12985,6 +13018,7 @@
     ]
   }
 ]
+
 
 
 
