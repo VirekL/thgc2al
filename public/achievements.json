@@ -338,7 +338,6 @@
     "length": 70,
     "version": 2.2,
     "thumbnail": "https://i.ytimg.com/vi/i8TGgQNAzDg/maxresdefault.jpg",
-    "rank": 21,
     "showcaseVideo": "https://youtu.be/h14lmGH31_M?si=0Dn8l73E5iRFCMIx"
   },
   {
@@ -897,6 +896,22 @@
     ]
   },
   {
+    "name": "Subsuming Vortex (Renn241) 35-100%",
+    "id": "subsuming-vortex-renn241-35-100",
+    "player": "Cursed",
+    "length": "33",
+    "version": "2.2",
+    "video": "https://youtu.be/CmvC8zW9QOM?t=68",
+    "showcaseVideo": "https://youtu.be/jvAIOmx4zi8",
+    "date": "2025-07-05",
+    "submitter": "SeptaGon7",
+    "levelID": "66422816",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Acheron",
     "id": "acheron",
     "player": "FinleyGG",
@@ -1019,22 +1034,6 @@
       "Low Hertz",
       "Mobile",
       "Outdated Version"
-    ]
-  },
-  {
-    "name": "Subsuming Vortex (Renn241) 35-100%",
-    "id": "subsuming-vortex-renn241-35-100",
-    "player": "Cursed",
-    "length": "33",
-    "version": "2.2",
-    "video": "https://youtu.be/CmvC8zW9QOM?t=68",
-    "showcaseVideo": "https://youtu.be/jvAIOmx4zi8",
-    "date": "2025-07-05",
-    "submitter": "SeptaGon7",
-    "levelID": "66422816",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -1678,8 +1677,8 @@
     "showcaseVideo": "https://youtu.be/DU6mRmGHy74",
     "tags": [
       "Level",
-      "Outdated Version",
-      "Consistency"
+      "Consistency",
+      "Outdated Version"
     ]
   },
   {
@@ -8741,7 +8740,7 @@
     "showcaseVideo": "https://youtu.be/bCkCXiFgRrY",
     "tags": [
       "Level",
-      "Consistency" 
+      "Consistency"
     ]
   },
   {
@@ -10387,7 +10386,7 @@
       "Level"
     ]
   },
-{
+  {
     "name": "Swing Swing",
     "id": "swing-swing",
     "player": "Whizkid05",
@@ -10400,7 +10399,7 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
-      "Rated" 
+      "Rated"
     ]
   },
   {
@@ -12981,14 +12980,3 @@
     ]
   }
 ]
-
-
-
-
-
-
-
-
-
-
-
