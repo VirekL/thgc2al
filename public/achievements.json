@@ -8787,6 +8787,22 @@
     ]
   },
   {
+    "name": "Unnerfed BoJ 69%, 100%",
+    "id": "unnerfed-boj-69-100",
+    "player": "MostDefinitelyAlbert",
+    "levelID": 35497549,
+    "date": "2024-03-07",
+    "length": 200,
+    "version": 2.2,
+    "submitter": "jak",
+    "video": "https://youtu.be/yJslAlNsQfA",
+    "showcaseVideo": "https://youtu.be/bCkCXiFgRrY",
+    "tags": [
+      "Level",
+      "Consistency" 
+    ]
+  },
+  {
     "name": "ZAPHKIEL 60hz",
     "id": "zaphkiel-60hz",
     "player": "Sevant",
@@ -13023,6 +13039,7 @@
     ]
   }
 ]
+
 
 
 
