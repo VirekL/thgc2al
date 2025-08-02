@@ -29,7 +29,7 @@ export default function AboutUs() {
             <h2>The Hardest Achievements List</h2>
             <p>What is this list?</p>
             <p>
-              This list ranks <strong>rated levels</strong>, <strong>unrated</strong>, <strong>challenges</strong>,
+              This list ranks <strong>rated levels</strong>, <strong>unrated</strong>, <strong>challenges</strong>, 
               <strong>runs</strong>, <strong>speedhacked</strong>, and more. This is all under one list, sorted by
               difficulty, with the baseline starting at <strong>Zodiac</strong>.
             </p>
