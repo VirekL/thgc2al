@@ -18,23 +18,6 @@
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/grief-unbuffed1.avif"
   },
   {
-    "name": "Amethyst",
-    "id": "amethyst",
-    "player": "wPopoff",
-    "video": "https://youtu.be/4lfkzz1VCbA",
-    "showcaseVideo": "https://www.youtube.com/watch?v=2Z7NGo83ZnU",
-    "tags": [
-      "Level",
-      "Rated"
-    ],
-    "date": "2025-05-25",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/amethyst-trick1.avif",
-    "length": "102",
-    "version": "2.2",
-    "submitter": "TYATYAPKA",
-    "levelID": "119550490"
-  },
-  {
     "name": "Thinking Space II",
     "id": "thinking-space-ii",
     "player": "Zoink",
@@ -61,6 +44,23 @@
       "Level",
       "Progress"
     ]
+  },
+  {
+    "name": "Amethyst",
+    "id": "amethyst",
+    "player": "wPopoff",
+    "video": "https://youtu.be/4lfkzz1VCbA",
+    "showcaseVideo": "https://www.youtube.com/watch?v=2Z7NGo83ZnU",
+    "tags": [
+      "Level",
+      "Rated"
+    ],
+    "date": "2025-05-25",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/amethyst-trick1.avif",
+    "length": "102",
+    "version": "2.2",
+    "submitter": "TYATYAPKA",
+    "levelID": "119550490"
   },
   {
     "name": "GRIEF 25-100%",
@@ -12937,3 +12937,4 @@
     ]
   }
 ]
+
