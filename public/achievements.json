@@ -7042,26 +7042,6 @@
     ]
   },
   {
-    "name": "Nullscapes 60hz Mobile 18-51%",
-    "id": "nullscapes-60hz-mobile-18-51",
-    "player": "Cookie",
-    "date": "2025-07-22",
-    "length": "35",
-    "version": "2.2",
-    "levelID": "109780665",
-    "video": "https://youtu.be/m1oQE9LgKfk",
-    "showcaseVideo": "https://youtu.be/C-KDhWkXlvI",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Progress",
-      "CBF",
-      "Rated"
-    ]
-  },
-  {
     "name": "The Plunge",
     "id": "the-plunge",
     "player": "Gokill",
@@ -8040,25 +8020,6 @@
     ]
   },
   {
-    "name": "Tidal Wave 60hz Mobile 72-100%",
-    "id": "tidal-wave-60hz-mobile-72-100",
-    "player": "Cookie",
-    "date": "2024-09-09",
-    "length": "51",
-    "version": "2.2",
-    "levelID": "86407629",
-    "video": "https://youtu.be/q2kLvzvlESU",
-    "showcaseVideo": "https://youtu.be/PFHlkdz9UqM",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Progress",
-      "Rated"
-    ],
-    "submitter": "kaliulti"
-  },
-  {
     "name": "Old Orochi 36-100%",
     "id": "old-orochi-36-100",
     "player": "Diamond",
@@ -8089,25 +8050,6 @@
       "Consistency",
       "Rated"
     ]
-  },
-  {
-    "name": "Tidal Wave 60hz Mobile 23-39%",
-    "id": "tidal-wave-60hz-mobile-23-39",
-    "player": "Cookie",
-    "date": "2024-09-09",
-    "length": "25",
-    "version": "2.2",
-    "levelID": "86407629",
-    "video": "https://youtu.be/ol2t4_rp5sc",
-    "showcaseVideo": "https://youtu.be/PFHlkdz9UqM",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Progress",
-      "Rated"
-    ],
-    "submitter": "kaliulti"
   },
   {
     "name": "Gamma 60hz",
@@ -13039,6 +12981,7 @@
     ]
   }
 ]
+
 
 
 
