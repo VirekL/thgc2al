@@ -913,6 +913,22 @@
     ]
   },
   {
+    "name": "Banshee 21-100%",
+    "id": "banshee-21-100",
+    "player": "spcreat",
+    "video": "https://www.youtube.com/live/hGRJKeBB14k?t=1149",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "date": "2025-08-01",
+    "submitter": "jak",
+    "length": 80,
+    "version": 2.2,
+    "thumbnail": "https://i.ytimg.com/vi/i8TGgQNAzDg/maxresdefault.jpg",
+    "showcaseVideo": "https://youtu.be/h14lmGH31_M?si=0Dn8l73E5iRFCMIx"
+  },
+  {
     "name": "Heliopolis 17%",
     "id": "heliopolis-17",
     "player": "Thnnder",
@@ -12937,4 +12953,5 @@
     ]
   }
 ]
+
 
