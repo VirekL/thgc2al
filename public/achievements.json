@@ -10391,6 +10391,22 @@
       "Level"
     ]
   },
+{
+    "name": "Swing Swing",
+    "id": "swing-swing",
+    "player": "Whizkid05",
+    "levelID": 112231282,
+    "date": "2024-11-18",
+    "length": 99,
+    "version": 2.2,
+    "video": "https://youtu.be/_hL9hFU3WI4",
+    "showcaseVideo": "https://youtu.be/BzAFcb44vOY",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Rated" 
+    ]
+  },
   {
     "name": "Judgement Knights (Old)",
     "id": "judgement-knights-old",
@@ -12969,6 +12985,7 @@
     ]
   }
 ]
+
 
 
 
