@@ -5446,6 +5446,22 @@
     ]
   },
   {
+    "name": "Operation Evolution",
+    "id": "operation_evolution",
+    "player": "cobrablitz",
+    "levelID": 114999625,
+    "date": "2025-02-10",
+    "length": 304,
+    "version": 2.2,
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/WsVF-ayipvY",
+    "showcaseVideo": "https://youtu.be/lgoEemeOYb0",
+    "tags": [
+      "Level",
+      "Rated"
+    ]
+  },
+  {
     "name": "Subsuming Vortex 45-100%",
     "id": "subsuming-vortex-45-100",
     "player": "Cursed",
@@ -12953,5 +12969,6 @@
     ]
   }
 ]
+
 
 
