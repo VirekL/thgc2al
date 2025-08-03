@@ -622,6 +622,7 @@
     "version": "2.1",
     "video": "https://youtu.be/b_Gi4Jj2ERc",
     "date": "2024-07-28",
+    "levelID": "124037650",
     "submitter": "SeptaGon7",
     "thumbnail": "https://i.ytimg.com/vi/b_Gi4Jj2ERc/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGQgZChkMA8",
     "tags": [
@@ -4583,6 +4584,22 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Challenge"
+    ]
+  },
+  {
+    "name": "521 37%, 42%, 23%, 21%, 100%",
+    "id": "521-37-42-23-21-100",
+    "player": "seels",
+    "levelID": 85701165,
+    "date": "2023-08-03",
+    "length": 16,
+    "version": 2.1,
+    "video": "https://youtu.be/CgFYAs3sj4s",
+    "showcaseVideo": "https://youtu.be/2wxE0mU_dpI",
+    "submitter": "Buhbuh7",
+    "tags": [
+      "Challenge",
+      "Consistency"
     ]
   },
   {
@@ -13033,6 +13050,7 @@
     ]
   }
 ]
+
 
 
 
