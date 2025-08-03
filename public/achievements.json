@@ -448,8 +448,7 @@
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": 0
+    ]
   },
   {
     "name": "Every End",
@@ -8547,6 +8546,21 @@
     ]
   },
   {
+    "name": "Sad Chamber 55%, 51%x2",
+    "id": "sad-chamber-55-51x2",
+    "player": "nensa",
+    "levelID": 100242794,
+    "date": "2025-08-02",
+    "length": 24,
+    "version": 2.2,
+    "video": "https://youtu.be/htGElQ0RWeA",
+    "tags": [
+      "Challenge",
+      "Consistency"
+    ],
+    "showcaseVideo": "https://www.youtube.com/watch?v=as-foZIIKDE"
+  },
+  {
     "name": "VENUS",
     "id": "venus",
     "player": "SeazeIsCool",
@@ -8558,7 +8572,7 @@
     "showcaseVideo": "https://youtu.be/vzgC4S5ZBlA",
     "submitter": "Anceps",
     "tags": [
-      "Level"
+      "Challenge"
     ]
   },
   {
@@ -13050,6 +13064,7 @@
     ]
   }
 ]
+
 
 
 
