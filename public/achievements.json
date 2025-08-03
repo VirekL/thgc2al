@@ -6452,19 +6452,18 @@
     "levelID": 0
   },
   {
-    "name": "Heavenly Sakupen 22-100%",
-    "id": "heavenly-sakupen-22-100",
-    "player": "Slithium",
-    "date": "2024-07-10",
-    "length": 31,
+    "name": "Heavenly Sakupen",
+    "id": "heavenly-sakupen",
+    "player": "fusion425",
+    "date": "2027-08-03",
+    "levelID": "123467310",
+    "length": 41,
     "version": 2.2,
-    "video": "https://youtu.be/rOodbAvQlso",
+    "video": "https://youtu.be/4uwSVZBrtfg",
     "showcaseVideo": "https://youtu.be/rGyF8KsQOos",
     "submitter": "kyle1saurus",
     "tags": [
-      "Level",
-      "Progress",
-      "CBF"
+      "Level"
     ]
   },
   {
@@ -13064,6 +13063,7 @@
     ]
   }
 ]
+
 
 
 
