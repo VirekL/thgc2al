@@ -1,1 +1,134 @@
-
+[
+	{
+		"name": "Ouroboros 60hz Mobile 10-100%",
+		"id": "ouroboros-60hz-mobile-10-100",
+		"player": "Jastro",
+		"length": "137",
+		"version": "2.2",
+		"video": "https://youtu.be/Wv_pGGGE8A8?si=71swRBg7yfBmsEG2",
+		"date": "2024-07-04",
+		"showcaseVideo": "https://youtu.be/Tks9DNwfxz4?si=vkThkNwjCBh4XP_-",
+		"levelID": "56703691",
+		"tags": [
+			"Rated",
+			"Low Hertz",
+			"Mobile",
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Ouroboros 60hz Mobile 27-100%, 32%",
+		"id": "ouroboros-60hz-mobile-27-100-32",
+		"player": "Jastro",
+		"length": "166",
+		"version": "2.2",
+		"video": "https://youtu.be/4fsXFxOgBmY?si=ycFh4CPvmj8yPLIs",
+		"date": "2025-07-15",
+		"showcaseVideo": "https://youtu.be/Tks9DNwfxz4?si=vkThkNwjCBh4XP_-",
+		"levelID": "56703691",
+		"tags": [
+			"Rated",
+			"Low Hertz",
+			"Mobile",
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Leaves 25-82%",
+		"id": "leaves-25-82",
+		"player": "subabo",
+		"length": "40",
+		"version": "2.2",
+		"video": "https://www.youtube.com/watch?v=hPI_TTbaLBo",
+		"date": "2025-07-22",
+		"showcaseVideo": "https://www.youtube.com/watch?v=S0WKrJx7Bq0",
+		"levelID": "82602651",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "SPECTHYS",
+		"id": "specthys",
+		"player": "gBen",
+		"length": "70",
+		"version": "2.2",
+		"video": "https://youtu.be/QEhqvQvEfNM?t=92",
+		"date": "2025-07-25",
+		"showcaseVideo": "https://youtu.be/QEhqvQvEfNM",
+		"levelID": "123501215",
+		"tags": [
+			"Rated",
+			"Level"
+		]
+	},
+	{
+		"name": "BREAKCORE",
+		"id": "breakcore",
+		"player": "breakcore11",
+		"length": "64",
+		"version": "2.2",
+		"video": "https://youtu.be/_H3KOVLE6gs",
+		"date": "2025-07-27",
+		"showcaseVideo": "https://youtu.be/g4wbPz7b3YE",
+		"levelID": "123674931",
+		"tags": [
+			"Level"
+		]
+	},
+	{
+		"name": "abocto",
+		"id": "abocto",
+		"player": "Raluca",
+		"length": "111",
+		"version": "2.2",
+		"video": "https://youtu.be/sy70OO_zUJQ",
+		"date": "2025-07-27",
+		"showcaseVideo": "https://youtu.be/sy70OO_zUJQ",
+		"levelID": "123679035",
+		"tags": [
+			"Level"
+		]
+	},
+	{
+		"name": "Every End 120hz Mobile 33-68%",
+		"id": "every-end-120hz-mobile-33-68",
+		"player": "SarTiZ",
+		"length": "156",
+		"version": "2.2",
+		"video": "https://youtu.be/0AQP_F3YmNg?si=Eg8AEHN_yvKjTmTC",
+		"date": "2025-05-09",
+		"showcaseVideo": "https://youtu.be/C7Umvy4VyDg?si=x1pSppUtFyQhhuo4",
+		"levelID": "116174063",
+		"tags": [
+			"Rated",
+			"Mid",
+			"Hertz",
+			"Mobile",
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Every End 120hz Mobile 67-100%",
+		"id": "every-end-120hz-mobile-67-100",
+		"player": "SarTiZ",
+		"length": "145",
+		"version": "2.2",
+		"video": "https://youtu.be/rsIih2tON9Y?si=ox5dzBvNy-3J_Rhy",
+		"date": "2025-04-14",
+		"showcaseVideo": "https://youtu.be/C7Umvy4VyDg?si=x1pSppUtFyQhhuo4",
+		"levelID": "116174063",
+		"tags": [
+			"Rated",
+			"Mid",
+			"Hertz",
+			"Mobile",
+			"Progress",
+			"Level"
+		]
+	}
+]
