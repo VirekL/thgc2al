@@ -6854,6 +6854,22 @@
     ]
   },
   {
+    "name": "Exasperation 50-68%",
+    "id": "exasperation-50-68",
+    "player": "Zoink",
+    "levelID": 31325851,
+    "date": "2025-08-03",
+    "length": 53,
+    "version": 2.2,
+    "video": "https://www.youtube.com/live/uOe6B144Kno?t=5205",
+    "showcaseVideo": "https://youtu.be/G6ugI_TtEl8",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Azure Flare (polar) 39%",
     "id": "azure-flare-polar-39",
     "player": "polar",
@@ -7466,22 +7482,6 @@
     "video": "https://youtu.be/jA1ojHctjsY",
     "showcaseVideo": "https://youtu.be/oZfKkZ36L9Q",
     "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
-    "name": "Exasperation 47-67%",
-    "id": "exasperation-47-67",
-    "player": "Zoink",
-    "levelID": 31325851,
-    "date": "2025-03-02",
-    "length": 58,
-    "version": 2.2,
-    "video": "https://x.com/gdzoink/status/1897054153144447055",
-    "showcaseVideo": "https://youtu.be/G6ugI_TtEl8",
-    "submitter": "Exiled_Shade",
     "tags": [
       "Level",
       "Progress"
@@ -12982,6 +12982,7 @@
     ]
   }
 ]
+
 
 
 
