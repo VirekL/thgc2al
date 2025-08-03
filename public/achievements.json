@@ -742,6 +742,23 @@
     ]
   },
   {
+    "name": "Silent Acropolis unn 31%, 54%",
+    "id": "silent-acropolis-unn-31-54",
+    "player": "SeptaGon7",
+    "levelID": 83143127,
+    "date": "2025-07-29",
+    "length": 50,
+    "version": 2.2,
+    "video": "https://youtu.be/uBh6wGhXRU8",
+    "showcaseVideo": "https://youtu.be/PZ6EjmesjVE",
+    "submitter": "SeptaGon7",
+    "tags": [
+      "Level",
+      "Consistency",
+      "CBF"
+    ]
+  },
+  {
     "name": "Anathema",
     "id": "anathema",
     "player": "Whizkid05",
@@ -13064,6 +13081,7 @@
     ]
   }
 ]
+
 
 
 
