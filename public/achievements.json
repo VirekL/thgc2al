@@ -517,34 +517,36 @@
     "name": "Acheron (Riot) 17-92%",
     "id": "acheron-riot-17-92",
     "player": "LOL123",
-    "length": "33",
-    "version": "2.2",
+    "length": 33,
+    "version": 2.2,
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/acheron-riot1.avif",
     "video": "https://youtu.be/IdbGnYw4UR8",
     "showcaseVideo": "https://youtu.be/Pui-sfRR_kQ",
     "date": "2025-04-06",
     "submitter": "Swift",
-    "levelID": "82758705",
+    "levelID": 82758705,
     "tags": [
       "Level",
-      "Progress"
+      "Progress",
+      "CBF"
     ]
   },
   {
     "name": "Acheron (Riot) 9-82%",
     "id": "acheron-riot-9-82",
     "player": "LOL123",
-    "length": "48",
-    "version": "2.2",
+    "length": 48,
+    "version": 2.2,
     "video": "https://youtu.be/pN0CICdtJ-4",
     "showcaseVideo": "https://youtu.be/Pui-sfRR_kQ",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/assets/thumbnails/acheron-riot1.png",
     "date": "2025-04-06",
     "submitter": "inco",
-    "levelID": "82758705",
+    "levelID": 82758705,
     "tags": [
       "Level",
-      "Progress"
+      "Progress",
+      "CBF"
     ]
   },
   {
@@ -3649,6 +3651,22 @@
     ]
   },
   {
+    "name": "FLAMEWALL (Agent009) 44%",
+    "id": "flamewall-agent009-44",
+    "player": "Agent009",
+    "date": "2025-08-03",
+    "length": 150,
+    "version": 2.2,
+    "video": "https://www.tiktok.com/@agent__.009/video/7533730729759444237?_r=1&_t=ZS-8yYzNF9nEYi",
+    "showcaseVideo": "https://www.youtube.com/watch?v=c5qQh7h0zYM",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "levelID": 0,
+    "submitter": "kyle1saurus"
+  },
+  {
     "name": "Flashbang 45-100%",
     "id": "flashbang-45-100",
     "player": "Noctal",
@@ -3927,20 +3945,6 @@
     "tags": [
       "Level",
       "CBF"
-    ]
-  },
-  {
-    "name": "FLAMEWALL (Agent009) 42%",
-    "id": "flamewall-agent009-42",
-    "player": "Agent009",
-    "date": "2025-07-10",
-    "length": "150",
-    "version": "2.2",
-    "video": "https://youtube.com/shorts/xPSosha_Fjo",
-    "showcaseVideo": "https://www.youtube.com/watch?v=c5qQh7h0zYM",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -4541,7 +4545,7 @@
     "tags": [
       "Miscellaneous"
     ],
-    "thumbnail":"https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/bl-sc-wasu-sw.avif"
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/bl-sc-wasu-sw.avif"
   },
   {
     "name": "M I S F O R T U N E",
@@ -4652,7 +4656,7 @@
       "Rated"
     ]
   },
-  {   
+  {
     "name": "Exasperation 56%",
     "id": "exasperation-56",
     "player": "Zoink",
@@ -13083,23 +13087,3 @@
     ]
   }
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
