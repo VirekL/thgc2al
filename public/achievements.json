@@ -674,6 +674,24 @@
     ]
   },
   {
+    "name": "Silent clubstep (Old) 5-100% 5 deaths, 99.97 accuracy",
+    "id": "silent-clubstep-old-5-100-5-deaths-99-97-accuracy",
+    "player": "Diamond",
+    "levelID": 38692301,
+    "date": "2024-07-30",
+    "length": 80,
+    "version": 2.2,
+    "video": "https://youtu.be/J5yOgTtDLdU",
+    "showcaseVideo": "https://youtu.be/mTkrql917bE",
+    "submitter": "rainityyy",
+    "tags": [
+      "Level",
+      "Noclip",
+      "Progress",
+      "CBF"
+    ]
+  },
+  {
     "name": "Vehemence 39%",
     "id": "vehemence-39",
     "player": "wPopoff",
@@ -3236,23 +3254,6 @@
     "showcaseVideo": "https://youtu.be/27vg7KzwMNU",
     "tags": [
       "Level"
-    ]
-  },
-  {
-    "name": "Silent clubstep (Old) 7 deaths, 99.91 accuracy",
-    "id": "silent-clubstep-old-7-deaths-99-91-accuracy",
-    "player": "Vision",
-    "levelID": 38692301,
-    "date": "2024-08-23",
-    "length": 87,
-    "version": 2.2,
-    "video": "https://youtu.be/HjEmfT8HTAM&t=36s",
-    "showcaseVideo": "https://youtu.be/mTkrql917bE",
-    "submitter": "jak",
-    "tags": [
-      "Level",
-      "Noclip",
-      "CBF"
     ]
   },
   {
@@ -13027,6 +13028,7 @@
     ]
   }
 ]
+
 
 
 
