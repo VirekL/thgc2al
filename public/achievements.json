@@ -325,6 +325,21 @@
     "submitter": "kyle1saurus"
   },
   {
+    "name": "Subsuming Vortex (Renn241) 37-75%, 37-68%",
+    "id": "subsuming-vortex-renn241-37-75-37-68",
+    "player": "Wity",
+    "date": "2025-08-03",
+    "length": "55",
+    "version": 2.2,
+    "video": "https://youtu.be/9V8mSuYmgOU",
+    "showcaseVideo": "https://m.youtube.com/watch?si=rcNNt1_lbY9uXLOx&v=3dKj12cQSII&feature=youtu.be",
+    "submitter": "goofygdplayer_",
+    "tags": [
+      "Level",
+      "Consistency"
+    ]
+  },
+  {
     "name": "Banshee 77%",
     "id": "banshee-77",
     "player": "spcreat",
@@ -433,8 +448,7 @@
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": 0
+    ]
   },
   {
     "name": "Every End",
@@ -607,6 +621,7 @@
     "version": "2.1",
     "video": "https://youtu.be/b_Gi4Jj2ERc",
     "date": "2024-07-28",
+    "levelID": "124037650",
     "submitter": "SeptaGon7",
     "thumbnail": "https://i.ytimg.com/vi/b_Gi4Jj2ERc/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGQgZChkMA8",
     "tags": [
@@ -659,13 +674,31 @@
     ]
   },
   {
+    "name": "Silent clubstep (Old) 5-100% 5 deaths, 99.97 accuracy",
+    "id": "silent-clubstep-old-5-100-5-deaths-99-97-accuracy",
+    "player": "Diamond",
+    "levelID": 38692301,
+    "date": "2024-07-30",
+    "length": 80,
+    "version": 2.2,
+    "video": "https://youtu.be/J5yOgTtDLdU",
+    "showcaseVideo": "https://youtu.be/mTkrql917bE",
+    "submitter": "rainityyy",
+    "tags": [
+      "Level",
+      "Noclip",
+      "Progress",
+      "CBF"
+    ]
+  },
+  {
     "name": "Vehemence 39%",
     "id": "vehemence-39",
     "player": "wPopoff",
     "length": "61",
     "version": "2.2",
-    "video": "https://www.youtube.com/live/EIEVeo9QuWE?t=6393",
-    "showcaseVideo": "https://www.youtube.com/watch?v=9SxqlWV5OxI",
+    "video": "https://www.youtube.com/watch?v=JZ10Un4EXYo",
+    "showcaseVideo": "https://www.youtube.com/watch?v=FwxtJQQocKA",
     "date": "2025-07-26",
     "submitter": "tmtsps12",
     "levelID": "96572223",
@@ -706,6 +739,23 @@
     "tags": [
       "Level",
       "Rated"
+    ]
+  },
+  {
+    "name": "Silent Acropolis unn 31%, 54%",
+    "id": "silent-acropolis-unn-31-54",
+    "player": "SeptaGon7",
+    "levelID": 83143127,
+    "date": "2025-07-29",
+    "length": 50,
+    "version": 2.2,
+    "video": "https://youtu.be/uBh6wGhXRU8",
+    "showcaseVideo": "https://youtu.be/PZ6EjmesjVE",
+    "submitter": "SeptaGon7",
+    "tags": [
+      "Level",
+      "Consistency",
+      "CBF"
     ]
   },
   {
@@ -1125,6 +1175,7 @@
     "date": "2025-04-21",
     "length": 87,
     "video": "https://youtu.be/-ZUMz5QqO0Y?t=2884",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/slh-grief.png",
     "version": 2.2,
     "submitter": "jak",
     "tags": [
@@ -2296,7 +2347,7 @@
     "date": "2024-09-05",
     "length": 99,
     "version": 2.2,
-    "submitter": "Anceps",
+    "submitter": "kyle1saurus",
     "video": "https://youtu.be/ktD6Lb5MzAs",
     "tags": [
       "Challenge"
@@ -3224,23 +3275,6 @@
     ]
   },
   {
-    "name": "Silent clubstep (Old) 7 deaths, 99.91 accuracy",
-    "id": "silent-clubstep-old-7-deaths-99-91-accuracy",
-    "player": "Vision",
-    "levelID": 38692301,
-    "date": "2024-08-23",
-    "length": 87,
-    "version": 2.2,
-    "video": "https://youtu.be/HjEmfT8HTAM&t=36s",
-    "showcaseVideo": "https://youtu.be/mTkrql917bE",
-    "submitter": "jak",
-    "tags": [
-      "Level",
-      "Noclip",
-      "CBF"
-    ]
-  },
-  {
     "name": "True Innards",
     "id": "true-innards",
     "player": "eandis",
@@ -3294,7 +3328,7 @@
     "length": 111,
     "version": 2.2,
     "video": "https://youtu.be/Zd-C6L9AlD0",
-    "showcaseVideo": "https://youtu.be/9SxqlWV5OxI",
+    "showcaseVideo": "https://youtu.be/FwxtJQQocKA?si=L2FzCScLs6W8HYUl",
     "tags": [
       "Level",
       "Progress"
@@ -3653,7 +3687,7 @@
     "length": "90",
     "version": "2.2",
     "levelID": "96572223",
-    "showcaseVideo": "https://www.youtube.com/watch?v=9SxqlWV5OxI",
+    "showcaseVideo": "https://youtu.be/FwxtJQQocKA?si=L2FzCScLs6W8HYUl",
     "video": "https://www.youtube.com/live/hC2Cy4-RlTg?t=5754",
     "submitter": "Exiled_Shade",
     "tags": [
@@ -4055,7 +4089,7 @@
     "version": "2.2",
     "levelID": "96572223",
     "video": "https://www.youtube.com/live/0A9WtwjR-X0?t=2639",
-    "showcaseVideo": "https://www.youtube.com/watch?v=9SxqlWV5OxI",
+    "showcaseVideo": "https://youtu.be/FwxtJQQocKA?si=L2FzCScLs6W8HYUl",
     "submitter": "tmtsps12",
     "tags": [
       "Level",
@@ -4466,6 +4500,21 @@
     ]
   },
   {
+    "name": "Sad Chamber 55%, 51%x2",
+    "id": "sad-chamber-55-51x2",
+    "player": "nensa",
+    "levelID": 100242794,
+    "date": "2025-08-02",
+    "length": 24,
+    "version": 2.2,
+    "video": "https://youtu.be/htGElQ0RWeA",
+    "tags": [
+      "Challenge",
+      "Consistency"
+    ],
+    "showcaseVideo": "https://www.youtube.com/watch?v=as-foZIIKDE"
+  },
+  {
     "name": "ETERNALtheory",
     "id": "eternaltheory",
     "player": "Hyperlith",
@@ -4491,7 +4540,8 @@
     "submitter": "jak",
     "tags": [
       "Miscellaneous"
-    ]
+    ],
+    "thumbnail":"https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/bl-spc-wasu-sw.png"
   },
   {
     "name": "M I S F O R T U N E",
@@ -4570,6 +4620,22 @@
     ]
   },
   {
+    "name": "521 37%, 42%, 23%, 21%, 100%",
+    "id": "521-37-42-23-21-100",
+    "player": "seels",
+    "levelID": 85701165,
+    "date": "2023-08-03",
+    "length": 16,
+    "version": 2.1,
+    "video": "https://youtu.be/CgFYAs3sj4s",
+    "showcaseVideo": "https://youtu.be/2wxE0mU_dpI",
+    "submitter": "Buhbuh7",
+    "tags": [
+      "Challenge",
+      "Consistency"
+    ]
+  },
+  {
     "name": "The Golden 120hz",
     "id": "the-golden-120hz",
     "player": "Sid125",
@@ -4584,6 +4650,22 @@
       "Level",
       "Low Hertz",
       "Rated"
+    ]
+  },
+  {   
+    "name": "Exasperation 56%",
+    "id": "exasperation-56",
+    "player": "Zoink",
+    "levelID": 31325851,
+    "date": "2025-08-03",
+    "length": 95,
+    "version": 2.2,
+    "video": "https://www.youtube.com/live/uOe6B144Kno?t=5205",
+    "showcaseVideo": "https://youtu.be/G6ugI_TtEl8",
+    "submitter": "SpaceBK",
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -4806,22 +4888,6 @@
     ]
   },
   {
-    "name": "Exasperation 48%",
-    "id": "exasperation-48",
-    "player": "Zoink",
-    "levelID": 31325851,
-    "date": "2025-03-02",
-    "length": 89,
-    "version": 2.2,
-    "video": "https://www.youtube.com/live/338AWyXLuUA&t=6297s",
-    "showcaseVideo": "https://youtu.be/G6ugI_TtEl8",
-    "submitter": "jak",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "KOSETSU",
     "id": "kosetsu",
     "player": "Taiago",
@@ -4900,6 +4966,20 @@
     "submitter": "Anceps",
     "video": "https://youtu.be/kzOU51YpbnI",
     "showcaseVideo": "https://youtu.be/tptDmva9gdQ",
+    "tags": [
+      "Challenge",
+      "Progress"
+    ]
+  },
+  {
+    "name": "anodyne (Old) 67%",
+    "id": "anodyne-old-67",
+    "player": "zXdasfsa",
+    "date": "2025-07-30",
+    "length": 9,
+    "version": 2.2,
+    "video": "https://youtu.be/XqrmDtmcqII",
+    "submitter": "zXdasfsa",
     "tags": [
       "Challenge",
       "Progress"
@@ -5542,7 +5622,7 @@
     "version": 2.1,
     "submitter": "Anceps",
     "video": "https://youtu.be/tYbXsNkO9HE",
-    "showcaseVideo": "https://youtu.be/EM41J4sV2Iw",
+    "showcaseVideo": "https://youtu.be/Mqd6UabJOE4?si=7RsM_Ll3juX9ADCJ",
     "tags": [
       "Level",
       "Rated"
@@ -6010,13 +6090,34 @@
     ]
   },
   {
-    "name": "Tartarus                                             46%, 100%",
+    "name": "Netherix",
+    "id": "netherix",
+    "player": "MostDefinitelyAlbert",
+    "date": "2025-07-07",
+    "length": "106",
+    "version": "2.2",
+    "levelID": "122506177",
+    "video": "https://youtu.be/mNiyj653aSo",
+    "showcaseVideo": "https://youtu.be/O8zUAsBdIDE",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "Tartarus 46%, 100%",
     "id": "tartarus-46-100",
     "player": "Zoink",
+    "video": "https://www.youtube.com/watch?v=FlMGEos-wZU",
     "date": "2022-02-04",
     "length": "110",
     "version": "2.1",
-    "levelID": "59075347"
+    "levelID": "59075347",
+    "submitter": "kittycatiscute",
+    "tags": [
+      "Level",
+      "Consistency"
+    ]
   },
   {
     "name": "DEATHWISH",
@@ -6050,7 +6151,7 @@
     ]
   },
   {
-    "name": "Sonic Wave Infinity\n120hz Mobile 24-100%",
+    "name": "Sonic Wave Infinity 120hz Mobile 24-100%",
     "id": "sonic-wave-infinity-120hz-mobile-24-100",
     "player": "Rotys",
     "date": "2025-07-05",
@@ -6125,18 +6226,19 @@
     ]
   },
   {
-    "name": "Netherix",
-    "id": "netherix",
-    "player": "MostDefinitelyAlbert",
-    "date": "2025-07-07",
-    "length": "106",
-    "version": "2.2",
-    "levelID": "122506177",
-    "video": "https://youtu.be/mNiyj653aSo",
-    "showcaseVideo": "https://youtu.be/O8zUAsBdIDE",
-    "submitter": "TYATYAPKA",
+    "name": "Exasperation 21-65%",
+    "id": "exasperation-21-65",
+    "player": "Zoink",
+    "levelID": 31325851,
+    "date": "2025-08-03",
+    "length": 75,
+    "version": 2.2,
+    "video": "https://www.youtube.com/live/uOe6B144Kno?t=8180",
+    "showcaseVideo": "https://youtu.be/G6ugI_TtEl8",
+    "submitter": "kyle1saurus",
     "tags": [
-      "Level"
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -6385,19 +6487,18 @@
     "levelID": 0
   },
   {
-    "name": "Heavenly Sakupen 22-100%",
-    "id": "heavenly-sakupen-22-100",
-    "player": "Slithium",
-    "date": "2024-07-10",
-    "length": 31,
+    "name": "Heavenly Sakupen",
+    "id": "heavenly-sakupen",
+    "player": "fusion425",
+    "date": "2027-08-03",
+    "levelID": "123467310",
+    "length": 41,
     "version": 2.2,
-    "video": "https://youtu.be/rOodbAvQlso",
+    "video": "https://youtu.be/4uwSVZBrtfg",
     "showcaseVideo": "https://youtu.be/rGyF8KsQOos",
     "submitter": "kyle1saurus",
     "tags": [
-      "Level",
-      "Progress",
-      "CBF"
+      "Level"
     ]
   },
   {
@@ -6851,6 +6952,22 @@
     "submitter": "Exiled_Shade",
     "tags": [
       "Challenge"
+    ]
+  },
+  {
+    "name": "Exasperation 50-68%",
+    "id": "exasperation-50-68",
+    "player": "Zoink",
+    "levelID": 31325851,
+    "date": "2025-08-03",
+    "length": 53,
+    "version": 2.2,
+    "video": "https://www.youtube.com/live/uOe6B144Kno?t=5205",
+    "showcaseVideo": "https://youtu.be/G6ugI_TtEl8",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -7466,22 +7583,6 @@
     "video": "https://youtu.be/jA1ojHctjsY",
     "showcaseVideo": "https://youtu.be/oZfKkZ36L9Q",
     "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
-    "name": "Exasperation 47-67%",
-    "id": "exasperation-47-67",
-    "player": "Zoink",
-    "levelID": 31325851,
-    "date": "2025-03-02",
-    "length": 58,
-    "version": 2.2,
-    "video": "https://x.com/gdzoink/status/1897054153144447055",
-    "showcaseVideo": "https://youtu.be/G6ugI_TtEl8",
-    "submitter": "Exiled_Shade",
     "tags": [
       "Level",
       "Progress"
@@ -8490,7 +8591,7 @@
     "showcaseVideo": "https://youtu.be/vzgC4S5ZBlA",
     "submitter": "Anceps",
     "tags": [
-      "Level"
+      "Challenge"
     ]
   },
   {
@@ -8867,6 +8968,7 @@
     "version": "2.2",
     "levelID": "75330074",
     "video": "https://www.youtube.com/live/y1Nl5An8-zc?t=4644s",
+    "showcaseVideo": "https://youtu.be/6orHVe5GBX0?si=EjUpnDtIaHrp2CZa",
     "submitter": "Exiled_Shade",
     "tags": [
       "Level",
@@ -9377,6 +9479,7 @@
     "version": "2.2",
     "levelID": "75330074",
     "video": "https://youtu.be/AEkKhZm0IGc",
+    "showcaseVideo": "https://youtu.be/6orHVe5GBX0?si=EjUpnDtIaHrp2CZa",
     "tags": [
       "Level",
       "Progress"
@@ -9576,6 +9679,21 @@
     ]
   },
   {
+    "name": "Unnerfed Cyclone Machine",
+    "id": "unnerfed-cyclone-machine",
+    "player": "SeptaGon7",
+    "length": 97,
+    "version": 2.2,
+    "video": "https://youtu.be/bnIxnsk2Rdw",
+    "date": "2025-07-06",
+    "submitter": "goofygdplayer_",
+    "levelID": 122394881,
+    "tags": [
+      "Level",
+      "CBF"
+    ]
+  },
+  {
     "name": "BPATA MPAKA",
     "id": "bpata-mpaka",
     "player": "Maybee",
@@ -9599,7 +9717,7 @@
     "length": 8,
     "version": 2.2,
     "video": "https://youtu.be/UzFEbUrt0LI",
-    "showcaseVideo": "https://youtu.be/SiqHB7krO2k",
+    "showcaseVideo": "https://youtu.be/LmSPJCDpKdA?si=zT1hSMZTm_XgL-vC",
     "submitter": "kyle1saurus",
     "tags": [
       "Challenge",
@@ -10745,7 +10863,7 @@
     "version": "2.1",
     "levelID": "60978746",
     "video": "https://youtu.be/JJS1ilGjcNA",
-    "showcaseVideo": "https://youtu.be/g2OE21U9e5w",
+    "showcaseVideo": "https://youtu.be/lbrN3kasxR0",
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
@@ -12655,7 +12773,7 @@
     "length": 20,
     "version": 2.2,
     "video": "https://youtu.be/iYiss_InEME",
-    "showcaseVideo": "https://youtu.be/g2OE21U9e5w",
+    "showcaseVideo": "https://youtu.be/lbrN3kasxR0",
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
@@ -12949,21 +13067,6 @@
     ]
   },
   {
-    "name": "Unnerfed Cyclone Machine",
-    "id": "unnerfed-cyclone-machine",
-    "player": "SeptaGon7",
-    "length": 97,
-    "version": 2.2,
-    "video": "https://youtu.be/bnIxnsk2Rdw",
-    "date": "2025-07-06",
-    "submitter": "goofygdplayer_",
-    "levelID": 122394881,
-    "tags": [
-      "Level",
-      "CBF"
-    ]
-  },
-  {
     "name": "Zodiac",
     "id": "zodiac",
     "player": "Technical",
@@ -12980,3 +13083,22 @@
     ]
   }
 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
