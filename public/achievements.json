@@ -9629,6 +9629,21 @@
     ]
   },
   {
+    "name": "Unnerfed Cyclone Machine",
+    "id": "unnerfed-cyclone-machine",
+    "player": "SeptaGon7",
+    "length": 97,
+    "version": 2.2,
+    "video": "https://youtu.be/bnIxnsk2Rdw",
+    "date": "2025-07-06",
+    "submitter": "goofygdplayer_",
+    "levelID": 122394881,
+    "tags": [
+      "Level",
+      "CBF"
+    ]
+  },
+  {
     "name": "BPATA MPAKA",
     "id": "bpata-mpaka",
     "player": "Maybee",
@@ -13002,21 +13017,6 @@
     ]
   },
   {
-    "name": "Unnerfed Cyclone Machine",
-    "id": "unnerfed-cyclone-machine",
-    "player": "SeptaGon7",
-    "length": 97,
-    "version": 2.2,
-    "video": "https://youtu.be/bnIxnsk2Rdw",
-    "date": "2025-07-06",
-    "submitter": "goofygdplayer_",
-    "levelID": 122394881,
-    "tags": [
-      "Level",
-      "CBF"
-    ]
-  },
-  {
     "name": "Zodiac",
     "id": "zodiac",
     "player": "Technical",
@@ -13033,6 +13033,7 @@
     ]
   }
 ]
+
 
 
 
