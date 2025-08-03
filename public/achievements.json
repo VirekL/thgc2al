@@ -325,6 +325,21 @@
     "submitter": "kyle1saurus"
   },
   {
+    "name": "Subsuming Vortex (Renn241) 37-75%, 37-68%",
+    "id": "subsuming-vortex-renn241-37-75-37-68",
+    "player": "Wity",
+    "date": "2025-08-03",
+    "length": "55",
+    "version": 2.2,
+    "video": "https://youtu.be/9V8mSuYmgOU",
+    "showcaseVideo": "https://m.youtube.com/watch?si=rcNNt1_lbY9uXLOx&v=3dKj12cQSII&feature=youtu.be",
+    "submitter": "goofygdplayer_",
+    "tags": [
+      "Level",
+      "Consistency"
+    ]
+  },
+  {
     "name": "Banshee 77%",
     "id": "banshee-77",
     "player": "spcreat",
@@ -2296,7 +2311,7 @@
     "date": "2024-09-05",
     "length": 99,
     "version": 2.2,
-    "submitter": "Anceps",
+    "submitter": "kyle1saurus",
     "video": "https://youtu.be/ktD6Lb5MzAs",
     "tags": [
       "Challenge"
@@ -13012,6 +13027,7 @@
     ]
   }
 ]
+
 
 
 
