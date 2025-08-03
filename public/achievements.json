@@ -6125,6 +6125,22 @@
     ]
   },
   {
+    "name": "Exasperation 21-65%",
+    "id": "exasperation-21-65",
+    "player": "Zoink",
+    "levelID": 31325851,
+    "date": "2025-08-03",
+    "length": 75,
+    "version": 2.2,
+    "video": "https://www.youtube.com/live/uOe6B144Kno?t=8180",
+    "showcaseVideo": "https://youtu.be/G6ugI_TtEl8",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Netherix",
     "id": "netherix",
     "player": "MostDefinitelyAlbert",
@@ -12982,6 +12998,7 @@
     ]
   }
 ]
+
 
 
 
