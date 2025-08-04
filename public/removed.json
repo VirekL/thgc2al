@@ -1,1 +1,1091 @@
+[
+	{
+		"name": "Saul Goodman 33%, 100%",
+		"id": "saul-goodman-33-100",
+		"player": "Cudby",
+		"length": "93",
+		"version": "2.2",
+		"video": "https://youtu.be/SE3iiv3vi8k",
+		"date": "2025-06-04",
+		"showcaseVideo": "https://www.youtube.com/watch?v=ktVdIYE9P-I",
+		"levelID": "90477539",
+		"removalReason": "Redundancy",
+		"tags": [
+			"Rated",
+			"Consistency",
+			"Level"
+		]
+	},
+	{
+		"name": "Vehemence 14-38%",
+		"id": "vehemence-14-38",
+		"player": "wPopoff",
+		"length": "31",
+		"version": "2.2",
+		"video": "https://www.youtube.com/live/0A9WtwjR-X0?t=5925",
+		"date": "2025-07-21",
+		"showcaseVideo": "https://www.youtube.com/watch?v=9SxqlWV5OxI",
+		"levelID": "96572223",
+		"removalReason": "Redundancy",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "The Golden 144hz Mobile 59-92%",
+		"id": "-the-golden-144hz-mobile-59-92",
+		"player": "MAXDASH07",
+		"length": "25",
+		"version": "2.2",
+		"video": "https://youtu.be/YRIV2gxTkKU",
+		"date": "2025-07-09",
+		"showcaseVideo": "https://www.youtube.com/watch?v=g2OE21U9e5w",
+		"levelID": "60978746",
+		"removalReason": "Not List Worthy",
+		"tags": [
+			"Rated",
+			"Mid",
+			"Hertz",
+			"Mobile",
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Eternal Night 20%",
+		"id": "eternal-night-20",
+		"player": "swiborg",
+		"length": "23",
+		"version": "2.1",
+		"video": "https://youtu.be/NDgoauGVUTU",
+		"date": "2021-02-19",
+		"showcaseVideo": "https://youtu.be/njGusIAPm9w?si=dMcCPzEX745MW_Vu",
+		"removalReason": "Not List Worthy",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Eternal Night (Helix) 24%",
+		"id": "eternal-night-helix-24",
+		"player": "Helix",
+		"length": "22",
+		"version": "2.1",
+		"video": "https://youtu.be/QQMFvdH7b4g",
+		"date": "2022-08-07",
+		"showcaseVideo": "https://youtu.be/njGusIAPm9w?si=dMcCPzEX745MW_Vu",
+		"removalReason": "Not List Worthy",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Sonic Wave Infinity 120hz Mobile 16-74%",
+		"id": "sonic-wave-infinity-120hz-mobile-16-74",
+		"player": "Rotys",
+		"length": "90",
+		"version": "2.2",
+		"video": "https://youtu.be/JF5AJSSJQQM",
+		"date": "2025-07-19",
+		"showcaseVideo": "https://www.youtube.com/watch?v=QYd2YdKtj8Y",
+		"levelID": "69685815",
+		"removalReason": "Redundancy",
+		"tags": [
+			"Rated",
+			"Mid",
+			"Hertz",
+			"Mobile",
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Amethyst (old)",
+		"id": "amethyst-old",
+		"player": "wPopoff",
+		"length": "102",
+		"version": "2.2",
+		"video": "https://youtu.be/rKviU_YwWbQ",
+		"date": "2025-07-13",
+		"showcaseVideo": "https://www.youtube.com/watch?v=2Z7NGo83ZnU",
+		"levelID": "119550490",
+		"removalReason": "Redundancy",
+		"tags": [
+			"Rated",
+			"Level"
+		]
+	},
+	{
+		"name": "Sakupen circles (Old) 37-100%",
+		"id": "sakupen-circles-old-37-100",
+		"player": "totalgd",
+		"length": "28",
+		"version": "2.2",
+		"video": "https://youtu.be/Nf54Mi7YXs8",
+		"date": "2025-03-24",
+		"showcaseVideo": "https://youtu.be/WX5RCDxobSA",
+		"levelID": "10887708",
+		"removalReason": "Superseded",
+		"tags": [
+			"CBF",
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Acheron 60hz 17-48%",
+		"id": "acheron-60hz-17-48",
+		"player": "Llqne",
+		"length": "31",
+		"version": "2.2",
+		"video": "https://www.youtube.com/watch?v=aYOyZ-bfW2E",
+		"date": "2024-12-06",
+		"showcaseVideo": "https://www.youtube.com/watch?v=HVNRPS3cm-E",
+		"levelID": "73667628",
+		"removalReason": "Redundancy",
+		"tags": [
+			"Rated",
+			"Low Hertz",
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "chesnok",
+		"id": "chesnok",
+		"player": "Rub1d1um",
+		"length": "14",
+		"version": "2.2",
+		"video": "https://youtu.be/WKiimddOf4w?si=3U3JJCe1gjC5JgpV",
+		"date": "2025-05-29",
+		"showcaseVideo": "https://youtu.be/1ugrzkq4ZkU?si=_XmABN6y2CHSTk0O",
+		"levelID": "119864269",
+		"removalReason": "Not List Worthy",
+		"tags": [
+			"Challenge"
+		]
+	},
+	{
+		"name": "Deorum 1.2x 28-100%",
+		"id": "deorum-12x-28-100",
+		"player": "Cursed",
+		"length": "12",
+		"version": "2.1",
+		"video": "https://youtu.be/uR2zwChSeLQ",
+		"date": "2022-03-08",
+		"showcaseVideo": "https://youtu.be/6sUPsMb4Iis?si=ZCTP0PfPL9lQ0gLI",
+		"levelID": "55392313",
+		"removalReason": "Not List Worthy",
+		"tags": [
+			"Speedhack",
+			"Progress",
+			"Challenge"
+		]
+	},
+	{
+		"name": "Sakupen circles (Old) 1 death, 99.98 accuracy",
+		"id": "sakupen-circles-old-1-death-9998-accuracy",
+		"player": "Skylar",
+		"length": "49",
+		"version": "2.2",
+		"video": "https://www.youtube.com/watch?v=C4LjXAG6UIU",
+		"date": "2024-06-12",
+		"showcaseVideo": "https://youtu.be/WX5RCDxobSA",
+		"levelID": "10887708",
+		"removalReason": "Superseded",
+		"tags": [
+			"Noclip",
+			"Level"
+		]
+	},
+	{
+		"name": "Buffed Misanthrope 34%",
+		"id": "buffed-misanthrope-34",
+		"player": "SaitamaGD",
+		"length": "112",
+		"version": "2.2",
+		"video": "https://youtu.be/pN2bvJE7ldg",
+		"date": "2025-07-01",
+		"showcaseVideo": "https://youtu.be/qp-gY1MrS3A",
+		"removalReason": "Redundancy, no buffs exist before 55% so the record is covered by Misanthrope 48%",
+		"tags": [
+			"CBF",
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Invisible Wasureta 37-100%",
+		"id": "invisible-wasureta-37-100",
+		"player": "goldix",
+		"length": "30",
+		"version": "2.2",
+		"video": "https://youtu.be/HehmDoRV5NM?si=nD_N0buupVWrA7ek",
+		"date": "2025-05-12",
+		"showcaseVideo": "https://youtu.be/A4x2x8GUQTk",
+		"removalReason": "Superseded",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "fp spam timer 12%",
+		"id": "fp-spam-timer-12",
+		"player": "PaperGuy",
+		"length": "8",
+		"version": "2.2",
+		"video": "https://youtu.be/A9OgmUXVy-A",
+		"date": "2025-02-22",
+		"showcaseVideo": "https://youtu.be/80sGIQHZZpQ",
+		"levelID": "111268251",
+		"removalReason": "Not List Worthy",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "ConClusion 60hz Mobile 26-87%",
+		"id": "conclusion-60hz-mobile-26-87",
+		"player": "Dominionxx",
+		"length": "62",
+		"version": "2.2",
+		"video": "https://youtu.be/4xM70yGSxlo",
+		"date": "2025-07-10",
+		"showcaseVideo": "https://www.youtube.com/watch?v=6zHr7dmhUn0",
+		"levelID": "96471171",
+		"removalReason": "Superseded",
+		"tags": [
+			"Rated",
+			"Low Hertz",
+			"Mobile",
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Buffed Misanthrope 9-40%",
+		"id": "buffed-misanthrope-9-40",
+		"player": "BigMacGD",
+		"length": "109",
+		"version": "2.2",
+		"video": "https://youtu.be/66bs159XlaQ",
+		"date": "2025-06-03",
+		"showcaseVideo": "https://youtu.be/qp-gY1MrS3A",
+		"removalReason": "Redundancy, no buffs exist before 55% so the record is covered by Misanthrope 48%",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "GRIEF (j0nah) 65-92%",
+		"id": "grief-j0nah-65-92",
+		"player": "j0nah",
+		"length": "42",
+		"version": "2.2",
+		"video": "https://youtu.be/jIa0UVY7wzA",
+		"date": "2025-06-16",
+		"removalReason": "Redundancy",
+		"showcaseVideo": "https://www.youtube.com/watch?v=bQXnREyaO34",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "GRIEF (j0nah) 25-53%",
+		"id": "grief-j0nah-25-53",
+		"player": "j0nah",
+		"length": "42",
+		"version": "2.2",
+		"video": "https://youtu.be/7KUVKssTTPU",
+		"date": "2025-06-11",
+		"removalReason": "Redundancy",
+		"showcaseVideo": "https://www.youtube.com/watch?v=bQXnREyaO34",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "GRIEF (j0nah) 75-100%",
+		"id": "grief-j0nah-75-100",
+		"player": "j0nah",
+		"length": "38",
+		"version": "2.2",
+		"video": "https://youtu.be/Rqxl-pbAylA",
+		"date": "2025-05-09",
+		"removalReason": "Redundancy",
+		"showcaseVideo": "https://www.youtube.com/watch?v=bQXnREyaO34",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "GRIEF (j0nah) 28%",
+		"id": "grief-j0nah-28",
+		"player": "j0nah",
+		"length": "30",
+		"version": "2.2",
+		"video": "https://youtu.be/GdBQsUaUGC0",
+		"date": "2025-06-30",
+		"removalReason": "Redundancy",
+		"showcaseVideo": "https://www.youtube.com/watch?v=bQXnREyaO34",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Viprin UFO 46% + 64%",
+		"id": "viprin-ufo-46--64",
+		"player": "soth",
+		"length": "108",
+		"version": "2.2",
+		"video": "https://youtu.be/7dTVuibqDtc",
+		"date": "2025-04-17",
+		"showcaseVideo": "https://www.youtube.com/watch?v=wZt4DOqwePc",
+		"levelID": "107238250",
+		"removalReason": "Redundancy",
+		"tags": [
+			"Rated",
+			"Consistency",
+			"Level"
+		]
+	},
+	{
+		"name": "Sakupen Circles Mobile 120hz 51%",
+		"id": "sakupen-circles-mobile-120hz-51",
+		"player": "sydno",
+		"length": "28",
+		"version": "2.2",
+		"video": "https://youtu.be/nI-wrFprqFc?si=J26PmYZ2mmkib_tm",
+		"date": "2025-06-04",
+		"levelID": "76962930",
+		"removalReason": "",
+		"tags": [
+			"Rated",
+			"Mid",
+			"Hertz",
+			"Mobile",
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Piano Woman 144hz Mobile",
+		"id": "piano-woman-144hz-mobile",
+		"player": "CAPI11",
+		"length": "114",
+		"version": "2.2",
+		"video": "https://youtu.be/EXoYZF7a9J4?si=bcre2LCGTGeU3ogQ",
+		"date": "2025-06-09",
+		"levelID": "112998648",
+		"removalReason": "",
+		"tags": [
+			"2P",
+			"Rated",
+			"Mid",
+			"Hertz",
+			"Mobile",
+			"Level"
+		]
+	},
+	{
+		"name": "limbo but uwu ig idk 60hz Mobile 42-76%",
+		"id": "limbo-but-uwu-ig-idk-60hz-mobile-42-76",
+		"player": "geometrydasj",
+		"length": "33",
+		"version": "2.2",
+		"video": "https://youtu.be/UUf5yoV25Fo?si=jIhnXmOk5U0MNHVV",
+		"date": "2025-06-26",
+		"showcaseVideo": "https://youtu.be/-nja3I-CK50?si=5MV3gZlswKO7PDAZ",
+		"removalReason": "",
+		"levelID": "110705712",
+		"tags": [
+			"Rated",
+			"Low Hertz",
+			"Mobile",
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "MeAA 79%",
+		"id": "meaa-79",
+		"player": "PaperGuy",
+		"length": "6",
+		"version": "2.2",
+		"video": "https://youtu.be/ylgvP7J0IpE",
+		"date": "2025-06-16",
+		"showcaseVideo": "https://youtu.be/jOGoCpg1Y24",
+		"levelID": "72109089",
+		"removalReason": "Spam Challenge",
+		"tags": [
+			"Progress",
+			"Challenge"
+		]
+	},
+	{
+		"name": "CHAOS",
+		"id": "chaos",
+		"player": "ywuChaos",
+		"length": "11",
+		"version": "2.2",
+		"video": "https://youtu.be/UjxY09qutKE",
+		"date": "2025-03-21",
+		"showcaseVideo": "https://youtu.be/p0GhmFDfbAk",
+		"levelID": "116316588",
+		"removalReason": "Spam Challenge",
+		"tags": [
+			"Challenge"
+		]
+	},
+	{
+		"name": "Dectuple Spam Legend",
+		"id": "dectuple-spam-legend",
+		"player": "Drake",
+		"length": "13",
+		"version": "2.2",
+		"video": "https://www.youtube.com/watch?v=L4zX5okgCD4",
+		"date": "2024-06-23",
+		"showcaseVideo": "https://youtu.be/Ecwn-Ea8xY0",
+		"levelID": "106814012",
+		"removalReason": "Spam Challenge",
+		"tags": [
+			"Challenge"
+		]
+	},
+	{
+		"name": "Realism",
+		"id": "realism",
+		"player": "ywuChaos",
+		"length": "8",
+		"version": "2.2",
+		"video": "https://youtu.be/JiHf3XOpFhg",
+		"date": "2025-04-16",
+		"showcaseVideo": "https://youtu.be/EybXzcFFdt0?si=eZ93Cav21bEJSuBZ",
+		"levelID": "74578618",
+		"removalReason": "Spam Challenge",
+		"tags": [
+			"Challenge"
+		]
+	},
+	{
+		"name": "Spam Legend x12 67% + 50%",
+		"id": "spam-legend-x12-67--50",
+		"player": "Drake",
+		"length": "14",
+		"version": "2.2",
+		"video": "https://youtu.be/iJeILJxaPNU",
+		"date": "2024-08-04",
+		"removalReason": "Spam Challenge",
+		"tags": [
+			"Consistency",
+			"Challenge"
+		]
+	},
+	{
+		"name": "IT MEANS EVERYTHING 31%",
+		"id": "it-means-everything-31",
+		"player": "Vel",
+		"length": "21",
+		"version": "2.2",
+		"video": "https://youtu.be/X4oGKjB2JdA?si=WBAb9iI8SIzTG9pu",
+		"date": "2024-08-16",
+		"showcaseVideo": "https://youtu.be/9nSkkXZ628E?si=kiDkwYolI0AqrILz",
+		"levelID": "106165639",
+		"removalReason": "Superseded",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Lust 47%",
+		"id": "lust-47",
+		"player": "Meatius",
+		"length": "9",
+		"version": "2.1",
+		"video": "https://youtu.be/YqzO3w8896Y?si=Ec-HNMtfgOUv-vAQ",
+		"date": "2020-09-01",
+		"showcaseVideo": "https://youtu.be/05o99giT0aM?si=-vBR3ZpJJLoK19a-",
+		"removalReason": "",
+		"tags": [
+			"Progress",
+			"Challenge"
+		]
+	},
+	{
+		"name": "Vigorous Verdict 1.1x 28-83%",
+		"id": "vigorous-verdict-11x-28-83",
+		"player": "zXdasfsa",
+		"length": "5",
+		"version": "2.1",
+		"video": "https://youtu.be/dz5NXh0tqGQ",
+		"date": "2023-05-06",
+		"showcaseVideo": "https://youtu.be/xDmETrsBvt8?si=ExsDjZ0NKJOtVHn-",
+		"levelID": "85856340",
+		"removalReason": "Superseded",
+		"tags": [
+			"Speedhack",
+			"Progress",
+			"Challenge"
+		]
+	},
+	{
+		"name": "evw impossible 68%",
+		"id": "evw-impossible-68",
+		"player": "zXdasfsa",
+		"length": "8",
+		"version": "2.2",
+		"video": "https://youtu.be/6dxIGcuagak",
+		"date": "2025-06-20",
+		"removalReason": "",
+		"tags": [
+			"Progress",
+			"Challenge"
+		]
+	},
+	{
+		"name": "Invisible Prismatic Storm 56%",
+		"id": "invisible-prismatic-storm-56",
+		"player": "zXdasfsa",
+		"length": "8",
+		"version": "2.1",
+		"video": "https://youtu.be/SVJONIZiv1U",
+		"date": "2023-05-10",
+		"removalReason": "",
+		"tags": [
+			"Progress",
+			"Challenge"
+		]
+	},
+	{
+		"name": "Sonic Wave Infinity 120hz Mobile 41-100%",
+		"id": "sonic-wave-infinity-120hz-mobile-41-100",
+		"player": "Russoboy",
+		"length": "89",
+		"version": "2.1",
+		"video": "https://youtu.be/Ge7HCWcWNjk",
+		"date": "2023-10-28",
+		"levelID": "69685815",
+		"removalReason": "Superseded",
+		"tags": [
+			"Rated",
+			"Mid",
+			"Hertz",
+			"Mobile",
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Subsuming Vortex (Renn241) 45-100%",
+		"id": "subsuming-vortex-renn241-45-100",
+		"player": "Cursed",
+		"length": "26",
+		"version": "2.2",
+		"video": "https://youtu.be/ZVsJ-DlnBnM",
+		"date": "2025-07-02",
+		"removalReason": "Superseded",
+		"showcaseVideo": "https://m.youtube.com/watch?si=rcNNt1_lbY9uXLOx&v=3dKj12cQSII&feature=youtu.be",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Acheron 60hz 60-98%",
+		"id": "acheron-60hz-60-98",
+		"player": "Llqne",
+		"length": "25",
+		"version": "2.2",
+		"video": "https://youtu.be/TH9D0_x1fdk",
+		"date": "2024-10-23",
+		"showcaseVideo": "https://youtu.be/YQElFvT5ynk",
+		"levelID": "73667628",
+		"removalReason": "Does not Exist",
+		"tags": [
+			"Rated",
+			"Low Hertz",
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "GRIEF (j0nah) 4-29%",
+		"id": "grief-j0nah-4-29",
+		"player": "j0nah",
+		"length": "38",
+		"version": "2.2",
+		"video": "https://youtu.be/dB3BFljwqQM",
+		"date": "2025-05-09",
+		"showcaseVideo": "https://www.youtube.com/watch?v=bQXnREyaO34",
+		"removalReason": "Redundancy",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Sakupen circles (Old) 51%, 76%",
+		"id": "sakupen-circles-old-51-76",
+		"player": "ad3usgmd",
+		"length": "75",
+		"version": "2.2",
+		"video": "https://youtu.be/PmaK5H114ug",
+		"date": "2025-06-19",
+		"showcaseVideo": "https://youtu.be/WX5RCDxobSA",
+		"levelID": "10887708",
+		"removalReason": "Redundancy",
+		"tags": [
+			"Consistency",
+			"Level"
+		]
+	},
+	{
+		"name": "Buff Exasperation 48%",
+		"id": "buff-exasperation-48",
+		"player": "Drippungus",
+		"length": "89",
+		"version": "2.2",
+		"video": "https://www.youtube.com/watch?v=BNPR8ykh0ns",
+		"date": "2025-06-22",
+		"showcaseVideo": "https://youtu.be/nGUcEswHKSs",
+		"levelID": "121664951",
+		"removalReason": "Cheated",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Acheron 2.1 32%, 100%",
+		"id": "acheron-21-32-100",
+		"player": "Zoink",
+		"length": "75",
+		"version": "2.1",
+		"video": "https://www.youtube.com/watch?v=sBKR6aUorzA",
+		"date": "2022-08-22",
+		"showcaseVideo": "https://youtu.be/YQElFvT5ynk",
+		"levelID": "73667628",
+		"removalReason": "Superseded",
+		"tags": [
+			"Outdated Version",
+			"Consistency",
+			"Level"
+		]
+	},
+	{
+		"name": "The Deep Dark + The Big Black",
+		"id": "the-deep-dark--the-big-black",
+		"player": "Some Dude",
+		"length": "79",
+		"version": "2.2",
+		"video": "https://www.google.com/url?q=https://youtu.be/TU5ymiOKreo&sa=D&source=editors&ust=1749343921324365&usg=AOvVaw0Ygouhrv2YSq5oFDwfsbqc",
+		"date": "2025-03-31",
+		"removalReason": "Spam Challenge",
+		"tags": [
+			"CBF",
+			"Consistency",
+			"Level"
+		]
+	},
+	{
+		"name": "Sakupen Circles 63-100% + 100%",
+		"id": "sakupen-circles-63-100--100",
+		"player": "Ekskriptn",
+		"length": "67",
+		"version": "2.2",
+		"video": "https://youtu.be/3Tj0jhBLWls",
+		"date": "2025-04-04",
+		"showcaseVideo": "https://youtu.be/b66_Oe4Xo1w",
+		"levelID": "76962930",
+		"removalReason": "Redundancy",
+		"tags": [
+			"Rated",
+			"Consistency",
+			"Level"
+		]
+	},
+	{
+		"name": "Sakupen Circles 35-67% x2 + 35-59% + 35-67% x2",
+		"id": "sakupen-circles-35-67-x2--35-59--35-67-x2",
+		"player": "tricklength",
+		"length": "50",
+		"version": "2.2",
+		"video": "https://x.com/xxtricklengthxx/status/1824582713090736148",
+		"date": "2024-08-16",
+		"showcaseVideo": "https://youtu.be/b66_Oe4Xo1w",
+		"levelID": "76962930",
+		"removalReason": "Superseded",
+		"tags": [
+			"CBF",
+			"Rated",
+			"Consistency",
+			"Level"
+		]
+	},
+	{
+		"name": "Sakupen Circles 50% + 58% + 51% + 52% + 67% + 51% + 53% + 70%",
+		"id": "sakupen-circles-50--58--51--52--67--51--53--70",
+		"player": "zFunnyBoy",
+		"length": "48",
+		"version": "2.2",
+		"video": "https://x.com/zFunnyBoy_/status/1827171671050010902",
+		"date": "2024-08-23",
+		"showcaseVideo": "https://x.com/zFunnyBoy_/status/1827171671050010902?t=am-u-RXjPnA5xQz9GTPecQ",
+		"levelID": "76962930",
+		"removalReason": "Superseded",
+		"tags": [
+			"Rated",
+			"Consistency",
+			"Level"
+		]
+	},
+	{
+		"name": "Sakupen Circles 35-67% + 35-100% + 35-59%",
+		"id": "sakupen-circles-35-67--35-100--35-59",
+		"player": "tricklength",
+		"length": "50",
+		"version": "2.2",
+		"video": "https://x.com/xxtricklengthxx/status/1843694325219373244",
+		"date": "2024-10-16",
+		"showcaseVideo": "https://youtu.be/b66_Oe4Xo1w",
+		"levelID": "76962930",
+		"removalReason": "Superseded",
+		"tags": [
+			"CBF",
+			"Rated",
+			"Consistency",
+			"Level"
+		]
+	},
+	{
+		"name": "INTERCONNECTED 16-100%",
+		"id": "interconnected-16-100",
+		"player": "NucGDStuff",
+		"length": "17",
+		"version": "2.2",
+		"video": "https://youtu.be/FuQWz2wevzA",
+		"date": "2025-06-10",
+		"showcaseVideo": "https://youtu.be/7kzhozGgHR8",
+		"removalReason": "Superseded",
+		"tags": [
+			"CBF",
+			"Progress",
+			"Challenge"
+		]
+	},
+	{
+		"name": "INTERCONNECTED 61% + 50%",
+		"id": "interconnected-61--50",
+		"player": "NucGDStuff",
+		"length": "87",
+		"version": "2.2",
+		"video": "https://www.youtube.com/watch?v=ZvXUUA54jiA&t=912",
+		"date": "2025-05-16",
+		"showcaseVideo": "https://youtu.be/7kzhozGgHR8",
+		"removalReason": "Superseded",
+		"tags": [
+			"CBF",
+			"Consistency",
+			"Challenge"
+		]
+	},
+	{
+		"name": "Deimos 66% + 57%",
+		"id": "deimos-66--57",
+		"player": "AeonAir",
+		"length": "250",
+		"version": "2.2",
+		"video": "https://www.youtube.com/live/3ly3Utvidqo?t=9312",
+		"date": "2025-04-19",
+		"showcaseVideo": "https://www.youtube.com/watch?v=CQJqSSBFHQ8",
+		"levelID": "93091893",
+		"removalReason": "Superseded",
+		"tags": [
+			"Rated",
+			"Consistency",
+			"Level"
+		]
+	},
+	{
+		"name": "Aeternus 72-89%",
+		"id": "aeternus-72-89",
+		"player": "Chill Guy",
+		"length": "13",
+		"version": "2.2",
+		"video": "https://youtu.be/gibGK9d_fwI",
+		"date": "2025-06-12",
+		"showcaseVideo": "https://www.youtube.com/watch?v=p4QgFtKL5kE",
+		"levelID": "102647436",
+		"removalReason": "Superseded",
+		"tags": [
+			"CBF",
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Aeternus 84-100%",
+		"id": "aeternus-84-100",
+		"player": "Chill Guy",
+		"length": "10",
+		"version": "2.2",
+		"video": "https://www.youtube.com/watch?v=AL5CvuYJn0o",
+		"date": "2024-11-08",
+		"showcaseVideo": "https://www.youtube.com/watch?v=p4QgFtKL5kE",
+		"levelID": "102647436",
+		"removalReason": "Superseded",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Gaggatrondra 144hz Mobile 67-100%",
+		"id": "gaggatrondra-144hz-mobile-67-100",
+		"player": "sock",
+		"length": "20",
+		"version": "2.2",
+		"video": "https://x.com/ichewcarpets/status/1919722331351466340",
+		"date": "2025-05-06",
+		"showcaseVideo": "https://youtu.be/z_EkJcLJz2g?si=NHao7etxHykZCRFv",
+		"levelID": "114990369",
+		"removalReason": "Not List Worthy",
+		"tags": [
+			"Rated",
+			"Mid",
+			"Hertz",
+			"Mobile",
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "INTERCONNECTED 27-100%",
+		"id": "interconnected-27-100",
+		"player": "NucGDStuff",
+		"length": "15",
+		"version": "2.2",
+		"video": "https://youtu.be/ZVk8HRmZGh4",
+		"date": "2025-04-26",
+		"showcaseVideo": "https://youtu.be/7kzhozGgHR8?si=EKp8fFvC3c6cTZth",
+		"removalReason": "Superseded",
+		"tags": [
+			"CBF",
+			"Progress",
+			"Challenge"
+		]
+	},
+	{
+		"name": "Itsumade 28-100%",
+		"id": "itsumade-28-100",
+		"player": "CaveMelv",
+		"length": "199",
+		"version": "2.2",
+		"video": "https://www.youtube.com/watch?v=G47beC2-IJs&t=123",
+		"date": "2025-04-06",
+		"showcaseVideo": "https://youtu.be/qS3mHt8CeFU?si=xuy6S52LJkh9eK1u",
+		"removalReason": "Superseded",
+		"tags": [
+			"CBF",
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Fracture (old)",
+		"id": "fracture-old",
+		"player": "Dezstro",
+		"length": "85",
+		"version": "2.1",
+		"video": "https://www.youtube.com/watch?v=iCxG8xoOtv8",
+		"date": "2024-01-24",
+		"showcaseVideo": "https://www.youtube.com/watch?v=0gI5Di4aboI",
+		"levelID": "99703915",
+		"removalReason": "",
+		"tags": [
+			"Level"
+		]
+	},
+	{
+		"name": "Renevant 60hz 27-98%",
+		"id": "renevant-60hz-27-98",
+		"player": "Cejelost",
+		"length": "69",
+		"version": "2.2",
+		"video": "https://youtu.be/h-YUQOzzubQ",
+		"date": "2024-12-26",
+		"showcaseVideo": "https://www.youtube.com/watch?v=FgkACdloQug",
+		"levelID": "58161496",
+		"removalReason": "Superseded",
+		"tags": [
+			"Rated",
+			"Low Hertz",
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Mona Megistus",
+		"id": "-mona-megistus",
+		"player": "kbar66",
+		"length": "60",
+		"version": "2.2",
+		"video": "https://youtu.be/KUQ3MrFbpfY",
+		"date": "2024-11-08",
+		"showcaseVideo": "https://youtu.be/8iihvb9zTok",
+		"levelID": "111929897",
+		"removalReason": "Not List Worthy",
+		"tags": [
+			"Level"
+		]
+	},
+	{
+		"name": "AnNoYeD Machine 67-84%",
+		"id": "annoyed-machine-67-84",
+		"player": "ExpiredHam",
+		"length": "11",
+		"version": "2.2",
+		"video": "https://youtu.be/aE91CGKBYCY",
+		"date": "2025-05-27",
+		"showcaseVideo": "https://youtu.be/YP-m6xaxdVs",
+		"levelID": "88205968",
+		"removalReason": "Not List Worthy",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Amethyst 59% + 54%",
+		"id": "amethyst-59--54",
+		"player": "wPopoff",
+		"length": "123",
+		"version": "2.2",
+		"video": "https://www.youtube.com/live/lYtYOAYQqr8?t=1772",
+		"date": "2025-05-06",
+		"showcaseVideo": "https://www.youtube.com/watch?v=2Z7NGo83ZnU",
+		"removalReason": "We already have Amethyst. dont need this no more",
+		"tags": [
+			"Consistency",
+			"Level"
+		]
+	},
+	{
+		"name": "",
+		"id": "-",
+		"player": "mys",
+		"length": "16",
+		"version": "2.1",
+		"video": "https://www.youtube.com/watch?v=e1eiAvcQT_M",
+		"date": "2022-12-11",
+		"showcaseVideo": "https://www.youtube.com/watch?v=e1eiAvcQT_M",
+		"levelID": "86592424",
+		"removalReason": ""
+		"tags": [
+			"Challenge"
+		]
+	},
+	{
+		"name": "Dont Even",
+		"id": "dont-even",
+		"player": "Me24345",
+		"length": "9",
+		"version": "2.1",
+		"video": "https://youtu.be/ckW3V9nT52w?si=oQWg_MoTWHFbNLhZ",
+		"date": "2023-11-26",
+		"showcaseVideo": "https://youtu.be/ckW3V9nT52w?si=oQWg_MoTWHFbNLhZ",
+		"levelID": "71891105",
+		"removalReason": "Spam Challenge",
+		"tags": [
+			"Challenge"
+		]
+	},
+	{
+		"name": "The Deep Dark",
+		"id": "the-deep-dark",
+		"player": "Some Dude",
+		"length": "52",
+		"version": "2.2",
+		"video": "https://www.youtube.com/watch?si=N8m79Waj8iyDgFqN&v=S5b1bUQdKck&feature=youtu.be",
+		"date": "2025-02-27",
+		"showcaseVideo": "https://youtu.be/ArPBLrn-qK8?si=q3hG4WoqejEkabVd",
+		"levelID": "115562797",
+		"removalReason": "Spam Challenge",
+		"tags": [
+			"CBF",
+			"Challenge"
+		]
+	},
+	{
+		"name": "Hellcat tutorial",
+		"id": "hellcat-tutorial",
+		"player": "Some Dude",
+		"length": "19",
+		"version": "2.2",
+		"video": "https://youtu.be/08ErfCtqmS0",
+		"date": "2025-04-18",
+		"showcaseVideo": "https://youtu.be/08ErfCtqmS0",
+		"levelID": "117571015",
+		"removalReason": "",
+		"tags": [
+			"Challenge"
+		]
+	},
+	{
+		"name": "Meowpau Chal Nerf",
+		"id": "meowpau-chal-nerf",
+		"player": "ad3usgmd",
+		"length": "15",
+		"version": "2.2",
+		"video": "https://youtu.be/MHcoMqO1du0",
+		"date": "2025-03-19",
+		"showcaseVideo": "https://youtu.be/MHcoMqO1du0",
+		"levelID": "116488839",
+		"removalReason": "",
+		"tags": [
+			"CBF",
+			"Challenge"
+		]
+	},
+	{
+		"name": "inv skc 10 op 37-100%",
+		"id": "inv-skc-10-op-37-100",
+		"player": "Skylar",
+		"length": "27",
+		"version": "2.2",
+		"video": "https://youtu.be/cl2dJGYDLQw",
+		"date": "2024-09-04",
+		"showcaseVideo": "https://youtu.be/7WgD_7Z0Emg",
+		"removalReason": "Superseded",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Exens limit (buffed) 58-67%",
+		"id": "exens-limit-buffed-58-67",
+		"player": "tricklength",
+		"length": "3",
+		"version": "2.2",
+		"video": "https://youtu.be/Ce0ordneak8",
+		"date": "2025-05-12",
+		"removalReason": "Not List Worthy",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
 
+]
