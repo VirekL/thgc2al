@@ -3991,21 +3991,6 @@
     ]
   },
   {
-    "name": "i n j u r y (Layout) 18-100%",
-    "id": "i-n-j-u-r-y-layout-18-100",
-    "player": "kyle1saurus",
-    "date": "2025-05-18",
-    "length": 33,
-    "version": 2.2,
-    "video": "https://youtu.be/8avxGLk4k7Q",
-    "showcaseVideo": "https://youtu.be/44L7NaTxHUQ",
-    "submitter": "jak",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Silentlocked",
     "id": "silentlocked",
     "player": "TFIBB",
@@ -4986,6 +4971,21 @@
     "submitter": "zXdasfsa",
     "tags": [
       "Challenge",
+      "Progress"
+    ]
+  },
+  {
+    "name": "i n j u r y (Layout) 18-100%",
+    "id": "i-n-j-u-r-y-layout-18-100",
+    "player": "Cryostaz",
+    "date": "2025-05-18",
+    "length": 33,
+    "version": 2.2,
+    "video": "https://youtu.be/8avxGLk4k7Q",
+    "showcaseVideo": "https://youtu.be/44L7NaTxHUQ",
+    "submitter": "jak",
+    "tags": [
+      "Level",
       "Progress"
     ]
   },
@@ -13071,5 +13071,6 @@
     ]
   }
 ]
+
 
 
