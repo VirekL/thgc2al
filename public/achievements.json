@@ -4458,22 +4458,6 @@
     ]
   },
   {
-    "name": "Sevvend Clubstep",
-    "id": "sevvend-clubstep",
-    "player": "Vorten",
-    "date": "2025-06-04",
-    "length": "64",
-    "version": "2.2",
-    "levelID": "120255728",
-    "video": "https://youtu.be/TvA8EJTJFCc",
-    "showcaseVideo": "https://youtu.be/r5wqyu4-rrE",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Rated"
-    ]
-  },
-  {
     "name": "The Salt Factory",
     "id": "the-salt-factory",
     "player": "nickname",
@@ -5583,6 +5567,22 @@
     ]
   },
   {
+    "name": "Sevvend Clubstep",
+    "id": "sevvend-clubstep",
+    "player": "Vorten",
+    "date": "2025-06-04",
+    "length": 64,
+    "version": 2.2,
+    "levelID": 120255728,
+    "video": "https://youtu.be/TvA8EJTJFCc",
+    "showcaseVideo": "https://youtu.be/r5wqyu4-rrE",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Rated"
+    ]
+  },
+  {
     "name": "Subsuming Vortex 45-100%",
     "id": "subsuming-vortex-45-100",
     "player": "Cursed",
@@ -6162,6 +6162,22 @@
     "length": "100",
     "version": "2.2",
     "levelID": "69685815"
+  },
+  {
+    "name": "lava",
+    "id": "lava",
+    "player": "seels",
+    "levelID": 117687187,
+    "date": "2025-04-20",
+    "length": 14,
+    "version": 2.2,
+    "video": "https://youtu.be/RX39jEns6vM",
+    "showcaseVideo": "https://youtu.be/p71uiCl3aHI",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Challenge",
+      "CBF"
+    ]
   },
   {
     "name": "Nightfall 74%",
@@ -7888,21 +7904,6 @@
     ]
   },
   {
-    "name": "ROCKBOTTOM",
-    "id": "rockbottom",
-    "player": "ZazaGD",
-    "date": "2025-07-02",
-    "length": "64",
-    "version": "2.2",
-    "levelID": "122196131",
-    "video": "https://youtu.be/HAyxOJ1XuBk",
-    "showcaseVideo": "https://youtu.be/gA_icsg3HYs",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level"
-    ]
-  },
-  {
     "name": "The Only Wish",
     "id": "the-only-wish",
     "player": "VxMasTeR",
@@ -8104,22 +8105,6 @@
       "Level",
       "Noclip",
       "Progress",
-      "CBF"
-    ]
-  },
-  {
-    "name": "lava",
-    "id": "lava",
-    "player": "seels",
-    "levelID": 117687187,
-    "date": "2025-04-20",
-    "length": 14,
-    "version": 2.2,
-    "video": "https://youtu.be/RX39jEns6vM",
-    "showcaseVideo": "https://youtu.be/p71uiCl3aHI",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Challenge",
       "CBF"
     ]
   },
@@ -10142,6 +10127,21 @@
     "tags": [
       "Challenge",
       "Progress"
+    ]
+  },
+  {
+    "name": "ROCKBOTTOM",
+    "id": "rockbottom",
+    "player": "ZazaGD",
+    "date": "2025-07-02",
+    "length": 64,
+    "version": 2.2,
+    "levelID": 122196131,
+    "video": "https://youtu.be/HAyxOJ1XuBk",
+    "showcaseVideo": "https://youtu.be/gA_icsg3HYs",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level"
     ]
   },
   {
@@ -13071,7 +13071,3 @@
     ]
   }
 ]
-
-
-
-
