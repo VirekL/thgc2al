@@ -17,21 +17,19 @@
         "showcaseVideo": "https://youtu.be/bQXnREyaO34"
     },
     {
-        "id": "grief-25-100",
-        "name": "GRIEF 25-100%",
-        "player": "Doggie",
-        "thumbnail": "https://tjcsucht.net/levelthumbs/102303428.png",
+        "id": "thinking-space-ii-old-77",
+        "name": "Thinking Space II (Old) 77%",
+        "player": "Zoink",
         "tags": [
-            "CBF",
-            "2P",
             "Level",
             "Progress"
         ],
-        "length": "117",
+        "length": "61",
+        "submitter": "Dave4681",
         "version": "2.2",
-        "date": "2025-02-26",
-        "video": "https://youtu.be/JZ6rLQoP7Y0",
-        "showcaseVideo": "https://youtu.be/bQXnREyaO34"
+        "date": "2025-02-13",
+        "video": "https://www.youtube.com/live/_hsc3cvQIn4?t=3546",
+        "showcaseVideo": "https://youtu.be/F05aMR0F6YM"
     },
     {
         "id": "grief-17-92",
@@ -211,7 +209,7 @@
         "version": "2.1",
         "date": "2022-08-22",
         "levelID": "73667628",
-        "video": "https://youtu.be/06ADbkaBDz4",
+        "video": "https://youtu.be/sBKR6aUorzA?si=LnZD0RkfpfThwP-l",
         "showcaseVideo": "https://youtu.be/YQElFvT5ynk"
     },
     {
@@ -562,7 +560,8 @@
         "version": "2.1",
         "date": "2018-04-22",
         "levelID": "80515897",
-        "video": "https://youtu.be/QYLfqDjBqlo"
+        "video": "https://youtu.be/QYLfqDjBqlo",
+        "showcaseVideo": "https://youtu.be/GGOWzVmwtHA?si=JK0-TfZvdyiVGKCn"
     },
     {
         "id": "plasma-pulse-finale-60hz-72",
@@ -693,9 +692,9 @@
         ],
         "length": "90",
         "version": "2.0",
-        "date": "2015-12-08",
+        "date": "2016-03-22",
         "levelID": "26681070",
-        "video": "https://youtu.be/7-6qselgues",
+        "video": "https://www.youtube.com/watch?v=HS9sJwl63xk",
         "showcaseVideo": "https://youtu.be/iQowrO4trlk"
     },
     {
@@ -826,7 +825,7 @@
         "version": "1.9",
         "date": "2015-05-24",
         "levelID": "814678",
-        "video": "https://youtu.be/ykwlYeTJblc",
+        "video": "https://youtu.be/mhYRW_yNtWA?si=jZ6kgaQETjom54BI",
 	    "showcaseVideo": "https://youtu.be/gSZVFyZg8ys"
     },
     {
@@ -945,7 +944,7 @@
         "submitter": "Anceps",
         "levelID": "2241592",
         "thumbnail": "https://i.ytimg.com/vi/S2EO10Z3M74/maxresdefault.jpg",
-        "video": "https://youtu.be/Q2oTRkJHmPUE",
+        "video": "https://youtu.be/Q2oTRkJHmPU?si=hvgwMMjuJLl_2t1N",
         "showcaseVideo": "https://youtu.be/j3SgupWqHJw"
     },
     {
@@ -1022,7 +1021,7 @@
         "date": "2014-04-22",
         "submitter": "Anceps",
         "levelID": "84619534",
-        "video": "https://web.archive.org/web/20230415182542/https://www.youtube.com/watch?v=zy8iic4Kylo",
+        "video": "https://tinyurl.com/yuse4xbp",
         "showcaseVideo": "https://youtu.be/tH-QfWdw5o0"
     },
     {
@@ -1127,7 +1126,8 @@
         "version": "1.4",
         "date": "2014-02-14",
         "levelID": "88356137",
-        "video": "https://cafe.naver.com/geometrydw/10161"
+        "video": "https://cafe.naver.com/geometrydw/10161",
+        "showcaseVideo": "https://youtu.be/vC8gtYxIa9I"
     },
     {
         "id": "definite-integral",
@@ -1233,19 +1233,6 @@
         ]
     },
     {
-        "id": "cave-adventure",
-        "name": "cave adventure",
-        "player": "gomchi",
-        "tags": [
-            "Level"
-        ],
-        "length": "46",
-        "version": "1.2",
-        "date": "2013-10-26",
-        "levelID": "19617",
-        "showcaseVideo": "https://youtu.be/1B0_S17smqg"
-    },
-    {
         "id": "to-the-grave",
         "name": "To the Grave",
         "player": "darnoc2",
@@ -1275,17 +1262,44 @@
         "showcaseVideo": "https://youtu.be/R-E8rIoEky4"
     },
     {
-        "id": "d",
-        "name": "D",
-        "player": "die",
+        "id": "level-5",
+        "name": "Level 5",
+        "player": "Matty",
         "tags": [
             "Level"
         ],
-        "length": "44",
+        "length": "93",
         "version": "1.1",
-        "date": "2013-09-29",
-        "levelID": "4266",
-        "showcaseVideo": "https://youtu.be/qE5RZE3PqYM"
+        "date": "2013-09-13",
+        "levelID": "2172",
+        "showcaseVideo": "https://youtu.be/PeNW8_M0eVI"
+    },
+    {
+        "id": "blurred-lines",
+        "name": "Blurred Lines",
+        "player": "Manny Fresh",
+        "tags": [
+            "Level"
+        ],
+        "length": "84",
+        "version": "1.0",
+        "date": "2013-08-31",
+        "levelID": "1063",
+        "showcaseVideo": "https://youtu.be/dJfdQgdwvTs?si=3lJzZ3xAncpuJ5qc"
+    },
+    {
+        "id": "m",
+        "name": "M",
+        "player": "M2coL",
+        "tags": [
+            "Level",
+            "Rated"
+        ],
+        "length": "81",
+        "version": "1.0",
+        "date": "2013-08-27",
+        "levelID": "828",
+        "showcaseVideo": "https://youtu.be/tJVYJYQ2ySg?si=ca5cahVdX8zFxbyg"
     },
     {
         "id": "the-rainbow-road",
@@ -1334,21 +1348,6 @@
             "Level",
             "Rated"
         ]
-    },
-    {
-        "id": "the-first",
-        "name": "The First",
-        "player": "Clatchet",
-        "tags": [
-            "Level",
-            "Formerly Rated"
-        ],
-        "length": "55",
-        "version": "1.0",
-        "date": "2013-08-14",
-        "levelID": "83583279",
-        "submitter": "Anceps",
-        "showcaseVideo": "https://youtu.be/zgQCAvkIfFw"
     },
     {
         "id": "cant-let-go-old",
