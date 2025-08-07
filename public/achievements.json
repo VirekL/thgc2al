@@ -1138,6 +1138,23 @@
     ]
   },
   {
+    "name": "Silent Acropolis unn 66%",
+    "id": "silent-acropolis-unn-66",
+    "player": "SeptaGon7",
+    "date": "2025-07-30",
+    "length": 59,
+    "version": 2.2,
+    "levelID": 83143127,
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/4oV6fgdo4Eo",
+    "showcaseVideo": "https://youtu.be/PZ6EjmesjVE",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
+  },
+  {
     "name": "Silent Acropolis unn 3 deaths, 99.98 accuracy",
     "id": "silent-acropolis-unn-3-deaths-99-98-accuracy",
     "player": "SeptaGon7",
@@ -1618,22 +1635,6 @@
     "showcaseVideo": "https://youtu.be/RWBEfS4mLbw&t=2177s",
     "tags": [
       "Level"
-    ]
-  },
-  {
-    "name": "Silent Acropolis unn 1-65%",
-    "id": "silent-acropolis-unn-1-65",
-    "player": "SeptaGon7",
-    "date": "2024-06-19",
-    "length": "59",
-    "version": "2.2",
-    "levelID": "83143127",
-    "submitter": "kyle1saurus",
-    "video": "https://youtu.be/mkcHD2b3UH8",
-    "showcaseVideo": "https://youtu.be/PZ6EjmesjVE",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
