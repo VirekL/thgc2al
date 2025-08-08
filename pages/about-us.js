@@ -37,8 +37,8 @@ export default function AboutUs() {
             <ul>
               <li><strong>Anceps</strong></li>
               <li><strong>Arcadie</strong></li>
-              <li><strong>kyle1saurus</strong></li>
               <li><strong>jak</strong></li>
+              <li><strong>zXdasfsa</strong></li>
             </ul>
             <h3>Tag Definitions</h3>
             <ul>
@@ -135,3 +135,4 @@ export default function AboutUs() {
     </>
   );
 }
+
