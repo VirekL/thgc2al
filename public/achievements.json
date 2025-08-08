@@ -12390,6 +12390,22 @@
     ]
   },
   {
+    "name": "Starlit Stroll",
+    "id": "starlit-stroll",
+    "player": "Nocta XI",
+    "length": 123,
+    "version": 2.2,
+    "video": "https://youtu.be/U7MM74dTXuI",
+    "showcaseVideo": "https://www.youtube.com/watch?v=sKs_tfeTXHo",
+    "date": "2025-02-22",
+    "submitter": "Anceps",
+    "levelID": 115380769,
+    "tags": [
+      "Level",
+      "Rated"
+    ]
+  },
+  {
     "name": "Trueffet",
     "id": "trueffet",
     "player": "Baeru",
