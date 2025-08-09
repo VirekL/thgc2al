@@ -2966,6 +2966,21 @@
     ]
   },
   {
+    "name": "Silent poltergeist",
+    "id": "silent-poltergeist",
+    "player": "Whizkid05",
+    "levelID": 13586257,
+    "date": "2025-01-29",
+    "length": 103,
+    "version": 2.2,
+    "video": "https://youtu.be/XQ_TZc7cnPs",
+    "showcaseVideo": "https://youtu.be/U64330GzbK0",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level"
+    ]
+  },
+  {
     "name": "I N J U R Y 74%",
     "id": "i-n-j-u-r-y-74",
     "player": "KYWY",
@@ -5088,21 +5103,6 @@
     "tags": [
       "Level",
       "Rated"
-    ]
-  },
-  {
-    "name": "Silent poltergeist",
-    "id": "silent-poltergeist",
-    "player": "Whizkid05",
-    "levelID": 13586257,
-    "date": "2025-01-29",
-    "length": 103,
-    "version": 2.2,
-    "video": "https://youtu.be/XQ_TZc7cnPs",
-    "showcaseVideo": "https://youtu.be/U64330GzbK0",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level"
     ]
   },
   {
@@ -13071,4 +13071,3 @@
     ]
   }
 ]
-
