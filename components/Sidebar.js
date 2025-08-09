@@ -151,7 +151,7 @@ export default function Sidebar() {
       <div style={{position: "relative", width: "100%", paddingBottom: "350px"}}>
         <iframe
           src="https://discord.com/widget?id=1122038339541934091&theme=dark"
-          style={{position: "absolute", top: 0, left: 0, width: "100%", height: "75%"}}
+          style={{position: "absolute", top: 0, left: 0, width: "100%", height: "50%"}}
           allowTransparency="true"
           frameBorder="0"
           sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
