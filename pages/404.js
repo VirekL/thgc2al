@@ -1,6 +1,17 @@
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 import Head from 'next/head';
 
 export default function Custom404() {
+  const router = useRouter();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      router.push('/');
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, [router]);
+
   return (
     <>
       <Head>
@@ -19,7 +30,7 @@ export default function Custom404() {
       </Head>
       <div className="notfound-container">
         <div className="notfound-title">404</div>
-        <div className="notfound-message">Page not found!</div>
+        <div className="notfound-message">Page not found! Redirecting...</div>
       </div>
     </>
   );
