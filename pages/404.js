@@ -35,19 +35,3 @@ export default function Custom404() {
     </>
   );
 }
-
-export async function getServerSideProps({ req }) {
-  const ua = req.headers['user-agent'] || '';
-  const isBot = /bot|crawl|slurp|spider/i.test(ua);
-
-  if (isBot) {
-    return {
-      redirect: {
-        destination: '/',
-        permanent: false,
-      },
-    };
-  }
-
-  return { props: {} };
-}
