@@ -262,14 +262,15 @@
     "name": "Sakupen circles (Old) 37-66%, 37-69%, 70%",
     "id": "sakupen-circles-old-37-66-37-69-70",
     "player": "ad3usgmd",
-    "length": "91",
-    "version": "2.2",
+    "length": 91,
+    "version": 2.2,
     "video": "https://youtu.be/QYs7UyGMrqw",
     "showcaseVideo": "https://youtu.be/WX5RCDxobSA",
     "date": "2025-06-27",
     "submitter": "TYATYAPKA",
-    "levelID": "10887708",
+    "levelID": 10887708,
     "tags": [
+      "Level",
       "Consistency",
       "CBF"
     ]
@@ -5587,13 +5588,14 @@
     "id": "superhatemeworld-144hz-mobile-94",
     "player": "Zafsa",
     "date": "2025-07-20",
-    "length": "72",
-    "version": "2.2",
-    "levelID": "57571983",
+    "length": 72,
+    "version": 2.2,
+    "levelID": 57571983,
     "video": "https://youtu.be/VPKDPKD2P-8",
     "showcaseVideo": "https://youtu.be/2EYDg9cnt5E",
     "submitter": "TYATYAPKA",
     "tags": [
+      "Level",
       "Low Hertz",
       "Mobile",
       "Progress",
@@ -6143,9 +6145,19 @@
     "id": "sonic-wave-infinity-120hz-mobile-24-100",
     "player": "Rotys",
     "date": "2025-07-05",
-    "length": "100",
-    "version": "2.2",
-    "levelID": "69685815"
+    "length": 100,
+    "version": 2.2,
+    "levelID": 69685815,
+    "video": "https://youtu.be/STqsq1C-s74",
+    "showcaseVideo": "https://youtu.be/QYd2YdKtj8Y",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "lava",
@@ -10695,9 +10707,19 @@
     "id": "zodiac-60hz-mobile-54-100",
     "player": "Bigthunder556",
     "date": "2024-11-17",
-    "length": "124",
-    "version": "2.2",
-    "levelID": "52374843"
+    "length": 124,
+    "version": 2.2,
+    "levelID": 52374843,
+    "video": "https://youtu.be/g-v2U-d5hVY",
+    "showcaseVideo": "https://youtu.be/CtUP_7wSUII",
+    "submitter": "jak",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "Zirconium Misery",
