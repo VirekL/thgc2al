@@ -1232,6 +1232,25 @@
     ]
   },
   {
+    "name": "Lithium 60hz Mobile 7-100%",
+    "id": "lithium-60hz-mobile-7-100",
+    "player": "Archermence",
+    "length": 113,
+    "version": 2.2,
+    "video": "https://youtu.be/6tOxAetxo1g?si=PGZcysXJU2OBjdfU",
+    "showcaseVideo": "https://youtu.be/IHqODLf_ZLY",
+    "date": "2025-08-10",
+    "submitter": "TYATYAPKA",
+    "levelID": 97364686,
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
+  },
+  {
     "name": "Bloodlust 72hz 95%",
     "id": "bloodlust-72hz-95",
     "player": "AGSEcho",
@@ -6987,14 +7006,14 @@
     ]
   },
   {
-    "name": "Azure Flare (polar) 39%",
-    "id": "azure-flare-polar-39",
+    "name": "Azure Flare (polar) 40%",
+    "id": "azure-flare-polar-40",
     "player": "polar",
-    "date": "2025-08-01",
+    "date": "2025-08-08",
     "length": 26,
     "version": 2.2,
-    "video": "https://youtu.be/fu8o8xunYKM",
-    "submitter": "TYATYAPKA",
+    "video": "https://youtu.be/AqcPnSpbxzQ?si=Bka_St-cPXnrG-DM",
+    "submitter": "polar",
     "tags": [
       "Level",
       "Progress"
@@ -9833,19 +9852,20 @@
     ]
   },
   {
-    "name": "Lotus Flower 60hz 58%",
-    "id": "lotus-flower-60hz-58",
-    "player": "Lavaclaw",
+    "name": "Lotus Flower 60hz Mobile 58%",
+    "id": "lotus-flower-60hz-mobile-58",
+    "player": "SanctumGD",
     "levelID": 75813671,
-    "date": "2021-11-21",
+    "date": "2025-08-11",
     "length": 53,
-    "version": 2.1,
-    "video": "https://youtu.be/hnmGCVRkxuo",
+    "version": 2.2,
+    "video": "https://youtu.be/C51EC_XMCzA?si=yVc0mF4C-nsM_TTx",
     "showcaseVideo": "https://youtu.be/yu_p61ch144",
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Low Hertz",
+      "Mobile",
       "Progress",
       "Rated"
     ]
