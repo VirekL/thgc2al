@@ -7601,6 +7601,20 @@
     ]
   },
   {
+    "name": "Blood Echo",
+    "id": "blood-echo",
+    "player": "swiborg",
+    "length": 81,
+    "version": 2.2,
+    "video": "https://youtu.be/fSvk4tLlQzQ?si=Klro5mdyJbti78rb",
+    "showcaseVideo": "https://youtu.be/OTVqy8n_dOU?si=YnnrkLxQFZIjR9Wq",
+    "date": "2024-11-18",
+    "levelID": 112242564,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
     "name": "Silent Oppenheimer 57-100%",
     "id": "silent-oppenheimer-57-100",
     "player": "Destro",
