@@ -39,6 +39,7 @@ export default function AboutUs() {
               <li><strong>Arcadie</strong></li>
               <li><strong>jak</strong></li>
               <li><strong>zXdasfsa</strong></li>
+              <li><strong>Glow</strong></li>
             </ul>
             <h3>Tag Definitions</h3>
             <ul>
@@ -135,4 +136,5 @@ export default function AboutUs() {
     </>
   );
 }
+
 
