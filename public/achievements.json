@@ -2861,6 +2861,20 @@
     ]
   },
   {
+    "name": "Defeated Circles",
+    "id": "defeated-circles",
+    "player": "Zoink",
+    "date": "2025-05-31",
+    "length": 60,
+    "version": 2.2,
+    "levelID": 120012581,
+    "video": "https://youtu.be/nU5AQPzd2YA",
+    "showcaseVideo": "https://youtu.be/R8BMscOkTrA",
+    "tags": [
+      "Level"
+    ]
+  },
+  {
     "name": "Sakupen Circles (Diamond)",
     "id": "sakupen-circles-diamond",
     "player": "Skylar",
@@ -3221,20 +3235,6 @@
     ]
   },
   {
-    "name": "Defeated Circles",
-    "id": "defeated-circles",
-    "player": "Zoink",
-    "date": "2025-05-31",
-    "length": "60",
-    "version": "2.2",
-    "levelID": "120012581",
-    "video": "https://youtu.be/nU5AQPzd2YA",
-    "showcaseVideo": "https://youtu.be/R8BMscOkTrA",
-    "tags": [
-      "Level"
-    ]
-  },
-  {
     "name": "CorroZ B",
     "id": "corroz-b",
     "player": "Diamond",
@@ -3353,21 +3353,6 @@
     "tags": [
       "Level",
       "Progress"
-    ]
-  },
-  {
-    "name": "Nautical Nebula",
-    "id": "nautical-nebula",
-    "player": "manu",
-    "levelID": 110891882,
-    "date": "2024-10-07",
-    "length": 76,
-    "version": 2.2,
-    "video": "https://youtu.be/JdmURAYP1-k",
-    "showcaseVideo": "https://youtu.be/f1PKnZWYoJQ",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level"
     ]
   },
   {
@@ -3711,6 +3696,21 @@
     "tags": [
       "Level",
       "Progress"
+    ]
+  },
+  {
+    "name": "Nautical Nebula",
+    "id": "nautical-nebula",
+    "player": "manu",
+    "levelID": 110891882,
+    "date": "2024-10-07",
+    "length": 76,
+    "version": 2.2,
+    "video": "https://youtu.be/JdmURAYP1-k",
+    "showcaseVideo": "https://youtu.be/f1PKnZWYoJQ",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level"
     ]
   },
   {
@@ -8843,6 +8843,21 @@
     ]
   },
   {
+    "name": "ROCKBOTTOM",
+    "id": "rockbottom",
+    "player": "ZazaGD",
+    "date": "2025-07-02",
+    "length": 64,
+    "version": 2.2,
+    "levelID": 122196131,
+    "video": "https://youtu.be/HAyxOJ1XuBk",
+    "showcaseVideo": "https://youtu.be/gA_icsg3HYs",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level"
+    ]
+  },
+  {
     "name": "Blooming Blossoms 67%",
     "id": "blooming-blossoms-67",
     "player": "piesy",
@@ -10120,21 +10135,6 @@
     "tags": [
       "Challenge",
       "Progress"
-    ]
-  },
-  {
-    "name": "ROCKBOTTOM",
-    "id": "rockbottom",
-    "player": "ZazaGD",
-    "date": "2025-07-02",
-    "length": 64,
-    "version": 2.2,
-    "levelID": 122196131,
-    "video": "https://youtu.be/HAyxOJ1XuBk",
-    "showcaseVideo": "https://youtu.be/gA_icsg3HYs",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level"
     ]
   },
   {
