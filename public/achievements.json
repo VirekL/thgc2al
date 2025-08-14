@@ -9596,20 +9596,6 @@
     ]
   },
   {
-    "name": "Silent Club Plus (Layout) 48%",
-    "id": "silent-club-plus-layout-48",
-    "player": "Whizkid05",
-    "date": "2023-04-22",
-    "length": 36,
-    "version": 2.1,
-    "submitter": "kyle1saurus",
-    "video": "https://x.com/TheWhizkid05/status/1649888034903539713",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Death Corridor Easy 16-100%",
     "id": "death-corridor-easy-16-100",
     "player": "KugelBlitZ",
@@ -10798,20 +10784,6 @@
       "CBF"
     ],
     "showcaseVideo": "https://www.youtube.com/watch?v=p2pM7qzVvf0"
-  },
-  {
-    "name": "Silent Club Plus (Layout) 43-100%",
-    "id": "silent-club-plus-layout-43-100",
-    "player": "Whizkid05",
-    "date": "2023-04-19",
-    "length": 51,
-    "version": 2.1,
-    "submitter": "Anceps",
-    "video": "https://youtu.be/Qig3y4tl0-I",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
   },
   {
     "name": "Henken",
@@ -12338,6 +12310,21 @@
     "tags": [
       "Level"
     ]
+  },
+  {
+    "name": "Silent Club Plus (Layout) 43-100%",
+    "id": "silent-club-plus-layout-43-100",
+    "player": "Whizkid05",
+    "date": "2023-04-19",
+    "length": 51,
+    "version": 2.1,
+    "submitter": "Anceps",
+    "video": "https://youtu.be/Qig3y4tl0-I",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "levelID": 0
   },
   {
     "name": "Sonic Wave 1.5x 28-96%",
