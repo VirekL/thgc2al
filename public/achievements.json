@@ -12542,6 +12542,21 @@
     ]
   },
   {
+    "name": "VOID",
+    "id": "void",
+    "player": "Whizkid05",
+    "length": 64,
+    "version": 2.1,
+    "video": "https://www.youtube.com/watch?v=kN1FUoucoSc",
+    "showcaseVideo": "https://www.youtube.com/watch?v=ng-VeF1O5aQ",
+    "date": "2024-02-17",
+    "levelID": 100990392,
+    "tags": [
+      "Level",
+      "Rated"
+    ]
+  },
+  {
     "name": "Destruction 19",
     "id": "destruction-19",
     "player": "razta4ax",
