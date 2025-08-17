@@ -310,6 +310,22 @@
     ]
   },
   {
+    "name": "VSC x2 60%, 66%",
+    "id": "vsc-x2-60-66",
+    "player": "Nev",
+    "length": 53,
+    "version": 2.2,
+    "video": "https://youtu.be/3mJc6oMn_q4?si=iAB7uDZthj9kAZ37",
+    "date": "2025-08-16",
+    "submitter": "Emp",
+    "levelID": 0,
+    "thumbnail": "https://tjcsucht.net/levelthumbs/60805571.png",
+    "tags": [
+      "Level",
+      "Consistency"
+    ]
+  },
+  {
     "name": "Nullscapes",
     "id": "nullscapes",
     "player": "Zoink",
@@ -1214,7 +1230,9 @@
     "tags": [
       "Level",
       "Progress"
-    ]
+    ],
+    "levelID": 0,
+    "thumbnail": "https://tjcsucht.net/levelthumbs/60805571.png"
   },
   {
     "name": "Acheron (Loliklee) 41-100%",
