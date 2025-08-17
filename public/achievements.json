@@ -63,6 +63,24 @@
     "levelID": "119550490"
   },
   {
+    "name": "GRIEF 80%",
+    "id": "grief-80",
+    "player": "Doggie",
+    "video": "https://youtu.be/5gx07ZNiuJY",
+    "showcaseVideo": "https://youtu.be/1GolW8jKK7k",
+    "tags": [
+      "Level",
+      "Progress",
+      "2P",
+      "CBF"
+    ],
+    "date": "2024-11-24",
+    "length": "134",
+    "version": "2.2",
+    "submitter": "Swift",
+    "thumbnail": "https://tjcsucht.net/levelthumbs/102686349.png"
+  },
+  {
     "name": "GRIEF 25-100%",
     "id": "grief-25-100",
     "player": "Doggie",
@@ -97,24 +115,6 @@
     "length": "116",
     "version": "2.2",
     "thumbnail": "https://tjcsucht.net/levelthumbs/103524537.png"
-  },
-  {
-    "name": "GRIEF 80%",
-    "id": "grief-80",
-    "player": "Doggie",
-    "video": "https://youtu.be/5gx07ZNiuJY",
-    "showcaseVideo": "https://youtu.be/1GolW8jKK7k",
-    "tags": [
-      "Level",
-      "Progress",
-      "2P",
-      "CBF"
-    ],
-    "date": "2024-11-24",
-    "length": "134",
-    "version": "2.2",
-    "submitter": "Swift",
-    "thumbnail": "https://tjcsucht.net/levelthumbs/102686349.png"
   },
   {
     "name": "GRIEF madness 85%",
@@ -309,7 +309,7 @@
       "Rated"
     ]
   },
-  {
+{
     "name": "VSC x2 60%, 66%",
     "id": "vsc-x2-60-66",
     "player": "Nev",
@@ -388,6 +388,37 @@
     "thumbnail": "https://i.ytimg.com/vi/i8TGgQNAzDg/maxresdefault.jpg"
   },
   {
+    "name": "Thinking Space II (Old) 40-100%",
+    "id": "thinking-space-ii-old-40-100",
+    "player": "Zoink",
+    "date": "2025-02-18",
+    "length": 45,
+    "version": 2.2,
+    "video": "https://www.youtube.com/live/6a1C9HJVA2w?t=6960",
+    "showcaseVideo": "https://youtu.be/F05aMR0F6YM",
+    "submitter": "jak",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
+    "name": "KOCMOC UNLEASHED 14-78%",
+    "id": "kocmoc-unleashed-14-78",
+    "player": "Arshadow",
+    "date": "2025-05-09",
+    "length": 38,
+    "version": 2.2,
+    "video": "https://youtu.be/GFzBnEWr8ZM",
+    "showcaseVideo": "https://youtu.be/bYswI_NVbQ4",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "levelID": 0
+  },
+  {
     "name": "Heliopolis 60-100%",
     "id": "heliopolis-60-100",
     "player": "Thnnder",
@@ -447,21 +478,6 @@
     "video": "https://www.youtube.com/live/R-hg3r25hMs?t=13963",
     "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
     "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
-    "name": "Thinking Space II (Old) 40-100%",
-    "id": "thinking-space-ii-old-40-100",
-    "player": "Zoink",
-    "date": "2025-02-18",
-    "length": 45,
-    "version": 2.2,
-    "video": "https://www.youtube.com/live/6a1C9HJVA2w?t=6960",
-    "showcaseVideo": "https://youtu.be/F05aMR0F6YM",
-    "submitter": "jak",
     "tags": [
       "Level",
       "Progress"
@@ -794,6 +810,22 @@
     ]
   },
   {
+    "name": "Amethyst (Trick) 61%",
+    "id": "amethyst-trick-61",
+    "player": "Trick",
+    "date": "2024-11-11",
+    "length": 54,
+    "version": 2.2,
+    "levelID": 119530462,
+    "video": " https://youtu.be/r4mCMyZgYI8",
+    "showcaseVideo": "https://youtu.be/iFBkJFUydkE",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Avernus",
     "id": "avernus",
     "player": "Zoink",
@@ -1013,6 +1045,22 @@
     "showcaseVideo": "https://youtu.be/h14lmGH31_M?si=0Dn8l73E5iRFCMIx"
   },
   {
+    "name": "KOCMOC UNLEASHED 33-91%",
+    "id": "kocmoc-unleashed-33-91",
+    "player": "Arshadow",
+    "date": "2025-05-09",
+    "length": 38,
+    "version": 2.2,
+    "video": "https://youtu.be/GFzBnEWr8ZM?t=54",
+    "showcaseVideo": "https://youtu.be/bYswI_NVbQ4",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "levelID": 0
+  },
+  {
     "name": "Heliopolis 17%",
     "id": "heliopolis-17",
     "player": "Thnnder",
@@ -1139,22 +1187,6 @@
     ]
   },
   {
-    "name": "Amethyst (Trick) 61%",
-    "id": "amethyst-trick-61",
-    "player": "Trick",
-    "date": "2024-11-11",
-    "length": 54,
-    "version": 2.2,
-    "levelID": 119530462,
-    "video": " https://youtu.be/r4mCMyZgYI8",
-    "showcaseVideo": "https://youtu.be/iFBkJFUydkE",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Silent Acropolis unn 66%",
     "id": "silent-acropolis-unn-66",
     "player": "SeptaGon7",
@@ -1230,9 +1262,7 @@
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": 0,
-    "thumbnail": "https://tjcsucht.net/levelthumbs/60805571.png"
+    ]
   },
   {
     "name": "Acheron (Loliklee) 41-100%",
@@ -1304,21 +1334,6 @@
     ]
   },
   {
-    "name": "KOCMOC UNLEASHED 33-91%",
-    "id": "kocmoc-unleashed-33-91",
-    "player": "Arshadow",
-    "date": "2025-05-09",
-    "length": 38,
-    "version": 2.2,
-    "video": "https://youtu.be/GFzBnEWr8ZM?t=54",
-    "showcaseVideo": "https://youtu.be/bYswI_NVbQ4",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Aquamarine (deco) 70%",
     "id": "aquamarine-deco-70",
     "player": "ROZE GD",
@@ -1346,21 +1361,6 @@
     "submitter": "Exiled_Shade",
     "tags": [
       "Challenge"
-    ]
-  },
-  {
-    "name": "KOCMOC UNLEASHED 14-78%",
-    "id": "kocmoc-unleashed-14-78",
-    "player": "Arshadow",
-    "date": "2025-05-09",
-    "length": 38,
-    "version": 2.2,
-    "video": "https://youtu.be/GFzBnEWr8ZM",
-    "showcaseVideo": "https://youtu.be/bYswI_NVbQ4",
-    "submitter": "Exiled_Shade",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
