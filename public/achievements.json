@@ -4116,21 +4116,6 @@
     ]
   },
   {
-    "name": "Infinite Chaos",
-    "id": "infinite-chaos",
-    "player": "Victurkey",
-    "date": "2025-05-26",
-    "length": "140",
-    "version": "2.2",
-    "levelID": "119689515",
-    "video": "https://youtu.be/wOMVERxU5IA",
-    "showcaseVideo": "https://youtu.be/MQE8pRKzW0Q",
-    "submitter": "Exiled_Shade",
-    "tags": [
-      "Level"
-    ]
-  },
-  {
     "name": "Verdant Landscape 75hz 72%",
     "id": "verdant-landscape-75hz-72",
     "player": "wwdonut",
@@ -7646,6 +7631,21 @@
     ]
   },
   {
+    "name": "Infinite Chaos",
+    "id": "infinite-chaos",
+    "player": "Victurkey",
+    "date": "2025-05-26",
+    "length": "140",
+    "version": "2.2",
+    "levelID": "119689515",
+    "video": "https://youtu.be/wOMVERxU5IA",
+    "showcaseVideo": "https://youtu.be/MQE8pRKzW0Q",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Level"
+    ]
+  },
+  {
     "name": "Escalator 61-100%",
     "id": "escalator-61-100",
     "player": "teraaa",
@@ -10197,6 +10197,21 @@
     ]
   },
   {
+    "name": "Plastic Death",
+    "id": "plastic-death",
+    "player": "zLevii",
+    "levelID": 112788538,
+    "date": "2024-12-05",
+    "length": 224,
+    "version": 2.2,
+    "video": "https://youtu.be/6LhxJhOgJEw",
+    "showcaseVideo": "https://youtu.be/QaSPgwCai9w",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level"
+    ]
+  },
+  {
     "name": "60hz Mobile",
     "id": "60hz-mobile",
     "player": "ScorchBTD",
@@ -10286,21 +10301,6 @@
     "tags": [
       "Level",
       "Progress"
-    ]
-  },
-  {
-    "name": "Plastic Death",
-    "id": "plastic-death",
-    "player": "zLevii",
-    "levelID": 112788538,
-    "date": "2024-12-05",
-    "length": 224,
-    "version": 2.2,
-    "video": "https://youtu.be/6LhxJhOgJEw",
-    "showcaseVideo": "https://youtu.be/QaSPgwCai9w",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level"
     ]
   },
   {
@@ -13028,6 +13028,21 @@
       "Progress"
     ]
   },
+	{
+		"name": "paranoia",
+		"id": "paranoia",
+		"player": "Amplitron",
+		"length": "74",
+		"version": "2.2",
+		"video": "https://youtu.be/Aw83i8Zmh_0?si=vxOI5ZAYAv95ZzjG",
+		"date": "2024-12-22",
+		"showcaseVideo": "https://youtu.be/rg06lq4HL2c?si=MvnNZ3Mt2NjfwYoF",
+		"levelID": "113364415",
+    "submitter": "kyle1saurus",
+		"tags": [
+			"Level"
+		]
+	},
   {
     "name": "Kenos",
     "id": "kenos",
