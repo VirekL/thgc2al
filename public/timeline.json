@@ -635,7 +635,7 @@
         "id": "bloodlust-97",
         "name": "Bloodlust 97%",
         "player": "knobbelboy",
-		"submitter":"Atavoidirc",
+		"submitter":"atavoidirc",
         "thumbnail": "https://i.ytimg.com/vi/wNSSwERjDT4/maxresdefault.jpg",
         "tags": [
             "Progress",
@@ -780,8 +780,8 @@
         "showcaseVideo": "https://youtu.be/Js7TtZ99J04"
     },
 	{
-        "id": "the-Ultimate Phase (oldest)",
-        "name": "The Ultimate Phase (oldest)"
+        "id": "the-Ultimate Phase (Old)",
+        "name": "The Ultimate Phase (Old)",
         "player": "GMDElite",
         "thumbnail": "https://tjcsucht.net/levelthumbs/7174110.png",
         "tags": [
@@ -1379,5 +1379,3 @@
         "video": "https://youtu.be/727pUHwWSVg"
     }
 ]
-
-
