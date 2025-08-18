@@ -3660,13 +3660,12 @@
     "date": "2025-08-03",
     "length": 150,
     "version": 2.2,
-    "video": "https://www.tiktok.com/@agent__.009/video/7533730729759444237?_r=1&_t=ZS-8yYzNF9nEYi",
+    "video": "https://youtube.com/shorts/itGXwSh91bI",
     "showcaseVideo": "https://www.youtube.com/watch?v=c5qQh7h0zYM",
     "tags": [
       "Level",
       "Progress"
     ],
-    "levelID": 0,
     "submitter": "kyle1saurus"
   },
   {
@@ -5233,8 +5232,8 @@
     "length": "9",
     "version": "2.2",
     "levelID": "123070864",
-    "video": "https://youtu.be/WeqKiZTqc1A?t=30",
-    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
+    "video": "https://youtu.be/VZ3HpUBSz2k",
+    "showcaseVideo": "https://youtu.be/KDxOtDFwajE",
     "submitter": "Emp",
     "tags": [
       "Level",
@@ -11391,8 +11390,8 @@
     ]
   },
   {
-    "name": "Lunatic Eyes 71%",
-    "id": "lunatic-eyes-71",
+    "name": "Lunatic Eyes (Old) 71%",
+    "id": "lunatic-eyes-old-71",
     "player": "DNM121",
     "date": "2025-04-24",
     "length": 51,
@@ -13127,5 +13126,6 @@
     ]
   }
 ]
+
 
 
