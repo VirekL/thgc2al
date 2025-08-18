@@ -1,7 +1,7 @@
 [
     {
         "id": "grief-56-100-67",
-        "name": "GRIEF 56-100% + 67%",
+        "name": "GRIEF 56-100%, 67%",
         "player": "Doggie",
         "thumbnail": "https://tjcsucht.net/levelthumbs/103524537.png",
         "tags": [
@@ -29,23 +29,6 @@
         "date": "2025-02-13",
         "video": "https://www.youtube.com/live/_hsc3cvQIn4?t=3546",
         "showcaseVideo": "https://youtu.be/F05aMR0F6YM"
-    },
-    {
-        "id": "grief-17-92",
-        "name": "GRIEF 17-92%",
-        "player": "Doggie",
-        "thumbnail": "https://tjcsucht.net/levelthumbs/103311946.png",
-        "tags": [
-            "CBF",
-            "2P",
-            "Level",
-            "Progress"
-        ],
-        "length": "116",
-        "version": "2.2",
-        "date": "2025-01-19",
-        "video": "https://youtu.be/ssE2G3-y5dE",
-        "showcaseVideo": "https://youtu.be/bQXnREyaO34"
     },
     {
         "id": "grief-80",
@@ -1379,3 +1362,4 @@
         "video": "https://youtu.be/727pUHwWSVg"
     }
 ]
+
