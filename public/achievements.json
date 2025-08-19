@@ -350,6 +350,7 @@
     "version": 2.2,
     "video": "https://youtu.be/9V8mSuYmgOU",
     "showcaseVideo": "https://m.youtube.com/watch?si=rcNNt1_lbY9uXLOx&v=3dKj12cQSII&feature=youtu.be",
+	"thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/subsuming-vortex-renn241-1.webp",
     "submitter": "goofygdplayer_",
     "tags": [
       "Level",
@@ -411,12 +412,12 @@
     "version": 2.2,
     "video": "https://youtu.be/GFzBnEWr8ZM",
     "showcaseVideo": "https://youtu.be/bYswI_NVbQ4",
+	"thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/kocmoc-unleashed1.webp",
     "submitter": "Exiled_Shade",
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": 0
+    ]
   },
   {
     "name": "Heliopolis 60-100%",
@@ -821,6 +822,7 @@
     "levelID": 119530462,
     "video": " https://youtu.be/r4mCMyZgYI8",
     "showcaseVideo": "https://youtu.be/iFBkJFUydkE",
+	"thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/amethyst-trick2.avif",
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
@@ -1056,6 +1058,7 @@
     "version": 2.2,
     "video": "https://youtu.be/GFzBnEWr8ZM?t=54",
     "showcaseVideo": "https://youtu.be/bYswI_NVbQ4",
+	"thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/kocmoc-unleashed1.webp",
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
@@ -1439,6 +1442,7 @@
     "version": 2.2,
     "video": "https://youtu.be/8_TjdTMcr-0",
     "showcaseVideo": "https://youtu.be/NDgTSUSu8-4",
+	"thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/kocmoc-unleashed1.webp",
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
@@ -1468,6 +1472,7 @@
     "version": 2.2,
     "video": "https://youtu.be/8_TjdTMcr-0",
     "showcaseVideo": "https://youtu.be/NDgTSUSu8-4",
+	"thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/kocmoc-unleashed1.webp",
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
@@ -13149,6 +13154,7 @@
     ]
   }
 ]
+
 
 
 
