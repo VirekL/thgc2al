@@ -25,6 +25,7 @@
     "version": "2.2",
     "video": "https://youtu.be/CELNmHwln_c",
     "showcaseVideo": "https://www.youtube.com/watch?v=7xZ-xgeDyuc",
+	"thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/thinking-space-ii2.webp",
     "date": "2025-05-24",
     "tags": [
       "Level"
@@ -39,6 +40,7 @@
     "version": "2.2",
     "video": "https://www.youtube.com/live/_hsc3cvQIn4?t=3546",
     "showcaseVideo": "https://youtu.be/F05aMR0F6YM",
+	"thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/thinking-space-ii1.webp",
     "date": "2025-02-13",
     "tags": [
       "Level",
@@ -399,6 +401,7 @@
     "version": 2.2,
     "video": "https://www.youtube.com/live/6a1C9HJVA2w?t=6960",
     "showcaseVideo": "https://youtu.be/F05aMR0F6YM",
+	"thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/thinking-space-ii3.webp",
     "submitter": "jak",
     "tags": [
       "Level",
@@ -13159,6 +13162,7 @@
     ]
   }
 ]
+
 
 
 
