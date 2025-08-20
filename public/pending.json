@@ -18,6 +18,23 @@
 		]
 	},
 	{
+	"name": "Time Lapse 144hz Mobile 64%",
+		"id": "time-lapse-144hz-mobile-64",
+		"player": "Mateex",
+		"length": "46",
+		"version": "2.2",
+		"video": "https://youtu.be/SgybWTuvWb4",
+		"date": "2025-08-05",
+		"showcaseVideo": "https://www.youtube.com/watch?v=SGlmK7YVLGY",
+		"levelID": "97705490",
+		"tags": [
+			"Level",
+			"Progress",
+			"Mobile",
+			"Low Hertz"
+		]
+	},
+	{
 	"name": "Sweeping Demon 2 (Taiago) 62%",
     "id": "sweeping-demon-2-taiago-62",
     "player": "Taiago",
