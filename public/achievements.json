@@ -33,19 +33,21 @@
     "levelID": "119544028"
   },
   {
-    "name": "Thinking Space II (Old) 77%",
-    "id": "thinking-space-ii-old-77",
+    "name": "Thinking Space II (Old) 79%",
+    "id": "thinking-space-ii-old-79",
     "player": "Zoink",
-    "length": "61",
-    "version": "2.2",
-    "video": "https://www.youtube.com/live/_hsc3cvQIn4?t=3546",
+    "length": 65,
+    "version": 2.2,
+    "video": "https://youtu.be/mnaIfSOxurY",
     "showcaseVideo": "https://youtu.be/F05aMR0F6YM",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/thinking-space-ii1.webp",
-    "date": "2025-02-13",
+    "date": "2025-02-25",
     "tags": [
       "Level",
       "Progress"
-    ]
+    ],
+    "levelID": 0,
+    "submitter": "Radiator"
   },
   {
     "name": "Amethyst",
@@ -213,6 +215,40 @@
       "Level",
       "Progress"
     ]
+  },
+  {
+    "name": "KOCMOC UNLEASHED 19-91%",
+    "id": "kocmoc-unleashed-19-91",
+    "player": "Arshadow",
+    "date": "2025-08-19",
+    "length": 50,
+    "version": 2.2,
+    "video": "https://youtu.be/9p8gPt7704c",
+    "showcaseVideo": "https://youtu.be/bYswI_NVbQ4",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/kocmoc-unleashed1.webp",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "levelID": 0
+  },
+  {
+    "name": "FLAMEWALL 24-100%",
+    "id": "flamewall-24-100",
+    "player": "Cuatrocientos",
+    "video": "https://youtu.be/rOIeaaJdYYs",
+    "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "date": "2025-08-19",
+    "length": 242,
+    "version": 2.2,
+    "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg",
+    "submitter": "jak",
+    "levelID": 0
   },
   {
     "name": "Tidal Wave buffed",
@@ -1055,23 +1091,6 @@
     "showcaseVideo": "https://youtu.be/h14lmGH31_M?si=0Dn8l73E5iRFCMIx"
   },
   {
-    "name": "KOCMOC UNLEASHED 33-91%",
-    "id": "kocmoc-unleashed-33-91",
-    "player": "Arshadow",
-    "date": "2025-05-09",
-    "length": 38,
-    "version": 2.2,
-    "video": "https://youtu.be/GFzBnEWr8ZM?t=54",
-    "showcaseVideo": "https://youtu.be/bYswI_NVbQ4",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/kocmoc-unleashed1.webp",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
-    ],
-    "levelID": 0
-  },
-  {
     "name": "Heliopolis 17%",
     "id": "heliopolis-17",
     "player": "Thnnder",
@@ -1088,22 +1107,6 @@
     ]
   },
   {
-    "name": "FLAMEWALL 37-100%",
-    "id": "flamewall-37-100",
-    "player": "Cuatrocientos",
-    "video": "https://youtu.be/MhrfQgaL45Q",
-    "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
-    "tags": [
-      "Level",
-      "Progress"
-    ],
-    "date": "2025-03-29",
-    "length": "242",
-    "version": "2.2",
-    "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg",
-    "submitter": "kyle1saurus"
-  },
-  {
     "name": "Heliopolis (Abdieldevil) 19%",
     "id": "heliopolis-abdieldevil-19",
     "player": "Abdieldevil",
@@ -1118,6 +1121,23 @@
       "Level",
       "Progress"
     ]
+  },
+  {
+    "name": "Heliopolis (Garbag) 19%",
+    "id": "heliopolis-garbag-19",
+    "player": "Garbag",
+    "date": "2025-08-06",
+    "length": 30,
+    "version": 2.2,
+    "video": "https://youtu.be/1LoJoDi1EVI",
+    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "levelID": 0
   },
   {
     "name": "Blue Avernus 88%",
@@ -2073,6 +2093,22 @@
     ]
   },
   {
+    "name": "Unnerfed Diabolic ClubStep",
+    "id": "unnerfed-diabolic-clubstep",
+    "player": "Sevant",
+    "date": "2025-08-08",
+    "length": 87,
+    "version": 2.2,
+    "levelID": 78149361,
+    "video": "https://youtu.be/WHOfO0OxbvM",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "CBF"
+    ],
+    "showcaseVideo": "https://youtu.be/AgQeRMZw-t4?si=bXiAEgcUSGTzf0ii"
+  },
+  {
     "name": "Slaughterhouse (Unfixed)",
     "id": "slaughterhouse-unfixed",
     "player": "Zoink",
@@ -2210,6 +2246,25 @@
     ],
     "levelID": 0,
     "showcaseVideo": "https://www.youtube.com/watch?v=l6poOVWISJA"
+  },
+  {
+    "name": "Lithium 60hz Mobile 87%",
+    "id": "lithium-60hz-mobile-87",
+    "player": "Archermence",
+    "date": "2025-08-12",
+    "length": 100,
+    "version": 2.2,
+    "levelID": 97364686,
+    "video": "https://youtu.be/eCFJy_JHApc",
+    "showcaseVideo": "https://youtu.be/IHqODLf_ZLY",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
   },
   {
     "name": "Acheron 60hz 69-100%",
@@ -4146,22 +4201,6 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level"
-    ]
-  },
-  {
-    "name": "Heliopolis (Garbag) 17%",
-    "id": "heliopolis-garbag-17",
-    "player": "Garbag",
-    "date": "2025-07-18",
-    "length": "16",
-    "version": "2.2",
-    "video": "https://youtu.be/XeFwkfX_17g",
-    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -6435,25 +6474,6 @@
       "Level",
       "Progress",
       "2P"
-    ]
-  },
-  {
-    "name": "Lithium 60hz Mobile 73%",
-    "id": "lithium-60hz-mobile-73",
-    "player": "Archermence",
-    "date": "2025-05-15",
-    "length": "84",
-    "version": "2.2",
-    "levelID": "97364686",
-    "video": "https://youtu.be/x3Znu-HbnwU",
-    "showcaseVideo": "https://youtu.be/IHqODLf_ZLY",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Progress",
-      "Rated"
     ]
   },
   {
@@ -9597,6 +9617,21 @@
     ]
   },
   {
+    "name": "BREAKCORE",
+    "id": "breakcore",
+    "player": "breakcore11",
+    "length": 64,
+    "version": 2.2,
+    "video": "https://youtu.be/_H3KOVLE6gs",
+    "showcaseVideo": "https://youtu.be/g4wbPz7b3YE",
+    "date": "2025-07-27",
+    "submitter": "goofygdplayer",
+    "levelID": 123674931,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
     "name": "Peaceful Mode",
     "id": "peaceful-mode",
     "player": "SoggyDash",
@@ -11886,16 +11921,16 @@
     "showcaseVideo": "https://www.youtube.com/watch?v=mdJbQHJS1CA"
   },
   {
-    "name": "626c7572 48%",
-    "id": "626c7572-48",
+    "name": "626c7572 51%",
+    "id": "626c7572-51",
     "player": "Hellfire",
     "levelID": 113790443,
-    "date": "2025-05-14",
-    "length": 8,
+    "date": "2025-08-20",
+    "length": 10,
     "version": 2.2,
-    "video": "https://youtu.be/TpY-rLSEbc0",
+    "video": "https://youtu.be/Q5djPJ7UN8o",
     "showcaseVideo": "https://youtu.be/9kOipP0IxTU",
-    "submitter": "kyle1saurus",
+    "submitter": "TYATYAPKA",
     "tags": [
       "Challenge",
       "Progress"
@@ -12192,22 +12227,6 @@
       "Low Hertz",
       "Progress",
       "Rated"
-    ]
-  },
-  {
-    "name": "Unnerfed Diabolic ClubStep 74%",
-    "id": "unnerfed-diabolic-clubstep-74",
-    "player": "Sevant",
-    "date": "2025-06-17",
-    "length": "67",
-    "version": "2.2",
-    "levelID": "78149361",
-    "video": "https://youtu.be/EzluIaZ6w3Q",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress",
-      "CBF"
     ]
   },
   {
@@ -13099,6 +13118,21 @@
       "Mobile",
       "Progress",
       "Rated"
+    ]
+  },
+  {
+    "name": "Sightless Snowstorm 42-93%",
+    "id": "sightless-snowstorm-42-93",
+    "player": "Evo_GD",
+    "length": 40,
+    "version": 2.2,
+    "video": "https://youtu.be/RcozJDBGhXM",
+    "date": "2025-08-14",
+    "submitter": "kyle1saurus",
+    "levelID": 0,
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
