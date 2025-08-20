@@ -18,6 +18,54 @@
 		]
 	},
 	{
+	"name": "FLAMEWALL 24-100%",
+    "id": "flamewall-24-100",
+    "player": "Cuatrocientos",
+    "length": "306",
+    "version": "2.2",
+    "video": "https://youtu.be/rOIeaaJdYYs",
+    "showcaseVideo": "https://www.youtube.com/watch?v=c5qQh7h0zYM",
+	"thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/flamewall-unbuffed2.webp",
+    "date": "2025-08-19",
+	"submitter": "jak",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
+	"name": "KOCMOC UNLEASHED 19-91%",
+    "id": "kocmoc-unleashed-19-91",
+    "player": "Arshadow",
+    "date": "2025-08-19",
+    "length": "50",
+    "version": 2.2,
+    "video": "https://youtu.be/9p8gPt7704c",
+    "showcaseVideo": "https://youtu.be/bYswI_NVbQ4",
+	"thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/kocmoc-unleashed1.webp",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
+	"name": "FLAMEWALL 24-70%, 24-100%",
+    "id": "flamewall-24-70-24-100",
+    "player": "Cuatrocientos",
+    "length": "600",
+    "version": "2.2",
+    "video": "https://www.youtube.com/live/4Dl3yv01Zx4?t=4168",
+    "showcaseVideo": "https://www.youtube.com/watch?v=c5qQh7h0zYM",
+	"thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/flamewall-unbuffed2.webp",
+	"submitter": "kyle1saurus",
+    "date": "2025-08-19",
+    "tags": [
+      "Level",
+      "Consistency"
+    ]
+  },
+  {
 		"name": "Ouroboros 60hz Mobile 27-100%, 32%",
 		"id": "ouroboros-60hz-mobile-27-100-32",
 		"player": "Jastro",
