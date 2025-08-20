@@ -2118,14 +2118,15 @@
     ]
   },
   {
-    "name": "Blue Slaughterhouse",
-    "id": "blue-slaughterhouse",
+    "name": "Blue Slaughterhouse (The_Bat0)",
+    "id": "blue-slaughterhouse-the-bat0",
     "player": "The_Bat0",
     "levelID": 88104589,
     "date": "2025-04-03",
     "length": 70,
     "version": 2.2,
     "video": " https://youtu.be/QFGAZJ5IFS4",
+	"showcaseVideo": "https://youtu.be/vAcru8i0A0M",
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
@@ -2141,6 +2142,7 @@
     "length": 70,
     "version": 2.2,
     "video": " https://youtu.be/BXHCVB2ZRIw",
+	"showcaseVideo": "https://youtu.be/R5GoIVEqmo8",
     "submitter": "kyle1saurus",
     "tags": [
       "Level"
@@ -2155,6 +2157,7 @@
     "length": 70,
     "version": 2.2,
     "video": "https://youtu.be/Ond52P3gE9I",
+	"showcaseVideo": "https://youtu.be/F4TUsKuXWg4",
     "submitter": "kyle1saurus",
     "tags": [
       "Level"
@@ -2169,6 +2172,7 @@
     "length": 70,
     "version": 2.2,
     "video": "https://youtu.be/k0h3tliGlEI",
+	"showcaseVideo": "https://youtu.be/oNY9im0870I",
     "submitter": "kyle1saurus",
     "tags": [
       "Level"
@@ -2183,6 +2187,7 @@
     "length": 70,
     "version": 2.2,
     "video": " https://youtu.be/FN_6rxa8oyg",
+	"showcaseVideo": "https://youtu.be/J--tYr5HbQ0",
     "submitter": "kyle1saurus",
     "tags": [
       "Level"
@@ -4010,6 +4015,7 @@
     "length": 97,
     "version": 2.2,
     "video": "https://youtu.be/mXoaMklDNmg",
+	"showcaseVideo": "https://youtu.be/ENc_q7C7W04",
     "submitter": "TYATYAPKA",
     "tags": [
       "Level"
@@ -13167,6 +13173,7 @@
     ]
   }
 ]
+
 
 
 
