@@ -55,25 +55,6 @@
     ]
   },
   {
-	"name": "Lithium 60hz Mobile 87%",
-    "id": "lithium-60hz-mobile-87",
-    "player": "Archermence",
-    "length": 100,
-    "version": 2.2,
-    "video": "https://youtu.be/eCFJy_JHApc",
-    "showcaseVideo": "https://youtu.be/IHqODLf_ZLY",
-    "date": "2025-08-12",
-    "submitter": "kyle1saurus",
-    "levelID": 97364686,
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Progress",
-      "Rated"
-    ]
-  },
-  {
 	"name": "Herr Machine 40-90%",
     "id": "herr-machine-40-90",
     "player": "GreenZz",
@@ -84,7 +65,7 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
-      "Progress",
+      "Progress"
     ]
   },
   {
@@ -162,20 +143,6 @@
     ]
   },
   {
-	"name": "Sightless Snowstorm 42-93%",
-    "id": "sightless-snowstorm-42-93",
-    "player": "Evo_GD",
-    "date": "2025-08-14",
-    "length": "40",
-    "version": "2.2",
-    "video": "https://youtu.be/RcozJDBGhXM",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
 	"name": "Sightless Snowstorm 78-100%",
     "id": "sightless-snowstorm-78-100",
     "player": "Evo_GD",
@@ -218,21 +185,6 @@
     ]
   },
   {
-	"name": "Unnerfed Diabolic ClubStep",
-    "id": "unnerfed-diabolic-clubstep",
-    "player": "Sevant",
-    "date": "2025-08-08",
-    "length": "87",
-    "version": "2.2",
-    "levelID": "78149361",
-    "video": "https://youtu.be/WHOfO0OxbvM",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "CBF"
-    ]
-  },
-  {
 	"name": "Exasperation 65-100%",
     "id": "exasperation-65-100",
     "player": "Zoink",
@@ -263,38 +215,6 @@
       "Level",
 	  "Low Hertz",
       "Rated"
-    ]
-  },
-  {
-	"name": "Thinking Space II (Old) 79%",
-    "id": "thinking-space-ii-old-79",
-    "player": "Zoink",
-    "length": "65",
-    "version": "2.2",
-    "video": "https://youtu.be/mnaIfSOxurY",
-    "showcaseVideo": "https://youtu.be/F05aMR0F6YM",
-	"thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/thinking-space-ii1.webp",
-    "date": "2025-02-25",
-	"submitter": "Radiator",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
-	"name": "626c7572 51%",
-    "id": "626c7572-51",
-    "player": "Hellfire",
-    "levelID": 113790443,
-    "date": "2025-08-20",
-    "length": 10,
-    "version": 2.2,
-    "video": "https://youtu.be/Q5djPJ7UN8o",
-    "showcaseVideo": "https://youtu.be/9kOipP0IxTU",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Challenge",
-      "Progress"
     ]
   },
   {
@@ -347,53 +267,6 @@
       "Mobile",
       "Progress",
       "Rated"
-    ]
-  },
-  {
-    "id": "heliopolis-garbag-19",
-    "player": "Garbag",
-    "date": "2025-08-06",
-    "length": "30",
-    "version": "2.2",
-    "video": "https://youtu.be/1LoJoDi1EVI",
-    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
-	"thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
-	"name": "FLAMEWALL 24-100%",
-    "id": "flamewall-24-100",
-    "player": "Cuatrocientos",
-    "length": "306",
-    "version": "2.2",
-    "video": "https://youtu.be/rOIeaaJdYYs",
-    "showcaseVideo": "https://www.youtube.com/watch?v=c5qQh7h0zYM",
-	"thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/flamewall-unbuffed2.webp",
-    "date": "2025-08-19",
-	"submitter": "jak",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
-	"name": "KOCMOC UNLEASHED 19-91%",
-    "id": "kocmoc-unleashed-19-91",
-    "player": "Arshadow",
-    "date": "2025-08-19",
-    "length": "50",
-    "version": 2.2,
-    "video": "https://youtu.be/9p8gPt7704c",
-    "showcaseVideo": "https://youtu.be/bYswI_NVbQ4",
-	"thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/kocmoc-unleashed1.webp",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -521,21 +394,6 @@
 		"submitter": "subabo",
 		"tags": [
 			"Progress",
-			"Level"
-		]
-	},
-	{
-		"name": "BREAKCORE",
-		"id": "breakcore",
-		"player": "breakcore11",
-		"length": "64",
-		"version": "2.2",
-		"video": "https://youtu.be/_H3KOVLE6gs",
-		"date": "2025-07-27",
-		"showcaseVideo": "https://youtu.be/g4wbPz7b3YE",
-		"levelID": "123674931",
-		"submitter": "goofygdplayer",
-		"tags": [
 			"Level"
 		]
 	},
