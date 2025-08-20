@@ -66,6 +66,21 @@
     ]
   },
   {
+	  "name": "Eternal Night 31%",
+		"id": "eternal-night-31",
+		"player": "Trolley1",
+		"length": "30",
+		"version": "2.2",
+		"video": "https://youtu.be/f9ewrnsAAvs",
+		"date": "2025-08-1o",
+		"showcaseVideo": "https://youtu.be/njGusIAPm9w?si=dMcCPzEX745MW_Vu",
+		"submitter": "axellssl",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
 		"name": "Ouroboros 60hz Mobile 27-100%, 32%",
 		"id": "ouroboros-60hz-mobile-27-100-32",
 		"player": "Jastro",
