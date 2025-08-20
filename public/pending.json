@@ -18,6 +18,23 @@
 		]
 	},
 	{
+	"name": "Silent clubstep 144hz 15-65%",
+    "id": "silent-clubstep-144hz-15-65",
+    "player": "zMythicc",
+    "length": "43",
+    "version": "2.1",
+    "submitter": "exiled_shade",
+    "video": "https://youtu.be/hV8HKvW07Lg",
+    "showcaseVideo": "https://youtu.be/Oos0Ptzqq-E",
+    "date": "2022-08-08",
+    "levelID": "4125776",
+    "tags": [
+      "Level",
+	  "Low Hertz",
+      "Rated"
+    ]
+  },
+  {
 	"name": "Thinking Space II (Old) 79%",
     "id": "thinking-space-ii-old-79",
     "player": "Zoink",
