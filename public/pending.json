@@ -18,6 +18,25 @@
 		]
 	},
 	{
+	"name": "Lithium 60hz Mobile 87%",
+    "id": "lithium-60hz-mobile-87",
+    "player": "Archermence",
+    "length": 100,
+    "version": 2.2,
+    "video": "https://youtu.be/eCFJy_JHApc",
+    "showcaseVideo": "https://youtu.be/IHqODLf_ZLY",
+    "date": "2025-08-12",
+    "submitter": "kyle1saurus",
+    "levelID": 97364686,
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
+  },
+  {
 	"name": "Herr Machine 40-90%",
     "id": "herr-machine-40-90",
     "player": "GreenZz",
