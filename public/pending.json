@@ -81,6 +81,36 @@
 		]
 	},
 	{
+	"name": "Ex Vacuo 55%",
+    "id": "flamewall-55",
+    "player": "Laniakea",
+    "length": "70",
+    "version": "2.2",
+    "video": "https://youtu.be/kP4p23TmZsA",
+    "showcaseVideo": "https://youtu.be/CVXC2_bveBQ",
+    "date": "2025-08-19",
+	"submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
+	"name": "Ex Vacuo 53-100%",
+    "id": "flamewall-53-100",
+    "player": "Laniakea",
+    "length": "66",
+    "version": "2.2",
+    "video": "https://youtu.be/kP4p23TmZsA?t=73",
+    "showcaseVideo": "https://youtu.be/CVXC2_bveBQ",
+    "date": "2025-08-19",
+	"submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
 		"name": "Ouroboros 60hz Mobile 27-100%, 32%",
 		"id": "ouroboros-60hz-mobile-27-100-32",
 		"player": "Jastro",
