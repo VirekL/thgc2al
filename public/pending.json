@@ -72,7 +72,7 @@
 		"length": "30",
 		"version": "2.2",
 		"video": "https://youtu.be/f9ewrnsAAvs",
-		"date": "2025-08-1o",
+		"date": "2025-08-10",
 		"showcaseVideo": "https://youtu.be/njGusIAPm9w?si=dMcCPzEX745MW_Vu",
 		"submitter": "axellssl",
 		"tags": [
@@ -110,21 +110,6 @@
 		"levelID": "82602651",
 		"tags": [
 			"Progress",
-			"Level"
-		]
-	},
-	{
-		"name": "SPECTHYS",
-		"id": "specthys",
-		"player": "gBen",
-		"length": "70",
-		"version": "2.2",
-		"video": "https://youtu.be/QEhqvQvEfNM?t=92",
-		"date": "2025-07-25",
-		"showcaseVideo": "https://youtu.be/QEhqvQvEfNM",
-		"levelID": "123501215",
-		"tags": [
-			"Rated",
 			"Level"
 		]
 	},
