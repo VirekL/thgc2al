@@ -18,6 +18,21 @@
 		]
 	},
 	{
+	"name": "Unnerfed Diabolic ClubStep",
+    "id": "unnerfed-diabolic-clubstep",
+    "player": "Sevant",
+    "date": "2025-08-08",
+    "length": "87",
+    "version": "2.2",
+    "levelID": "78149361",
+    "video": "https://youtu.be/WHOfO0OxbvM",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "CBF"
+    ]
+  },
+  {
 	"name": "Exasperation 65-100%",
     "id": "exasperation-65-100",
     "player": "Zoink",
