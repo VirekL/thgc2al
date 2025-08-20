@@ -51,6 +51,51 @@
     ]
   },
   {
+	"name": "Dredlethal VantamaxX",
+    "id": "dredlethal-vantamaxx",
+    "player": "KyuPlays",
+    "date": "2025-08-14",
+    "length": "26",
+    "version": "2.2",
+    "video": "https://youtu.be/jAASLdLcdHA",
+    "submitter": "goofygdplayer",
+    "tags": [
+      "Challenge"
+    ]
+  },
+  {
+	"name": "Sakupen Circles (Skylar) 76%",
+    "id": "sakupen-circles-skylar-76",
+    "player": "Skylar",
+    "date": "2025-08-16",
+    "length": 36,
+    "version": 2.2,
+    "video": "https://youtu.be/93Pv6ny4ECI",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+	  "Progress"
+    ]
+  },
+  {
+	"name": "shimmer 144hz Mobile 96%",
+		"id": "shimmer-144hz-mobile-96",
+		"player": "Mateex",
+		"length": "72",
+		"version": "2.2",
+		"video": "https://youtu.be/60rkay4TrCg",
+		"date": "2025-08-18",
+		"showcaseVideo": "https://www.youtube.com/watch?v=_vuXb2PHiOI",
+		"levelID": "94156085",
+		"tags": [
+			"Level",
+			"Rated",
+			"Low Hertz",
+			"Mobile",
+			"Progress"
+		]
+	},
+	{
 	"name": "wocky circles 36-79%",
     "id": "wocky-circles-36-79",
     "player": "KYWY",
@@ -61,7 +106,7 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
-      "Progress",
+      "Progress"
     ]
   },
   {
@@ -75,7 +120,7 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
-      "Progress",
+      "Progress"
     ]
   },
   {
@@ -89,7 +134,7 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
-      "Progress",
+      "Progress"
     ]
   },
   {
@@ -103,7 +148,7 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
-      "Progress",
+      "Progress"
     ]
   },
   {
