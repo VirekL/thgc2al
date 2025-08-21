@@ -219,22 +219,6 @@
     ]
   },
   {
-	"name": "Exasperation 65-100%",
-    "id": "exasperation-65-100",
-    "player": "Zoink",
-    "levelID": 31325851,
-    "date": "2025-08-08",
-    "length": 80,
-    "version": 2.2,
-    "video": "https://www.youtube.com/live/OCyCMPj_RIQ?t=8952",
-    "showcaseVideo": "https://youtu.be/G6ugI_TtEl8",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
 	"name": "Silent clubstep 144hz 15-65%",
     "id": "silent-clubstep-144hz-15-65",
     "player": "zMythicc",
@@ -304,22 +288,6 @@
     ]
   },
   {
-	"name": "FLAMEWALL 24-70%, 24-100%",
-    "id": "flamewall-24-70-24-100",
-    "player": "Cuatrocientos",
-    "length": "600",
-    "version": "2.2",
-    "video": "https://www.youtube.com/live/4Dl3yv01Zx4?t=4168",
-    "showcaseVideo": "https://www.youtube.com/watch?v=c5qQh7h0zYM",
-	"thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/flamewall-unbuffed2.webp",
-	"submitter": "kyle1saurus",
-    "date": "2025-08-19",
-    "tags": [
-      "Level",
-      "Consistency"
-    ]
-  },
-  {
 	  "name": "Eternal Night 31%",
 		"id": "eternal-night-31",
 		"player": "Trolley1",
@@ -348,24 +316,6 @@
 			"Level"
 		]
 	},
-	{
-	"name": "Trueffet 1.3x",
-    "id": "trueffet-13x",
-    "player": "Arshadow",
-    "length": "61",
-    "version": "2.2",
-    "video": "https://www.youtube.com/watch?v=khoORHh2M68",
-    "showcaseVideo": "https://youtu.be/qkQidB9aPLA",
-    "date": "2025-08-18",
-    "submitter": "ad3usgmd",
-    "levelID": "71434979",
-    "tags": [
-      "Level",
-      "Speedhack",
-      "CBF",
-      "Rated"
-    ]
-  },
   {
 	"name": "Ex Vacuo 55%",
     "id": "flamewall-55",

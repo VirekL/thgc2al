@@ -68,6 +68,22 @@
     "levelID": "119550490"
   },
   {
+	"name": "FLAMEWALL 24-70%, 24-100%",
+    "id": "flamewall-24-70-24-100",
+    "player": "Cuatrocientos",
+    "length": "600",
+    "version": "2.2",
+    "video": "https://www.youtube.com/live/4Dl3yv01Zx4?t=4168",
+    "showcaseVideo": "https://www.youtube.com/watch?v=c5qQh7h0zYM",
+	  "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/flamewall-unbuffed2.webp",
+	  "submitter": "kyle1saurus",
+    "date": "2025-08-19",
+    "tags": [
+      "Level",
+      "Consistency"
+    ]
+  },
+  {
     "name": "GRIEF 80%",
     "id": "grief-80",
     "player": "Doggie",
@@ -139,22 +155,6 @@
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/grief-unbuffed2.avif"
   },
   {
-    "name": "FLAMEWALL 57%, 43%, 25%, 43%",
-    "id": "flamewall-57-43-25-43",
-    "player": "Cuatrocientos",
-    "video": "https://youtu.be/eVK7y2IGmiA",
-    "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
-    "tags": [
-      "Level",
-      "Consistency"
-    ],
-    "date": "2025-04-22",
-    "length": "727",
-    "version": "2.2",
-    "submitter": "Cuatrocientos",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/flamewall-unbuffed1.avif"
-  },
-  {
     "name": "Slaughterhouse 300%",
     "id": "slaughterhouse-300",
     "player": "wPopoff",
@@ -170,22 +170,6 @@
     "date": "2024-04-27",
     "length": "210",
     "version": "2.1"
-  },
-  {
-    "name": "FLAMEWALL 3-86%",
-    "id": "flamewall-3-86",
-    "player": "Cuatrocientos",
-    "video": "https://youtu.be/dlVnGdWRLeQ",
-    "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/flamewall-unbuffed2.webp",
-    "tags": [
-      "Level",
-      "Progress"
-    ],
-    "date": "2024-09-10",
-    "length": "333",
-    "submitter": "Anceps",
-    "version": "2.2"
   },
   {
     "name": "FLAMEWALL 76%",
@@ -251,6 +235,22 @@
     "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg",
     "submitter": "jak",
     "levelID": 0
+  },
+  {
+    "name": "FLAMEWALL 3-86%",
+    "id": "flamewall-3-86",
+    "player": "Cuatrocientos",
+    "video": "https://youtu.be/dlVnGdWRLeQ",
+    "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/flamewall-unbuffed2.webp",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "date": "2024-09-10",
+    "length": "333",
+    "submitter": "Anceps",
+    "version": "2.2"
   },
   {
     "name": "Tidal Wave buffed",
@@ -838,6 +838,22 @@
       "Level",
       "Consistency",
       "CBF"
+    ]
+  },
+  {
+	"name": "Exasperation 65-100%",
+    "id": "exasperation-65-100",
+    "player": "Zoink",
+    "levelID": 31325851,
+    "date": "2025-08-08",
+    "length": 80,
+    "version": 2.2,
+    "video": "https://www.youtube.com/live/OCyCMPj_RIQ?t=8952",
+    "showcaseVideo": "https://youtu.be/G6ugI_TtEl8",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -1714,6 +1730,24 @@
     "showcaseVideo": "https://youtu.be/RWBEfS4mLbw&t=2177s",
     "tags": [
       "Level"
+    ]
+  },
+  {
+	"name": "Trueffet 1.3x",
+    "id": "trueffet-13x",
+    "player": "Arshadow",
+    "length": "61",
+    "version": "2.2",
+    "video": "https://www.youtube.com/watch?v=khoORHh2M68",
+    "showcaseVideo": "https://youtu.be/qkQidB9aPLA",
+    "date": "2025-08-18",
+    "submitter": "ad3usgmd",
+    "levelID": "71434979",
+    "tags": [
+      "Level",
+      "Speedhack",
+      "CBF",
+      "Rated"
     ]
   },
   {
