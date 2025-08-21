@@ -2,9 +2,9 @@ import Head from 'next/head';
 import { useEffect, useState, useMemo, useRef, useCallback, useTransition } from 'react';
 
 const AVAILABLE_TAGS = [
-  "Level", "Challenge", "Low Hertz", "Mobile", "Speedhack",
+  "Level", "Challenge", "Completion", "Coin Route", "Low Hertz", "Mobile", "Speedhack",
   "Noclip", "Miscellaneous", "Progress", "Consistency",
-  "2P", "CBF", "Rated", "Formerly Rated", "Outdated Version"
+  "2P", "CBF", "Rated", "Formerly Rated", "Outdated Version", "Tentative"
 ];
 import Link from 'next/link';
 
@@ -63,7 +63,7 @@ function formatDate(date, dateFormat) {
   if (!date) return 'N/A';
   const d = new Date(date);
   if (isNaN(d)) return 'N/A';
-  d.setDate(d.getDate() + 1); // Adjust for offset issue
+  d.setDate(d.getDate() + 1);
   const yy = String(d.getFullYear()).slice(-2);
   const yyyy = d.getFullYear();
   const mm = String(d.getMonth() + 1).padStart(2, '0');
@@ -71,16 +71,13 @@ function formatDate(date, dateFormat) {
   if (dateFormat === 'YYYY/MM/DD') return `${yyyy}/${mm}/${dd}`;
   if (dateFormat === 'MM/DD/YY') return `${mm}/${dd}/${yy}`;
   if (dateFormat === 'DD/MM/YY') return `${dd}/${mm}/${yy}`;
-  // Default: Month D, Yr
   return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
 function AchievementCard({ achievement, devMode }) {
   const { dateFormat } = useDateFormat();
-  // Disable navigation in devMode (but allow ctrl+click and middle click)
   const handleClick = e => {
     if (devMode) {
-      // Allow ctrl+click and middle click
       if (e.ctrlKey || e.button === 1) return;
       e.preventDefault();
       e.stopPropagation();
@@ -146,32 +143,27 @@ export default function List() {
   const [allTags, setAllTags] = useState([]);
   const [isMobile, setIsMobile] = useState(false);
   const [showMobileFilters, setShowMobileFilters] = useState(false);
-  const [showSidebar, setShowSidebar] = useState(false); // Add sidebar state
+  const [showSidebar, setShowSidebar] = useState(false);
   const mobileBtnRef = useRef();
   const [isPending, startTransition] = typeof useTransition === 'function' ? useTransition() : [false, fn => fn()];
   const { dateFormat, setDateFormat } = useDateFormat();
   const [showSettings, setShowSettings] = useState(false);
-  // Developer mode state
   const [devMode, setDevMode] = useState(false);
-  const [reordered, setReordered] = useState(null); // null = not in dev mode, else array
+  const [reordered, setReordered] = useState(null);
   const [showNewForm, setShowNewForm] = useState(false);
-  // Track hovered achievement index for dev controls
   const [hoveredIdx, setHoveredIdx] = useState(null);
-  // New achievement form state
   const [newForm, setNewForm] = useState({
     name: '', id: '', player: '', length: 0, version: 2, video: '', showcaseVideo: '', date: '', submitter: '', levelID: 0, thumbnail: '', tags: []
   });
   const [newFormTags, setNewFormTags] = useState([]);
   const [newFormCustomTags, setNewFormCustomTags] = useState('');
-  const [insertIdx, setInsertIdx] = useState(null); // For new achievement insert position
-  // Edit achievement state
-  const [editIdx, setEditIdx] = useState(null); // index of achievement being edited
-  const [editForm, setEditForm] = useState(null); // form state for editing
+  const [insertIdx, setInsertIdx] = useState(null);
+  const [editIdx, setEditIdx] = useState(null);
+  const [editForm, setEditForm] = useState(null);
   const [editFormTags, setEditFormTags] = useState([]);
   const [editFormCustomTags, setEditFormCustomTags] = useState('');
   const achievementRefs = useRef([]);
 
-  // Move achievement up
   function handleMoveAchievementUp(idx) {
     setReordered(prev => {
       if (!prev || idx <= 0) return prev;
@@ -179,13 +171,11 @@ export default function List() {
       const temp = arr[idx - 1];
       arr[idx - 1] = arr[idx];
       arr[idx] = temp;
-      // Reassign ranks
       arr.forEach((a, i) => { a.rank = i + 1; });
       return arr;
     });
   }
 
-  // Move achievement down
   function handleMoveAchievementDown(idx) {
     setReordered(prev => {
       if (!prev || idx >= prev.length - 1) return prev;
@@ -193,14 +183,11 @@ export default function List() {
       const temp = arr[idx + 1];
       arr[idx + 1] = arr[idx];
       arr[idx] = temp;
-      // Reassign ranks
       arr.forEach((a, i) => { a.rank = i + 1; });
       return arr;
     });
   }
-  // Track the last added/duplicated achievement index for scrolling
   const [scrollToIdx, setScrollToIdx] = useState(null);
-  // Edit achievement handlers
   function handleEditAchievement(idx) {
     if (!reordered || !reordered[idx]) return;
     const a = reordered[idx];
@@ -213,7 +200,7 @@ export default function List() {
     });
     setEditFormTags(Array.isArray(a.tags) ? [...a.tags] : []);
     setEditFormCustomTags('');
-    setShowNewForm(false); // Hide new form if open
+    setShowNewForm(false);
   }
 
   function handleEditFormChange(e) {
@@ -233,7 +220,6 @@ export default function List() {
   }
 
   function handleEditFormSave() {
-    // Compose entry
     const entry = {};
     Object.entries(editForm).forEach(([k, v]) => {
       if (typeof v === 'string') {
@@ -242,7 +228,6 @@ export default function List() {
         entry[k] = v;
       }
     });
-    // Compose tags
     let tags = [...editFormTags];
     if (typeof editFormCustomTags === 'string' && editFormCustomTags.trim()) {
       editFormCustomTags.split(',').map(t => (typeof t === 'string' ? t.trim() : t)).filter(Boolean).forEach(t => {
@@ -254,16 +239,11 @@ export default function List() {
     setReordered(prev => {
       if (!prev) return prev;
       const arr = [...prev];
-      // Remove the achievement from its old position
       const [removed] = arr.splice(editIdx, 1);
-      // Update the removed achievement with new values
       const updated = { ...removed, ...entry };
-      // Determine new rank (default to end if invalid)
       let newRank = parseInt(updated.rank, 10);
       if (isNaN(newRank) || newRank < 1) newRank = arr.length + 1;
-      // Insert at new position (rank - 1)
       arr.splice(newRank - 1, 0, updated);
-      // Recalculate ranks for all achievements
       arr.forEach((a, i) => { a.rank = i + 1; });
       return arr;
     });
@@ -293,13 +273,12 @@ export default function List() {
       });
   }, []);
 
-  // Listen for SHIFT+M to toggle dev mode
   useEffect(() => {
     function handleKeyDown(e) {
       if (e.shiftKey && (e.key === 'M' || e.key === 'm')) {
         setDevMode(v => {
           const next = !v;
-          if (!next) setReordered(null); // Reset on exit
+          if (!next) setReordered(null);
           else setReordered(achievements);
           return next;
         });
@@ -309,7 +288,6 @@ export default function List() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [achievements]);
 
-  // Mobile gesture: pinch, swipe left, then right to activate dev mode
   useEffect(() => {
     if (!isMobile) return;
     let pinchActive = false;
@@ -344,9 +322,7 @@ export default function List() {
     }
 
     function handleTouchEnd(e) {
-      // Pinch detection: fingers move closer together
       if (pinchActive && pinchStartDist && pinchEndDist && pinchEndDist < pinchStartDist - 40) {
-        // Pinch detected
         swipeSequence = [];
         pinchActive = false;
         pinchStartDist = null;
@@ -354,7 +330,6 @@ export default function List() {
         gestureTimeout = setTimeout(() => { swipeSequence = []; }, 2000);
         return;
       }
-      // Swipe detection (after pinch)
       if (e.changedTouches.length === 1 && !pinchActive && swipeSequence.length < 2) {
         const touch = e.changedTouches[0];
         if (lastTouches.length === 1) {
@@ -364,7 +339,6 @@ export default function List() {
             gestureTimeout = setTimeout(() => { swipeSequence = []; }, 2000);
           }
         }
-        // If sequence is left then right (or right then left), activate dev mode
         if ((swipeSequence[0] === 'left' && swipeSequence[1] === 'right') || (swipeSequence[0] === 'right' && swipeSequence[1] === 'left')) {
           setDevMode(true);
           setReordered(achievements.map(a => ({ ...a })));
@@ -403,7 +377,6 @@ export default function List() {
     a => {
       if (searchLower) {
         if (typeof a.name !== 'string') return false;
-        // Match if the search term appears anywhere in the name (substring, case-insensitive)
         if (!a.name.toLowerCase().includes(searchLower)) return false;
       }
       const tags = (a.tags || []).map(t => t.toUpperCase());
@@ -418,16 +391,12 @@ export default function List() {
     return achievements.filter(filterFn);
   }, [achievements, filterFn]);
 
-  // For dev mode, use reordered list
   const devAchievements = devMode && reordered ? reordered : achievements;
 
   function handleMobileToggle() {
     setShowMobileFilters(v => !v);
   }
 
-  // Dev mode functionality
-
-  // New achievement form handlers
   function handleNewFormChange(e) {
     const { name, value } = e.target;
     setNewForm(f => ({
@@ -442,14 +411,12 @@ export default function List() {
     setNewFormCustomTags(e.target.value);
   }
   function handleNewFormAdd() {
-    // Compose tags
     let tags = [...newFormTags];
     if (typeof newFormCustomTags === 'string' && newFormCustomTags.trim()) {
       newFormCustomTags.split(',').map(t => (typeof t === 'string' ? t.trim() : t)).filter(Boolean).forEach(t => {
         if (!tags.includes(t)) tags.push(t);
       });
     }
-    // Compose entry
     const entry = {};
     Object.entries(newForm).forEach(([k, v]) => {
       if (typeof v === 'string') {
@@ -459,7 +426,6 @@ export default function List() {
       }
     });
     if (tags.length > 0) entry.tags = tags;
-    // Insert at insertIdx or end
     setReordered(prev => {
       let newArr;
       if (!prev) {
@@ -473,7 +439,6 @@ export default function List() {
         newArr.splice(insertIdx + 1, 0, entry);
         setScrollToIdx(insertIdx + 1);
       }
-      // Assign rank property to all achievements
       newArr.forEach((a, i) => { a.rank = i + 1; });
       return newArr;
     });
@@ -489,7 +454,6 @@ export default function List() {
     setNewFormTags([]);
     setNewFormCustomTags('');
   }
-  // Live preview for new achievement
 const newFormPreview = useMemo(() => {
   let tags = [...newFormTags];
   if (typeof newFormCustomTags === 'string' && newFormCustomTags.trim()) {
@@ -509,7 +473,6 @@ const newFormPreview = useMemo(() => {
   return entry;
 }, [newForm, newFormTags, newFormCustomTags]);
 
-  // Copy JSON to clipboard
   function handleCopyJson() {
     if (!reordered) return;
     const json = JSON.stringify(reordered.map(({rank, ...rest}) => rest), null, 2);
@@ -517,7 +480,6 @@ const newFormPreview = useMemo(() => {
       navigator.clipboard.writeText(json);
       alert('Copied new achievements.json to clipboard!');
     } else {
-      // fallback
       const textarea = document.createElement('textarea');
       textarea.value = json;
       document.body.appendChild(textarea);
@@ -528,7 +490,6 @@ const newFormPreview = useMemo(() => {
     }
   }
 
-  // Find the most visible achievement card in viewport
   function getMostVisibleIdx() {
     if (!achievementRefs.current) return null;
     let maxVisible = 0;
@@ -544,7 +505,6 @@ const newFormPreview = useMemo(() => {
     });
     return bestIdx;
   }
-  // When opening the new form, set insertIdx to the most visible card
   function handleShowNewForm() {
     if (showNewForm) {
       setShowNewForm(false);
@@ -558,7 +518,6 @@ const newFormPreview = useMemo(() => {
     setShowNewForm(true);
   }
 
-  // Scroll to the new/duplicated achievement after it's added
   useEffect(() => {
     if (scrollToIdx !== null && achievementRefs.current[scrollToIdx]) {
       achievementRefs.current[scrollToIdx].scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -566,7 +525,6 @@ const newFormPreview = useMemo(() => {
     }
   }, [scrollToIdx, devAchievements]);
 
-  // Remove achievement at index
   function handleRemoveAchievement(idx) {
     setReordered(prev => {
       if (!prev) return prev;
@@ -576,7 +534,6 @@ const newFormPreview = useMemo(() => {
     });
   }
 
-  // Duplicate achievement at index
   function handleDuplicateAchievement(idx) {
     setReordered(prev => {
       if (!prev) return prev;
@@ -636,7 +593,6 @@ const newFormPreview = useMemo(() => {
               The Hardest Achievements List
             </h1>
           </div>
-          {/* Only show search bar and arrow below on mobile */}
           {isMobile && (
             <div style={{ width: '100%', marginTop: 12 }}>
               <div className="search-bar" style={{ width: '100%', maxWidth: 400, margin: '0 auto' }}>
@@ -650,7 +606,6 @@ const newFormPreview = useMemo(() => {
                   style={{ width: '100%' }}
                 />
               </div>
-              {/* Tag filter pills below search bar, above arrow */}
               <div className="tag-filter-pills-container" style={{ width: '100%' }}>
                 <TagFilterPills
                   allTags={allTags}
@@ -677,7 +632,6 @@ const newFormPreview = useMemo(() => {
               </div>
             </div>
           )}
-          {/* Desktop search bar stays in header-bar */}
           {!isMobile && (
             <div className="search-bar" style={{ width: '100%', maxWidth: 400, marginLeft: 'auto' }}>
               <input
@@ -692,7 +646,6 @@ const newFormPreview = useMemo(() => {
             </div>
           )}
         </div>
-        {/* Desktop: tag filter pills below header-bar, mobile: handled above */}
         {!isMobile && (
           <div className="tag-filter-pills-container">
             <TagFilterPills
@@ -706,7 +659,6 @@ const newFormPreview = useMemo(() => {
           </div>
         )}
       </header>
-      {/* Mobile Sidebar Overlay */}
       {isMobile && showSidebar && (
         <div
           className="sidebar-mobile-overlay"
@@ -767,7 +719,6 @@ const newFormPreview = useMemo(() => {
         </div>
       )}
       <main className="main-content achievements-main">
-        {/* Desktop sidebar only */}
         {!isMobile && <Sidebar />}
         <section className="achievements achievements-section">
           <DevModePanel
@@ -795,13 +746,11 @@ const newFormPreview = useMemo(() => {
             handleShowNewForm={handleShowNewForm}
             newFormPreview={newFormPreview}
             onImportAchievementsJson={json => {
-              // Accepts array or object
               let imported = Array.isArray(json) ? json : (json.achievements || []);
               if (!Array.isArray(imported)) {
                 alert('Invalid achievements.json format.');
                 return;
               }
-              // Add rank property
               imported = imported.map((a, i) => ({ ...a, rank: i + 1 }));
               setReordered(imported);
               setDevMode(true);
