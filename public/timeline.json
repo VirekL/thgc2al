@@ -102,7 +102,8 @@
         "player": "Zoink",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+			"Verified"
         ],
         "length": "181",
         "version": "2.1",
@@ -201,7 +202,8 @@
         "player": "Zoink",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+			"Verified"
         ],
         "length": "67",
         "version": "2.1",
@@ -284,7 +286,8 @@
         "player": "Cursed",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+			"Verified"
         ],
         "length": "125",
         "version": "2.1",
@@ -362,7 +365,9 @@
         "name": "Blind Blizzard",
         "player": "Bradenbowl",
         "tags": [
-            "Level"
+            "Level",
+			"Verified",
+			"Tentative"
         ],
         "length": "100",
         "version": "2.1",
@@ -377,7 +382,8 @@
         "player": "Bradenbowl",
         "tags": [
             "Progress",
-            "Level"
+            "Level",
+			"Tentative"
         ],
         "length": "97",
         "version": "2.1",
@@ -392,7 +398,8 @@
         "player": "Bradenbowl",
         "tags": [
             "Progress",
-            "Level"
+            "Level",
+			"Tentative"
         ],
         "length": "76",
         "version": "2.1",
@@ -406,7 +413,8 @@
         "name": "3SH in Hell",
         "player": "UFokinWotM8",
         "tags": [
-            "Challenge"
+            "Challenge",
+			"Verified"
         ],
         "length": "12",
         "version": "2.1",
@@ -421,7 +429,8 @@
         "player": "Dolphy",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+			"Verified"
         ],
         "length": "87",
         "version": "2.1",
@@ -719,7 +728,8 @@
         "player": "Riot",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+			"Verified"
         ],
         "length": "112",
         "version": "1.9",
@@ -785,7 +795,8 @@
         "thumbnail": "https://tjcsucht.net/levelthumbs/7174110.png",
         "tags": [
             "Level",
-            "Outdated Version"
+            "Outdated Version",
+			"Verified"
         ],
         "length": "121",
         "version": "1.9",
@@ -817,7 +828,9 @@
         "player": "Riot",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+			"Verified",
+			"Tentative"
         ],
         "length": "87",
         "version": "1.9",
@@ -833,7 +846,8 @@
         "thumbnail": "https://tjcsucht.net/levelthumbs/37830175.png",
         "tags": [
             "Level",
-            "Outdated Version"
+            "Outdated Version",
+			"Verified"
         ],
         "length": "79",
         "version": "1.9",
@@ -885,7 +899,8 @@
         "player": "GMDElite",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+			"Verified"
         ],
         "length": "95",
         "version": "1.9",
@@ -918,7 +933,8 @@
         "player": "Zobros",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+			"Verified"
         ],
         "length": "74",
         "version": "1.9",
@@ -957,7 +973,8 @@
         "levelID": "69936244",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+			"Verified"
         ]
     },
     {
@@ -972,7 +989,8 @@
         "levelID": "260693",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+			"Verified"
         ]
     },
     {
@@ -982,7 +1000,8 @@
         "tags": [
             "Level",
             "Rated",
-            "2P"
+            "2P",
+			"Verified"
         ],
         "length": "88",
         "version": "1.8",
@@ -996,7 +1015,8 @@
         "player": "Centuple",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+			"Verified"
         ],
         "length": "136",
         "version": "1.6",
@@ -1012,7 +1032,8 @@
         "player": "OrcaSN",
         "tags": [
             "Level",
-            "Outdated Version"
+            "Outdated Version",
+			"Verified"
         ],
         "length": "75",
         "version": "1.6",
@@ -1027,7 +1048,8 @@
         "name": "eclipse",
         "player": "Darkflame",
         "tags": [
-            "Level"
+            "Level",
+			"Verified"
         ],
         "length": "73",
         "version": "1.6",
@@ -1041,7 +1063,8 @@
         "player": "pg1004",
         "tags": [
             "Level",
-            "Outdated Version"
+            "Outdated Version",
+			"Verified"
         ],
         "length": "87",
         "version": "1.6",
@@ -1057,7 +1080,8 @@
         "player": "Crepuscule",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+			"Verified"
         ],
         "length": "95",
         "version": "1.5",
@@ -1072,7 +1096,9 @@
         "player": "LunarSIMG",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+			"Verified",
+			"Tentative"
         ],
         "length": "97",
         "version": "1.5",
@@ -1087,7 +1113,9 @@
         "player": "Rabbitical",
         "tags": [
             "Level",
-            "Outdated Version"
+            "Outdated Version",
+			"Verified",
+			"Tentative"
         ],
         "length": "94",
         "version": "1.5",
@@ -1102,7 +1130,9 @@
         "name": "Pink World",
         "player": "GW Popomon",
         "tags": [
-            "Level"
+            "Level",
+			"Verified",
+			"Tentative"
         ],
         "length": "69",
         "version": "1.5",
@@ -1118,7 +1148,8 @@
         "player": "LunarSIMG",
         "tags": [
             "Level",
-            "Outdated Version"
+            "Outdated Version",
+			"Verified"
         ],
         "length": "97",
         "version": "1.4",
@@ -1133,7 +1164,8 @@
         "player": "Rabbitical",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+			"Verified"
         ],
         "length": "87",
         "version": "1.4",
@@ -1149,7 +1181,8 @@
         "player": "bbddee",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+			"Verified"
         ],
         "length": "75",
         "version": "1.4",
@@ -1163,7 +1196,8 @@
         "player": "LunarSIMG",
         "tags": [
             "Level",
-            "Outdated Version"
+            "Outdated Version",
+			"Verified"
         ],
         "length": "81",
         "version": "1.4",
@@ -1175,7 +1209,9 @@
         "name": "Rythem Time Machine",
         "player": "GW Popomon",
         "tags": [
-            "Level"
+            "Level",
+			"Verified",
+			"Tentative"
         ],
         "length": "96",
         "version": "1.4",
@@ -1191,7 +1227,8 @@
         "player": "Back",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+			"Verified"
         ],
         "length": "78",
         "version": "1.4",
@@ -1205,7 +1242,8 @@
         "player": "superhexagon",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+			"Verified"
         ],
         "length": "97",
         "version": "1.3",
@@ -1227,7 +1265,8 @@
         "submitter": "Anceps",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+			"Verified"
         ]
     },
     {
@@ -1236,7 +1275,8 @@
         "player": "darnoc2",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+			"Verified"
         ],
         "length": "93",
         "version": "1.2",
@@ -1251,7 +1291,8 @@
         "name": "B",
         "player": "ChunSonghun",
         "tags": [
-            "Level"
+            "Level",
+			"Verified"
         ],
         "length": "97",
         "version": "1.1",
@@ -1264,7 +1305,8 @@
         "name": "Level 5",
         "player": "Matty",
         "tags": [
-            "Level"
+            "Level",
+			"Verified"
         ],
         "length": "93",
         "version": "1.1",
@@ -1277,7 +1319,8 @@
         "name": "Blurred Lines",
         "player": "Manny Fresh",
         "tags": [
-            "Level"
+            "Level",
+			"Verified"
         ],
         "length": "84",
         "version": "1.0",
@@ -1291,7 +1334,8 @@
         "player": "M2coL",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+			"Verified"
         ],
         "length": "81",
         "version": "1.0",
@@ -1305,7 +1349,8 @@
         "player": "CarbonELiTE",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+			"Verified"
         ],
         "length": "60",
         "version": "1.0",
@@ -1321,7 +1366,8 @@
         "player": "CarbonELiTE",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+			"Verified"
         ],
         "length": "52",
         "version": "1.0",
@@ -1344,7 +1390,8 @@
         "showcaseVideo": "https://youtu.be/l7-xeNjg50E",
         "tags": [
             "Level",
-            "Rated"
+            "Rated",
+			"Verified"
         ]
     },
     {
@@ -1353,7 +1400,8 @@
         "player": "RobTop",
         "tags": [
             "Level",
-            "Outdated Version"
+            "Outdated Version",
+			"Verified"
         ],
         "length": "80",
         "version": "Beta",
@@ -1368,7 +1416,8 @@
         "name": "Ultiate Destruction",
         "player": "RobTop",
         "tags": [
-            "Level"
+            "Level",
+			"Verified"
         ],
         "length": "65",
         "version": "Beta",
@@ -1378,4 +1427,5 @@
         "video": "https://youtu.be/727pUHwWSVg"
     }
 ]
+
 
