@@ -22,41 +22,58 @@ export default function AboutUs() {
       </Head>
       <Background />
       <Header />
-      <main className="main-content" style={{display: 'flex', justifyContent: 'center', alignItems: 'flex-start', gap: '2rem', padding: '2rem 1rem'}}>
-        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'flex-start', gap: '2rem', maxWidth: '1100px', width: '100%', margin: '0 auto'}}>
+      <main className="main-content" style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', gap: '2rem', padding: '2rem 1rem' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', gap: '2rem', maxWidth: '1100px', width: '100%', margin: '0 auto' }}>
           <Sidebar />
           <section className="about-us about-us-container">
             <h2>The Hardest Achievements List</h2>
             <p>What is this list?</p>
             <p>
-              This list ranks <strong>rated levels</strong>, <strong>unrated</strong>, <strong>challenges</strong>, 
+              This list ranks <strong>rated levels</strong>, <strong>unrated</strong>, <strong>challenges</strong>,
               <strong>runs</strong>, <strong>speedhacked</strong>, and more. This is all under one list, sorted by
               difficulty, with the baseline starting at <strong>Zodiac</strong>.
             </p>
-            <h3>List Editors</h3>
+            <h3>Owner</h3>
             <ul>
               <li><strong>Anceps</strong></li>
+            </ul>
+            <h3>List Editor</h3>
+            <ul>
               <li><strong>Arcadie</strong></li>
               <li><strong>jak</strong></li>
               <li><strong>zXdasfsa</strong></li>
               <li><strong>Glow</strong></li>
             </ul>
+            <h3>List Helper</h3>
+            <ul>
+              <li><strong>exiled_shade</strong></li>
+              <li><strong>kyle1saurus</strong></li>
+              <li><strong>goofygdplayer_</strong></li>
+              <li><strong>TYATYAPKA</strong></li>
+            </ul>
+            <h3>Server Moderator</h3>
+            <ul>
+              <li><strong>Grave</strong></li>
+            </ul>
             <h3>Tag Definitions</h3>
             <ul>
               <li><b>Level</b> — A traditional level, which spans 30+ seconds. (Acheron)</li>
               <li><b>Challenge</b> — Tiny or short length level; a level that spans under 30 seconds. (VSC)</li>
+              <li><b>Verified</b> — Levels that are fully verified without any alterations (e.g. Low Hertz, Speedhack)</li>
+              <li><b>Coin Route</b> — Coin(s) collected that contribute to the difficulty.</li>
               <li><b>Low Hertz</b> — Done at a low hz. It can be added if it adds a lot more difficulty to the level. (The Rupture 60hz)</li>
               <li><b>Mobile</b> — Played on mobile. (Hard Machine 144hz Mobile)</li>
-              <li><b>Speedhack</b> — Altered speed using hacks. (Sonic Wave 1.35x)</li>
+              <li><b>Speedhack</b> — Altered speed using hacks. (Trueffet 1.3x)</li>
               <li><b>Noclip</b> — Done with noclip on. (vsc superbuff 6 deaths, 99.79 accuracy)</li>
               <li><b>Miscellaneous</b> — An achievement that doesn't fit with any other types.</li>
               <li><b>Progress</b> — Parts of the level completed. (Singularity 61%)</li>
-              <li><b>Consistency</b> — Progress done in a row. (Slaughterhouse 300%, Extra Mile 77% + 69% + 53%)</li>
+              <li><b>Consistency</b> — Progress done in a row. (Slaughterhouse 300%, Extra Mile 77%, 69%, 53%)</li>
               <li><b>2P</b> — Level uses 2 player mode.</li>
               <li><b>CBF</b> — Achievement uses Geode mod Click Between Frames, which allows players to input actions in between visual frames, effectively increasing input precision.</li>
               <li><b>Rated</b> — Level is rated ingame.</li>
-              <li><b>Formerly rated</b> — Level was rated, but had its rating status removed.</li>
+              <li><b>Formerly Rated</b> — Level was rated, but had its rating status removed.</li>
               <li><b>Outdated Version</b> — Level is rated and is on an older version than the current one.</li>
+              <li><b>Tentative</b> — Tentative placement; unfixed; subject to change.</li>
             </ul>
             <h3>Rules</h3>
             <section>
@@ -136,5 +153,3 @@ export default function AboutUs() {
     </>
   );
 }
-
-
