@@ -12509,23 +12509,6 @@
     ]
   },
   {
-    "name": "Unnerfed Diabolic ClubStep 42-100%",
-    "id": "unnerfed-diabolic-clubstep-42-100",
-    "player": "Sevant",
-    "date": "2025-06-07",
-    "length": "51",
-    "version": "2.2",
-    "levelID": "78149361",
-    "video": "https://youtu.be/j6JO9fkYqxw",
-    "showcaseVideo": "https://youtu.be/npT81PyBnw4",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress",
-      "CBF"
-    ]
-  },
-  {
     "name": "Starlit Stroll",
     "id": "starlit-stroll",
     "player": "Nocta XI",
@@ -13239,3 +13222,4 @@
   }
 
 ]
+
