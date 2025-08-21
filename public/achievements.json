@@ -6725,7 +6725,7 @@
     ]
   },
   {
-    "name": "Vehemence (Buffed) 62-100%",
+    "name": "Vehemence (Unbuffed) 62-100%",
     "id": "vehemence-buffed-62-100",
     "player": "Radium",
     "date": "2023-06-24",
@@ -13585,3 +13585,4 @@
     ]
   }
 ]
+
