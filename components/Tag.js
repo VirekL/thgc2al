@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TAG_PRIORITY_ORDER = [
-  'LEVEL', 'CHALLENGE', 'COMPLETION', 'COIN ROUTE', 'LOW HERTZ', 'MOBILE', 'SPEEDHACK',
+  'LEVEL', 'CHALLENGE', 'VERIFIED', 'COIN ROUTE', 'LOW HERTZ', 'MOBILE', 'SPEEDHACK',
   'NOCLIP', 'MISCELLANEOUS', 'PROGRESS', 'CONSISTENCY', '2P', 'CBF',
   'RATED', 'FORMERLY RATED', 'OUTDATED VERSION', 'TENTATIVE'
 ];
@@ -21,7 +21,7 @@ const TAG_DEFINITIONS = {
   RATED: { className: 'tag-rated', icon: '/assets/rated-icon.webp', text: 'Rated' },
   'FORMERLY RATED': { className: 'tag-formerly-rated', icon: '/assets/formerly-rated-icon.webp', text: 'Formerly Rated' },
   'OUTDATED VERSION': { className: 'tag-outdated-version', icon: '/assets/outdated-version-icon.webp', text: 'Outdated Version' },
-  COMPLETION: { className: 'tag-completion', text: 'Completion' },
+  VERIFIED: { className: 'tag-verified', text: 'Verified' },
   'COIN ROUTE': { className: 'tag-coin-route', icon: '/assets/coin-icon.webp', text: 'Coin Route' },
   TENTATIVE: { className: 'tag-tentative', icon: '/assets/warning-icon.webp', text: 'Tentative' },
 };
@@ -144,7 +144,7 @@ export default function Tag({ tag, onClick, tabIndex, clickable, state }) {
 .tag-outdated-version {
   background: linear-gradient(135deg,rgb(138, 134, 115) 0%,rgb(206, 155, 47) 100%);
 }
-.tag-completion {
+.tag-verified {
   background: linear-gradient(135deg, #9ef04d 0%, #259947 100%)
 }
 .tag-coin-route {
