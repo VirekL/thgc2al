@@ -16,14 +16,14 @@ const TAG_DEFINITIONS = {
   MISCELLANEOUS: { className: 'tag-miscellaneous', text: 'Miscellaneous' },
   PROGRESS: { className: 'tag-progress', text: 'Progress' },
   CONSISTENCY: { className: 'tag-consistency', text: 'Consistency' },
-  '2P': { className: 'tag-2p', icon: '/assets/2p-icon.web', text: '2 Player' },
-  CBF: { className: 'tag-cbf', icon: '/assets/cbf-logo.web', text: 'CBF' },
-  RATED: { className: 'tag-rated', icon: '/assets/rated-icon.web', text: 'Rated' },
-  'FORMERLY RATED': { className: 'tag-formerly-rated', icon: '/assets/formerly-rated-icon.web', text: 'Formerly Rated' },
-  'OUTDATED VERSION': { className: 'tag-outdated-version', icon: '/assets/outdated-version-icon.web', text: 'Outdated Version' },
+  '2P': { className: 'tag-2p', icon: '/assets/2p-icon.webp', text: '2 Player' },
+  CBF: { className: 'tag-cbf', icon: '/assets/cbf-logo.webp', text: 'CBF' },
+  RATED: { className: 'tag-rated', icon: '/assets/rated-icon.webp', text: 'Rated' },
+  'FORMERLY RATED': { className: 'tag-formerly-rated', icon: '/assets/formerly-rated-icon.webp', text: 'Formerly Rated' },
+  'OUTDATED VERSION': { className: 'tag-outdated-version', icon: '/assets/outdated-version-icon.webp', text: 'Outdated Version' },
   COMPLETION: { className: 'tag-completion', text: 'Completion' },
-  'COIN ROUTE': { className: 'tag-coin-route', icon: '/assets/coin-icon.web', text: 'Coin Route' },
-  TENTATIVE: { className: 'tag-tentative', icon: '/assets/warning-icon.web', text: 'Tentative' },
+  'COIN ROUTE': { className: 'tag-coin-route', icon: '/assets/coin-icon.webp', text: 'Coin Route' },
+  TENTATIVE: { className: 'tag-tentative', icon: '/assets/warning-icon.webp', text: 'Tentative' },
 };
 
 export default function Tag({ tag, onClick, tabIndex, clickable, state }) {
