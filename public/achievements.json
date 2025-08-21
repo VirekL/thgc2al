@@ -3676,7 +3676,8 @@
       "Level",
       "Low Hertz",
       "Mobile",
-      "Progress"
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -6396,13 +6397,14 @@
     "player": "Zoink",
     "video": "https://www.youtube.com/watch?v=FlMGEos-wZU",
     "date": "2022-02-04",
-    "length": "110",
-    "version": "2.1",
-    "levelID": "59075347",
+    "length": 110,
+    "version": 2.1,
+    "levelID": 59075347,
     "submitter": "kittycatiscute",
     "tags": [
       "Level",
-      "Consistency"
+      "Consistency",
+      "Rated"
     ]
   },
   {
@@ -12699,7 +12701,8 @@
     "tags": [
       "Level",
       "Low Hertz",
-      "Mobile"
+      "Mobile",
+      "Rated"
     ]
   },
   {
@@ -13287,7 +13290,8 @@
     "tags": [
       "Level",
       "Speedhack",
-      "Progress"
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -13303,7 +13307,8 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
-      "Verified"
+      "Verified",
+      "Rated"
     ]
   },
   {
@@ -13585,5 +13590,3 @@
     ]
   }
 ]
-
-
