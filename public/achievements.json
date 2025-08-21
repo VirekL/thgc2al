@@ -1171,8 +1171,7 @@
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": 0
+    ]
   },
   {
     "name": "Blue Avernus 88%",
@@ -1198,6 +1197,7 @@
     "showcaseVideo": "https://youtu.be/gZz_2r97wzM",
     "date": "2025-02-04",
     "submitter": "TYATYAPKA",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/image0.webp",
     "tags": [
       "Level",
       "Progress"
@@ -1585,6 +1585,7 @@
     "video": "https://youtu.be/t5TWB9uA8kU",
     "showcaseVideo": "https://youtu.be/gZz_2r97wzM",
     "submitter": "jak",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/image0.webp",
     "tags": [
       "Level",
       "Progress"
@@ -3240,6 +3241,7 @@
     "version": 2.2,
     "video": "https://youtu.be/gZz_2r97wzM",
     "showcaseVideo": "https://youtu.be/D9d-H5QGJgs",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/image0.webp",
     "submitter": "jak",
     "tags": [
       "Level",
@@ -13235,4 +13237,5 @@
       "Rated"
     ]
   }
+
 ]
