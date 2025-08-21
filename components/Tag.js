@@ -153,8 +153,6 @@ export default function Tag({ tag, onClick, tabIndex, clickable, state }) {
 }
 .tag-tentative {
   background: linear-gradient(135deg, #a68b62 0%,rgb(68, 57, 47)100%)
-  color: #ddd;
-  border: 1px dashed rgba(255,255,255,0.06);
 }
       `}</style>
       <style jsx>{`
