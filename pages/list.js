@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { useEffect, useState, useMemo, useRef, useCallback, useTransition } from 'react';
 
 const AVAILABLE_TAGS = [
-  "Level", "Challenge", "Completion", "Coin Route", "Low Hertz", "Mobile", "Speedhack",
+  "Level", "Challenge", "Verified", "Coin Route", "Low Hertz", "Mobile", "Speedhack",
   "Noclip", "Miscellaneous", "Progress", "Consistency",
   "2P", "CBF", "Rated", "Formerly Rated", "Outdated Version", "Tentative"
 ];
