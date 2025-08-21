@@ -1,59 +1,62 @@
 import React from 'react';
 
 const TAG_PRIORITY_ORDER = [
-    'LEVEL', 'CHALLENGE', 'LOW HERTZ', 'MOBILE', 'SPEEDHACK',
-    'NOCLIP', 'MISCELLANEOUS', 'PROGRESS', 'CONSISTENCY', '2P', 'CBF',
-    'RATED', 'FORMERLY RATED', 'OUTDATED VERSION'
+  'LEVEL', 'CHALLENGE', 'COMPLETION', 'COIN ROUTE', 'LOW HERTZ', 'MOBILE', 'SPEEDHACK',
+  'NOCLIP', 'MISCELLANEOUS', 'PROGRESS', 'CONSISTENCY', '2P', 'CBF',
+  'RATED', 'FORMERLY RATED', 'OUTDATED VERSION', 'TENTATIVE'
 ];
 
 const TAG_DEFINITIONS = {
-    LEVEL: { className: 'tag-level', text: 'Level' },
-    CHALLENGE: { className: 'tag-challenge', text: 'Challenge' },
-    'LOW HERTZ': { className: 'tag-low-hertz', text: 'Low Hertz' },
-    MOBILE: { className: 'tag-mobile', text: 'Mobile' },
-    SPEEDHACK: { className: 'tag-speedhack', text: 'Speedhack' },
-    NOCLIP: { className: 'tag-noclip', text: 'Noclip' },
-    MISCELLANEOUS: { className: 'tag-miscellaneous', text: 'Miscellaneous' },
-    PROGRESS: { className: 'tag-progress', text: 'Progress' },
-    CONSISTENCY: { className: 'tag-consistency', text: 'Consistency' },
-    '2P': { className: 'tag-2p', icon: '/assets/2p-icon.png', text: '2 Player' },
-    CBF: { className: 'tag-cbf', icon: '/assets/cbf-logo.png', text: 'CBF' },
-    RATED: { className: 'tag-rated', icon: '/assets/rated-icon.png', text: 'Rated' },
-    'FORMERLY RATED': { className: 'tag-formerly-rated', icon: '/assets/formerly-rated-icon.png', text: 'Formerly Rated' },
-    'OUTDATED VERSION': { className: 'tag-outdated-version', icon: '/assets/outdated-version-icon.png', text: 'Outdated Version' },
+  LEVEL: { className: 'tag-level', text: 'Level' },
+  CHALLENGE: { className: 'tag-challenge', text: 'Challenge' },
+  'LOW HERTZ': { className: 'tag-low-hertz', text: 'Low Hertz' },
+  MOBILE: { className: 'tag-mobile', text: 'Mobile' },
+  SPEEDHACK: { className: 'tag-speedhack', text: 'Speedhack' },
+  NOCLIP: { className: 'tag-noclip', text: 'Noclip' },
+  MISCELLANEOUS: { className: 'tag-miscellaneous', text: 'Miscellaneous' },
+  PROGRESS: { className: 'tag-progress', text: 'Progress' },
+  CONSISTENCY: { className: 'tag-consistency', text: 'Consistency' },
+  '2P': { className: 'tag-2p', icon: '/assets/2p-icon.web', text: '2 Player' },
+  CBF: { className: 'tag-cbf', icon: '/assets/cbf-logo.web', text: 'CBF' },
+  RATED: { className: 'tag-rated', icon: '/assets/rated-icon.web', text: 'Rated' },
+  'FORMERLY RATED': { className: 'tag-formerly-rated', icon: '/assets/formerly-rated-icon.web', text: 'Formerly Rated' },
+  'OUTDATED VERSION': { className: 'tag-outdated-version', icon: '/assets/outdated-version-icon.web', text: 'Outdated Version' },
+  COMPLETION: { className: 'tag-completion', text: 'Completion' },
+  'COIN ROUTE': { className: 'tag-coin-route', icon: '/assets/coin-icon.web', text: 'Coin Route' },
+  TENTATIVE: { className: 'tag-tentative', icon: '/assets/warning-icon.web', text: 'Tentative' },
 };
 
 export default function Tag({ tag, onClick, tabIndex, clickable, state }) {
-    const def = TAG_DEFINITIONS[tag.toUpperCase()] || {};
-    const classNames = [
-        'tag',
-        def.className,
-        clickable ? 'tag-clickable' : '',
-        state === 'include' ? 'tag-include' : '',
-        state === 'exclude' ? 'tag-exclude' : '',
-        state === 'neutral' ? 'tag-neutral' : ''
-    ].filter(Boolean).join(' ');
-    return (
-        <>
-            <span
-                className={classNames}
-                onClick={clickable ? onClick : undefined}
-                tabIndex={clickable ? (tabIndex ?? 0) : undefined}
-                role={clickable ? 'button' : undefined}
-                aria-pressed={clickable ? (state === 'include' ? 'true' : 'false') : undefined}
-                onKeyDown={clickable ? (e => {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                        e.preventDefault();
-                        onClick && onClick(e);
-                    }
-                }) : undefined}
-            >
-                {def.icon && (
-                    <img src={def.icon} alt={def.text} />
-                )}
-                <span>{def.text || tag}</span>
-            </span>
-            <style jsx>{`
+  const def = TAG_DEFINITIONS[tag.toUpperCase()] || {};
+  const classNames = [
+    'tag',
+    def.className,
+    clickable ? 'tag-clickable' : '',
+    state === 'include' ? 'tag-include' : '',
+    state === 'exclude' ? 'tag-exclude' : '',
+    state === 'neutral' ? 'tag-neutral' : ''
+  ].filter(Boolean).join(' ');
+  return (
+    <>
+      <span
+        className={classNames}
+        onClick={clickable ? onClick : undefined}
+        tabIndex={clickable ? (tabIndex ?? 0) : undefined}
+        role={clickable ? 'button' : undefined}
+        aria-pressed={clickable ? (state === 'include' ? 'true' : 'false') : undefined}
+        onKeyDown={clickable ? (e => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            onClick && onClick(e);
+          }
+        }) : undefined}
+      >
+        {def.icon && (
+          <img src={def.icon} alt={def.text} />
+        )}
+        <span>{def.text || tag}</span>
+      </span>
+      <style jsx>{`
         .tag {
           display: inline-flex;
           align-items: center;
@@ -118,7 +121,7 @@ export default function Tag({ tag, onClick, tabIndex, clickable, state }) {
   background: linear-gradient(135deg, #e52d27 0%,rgb(139, 0, 46) 100%);
 }
 .tag-miscellaneous {
-  background: linear-gradient(135deg,rgb(168, 172, 179) 0%,rgb(99, 107, 110) 100%);
+  background: linear-gradient(135deg, #545466 0%,rgb(41, 39, 47)100%)
 }
 .tag-progress {
   background: linear-gradient(135deg, #6dd5ed 0%, #4682b4 100%);
@@ -141,6 +144,18 @@ export default function Tag({ tag, onClick, tabIndex, clickable, state }) {
 .tag-outdated-version {
   background: linear-gradient(135deg,rgb(138, 134, 115) 0%,rgb(206, 155, 47) 100%);
 }
+.tag-completion {
+  background: linear-gradient(135deg, #9ef04d 0%, #259947 100%)
+}
+.tag-coin-route {
+  background: linear-gradient(135deg,rgb(168, 172, 179) 0%,rgb(99, 107, 110) 100%);
+  color: #2b2b2b;
+}
+.tag-tentative {
+  background: linear-gradient(135deg, #a68b62 0%,rgb(68, 57, 47)100%)
+  color: #ddd;
+  border: 1px dashed rgba(255,255,255,0.06);
+}
       `}</style>
       <style jsx>{`
         @media (max-width: 600px) {
@@ -156,8 +171,8 @@ export default function Tag({ tag, onClick, tabIndex, clickable, state }) {
           }
         }
       `}</style>
-        </>
-    );
+    </>
+  );
 }
 
 export { TAG_DEFINITIONS, TAG_PRIORITY_ORDER };
