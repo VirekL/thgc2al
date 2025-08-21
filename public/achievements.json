@@ -598,6 +598,23 @@
     ]
   },
   {
+    "name": "Exasperation 67%",
+    "id": "exasperation-67",
+    "player": "Zoink",
+    "levelID": 31325851,
+    "date": "2025-08-21",
+    "length": 221,
+    "version": 2.2,
+    "video": "https://www.youtube.com/live/vomRQRxmJpY?si=z5jtZgkca0r8laqO",
+    "showcaseVideo": "https://youtu.be/G6ugI_TtEl8",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress",
+      "Tentative"
+    ]
+  },
+  {
     "name": "andromeda",
     "id": "andromeda",
     "player": "Taiago",
@@ -878,22 +895,6 @@
     "video": "https://www.youtube.com/live/OCyCMPj_RIQ?t=8952",
     "showcaseVideo": "https://youtu.be/G6ugI_TtEl8",
     "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
-    "name": "Exasperation 67%",
-    "id": "exasperation-67",
-    "player": "Zoink",
-    "levelID": 31325851,
-    "date": "2025-08-21",
-    "length": 221,
-    "version": 2.2,
-    "video": "https://www.youtube.com/live/vomRQRxmJpY?si=z5jtZgkca0r8laqO",
-    "showcaseVideo": "https://youtu.be/G6ugI_TtEl8",
-    "submitter": "TYATYAPKA",
     "tags": [
       "Level",
       "Progress"
@@ -2204,7 +2205,8 @@
     "tags": [
       "Level",
       "Verified",
-      "CBF"
+      "CBF",
+      "Tentative"
     ],
     "showcaseVideo": "https://youtu.be/AgQeRMZw-t4?si=bXiAEgcUSGTzf0ii"
   },
