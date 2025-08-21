@@ -149,7 +149,6 @@ export default function Tag({ tag, onClick, tabIndex, clickable, state }) {
 }
 .tag-coin-route {
   background: linear-gradient(135deg,rgb(168, 172, 179) 0%,rgb(99, 107, 110) 100%);
-  color: #2b2b2b;
 }
 .tag-tentative {
   background: linear-gradient(135deg, #a68b62 0%,rgb(68, 57, 47)100%)
