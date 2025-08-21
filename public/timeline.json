@@ -17,6 +17,21 @@
         "showcaseVideo": "https://youtu.be/bQXnREyaO34"
     },
     {
+        "name": "Thinking Space II (Old) 79%",
+        "id": "thinking-space-ii-old-79",
+        "player": "Zoink",
+        "length": 65,
+        "version": 2.2,
+        "video": "https://youtu.be/mnaIfSOxurY",
+        "showcaseVideo": "https://youtu.be/F05aMR0F6YM",
+        "date": "2025-02-25",
+        "tags": [
+            "Level",
+            "Progress"
+        ],
+        "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/thinking-space-ii1.webp"
+    },
+    {
         "id": "thinking-space-ii-old-77",
         "name": "Thinking Space II (Old) 77%",
         "player": "Zoink",
@@ -28,7 +43,8 @@
         "version": "2.2",
         "date": "2025-02-13",
         "video": "https://www.youtube.com/live/_hsc3cvQIn4?t=3546",
-        "showcaseVideo": "https://youtu.be/F05aMR0F6YM"
+        "showcaseVideo": "https://youtu.be/F05aMR0F6YM",
+        "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/thinking-space-ii1.webp"
     },
     {
         "id": "grief-80",
