@@ -1493,7 +1493,7 @@
     "version": 2.2,
     "video": "https://youtu.be/zI66_8cWoWg",
     "showcaseVideo": "https://youtu.be/9nSkkXZ628E",
-    "submitter": "exiled_shade",
+    "submitter": "Exiled_Shade",
     "tags": [
       "Level",
       "Progress"
@@ -2424,7 +2424,7 @@
       "Progress",
       "CBF"
     ],
-    "levelID": 0,
+    "levelID": 13918016,
     "showcaseVideo": "https://youtu.be/lR70uK1NuKU"
   },
   {
@@ -3925,7 +3925,7 @@
     "version": "2.2",
     "showcaseVideo": "https://youtu.be/2j9nLPyE2Tw",
     "video": "https://youtu.be/Fjl5LbxcnrM",
-    "submitter": "goofygdplayer_",
+    "submitter": "goofygdplayer",
     "tags": [
       "Level",
       "Progress"
@@ -6313,8 +6313,7 @@
       "Level",
       "Progress",
       "Tentative"
-    ],
-    "levelID": 0
+    ]
   },
   {
     "name": "I N J U R Y 18-81%",
@@ -6742,8 +6741,7 @@
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": 0
+    ]
   },
   {
     "name": "Invisible Wasureta 17-100%",
@@ -6759,7 +6757,7 @@
       "Level",
       "Progress"
     ],
-    "levelID": 0
+    "levelID": 76401173
   },
   {
     "name": "Invisible Wasureta 63%",
@@ -6775,7 +6773,7 @@
       "Level",
       "Progress"
     ],
-    "levelID": 0
+    "levelID": 76401173
   },
   {
     "name": "Heavenly Sakupen",
@@ -9356,7 +9354,7 @@
       "Progress",
       "Tentative"
     ],
-    "levelID": 0
+    "levelID": 120453309
   },
   {
     "name": "Snowblind (Old) 59%",
@@ -9465,7 +9463,7 @@
     "levelID": "119502876",
     "video": "https://youtu.be/wObm1cdLGr0",
     "showcaseVideo": "https://youtu.be/pGtG6HdIN2A",
-    "submitter": "goofygdplayer_",
+    "submitter": "goofygdplayer",
     "tags": [
       "Level",
       "Progress"
@@ -10055,7 +10053,7 @@
     "version": 2.2,
     "video": "https://youtu.be/bnIxnsk2Rdw",
     "date": "2025-07-06",
-    "submitter": "goofygdplayer_",
+    "submitter": "goofygdplayer",
     "levelID": 122394881,
     "tags": [
       "Level",
@@ -11418,7 +11416,7 @@
     "levelID": 122941596,
     "video": "https://youtu.be/8Q20XU__LoQ",
     "showcaseVideo": "https://youtu.be/ot4cwsfoZeQ",
-    "submitter": "goofygdplayer_",
+    "submitter": "goofygdplayer",
     "tags": [
       "Level",
       "Verified",
@@ -13592,6 +13590,7 @@
     ]
   }
 ]
+
 
 
 
