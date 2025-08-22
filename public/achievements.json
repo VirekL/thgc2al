@@ -190,7 +190,6 @@
     "version": 2.2,
     "submitter": "TYATYAPKA",
     "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg",
-    "levelID": 0
   },
   {
     "name": "FLAMEWALL 17-95%",
@@ -207,8 +206,7 @@
       "Level",
       "Progress",
       "Tentative"
-    ],
-    "levelID": 0
+    ]
   },
   {
     "name": "KOCMOC UNLEASHED 19-91%",
@@ -242,7 +240,6 @@
     "version": 2.2,
     "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg",
     "submitter": "jak",
-    "levelID": 0
   },
   {
     "name": "FLAMEWALL 3-86%",
@@ -260,7 +257,6 @@
     "length": 333,
     "submitter": "Anceps",
     "version": 2.2,
-    "levelID": 0
   },
   {
     "name": "Tidal Wave buffed",
@@ -1333,7 +1329,7 @@
     "version": 2.2,
     "video": "https://youtu.be/HkZFGcPWwQw",
     "showcaseVideo": "https://youtu.be/qp-gY1MrS3A",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/image0.webp",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/misanthrope.webp",
     "submitter": "nensa",
     "tags": [
       "Level",
@@ -2021,12 +2017,13 @@
     "name": "Misanthrope 44-95%",
     "id": "misanthrope-44-95",
     "player": "BigMacGD",
+    "levelID": 60284876,
     "date": "2022-08-28",
     "length": 141,
     "version": 2.1,
     "video": "https://youtu.be/mK_I3YWtzAc",
     "showcaseVideo": "https://youtu.be/wh1B_Q9gwD8",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/image0.webp",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/misanthrope.webp",
     "tags": [
       "Level",
       "Progress"
@@ -2356,7 +2353,7 @@
       "Level",
       "Progress"
     ],
-    "levelID": 0,
+    "levelID": 89216381,
     "showcaseVideo": "https://www.youtube.com/watch?v=l6poOVWISJA"
   },
   {
@@ -3918,7 +3915,6 @@
       "Tentative"
     ],
     "submitter": "kyle1saurus",
-    "levelID": 0
   },
   {
     "name": "Flashbang 45-100%",
@@ -4500,12 +4496,12 @@
     "name": "Misanthrope 48%",
     "id": "misanthrope-48",
     "player": "iliLaserili",
+    "levelID": 60284876,
     "date": "2025-05-12",
     "length": 170,
     "version": 2.2,
     "video": "https://youtu.be/JMCxwvWTtdQ",
     "showcaseVideo": "https://youtu.be/wh1B_Q9gwD8",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/image0.webp",
     "submitter": "Exiled_Shade",
     "tags": [
       "Level",
@@ -4527,8 +4523,7 @@
       "Level",
       "Progress",
       "Tentative"
-    ],
-    "levelID": 0
+    ]
   },
   {
     "name": "Centipede",
@@ -6610,7 +6605,7 @@
     "version": 2.2,
     "video": "https://youtu.be/Z6LmaQTUWHs",
     "showcaseVideo": "https://youtu.be/qp-gY1MrS3A",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/image0.webp",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/misanthrope.webp",
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
@@ -7583,9 +7578,9 @@
     "date": "2025-06-13",
     "length": "109",
     "version": "2.2",
-    "video": "https://x.com/BigMacGD1/status/1933664236779065491",
+    "video": "https://youtu.be/Lh0OZfdDry0",
     "showcaseVideo": "https://youtu.be/qp-gY1MrS3A",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/image0.webp",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/misanthrope.webp",
     "submitter": "tmtsps12",
     "tags": [
       "Level",
@@ -9633,12 +9628,12 @@
     "name": "Misanthrope 65-100%",
     "id": "misanthrope-65-100",
     "player": "BigMacGD",
+    "levelID": 60284876,
     "date": "2022-08-28",
     "length": 141,
     "version": 2.1,
     "video": "https://youtu.be/jJxubCsEiHc",
     "showcaseVideo": "https://youtu.be/wh1B_Q9gwD8",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/image0.webp",
     "submitter": "Arcadie",
     "tags": [
       "Level",
@@ -9659,7 +9654,7 @@
       "Level",
       "Verified"
     ],
-    "levelID": 0
+    "levelID": 123417713
   },
   {
     "name": "Death Corridor Easy 64%",
@@ -11101,9 +11096,9 @@
     "date": "2025-02-09",
     "length": 117,
     "version": 2.2,
-    "video": "https://x.com/BigMacGD1/status/1888396994831409212",
+    "video": "https://youtu.be/YmdOxacluw8",
     "showcaseVideo": "https://youtu.be/qp-gY1MrS3A",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/image0.webp",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/misanthrope.webp",
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
@@ -11495,12 +11490,12 @@
     "name": "Misanthrope 32-59%",
     "id": "misanthrope-32-59",
     "player": "LordVadercraft",
+    "levelID": 60284876,
     "date": "2024-12-03",
     "length": 95,
     "version": 2.2,
     "video": "https://youtu.be/6kdTDAauY7U",
     "showcaseVideo": "https://youtu.be/wh1B_Q9gwD8",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/image0.webp",
     "submitter": "jak",
     "tags": [
       "Level",
@@ -13597,6 +13592,7 @@
     ]
   }
 ]
+
 
 
 
