@@ -741,6 +741,7 @@
     "length": 67,
     "version": 2.1,
     "video": "https://www.youtube.com/live/YueacvC98cU?t=6780",
+    "showcaseVideo": "https://youtu.be/V_XGGfefoeg",
     "date": "2024-07-28",
     "levelID": 124037650,
     "submitter": "SeptaGon7",
@@ -1666,11 +1667,12 @@
     "name": "KOCMOC UNLEASHED (Layout) 48-89%",
     "id": "kocmoc-unleashed-layout-48-89",
     "player": "Arshadow",
-    "levelID": 124153204,
+    "levelID": 124702724,
     "date": "2024-08-31",
     "length": 31,
     "version": 2.2,
     "video": "https://youtu.be/F9P_T1c2bAQ",
+    "showcaseVideo": "https://youtu.be/KFRRiYLid7M",
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
@@ -2969,6 +2971,7 @@
     "version": 2.1,
     "submitter": "Anceps",
     "video": "https://youtu.be/-ZKWeohEHNs",
+    "showcaseVideo": "https://youtu.be/r2bHk6GayN4",
     "tags": [
       "Challenge",
       "Verified"
@@ -3069,6 +3072,7 @@
     "version": "2.2",
     "levelID": "69196070",
     "video": "https://youtu.be/NdUyGLwSJZg",
+    "showcaseVideo": "https://youtu.be/0Grvott58g0",
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
@@ -3377,6 +3381,7 @@
     "version": "2.2",
     "levelID": "69196070",
     "video": "https://youtu.be/NdUyGLwSJZg",
+    "showcaseVideo": "https://youtu.be/0Grvott58g0",
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
@@ -5997,7 +6002,7 @@
     "version": "2.2",
     "levelID": "69196070",
     "video": "https://youtu.be/Z-LOnJKawIE",
-    "showcaseVideo": "https://youtu.be/WfwYZBeIhxo",
+    "showcaseVideo": "https://youtu.be/0Grvott58g0",
     "submitter": "TheShadowRealm",
     "tags": [
       "Level",
@@ -13592,5 +13597,6 @@
     ]
   }
 ]
+
 
 
