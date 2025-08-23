@@ -49,7 +49,7 @@
       "Progress",
       "Tentative"
     ],
-    "levelID": 0,
+    "levelID": null,
     "submitter": "Radiator"
   },
   {
@@ -369,7 +369,7 @@
     "video": "https://youtu.be/3mJc6oMn_q4?si=iAB7uDZthj9kAZ37",
     "date": "2025-08-16",
     "submitter": "Emp",
-    "levelID": 0,
+    "levelID": null,
     "thumbnail": "https://tjcsucht.net/levelthumbs/60805571.png",
     "tags": [
       "Level",
@@ -425,7 +425,7 @@
     "version": 2.2,
     "thumbnail": "https://i.ytimg.com/vi/i8TGgQNAzDg/maxresdefault.jpg",
     "showcaseVideo": "https://youtu.be/h14lmGH31_M?si=0Dn8l73E5iRFCMIx",
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "Banshee (Old) 86%",
@@ -442,7 +442,7 @@
     "length": 78,
     "version": 2.2,
     "thumbnail": "https://i.ytimg.com/vi/i8TGgQNAzDg/maxresdefault.jpg",
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "Thinking Space II (Old) 40-100%",
@@ -1155,7 +1155,7 @@
     "version": 2.2,
     "thumbnail": "https://i.ytimg.com/vi/i8TGgQNAzDg/maxresdefault.jpg",
     "showcaseVideo": "https://youtu.be/h14lmGH31_M?si=0Dn8l73E5iRFCMIx",
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "Heliopolis 17%",
@@ -3730,7 +3730,7 @@
       "Challenge",
       "Verified"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "Heliopolis (Abdieldevil) 38-78%",
@@ -4220,7 +4220,7 @@
       "Verified",
       "CBF"
     ],
-    "levelID": 0
+    "levelID": 118680356
   },
   {
     "name": "Determination Dance",
@@ -4252,7 +4252,7 @@
       "Level",
       "Verified"
     ],
-    "levelID": 0
+    "levelID": 106084668
   },
   {
     "name": "MUD 63%",
@@ -4591,7 +4591,7 @@
       "Consistency",
       "Tentative"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "CONVULSION",
@@ -4672,7 +4672,7 @@
       "Level",
       "Progress"
     ],
-    "levelID": 0,
+    "levelID": null,
     "showcaseVideo": "https://www.youtube.com/watch?v=sXEE5F9Zg9E"
   },
   {
@@ -4784,7 +4784,7 @@
       "Miscellaneous"
     ],
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/bl-sc-wasu-sw.avif",
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "M I S F O R T U N E",
@@ -4978,7 +4978,7 @@
       "Level",
       "Progress"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "SWI Slithium Version 65%",
@@ -5389,7 +5389,7 @@
       "Level",
       "Progress"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "Saul Goodman",
@@ -5638,7 +5638,7 @@
       "Level",
       "Verified"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "Zodiac 60hz 75%",
@@ -13606,4 +13606,5 @@
     ]
   }
 ]
+
 
