@@ -26,7 +26,7 @@ const TAG_DEFINITIONS = {
   TENTATIVE: { className: 'tag-tentative', icon: '/assets/warning-icon.webp', text: 'Tentative' },
 };
 
-export default function Tag({ tag, onClick, tabIndex, clickable, state }) {
+const TagComponent = function Tag({ tag, onClick, tabIndex, clickable, state }) {
   const def = TAG_DEFINITIONS[tag.toUpperCase()] || {};
   const classNames = [
     'tag',
@@ -170,6 +170,12 @@ export default function Tag({ tag, onClick, tabIndex, clickable, state }) {
       `}</style>
     </>
   );
-}
+};
+
+const Tag = React.memo(TagComponent, (prev, next) => {
+  return prev.tag === next.tag && prev.state === next.state && prev.clickable === next.clickable && prev.tabIndex === next.tabIndex && prev.onClick === next.onClick;
+});
+
+export default Tag;
 
 export { TAG_DEFINITIONS, TAG_PRIORITY_ORDER };
