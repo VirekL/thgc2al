@@ -4,6 +4,7 @@ import { useDateFormat } from '../components/DateFormatContext';
 import Background from '../components/Background';
 import Sidebar from '../components/Sidebar';
 import Tag, { TAG_PRIORITY_ORDER } from '../components/Tag';
+import { VariableSizeList as ListWindow } from 'react-window';
 import Link from 'next/link';
 import DevModePanel from '../components/DevModePanel';
 
@@ -590,28 +591,64 @@ export default function Timeline() {
           {filtered.length === 0 ? (
             <div style={{color: '#aaa'}}>No achievements found.</div>
           ) : (
-            filtered.map((a, i) => (
-              <div
-                key={a.id || i}
-                onMouseEnter={() => handleHover(i)}
-                onMouseLeave={() => setHoveredIdx(null)}
-                style={{ position: 'relative' }}
+            devMode ? (
+              filtered.map((a, i) => (
+                <div
+                  key={a.id || i}
+                  onMouseEnter={() => handleHover(i)}
+                  onMouseLeave={() => setHoveredIdx(null)}
+                  style={{ position: 'relative' }}
+                >
+                  <TimelineAchievementCard
+                    achievement={a}
+                    previousAchievement={filtered[i-1]}
+                    onEdit={() => handleEditAchievement(i)}
+                    isHovered={i === hoveredIdx}
+                  />
+                  {devMode && i === hoveredIdx && (
+                    <div className="devmode-hover-controls" style={{ position: 'absolute', top: 0, right: 0, display: 'flex', gap: 8 }}>
+                      <button onClick={() => handleEditAchievement(i)}>Edit</button>
+                      <button onClick={() => handleDuplicateAchievement(i)}>Duplicate</button>
+                      <button onClick={() => handleRemoveAchievement(i)}>Remove</button>
+                    </div>
+                  )}
+                </div>
+              ))
+            ) : (
+              <ListWindow
+                height={Math.min(720, (typeof window !== 'undefined' ? window.innerHeight - 200 : 720))}
+                itemCount={filtered.length}
+                itemSize={() => 136}
+                width={'100%'}
+                style={{ overflowX: 'hidden' }}
               >
-                <TimelineAchievementCard
-                  achievement={a}
-                  previousAchievement={filtered[i-1]}
-                  onEdit={() => handleEditAchievement(i)}
-                  isHovered={i === hoveredIdx}
-                />
-                {devMode && i === hoveredIdx && (
-                  <div className="devmode-hover-controls" style={{ position: 'absolute', top: 0, right: 0, display: 'flex', gap: 8 }}>
-                    <button onClick={() => handleEditAchievement(i)}>Edit</button>
-                    <button onClick={() => handleDuplicateAchievement(i)}>Duplicate</button>
-                    <button onClick={() => handleRemoveAchievement(i)}>Remove</button>
-                  </div>
-                )}
-              </div>
-            ))
+                {({ index, style }) => {
+                  const a = filtered[index];
+                  return (
+                    <div
+                      key={a.id || index}
+                      style={{ ...style, padding: 8, boxSizing: 'border-box', position: 'relative' }}
+                      onMouseEnter={() => handleHover(index)}
+                      onMouseLeave={() => setHoveredIdx(null)}
+                    >
+                      <TimelineAchievementCard
+                        achievement={a}
+                        previousAchievement={filtered[index - 1]}
+                        onEdit={() => handleEditAchievement(index)}
+                        isHovered={index === hoveredIdx}
+                      />
+                      {devMode && index === hoveredIdx && (
+                        <div className="devmode-hover-controls" style={{ position: 'absolute', top: 0, right: 0, display: 'flex', gap: 8 }}>
+                          <button onClick={() => handleEditAchievement(index)}>Edit</button>
+                          <button onClick={() => handleDuplicateAchievement(index)}>Duplicate</button>
+                          <button onClick={() => handleRemoveAchievement(index)}>Remove</button>
+                        </div>
+                      )}
+                    </div>
+                  );
+                }}
+              </ListWindow>
+            )
           )}
         </section>
       </main>
