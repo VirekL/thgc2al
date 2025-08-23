@@ -3952,6 +3952,23 @@
     ]
   },
   {
+    "name": "Sevvend Clubstep (Full Detail)",
+    "id": "sevvend-clubstep-full-detail",
+    "player": "Nexel",
+    "length": 64,
+    "version": 2.2,
+    "video": "https://youtu.be/U5v707MFHrM?si=KCAwGmz3_t-Tm2Av",
+    "showcaseVideo": "https://youtu.be/r5wqyu4-rrE",
+    "date": "2025-08-22",
+    "submitter": "kyle1saurus",
+    "levelID": 120255728,
+    "tags": [
+      "Level",
+      "Verified",
+      "Rated"
+    ]
+  },
+  {
     "name": "Nautical Nebula",
     "id": "nautical-nebula",
     "player": "manu",
@@ -10224,16 +10241,16 @@
     ]
   },
   {
-    "name": "Lotus Flower 60hz Mobile 58%",
-    "id": "lotus-flower-60hz-mobile-58",
+    "name": "Lotus Flower 60hz Mobile 62%",
+    "id": "lotus-flower-60hz-mobile-62",
     "player": "SanctumGD",
     "levelID": 75813671,
-    "date": "2025-08-11",
-    "length": 53,
+    "date": "2025-08-18",
+    "length": 57,
     "version": 2.2,
-    "video": "https://youtu.be/C51EC_XMCzA?si=yVc0mF4C-nsM_TTx",
+    "video": "https://youtu.be/HhWj_szLMYA",
     "showcaseVideo": "https://youtu.be/yu_p61ch144",
-    "submitter": "kyle1saurus",
+    "submitter": "TYATYAPKA",
     "tags": [
       "Level",
       "Low Hertz",

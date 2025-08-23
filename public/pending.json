@@ -28,7 +28,7 @@
     "version": 2.2,
     "video": "https://youtu.be/YX-KCPYYVI8?t=623",
     "showcaseVideo": "https://youtu.be/IYmRkHZxAgc",
-	"submitter": "Meatius"
+	"submitter": "Meatius",
     "tags": [
       "Level",
       "Progress"
@@ -44,7 +44,7 @@
     "version": 2.2,
     "video": "https://youtu.be/YX-KCPYYVI8?t=152",
     "showcaseVideo": "https://youtu.be/IYmRkHZxAgc",
-	"submitter": "Meatius"
+	"submitter": "Meatius",
     "tags": [
       "Level",
       "Noclip"
@@ -59,7 +59,7 @@
     "version": 2.2,
     "video": "https://youtu.be/5PpEhBdPBjw",
     "showcaseVideo": "https://youtu.be/mHg2jrzpkxs",
-	"submitter": "TYATYAPKA"
+	"submitter": "TYATYAPKA",
     "tags": [
       "Level",
       "Progress"
@@ -135,25 +135,6 @@
     ]
   },
   {
-	"name": "Lotus Flower 60hz Mobile 62%",
-    "id": "lotus-flower-60hz-mobile-62",
-    "player": "SanctumGD",
-    "levelID": 75813671,
-    "date": "2025-08-18",
-    "length": 57,
-    "version": 2.2,
-    "video": "https://youtu.be/HhWj_szLMYA",
-    "showcaseVideo": "https://youtu.be/yu_p61ch144",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Progress",
-      "Rated"
-    ]
-  },
-  {
 	"name": "The Golden 80hz 94%",
     "id": "the-golden-80hz-94",
     "player": "Sid125",
@@ -204,23 +185,6 @@
       "Level",
       "Speedhack",
 	  "Progress",
-      "Rated"
-    ]
-  },
-  {
-	"name": "Sevvend Clubstep (Full Detail)",
-    "id": "sevvend-clubstep-full-detail",
-    "player": "nexel",
-    "date": "2025-08-22",
-    "length": 64,
-    "version": 2.2,
-    "levelID": 120255728,
-    "video": "https://youtu.be/U5v707MFHrM",
-    "showcaseVideo": "https://youtu.be/r5wqyu4-rrE",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Verified",
       "Rated"
     ]
   },
