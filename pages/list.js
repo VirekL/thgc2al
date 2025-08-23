@@ -930,16 +930,21 @@ const newFormPreview = useMemo(() => {
             ) : (
               // Virtualized list for performance when not in dev mode
               <ListWindow
-                height={Math.min(720, window.innerHeight - 200)}
+                // make height conservative and account for headers; fallback to 720
+                height={Math.min(720, (typeof window !== 'undefined' ? window.innerHeight - 200 : 720))}
                 itemCount={filtered.length}
-                itemSize={index => 120}
+                // increase item size to account for card spacing (padding/margin)
+                itemSize={() => 136}
                 width={'100%'}
                 style={{ overflowX: 'hidden' }}
               >
                 {({ index, style }) => {
                   const a = filtered[index];
+                  // react-window positions items absolutely so margins won't affect layout.
+                  // add padding inside the item wrapper and use boxSizing to preserve spacing.
+                  const itemStyle = { ...style, padding: 8, boxSizing: 'border-box' };
                   return (
-                    <div style={style} key={a.id || index}>
+                    <div style={itemStyle} key={a.id || index}>
                       <AchievementCard achievement={a} devMode={devMode} />
                     </div>
                   );
