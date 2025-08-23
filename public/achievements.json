@@ -477,11 +477,11 @@
     ]
   },
   {
-    "name": "Heliopolis 60-100%",
-    "id": "heliopolis-60-100",
+    "name": "Heliopolis (Thnnder) 60-100%",
+    "id": "heliopolis-thnnder-60-100",
     "player": "Thnnder",
-    "length": "78",
-    "version": "2.2",
+    "length": 78,
+    "version": 2.2,
     "video": "https://youtu.be/G08eCti1e68",
     "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
     "date": "2024-11-13",
@@ -490,7 +490,8 @@
     "tags": [
       "Level",
       "Progress"
-    ]
+    ],
+    "levelID": 0
   },
   {
     "name": "Anathema 156%",
@@ -528,8 +529,8 @@
     ]
   },
   {
-    "name": "Heliopolis 48-87%",
-    "id": "heliopolis-48-87",
+    "name": "Heliopolis (Thnnder) 48-87%",
+    "id": "heliopolis-thnnder-48-87",
     "player": "Thnnder",
     "date": "2025-02-04",
     "length": 40,
@@ -541,7 +542,8 @@
     "tags": [
       "Level",
       "Progress"
-    ]
+    ],
+    "levelID": 0
   },
   {
     "name": "Vehemence 39%",
@@ -898,6 +900,23 @@
     ]
   },
   {
+    "name": "KOCMOC UNLEASHED 57%",
+    "id": "kocmoc-unleashed-57",
+    "player": "Arshadow",
+    "date": "2025-06-09",
+    "length": 54,
+    "version": 2.2,
+    "video": "https://youtu.be/8_TjdTMcr-0",
+    "showcaseVideo": "https://youtu.be/NDgTSUSu8-4",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/kocmoc-unleashed1.webp",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "levelID": 0
+  },
+  {
     "name": "Anathema",
     "id": "anathema",
     "player": "Whizkid05",
@@ -1158,12 +1177,29 @@
     "levelID": null
   },
   {
-    "name": "Heliopolis 17%",
-    "id": "heliopolis-17",
+    "name": "Heliopolis 20%",
+    "id": "heliopolis-20",
+    "player": "Garbag",
+    "date": "2025-08-22",
+    "length": 32,
+    "version": 2.2,
+    "video": "https://youtu.be/D046fkPmPqo",
+    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "levelID": 0
+  },
+  {
+    "name": "Heliopolis (Thnnder) 17%",
+    "id": "heliopolis-thnnder-17",
     "player": "Thnnder",
     "date": "2024-11-15",
-    "length": "20",
-    "version": "2.2",
+    "length": 20,
+    "version": 2.2,
     "submitter": "TYATYAPKA",
     "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
     "video": "https://www.youtube.com/live/IQLEFiJ9a98?t=4678s",
@@ -1171,39 +1207,8 @@
     "tags": [
       "Level",
       "Progress"
-    ]
-  },
-  {
-    "name": "Heliopolis (Abdieldevil) 19%",
-    "id": "heliopolis-abdieldevil-19",
-    "player": "Abdieldevil",
-    "date": "2025-07-27",
-    "length": "19",
-    "version": "2.2",
-    "video": "https://youtu.be/l4wL_SFA9As",
-    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw?si=QpUgAYG7dbF74qln",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
-    "name": "Heliopolis (Garbag) 19%",
-    "id": "heliopolis-garbag-19",
-    "player": "Garbag",
-    "date": "2025-08-06",
-    "length": 30,
-    "version": 2.2,
-    "video": "https://youtu.be/1LoJoDi1EVI",
-    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
+    ],
+    "levelID": 0
   },
   {
     "name": "Blue Avernus 88%",
@@ -1531,22 +1536,6 @@
     ]
   },
   {
-    "name": "KOCMOC UNLEASHED 57%",
-    "id": "kocmoc-unleashed-57",
-    "player": "Arshadow",
-    "date": "2025-06-09",
-    "length": "54",
-    "version": 2.2,
-    "video": "https://youtu.be/8_TjdTMcr-0",
-    "showcaseVideo": "https://youtu.be/NDgTSUSu8-4",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/kocmoc-unleashed1.webp",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "sameddd Demise 30-100%",
     "id": "sameddd-demise-30-100",
     "player": "sameddd",
@@ -1575,6 +1564,21 @@
       "Level",
       "Progress",
       "CBF"
+    ]
+  },
+  {
+    "name": "Silent Clubstep (Old) 24-100%",
+    "id": "silent-clubstep-old-24-100",
+    "player": "sobot",
+    "length": 65,
+    "version": 21,
+    "video": "https://www.youtube.com/watch?v=-yS-uONWfkc",
+    "showcaseVideo": "https://youtu.be/mTkrql917bE",
+    "date": "2023-11-01",
+    "levelID": 38692301,
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -2734,6 +2738,22 @@
     ]
   },
   {
+    "name": "KOCMOC UNLEASHED layout 41%",
+    "id": "kocmoc-unleashed-layout-41",
+    "player": "Arshadow",
+    "date": "2024-06-10",
+    "length": 31,
+    "version": 2.2,
+    "levelID": 69196070,
+    "video": "https://youtu.be/Z-LOnJKawIE",
+    "showcaseVideo": "https://youtu.be/0Grvott58g0",
+    "submitter": "TheShadowRealm",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Azure Flare 46%",
     "id": "azure-flare-46",
     "player": "Aeden",
@@ -3061,22 +3081,6 @@
     ]
   },
   {
-    "name": "KOCMOC publicrelease 32-76%",
-    "id": "kocmoc-publicrelease-32-76",
-    "player": "goldix",
-    "date": "2024-11-01",
-    "length": "26",
-    "version": "2.2",
-    "levelID": "69196070",
-    "video": "https://youtu.be/NdUyGLwSJZg",
-    "showcaseVideo": "https://youtu.be/0Grvott58g0",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "KOCMOC",
     "id": "kocmoc",
     "player": "Zoink",
@@ -3366,22 +3370,6 @@
     "submitter": "TYATYAPKA",
     "tags": [
       "Challenge",
-      "Progress"
-    ]
-  },
-  {
-    "name": "KOCMOC publicrelease 14-63%",
-    "id": "kocmoc-publicrelease-14-63",
-    "player": "goldix",
-    "date": "2024-11-01",
-    "length": "29",
-    "version": "2.2",
-    "levelID": "69196070",
-    "video": "https://youtu.be/NdUyGLwSJZg",
-    "showcaseVideo": "https://youtu.be/0Grvott58g0",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
       "Progress"
     ]
   },
@@ -5986,22 +5974,6 @@
       "Progress",
       "2P",
       "CBF"
-    ]
-  },
-  {
-    "name": "KOCMOC publicrelease 41%",
-    "id": "kocmoc-publicrelease-41",
-    "player": "Arshadow",
-    "date": "2024-06-10",
-    "length": "31",
-    "version": "2.2",
-    "levelID": "69196070",
-    "video": "https://youtu.be/Z-LOnJKawIE",
-    "showcaseVideo": "https://youtu.be/0Grvott58g0",
-    "submitter": "TheShadowRealm",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -9287,25 +9259,6 @@
     ]
   },
   {
-    "name": "Trueffet 1.3x 28-100%",
-    "id": "trueffet-13x-28-100",
-    "player": "Arshadow",
-    "length": "39",
-    "version": "2.2",
-    "video": "https://youtu.be/mXBSMLYrsvg",
-    "showcaseVideo": "https://youtu.be/qkQidB9aPLA",
-    "date": "2025-07-27",
-    "submitter": "TYATYAPKA",
-    "levelID": "71434979",
-    "tags": [
-      "Level",
-      "Speedhack",
-      "Progress",
-      "CBF",
-      "Rated"
-    ]
-  },
-  {
     "name": "Gumi 86%",
     "id": "gumi-86",
     "player": "Thnnder",
@@ -9504,8 +9457,8 @@
     ]
   },
   {
-    "name": "Heliopolis (Old) 46%",
-    "id": "heliopolis-old-46",
+    "name": "Heliopolis (Jif) 46%",
+    "id": "heliopolis-jif-46",
     "player": "Jif",
     "date": "2024-02-16",
     "length": 65,
@@ -9514,6 +9467,39 @@
     "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
     "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "levelID": 0
+  },
+  {
+    "name": "KOCMOC publicrelease 32-76%",
+    "id": "kocmoc-publicrelease-32-76",
+    "player": "goldix",
+    "date": "2024-11-01",
+    "length": 26,
+    "version": 2.2,
+    "levelID": 69196070,
+    "video": "https://youtu.be/NdUyGLwSJZg",
+    "showcaseVideo": "https://youtu.be/0Grvott58g0",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
+    "name": "KOCMOC publicrelease 14-63%",
+    "id": "kocmoc-publicrelease-14-63",
+    "player": "goldix",
+    "date": "2024-11-01",
+    "length": 29,
+    "version": 2.2,
+    "levelID": 69196070,
+    "video": "https://youtu.be/NdUyGLwSJZg",
+    "showcaseVideo": "https://youtu.be/0Grvott58g0",
+    "submitter": "TYATYAPKA",
     "tags": [
       "Level",
       "Progress"
@@ -13606,5 +13592,3 @@
     ]
   }
 ]
-
-
