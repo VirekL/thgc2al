@@ -76,7 +76,7 @@ function formatDate(date, dateFormat) {
   return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
-const AchievementCard = memo(function AchievementCard({ achievement, devMode }) {
+const AchievementCard = memo(function AchievementCard({ achievement, devMode, duplicateThumbnails }) {
   const { dateFormat } = useDateFormat();
   const handleClick = e => {
     if (devMode) {
@@ -119,14 +119,25 @@ const AchievementCard = memo(function AchievementCard({ achievement, devMode }) 
               <p>{achievement.player}</p>
             </div>
             <div className="thumbnail-container">
-              <img src={achievement.thumbnail || (achievement.levelID ? `https://tjcsucht.net/levelthumbs/${achievement.levelID}.png` : '/assets/default-thumbnail.png')} alt={achievement.name} loading="lazy" />
+              {(() => {
+                const src = achievement.thumbnail || (achievement.levelID ? `https://tjcsucht.net/levelthumbs/${achievement.levelID}.png` : '/assets/default-thumbnail.png');
+                const isDup = duplicateThumbnails && duplicateThumbnails.has && duplicateThumbnails.has(src);
+                return (
+                  <img
+                    src={src}
+                    alt={achievement.name}
+                    loading="lazy"
+                    style={isDup ? { boxShadow: '0 0 0 4px rgba(230,126,34,0.6)', borderRadius: 8 } : undefined}
+                  />
+                );
+              })()}
             </div>
           </div>
         </div>
       </a>
     </Link>
   );
-}, (prev, next) => prev.achievement === next.achievement && prev.devMode === next.devMode);
+}, (prev, next) => prev.achievement === next.achievement && prev.devMode === next.devMode && prev.duplicateThumbnails === next.duplicateThumbnails);
 
 function useDebouncedValue(value, delay) {
   const [debounced, setDebounced] = useState(value);
@@ -156,6 +167,7 @@ export default function List() {
   const [reordered, setReordered] = useState(null);
   const [showNewForm, setShowNewForm] = useState(false);
   const [hoveredIdx, setHoveredIdx] = useState(null);
+  const [duplicateThumbnails, setDuplicateThumbnails] = useState(new Set());
   const [newForm, setNewForm] = useState({
     name: '', id: '', player: '', length: 0, version: 2, video: '', showcaseVideo: '', date: '', submitter: '', levelID: 0, thumbnail: '', tags: []
   });
@@ -501,6 +513,21 @@ const newFormPreview = useMemo(() => {
     }
   }
 
+  function handleCheckDuplicateThumbnails() {
+    const arr = (reordered || achievements || []).map(a => {
+      // determine thumbnail URL used for display
+      return a && (a.thumbnail && String(a.thumbnail).trim()) ? String(a.thumbnail).trim() : (a && a.levelID ? `https://tjcsucht.net/levelthumbs/${a.levelID}.png` : '/assets/default-thumbnail.png');
+    }).filter(Boolean);
+    const counts = arr.reduce((acc, url) => {
+      acc[url] = (acc[url] || 0) + 1;
+      return acc;
+    }, {});
+    const duplicates = new Set(Object.keys(counts).filter(k => counts[k] > 1));
+    setDuplicateThumbnails(duplicates);
+    if (duplicates.size === 0) alert('No duplicate thumbnails found.');
+    else alert(`Found ${duplicates.size} duplicate thumbnail URL(s). Highlighting them in the list.`);
+  }
+
   function getMostVisibleIdx() {
     if (!achievementRefs.current) return null;
     let maxVisible = 0;
@@ -754,6 +781,7 @@ const newFormPreview = useMemo(() => {
             handleNewFormAdd={handleNewFormAdd}
             handleNewFormCancel={handleNewFormCancel}
             handleCopyJson={handleCopyJson}
+            handleCheckDuplicateThumbnails={handleCheckDuplicateThumbnails}
             handleShowNewForm={handleShowNewForm}
             newFormPreview={newFormPreview}
             onImportAchievementsJson={json => {
@@ -930,7 +958,7 @@ const newFormPreview = useMemo(() => {
                   position: 'relative',
                   zIndex: 1
                 }}>
-                  <AchievementCard achievement={a} devMode={devMode} />
+                  <AchievementCard achievement={a} devMode={devMode} duplicateThumbnails={duplicateThumbnails} />
                 </div>
               </div>
             ))
@@ -972,7 +1000,7 @@ const newFormPreview = useMemo(() => {
                   const itemStyle = { ...style, padding: 8, boxSizing: 'border-box' };
                   return (
                     <div style={itemStyle} key={a.id || index}>
-                      <AchievementCard achievement={a} devMode={devMode} />
+                      <AchievementCard achievement={a} devMode={devMode} duplicateThumbnails={duplicateThumbnails} />
                     </div>
                   );
                 }}
