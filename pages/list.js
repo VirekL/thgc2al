@@ -118,17 +118,22 @@ const AchievementCard = memo(function AchievementCard({ achievement, devMode, du
               <h2>{achievement.name}</h2>
               <p>{achievement.player}</p>
             </div>
-            <div className="thumbnail-container">
+            <div className="thumbnail-container" style={{ display: 'flex', alignItems: 'center' }}>
               {(() => {
-                const src = achievement.thumbnail || (achievement.levelID ? `https://tjcsucht.net/levelthumbs/${achievement.levelID}.png` : '/assets/default-thumbnail.png');
+                const src = (achievement && achievement.thumbnail && String(achievement.thumbnail).trim()) ? String(achievement.thumbnail).trim() : (achievement && achievement.levelID ? `https://tjcsucht.net/levelthumbs/${achievement.levelID}.png` : '/assets/default-thumbnail.png');
                 const isDup = duplicateThumbnails && duplicateThumbnails.has && duplicateThumbnails.has(src);
                 return (
-                  <img
-                    src={src}
-                    alt={achievement.name}
-                    loading="lazy"
-                    style={isDup ? { boxShadow: '0 0 0 4px rgba(230,126,34,0.6)', borderRadius: 8 } : undefined}
-                  />
+                  <div style={{ position: 'relative', display: 'inline-block' }}>
+                    <img
+                      src={src}
+                      alt={achievement.name}
+                      loading="lazy"
+                      style={isDup ? { outline: '3px solid rgba(230,126,34,0.95)', boxShadow: '0 6px 22px rgba(230,126,34,0.25)', borderRadius: 8 } : { borderRadius: 8 }}
+                    />
+                    {isDup && (
+                      <div style={{ position: 'absolute', top: 6, right: 6, background: 'rgba(230,126,34,0.95)', color: '#111', padding: '2px 6px', borderRadius: 12, fontSize: 12, fontWeight: 700 }}>DUP</div>
+                    )}
+                  </div>
                 );
               })()}
             </div>
