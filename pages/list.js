@@ -934,7 +934,7 @@ const newFormPreview = useMemo(() => {
                 height={Math.min(720, (typeof window !== 'undefined' ? window.innerHeight - 200 : 720))}
                 itemCount={filtered.length}
                 // increase item size to account for card spacing (padding/margin)
-                itemSize={() => 180}
+                itemSize={() => 150}
                 width={'100%'}
                 style={{ overflowX: 'hidden' }}
               >
