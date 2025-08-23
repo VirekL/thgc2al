@@ -138,6 +138,8 @@ function useDebouncedValue(value, delay) {
 
 export default function List() {
   const [achievements, setAchievements] = useState([]);
+  const [visibleCount, setVisibleCount] = useState(100);
+  const listRef = useRef(null);
   const [search, setSearch] = useState('');
   const debouncedSearch = useDebouncedValue(search, 200);
   const [filterTags, setFilterTags] = useState({ include: [], exclude: [] });
@@ -391,6 +393,11 @@ export default function List() {
   const filtered = useMemo(() => {
     return achievements.filter(filterFn);
   }, [achievements, filterFn]);
+
+  // Reset visible count when filters/search results change or when toggling dev mode
+  useEffect(() => {
+    setVisibleCount(Math.min(100, filtered.length));
+  }, [filtered]);
 
   const devAchievements = devMode && reordered ? reordered : achievements;
 
@@ -928,15 +935,22 @@ const newFormPreview = useMemo(() => {
             filtered.length === 0 ? (
               <div className="no-achievements">No achievements found.</div>
             ) : (
-              // Virtualized list for performance when not in dev mode
               <ListWindow
+                ref={listRef}
                 // make height conservative and account for headers; fallback to 720
                 height={Math.min(720, (typeof window !== 'undefined' ? window.innerHeight - 200 : 720))}
-                itemCount={filtered.length}
+                // only render up to visibleCount items (incrementally increased)
+                itemCount={Math.min(visibleCount, filtered.length)}
                 // increase item size to account for card spacing (padding/margin)
                 itemSize={() => 150}
                 width={'100%'}
                 style={{ overflowX: 'hidden' }}
+                onItemsRendered={({ visibleStopIndex }) => {
+                  // when the user approaches the end, load the next page
+                  if (visibleStopIndex >= Math.min(visibleCount, filtered.length) - 5 && visibleCount < filtered.length) {
+                    setVisibleCount(prev => Math.min(prev + 100, filtered.length));
+                  }
+                }}
               >
                 {({ index, style }) => {
                   const a = filtered[index];
