@@ -76,7 +76,7 @@ function formatDate(date, dateFormat) {
   return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
-const AchievementCard = memo(function AchievementCard({ achievement, devMode, duplicateThumbnails }) {
+const AchievementCard = memo(function AchievementCard({ achievement, devMode }) {
   const { dateFormat } = useDateFormat();
   const handleClick = e => {
     if (devMode) {
@@ -118,31 +118,15 @@ const AchievementCard = memo(function AchievementCard({ achievement, devMode, du
               <h2>{achievement.name}</h2>
               <p>{achievement.player}</p>
             </div>
-            <div className="thumbnail-container" style={{ display: 'flex', alignItems: 'center' }}>
-              {(() => {
-                const src = (achievement && achievement.thumbnail && String(achievement.thumbnail).trim()) ? String(achievement.thumbnail).trim() : (achievement && achievement.levelID ? `https://tjcsucht.net/levelthumbs/${achievement.levelID}.png` : '/assets/default-thumbnail.png');
-                const isDup = duplicateThumbnails && duplicateThumbnails.has && duplicateThumbnails.has(src);
-                return (
-                  <div style={{ position: 'relative', display: 'inline-block' }}>
-                    <img
-                      src={src}
-                      alt={achievement.name}
-                      loading="lazy"
-                      style={isDup ? { outline: '3px solid rgba(230,126,34,0.95)', boxShadow: '0 6px 22px rgba(230,126,34,0.25)', borderRadius: 8 } : { borderRadius: 8 }}
-                    />
-                    {isDup && (
-                      <div style={{ position: 'absolute', top: 6, right: 6, background: 'rgba(230,126,34,0.95)', color: '#111', padding: '2px 6px', borderRadius: 12, fontSize: 12, fontWeight: 700 }}>DUP</div>
-                    )}
-                  </div>
-                );
-              })()}
+            <div className="thumbnail-container">
+              <img src={achievement.thumbnail || (achievement.levelID ? `https://tjcsucht.net/levelthumbs/${achievement.levelID}.png` : '/assets/default-thumbnail.png')} alt={achievement.name} loading="lazy" />
             </div>
           </div>
         </div>
       </a>
     </Link>
   );
-}, (prev, next) => prev.achievement === next.achievement && prev.devMode === next.devMode && prev.duplicateThumbnails === next.duplicateThumbnails);
+}, (prev, next) => prev.achievement === next.achievement && prev.devMode === next.devMode);
 
 function useDebouncedValue(value, delay) {
   const [debounced, setDebounced] = useState(value);
@@ -172,7 +156,7 @@ export default function List() {
   const [reordered, setReordered] = useState(null);
   const [showNewForm, setShowNewForm] = useState(false);
   const [hoveredIdx, setHoveredIdx] = useState(null);
-  const [duplicateThumbnails, setDuplicateThumbnails] = useState(new Set());
+  const [duplicateThumbKeys, setDuplicateThumbKeys] = useState(new Set());
   const [newForm, setNewForm] = useState({
     name: '', id: '', player: '', length: 0, version: 2, video: '', showcaseVideo: '', date: '', submitter: '', levelID: 0, thumbnail: '', tags: []
   });
@@ -207,6 +191,21 @@ export default function List() {
       arr.forEach((a, i) => { a.rank = i + 1; });
       return arr;
     });
+  }
+
+  function handleCheckDuplicateThumbnails() {
+    const items = devMode && reordered ? reordered : achievements;
+    const map = new Map();
+    items.forEach((a, i) => {
+      const thumb = (a && a.thumbnail) ? a.thumbnail : (a && a.levelID) ? `https://tjcsucht.net/levelthumbs/${a.levelID}.png` : '';
+      const key = String(thumb || '').trim();
+      if (!key) return;
+      map.set(key, (map.get(key) || 0) + 1);
+    });
+    const dupKeys = new Set();
+    map.forEach((count, key) => { if (count > 1) dupKeys.add(key); });
+    setDuplicateThumbKeys(dupKeys);
+    // Optionally, briefly scroll to first duplicate or flash UI — left as-is.
   }
   const [scrollToIdx, setScrollToIdx] = useState(null);
   function handleEditAchievement(idx) {
@@ -518,21 +517,6 @@ const newFormPreview = useMemo(() => {
     }
   }
 
-  function handleCheckDuplicateThumbnails() {
-    const arr = (reordered || achievements || []).map(a => {
-      // determine thumbnail URL used for display
-      return a && (a.thumbnail && String(a.thumbnail).trim()) ? String(a.thumbnail).trim() : (a && a.levelID ? `https://tjcsucht.net/levelthumbs/${a.levelID}.png` : '/assets/default-thumbnail.png');
-    }).filter(Boolean);
-    const counts = arr.reduce((acc, url) => {
-      acc[url] = (acc[url] || 0) + 1;
-      return acc;
-    }, {});
-    const duplicates = new Set(Object.keys(counts).filter(k => counts[k] > 1));
-    setDuplicateThumbnails(duplicates);
-    if (duplicates.size === 0) alert('No duplicate thumbnails found.');
-    else alert(`Found ${duplicates.size} duplicate thumbnail URL(s). Highlighting them in the list.`);
-  }
-
   function getMostVisibleIdx() {
     if (!achievementRefs.current) return null;
     let maxVisible = 0;
@@ -766,6 +750,7 @@ const newFormPreview = useMemo(() => {
         <section className="achievements achievements-section">
           <DevModePanel
             devMode={devMode}
+            handleCheckDuplicateThumbnails={handleCheckDuplicateThumbnails}
             editIdx={editIdx}
             editForm={editForm}
             editFormTags={editFormTags}
@@ -786,7 +771,6 @@ const newFormPreview = useMemo(() => {
             handleNewFormAdd={handleNewFormAdd}
             handleNewFormCancel={handleNewFormCancel}
             handleCopyJson={handleCopyJson}
-            handleCheckDuplicateThumbnails={handleCheckDuplicateThumbnails}
             handleShowNewForm={handleShowNewForm}
             newFormPreview={newFormPreview}
             onImportAchievementsJson={json => {
@@ -810,6 +794,10 @@ const newFormPreview = useMemo(() => {
                 ref={el => {
                   achievementRefs.current[i] = el;
                 }}
+                className={(() => {
+                  const thumb = (a && a.thumbnail) ? a.thumbnail : (a && a.levelID) ? `https://tjcsucht.net/levelthumbs/${a.levelID}.png` : '';
+                  return duplicateThumbKeys.has((thumb || '').trim()) ? 'duplicate-thumb-item' : '';
+                })()}
                 style={{
                   border: '1px solid #333',
                   marginBottom: 8,
@@ -963,7 +951,7 @@ const newFormPreview = useMemo(() => {
                   position: 'relative',
                   zIndex: 1
                 }}>
-                  <AchievementCard achievement={a} devMode={devMode} duplicateThumbnails={duplicateThumbnails} />
+                  <AchievementCard achievement={a} devMode={devMode} />
                 </div>
               </div>
             ))
@@ -1003,9 +991,11 @@ const newFormPreview = useMemo(() => {
                   // react-window positions items absolutely so margins won't affect layout.
                   // add padding inside the item wrapper and use boxSizing to preserve spacing.
                   const itemStyle = { ...style, padding: 8, boxSizing: 'border-box' };
+                  const thumb = (a && a.thumbnail) ? a.thumbnail : (a && a.levelID) ? `https://tjcsucht.net/levelthumbs/${a.levelID}.png` : '';
+                  const isDup = duplicateThumbKeys.has((thumb || '').trim());
                   return (
-                    <div style={itemStyle} key={a.id || index}>
-                      <AchievementCard achievement={a} devMode={devMode} duplicateThumbnails={duplicateThumbnails} />
+                    <div style={itemStyle} key={a.id || index} className={isDup ? 'duplicate-thumb-item' : ''}>
+                      <AchievementCard achievement={a} devMode={devMode} />
                     </div>
                   );
                 }}
