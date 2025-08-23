@@ -385,6 +385,51 @@ export default function List() {
 
   const searchLower = useMemo(() => debouncedSearch.trim().toLowerCase(), [debouncedSearch]);
 
+  // When user presses Enter in the search box, jump to the first matching achievement
+  function handleSearchKeyDown(e) {
+    if (e.key !== 'Enter') return;
+    const localSearch = (search || '').trim().toLowerCase();
+    const source = devMode && reordered ? reordered : achievements;
+    if (!source || source.length === 0) return;
+
+    const filteredNow = source.filter(a => {
+      if (localSearch) {
+        if (typeof a.name !== 'string') return false;
+        if (!a.name.toLowerCase().includes(localSearch)) return false;
+      }
+      const tags = (a.tags || []).map(t => (t || '').toUpperCase());
+      if (filterTags.include.length && !filterTags.include.every(tag => tags.includes(tag.toUpperCase()))) return false;
+      if (filterTags.exclude.length && filterTags.exclude.some(tag => tags.includes(tag.toUpperCase()))) return false;
+      return true;
+    });
+    if (filteredNow.length === 0) return;
+
+    // Scroll depending on display mode
+    if (devMode) {
+      const first = filteredNow[0];
+      const idxInSource = source.indexOf(first);
+      if (idxInSource !== -1 && achievementRefs.current && achievementRefs.current[idxInSource]) {
+        achievementRefs.current[idxInSource].scrollIntoView({ behavior: 'smooth', block: 'center' });
+        setHoveredIdx(idxInSource);
+      }
+    } else {
+      // For normal mode, try to scroll the react-window list to the first match
+      const first = filteredNow[0];
+      if (!first) return;
+      // find index within the pre-computed filtered array used by the list
+      const idxInFiltered = filtered.findIndex(a => a && first && a.id === first.id);
+      if (idxInFiltered >= 0 && listRef && listRef.current && typeof listRef.current.scrollToItem === 'function') {
+        try { listRef.current.scrollToItem(idxInFiltered, 'center'); } catch (err) {}
+        return;
+      }
+      // Fallback: attempt to find DOM node in achievementRefs and scroll
+      const idxInSource = achievements.indexOf(first);
+      if (idxInSource !== -1 && achievementRefs.current && achievementRefs.current[idxInSource]) {
+        achievementRefs.current[idxInSource].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  }
+
   const filterFn = useCallback(
     a => {
       if (searchLower) {
@@ -666,6 +711,7 @@ const newFormPreview = useMemo(() => {
                 placeholder="Search achievements..."
                 value={search}
                 onChange={e => setSearch(e.target.value)}
+                onKeyDown={handleSearchKeyDown}
                 aria-label="Search achievements"
                 className="search-input"
                 style={{ width: '100%' }}
