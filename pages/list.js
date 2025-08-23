@@ -143,23 +143,18 @@ export default function List() {
   const listRef = useRef(null);
   const [search, setSearch] = useState('');
   const debouncedSearch = useDebouncedValue(search, 200);
-  
-  // When user presses Enter in the search input: find first match, clear the search input,
-  // ensure enough items are visible and scroll to the matched achievement.
+
   function handleSearchKeyDown(e) {
     if (e.key !== 'Enter') return;
     e.preventDefault();
     const query = (search || '').trim().toLowerCase();
     if (!query) return;
-    // Build predicate to match the query against an achievement
     const matchesQuery = a => {
       if (!a) return false;
       const candidates = [a.name, a.player, a.id, a.levelID, a.submitter, (a.tags || []).join(' ')].filter(Boolean);
       return candidates.some(c => String(c).toLowerCase().includes(query));
     };
 
-    // Determine the list that will be rendered after clearing the text search.
-    // We apply tag include/exclude filters but NOT the text search.
     const baseList = devMode && reordered ? reordered : achievements;
     const matchesTagsOnly = a => {
       const tags = (a.tags || []).map(t => t.toUpperCase());
@@ -172,28 +167,21 @@ export default function List() {
     const targetIdx = targetList.findIndex(matchesQuery);
     if (targetIdx === -1) return;
 
-    // Make sure the list shows at least up to the target index
     setVisibleCount(v => Math.max(v, targetIdx + 20));
-    // Clear the search so "everything's normal" and then jump to the item
     setSearch('');
 
-    // If we're in dev mode (non-virtualized) use achievementRefs + scrollToIdx effect.
     if (devMode) {
       setScrollToIdx(targetIdx);
     } else {
-      // For react-window virtualized list, scroll using the list ref after render.
-      // Use requestAnimationFrame twice to allow the DOM to update after visibleCount change.
       requestAnimationFrame(() => requestAnimationFrame(() => {
         try {
           if (listRef && listRef.current && typeof listRef.current.scrollToItem === 'function') {
             listRef.current.scrollToItem(targetIdx, 'center');
           }
         } catch (err) {
-          // ignore
         }
       }));
     }
-    // Remove focus from the input to avoid accidental re-trigger
     if (document && document.activeElement && typeof document.activeElement.blur === 'function') {
       document.activeElement.blur();
     }
@@ -260,7 +248,6 @@ export default function List() {
     const dupKeys = new Set();
     map.forEach((count, key) => { if (count > 1) dupKeys.add(key); });
     setDuplicateThumbKeys(dupKeys);
-    // Optionally, briefly scroll to first duplicate or flash UI — left as-is.
   }
   const [scrollToIdx, setScrollToIdx] = useState(null);
   function handleEditAchievement(idx) {
@@ -350,7 +337,6 @@ export default function List() {
 
   const router = useRouter();
 
-  // If the page is opened with ?dev=1 (or any dev query), enable dev mode and set reordered
   useEffect(() => {
     if (!router || !router.isReady) return;
     try {
@@ -360,7 +346,6 @@ export default function List() {
         setReordered(achievements.map(a => ({ ...a })));
       }
     } catch (e) {
-      // ignore
     }
   }, [router, router && router.isReady, router && router.query, achievements]);
 
@@ -458,9 +443,7 @@ export default function List() {
     return achievements.filter(filterFn);
   }, [achievements, filterFn]);
 
-  // Reset visible count when filters/search results change or when toggling dev mode
   useEffect(() => {
-    // read user preference from localStorage
     let pref = 100;
     try {
       if (typeof window !== 'undefined') {
@@ -536,28 +519,28 @@ export default function List() {
     setNewFormTags([]);
     setNewFormCustomTags('');
   }
-const newFormPreview = useMemo(() => {
-  let tags = [...newFormTags];
-  if (typeof newFormCustomTags === 'string' && newFormCustomTags.trim()) {
-    newFormCustomTags.split(',').map(t => (typeof t === 'string' ? t.trim() : t)).filter(Boolean).forEach(t => {
-      if (!tags.includes(t)) tags.push(t);
-    });
-  }
-  const entry = {};
-  Object.entries(newForm).forEach(([k, v]) => {
-    if (typeof v === 'string') {
-      if (v.trim() !== '') entry[k] = v.trim();
-    } else if (v !== undefined && v !== null && v !== '') {
-      entry[k] = v;
+  const newFormPreview = useMemo(() => {
+    let tags = [...newFormTags];
+    if (typeof newFormCustomTags === 'string' && newFormCustomTags.trim()) {
+      newFormCustomTags.split(',').map(t => (typeof t === 'string' ? t.trim() : t)).filter(Boolean).forEach(t => {
+        if (!tags.includes(t)) tags.push(t);
+      });
     }
-  });
-  if (tags.length > 0) entry.tags = tags;
-  return entry;
-}, [newForm, newFormTags, newFormCustomTags]);
+    const entry = {};
+    Object.entries(newForm).forEach(([k, v]) => {
+      if (typeof v === 'string') {
+        if (v.trim() !== '') entry[k] = v.trim();
+      } else if (v !== undefined && v !== null && v !== '') {
+        entry[k] = v;
+      }
+    });
+    if (tags.length > 0) entry.tags = tags;
+    return entry;
+  }, [newForm, newFormTags, newFormCustomTags]);
 
   function handleCopyJson() {
     if (!reordered) return;
-    const json = JSON.stringify(reordered.map(({rank, ...rest}) => rest), null, 2);
+    const json = JSON.stringify(reordered.map(({ rank, ...rest }) => rest), null, 2);
     if (navigator.clipboard) {
       navigator.clipboard.writeText(json);
       alert('Copied new achievements.json to clipboard!');
@@ -606,6 +589,30 @@ const newFormPreview = useMemo(() => {
       setScrollToIdx(null);
     }
   }, [scrollToIdx, devAchievements]);
+
+  useEffect(() => {
+    if (scrollToIdx === null) return;
+    if (devMode) return; // dev mode handled by the other effect
+    try {
+      const idx = Math.max(0, Math.min(scrollToIdx, filtered.length - 1));
+      if (listRef && listRef.current && typeof listRef.current.scrollToItem === 'function') {
+        requestAnimationFrame(() => requestAnimationFrame(() => {
+          try {
+            if (typeof listRef.current.scrollToItem === 'function') {
+              listRef.current.scrollToItem(idx, 'center');
+            } else if (typeof listRef.current.scrollTo === 'function') {
+              const offset = idx * 150;
+              listRef.current.scrollTo(offset);
+            }
+          } catch (e) { }
+        }));
+      } else if (achievementRefs.current && achievementRefs.current[idx]) {
+        achievementRefs.current[idx].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    } catch (e) {
+    }
+    setScrollToIdx(null);
+  }, [scrollToIdx, filtered, devMode]);
 
   function handleRemoveAchievement(idx) {
     setReordered(prev => {
@@ -721,8 +728,8 @@ const newFormPreview = useMemo(() => {
                 type="text"
                 placeholder="Search achievements..."
                 value={search}
-                  onChange={e => setSearch(e.target.value)}
-                  onKeyDown={handleSearchKeyDown}
+                onChange={e => setSearch(e.target.value)}
+                onKeyDown={handleSearchKeyDown}
                 aria-label="Search achievements"
                 className="search-input"
                 style={{ width: '100%' }}
@@ -906,7 +913,7 @@ const newFormPreview = useMemo(() => {
                         marginRight: 8,
                       }}
                       disabled={i === 0}
-                      onClick={e => {e.stopPropagation(); handleMoveAchievementUp(i);}}
+                      onClick={e => { e.stopPropagation(); handleMoveAchievementUp(i); }}
                     >▲</button>
                     <button
                       title="Move Down"
@@ -929,7 +936,7 @@ const newFormPreview = useMemo(() => {
                         marginRight: 8,
                       }}
                       disabled={i === devAchievements.length - 1}
-                      onClick={e => {e.stopPropagation(); handleMoveAchievementDown(i);}}
+                      onClick={e => { e.stopPropagation(); handleMoveAchievementDown(i); }}
                     >▼</button>
                     <button
                       title="Edit"
@@ -952,7 +959,7 @@ const newFormPreview = useMemo(() => {
                       }}
                       onMouseOver={e => e.currentTarget.style.background = 'var(--info-hover, #3498db)'}
                       onMouseOut={e => e.currentTarget.style.background = 'var(--info, #2980b9)'}
-                      onClick={e => {e.stopPropagation(); handleEditAchievement(i);}}
+                      onClick={e => { e.stopPropagation(); handleEditAchievement(i); }}
                     >✏️</button>
                     <button
                       title="Duplicate"
@@ -975,7 +982,7 @@ const newFormPreview = useMemo(() => {
                       }}
                       onMouseOver={e => e.currentTarget.style.background = 'var(--primary-accent-hover, #ff9800)'}
                       onMouseOut={e => e.currentTarget.style.background = 'var(--primary-accent, #e67e22)'}
-                      onClick={e => {e.stopPropagation(); handleDuplicateAchievement(i);}}
+                      onClick={e => { e.stopPropagation(); handleDuplicateAchievement(i); }}
                     >📄</button>
                     <button
                       title="Remove"
@@ -998,11 +1005,11 @@ const newFormPreview = useMemo(() => {
                       }}
                       onMouseOver={e => e.currentTarget.style.background = 'var(--danger-hover, #e74c3c)'}
                       onMouseOut={e => e.currentTarget.style.background = 'var(--danger, #c0392b)'}
-                      onClick={e => {e.stopPropagation(); handleRemoveAchievement(i);}}
+                      onClick={e => { e.stopPropagation(); handleRemoveAchievement(i); }}
                     >🗑️</button>
                   </div>
                 )}
-                <div style={{ 
+                <div style={{
                   opacity: hoveredIdx === i ? 0.3 : 1,
                   transition: 'opacity 0.2s',
                   position: 'relative',
@@ -1018,21 +1025,16 @@ const newFormPreview = useMemo(() => {
             ) : (
               <ListWindow
                 ref={listRef}
-                // make height conservative and account for headers; fallback to 720
                 height={Math.min(720, (typeof window !== 'undefined' ? window.innerHeight - 200 : 720))}
-                // only render up to visibleCount items (incrementally increased)
                 itemCount={Math.min(visibleCount, filtered.length)}
-                // increase item size to account for card spacing (padding/margin)
                 itemSize={() => 150}
                 width={'100%'}
                 style={{ overflowX: 'hidden' }}
                 onItemsRendered={({ visibleStopIndex }) => {
-                  // when itemsPerPage is 'all' we don't auto-increment
                   try {
                     const v = typeof window !== 'undefined' ? localStorage.getItem('itemsPerPage') : null;
                     const pageSize = v === 'all' ? 'all' : (v ? Number(v) || 100 : 100);
                     if (pageSize === 'all') return;
-                    // when the user approaches the end, load the next page-sized chunk
                     if (visibleStopIndex >= Math.min(visibleCount, filtered.length) - 5 && visibleCount < filtered.length) {
                       setVisibleCount(prev => Math.min(prev + (Number(pageSize) || 100), filtered.length));
                     }
@@ -1045,8 +1047,6 @@ const newFormPreview = useMemo(() => {
               >
                 {({ index, style }) => {
                   const a = filtered[index];
-                  // react-window positions items absolutely so margins won't affect layout.
-                  // add padding inside the item wrapper and use boxSizing to preserve spacing.
                   const itemStyle = { ...style, padding: 8, boxSizing: 'border-box' };
                   const thumb = (a && a.thumbnail) ? a.thumbnail : (a && a.levelID) ? `https://tjcsucht.net/levelthumbs/${a.levelID}.png` : '';
                   const isDup = duplicateThumbKeys.has((thumb || '').trim());
