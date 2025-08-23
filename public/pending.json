@@ -172,7 +172,59 @@
     ]
   },
   {
-	
+	"name": "The Golden 1.1x 97%",
+    "id": "the-golden-11x-97",
+    "player": "Sid125",
+    "length": "65",
+    "version": "2.1",
+    "video": "https://youtu.be/b6dUBlA38_4?t=63",
+    "showcaseVideo": "https://youtu.be/lbrN3kasxR0",
+    "date": "2021-01-31",
+    "submitter": "Radiator",
+    "levelID": "60978746",
+    "tags": [
+      "Level",
+      "Speedhack",
+	  "Progress",
+      "Rated"
+    ]
+  },
+  {
+	"name": "The Golden 1.25x 36-100%",
+    "id": "the-golden-125x-36-100",
+    "player": "goldix",
+    "length": "42",
+    "version": "2.1",
+    "video": "https://youtu.be/fuW1FfGQ5co",
+    "showcaseVideo": "https://youtu.be/lbrN3kasxR0",
+    "date": "2025-08-23",
+    "submitter": "Radiator",
+    "levelID": "60978746",
+    "tags": [
+      "Level",
+      "Speedhack",
+	  "Progress",
+      "Rated"
+    ]
+  },
+  {
+	"name": "Sevvend Clubstep (Full Detail)",
+    "id": "sevvend-clubstep-full-detail",
+    "player": "nexel",
+    "date": "2025-08-22",
+    "length": 64,
+    "version": 2.2,
+    "levelID": 120255728,
+    "video": "https://youtu.be/U5v707MFHrM",
+    "showcaseVideo": "https://youtu.be/r5wqyu4-rrE",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Verified",
+      "Rated"
+    ]
+  },
+  {
 	"name": "Slaughterhouse Redux 93%",
     "id": "slaughterhouse-redux-93",
     "player": "liamkn08",
