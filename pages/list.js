@@ -396,7 +396,17 @@ export default function List() {
 
   // Reset visible count when filters/search results change or when toggling dev mode
   useEffect(() => {
-    setVisibleCount(Math.min(100, filtered.length));
+    // read user preference from localStorage
+    let pref = 100;
+    try {
+      if (typeof window !== 'undefined') {
+        const v = localStorage.getItem('itemsPerPage');
+        pref = v === 'all' ? 'all' : (v ? Number(v) || 100 : 100);
+      }
+    } catch (e) { pref = 100; }
+
+    if (pref === 'all') setVisibleCount(filtered.length);
+    else setVisibleCount(Math.min(pref, filtered.length));
   }, [filtered]);
 
   const devAchievements = devMode && reordered ? reordered : achievements;
@@ -946,9 +956,19 @@ const newFormPreview = useMemo(() => {
                 width={'100%'}
                 style={{ overflowX: 'hidden' }}
                 onItemsRendered={({ visibleStopIndex }) => {
-                  // when the user approaches the end, load the next page
-                  if (visibleStopIndex >= Math.min(visibleCount, filtered.length) - 5 && visibleCount < filtered.length) {
-                    setVisibleCount(prev => Math.min(prev + 100, filtered.length));
+                  // when itemsPerPage is 'all' we don't auto-increment
+                  try {
+                    const v = typeof window !== 'undefined' ? localStorage.getItem('itemsPerPage') : null;
+                    const pageSize = v === 'all' ? 'all' : (v ? Number(v) || 100 : 100);
+                    if (pageSize === 'all') return;
+                    // when the user approaches the end, load the next page-sized chunk
+                    if (visibleStopIndex >= Math.min(visibleCount, filtered.length) - 5 && visibleCount < filtered.length) {
+                      setVisibleCount(prev => Math.min(prev + (Number(pageSize) || 100), filtered.length));
+                    }
+                  } catch (err) {
+                    if (visibleStopIndex >= Math.min(visibleCount, filtered.length) - 5 && visibleCount < filtered.length) {
+                      setVisibleCount(prev => Math.min(prev + 100, filtered.length));
+                    }
                   }
                 }}
               >
