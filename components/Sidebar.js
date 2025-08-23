@@ -1,9 +1,10 @@
+import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useCallback, useState } from 'react';
 import { useDateFormat } from './DateFormatContext';
 
-export default function Sidebar() {
+function SidebarInner() {
   const router = useRouter();
   const { dateFormat, setDateFormat } = useDateFormat();
   const [showSettings, setShowSettings] = useState(false);
@@ -11,17 +12,12 @@ export default function Sidebar() {
   const handleRandomClick = useCallback(async (e) => {
     e.preventDefault();
     e.stopPropagation();
-    console.log('Random button clicked');
     const res = await fetch('/achievements.json');
     const data = await res.json();
-    console.log('Fetched achievements:', data);
     const valid = data.filter(a => a && a.id && a.name);
     if (valid.length > 0) {
       const random = valid[Math.floor(Math.random() * valid.length)];
-      console.log('Redirecting to:', `/achievement/${random.id}`);
       router.push(`/achievement/${random.id}`);
-    } else {
-      console.log('No valid achievements found');
     }
   }, [router]);
 
@@ -33,7 +29,6 @@ export default function Sidebar() {
       <Link href="/submission-stats" className="sidebar-link">Submission Stats</Link>
       <a href="#" id="random-achievement-btn" className="sidebar-link" onClick={handleRandomClick} role="button" tabIndex={0}>Random</a>
       <Link href="/about-us" className="sidebar-link">About Us</Link>
-      {/* Settings button as a sidebar-link */}
       <a
         href="#"
         className="sidebar-link"
@@ -151,7 +146,7 @@ export default function Sidebar() {
       <div style={{position: "relative", width: "100%", paddingBottom: "350px"}}>
         <iframe
           src="https://discord.com/widget?id=1122038339541934091&theme=dark"
-          style={{position: "absolute", top: 0, left: 0, width: "100%", height: "50%"}}
+          style={{position: "absolute", top: 0, left: 0, width: "100%", height: "100%"}}
           allowTransparency="true"
           frameBorder="0"
           sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
@@ -160,3 +155,7 @@ export default function Sidebar() {
     </nav>
   );
 }
+
+const Sidebar = React.memo(SidebarInner);
+
+export default Sidebar;
