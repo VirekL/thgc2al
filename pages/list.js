@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import { useEffect, useState, useMemo, useRef, useCallback, useTransition } from 'react';
+import React, { useEffect, useState, useMemo, useRef, useCallback, useTransition, memo } from 'react';
+import { VariableSizeList as ListWindow } from 'react-window';
 
 const AVAILABLE_TAGS = [
   "Level", "Challenge", "Verified", "Coin Route", "Low Hertz", "Mobile", "Speedhack",
@@ -14,7 +15,7 @@ import { useDateFormat } from '../components/DateFormatContext';
 import Tag, { TAG_PRIORITY_ORDER } from '../components/Tag';
 import DevModePanel from '../components/DevModePanel';
 
-function TagFilterPills({ allTags, filterTags, setFilterTags, isMobile, show, setShow }) {
+function TagFilterPillsInner({ allTags, filterTags, setFilterTags, isMobile, show, setShow }) {
   const tagStates = {};
   allTags.forEach(tag => {
     if (filterTags.include.includes(tag)) tagStates[tag] = 'include';
@@ -74,7 +75,7 @@ function formatDate(date, dateFormat) {
   return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
-function AchievementCard({ achievement, devMode }) {
+const AchievementCard = memo(function AchievementCard({ achievement, devMode }) {
   const { dateFormat } = useDateFormat();
   const handleClick = e => {
     if (devMode) {
@@ -124,7 +125,7 @@ function AchievementCard({ achievement, devMode }) {
       </a>
     </Link>
   );
-}
+}, (prev, next) => prev.achievement === next.achievement && prev.devMode === next.devMode);
 
 function useDebouncedValue(value, delay) {
   const [debounced, setDebounced] = useState(value);
@@ -927,9 +928,23 @@ const newFormPreview = useMemo(() => {
             filtered.length === 0 ? (
               <div className="no-achievements">No achievements found.</div>
             ) : (
-              filtered.map((a, i) => (
-                <AchievementCard achievement={a} key={a.id || i} devMode={devMode} />
-              ))
+              // Virtualized list for performance when not in dev mode
+              <ListWindow
+                height={Math.min(720, window.innerHeight - 200)}
+                itemCount={filtered.length}
+                itemSize={index => 120}
+                width={'100%'}
+                style={{ overflowX: 'hidden' }}
+              >
+                {({ index, style }) => {
+                  const a = filtered[index];
+                  return (
+                    <div style={style} key={a.id || index}>
+                      <AchievementCard achievement={a} devMode={devMode} />
+                    </div>
+                  );
+                }}
+              </ListWindow>
             )
           ))}
         </section>
@@ -937,3 +952,7 @@ const newFormPreview = useMemo(() => {
     </>
   );
 }
+
+const TagFilterPills = React.memo(TagFilterPillsInner, (prev, next) => {
+  return prev.allTags === next.allTags && prev.filterTags === next.filterTags && prev.isMobile === next.isMobile && prev.show === next.show;
+});
