@@ -162,7 +162,22 @@ export default function List() {
     setVisibleCount(v => Math.max(v, idx + 20));
     // Clear the search so "everything's normal" and then jump to the item
     setSearch('');
-    setScrollToIdx(idx);
+    // If we're in dev mode (non-virtualized) use achievementRefs + scrollToIdx effect.
+    if (devMode) {
+      setScrollToIdx(idx);
+    } else {
+      // For react-window virtualized list, scroll using the list ref after render.
+      // Use requestAnimationFrame twice to allow the DOM to update after visibleCount change.
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        try {
+          if (listRef && listRef.current && typeof listRef.current.scrollToItem === 'function') {
+            listRef.current.scrollToItem(idx, 'center');
+          }
+        } catch (err) {
+          // ignore
+        }
+      }));
+    }
     // Remove focus from the input to avoid accidental re-trigger
     if (document && document.activeElement && typeof document.activeElement.blur === 'function') {
       document.activeElement.blur();
