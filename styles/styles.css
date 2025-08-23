@@ -798,6 +798,17 @@ main {
   margin-bottom: 0.5rem;
 }
 
+/* Duplicate thumbnail highlighting */
+.duplicate-thumb-item {
+  box-shadow: 0 0 24px 4px rgba(255, 200, 0, 0.9) !important;
+  border-color: rgba(255, 200, 0, 0.9) !important;
+  transition: box-shadow 0.25s ease, transform 0.15s ease;
+}
+
+.duplicate-thumb-item .achievement-item {
+  transform: scale(1.01);
+}
+
 .achievement-level-id {
   font-size: 1.2rem;
   margin-top: 1rem;
