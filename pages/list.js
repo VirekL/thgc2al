@@ -151,27 +151,42 @@ export default function List() {
     e.preventDefault();
     const query = (search || '').trim().toLowerCase();
     if (!query) return;
-    const items = devMode && reordered ? reordered : achievements;
-    const idx = items.findIndex(a => {
+    // Build predicate to match the query against an achievement
+    const matchesQuery = a => {
       if (!a) return false;
       const candidates = [a.name, a.player, a.id, a.levelID, a.submitter, (a.tags || []).join(' ')].filter(Boolean);
       return candidates.some(c => String(c).toLowerCase().includes(query));
-    });
-    if (idx === -1) return;
+    };
+
+    // Determine the list that will be rendered after clearing the text search.
+    // We apply tag include/exclude filters but NOT the text search.
+    const baseList = devMode && reordered ? reordered : achievements;
+    const matchesTagsOnly = a => {
+      const tags = (a.tags || []).map(t => t.toUpperCase());
+      if (filterTags.include.length && !filterTags.include.every(tag => tags.includes(tag.toUpperCase()))) return false;
+      if (filterTags.exclude.length && filterTags.exclude.some(tag => tags.includes(tag.toUpperCase()))) return false;
+      return true;
+    };
+    const targetList = baseList.filter(matchesTagsOnly);
+
+    const targetIdx = targetList.findIndex(matchesQuery);
+    if (targetIdx === -1) return;
+
     // Make sure the list shows at least up to the target index
-    setVisibleCount(v => Math.max(v, idx + 20));
+    setVisibleCount(v => Math.max(v, targetIdx + 20));
     // Clear the search so "everything's normal" and then jump to the item
     setSearch('');
+
     // If we're in dev mode (non-virtualized) use achievementRefs + scrollToIdx effect.
     if (devMode) {
-      setScrollToIdx(idx);
+      setScrollToIdx(targetIdx);
     } else {
       // For react-window virtualized list, scroll using the list ref after render.
       // Use requestAnimationFrame twice to allow the DOM to update after visibleCount change.
       requestAnimationFrame(() => requestAnimationFrame(() => {
         try {
           if (listRef && listRef.current && typeof listRef.current.scrollToItem === 'function') {
-            listRef.current.scrollToItem(idx, 'center');
+            listRef.current.scrollToItem(targetIdx, 'center');
           }
         } catch (err) {
           // ignore
