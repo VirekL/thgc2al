@@ -8,6 +8,15 @@ function SidebarInner() {
   const router = useRouter();
   const { dateFormat, setDateFormat } = useDateFormat();
   const [showSettings, setShowSettings] = useState(false);
+  // itemsPerPage: number or 'all'
+  const [itemsPerPage, setItemsPerPage] = useState(() => {
+    try {
+      if (typeof window === 'undefined') return 100;
+      const v = localStorage.getItem('itemsPerPage');
+      if (!v) return 100;
+      return v === 'all' ? 'all' : Number(v) || 100;
+    } catch (e) { return 100; }
+  });
 
   const handleRandomClick = useCallback(async (e) => {
     e.preventDefault();
@@ -138,6 +147,51 @@ function SidebarInner() {
                   />
                   DD/MM/YY
                 </label>
+              </div>
+            </div>
+            <div style={{ width: "100%", marginTop: 12 }}>
+              <label style={{ color: "#DFE3F5", fontWeight: 600, fontSize: 16, marginBottom: 8, display: "block" }}>Items Rendered</label>
+              <div style={{ display: "flex", gap: 8, alignItems: 'center' }}>
+                <input
+                  type="text"
+                  inputMode="numeric"
+                  pattern="[0-9]*"
+                  placeholder="100"
+                  value={itemsPerPage === 'all' ? '' : String(itemsPerPage)}
+                  onChange={e => {
+                    const raw = e.target.value.replace(/[^0-9]/g, '');
+                    const n = raw === '' ? '' : Number(raw);
+                    setItemsPerPage(n === '' ? '' : n);
+                    try {
+                      if (raw !== '') localStorage.setItem('itemsPerPage', String(n));
+                    } catch (err) {}
+                  }}
+                  onBlur={() => {
+                    // restore default if empty
+                    if (itemsPerPage === '' || itemsPerPage === 0) {
+                      setItemsPerPage(100);
+                      try { localStorage.setItem('itemsPerPage', '100'); } catch (err) {}
+                    }
+                  }}
+                  style={{ padding: 8, background: '#2a2f44', color: '#DFE3F5', borderRadius: 6, border: '1px solid #3b4058', width: 90 }}
+                />
+                <label style={{ color: '#DFE3F5', fontSize: 14, display: 'flex', alignItems: 'center', gap: 8 }}>
+                  <input
+                    type="checkbox"
+                    checked={itemsPerPage === 'all'}
+                    onChange={e => {
+                      if (e.target.checked) {
+                        setItemsPerPage('all');
+                        try { localStorage.setItem('itemsPerPage', 'all'); } catch (err) {}
+                      } else {
+                        setItemsPerPage(100);
+                        try { localStorage.setItem('itemsPerPage', '100'); } catch (err) {}
+                      }
+                    }}
+                  />
+                  All
+                </label>
+                <div style={{ color: '#DFE3F5', fontSize: 13 }}>Enter a number (default 100) or check All to render everything</div>
               </div>
             </div>
           </div>
