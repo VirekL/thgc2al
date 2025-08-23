@@ -8,6 +8,7 @@ const AVAILABLE_TAGS = [
   "2P", "CBF", "Rated", "Formerly Rated", "Outdated Version", "Tentative"
 ];
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import Sidebar from '../components/Sidebar';
 import Background from '../components/Background';
@@ -276,6 +277,22 @@ export default function List() {
       });
   }, []);
 
+  const router = useRouter();
+
+  // If the page is opened with ?dev=1 (or any dev query), enable dev mode and set reordered
+  useEffect(() => {
+    if (!router || !router.isReady) return;
+    try {
+      const hasDev = router.query && (router.query.dev === '1' || router.query.dev === 'true' || router.query.dev !== undefined);
+      if (hasDev && achievements && achievements.length && !devMode) {
+        setDevMode(true);
+        setReordered(achievements.map(a => ({ ...a })));
+      }
+    } catch (e) {
+      // ignore
+    }
+  }, [router, router && router.isReady, router && router.query, achievements]);
+
   useEffect(() => {
     function handleKeyDown(e) {
       if (e.shiftKey && (e.key === 'M' || e.key === 'm')) {
@@ -295,10 +312,8 @@ export default function List() {
     if (!isMobile) return;
     let pinchActive = false;
     let lastTouches = [];
-    let swipeSequence = [];
     let pinchStartDist = null;
     let pinchEndDist = null;
-    let gestureTimeout = null;
 
     function getDistance(touches) {
       if (touches.length < 2) return 0;
@@ -311,8 +326,6 @@ export default function List() {
       if (e.touches.length === 2) {
         pinchActive = true;
         pinchStartDist = getDistance(e.touches);
-        swipeSequence = [];
-        if (gestureTimeout) clearTimeout(gestureTimeout);
       }
       lastTouches = Array.from(e.touches);
     }
@@ -326,29 +339,10 @@ export default function List() {
 
     function handleTouchEnd(e) {
       if (pinchActive && pinchStartDist && pinchEndDist && pinchEndDist < pinchStartDist - 40) {
-        swipeSequence = [];
         pinchActive = false;
         pinchStartDist = null;
         pinchEndDist = null;
-        gestureTimeout = setTimeout(() => { swipeSequence = []; }, 2000);
         return;
-      }
-      if (e.changedTouches.length === 1 && !pinchActive && swipeSequence.length < 2) {
-        const touch = e.changedTouches[0];
-        if (lastTouches.length === 1) {
-          const dx = touch.clientX - lastTouches[0].clientX;
-          if (Math.abs(dx) > 60) {
-            swipeSequence.push(dx < 0 ? 'left' : 'right');
-            gestureTimeout = setTimeout(() => { swipeSequence = []; }, 2000);
-          }
-        }
-        if ((swipeSequence[0] === 'left' && swipeSequence[1] === 'right') || (swipeSequence[0] === 'right' && swipeSequence[1] === 'left')) {
-          setDevMode(true);
-          setReordered(achievements.map(a => ({ ...a })));
-          alert('Developer mode activated by gesture!');
-          swipeSequence = [];
-          if (gestureTimeout) clearTimeout(gestureTimeout);
-        }
       }
       lastTouches = Array.from(e.touches);
     }
@@ -360,7 +354,6 @@ export default function List() {
       window.removeEventListener('touchstart', handleTouchStart);
       window.removeEventListener('touchmove', handleTouchMove);
       window.removeEventListener('touchend', handleTouchEnd);
-      if (gestureTimeout) clearTimeout(gestureTimeout);
     };
   }, [isMobile, achievements]);
 
