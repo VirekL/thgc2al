@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function DevModePanel({
+function DevModePanelInner({
   devMode,
   editIdx,
   editForm,
@@ -161,3 +161,19 @@ export default function DevModePanel({
     </>
   );
 }
+
+const DevModePanel = React.memo(DevModePanelInner, (prev, next) => {
+  // Shallow compare important state/refs to avoid unnecessary re-renders
+  return prev.devMode === next.devMode
+    && prev.editIdx === next.editIdx
+    && prev.showNewForm === next.showNewForm
+    && prev.editForm === next.editForm
+    && prev.newForm === next.newForm
+    && prev.newFormTags === next.newFormTags
+    && prev.newFormPreview === next.newFormPreview
+    && prev.handleCopyJson === next.handleCopyJson
+    && prev.handleShowNewForm === next.handleShowNewForm
+    && prev.onImportAchievementsJson === next.onImportAchievementsJson;
+});
+
+export default DevModePanel;
