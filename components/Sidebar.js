@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useCallback, useState } from 'react';
+import { useCallback, useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { useDateFormat } from './DateFormatContext';
 
 function SidebarInner() {
@@ -30,6 +31,9 @@ function SidebarInner() {
     }
   }, [router]);
 
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => { setMounted(true); }, []);
+
   return (
     <nav className="sidebar">
       <Link href="/list" className="sidebar-link">Main List</Link>
@@ -49,7 +53,7 @@ function SidebarInner() {
       >
         Settings
       </a>
-      {showSettings && (
+      {showSettings && mounted && typeof document !== 'undefined' && createPortal(
         <div
           className="settings-modal-overlay"
           style={{
@@ -62,7 +66,7 @@ function SidebarInner() {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            zIndex: 99999
+            zIndex: 2147483647 // use very large z-index to beat other stacking
           }}
           onClick={() => setShowSettings(false)}
         >
@@ -195,7 +199,8 @@ function SidebarInner() {
               </div>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
       <div style={{position: "relative", width: "100%", paddingBottom: "350px"}}>
         <iframe
