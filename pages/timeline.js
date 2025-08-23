@@ -1,10 +1,11 @@
 import Head from 'next/head';
-import { useEffect, useState, useMemo, useRef } from 'react';
+import React, { useEffect, useState, useMemo, useRef, useCallback } from 'react';
 import { useDateFormat } from '../components/DateFormatContext';
 import Background from '../components/Background';
 import Sidebar from '../components/Sidebar';
 import Tag, { TAG_PRIORITY_ORDER } from '../components/Tag';
 import Link from 'next/link';
+import DevModePanel from '../components/DevModePanel';
 
 function calculateDaysLasted(currentDate, previousDate) {
   if (!currentDate || !previousDate) return 'N/A';
@@ -29,7 +30,7 @@ function formatDate(date, dateFormat) {
   return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
-function TimelineAchievementCard({ achievement, previousAchievement }) {
+function TimelineAchievementCardInner({ achievement, previousAchievement, onEdit, onHover, isHovered }) {
   const { dateFormat } = useDateFormat();
   let lastedDays, lastedLabel;
   if (previousAchievement) {
@@ -50,7 +51,13 @@ function TimelineAchievementCard({ achievement, previousAchievement }) {
   return (
     <Link href={`/achievement/${achievement.id}`} passHref legacyBehavior>
       <a style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }}>
-        <div className="achievement-item" tabIndex={0} style={{ cursor: 'pointer' }}>
+        <div
+          className={`achievement-item ${isHovered ? 'hovered' : ''}`}
+          tabIndex={0}
+          style={{ cursor: 'pointer' }}
+          onMouseEnter={onHover}
+          onMouseLeave={onHover}
+        >
           <div className="rank-date-container">
             <div className="achievement-length">
               {achievement.length ? `${Math.floor(achievement.length / 60)}:${(achievement.length % 60).toString().padStart(2, '0')}` : 'N/A'}
@@ -72,13 +79,25 @@ function TimelineAchievementCard({ achievement, previousAchievement }) {
               <img src={achievement.thumbnail || (achievement.levelID ? `https://tjcsucht.net/levelthumbs/${achievement.levelID}.png` : '/assets/default-thumbnail.png')} alt={achievement.name} loading="lazy" />
             </div>
           </div>
+          {/* Developer mode hover menu */}
+          {onEdit && (
+            <div className="hover-menu" style={{ display: isHovered ? 'flex' : 'none' }}>
+              <button className="hover-menu-btn" onClick={onEdit} title="Edit achievement">
+                <span className="bi bi-pencil" aria-hidden="true"></span>
+              </button>
+            </div>
+          )}
         </div>
       </a>
     </Link>
   );
 }
 
-function TagFilterPills({ allTags, filterTags, setFilterTags, isMobile, show, setShow }) {
+const TimelineAchievementCard = React.memo(TimelineAchievementCardInner, (prev, next) => {
+  return prev.achievement === next.achievement && prev.isHovered === next.isHovered && prev.onEdit === next.onEdit && prev.onHover === next.onHover;
+});
+
+function TagFilterPillsInner({ allTags, filterTags, setFilterTags, isMobile, show, setShow }) {
   const tagStates = {};
   allTags.forEach(tag => {
     if (filterTags.include.includes(tag)) tagStates[tag] = 'include';
@@ -131,7 +150,21 @@ export default function Timeline() {
   const [isMobile, setIsMobile] = useState(false);
   const [showMobileFilters, setShowMobileFilters] = useState(false);
   const [showSidebar, setShowSidebar] = useState(false);
+  const [devMode, setDevMode] = useState(false);
+  const [reordered, setReordered] = useState(null);
+  const [hoveredIdx, setHoveredIdx] = useState(null); // Track hovered achievement index for dev controls
+  const [newForm, setNewForm] = useState({
+    name: '', id: '', player: '', length: 0, version: 2, video: '', showcaseVideo: '', date: '', submitter: '', levelID: 0, thumbnail: '', tags: []
+  });
+  const [newFormTags, setNewFormTags] = useState([]);
+  const [newFormCustomTags, setNewFormCustomTags] = useState('');
+  const [insertIdx, setInsertIdx] = useState(null); // For new achievement insert position
+  const [editIdx, setEditIdx] = useState(null);
+  const [editForm, setEditForm] = useState(null);
+  const [editFormTags, setEditFormTags] = useState([]);
+  const [editFormCustomTags, setEditFormCustomTags] = useState('');
   const mobileBtnRef = useRef();
+  const [showNewForm, setShowNewForm] = useState(false);
 
   useEffect(() => {
     fetch('/timeline.json')
@@ -155,6 +188,71 @@ export default function Timeline() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  useEffect(() => {
+    function handleKeyDown(e) {
+      if (e.shiftKey && (e.key === 'M' || e.key === 'm')) {
+        setDevMode(v => {
+          const next = !v;
+          if (!next) setReordered(null);
+          else setReordered(achievements);
+          return next;
+        });
+      }
+    }
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [achievements]);
+
+  useEffect(() => {
+    if (!isMobile) return;
+    let pinchActive = false;
+    let lastTouches = [];
+    let swipeSequence = [];
+    let pinchStartDist = null;
+    let gestureTimeout = null;
+
+    function getDistance(touches) {
+      if (touches.length < 2) return 0;
+      const dx = touches[0].clientX - touches[1].clientX;
+      const dy = touches[0].clientY - touches[1].clientY;
+      return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    function handleTouchStart(e) {
+      if (e.touches.length === 2) {
+        pinchActive = true;
+        pinchStartDist = getDistance(e.touches);
+        swipeSequence = [];
+        if (gestureTimeout) clearTimeout(gestureTimeout);
+      }
+      lastTouches = Array.from(e.touches);
+    }
+
+    function handleTouchMove(e) {
+      if (pinchActive && e.touches.length === 2) {
+        const pinchEndDist = getDistance(e.touches);
+        if (pinchEndDist > pinchStartDist * 1.5) {
+          setDevMode(true);
+          pinchActive = false;
+        }
+      }
+    }
+
+    function handleTouchEnd() {
+      pinchActive = false;
+    }
+
+    window.addEventListener('touchstart', handleTouchStart);
+    window.addEventListener('touchmove', handleTouchMove);
+    window.addEventListener('touchend', handleTouchEnd);
+
+    return () => {
+      window.removeEventListener('touchstart', handleTouchStart);
+      window.removeEventListener('touchmove', handleTouchMove);
+      window.removeEventListener('touchend', handleTouchEnd);
+    };
+  }, [isMobile]);
+
   const filtered = useMemo(() => {
     return achievements.filter(a => {
       const tags = (a.tags || []).map(t => t.toUpperCase());
@@ -167,6 +265,145 @@ export default function Timeline() {
 
   function handleMobileToggle() {
     setShowMobileFilters(v => !v);
+  }
+
+  function handleEditAchievement(idx) {
+    setEditIdx(idx);
+    setEditForm(achievements[idx]);
+    setEditFormTags(achievements[idx].tags || []);
+    setEditFormCustomTags('');
+  }
+
+  function handleEditFormChange(e) {
+    const { name, value } = e.target;
+    setEditForm(prev => ({ ...prev, [name]: value }));
+  }
+
+  function handleEditFormTagClick(tag) {
+    setEditFormTags(prev => prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag]);
+  }
+
+  function handleEditFormCustomTagsChange(e) {
+    setEditFormCustomTags(e.target.value);
+  }
+
+  function handleEditFormSave() {
+    const updated = { ...editForm, tags: [...editFormTags, ...editFormCustomTags.split(',').map(t => t.trim()).filter(Boolean)] };
+    setAchievements(prev => prev.map((a, i) => (i === editIdx ? updated : a)));
+    setEditIdx(null);
+    setEditForm(null);
+    setEditFormTags([]);
+    setEditFormCustomTags('');
+  }
+
+  function handleEditFormCancel() {
+    setEditIdx(null);
+    setEditForm(null);
+    setEditFormTags([]);
+    setEditFormCustomTags('');
+  }
+
+  function handleNewFormChange(e) {
+    const { name, value } = e.target;
+    setNewForm(prev => ({ ...prev, [name]: value }));
+  }
+
+  function handleNewFormTagClick(tag) {
+    setNewFormTags(prev => prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag]);
+  }
+
+  function handleNewFormCustomTagsChange(e) {
+    setNewFormCustomTags(e.target.value);
+  }
+
+  function handleNewFormAdd() {
+    const newAchievement = { ...newForm, tags: [...newFormTags, ...newFormCustomTags.split(',').map(t => t.trim()).filter(Boolean)] };
+    setAchievements(prev => {
+      if (insertIdx !== null) {
+        const updated = [...prev];
+        updated.splice(insertIdx, 0, newAchievement);
+        return updated;
+      } else {
+        return [...prev, newAchievement];
+      }
+    });
+    setNewForm({ name: '', id: '', player: '', length: 0, version: 2, video: '', showcaseVideo: '', date: '', submitter: '', levelID: 0, thumbnail: '', tags: [] });
+    setNewFormTags([]);
+    setNewFormCustomTags('');
+    setInsertIdx(null);
+  }
+
+  function handleNewFormCancel() {
+    setNewForm({ name: '', id: '', player: '', length: 0, version: 2, video: '', showcaseVideo: '', date: '', submitter: '', levelID: 0, thumbnail: '', tags: [] });
+    setNewFormTags([]);
+    setNewFormCustomTags('');
+    setInsertIdx(null);
+  }
+
+  function handleShowNewForm() {
+    setShowNewForm(v => !v);
+  }
+
+  const newFormPreview = useMemo(() => {
+    let tags = [...newFormTags];
+    if (typeof newFormCustomTags === 'string' && newFormCustomTags.trim()) {
+      newFormCustomTags.split(',').map(t => (typeof t === 'string' ? t.trim() : t)).filter(Boolean).forEach(t => {
+        if (!tags.includes(t)) tags.push(t);
+      });
+    }
+    const entry = {};
+    Object.entries(newForm).forEach(([k, v]) => {
+      if (typeof v === 'string') {
+        if (v.trim() !== '') entry[k] = v.trim();
+      } else if (v !== undefined && v !== null && v !== '') {
+        entry[k] = v;
+      }
+    });
+    if (tags.length > 0) entry.tags = tags;
+    return entry;
+  }, [newForm, newFormTags, newFormCustomTags]);
+
+  function handleCopyJson() {
+    try {
+      const json = JSON.stringify(achievements.map(({ rank, ...rest }) => rest), null, 2);
+      if (typeof navigator !== 'undefined' && navigator.clipboard) {
+        navigator.clipboard.writeText(json).catch(() => console.log('copy failed'));
+      } else {
+        // Server-side or fallback: log to console so build doesn't break
+        // (Dev users can call this in the browser.)
+        // eslint-disable-next-line no-console
+        console.log(json);
+      }
+      return json;
+    } catch (e) {
+      // noop
+      return null;
+    }
+  }
+
+  function onImportAchievementsJson(json) {
+    let imported = Array.isArray(json) ? json : (json.achievements || []);
+    if (!Array.isArray(imported)) {
+      return;
+    }
+    imported = imported.map((a, i) => ({ ...a, rank: i + 1 }));
+    setAchievements(imported);
+    setDevMode(true);
+  }
+
+  function handleRemoveAchievement(idx) {
+    setAchievements(prev => prev.filter((_, i) => i !== idx));
+  }
+
+  function handleDuplicateAchievement(idx) {
+    setAchievements(prev => {
+      const duplicated = { ...prev[idx], id: `${prev[idx].id}-copy` };
+      return [...prev.slice(0, idx + 1), duplicated, ...prev.slice(idx + 1)];
+    });
+  }
+
+  function handleHover(idx) {
+    setHoveredIdx(idx === hoveredIdx ? null : idx);
   }
 
   return (
@@ -354,11 +591,59 @@ export default function Timeline() {
             <div style={{color: '#aaa'}}>No achievements found.</div>
           ) : (
             filtered.map((a, i) => (
-              <TimelineAchievementCard achievement={a} previousAchievement={filtered[i-1]} key={a.id || i} />
+              <div
+                key={a.id || i}
+                onMouseEnter={() => handleHover(i)}
+                onMouseLeave={() => setHoveredIdx(null)}
+                style={{ position: 'relative' }}
+              >
+                <TimelineAchievementCard
+                  achievement={a}
+                  previousAchievement={filtered[i-1]}
+                  onEdit={() => handleEditAchievement(i)}
+                  isHovered={i === hoveredIdx}
+                />
+                {devMode && i === hoveredIdx && (
+                  <div className="devmode-hover-controls" style={{ position: 'absolute', top: 0, right: 0, display: 'flex', gap: 8 }}>
+                    <button onClick={() => handleEditAchievement(i)}>Edit</button>
+                    <button onClick={() => handleDuplicateAchievement(i)}>Duplicate</button>
+                    <button onClick={() => handleRemoveAchievement(i)}>Remove</button>
+                  </div>
+                )}
+              </div>
             ))
           )}
         </section>
       </main>
+      <DevModePanel
+        devMode={devMode}
+        editIdx={editIdx}
+        editForm={editForm}
+        editFormTags={editFormTags}
+        editFormCustomTags={editFormCustomTags}
+        handleEditFormChange={handleEditFormChange}
+        handleEditFormTagClick={handleEditFormTagClick}
+        handleEditFormCustomTagsChange={handleEditFormCustomTagsChange}
+        handleEditFormSave={handleEditFormSave}
+        handleEditFormCancel={handleEditFormCancel}
+        showNewForm={showNewForm}
+        newForm={newForm}
+        newFormTags={newFormTags}
+        newFormCustomTags={newFormCustomTags}
+        handleNewFormChange={handleNewFormChange}
+        handleNewFormTagClick={handleNewFormTagClick}
+        handleNewFormCustomTagsChange={handleNewFormCustomTagsChange}
+        handleNewFormAdd={handleNewFormAdd}
+        handleNewFormCancel={handleNewFormCancel}
+        handleCopyJson={handleCopyJson}
+        handleShowNewForm={handleShowNewForm}
+        newFormPreview={newFormPreview}
+        onImportAchievementsJson={onImportAchievementsJson}
+      />
     </>
   );
 }
+
+const TagFilterPills = React.memo(TagFilterPillsInner, (prev, next) => {
+  return prev.allTags === next.allTags && prev.filterTags === next.filterTags && prev.isMobile === next.isMobile && prev.show === next.show;
+});
