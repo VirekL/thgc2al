@@ -54,40 +54,6 @@
     ]
   },
   {
-  "name": "last stop 24%, 36%",
-    "id": "last-stop-24-36",
-    "player": "aytch0008",
-    "date": "2025-08-22",
-    "length": 17,
-    "version": 2.1,
-    "levelID": 64815983,
-    "showcaseVideo": "https://youtu.be/jQKg2jn2W-0",
-    "video": "https://youtu.be/FNRBXG2KC1U",
-    "submitter": "aytch0008",
-    "tags": [
-      "Challenge",
-      "Consistency",
-      "Tentative"
-    ]
-  },
-  {
-	"name": "Deimos 57%, 100%",
-    "id": "deimos-57-1000",
-    "player": "Dezstro",
-    "levelID": 93091893,
-    "date": "2024-10-09",
-    "length": 300,
-    "version": 2.2,
-    "submitter": "TYATYAPKA",
-    "video": "https://youtu.be/N5efNNp1WMc",
-    "showcaseVideo": "https://youtu.be/CQJqSSBFHQ8",
-    "tags": [
-      "Level",
-      "Consistency",
-      "Rated"
-    ]
-  },
-  {
 	"name": "The Golden 80hz 94%",
     "id": "the-golden-80hz-94",
     "player": "Sid125",
@@ -321,38 +287,6 @@
 			"Rated",
 			"Low Hertz",
 			"Mobile",
-			"Progress",
-			"Level"
-		]
-	},
-	{
-		"name": "Leaves 25-82%",
-		"id": "leaves-25-82",
-		"player": "subabo",
-		"length": "40",
-		"version": "2.2",
-		"video": "https://www.youtube.com/watch?v=hPI_TTbaLBo",
-		"date": "2025-07-22",
-		"showcaseVideo": "https://www.youtube.com/watch?v=S0WKrJx7Bq0",
-		"levelID": "82602651",
-		"submitter": "subabo",
-		"tags": [
-			"Progress",
-			"Level"
-		]
-	},
-	{
-		"name": "Leaves 33-91%",
-		"id": "leaves-33-91",
-		"player": "subabo",
-		"length": "41",
-		"version": "2.2",
-		"video": "https://www.youtube.com/watch?v=JpBB-FEWI2Q",
-		"date": "2025-08-06",
-		"showcaseVideo": "https://www.youtube.com/watch?v=S0WKrJx7Bq0",
-		"levelID": "82602651",
-		"submitter": "subabo",
-		"tags": [
 			"Progress",
 			"Level"
 		]
