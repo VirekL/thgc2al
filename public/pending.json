@@ -35,25 +35,6 @@
     ]
   },
  {
-  "name": "andromeda 144hz mobile 65-100%",
-    "id": "andromeda-144hz-mobile-65-100",
-    "player": "VERTOP",
-    "length": 26,
-    "version": 2.2,
-    "video": "https://youtu.be/Pau8CWTltDk",
-    "showcaseVideo": "https://youtu.be/xqQNv-Puq44",
-    "date": "2025-01-19",
-    "submitter": "Excryst",
-    "levelID": 114283297,
-    "tags": [
-      "Level",
-      "Progress",
-	  "Low Hertz",
-	  "Mobile",
-      "Rated"
-    ]
-  },
-  {
 	"name": "The Golden 80hz 94%",
     "id": "the-golden-80hz-94",
     "player": "Sid125",
@@ -303,44 +284,6 @@
 		"submitter": "goofygdplayer",
 		"levelID": "123679035",
 		"tags": [
-			"Level"
-		]
-	},
-	{
-		"name": "Every End 120hz Mobile 33-68%",
-		"id": "every-end-120hz-mobile-33-68",
-		"player": "SarTiZ",
-		"length": "156",
-		"version": "2.2",
-		"video": "https://youtu.be/0AQP_F3YmNg?si=Eg8AEHN_yvKjTmTC",
-		"date": "2025-05-09",
-		"showcaseVideo": "https://youtu.be/C7Umvy4VyDg?si=x1pSppUtFyQhhuo4",
-		"levelID": "116174063",
-		"submitter": "jak",
-		"tags": [
-			"Rated",
-			"Low Hertz",
-			"Mobile",
-			"Progress",
-			"Level"
-		]
-	},
-	{
-		"name": "Every End 120hz Mobile 67-100%",
-		"id": "every-end-120hz-mobile-67-100",
-		"player": "SarTiZ",
-		"length": "145",
-		"version": "2.2",
-		"video": "https://youtu.be/rsIih2tON9Y?si=ox5dzBvNy-3J_Rhy",
-		"date": "2025-04-14",
-		"showcaseVideo": "https://youtu.be/C7Umvy4VyDg?si=x1pSppUtFyQhhuo4",
-		"levelID": "116174063",
-		"submitter": "jak",
-		"tags": [
-			"Rated",
-			"Low Hertz",
-			"Mobile",
-			"Progress",
 			"Level"
 		]
 	}
