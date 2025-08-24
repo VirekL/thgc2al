@@ -9723,6 +9723,21 @@
     ]
   },
   {
+	"name": "KOCMOC (ROZE GD) 51%",
+    "id": "kocmoc-ROZE-GD-51",
+    "player": "ROZE GD",
+    "date": "2025-08-03",
+    "length": 42,
+    "version": 2.2,
+    "video": "https://youtu.be/-mfAanRG1zM",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress",
+	  "CBF"
+    ]
+  },
+  {
     "name": "Calculator Core 120hz Mobile",
     "id": "calculator-core-120hz-mobile",
     "player": "Prmak",
@@ -13606,6 +13621,7 @@
   }
 
 ]
+
 
 
 
