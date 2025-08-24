@@ -8540,6 +8540,22 @@
     ]
   },
   {
+	    "name": "Eternal Night (Bedziu)",
+		"id": "eternal-night-bedziu",
+		"player": "rBedziu",
+		"levelID": "124550440",
+		"length": "103",
+		"version": "2.2",
+		"video": "https://youtu.be/-zApYHbfezM",
+		"showcaseVideo": "https://youtu.be/OIoKQlFpDuE",
+		"date": "2025-08-13",
+		"submitter": "kyle1saurus",
+		"tags": [
+			"Level",
+			"Verified"
+		]
+	},
+  {
     "name": "Gamma 60hz",
     "id": "gamma-60hz",
     "player": "Samamba",
@@ -13649,6 +13665,7 @@
   }
 
 ]
+
 
 
 
