@@ -9041,6 +9041,25 @@
     ]
   },
   {
+    "name": "Spectrum Cyclone 60hz Mobile 91%",
+    "id": "spectrum-cyclone-60hz-mobile-91",
+    "player": "Cedric22",
+    "date": "2025-08-18",
+    "length": "110",
+    "version": "2.2",
+    "levelID": "59209010",
+    "video": "https://youtu.be/EY_EMknkrQ0",
+    "showcaseVideo": "https://youtu.be/wvNwc4NaJaw",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
+  },
+  {
     "name": "Kuzureta 60hz Mobile",
     "id": "kuzureta-60hz-mobile",
     "player": "Hydrus73",
@@ -9290,7 +9309,7 @@
       "Progress",
       "Tentative"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "Aronia 60hz Mobile",
@@ -12956,24 +12975,6 @@
     ]
   },
   {
-    "name": "Spectrum Cyclone 60hz 80%",
-    "id": "spectrum-cyclone-60hz-80",
-    "player": "Guraud",
-    "levelID": 59209010,
-    "date": "2025-01-09",
-    "length": 66,
-    "version": 2.2,
-    "video": "https://youtu.be/Eox6Okv29AU",
-    "showcaseVideo": "https://youtu.be/wvNwc4NaJaw",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Progress",
-      "Rated"
-    ]
-  },
-  {
     "name": "wpopoff challenge",
     "id": "wpopoff-challenge",
     "player": "okaysobasically",
@@ -13604,5 +13605,6 @@
   }
 
 ]
+
 
 
