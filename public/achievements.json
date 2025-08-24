@@ -1778,6 +1778,22 @@
     ]
   },
   {
+	"name": "Vehemence 53-100%",
+    "id": "vehemence-53-100",
+    "player": "wPopoff",
+    "levelID": 96572223,
+    "date": "2024-09-04",
+    "length": 111,
+    "version": 2.2,
+    "video": "https://youtu.be/Zd-C6L9AlD0",
+    "showcaseVideo": "https://youtu.be/FwxtJQQocKA?si=L2FzCScLs6W8HYUl",
+	"submitter": "Anceps",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Abyss of Darkness",
     "id": "abyss-of-darkness",
     "player": "Cursed",
@@ -3612,21 +3628,6 @@
       "Verified"
     ],
     "showcaseVideo": "https://www.youtube.com/watch?v=1f460nBGjvA"
-  },
-  {
-    "name": "Vehemence 53-100%",
-    "id": "vehemence-53-100",
-    "player": "wPopoff",
-    "levelID": 96572223,
-    "date": "2024-09-04",
-    "length": 111,
-    "version": 2.2,
-    "video": "https://youtu.be/Zd-C6L9AlD0",
-    "showcaseVideo": "https://youtu.be/FwxtJQQocKA?si=L2FzCScLs6W8HYUl",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
   },
   {
     "name": "ConClusion 60hz Mobile 87%",
@@ -13679,6 +13680,7 @@
   }
 
 ]
+
 
 
 
