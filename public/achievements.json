@@ -800,8 +800,8 @@
     ]
   },
   {
-    "name": "Heliopolis (Abdieldevil) 48-100%",
-    "id": "heliopolis-abdieldevil-48-100",
+    "name": "Heliopolis 48-100%",
+    "id": "heliopolis-48-100",
     "player": "Abdieldevil",
     "length": "72",
     "version": "2.2",
@@ -3721,8 +3721,8 @@
     "levelID": null
   },
   {
-    "name": "Heliopolis (Abdieldevil) 38-78%",
-    "id": "heliopolis-abdieldevil-38-78",
+    "name": "Heliopolis 38-78%",
+    "id": "heliopolis-38-78",
     "player": "Abdieldevil",
     "date": "2025-02-27",
     "length": 55,
@@ -5098,8 +5098,8 @@
     ]
   },
   {
-    "name": "Heliopolis (Abdieldevil) 27-50%",
-    "id": "heliopolis-abdieldevil-27-50",
+    "name": "Heliopolis 27-50%",
+    "id": "heliopolis-27-50",
     "player": "Abdieldevil",
     "date": "2025-04-14",
     "length": 28,
@@ -5515,8 +5515,8 @@
     ]
   },
   {
-    "name": "Heliopolis (Abdieldevil) 10-25%",
-    "id": "heliopolis-abdieldevil-10-25",
+    "name": "Heliopolis 10-25%",
+    "id": "heliopolis-10-25",
     "player": "Abdieldevil",
     "date": "2025-07-15",
     "length": "16",
@@ -11650,11 +11650,11 @@
     ]
   },
   {
-    "name": "Vehemence 23-55%",
-    "id": "vehemence-23-55",
+    "name": "Vehemence (Unbuffed) 23-55%",
+    "id": "vehemence-unbuffed-23-55",
     "player": "polterghast",
     "levelID": 96572223,
-    "date": "2024-09-04",
+    "date": "2023-10-07",
     "length": 34,
     "version": 2.1,
     "video": "https://youtu.be/5kwMTtj2DZc",
@@ -13608,4 +13608,5 @@
       "Rated"
     ]
   }
+
 ]
