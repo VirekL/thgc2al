@@ -2134,22 +2134,6 @@
     ]
   },
   {
-    "name": "Azure Flare (Vertop) 45%",
-    "id": "azure-flare-vertop-45",
-    "player": "Vertop",
-    "date": "2023-11-17",
-    "length": 26,
-    "version": 2.1,
-    "video": "https://youtu.be/OiK2Tny1c0U",
-    "levelID": 97429207,
-    "showcaseVideo": "https://youtu.be/sJkeRnrAqWQ",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Acheron (Wolvez) 96%",
     "id": "acheron-wolvez-96",
     "player": "Wolvez",
@@ -2764,6 +2748,22 @@
     "submitter": "Anceps",
     "video": "https://youtu.be/VHgRQfFy9xc",
     "showcaseVideo": "https://youtu.be/sJkeRnrAqWQ",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
+	"name": "Azure Flare (Vertop) 45%",
+    "id": "azure-flare-vertop-45",
+    "player": "Vertop",
+    "date": "2023-11-17",
+    "length": 26,
+    "version": 2.1,
+    "video": "https://youtu.be/OiK2Tny1c0U",
+    "levelID": 97429207,
+    "showcaseVideo": "https://youtu.be/sJkeRnrAqWQ",
+    "submitter": "TYATYAPKA",
     "tags": [
       "Level",
       "Progress"
@@ -3687,22 +3687,6 @@
       "Level",
       "Verified",
       "Rated"
-    ]
-  },
-  {
-    "name": "Azure Flare (Vertop) 58-100%",
-    "id": "azure-flare-vertop-58-100",
-    "player": "Vertop",
-    "date": "2023-09-23",
-    "length": 24,
-    "version": 2.1,
-    "video": "https://youtu.be/OIh0VNYMQgA",
-    "levelID": 97429207,
-    "showcaseVideo": "https://youtu.be/sJkeRnrAqWQ",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -5144,6 +5128,22 @@
       "Level",
       "Verified",
       "Rated"
+    ]
+  },
+  {
+	"name": "Azure Flare (Vertop) 58-100%",
+    "id": "azure-flare-vertop-58-100",
+    "player": "Vertop",
+    "date": "2023-09-23",
+    "length": 24,
+    "version": 2.1,
+    "video": "https://youtu.be/OIh0VNYMQgA",
+    "levelID": 97429207,
+    "showcaseVideo": "https://youtu.be/sJkeRnrAqWQ",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -13621,6 +13621,7 @@
   }
 
 ]
+
 
 
 
