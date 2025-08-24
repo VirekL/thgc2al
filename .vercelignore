@@ -26,6 +26,8 @@ Release-*
 .next/cache/
 *.psd
 *.ai
+*.md
 **/node_modules/**
 # OneDrive desktop sync files
-~*\n+.~lock.*
+~*
+.~lock.*
