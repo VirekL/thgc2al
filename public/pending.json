@@ -165,20 +165,6 @@
     ]
   },
   {
-	"name": "Sakupen Circles (Skylar) 76%",
-    "id": "sakupen-circles-skylar-76",
-    "player": "Skylar",
-    "date": "2025-08-16",
-    "length": 36,
-    "version": 2.2,
-    "video": "https://youtu.be/93Pv6ny4ECI",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-	  "Progress"
-    ]
-  },
-  {
 	"name": "shimmer 144hz Mobile 96%",
 		"id": "shimmer-144hz-mobile-96",
 		"player": "Mateex",
@@ -291,20 +277,6 @@
 		]
 	},
 	{
-		"name": "Eternal Night (Bedziu)",
-		"id": "eternal-night-bedziu",
-		"player": "rBedziu",
-		"levelID": "124550440",
-		"length": "103",
-		"version": "2.2",
-		"video": "https://youtu.be/-zApYHbfezM",
-		"date": "2025-08-13",
-		"submitter": "kyle1saurus",
-		"tags": [
-			"Level"
-		]
-	},
-  {
 	"name": "Ex Vacuo 58%",
     "id": "ex-vacuo-58",
     "player": "Laniakea",
