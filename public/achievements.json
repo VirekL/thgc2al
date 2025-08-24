@@ -1142,6 +1142,21 @@
     ]
   },
   {
+	"name": "Sweeping Demon 2 (Taiago) 62%",
+    "id": "sweeping-demon-2-taiago-62",
+    "player": "Taiago",
+    "date": "2025-08-13",
+    "length": "48",
+    "version": "2.2",
+    "video": "https://youtu.be/Kjf02JTmXjw",
+    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Acheron",
     "id": "acheron",
     "player": "FinleyGG",
@@ -10324,21 +10339,6 @@
     ]
   },
   {
-    "name": "Sweeping Demon 2 (Taiago) 43%",
-    "id": "sweeping-demon-2-taiago-43",
-    "player": "Taiago",
-    "date": "2025-07-13",
-    "length": "38",
-    "version": "2.2",
-    "video": "https://youtu.be/yDdqpTM9F20",
-    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Lotus Flower 60hz Mobile 62%",
     "id": "lotus-flower-60hz-mobile-62",
     "player": "SanctumGD",
@@ -13621,6 +13621,7 @@
   }
 
 ]
+
 
 
 
