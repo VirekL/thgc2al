@@ -19,22 +19,6 @@
 		]
 	},
 	{
-	"name": "Cosmic Cyclone (Meatius) 52%",
-    "id": "cosmic-cyclone-meatius-52",
-    "player": "Meatius",
-    "date": "2025-08-22",
-    "levelID": "108671100",
-    "length": 70,
-    "version": 2.2,
-    "video": "https://youtu.be/YX-KCPYYVI8?t=623",
-    "showcaseVideo": "https://youtu.be/IYmRkHZxAgc",
-	"submitter": "Meatius",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
- {
   "name": "Cosmic Cyclone (Meatius) 10 deaths, 99.94 accuracy",
     "id": "cosmic-cyclone-meatius- 10-deaths-99-94-accuracy",
     "player": "Meatius",
@@ -48,21 +32,6 @@
     "tags": [
       "Level",
       "Noclip"
-    ]
-  },
- {
-  "name": "Green Bullet 43-100%",
-    "id": "green-bullet-43-100",
-    "player": "nickname09",
-    "date": "2025-08-22",
-    "length": 67,
-    "version": 2.2,
-    "video": "https://youtu.be/5PpEhBdPBjw",
-    "showcaseVideo": "https://youtu.be/mHg2jrzpkxs",
-	"submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
  {
@@ -102,22 +71,6 @@
     ]
   },
   {
-  "name": "Heliopolis (Garbag) 20%",
-    "id": "heliopolis-garbag-20",
-    "player": "Garbag",
-    "date": "2025-08-22",
-    "length": 32,
-    "version": 2.2,
-    "video": "https://youtu.be/D046fkPmPqo",
-    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
 	"name": "Deimos 57%, 100%",
     "id": "deimos-57-1000",
     "player": "Dezstro",
@@ -148,42 +101,6 @@
     "tags": [
       "Level",
       "Low Hertz",
-	  "Progress",
-      "Rated"
-    ]
-  },
-  {
-	"name": "The Golden 1.1x 97%",
-    "id": "the-golden-11x-97",
-    "player": "Sid125",
-    "length": "65",
-    "version": "2.1",
-    "video": "https://youtu.be/b6dUBlA38_4?t=63",
-    "showcaseVideo": "https://youtu.be/lbrN3kasxR0",
-    "date": "2021-01-31",
-    "submitter": "Radiator",
-    "levelID": "60978746",
-    "tags": [
-      "Level",
-      "Speedhack",
-	  "Progress",
-      "Rated"
-    ]
-  },
-  {
-	"name": "The Golden 1.25x 36-100%",
-    "id": "the-golden-125x-36-100",
-    "player": "goldix",
-    "length": "42",
-    "version": "2.1",
-    "video": "https://youtu.be/fuW1FfGQ5co",
-    "showcaseVideo": "https://youtu.be/lbrN3kasxR0",
-    "date": "2025-08-23",
-    "submitter": "jak",
-    "levelID": "60978746",
-    "tags": [
-      "Level",
-      "Speedhack",
 	  "Progress",
       "Rated"
     ]
@@ -398,25 +315,6 @@
     "tags": [
       "Level",
       "Progress"
-    ]
-  },
-  {
-	"name": "Spectrum Cyclone 60hz Mobile 91%",
-    "id": "spectrum-cyclone-60hz-mobile-91",
-    "player": "Cedric22",
-    "date": "2025-08-18",
-    "length": "110",
-    "version": "2.2",
-    "levelID": "59209010",
-    "video": "https://youtu.be/EY_EMknkrQ0",
-    "showcaseVideo": "https://youtu.be/wvNwc4NaJaw",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Progress",
-      "Rated"
     ]
   },
   {
