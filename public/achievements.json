@@ -13502,7 +13502,7 @@
       "CBF",
       "Tentative"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "Sweeping Demon 2 (Thnnder) 71-100%",
@@ -13602,6 +13602,44 @@
     ]
   },
   {
+	"name": "Every End 120hz Mobile 33-68%",
+		"id": "every-end-120hz-mobile-33-68",
+		"player": "SarTiZ",
+		"length": "156",
+		"version": "2.2",
+		"video": "https://youtu.be/0AQP_F3YmNg?si=Eg8AEHN_yvKjTmTC",
+		"date": "2025-05-09",
+		"showcaseVideo": "https://youtu.be/C7Umvy4VyDg?si=x1pSppUtFyQhhuo4",
+		"levelID": "116174063",
+		"submitter": "jak",
+		"tags": [
+			"Rated",
+			"Low Hertz",
+			"Mobile",
+			"Progress",
+			"Level"
+		]
+	},
+	{
+	"name": "Every End 120hz Mobile 67-100%",
+		"id": "every-end-120hz-mobile-67-100",
+		"player": "SarTiZ",
+		"length": "145",
+		"version": "2.2",
+		"video": "https://youtu.be/rsIih2tON9Y?si=ox5dzBvNy-3J_Rhy",
+		"date": "2025-04-14",
+		"showcaseVideo": "https://youtu.be/C7Umvy4VyDg?si=x1pSppUtFyQhhuo4",
+		"levelID": "116174063",
+		"submitter": "jak",
+		"tags": [
+			"Rated",
+			"Low Hertz",
+			"Mobile",
+			"Progress",
+			"Level"
+		]
+	},
+{
     "name": "Benevolence 19-100%",
     "id": "benevolence-19-100",
     "player": "Caleger",
@@ -13616,7 +13654,7 @@
       "CBF",
       "Tentative"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "Silent Circles (skeletonlol) 27-70% 7 deaths, 99.66 accuracy",
@@ -13650,7 +13688,7 @@
     ]
   },
   {
-    "name": "poocubed                              120hz Mobile 33%",
+    "name": "poocubed 120hz Mobile 33%",
     "id": "poocubed-120hz-mobile-33",
     "player": "DENISKA",
     "levelID": "85133223",
@@ -13677,7 +13715,7 @@
     "video": "https://youtu.be/RcozJDBGhXM",
     "date": "2025-08-14",
     "submitter": "kyle1saurus",
-    "levelID": 0,
+    "levelID": null,
     "tags": [
       "Level",
       "Progress"
@@ -13766,19 +13804,3 @@
   }
 
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
