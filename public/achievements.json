@@ -4746,6 +4746,22 @@
     ]
   },
   {
+    "name": "Lunatic Eyes",
+    "id": "lunatic-eyes",
+    "player": "DNM121",
+    "date": "2025-07-23",
+    "length": 86,
+    "version": 2.2,
+    "video": "https://youtu.be/0M1sMbchs68",
+    "showcaseVideo": "https://youtu.be/q3M4_gezvLc",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Verified"
+    ],
+    "levelID": 123417713
+  },
+  {
     "name": "Sad Chamber 55%, 51%x2",
     "id": "sad-chamber-55-51x2",
     "player": "nensa",
@@ -5610,6 +5626,20 @@
       "Challenge",
       "Progress",
       "CBF"
+    ]
+  },
+  {
+    "name": "Lunatic Eyes (Old) 71%",
+    "id": "lunatic-eyes-old-71",
+    "player": "DNM121",
+    "date": "2025-04-24",
+    "length": 51,
+    "version": 2.2,
+    "video": "https://youtu.be/jWUkVGeXiXM",
+    "showcaseVideo": "https://youtu.be/q3M4_gezvLc",
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -8043,8 +8073,7 @@
       "Level",
       "Progress",
       "Tentative"
-    ],
-    "levelID": 0
+    ]
   },
   {
     "name": "Sonic Wave 60hz Mobile",
@@ -8227,6 +8256,22 @@
       "Level",
       "Verified",
       "Tentative"
+    ]
+  },
+  {
+    "name": "Iridescent",
+    "id": "iridescent",
+    "player": "serpentical",
+    "date": "2025-07-23",
+    "length": 59,
+    "version": 2.2,
+    "levelID": 123430601,
+    "video": "https://youtu.be/tf2md44JU2g",
+    "showcaseVideo": "https://youtu.be/9EgxpC9nEnU",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Verified"
     ]
   },
   {
@@ -9487,8 +9532,7 @@
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": 0
+    ]
   },
   {
     "name": "KOCMOC publicrelease 32-76%",
@@ -9640,22 +9684,6 @@
       "Level",
       "Progress"
     ]
-  },
-  {
-    "name": "Lunatic Eyes",
-    "id": "lunatic-eyes",
-    "player": "DNM121",
-    "date": "2025-07-23",
-    "length": 86,
-    "version": 2.2,
-    "video": "https://youtu.be/0M1sMbchs68",
-    "showcaseVideo": "https://youtu.be/q3M4_gezvLc",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Verified"
-    ],
-    "levelID": 123417713
   },
   {
     "name": "Death Corridor Easy 64%",
@@ -10079,22 +10107,6 @@
       "Level",
       "Verified",
       "Rated"
-    ]
-  },
-  {
-    "name": "Iridescent",
-    "id": "iridescent",
-    "player": "serpentical",
-    "date": "2025-07-23",
-    "length": 59,
-    "version": 2.2,
-    "levelID": 123430601,
-    "video": "https://youtu.be/tf2md44JU2g",
-    "showcaseVideo": "https://youtu.be/9EgxpC9nEnU",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Verified"
     ]
   },
   {
@@ -11741,8 +11753,7 @@
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": 0
+    ]
   },
   {
     "name": "FAIRY KNIFE HELL 78-100%",
@@ -11830,20 +11841,6 @@
     ]
   },
   {
-    "name": "Lunatic Eyes (Old) 71%",
-    "id": "lunatic-eyes-old-71",
-    "player": "DNM121",
-    "date": "2025-04-24",
-    "length": 51,
-    "version": 2.2,
-    "video": "https://youtu.be/jWUkVGeXiXM",
-    "showcaseVideo": "https://youtu.be/q3M4_gezvLc",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Hazardous Haste",
     "id": "hazardous-haste",
     "player": "SnowBallerr",
@@ -11920,8 +11917,7 @@
     "tags": [
       "Level",
       "Verified"
-    ],
-    "levelID": 0
+    ]
   },
   {
     "name": "Azure Flare (Old) 77%",
@@ -12066,8 +12062,7 @@
       "Level",
       "Progress",
       "Tentative"
-    ],
-    "levelID": 0
+    ]
   },
   {
     "name": "BLEED",
@@ -12098,8 +12093,7 @@
       "Level",
       "Progress",
       "Tentative"
-    ],
-    "levelID": 0
+    ]
   },
   {
     "name": "THE ROCK HOUSE (Old)",
@@ -13610,3 +13604,4 @@
   }
 
 ]
+
