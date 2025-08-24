@@ -1275,7 +1275,7 @@
   {
     "name": "Aerial Gleam (Unnerfed) 144hz Mobile",
     "id": "aerial-gleam-unnerfed-144hz-mobile",
-    "player": "Vertop",
+    "player": "VERTOP",
     "levelID": 83074352,
     "date": "2023-04-27",
     "length": 65,
@@ -1910,9 +1910,9 @@
     ]
   },
   {
-    "name": "Azure Flare (Vertop) 36-76%",
+    "name": "Azure Flare (VERTOP) 36-76%",
     "id": "azure-flare-vertop-36-76",
-    "player": "Vertop",
+    "player": "VERTOP",
     "date": "2023-11-22",
     "length": 21,
     "version": 2.1,
@@ -2834,9 +2834,9 @@
     ]
   },
   {
-	"name": "Azure Flare (Vertop) 45%",
+	"name": "Azure Flare (VERTOP) 45%",
     "id": "azure-flare-vertop-45",
-    "player": "Vertop",
+    "player": "VERTOP",
     "date": "2023-11-17",
     "length": 26,
     "version": 2.1,
@@ -2994,9 +2994,9 @@
     ]
   },
   {
-    "name": "Azure Flare (Vertop) 44-90%",
+    "name": "Azure Flare (VERTOP) 44-90%",
     "id": "azure-flare-vertop-44-90",
-    "player": "Vertop",
+    "player": "VERTOP",
     "date": "2023-11-04",
     "length": 27,
     "version": 2.1,
@@ -4917,7 +4917,7 @@
     "date": "2023-05-08",
     "length": 11,
     "version": 2.1,
-    "video": "https://youtu.be/0yGyO5CikEkhttps://youtu.be/0yGyO5CikEk",
+    "video": "https://youtu.be/0yGyO5CikEk",
     "submitter": "kyle1saurus",
     "tags": [
       "Challenge",
@@ -5150,7 +5150,7 @@
   {
     "name": "Aerial Gleam 144hz Mobile",
     "id": "aerial-gleam-144hz-mobile",
-    "player": "Vertop",
+    "player": "VERTOP",
     "levelID": 79771070,
     "date": "2023-04-23",
     "length": 65,
@@ -5217,9 +5217,9 @@
     ]
   },
   {
-	"name": "Azure Flare (Vertop) 58-100%",
+	"name": "Azure Flare (VERTOP) 58-100%",
     "id": "azure-flare-vertop-58-100",
-    "player": "Vertop",
+    "player": "VERTOP",
     "date": "2023-09-23",
     "length": 24,
     "version": 2.1,
@@ -5568,7 +5568,7 @@
   },
   {
     "name": "Our Special Place 64%, 66%",
-    "id": "our-special-place-64-66",
+    "id": "our-special-place-64-66", 
     "player": "NucGDStuff",
     "levelID": 94294850,
     "date": "2025-02-21",
@@ -13804,3 +13804,4 @@
   }
 
 ]
+
