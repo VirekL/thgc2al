@@ -2098,6 +2098,20 @@
     ]
   },
   {
+	"name": "Sakupen Circles (Skylar) 76%",
+    "id": "sakupen-circles-skylar-76",
+    "player": "Skylar",
+    "date": "2025-08-16",
+    "length": 36,
+    "version": 2.2,
+    "video": "https://youtu.be/93Pv6ny4ECI",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+	  "Progress"
+    ]
+  },
+  {
     "name": "Slaughterhouse 1.3x 49-100% 2 deaths, 99.93 accuracy",
     "id": "slaughterhouse-1-3x-49-100-2-deaths-99-93-accuracy",
     "player": "Doggie",
@@ -13665,6 +13679,7 @@
   }
 
 ]
+
 
 
 
