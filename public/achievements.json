@@ -6089,6 +6089,24 @@
     ]
   },
   {
+    "name": "The Golden 1.1x 97%",
+    "id": "the-golden-1-1x-97",
+    "player": "Sid125",
+    "length": "65",
+    "version": "2.1",
+    "video": "https://youtu.be/b6dUBlA38_4?t=63",
+    "showcaseVideo": "https://youtu.be/lbrN3kasxR0",
+    "date": "2021-01-31",
+    "submitter": "Radiator",
+    "levelID": "60978746",
+    "tags": [
+      "Level",
+      "Speedhack",
+	  "Progress",
+      "Rated"
+    ]
+  },
+  {
     "name": "Azure Flare (polar) 25-47%",
     "id": "azure-flare-polar-25-47",
     "player": "polar",
@@ -6117,6 +6135,24 @@
     "tags": [
       "Level",
       "Verified",
+      "Rated"
+    ]
+  },
+  {
+    "name": "The Golden 1.25x 36-100%",
+    "id": "the-golden-1-25x-36-100",
+    "player": "goldix",
+    "length": "42",
+    "version": "2.1",
+    "video": "https://youtu.be/fuW1FfGQ5co",
+    "showcaseVideo": "https://youtu.be/lbrN3kasxR0",
+    "date": "2025-08-23",
+    "submitter": "jak",
+    "levelID": "60978746",
+    "tags": [
+      "Level",
+      "Speedhack",
+	  "Progress",
       "Rated"
     ]
   },
@@ -11066,24 +11102,6 @@
     ]
   },
   {
-    "name": "The Golden 1.1x 89%",
-    "id": "the-golden-1-1x-89",
-    "player": "Sid125",
-    "levelID": 60978746,
-    "date": "2021-01-31",
-    "length": 76,
-    "version": 2.1,
-    "submitter": "Anceps",
-    "video": "https://youtu.be/dGBPjQZUsVE",
-    "showcaseVideo": "https://youtu.be/lbrN3kasxR0",
-    "tags": [
-      "Level",
-      "Speedhack",
-      "Progress",
-      "Rated"
-    ]
-  },
-  {
     "name": "Kenos 120hz Mobile 55%",
     "id": "kenos-120hz-mobile-55",
     "player": "DashY",
@@ -12813,7 +12831,7 @@
       "Level",
       "Progress"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "Sonic Wave 1.5x 28-96%",
@@ -13290,24 +13308,6 @@
     ]
   },
   {
-    "name": "The Golden 1.25x 36-76%",
-    "id": "the-golden-1-25x-36-76",
-    "player": "goldix",
-    "levelID": 60978746,
-    "date": "2025-03-11",
-    "length": 20,
-    "version": 2.2,
-    "video": "https://youtu.be/iYiss_InEME",
-    "showcaseVideo": "https://youtu.be/lbrN3kasxR0",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Speedhack",
-      "Progress",
-      "Rated"
-    ]
-  },
-  {
     "name": "Starlight Summit",
     "id": "starlight-summit",
     "player": "Pengi1",
@@ -13604,4 +13604,5 @@
   }
 
 ]
+
 
