@@ -8321,6 +8321,23 @@
     ]
   },
   {
+	"name": "Silent Clubstep II 42-100%",
+    "id": "silent-clubstep-ii-42-100",
+    "player": "SkittleCatastrophe",
+    "date": "2025-08-25",
+    "length": "45",
+    "version": "2.2",
+    "levelID": "78614226",
+    "video": "https://youtu.be/suXpr39rcDU",
+    "showcaseVideo": "https://youtu.be/mCj_PjC3rs0",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
+  },
+  {
     "name": "Levigo",
     "id": "levigo",
     "player": "DragoonGD",
@@ -8900,6 +8917,7 @@
     "date": "2025-02-17",
     "length": 8,
     "version": 2.2,
+	"video": "https://youtu.be/UxOeCFdaVEU",
     "showcaseVideo": "https://youtu.be/VPXub8NAKPU",
     "submitter": "kyle1saurus",
     "tags": [
@@ -8953,23 +8971,6 @@
     "tags": [
       "Level",
       "Verified"
-    ]
-  },
-  {
-    "name": "Silent Clubstep II 51-100%",
-    "id": "silent-clubstep-ii-51-100",
-    "player": "SkittleCatastrophe",
-    "date": "2025-06-27",
-    "length": "35",
-    "version": "2.2",
-    "levelID": "78614226",
-    "video": "https://youtu.be/NVC373E4FYI",
-    "showcaseVideo": "https://youtu.be/mCj_PjC3rs0",
-    "submitter": "Exiled_Shade",
-    "tags": [
-      "Level",
-      "Progress",
-      "CBF"
     ]
   },
   {
@@ -9097,6 +9098,23 @@
     ]
   },
   {
+	"name": "Silent Clubstep II 26%",
+    "id": "silent-clubstep-ii-26",
+    "player": "SkittleCatastrophe",
+    "date": "2025-08-25",
+    "length": "26",
+    "version": "2.2",
+    "levelID": "78614226",
+    "video": "https://youtu.be/OeuT_ZZ60Ug",
+    "showcaseVideo": "https://youtu.be/mCj_PjC3rs0",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
+  },
+  {
     "name": "VENUS",
     "id": "venus",
     "player": "SeazeIsCool",
@@ -9216,23 +9234,6 @@
       "Low Hertz",
       "Progress",
       "Rated"
-    ]
-  },
-  {
-    "name": "Silent Clubstep II 24%",
-    "id": "silent-clubstep-ii-24",
-    "player": "SkittleCatastrophe",
-    "date": "2025-07-16",
-    "length": "25",
-    "version": "2.2",
-    "levelID": "78614226",
-    "video": "https://youtu.be/FQPS9WrxU64",
-    "showcaseVideo": "https://youtu.be/mCj_PjC3rs0",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress",
-      "CBF"
     ]
   },
   {
@@ -13776,6 +13777,7 @@
   }
 
 ]
+
 
 
 
