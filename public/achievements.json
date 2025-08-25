@@ -310,6 +310,22 @@
     "version": "2.2"
   },
   {
+	"name": "VSC x2",
+    "id": "vsc-x2",
+    "player": "Nev",
+    "date": "2025-08-25",
+    "length": 42,
+    "version": 2.2,
+	"levelID": 125131485,
+    "video": "https://youtu.be/92Msl_EI-5E",
+	"ShowcaseVideo" "https://youtu.be/TPnljyNS7Dg",
+    "submitter": "nensa",
+    "tags": [
+      "Level",
+	  "Verified"
+    ]
+  },
+  {
     "name": "Sakupen circles (Old) 37-66%, 37-69%, 70%",
     "id": "sakupen-circles-old-37-66-37-69-70",
     "player": "ad3usgmd",
@@ -358,22 +374,6 @@
       "Level",
       "Consistency",
       "Rated"
-    ]
-  },
-  {
-    "name": "VSC x2 60%, 66%",
-    "id": "vsc-x2-60-66",
-    "player": "Nev",
-    "length": 53,
-    "version": 2.2,
-    "video": "https://youtu.be/3mJc6oMn_q4?si=iAB7uDZthj9kAZ37",
-    "date": "2025-08-16",
-    "submitter": "Emp",
-    "levelID": null,
-    "thumbnail": "https://tjcsucht.net/levelthumbs/60805571.png",
-    "tags": [
-      "Level",
-      "Consistency"
     ]
   },
   {
@@ -491,7 +491,7 @@
       "Level",
       "Progress"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "Anathema 156%",
@@ -543,7 +543,7 @@
       "Level",
       "Progress"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "Vehemence 39%",
@@ -914,7 +914,7 @@
       "Level",
       "Progress"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "Anathema",
@@ -1386,20 +1386,6 @@
     "submitter": "jak",
     "tags": [
       "Miscellaneous"
-    ]
-  },
-  {
-    "name": "VSC x2 76%",
-    "id": "vsc-x2-76",
-    "player": "Nev",
-    "date": "2024-11-29",
-    "length": 31,
-    "version": 2.2,
-    "video": "https://youtu.be/LYbNeDVS4kU",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -13804,4 +13790,5 @@
   }
 
 ]
+
 
