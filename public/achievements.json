@@ -7287,7 +7287,7 @@
       "CBF",
       "Tentative"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "PSYCHOPATH",
@@ -7579,7 +7579,7 @@
       "Level",
       "Progress"
     ],
-    "levelID": 0,
+    "levelID": null,
     "showcaseVideo": "https://youtu.be/_Fgb3DCCkxA"
   },
   {
@@ -8188,18 +8188,19 @@
     ]
   },
   {
-    "name": "Femboy Friday 99%",
-    "id": "femboy-friday-99",
+    "name": "Femboy Friday",
+    "id": "femboy-friday",
     "player": "Infinny",
-    "date": "2025-07-13",
-    "length": 223,
+    "date": "2025-08-25",
+	"levelID": 86414534,
+    "length": 225,
     "version": 2.2,
-    "video": "https://youtu.be/rlbZFBhx6vM",
-    "showcaseVideo": "https://youtu.be/RqDn6fXf7xU",
-    "submitter": "Exiled_Shade",
+    "video": "https://www.youtube.com/live/OAawySM3B2M?t=9990",
+    "showcaseVideo": "https://youtu.be/sZK2RCOtBpc",
+    "submitter": "kyle1saurus",
     "tags": [
       "Level",
-      "Progress",
+      "Verified",
       "Tentative"
     ]
   },
@@ -13790,6 +13791,7 @@
   }
 
 ]
+
 
 
 
