@@ -1089,6 +1089,21 @@
     ]
   },
   {
+	"name": "Sweeping Demon 2 (Taiago) 49-100%",
+    "id": "sweeping-demon-2-taiago-49-100",
+    "player": "Taiago",
+    "date": "2025-08-25",
+    "length": "33",
+    "version": "2.2",
+    "video": "https://youtu.be/-cj6FSvkf4Y",
+    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
+    "submitter": "exiled_shade",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Crimson Planet 60hz Mobile",
     "id": "crimson-planet-60hz-mobile",
     "player": "SeaWolfMikes",
@@ -9221,21 +9236,6 @@
     ]
   },
   {
-    "name": "Sweeping Demon 2 (Taiago) 49-91%",
-    "id": "sweeping-demon-2-taiago-49-91",
-    "player": "Taiago",
-    "date": "2025-07-22",
-    "length": "28",
-    "version": "2.2",
-    "video": "https://youtu.be/b-f1C2Bg7rE",
-    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Coalescence",
     "id": "coalescence",
     "player": "Amplitron",
@@ -10462,21 +10462,6 @@
     "video": "https://youtu.be/6Cng8N7HoBU",
     "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
     "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
-    "name": "Sweeping Demon 2 (Taiago) 59-100%",
-    "id": "sweeping-demon-2-taiago-59-100",
-    "player": "Taiago",
-    "date": "2025-07-12",
-    "length": "28",
-    "version": "2.2",
-    "video": "https://youtu.be/AAOoAfdHFjM",
-    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
-    "submitter": "Exiled_Shade",
     "tags": [
       "Level",
       "Progress"
@@ -13791,6 +13776,7 @@
   }
 
 ]
+
 
 
 
