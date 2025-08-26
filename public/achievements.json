@@ -8305,6 +8305,23 @@
     ]
   },
   {
+	"name": "abocto",
+		"id": "abocto",
+		"player": "Raluca",
+		"length": "111",
+		"version": "2.2",
+		"video": "https://youtu.be/sy70OO_zUJQ",
+		"date": "2025-07-27",
+		"showcaseVideo": "https://youtu.be/sy70OO_zUJQ",
+		"submitter": "goofygdplayer",
+		"levelID": "123679035",
+		"tags": [
+			"Level",
+			"Verified",
+			"Tentative"
+		]
+  },
+{
     "name": "Climax",
     "id": "climax",
     "player": "Wain",
@@ -13778,6 +13795,7 @@
   }
 
 ]
+
 
 
 
