@@ -19,6 +19,56 @@
 		]
 	},
 	{
+    "name": "Checked Steam (Coin Route)",
+    "id": "checked-steam-coin-route",
+    "player": "Whizkid05",
+    "levelID": 105748155,
+    "date": "2024-05-27",
+    "length": 73,
+    "version": 2.2,
+    "video": "https://youtu.be/cq6047eYGXs",
+    "showcaseVideo": "https://youtu.be/yN1grKb8UTQ",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Verified",
+      "Rated"
+    ]
+  },
+  {
+    "name": "Acid Rain",
+    "id": "acid-rain",
+    "player": "ShadowMyth",
+    "levelID": 125150457,
+    "date": "2025-08-25",
+    "length": 72,
+    "version": 2.2,
+    "video": "https://youtu.be/Byw2IOV0H00",
+    "showcaseVideo": null,
+    "submitter": "cheesecake",
+    "tags": [
+      "Level",
+      "Verified"
+    ]
+  },
+  {
+	"name": "Silent Clubstep II 37-54%",
+    "id": "silent-clubstep-ii-37-54",
+    "player": "SkittleCatastrophe",
+    "date": "2025-08-25",
+    "length": "18",
+    "version": "2.2",
+    "levelID": "78614226",
+    "video": "https://youtu.be/suXpr39rcDU?t=75",
+    "showcaseVideo": "https://youtu.be/mCj_PjC3rs0",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
+  },
+  {
   "name": "Cosmic Cyclone (Meatius) 10 deaths, 99.94 accuracy",
     "id": "cosmic-cyclone-meatius- 10-deaths-99-94-accuracy",
     "player": "Meatius",
