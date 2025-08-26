@@ -158,6 +158,23 @@
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/grief-unbuffed2.avif"
   },
   {
+	"name": "VSC x2",
+    "id": "vsc-x2",
+    "player": "Nev",
+    "date": "2025-08-25",
+    "length": 42,
+    "version": 2.2,
+	"levelID": 125131485,
+    "video": "https://youtu.be/92Msl_EI-5E",
+	"showcaseVideo": "https://youtu.be/TPnljyNS7Dg",
+    "submitter": "nensa",
+    "tags": [
+      "Level",
+	  "Verified",
+	  "Tentative"
+    ]
+  },
+  {
     "name": "Slaughterhouse 300%",
     "id": "slaughterhouse-300",
     "player": "wPopoff",
@@ -308,22 +325,6 @@
     "date": "2025-07-20",
     "length": "36",
     "version": "2.2"
-  },
-  {
-	"name": "VSC x2",
-    "id": "vsc-x2",
-    "player": "Nev",
-    "date": "2025-08-25",
-    "length": 42,
-    "version": 2.2,
-	"levelID": 125131485,
-    "video": "https://youtu.be/92Msl_EI-5E",
-	"showcaseVideo": "https://youtu.be/TPnljyNS7Dg",
-    "submitter": "nensa",
-    "tags": [
-      "Level",
-	  "Verified"
-    ]
   },
   {
     "name": "Sakupen circles (Old) 37-66%, 37-69%, 70%",
@@ -5289,8 +5290,8 @@
     ]
   },
   {
-    "name": "3sh x10 79%",
-    "id": "3sh-x10-79",
+    "name": "3sh on Pointercrate 79%",
+    "id": "3sh-on-pointercrate-79",
     "player": "TahaBht_",
     "date": "2024-04-30",
     "length": 15,
@@ -7171,7 +7172,7 @@
       "Progress",
       "CBF"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "Silent Acropolis 38%",
@@ -7794,7 +7795,7 @@
   {
     "name": "Silent Oppenheimer 36%",
     "id": "silent-oppenheimer-36",
-    "player": "Destro",
+    "player": "Dezstro",
     "date": "2025-02-19",
     "length": 40,
     "version": 2.2,
@@ -8081,7 +8082,7 @@
   {
     "name": "Silent Oppenheimer 57-100%",
     "id": "silent-oppenheimer-57-100",
-    "player": "Destro",
+    "player": "Dezstro",
     "date": "2025-02-02",
     "length": 32,
     "version": 2.2,
@@ -8160,7 +8161,7 @@
   {
     "name": "Silent Oppenheimer 32-57%",
     "id": "silent-oppenheimer-32-57",
-    "player": "Destro",
+    "player": "Dezstro",
     "date": "2025-01-14",
     "length": 30,
     "version": 2.2,
@@ -8600,7 +8601,7 @@
     "levelID": 58224600,
     "date": "2025-04-07",
     "length": 63,
-    "version": 2.2,
+    "version": 2.1,
     "video": "https://youtu.be/42rHnHtuGuE",
     "showcaseVideo": "https://youtu.be/ODoSYoIYaUQ",
     "submitter": "kyle1saurus",
@@ -13777,6 +13778,7 @@
   }
 
 ]
+
 
 
 
