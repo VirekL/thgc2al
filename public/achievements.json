@@ -13348,8 +13348,7 @@
 			"Rated",
 			"Low Hertz",
 			"Mobile",
-			"Level",
-			"Rated"
+			"Level"
 		]
 	},
 	{
@@ -13463,8 +13462,7 @@
 			"Rated",
 			"Low Hertz",
 			"Mobile",
-			"Level",
-			"Rated"
+			"Level"
 		]
 	},
 	{
@@ -13870,6 +13868,7 @@
   }
 
 ]
+
 
 
 
