@@ -9763,6 +9763,25 @@
     ]
   },
   {
+	"name": "Sonic Wave Infinity 120hz Mobile 42%",
+    "id": "sonic-wave-infinity-120hz-mobile-42",
+    "player": "russoboy",
+    "levelID": 69685815,
+    "date": "2023-11-08",
+    "length": 63,
+    "version": 2.1,
+    "submitter": "TYATYAPKA",
+    "video": "https://youtu.be/Ge7HCWcWNjk",
+    "showcaseVideo": "https://youtu.be/QYd2YdKtj8Y",
+    "tags": [
+      "Level",
+      "Low Hertz",
+	  "Mobile",
+	  "Progress",
+      "Rated"
+    ]
+  },
+  {
     "name": "kowareta 60hz Mobile",
     "id": "kowareta-60hz-mobile",
     "player": "Biprex",
@@ -9811,6 +9830,25 @@
       "Low Hertz",
       "Mobile",
       "Progress",
+      "Rated"
+    ]
+  },
+  {
+	"name": "Sonic Wave Infinity 120hz Mobile 41-100%",
+    "id": "sonic-wave-infinity-120hz-mobile-41-100",
+    "player": "russoboy",
+    "levelID": 69685815,
+    "date": "2023-10-28",
+    "length": 99,
+    "version": 2.1,
+    "submitter": "TYATYAPKA",
+    "video": "https://youtu.be/_M2ExsTC3xk",
+    "showcaseVideo": "https://youtu.be/QYd2YdKtj8Y",
+    "tags": [
+      "Level",
+      "Low Hertz",
+	  "Mobile",
+	  "Progress",
       "Rated"
     ]
   },
@@ -13005,8 +13043,8 @@
     ]
   },
   {
-    "name": "Sonic Wave Rebirth 60hz 71%",
-    "id": "sonic-wave-rebirth-60hz-71",
+    "name": "Sonic Wave Rebirth 60hz Mobile 71%",
+    "id": "sonic-wave-rebirth-60hz-mobile-71",
     "player": "Cedric22",
     "levelID": 68688849,
     "date": "2024-08-24",
@@ -13018,6 +13056,7 @@
     "tags": [
       "Level",
       "Low Hertz",
+	  "Mobile",
       "Progress",
       "Rated"
     ]
@@ -13296,6 +13335,24 @@
     ]
   },
   {
+	"name": "ATOMIC CANNON 60hz Mobile",
+		"id": "atomic-cannon-60hz-mobile",
+		"player": "Biprex",
+		"length": "59",
+		"version": "2.1",
+		"video": "https://www.youtube.com/watch?v=A3D-oeXqDek",
+		"date": "2023-02-19",
+		"showcaseVideo": "https://youtu.be/rT3W0skPTZM?si=gsXT298M7nViECEw",
+		"levelID": "77681476",
+		"tags": [
+			"Rated",
+			"Low Hertz",
+			"Mobile",
+			"Level",
+			"Rated"
+		]
+	},
+	{
     "name": "ExtraSonic",
     "id": "extrasonic",
     "player": "Sevant",
@@ -13393,6 +13450,24 @@
     ]
   },
   {
+	"name": "Shardscapes 60hz Mobile",
+		"id": "shardscapes-60hz-mobile",
+		"player": "danielcookie",
+		"length": "78",
+		"version": "2.2",
+		"video": "https://youtu.be/Pz4UTQvx8ew",
+		"date": "2025-05-26",
+		"showcaseVideo": "https://www.youtube.com/watch?v=gtOsT67txFs",
+		"levelID": "79997992",
+		"tags": [
+			"Rated",
+			"Low Hertz",
+			"Mobile",
+			"Level",
+			"Rated"
+		]
+	},
+	{
     "name": "Cannon Bay",
     "id": "cannon-bay",
     "player": "LordVadercraft",
@@ -13795,6 +13870,7 @@
   }
 
 ]
+
 
 
 
