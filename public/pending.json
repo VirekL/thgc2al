@@ -19,6 +19,40 @@
 		]
 	},
 	{
+	"name": "The Yangire 144hz",
+    "id": "the-yangire-144hz",
+    "player": "Razzley",
+    "levelID": 110500920,
+    "date": "2025-08-28",
+    "length": 149,
+    "version": 2.2,
+    "video": "https://youtu.be/rGDrOFExa38",
+    "showcaseVideo": "https://youtu.be/hkfdKYqQARA",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Rated"
+    ]
+  },
+  {
+	"name": "Trueffet 144hz",
+    "id": "trueffet-144hz",
+    "player": "Razzley",
+    "levelID": 71434979,
+    "date": "2025-05-03",
+    "length": 53,
+    "version": 2.2,
+    "video": "https://youtu.be/WQzX6ItuoaY",
+    "showcaseVideo": "https://youtu.be/qkQidB9aPLA",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Rated"
+    ]
+  },
+  {
     "name": "Sweeping Demon 2 (Taiago) 39-84%",
     "id": "sweeping-demon-2-taiago-39-84",
     "player": "Taiago",
