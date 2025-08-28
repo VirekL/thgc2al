@@ -162,22 +162,21 @@
     ]
   },
   {
-	"name": "shimmer 144hz Mobile 96%",
-		"id": "shimmer-144hz-mobile-96",
+	"name": "shimmer 144hz Mobile",
+		"id": "shimmer-144hz-mobile",
 		"player": "Mateex",
-		"length": "72",
+		"length": "76",
 		"version": "2.2",
-		"video": "https://youtu.be/60rkay4TrCg",
-		"date": "2025-08-18",
+		"video": "https://youtu.be/YeZoM3jJEqA",
+		"date": "2025-08-27",
 		"showcaseVideo": "https://www.youtube.com/watch?v=_vuXb2PHiOI",
 		"levelID": "94156085",
-	    "submitter": "TYATYAPKA",
+	    "submitter": "kyle1saurus",
 		"tags": [
 			"Level",
 			"Rated",
 			"Low Hertz",
-			"Mobile",
-			"Progress"
+			"Mobile"
 		]
 	},
 	{
