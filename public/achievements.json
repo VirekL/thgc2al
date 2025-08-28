@@ -175,6 +175,23 @@
     ]
   },
   {
+    "name": "FLAMEWALL 80%",
+    "id": "flamewall-80",
+    "player": "Cuatrocientos",
+    "video": "https://www.youtube.com/watch?v=oLJJrA05aog",
+    "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
+    "tags": [
+      "Level",
+      "Progress",
+      "Tentative"
+    ],
+    "date": "2025-08-28",
+    "length": 335,
+    "version": 2.2,
+    "submitter": "exiled_shade",
+    "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
+  },
+  {
     "name": "Slaughterhouse 300%",
     "id": "slaughterhouse-300",
     "player": "wPopoff",
@@ -190,23 +207,6 @@
     "date": "2024-04-27",
     "length": "210",
     "version": "2.1"
-  },
-  {
-    "name": "FLAMEWALL 76%",
-    "id": "flamewall-76",
-    "player": "Cuatrocientos",
-    "video": "https://www.youtube.com/watch?v=xwLGAFfQ-_U",
-    "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
-    "tags": [
-      "Level",
-      "Progress",
-      "Tentative"
-    ],
-    "date": "2025-07-08",
-    "length": 320,
-    "version": 2.2,
-    "submitter": "TYATYAPKA",
-    "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
   },
   {
     "name": "FLAMEWALL 17-95%",
@@ -13866,4 +13866,5 @@
     ]
   }
 ]
+
 
