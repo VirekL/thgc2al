@@ -19,6 +19,21 @@
 		]
 	},
 	{
+    "name": "Sweeping Demon 2 (Taiago) 39-84%",
+    "id": "sweeping-demon-2-taiago-39-84",
+    "player": "Taiago",
+    "date": "2025-08-26",
+    "length": "47",
+    "version": "2.2",
+    "video": "https://youtu.be/3kVMCvgaql8",
+    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Checked Steam (Coin Route)",
     "id": "checked-steam-coin-route",
     "player": "Whizkid05",
@@ -44,11 +59,29 @@
     "length": 72,
     "version": 2.2,
     "video": "https://youtu.be/Byw2IOV0H00",
-    "showcaseVideo": null,
+    "showcaseVideo": "https://youtu.be/woiwoaTHXw0",
     "submitter": "cheesecake",
     "tags": [
       "Level",
       "Verified"
+    ]
+  },
+  {
+	"name": "Deep Bass 1.25x 98%",
+    "id": "deep-bass-1-25x-98",
+    "player": "FlinGuSPluNkuS",
+    "levelID": 96383663,
+    "date": "2025-08-16",
+    "length": 60,
+    "version": 2.2,
+    "video": "https://youtu.be/3HobHFyclNI?t=12",
+    "showcaseVideo": "https://youtu.be/XWojVnZGoH4",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Speedhack",
+	  "Rated",
+	  "Progress"
     ]
   },
   {
