@@ -312,7 +312,7 @@
     "name": "Acheron 60hz 50%",
     "id": "acheron-60hz-50",
     "player": "Llqne",
-    "video": "https://youtu.be/g9tPTVjdnVA?si=RtkRoB8E5b8LGwxu",
+    "video": "https://youtu.be/g9tPTVjdnVA",
     "showcaseVideo": "https://youtu.be/ZHAMV_Jw9PM",
     "tags": [
       "Level",
@@ -425,7 +425,7 @@
     "length": 70,
     "version": 2.2,
     "thumbnail": "https://i.ytimg.com/vi/i8TGgQNAzDg/maxresdefault.jpg",
-    "showcaseVideo": "https://youtu.be/h14lmGH31_M?si=0Dn8l73E5iRFCMIx",
+    "showcaseVideo": "https://youtu.be/h14lmGH31_M",
     "levelID": null
   },
   {
@@ -621,7 +621,7 @@
     "date": "2025-08-21",
     "length": 221,
     "version": 2.2,
-    "video": "https://www.youtube.com/live/vomRQRxmJpY?si=z5jtZgkca0r8laqO",
+    "video": "https://www.youtube.com/live/vomRQRxmJpY",
     "showcaseVideo": "https://youtu.be/G6ugI_TtEl8",
     "submitter": "TYATYAPKA",
     "tags": [
@@ -1221,7 +1221,7 @@
     "length": 80,
     "version": 2.2,
     "thumbnail": "https://i.ytimg.com/vi/i8TGgQNAzDg/maxresdefault.jpg",
-    "showcaseVideo": "https://youtu.be/h14lmGH31_M?si=0Dn8l73E5iRFCMIx",
+    "showcaseVideo": "https://youtu.be/h14lmGH31_M",
     "levelID": null
   },
   {
@@ -1426,7 +1426,7 @@
     "player": "Archermence",
     "length": 113,
     "version": 2.2,
-    "video": "https://youtu.be/6tOxAetxo1g?si=PGZcysXJU2OBjdfU",
+    "video": "https://youtu.be/6tOxAetxo1g",
     "showcaseVideo": "https://youtu.be/IHqODLf_ZLY",
     "date": "2025-08-10",
     "submitter": "TYATYAPKA",
@@ -1805,7 +1805,7 @@
     "length": 111,
     "version": 2.2,
     "video": "https://youtu.be/Zd-C6L9AlD0",
-    "showcaseVideo": "https://youtu.be/FwxtJQQocKA?si=L2FzCScLs6W8HYUl",
+    "showcaseVideo": "https://youtu.be/FwxtJQQocKA",
     "submitter": "Anceps",
     "tags": [
       "Level",
@@ -2290,7 +2290,7 @@
       "CBF",
       "Tentative"
     ],
-    "showcaseVideo": "https://youtu.be/AgQeRMZw-t4?si=bXiAEgcUSGTzf0ii"
+    "showcaseVideo": "https://youtu.be/AgQeRMZw-t4"
   },
   {
     "name": "Slaughterhouse (Unfixed)",
@@ -4010,7 +4010,7 @@
     "length": "90",
     "version": "2.2",
     "levelID": "96572223",
-    "showcaseVideo": "https://youtu.be/FwxtJQQocKA?si=L2FzCScLs6W8HYUl",
+    "showcaseVideo": "https://youtu.be/FwxtJQQocKA",
     "video": "https://www.youtube.com/live/hC2Cy4-RlTg?t=5754",
     "submitter": "Exiled_Shade",
     "tags": [
@@ -4024,7 +4024,7 @@
     "player": "Nexel",
     "length": 64,
     "version": 2.2,
-    "video": "https://youtu.be/U5v707MFHrM?si=KCAwGmz3_t-Tm2Av",
+    "video": "https://youtu.be/U5v707MFHrM",
     "showcaseVideo": "https://youtu.be/r5wqyu4-rrE",
     "date": "2025-08-22",
     "submitter": "kyle1saurus",
@@ -4502,7 +4502,7 @@
     "version": "2.2",
     "levelID": "96572223",
     "video": "https://www.youtube.com/live/0A9WtwjR-X0?t=2639",
-    "showcaseVideo": "https://youtu.be/FwxtJQQocKA?si=L2FzCScLs6W8HYUl",
+    "showcaseVideo": "https://youtu.be/FwxtJQQocKA",
     "submitter": "tmtsps12",
     "tags": [
       "Level",
@@ -6053,7 +6053,7 @@
     "version": 2.1,
     "submitter": "Anceps",
     "video": "https://youtu.be/tYbXsNkO9HE",
-    "showcaseVideo": "https://youtu.be/Mqd6UabJOE4?si=7RsM_Ll3juX9ADCJ",
+    "showcaseVideo": "https://youtu.be/Mqd6UabJOE4",
     "tags": [
       "Level",
       "Verified",
@@ -7557,7 +7557,7 @@
     "player": "jeyk",
     "length": 31,
     "version": 2.2,
-	"date": "2024-11-03",
+    "date": "2024-11-03",
     "video": "https://youtu.be/8JOq9d61C-k",
     "submitter": "vaughn",
     "tags": [
@@ -8093,7 +8093,7 @@
     "showcaseVideo": "https://youtu.be/OTVqy8n_dOU",
     "date": "2024-11-18",
     "levelID": 112242564,
-	"submitter": "kittycatiscute",
+    "submitter": "kittycatiscute",
     "tags": [
       "Level",
       "Verified",
@@ -8222,7 +8222,7 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Challenge",
-	  "Verified"
+      "Verified"
     ]
   },
   {
@@ -8757,7 +8757,6 @@
     "version": 2.1,
     "video": "https://youtu.be/b9OBCqnLyl8",
     "showcaseVideo": "https://youtu.be/k3ebBTBeUTg",
-	"submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Low Hertz",
@@ -8807,7 +8806,6 @@
     "version": 2.1,
     "video": "https://youtu.be/JSylL1BoxF0",
     "showcaseVideo": "https://youtu.be/3YQtDDnUEm4",
-	"submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Low Hertz",
@@ -8917,7 +8915,7 @@
     "showcaseVideo": "https://youtu.be/xtS4ibDPGxE",
     "tags": [
       "Level",
-	  "Verified"
+      "Verified"
     ]
   },
   {
@@ -9323,7 +9321,6 @@
     "submitter": "TYATYAPKA",
     "video": "https://youtu.be/4h56mHS83HU",
     "showcaseVideo": "https://youtu.be/5jd1xU6JCAI",
-    "submitter": "TYATYAPKA",
     "tags": [
       "Level",
       "Low Hertz",
@@ -9492,7 +9489,7 @@
     "version": 2.1,
     "video": "https://youtu.be/RfwTihz276w",
     "showcaseVideo": "https://youtu.be/eJe3i5KyKOk",
-    "submitter": "kyle1saurus",
+    "submitter": "Arcadie",
     "tags": [
       "Level",
       "Low Hertz",
@@ -9538,7 +9535,7 @@
     "version": "2.2",
     "levelID": "75330074",
     "video": "https://www.youtube.com/live/y1Nl5An8-zc?t=4644s",
-    "showcaseVideo": "https://youtu.be/6orHVe5GBX0?si=EjUpnDtIaHrp2CZa",
+    "showcaseVideo": "https://youtu.be/6orHVe5GBX0",
     "submitter": "Exiled_Shade",
     "tags": [
       "Level",
@@ -9836,8 +9833,8 @@
     "length": 49,
     "version": 2.1,
     "video": "https://youtu.be/3BZUDV3UnC0",
+    "submitter": "Arcadie",
     "showcaseVideo": "https://youtu.be/tPFN83k6DWo",
-    "submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Low Hertz",
@@ -10133,7 +10130,7 @@
     "version": "2.2",
     "levelID": "75330074",
     "video": "https://youtu.be/AEkKhZm0IGc",
-    "showcaseVideo": "https://youtu.be/6orHVe5GBX",
+    "showcaseVideo": "https://youtu.be/6orHVe5GBX0",
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
@@ -10349,7 +10346,7 @@
     "version": 2.2,
     "video": "https://youtu.be/bnIxnsk2Rdw",
     "date": "2025-07-06",
-    "submitter": "kyle1saurus",
+    "submitter": "goofygdplayer",
     "levelID": 122394881,
     "tags": [
       "Level",
@@ -10382,7 +10379,7 @@
     "length": 8,
     "version": 2.2,
     "video": "https://youtu.be/UzFEbUrt0LI",
-    "showcaseVideo": "https://youtu.be/LmSPJCDpKdA?si=zT1hSMZTm_XgL-vC",
+    "showcaseVideo": "https://youtu.be/LmSPJCDpKdA",
     "submitter": "kyle1saurus",
     "tags": [
       "Challenge",
@@ -10825,7 +10822,6 @@
     "levelID": 99703915,
     "video": "https://youtu.be/R_-chk3SRFI",
     "showcaseVideo": "https://youtu.be/TroRY2oC4KM",
-    "submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Verified"
@@ -11569,7 +11565,6 @@
     "version": 2.1,
     "video": "https://youtu.be/co7fFtkg2U0",
     "showcaseVideo": "https://youtu.be/XXNh5cbaT-Y",
-	"submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Low Hertz",
@@ -11667,9 +11662,9 @@
     "date": "2025-01-24",
     "length": 145,
     "version": 2.2,
+    "submitter": "kyle1saurus",
     "video": "https://youtu.be/5kOD37vQHKE",
     "showcaseVideo": "https://youtu.be/ZWToZZ5EYw0",
-	"submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Verified"
@@ -11780,7 +11775,6 @@
     "version": 2.1,
     "video": "https://youtu.be/vV0HMw-QsrU",
     "showcaseVideo": "https://youtu.be/4ngzCQDdMVA",
-	"submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Low Hertz",
@@ -11862,7 +11856,6 @@
     "version": 2.1,
     "video": "https://youtu.be/WXVLvv8LPZs",
     "showcaseVideo": "https://youtu.be/bINkwwDFW3E",
-	"submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Low Hertz",
@@ -12042,7 +12035,6 @@
     "version": 2.1,
     "video": "https://youtu.be/j2RIYF5ekuk",
     "showcaseVideo": "https://youtu.be/uOv_3JRXMRg",
-	"submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Low Hertz",
@@ -12283,7 +12275,6 @@
     "version": 2.2,
     "video": "https://youtu.be/2KkDS9yjsgQ",
     "showcaseVideo": "https://youtu.be/dnNt2Ep24tY",
-	"submitter": "Anceps",
     "tags": [
       "Challenge",
       "Verified"
@@ -12476,8 +12467,7 @@
     "length": 11,
     "version": 2.1,
     "video": "https://youtu.be/bAAEIwr6ASE",
-	"showcaseVideo": "https://youtu.be/nIrv6in5fi8",
-	"submitter": "kyle1saurus",
+    "showcaseVideo": "https://youtu.be/nIrv6in5fi8",
     "tags": [
       "Challenge",
       "Verified"
@@ -12591,7 +12581,6 @@
     "length": 13,
     "version": 2.1,
     "video": "https://youtu.be/y4kHcfFSjpE",
-	"submitter": "Anceps",
     "tags": [
       "Challenge",
       "Verified"
@@ -12664,22 +12653,22 @@
   },
   {
     "name": "Sakupen Trials",
-		"id": "sakupen-trials",
-		"player": "Xanii",
-		"length": "53",
-		"version": "2.1",
-		"video": "https://www.youtube.com/watch?v=uzXacBUFhWo",
-		"date": "2023-09-16",
-		"showcaseVideo": "https://www.youtube.com/watch?v=jnLT_Huk_Pc",
-		"levelID": "73664910",
-	    "submitter": "goodygdplayer",
-		"tags": [
-			"Level",
+    "id": "sakupen-trials",
+    "player": "Xanii",
+    "length": "53",
+    "version": "2.1",
+    "video": "https://www.youtube.com/watch?v=uzXacBUFhWo",
+    "date": "2023-09-16",
+    "submitter": "goofygdplayer",
+    "showcaseVideo": "https://www.youtube.com/watch?v=jnLT_Huk_Pc",
+    "levelID": "73664910",
+    "tags": [
+      "Level",
       "Verified",
       "Tentative"
-		]
-	},
-	{
+    ]
+  },
+  {
     "name": "Cromatic Varius",
     "id": "cromatic-varius",
     "player": "BreadGuy",
@@ -12737,7 +12726,7 @@
     "version": 2.1,
     "video": "https://youtu.be/2AGiKiqpYO0",
     "showcaseVideo": "https://youtu.be/ipZl9Kvckc4",
-	"submitter": "kyle1saurus",
+    "submitter:": "kittycatiscute",
     "tags": [
       "Level",
       "Low Hertz",
@@ -12981,7 +12970,6 @@
     "version": 2.1,
     "video": "https://youtu.be/GM0GFMkWJZ8",
     "showcaseVideo": "https://www.youtube.com/watch?v=OVCv_K4fm0g",
-	"submitter": "kyle1saurus",
     "tags": [
       "Challenge",
       "Verified"
@@ -12997,7 +12985,6 @@
     "version": 2.1,
     "video": "https://youtu.be/p8f3g_oYtNQ",
     "showcaseVideo": "https://youtu.be/U6-UrdnGLoY",
-	"submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Low Hertz",
@@ -13402,9 +13389,9 @@
     "player": "Amplitron",
     "length": 74,
     "version": 2.2,
-    "video": "https://youtu.be/Aw83i8Zmh_0?si=vxOI5ZAYAv95ZzjG",
+    "video": "https://youtu.be/Aw83i8Zmh_0",
     "date": "2024-12-22",
-    "showcaseVideo": "https://youtu.be/rg06lq4HL2c?si=MvnNZ3Mt2NjfwYoF",
+    "showcaseVideo": "https://youtu.be/rg06lq4HL2c",
     "levelID": 113364415,
     "submitter": "kyle1saurus",
     "tags": [
@@ -13420,7 +13407,7 @@
     "version": "2.1",
     "video": "https://www.youtube.com/watch?v=A3D-oeXqDek",
     "date": "2023-02-19",
-    "showcaseVideo": "https://youtu.be/rT3W0skPTZM?si=gsXT298M7nViECEw",
+    "showcaseVideo": "https://youtu.be/rT3W0skPTZM",
     "levelID": "77681476",
     "tags": [
       "Level",
@@ -13749,9 +13736,9 @@
     "player": "SarTiZ",
     "length": "156",
     "version": "2.2",
-    "video": "https://youtu.be/0AQP_F3YmNg?si=Eg8AEHN_yvKjTmTC",
+    "video": "https://youtu.be/0AQP_F3YmNg",
     "date": "2025-05-09",
-    "showcaseVideo": "https://youtu.be/C7Umvy4VyDg?si=x1pSppUtFyQhhuo4",
+    "showcaseVideo": "https://youtu.be/C7Umvy4VyDg",
     "levelID": "116174063",
     "submitter": "jak",
     "tags": [
@@ -13768,9 +13755,9 @@
     "player": "SarTiZ",
     "length": "145",
     "version": "2.2",
-    "video": "https://youtu.be/rsIih2tON9Y?si=ox5dzBvNy-3J_Rhy",
+    "video": "https://youtu.be/rsIih2tON9Y",
     "date": "2025-04-14",
-    "showcaseVideo": "https://youtu.be/C7Umvy4VyDg?si=x1pSppUtFyQhhuo4",
+    "showcaseVideo": "https://youtu.be/C7Umvy4VyDg",
     "levelID": "116174063",
     "submitter": "jak",
     "tags": [
@@ -13837,7 +13824,7 @@
     "date": "2025-06-09",
     "length": "32",
     "version": "2.2",
-    "video": "https://youtu.be/KOzXPZJQEOY?si=SZ7VUwMPn0jaMNBu",
+    "video": "https://youtu.be/KOzXPZJQEOY",
     "showcaseVideo": "https://www.youtube.com/watch?v=WM1KcNGkP08",
     "submitter": "kyle1saurus",
     "tags": [
@@ -13945,9 +13932,3 @@
     ]
   }
 ]
-
-
-
-
-
-
