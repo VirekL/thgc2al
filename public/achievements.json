@@ -7681,8 +7681,8 @@
     ]
   },
   {
-    "name": "BRITNEY NO SCLEARS 74%",
-    "id": "britney-no-sclears-74",
+    "name": "BRITNEY NO SCLEARS (Old) 74%",
+    "id": "britney-no-sclears-Old-74",
     "player": "Scotchtape",
     "date": "2025-06-05",
     "length": "58",
@@ -12641,6 +12641,22 @@
     ]
   },
   {
+    "name": "Sakupen Trials",
+		"id": "sakupen-trials",
+		"player": "Xanii",
+		"length": "53",
+		"version": "2.1",
+		"video": "https://www.youtube.com/watch?v=uzXacBUFhWo",
+		"date": "2023-09-16",
+		"showcaseVideo": "https://www.youtube.com/watch?v=jnLT_Huk_Pc",
+		"levelID": "73664910",
+		"tags": [
+			"Level",
+      "Verified",
+      "Tentative"
+		]
+	},
+	{
     "name": "Cromatic Varius",
     "id": "cromatic-varius",
     "player": "BreadGuy",
@@ -13903,6 +13919,7 @@
     ]
   }
 ]
+
 
 
 
