@@ -197,46 +197,45 @@
         "showcaseVideo": "https://youtu.be/Oos0Ptzqq-E"
     },
     {
-        "id": "acheron-2-1",
-        "name": "Acheron 2.1",
-        "player": "Zoink",
-        "tags": [
-            "Level",
-            "Rated",
-			"Verified"
-        ],
-        "length": "67",
-        "version": "2.1",
-        "date": "2022-08-22",
-        "levelID": "73667628",
-        "video": "https://youtu.be/sBKR6aUorzA?si=LnZD0RkfpfThwP-l",
-        "showcaseVideo": "https://youtu.be/YQElFvT5ynk"
-    },
-    {
-        "id": "acheron-2-1-97",
-        "name": "Acheron 2.1 97%",
-        "player": "Zoink",
-        "thumbnail": "https://tjcsucht.net/levelthumbs/73674577.png",
-        "tags": [
-            "Level",
-            "Rated",
-            "Progress"
-        ],
-        "length": "65",
-        "version": "2.1",
-        "date": "2022-08-18",
-        "levelID": "73667628",
-        "video": "https://youtu.be/jSPADYiEJk8&t=615s",
-        "showcaseVideo": "https://youtu.be/YQElFvT5ynk"
-    },
-    {
+		"name": "Silent clubstep",
+    "id": "silent-clubstep",
+    "player": "paqoe",
+    "length": 87,
+    "version": 2.1,
+    "video": "https://youtu.be/GR4OMkS3SN8&t=4s",
+    "showcaseVideo": "https://youtu.be/Oos0Ptzqq-E",
+    "date": "2022-07-17",
+    "levelID": 4125776,
+    "tags": [
+      "Level",
+      "Verified",
+      "Rated"
+    ]
+  },
+  {
+	  "name": "Silent clubstep 72%",
+    "id": "silent-clubstep-72",
+    "player": "paqoe",
+    "length": 62,
+    "version": 2.1,
+    "video": "https://youtu.be/ylUrj1GOiIk",
+    "showcaseVideo": "https://youtu.be/Oos0Ptzqq-E",
+    "date": "2022-06-10",
+    "levelID": 4125776,
+    "tags": [
+      "Level",
+      "Progress",
+      "Rated"
+    ]
+  },
+  {
         "id": "acheron-2-1-96",
         "name": "Acheron 2.1 96%",
         "player": "Zoink",
         "thumbnail": "https://tjcsucht.net/levelthumbs/100087118.png",
         "tags": [
             "Level",
-            "Rated",
+            "Outdated Version",
             "Progress"
         ],
         "length": "64",
@@ -253,7 +252,7 @@
         "thumbnail": "https://tjcsucht.net/levelthumbs/99609280.png",
         "tags": [
             "Level",
-            "Rated",
+            "Outdated Version",
             "Progress"
         ],
         "length": "60",
@@ -1427,5 +1426,6 @@
         "video": "https://youtu.be/727pUHwWSVg"
     }
 ]
+
 
 
