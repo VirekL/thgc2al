@@ -1846,6 +1846,25 @@
     ]
   },
   {
+    "name": "The Golden 80hz 94%",
+    "id": "the-golden-80hz-94",
+    "player": "Sid125",
+    "length": "70",
+    "version": "2.1",
+    "video": "https://youtu.be/b6dUBlA38_4?t=98",
+    "showcaseVideo": "https://youtu.be/lbrN3kasxR0",
+    "date": "2021-08-05",
+    "submitter": "Radiator",
+    "levelID": "60978746",
+    "tags": [
+      "Level",
+      "Low Hertz",
+	    "Progress",
+      "Rated",
+	    "Tentative"
+    ]
+  },
+  {
     "name": "Trueffet 1.3x",
     "id": "trueffet-13x",
     "player": "Arshadow",
@@ -4596,6 +4615,25 @@
       "Level",
       "Low Hertz",
       "Rated"
+    ]
+  },
+  {
+    "name": "The Golden 75hz-54%",
+    "id": "the-golden-75hz-54",
+    "player": "Sid125",
+    "length": "50",
+    "version": "2.1",
+    "video": "https://youtu.be/b6dUBlA38_4?t=87",
+    "showcaseVideo": "https://youtu.be/lbrN3kasxR0",
+    "date": "2021-08-07",
+    "submitter": "Radiator",
+    "levelID": "60978746",
+    "tags": [
+      "Level",
+      "Low Hertz",
+	    "Progress",
+      "Rated",
+	    "Tentative"
     ]
   },
   {
@@ -7584,6 +7622,24 @@
     ]
   },
   {
+    "name": "shimmer 144hz Mobile",
+		"id": "shimmer-144hz-mobile",
+		"player": "Mateex",
+		"length": "76",
+		"version": "2.2",
+		"video": "https://youtu.be/YeZoM3jJEqA",
+		"date": "2025-08-27",
+		"showcaseVideo": "https://www.youtube.com/watch?v=_vuXb2PHiOI",
+		"levelID": "94156085",
+	  "submitter": "kyle1saurus",
+		"tags": [
+			"Level",
+			"Rated",
+			"Low Hertz",
+			"Mobile"
+		]
+	},
+	{
     "name": "ORDINARY",
     "id": "ordinary",
     "player": "wPopoff",
@@ -13932,3 +13988,4 @@
     ]
   }
 ]
+
