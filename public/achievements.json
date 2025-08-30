@@ -1105,6 +1105,21 @@
     ]
   },
   {
+    "name": "Sweeping Demon 2 (Taiago) 39-87%",
+    "id": "sweeping-demon-2-taiago-39-87",
+    "player": "Taiago",
+    "date": "2025-08-26",
+    "length": "31",
+    "version": "2.2",
+    "video": "https://youtu.be/3kVMCvgaql8?si=zZeOJ7ixiuQSVXjV",
+    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Crimson Planet 60hz Mobile",
     "id": "crimson-planet-60hz-mobile",
     "player": "SeaWolfMikes",
@@ -14056,5 +14071,6 @@
   }
 
 ]
+
 
 
