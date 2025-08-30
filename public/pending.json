@@ -19,40 +19,6 @@
 		]
 	},
 	{
-	"name": "The Yangire 144hz",
-    "id": "the-yangire-144hz",
-    "player": "Razzley",
-    "levelID": 110500920,
-    "date": "2025-08-28",
-    "length": 149,
-    "version": 2.2,
-    "video": "https://youtu.be/rGDrOFExa38",
-    "showcaseVideo": "https://youtu.be/hkfdKYqQARA",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Rated"
-    ]
-  },
-  {
-	"name": "Trueffet 144hz",
-    "id": "trueffet-144hz",
-    "player": "Razzley",
-    "levelID": 71434979,
-    "date": "2025-05-03",
-    "length": 53,
-    "version": 2.2,
-    "video": "https://youtu.be/WQzX6ItuoaY",
-    "showcaseVideo": "https://youtu.be/qkQidB9aPLA",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Rated"
-    ]
-  },
-  {
     "name": "Sweeping Demon 2 (Taiago) 39-84%",
     "id": "sweeping-demon-2-taiago-39-84",
     "player": "Taiago",
@@ -152,24 +118,6 @@
     ]
   },
  {
-	"name": "The Golden 80hz 94%",
-    "id": "the-golden-80hz-94",
-    "player": "Sid125",
-    "length": "70",
-    "version": "2.1",
-    "video": "https://youtu.be/b6dUBlA38_4?t=98",
-    "showcaseVideo": "https://youtu.be/lbrN3kasxR0",
-    "date": "2021-08-05",
-    "submitter": "Radiator",
-    "levelID": "60978746",
-    "tags": [
-      "Level",
-      "Low Hertz",
-	  "Progress",
-      "Rated"
-    ]
-  },
-  {
 	"name": "Slaughterhouse Redux 93%",
     "id": "slaughterhouse-redux-93",
     "player": "liamkn08",
@@ -181,24 +129,6 @@
     "tags": [
       "Level",
 	  "Progress"
-    ]
-  },
-  {
-	"name": "The Golden 75hz-54%",
-    "id": "the-golden-75hz-54",
-    "player": "Sid125",
-    "length": "50",
-    "version": "2.1",
-    "video": "https://youtu.be/b6dUBlA38_4?t=87",
-    "showcaseVideo": "https://youtu.be/lbrN3kasxR0",
-    "date": "2021-08-07",
-    "submitter": "Radiator",
-    "levelID": "60978746",
-    "tags": [
-      "Level",
-      "Low Hertz",
-	  "Progress",
-      "Rated"
     ]
   },
   {
@@ -229,24 +159,6 @@
     ]
   },
   {
-	"name": "shimmer 144hz Mobile",
-		"id": "shimmer-144hz-mobile",
-		"player": "Mateex",
-		"length": "76",
-		"version": "2.2",
-		"video": "https://youtu.be/YeZoM3jJEqA",
-		"date": "2025-08-27",
-		"showcaseVideo": "https://www.youtube.com/watch?v=_vuXb2PHiOI",
-		"levelID": "94156085",
-	    "submitter": "kyle1saurus",
-		"tags": [
-			"Level",
-			"Rated",
-			"Low Hertz",
-			"Mobile"
-		]
-	},
-	{
 	"name": "wocky circles 36-79%",
     "id": "wocky-circles-36-79",
     "player": "KYWY",
