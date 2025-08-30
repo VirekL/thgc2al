@@ -10378,6 +10378,38 @@
     ]
   },
   {
+    "name": "DISCONNECT 18-100%",
+    "id": "disconnect-18-100",
+    "player": "Elinore",
+    "date": "2025-08-29",
+    "length": "137",
+    "version": "2.2",
+    "video": "https://youtu.be/JFqLZfl73q4?si=pBtG0BP5ChFptiyW",
+    "showcaseVideo": "https://youtu.be/gVpqeqy6frU?si=2J4Tzdsky8fAXRcx",
+    "submitter": "goofygdplayer",
+    "tags": [
+      "Level",
+      "Progress",
+      "Tentative"
+    ]
+  },
+  {
+    "name": "DISCONNECT 72%",
+    "id": "disconnect-72",
+    "player": "Elinore",
+    "date": "2025-08-29",
+    "length": "132",
+    "version": "2.2",
+    "video": "https://youtu.be/JFqLZfl73q4?si=pBtG0BP5ChFptiyW",
+    "showcaseVideo": "https://youtu.be/gVpqeqy6frU?si=2J4Tzdsky8fAXRcx",
+    "submitter": "goofygdplayer",
+    "tags": [
+      "Level",
+      "Progress",
+      "Tentative"
+    ]
+  },
+  {
     "name": "Sakupen Circles fi (TrotskyGD)",
     "id": "sakupen-circles-fi-trotskygd",
     "player": "Brian_Cheese",
@@ -14071,6 +14103,7 @@
   }
 
 ]
+
 
 
 
