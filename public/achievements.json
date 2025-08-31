@@ -7962,20 +7962,6 @@
     ]
   },
   {
-    "name": "Sightless Snowstorm 56%",
-    "id": "sightless-snowstorm-56",
-    "player": "Evo_GD",
-    "date": "2025-08-06",
-    "length": "60",
-    "version": "2.2",
-    "video": "https://youtu.be/Q7DLu3GVPc4",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Armageddon Tarnish C",
     "id": "armageddon-tarnish-c",
     "player": "TFIBB",
@@ -7989,20 +7975,6 @@
     "tags": [
       "Level",
       "Verified"
-    ]
-  },
-  {
-    "name": "Sightless Snowstorm 78-100%",
-    "id": "sightless-snowstorm-78-100",
-    "player": "Evo_GD",
-    "date": "2025-08-06",
-    "length": "25",
-    "version": "2.2",
-    "video": "https://youtu.be/Q7DLu3GVPc4?t=96",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -13990,21 +13962,6 @@
     ]
   },
   {
-    "name": "Sightless Snowstorm 42-93%",
-    "id": "sightless-snowstorm-42-93",
-    "player": "Evo_GD",
-    "length": 40,
-    "version": 2.2,
-    "video": "https://youtu.be/RcozJDBGhXM",
-    "date": "2025-08-14",
-    "submitter": "kyle1saurus",
-    "levelID": null,
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Lust 57%",
     "id": "lust-57",
     "player": "DenseCabbage",
@@ -14086,4 +14043,3 @@
     ]
   }
 ]
-
