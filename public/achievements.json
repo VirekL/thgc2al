@@ -18,6 +18,23 @@
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/grief-unbuffed1.avif"
   },
   {
+    "name": "FLAMEWALL 99%",
+    "id": "flamewall-99",
+    "player": "Cuatrocientos",
+    "video": "https://www.youtube.com/live/8WPfiV3aD4w?t=4303",
+    "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
+    "tags": [
+      "Level",
+      "Progress",
+      "Tentative"
+    ],
+    "date": "2025-08-31",
+    "length": 403,
+    "version": 2.2,
+    "submitter": "kyle1saurus",
+    "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
+  },
+  {
     "name": "Thinking Space II",
     "id": "thinking-space-ii",
     "player": "Zoink",
@@ -69,22 +86,6 @@
     "version": 2.2,
     "submitter": "TYATYAPKA",
     "levelID": 119550490
-  },
-  {
-    "name": "FLAMEWALL 24-70%, 24-100%",
-    "id": "flamewall-24-70-24-100",
-    "player": "Cuatrocientos",
-    "length": "600",
-    "version": "2.2",
-    "video": "https://www.youtube.com/live/4Dl3yv01Zx4?t=4168",
-    "showcaseVideo": "https://www.youtube.com/watch?v=c5qQh7h0zYM",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/flamewall-unbuffed2.webp",
-    "submitter": "kyle1saurus",
-    "date": "2025-08-19",
-    "tags": [
-      "Level",
-      "Consistency"
-    ]
   },
   {
     "name": "GRIEF 80%",
@@ -175,23 +176,6 @@
     ]
   },
   {
-    "name": "FLAMEWALL 81%",
-    "id": "flamewall-81",
-    "player": "Cuatrocientos",
-    "video": "https://www.youtube.com/live/NNi5P_Uiqa8?si=4dmfwEQubu3x9dai&t=5604s",
-    "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
-    "tags": [
-      "Level",
-      "Progress",
-      "Tentative"
-    ],
-    "date": "2025-08-31",
-    "length": 337,
-    "version": 2.2,
-    "submitter": "TYATYAPKA",
-    "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
-  },
-  {
     "name": "Slaughterhouse 300%",
     "id": "slaughterhouse-300",
     "player": "wPopoff",
@@ -207,23 +191,6 @@
     "date": "2024-04-27",
     "length": "210",
     "version": "2.1"
-  },
-  {
-    "name": "FLAMEWALL 17-95%",
-    "id": "flamewall-17-95",
-    "player": "Cuatrocientos",
-    "length": 260,
-    "version": 2.2,
-    "video": "https://www.youtube.com/live/lvFDeVc6qqQ?t=4110",
-    "showcaseVideo": "https://www.youtube.com/watch?v=c5qQh7h0zYM",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/flamewall-unbuffed2.webp",
-    "date": "2025-07-07",
-    "submitter": "jak",
-    "tags": [
-      "Level",
-      "Progress",
-      "Tentative"
-    ]
   },
   {
     "name": "KOCMOC UNLEASHED 19-91%",
@@ -259,8 +226,8 @@
     "submitter": "jak"
   },
   {
-    "name": "FLAMEWALL 3-86%",
-    "id": "flamewall-3-86",
+    "name": "FLAMEWALL (Old) 3-86%",
+    "id": "flamewall-old-3-86",
     "player": "Cuatrocientos",
     "video": "https://youtu.be/dlVnGdWRLeQ",
     "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
@@ -14103,6 +14070,7 @@
   }
 
 ]
+
 
 
 
