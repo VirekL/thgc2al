@@ -34,6 +34,23 @@
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/grief-unbuffed1.avif"
   },
   {
+    "name": "FLAMEWALL 99%",
+    "id": "flamewall-99",
+    "player": "Cuatrocientos",
+    "video": "https://www.youtube.com/watch?v=1gZEJI-2yQQ",
+    "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "date": "2025-08-31",
+    "length": 600,
+    "version": 2.2,
+    "submitter": "kyle1saurus",
+    "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg",
+    "levelID": 0
+  },
+  {
     "name": "Thinking Space II",
     "id": "thinking-space-ii",
     "player": "Zoink",
