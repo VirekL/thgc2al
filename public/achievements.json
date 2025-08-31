@@ -44,7 +44,7 @@
       "Progress"
     ],
     "date": "2025-08-31",
-    "length": 600,
+    "length": 403,
     "version": 2.2,
     "submitter": "kyle1saurus",
     "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg",
@@ -1646,23 +1646,6 @@
       "Level",
       "Consistency",
       "CBF"
-    ]
-  },
-  {
-    "name": "Unnerfed Zodiac",
-    "id": "unnerfed-zodiac",
-    "player": "mageman85",
-    "levelID": 54441585,
-    "date": "2024-05-20",
-    "length": 194,
-    "version": 2.1,
-    "submitter": "Anceps",
-    "video": "https://youtu.be/3mvddPaNklg",
-    "showcaseVideo": "https://youtu.be/8rPIzVEuj80",
-    "tags": [
-      "Level",
-      "Verified",
-      "Tentative"
     ]
   },
   {
@@ -3391,6 +3374,23 @@
     "tags": [
       "Level",
       "Verified"
+    ]
+  },
+  {
+    "name": "Unnerfed Zodiac",
+    "id": "unnerfed-zodiac",
+    "player": "mageman85",
+    "levelID": 54441585,
+    "date": "2024-05-20",
+    "length": 194,
+    "version": 2.1,
+    "submitter": "Anceps",
+    "video": "https://youtu.be/3mvddPaNklg",
+    "showcaseVideo": "https://youtu.be/8rPIzVEuj80",
+    "tags": [
+      "Level",
+      "Verified",
+      "Tentative"
     ]
   },
   {
@@ -6639,10 +6639,27 @@
     ]
   },
   {
+    "name": "Heavenly Sakupen",
+    "id": "heavenly-sakupen",
+    "player": "fusion425",
+    "date": "2025-08-02",
+    "levelID": 123467310,
+    "length": 41,
+    "version": 2.2,
+    "video": "https://youtu.be/4uwSVZBrtfg",
+    "showcaseVideo": "https://youtu.be/rGyF8KsQOos",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Verified"
+    ]
+  },
+  {
     "name": "Tartarus 46%, 100%",
     "id": "tartarus-46-100",
     "player": "Zoink",
     "video": "https://www.youtube.com/watch?v=FlMGEos-wZU",
+    "showcaseVideo": "https://www.youtube.com/watch?v=lm1498Rfl0s",
     "date": "2022-02-04",
     "length": 110,
     "version": 2.1,
@@ -7034,22 +7051,6 @@
       "Progress"
     ],
     "levelID": 76401173
-  },
-  {
-    "name": "Heavenly Sakupen",
-    "id": "heavenly-sakupen",
-    "player": "fusion425",
-    "date": "2025-08-02",
-    "levelID": 123467310,
-    "length": 41,
-    "version": 2.2,
-    "video": "https://youtu.be/4uwSVZBrtfg",
-    "showcaseVideo": "https://youtu.be/rGyF8KsQOos",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Verified"
-    ]
   },
   {
     "name": "riverlasting",
@@ -14085,3 +14086,4 @@
     ]
   }
 ]
+
