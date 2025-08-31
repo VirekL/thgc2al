@@ -1,17 +1,18 @@
 [
     {
+		"name": "FLAMEWALL 50%, 99%",
 		"id": "flamewall-50-99",
-    "player": "Cuatrocientos",
-    "video": "https://www.youtube.com/live/8WPfiV3aD4w?t=4046s",
-    "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
-    "tags": [
+        "player": "Cuatrocientos",
+        "video": "https://www.youtube.com/live/8WPfiV3aD4w?t=4046s",
+        "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
+        "tags": [
       "Level",
       "Consistency"
     ],
-    "date": "2025-08-31",
-    "length": 600,
-    "version": 2.2,
-    "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
+        "date": "2025-08-31",
+        "length": 600,
+        "version": 2.2,
+        "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
   },
   {
         "id": "grief-56-100-67",
@@ -1442,6 +1443,7 @@
         "video": "https://youtu.be/727pUHwWSVg"
     }
 ]
+
 
 
 
