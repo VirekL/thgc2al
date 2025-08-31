@@ -6183,13 +6183,13 @@
     ]
   },
   {
-    "name": "Snowblind 84%",
-    "id": "snowblind-84",
+    "name": "Snowblind 92%",
+    "id": "snowblind-92",
     "player": "Hippo",
-    "date": "2025-07-13",
-    "length": "47",
+    "date": "2025-08-31",
+    "length": "68",
     "version": "2.2",
-    "showcaseVideo": "https://youtu.be/Qi6yu86LUZY",
+    "showcaseVideo": "https://youtu.be/Mr93CxhurTA",
     "video": "https://youtu.be/Cb0dFP6BaI0",
     "submitter": "TYATYAPKA",
     "tags": [
@@ -6378,6 +6378,21 @@
     "tags": [
       "Challenge",
       "Verified"
+    ]
+  },
+  {
+    "name": "Snowblind (Old) 59%",
+    "id": "snowblind-old-59",
+    "player": "Hippo",
+    "date": "2025-05-13",
+    "length": "36",
+    "version": "2.2",
+    "video": "https://youtu.be/uKuc1lQBd5w",
+    "showcaseVideo": "https://youtu.be/Qi6yu86LUZY",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -9665,21 +9680,6 @@
       "Tentative"
     ],
     "levelID": 120453309
-  },
-  {
-    "name": "Snowblind (Old) 59%",
-    "id": "snowblind-old-59",
-    "player": "Hippo",
-    "date": "2025-05-13",
-    "length": "36",
-    "version": "2.2",
-    "video": "https://youtu.be/uKuc1lQBd5w",
-    "showcaseVideo": "https://youtu.be/Qi6yu86LUZY",
-    "submitter": "Exiled_Shade",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
   },
   {
     "name": "Cimmerian Shade 142%",
@@ -14070,6 +14070,7 @@
   }
 
 ]
+
 
 
 
