@@ -1509,14 +1509,14 @@
   {
     "name": "Illusion of Hell",
     "id": "illusion-of-hell",
-    "player": "OverGD",
+    "player": "Diamond",
     "levelID": 38230726,
-    "date": "2025-04-24",
+    "date": "2025-07-09",
     "length": 28,
     "version": 2.1,
-    "video": "https://youtu.be/nBmjrlmzUxE",
+    "video": "https://youtu.be/AgnUBlLQkKw",
     "showcaseVideo": "https://youtu.be/SiqHB7krO2k",
-    "submitter": "Exiled_Shade",
+    "submitter": "kyle1saurus",
     "tags": [
       "Challenge",
       "Verified"
@@ -1843,6 +1843,23 @@
     "tags": [
       "Level",
       "Verified"
+    ]
+  },
+  {
+    "name": "Illusion of Hell 2.1",
+    "id": "illusion-of-hell-2-1",
+    "player": "OverGD",
+    "levelID": 38230726,
+    "date": "2025-04-24",
+    "length": 28,
+    "version": 2.1,
+    "video": "https://youtu.be/nBmjrlmzUxE",
+    "showcaseVideo": "https://youtu.be/SiqHB7krO2k",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Challenge",
+      "Verified",
+      "Outdated Version"
     ]
   },
   {
@@ -14079,6 +14096,7 @@
     ]
   }
 ]
+
 
 
 
