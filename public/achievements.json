@@ -1507,19 +1507,20 @@
     ]
   },
   {
-    "name": "Illusion of Hell",
-    "id": "illusion-of-hell",
-    "player": "Diamond",
+    "name": "Illusion of Hell 2.1",
+    "id": "illusion-of-hell-2-1",
+    "player": "OverGD",
     "levelID": 38230726,
-    "date": "2025-07-09",
+    "date": "2025-04-24",
     "length": 28,
     "version": 2.1,
-    "video": "https://youtu.be/AgnUBlLQkKw",
+    "video": "https://youtu.be/nBmjrlmzUxE",
     "showcaseVideo": "https://youtu.be/SiqHB7krO2k",
-    "submitter": "kyle1saurus",
+    "submitter": "Exiled_Shade",
     "tags": [
       "Challenge",
-      "Verified"
+      "Verified",
+      "Outdated Version"
     ]
   },
   {
@@ -1846,20 +1847,19 @@
     ]
   },
   {
-    "name": "Illusion of Hell 2.1",
-    "id": "illusion-of-hell-2-1",
-    "player": "OverGD",
+    "name": "Illusion of Hell",
+    "id": "illusion-of-hell",
+    "player": "Diamond",
     "levelID": 38230726,
-    "date": "2025-04-24",
+    "date": "2025-07-09",
     "length": 28,
     "version": 2.1,
-    "video": "https://youtu.be/nBmjrlmzUxE",
+    "video": "https://youtu.be/AgnUBlLQkKw",
     "showcaseVideo": "https://youtu.be/SiqHB7krO2k",
-    "submitter": "Exiled_Shade",
+    "submitter": "kyle1saurus",
     "tags": [
       "Challenge",
-      "Verified",
-      "Outdated Version"
+      "Verified"
     ]
   },
   {
@@ -1882,6 +1882,23 @@
     ]
   },
   {
+    "name": "Slaughterhouse 1.1x",
+    "id": "slaughterhouse-1-1x",
+    "player": "Zoink",
+    "levelID": 27690100,
+    "date": "2024-11-26",
+    "length": 63,
+    "version": 2.1,
+    "video": "https://www.youtube.com/live/ynMmyR2e5i0&t=7301",
+    "showcaseVideo": "https://youtu.be/sysQa0IE1n4",
+    "submitter": "vaughn",
+    "tags": [
+      "Level",
+      "Speedhack",
+      "Rated"
+    ]
+  },
+  {
     "name": "Trueffet 1.3x",
     "id": "trueffet-13x",
     "player": "Arshadow",
@@ -1896,23 +1913,6 @@
       "Level",
       "Speedhack",
       "CBF",
-      "Rated"
-    ]
-  },
-  {
-    "name": "Slaughterhouse 1.1x",
-    "id": "slaughterhouse-1-1x",
-    "player": "Zoink",
-    "levelID": 27690100,
-    "date": "2024-11-26",
-    "length": 63,
-    "version": 2.1,
-    "video": "https://www.youtube.com/live/ynMmyR2e5i0&t=7301",
-    "showcaseVideo": "https://youtu.be/sysQa0IE1n4",
-    "submitter": "vaughn",
-    "tags": [
-      "Level",
-      "Speedhack",
       "Rated"
     ]
   },
@@ -14096,8 +14096,3 @@
     ]
   }
 ]
-
-
-
-
-
