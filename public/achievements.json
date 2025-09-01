@@ -9620,6 +9620,23 @@
     ]
   },
   {
+    "name": "CHIL",
+    "id": "chil",
+    "player": "Coco",
+    "levelID": 114281093,
+    "date": "2025-08-31",
+    "length": 62,
+    "version": 2.2,
+    "video": "https://youtu.be/DROMiCc2ZRM?t=73",
+    "showcaseVideo": "https://www.youtube.com/watch?v=Mi49wryCl0E",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Verified",
+      "Tentative"
+    ]
+  },
+  {
     "name": "Gumi 86%",
     "id": "gumi-86",
     "player": "Thnnder",
@@ -12099,22 +12116,6 @@
     ]
   },
   {
-    "name": "CHIL 97%",
-    "id": "chil-97",
-    "player": "Coco",
-    "levelID": 114281093,
-    "date": "2024-12-28",
-    "length": 58,
-    "version": 2.2,
-    "video": "https://youtu.be/33q7mh2_lww",
-    "showcaseVideo": "https://www.youtube.com/watch?v=Mi49wryCl0E",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "The Golden 120hz Mobile 49-84%",
     "id": "the-golden-120hz-mobile-49-84",
     "player": "Abstract",
@@ -14043,3 +14044,4 @@
     ]
   }
 ]
+
