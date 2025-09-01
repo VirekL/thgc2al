@@ -4804,6 +4804,23 @@
     ]
   },
   {
+    "name": "Cimmerian Shade 2.1",
+    "id": "cimmerian-shade-2-1",
+    "player": "spcreat",
+    "date": "2023-08-12",
+    "length": 77,
+    "version": 2.1,
+    "levelID": 93340783,
+    "video": "https://youtu.be/lUNvV1k19HA?t=32",
+    "showcaseVideo": "https://youtu.be/CcvGGDzxOJo",
+    "submitter": "Anceps",
+    "tags": [
+      "Level",
+      "Verified",
+      "Outdated Version"
+    ]
+  },
+  {
     "name": "Hard Machine 144hz Mobile",
     "id": "hard-machine-144hz-mobile",
     "player": "MAXDASH07",
@@ -10516,14 +10533,14 @@
   {
     "name": "Cimmerian Shade",
     "id": "cimmerian-shade",
-    "player": "spcreat",
-    "date": "2023-08-12",
+    "player": "Laniakea",
+    "date": "2025-04-28",
     "length": 77,
-    "version": 2.1,
+    "version": 2.2,
     "levelID": 93340783,
-    "video": "https://youtu.be/lUNvV1k19HA?t=32",
+    "video": "https://www.youtube.com/watch?v=PjVUZD5Angc",
     "showcaseVideo": "https://youtu.be/CcvGGDzxOJo",
-    "submitter": "Anceps",
+    "submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Verified",
@@ -14044,4 +14061,5 @@
     ]
   }
 ]
+
 
