@@ -4529,6 +4529,22 @@
     ]
   },
   {
+    "name": "Avernus white 48%",
+    "id": "avernus-white-48",
+    "player": "SerVax",
+    "levelID": null,
+    "date": "2024-12-22",
+    "length": 36,
+    "version": 2.2,
+    "video": "https://www.youtube.com/live/WfnaiwqDHaE?t=9200",
+    "showcaseVideo": "https://youtu.be/8lNHaYbvQE0",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "The Yangire 144hz",
     "id": "the-yangire-144hz",
     "player": "Razzley",
@@ -6113,6 +6129,22 @@
       "Level",
       "Verified",
       "Rated"
+    ]
+  },
+  {
+    "name": "Avernus pink 41%",
+    "id": "avernus-pink-41",
+    "player": "SerVax",
+    "levelID": null,
+    "date": "2024-12-22",
+    "length": 32,
+    "version": 2.2,
+    "video": "https://www.youtube.com/live/WfnaiwqDHaE&t=5135",
+    "showcaseVideo": "https://youtu.be/8lNHaYbvQE0",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -8451,6 +8483,22 @@
     "tags": [
       "Level",
       "Low Hertz",
+      "Rated"
+    ]
+  },
+  {
+    "name": "VOID 96%, 97%, 68%",
+    "id": "void-96-97-68",
+    "player": "Zoink",
+    "length": 176,
+    "version": 2.2,
+    "video": "https://www.youtube.com/live/V18LCMb9108?t=1339s",
+    "showcaseVideo": "https://www.youtube.com/watch?v=ng-VeF1O5aQ",
+    "date": "2025-09-03",
+    "levelID": 100990392,
+    "tags": [
+      "Level",
+      "Consistency",
       "Rated"
     ]
   },
@@ -14115,5 +14163,6 @@
   }
 
 ]
+
 
 
