@@ -8991,6 +8991,23 @@
     ]
   },
   {
+    "name": "Silent Clubstep II 37-54%",
+    "id": "silent-clubstep-ii-37-54",
+    "player": "SkittleCatastrophe",
+    "date": "2025-08-25",
+    "length": "18",
+    "version": "2.2",
+    "levelID": "78614226",
+    "video": "https://youtu.be/suXpr39rcDU?t=75",
+    "showcaseVideo": "https://youtu.be/mCj_PjC3rs0",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
+  },
+  {
     "name": "Jesse Pinkman 60hz Mobile",
     "id": "jesse-pinkman-60hz-mobile",
     "player": "Biprex",
@@ -9473,6 +9490,23 @@
     ]
   },
   {
+    "name": "Silent Clubstep II 27-42%",
+    "id": "silent-clubstep-ii-27-42",
+    "player": "SkittleCatastrophe",
+    "date": "2025-08-30",
+    "length": "15",
+    "version": "2.2",
+    "levelID": "78614226",
+    "video": "https://youtube.com/shorts/IEKI1xzMZaw",
+    "showcaseVideo": "https://youtu.be/mCj_PjC3rs0",
+    "submitter": "Excryst",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
+  },
+  {
     "name": "Coalescence",
     "id": "coalescence",
     "player": "Amplitron",
@@ -9607,6 +9641,23 @@
     ]
   },
   {
+    "name": "Cosmic Cyclone (Meatius) 10 deaths, 99.94 accuracy",
+    "id": "cosmic-cyclone-meatius- 10-deaths-99-94-accuracy",
+    "player": "Meatius",
+    "date": "2025-08-22",
+    "levelID": "108671100",
+    "length": 70,
+    "version": 2.2,
+    "video": "https://youtu.be/YX-KCPYYVI8?t=152",
+    "showcaseVideo": "https://youtu.be/IYmRkHZxAgc",
+	  "submitter": "Meatius",
+    "tags": [
+      "Level",
+      "Noclip",
+      "Tentative"
+    ]
+  },
+ {
     "name": "Cosmic Cyclone (Meatius) 52%",
     "id": "cosmic-cyclone-meatius-52",
     "player": "Meatius",
@@ -10663,6 +10714,21 @@
       "Verified"
     ],
     "submitter": "kyle1saurus"
+  },
+  {
+    "name": "Slaughterhouse Redux 93%",
+    "id": "slaughterhouse-redux-93",
+    "player": "liamkn08",
+    "length": "65",
+    "version": "2.1",
+    "video": "https://youtu.be/MI8lRVwZMnU",
+    "date": "2025-08-11",
+    "submitter": "goofygdplayer",
+    "tags": [
+      "Level",
+	    "Progress",
+	    "Tentative"
+    ]
   },
   {
     "name": "Torrent",
@@ -11913,6 +11979,25 @@
       "Level",
       "Verified",
       "Rated"
+    ]
+  },
+  {
+    "name": "Deep Bass 1.25x 98%",
+    "id": "deep-bass-1-25x-98",
+    "player": "FlinGuSPluNkuS",
+    "levelID": 96383663,
+    "date": "2025-08-16",
+    "length": 60,
+    "version": 2.2,
+    "video": "https://youtu.be/3HobHFyclNI?t=12",
+    "showcaseVideo": "https://youtu.be/XWojVnZGoH4",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Speedhack",
+	    "Rated",
+	    "Progress",
+      "Tentative"
     ]
   },
   {
@@ -14163,6 +14248,7 @@
   }
 
 ]
+
 
 
 
