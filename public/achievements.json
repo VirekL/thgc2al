@@ -10165,6 +10165,25 @@
     ]
   },
   {
+	"name": "Deep Bass 1.25x 98%",
+    "id": "deep-bass-1-25x-98",
+    "player": "FlinGuSPluNkuS",
+    "levelID": 96383663,
+    "date": "2025-08-16",
+    "length": 60,
+    "version": 2.2,
+    "video": "https://youtu.be/3HobHFyclNI?t=12",
+    "showcaseVideo": "https://youtu.be/XWojVnZGoH4",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Speedhack",
+	  "Rated",
+	  "Progress",
+      "Tentative"
+    ]
+  },
+  {
     "name": "kowareta 60hz Mobile",
     "id": "kowareta-60hz-mobile",
     "player": "Biprex",
@@ -10411,22 +10430,6 @@
     "tags": [
       "Challenge",
       "Verified"
-    ]
-  },
-  {
-    "name": "Frigid Thrills (Layout) 37-63%",
-    "id": "frigid-thrills-layout-37-63",
-    "player": "zXdasfsa",
-    "date": "2025-06-21",
-    "length": "26",
-    "version": "2.2",
-    "levelID": "64315677",
-    "video": "https://youtu.be/qIM0Fo94fXU",
-    "showcaseVideo": "https://youtu.be/Rj-L8JctLMA",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -11250,22 +11253,6 @@
     ]
   },
   {
-    "name": "Frigid Thrills 55-77%",
-    "id": "frigid-thrills-55-77",
-    "player": "zXdasfsa",
-    "levelID": 64315677,
-    "date": "2024-12-27",
-    "length": 16,
-    "version": 2.2,
-    "video": "https://youtu.be/rVq_85i4A6Y",
-    "showcaseVideo": "https://youtu.be/Rj-L8JctLMA",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Doublusion",
     "id": "doublusion",
     "player": "Cursed",
@@ -12062,7 +12049,7 @@
     ]
   },
   {
-	"name": "WATER 57-100",
+	"name": "WATER 57-100%",
     "id": "water-57-100",
     "player": "dewbbs",
     "date": "2025-08-09",
@@ -12138,25 +12125,6 @@
       "Level",
       "Verified",
       "Rated"
-    ]
-  },
-  {
-    "name": "Deep Bass 1.25x 98%",
-    "id": "deep-bass-1-25x-98",
-    "player": "FlinGuSPluNkuS",
-    "levelID": 96383663,
-    "date": "2025-08-16",
-    "length": 60,
-    "version": 2.2,
-    "video": "https://youtu.be/3HobHFyclNI?t=12",
-    "showcaseVideo": "https://youtu.be/XWojVnZGoH4",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Speedhack",
-	    "Rated",
-	    "Progress",
-      "Tentative"
     ]
   },
   {
@@ -14424,6 +14392,7 @@
   }
 
 ]
+
 
 
 
