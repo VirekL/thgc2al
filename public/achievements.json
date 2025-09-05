@@ -177,7 +177,7 @@
   {
     "name": "VSC x2",
     "id": "vsc-x2",
-    "player": "Nev",
+    "player": "-",
     "date": "2025-08-25",
     "length": 42,
     "version": 2.2,
@@ -1343,7 +1343,7 @@
   {
     "name": "VSC 72%, 100%",
     "id": "vsc-72-100",
-    "player": "Nev",
+    "player": "-",
     "levelID": 60805571,
     "date": "2024-09-09",
     "length": 29,
@@ -2583,7 +2583,7 @@
   {
     "name": "VSC 144hz 24-100%",
     "id": "vsc-144hz-24-100",
-    "player": "Nev",
+    "player": "-",
     "levelID": 60805571,
     "date": "2022-11-02",
     "length": 11,
@@ -2600,7 +2600,7 @@
   {
     "name": "VSC42X2",
     "id": "vsc42x2",
-    "player": "Nev",
+    "player": "-",
     "levelID": 92429015,
     "date": "2023-07-26",
     "length": 17,
@@ -2616,7 +2616,7 @@
   {
     "name": "j0nahh challenge",
     "id": "j0nahh-challenge",
-    "player": "Nev",
+    "player": "-",
     "levelID": 93072937,
     "date": "2023-08-04",
     "length": 18,
@@ -2632,7 +2632,7 @@
   {
     "name": "VSC 20p is dead",
     "id": "vsc-20p-is-dead",
-    "player": "Nev",
+    "player": "-",
     "levelID": 83526910,
     "date": "2022-09-08",
     "length": 13,
@@ -2648,7 +2648,7 @@
   {
     "name": "VSC Nev Finale 25-67%",
     "id": "vsc-nev-finale-25-67",
-    "player": "Nev",
+    "player": "-",
     "levelID": 85140035,
     "date": "2023-07-23",
     "length": 7,
@@ -2664,7 +2664,7 @@
   {
     "name": "VSC Out",
     "id": "vsc-out",
-    "player": "Nev",
+    "player": "-",
     "levelID": 109853877,
     "date": "2024-09-05",
     "length": 99,
@@ -2680,7 +2680,7 @@
   {
     "name": "VSC Geist",
     "id": "vsc-geist",
-    "player": "Nev",
+    "player": "-",
     "levelID": 90775826,
     "date": "2024-09-03",
     "length": 108,
@@ -2696,7 +2696,7 @@
   {
     "name": "VSC Madness",
     "id": "vsc-madness",
-    "player": "Nev",
+    "player": "-",
     "levelID": 83564796,
     "date": "2022-09-10",
     "length": 105,
@@ -2712,7 +2712,7 @@
   {
     "name": "VSC on Track",
     "id": "vsc-on-track",
-    "player": "Nev",
+    "player": "-",
     "levelID": 89984733,
     "date": "2023-04-10",
     "length": 100,
@@ -2745,7 +2745,7 @@
   {
     "name": "vsc infinity",
     "id": "vsc-infinity",
-    "player": "Nev",
+    "player": "-",
     "levelID": 78765594,
     "date": "2022-10-11",
     "length": 16,
@@ -2775,7 +2775,7 @@
   {
     "name": "VSC red",
     "id": "vsc-red",
-    "player": "Nev",
+    "player": "-",
     "levelID": 96983986,
     "date": "2023-12-01",
     "length": 16,
@@ -2791,7 +2791,7 @@
   {
     "name": "VSC nerfed",
     "id": "vsc-nerfed",
-    "player": "Nev",
+    "player": "-",
     "date": "2023-08-02",
     "length": 16,
     "version": 2.1,
@@ -2807,7 +2807,7 @@
   {
     "name": "VSC 1.1x 2 deaths, 99.84 accuracy",
     "id": "vsc-1-1x-2-deaths-99-84-accuracy",
-    "player": "Nev",
+    "player": "-",
     "levelID": 60805571,
     "date": "2022-10-15",
     "length": 14,
@@ -2824,11 +2824,11 @@
   {
     "name": "VSC 144hz 54%",
     "id": "vsc-144hz-54",
-    "player": "Nev",
+    "player": "-",
     "date": "2022-10-15",
-    "length": "10",
-    "version": "2.1",
-    "levelID": "60805571",
+    "length": 10,
+    "version": 2.1,
+    "levelID": 60805571,
     "showcaseVideo": "https://youtu.be/GbtLlQQezTA",
     "video": "https://youtu.be/A9f2CYbI8r0",
     "submitter": "kyle1saurus",
@@ -3660,7 +3660,7 @@
   {
     "name": "VSC Nev Finale (Old) 60%",
     "id": "vsc-nev-finale-old-60",
-    "player": "Nev",
+    "player": "-",
     "date": "2023-01-06",
     "length": 9,
     "version": 2.1,
@@ -3669,7 +3669,8 @@
     "tags": [
       "Challenge",
       "Progress"
-    ]
+    ],
+    "levelID": 0
   },
   {
     "name": "Unnerfed Yatagarasu",
@@ -5325,7 +5326,7 @@
     ]
   },
   {
-	"name": "Ex Vacuo 58%",
+    "name": "Ex Vacuo 58%",
     "id": "ex-vacuo-58",
     "player": "Laniakea",
     "length": "75",
@@ -5333,7 +5334,7 @@
     "video": "https://www.youtube.com/live/WDTXRr0cGCg?t=3592",
     "showcaseVideo": "https://youtu.be/CVXC2_bveBQ",
     "date": "2025-08-23",
-	"submitter": "TYATYAPKA",
+    "submitter": "TYATYAPKA",
     "tags": [
       "Level",
       "Progress"
@@ -5536,7 +5537,7 @@
     ]
   },
   {
-	"name": "Ex Vacuo 53-100%",
+    "name": "Ex Vacuo 53-100%",
     "id": "ex-vacuo-53-100",
     "player": "Laniakea",
     "length": "66",
@@ -5544,20 +5545,20 @@
     "video": "https://youtu.be/kP4p23TmZsA?t=73",
     "showcaseVideo": "https://youtu.be/CVXC2_bveBQ",
     "date": "2025-08-19",
-	"submitter": "kyle1saurus",
+    "submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Progress"
     ]
   },
-{
+  {
     "name": "VSC 1.1x 46%",
     "id": "vsc-1-1x-46",
-    "player": "Nev",
+    "player": "-",
     "date": "2022-10-09",
-    "length": "7",
-    "version": "2.1",
-    "levelID": "60805571",
+    "length": 7,
+    "version": 2.1,
+    "levelID": 60805571,
     "video": "https://youtu.be/2jml0YFq_eQ",
     "showcaseVideo": "https://youtu.be/GbtLlQQezTA",
     "submitter": "kyle1saurus",
@@ -6836,19 +6837,19 @@
     ]
   },
   {
-	"name": "Dredlethal VantamaxX",
+    "name": "Dredlethal VantamaxX",
     "id": "dredlethal-vantamaxx",
     "player": "KyuPlays",
     "date": "2025-08-14",
-	"levelID": "108671100",
+    "levelID": "108671100",
     "length": "26",
     "version": "2.2",
     "video": "https://youtu.be/jAASLdLcdHA",
-	"showcaseVideo": "https://youtu.be/kWDtcMvXRyw",
+    "showcaseVideo": "https://youtu.be/kWDtcMvXRyw",
     "submitter": "goofygdplayer",
     "tags": [
       "Challenge",
-	  "Verified"
+      "Verified"
     ]
   },
   {
@@ -8339,19 +8340,19 @@
     ]
   },
   {
-	"name": "Fracture Circles",
+    "name": "Fracture Circles",
     "id": "fracture-circles",
     "player": "lsdlsdlsdlsd",
-	"levelID": "124602649",
+    "levelID": "124602649",
     "date": "2025-09-02",
     "length": "72",
     "version": "2.2",
     "video": "https://youtu.be/OUo_JhNI-is",
-	"showcaseVideo": "https://youtu.be/sQHICAjpQOA",
+    "showcaseVideo": "https://youtu.be/sQHICAjpQOA",
     "submitter": "goofygdplayer",
     "tags": [
       "Level",
-	  "Verified"
+      "Verified"
     ]
   },
   {
@@ -8532,20 +8533,20 @@
     ]
   },
   {
-	"name": "wocky circles 36-79%",
+    "name": "wocky circles 36-79%",
     "id": "wocky-circles-36-79",
     "player": "KYWY",
     "date": "2023-01-05",
-	"levelID": "100420930",
+    "levelID": "100420930",
     "length": "25",
     "version": "2.1",
     "video": "https://youtu.be/i6DDyYdjfN0",
-	"showcaseVideo": "https://youtu.be/yyZ9M5crxJc",
+    "showcaseVideo": "https://youtu.be/yyZ9M5crxJc",
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Progress",
-	  "Tentative"
+      "Tentative"
     ]
   },
   {
@@ -8891,19 +8892,19 @@
     ]
   },
   {
-	"name": "Reality Spirituality 74%",
+    "name": "Reality Spirituality 74%",
     "id": "reality-spirituality-74",
     "player": "LordVadercraft",
     "date": "2025-08-24",
     "length": "95",
     "version": "2.2",
     "video": "https://youtu.be/P6XqsaRZCsk",
-	"showcaseVideo": "https://youtu.be/9QoecJbSKwY",
+    "showcaseVideo": "https://youtu.be/9QoecJbSKwY",
     "submitter": "cheesecake",
     "tags": [
       "Level",
       "Progress",
-	  "Tentative"
+      "Tentative"
     ]
   },
   {
@@ -9241,22 +9242,22 @@
     "levelID": null
   },
   {
-	"name": "Eternal Night 31%",
-	"id": "eternal-night-31",
-	"player": "Trolley1",
-	"length": "30",
-	"version": "2.2",
-	"video": "https://youtu.be/f9ewrnsAAvs",
-	"date": "2025-08-10",
-	"showcaseVideo": "https://youtu.be/njGusIAPm9w",
-	"submitter": "axellssl",
-	"tags": [
-		"Progress",
-		"Level",
-		"Tentative"
-		]
-	},
-	{
+    "name": "Eternal Night 31%",
+    "id": "eternal-night-31",
+    "player": "Trolley1",
+    "length": "30",
+    "version": "2.2",
+    "video": "https://youtu.be/f9ewrnsAAvs",
+    "date": "2025-08-10",
+    "showcaseVideo": "https://youtu.be/njGusIAPm9w",
+    "submitter": "axellssl",
+    "tags": [
+      "Level",
+      "Progress",
+      "Tentative"
+    ]
+  },
+  {
     "name": "Damascus",
     "id": "damascus",
     "player": "Timo",
@@ -9761,14 +9762,14 @@
     "version": 2.2,
     "video": "https://youtu.be/YX-KCPYYVI8?t=152",
     "showcaseVideo": "https://youtu.be/IYmRkHZxAgc",
-	  "submitter": "Meatius",
+    "submitter": "Meatius",
     "tags": [
       "Level",
       "Noclip",
       "Tentative"
     ]
   },
- {
+  {
     "name": "Cosmic Cyclone (Meatius) 52%",
     "id": "cosmic-cyclone-meatius-52",
     "player": "Meatius",
@@ -10165,7 +10166,7 @@
     ]
   },
   {
-	"name": "Deep Bass 1.25x 98%",
+    "name": "Deep Bass 1.25x 98%",
     "id": "deep-bass-1-25x-98",
     "player": "FlinGuSPluNkuS",
     "levelID": 96383663,
@@ -10178,8 +10179,8 @@
     "tags": [
       "Level",
       "Speedhack",
-	  "Rated",
-	  "Progress",
+      "Progress",
+      "Rated",
       "Tentative"
     ]
   },
@@ -10840,8 +10841,8 @@
     "submitter": "goofygdplayer",
     "tags": [
       "Level",
-	    "Progress",
-	    "Tentative"
+      "Progress",
+      "Tentative"
     ]
   },
   {
@@ -11499,14 +11500,14 @@
     ]
   },
   {
-	"name": "Herr Machine 40-90%",
+    "name": "Herr Machine 40-90%",
     "id": "herr-machine-40-90",
     "player": "GreenZz",
     "date": "2025-08-09",
     "length": "52",
     "version": "2.2",
     "video": "https://youtu.be/bQJUjDRhzYU",
-	"showcaseVideo": "https://youtu.be/dUKYJcemh-c",
+    "showcaseVideo": "https://youtu.be/dUKYJcemh-c",
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
@@ -11927,24 +11928,24 @@
     ]
   },
   {
-	"name": "Time Lapse 144hz Mobile 64%",
+    "name": "Time Lapse 144hz Mobile 64%",
     "id": "time-lapse-144hz-mobile-64",
-	"player": "Mateex",
-	"length": "46",
-	"version": "2.2",
-	"video": "https://youtu.be/SgybWTuvWb4",
-	"date": "2025-08-05",
-	"showcaseVideo": "https://www.youtube.com/watch?v=SGlmK7YVLGY",
-	"levelID": "97705490",
-	"submitter": "TYATYAPKA",
-	"tags": [
-		"Level",
-		"Progress",
-		"Mobile",
-		"Low Hertz"
-	]
-},
-{
+    "player": "Mateex",
+    "length": "46",
+    "version": "2.2",
+    "video": "https://youtu.be/SgybWTuvWb4",
+    "date": "2025-08-05",
+    "showcaseVideo": "https://www.youtube.com/watch?v=SGlmK7YVLGY",
+    "levelID": "97705490",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress"
+    ]
+  },
+  {
     "name": "The Golden",
     "id": "the-golden",
     "player": "nSwish",
@@ -12049,7 +12050,7 @@
     ]
   },
   {
-	"name": "WATER 57-100%",
+    "name": "WATER 57-100%",
     "id": "water-57-100",
     "player": "dewbbs",
     "date": "2025-08-09",
@@ -12060,7 +12061,7 @@
     "tags": [
       "Level",
       "Progress",
-	  "Tentative"
+      "Tentative"
     ]
   },
   {
@@ -12206,7 +12207,7 @@
     ]
   },
   {
-	"name": "Silent clubstep 144hz 15-65%",
+    "name": "Silent clubstep 144hz 15-65%",
     "id": "silent-clubstep-144hz-15-65",
     "player": "zMythicc",
     "length": "43",
@@ -12218,7 +12219,7 @@
     "levelID": "4125776",
     "tags": [
       "Level",
-	  "Low Hertz",
+      "Low Hertz",
       "Rated"
     ]
   },
@@ -14390,11 +14391,4 @@
       "Rated"
     ]
   }
-
 ]
-
-
-
-
-
-
