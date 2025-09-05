@@ -19,15 +19,35 @@
 		]
 	},
 	{
-	"name": "Nullscapes 120hz Mobile 42%",
-    "id": "nullscapes-120hz-mobile-42",
+	"name": "Nullscapes 120hz Mobile 25-60%",
+    "id": "nullscapes-120hz-mobile-25-60",
     "player": "danielcookie",
 	"levelID": 109780665,
-    "date": "2025-08-28",
-    "length": 40,
+    "date": "2025-07-22",
+    "length": 35,
     "version": 2.2,
     "submitter": "goofygdplayer",
-    "video": "https://youtu.be/kwb4OHsWGmw",
+    "video": "https://youtu.be/m1oQE9LgKfk",
+    "showcaseVideo": "https://youtu.be/C-KDhWkXlvI",
+    "tags": [
+      "Level",
+      "Low Hertz",
+	  "Mobile",
+	  "Progress",
+	  "CBF",
+      "Rated"
+    ]
+  },
+  {
+	"name": "Nullscapes 120hz Mobile 18-51%",
+    "id": "nullscapes-120hz-mobile-18-51",
+    "player": "danielcookie",
+	"levelID": 109780665,
+    "date": "2025-08-11",
+    "length": 35,
+    "version": 2.2,
+    "submitter": "goofygdplayer",
+    "video": "https://youtu.be/G9NAFdYwjgo",
     "showcaseVideo": "https://youtu.be/C-KDhWkXlvI",
     "tags": [
       "Level",
