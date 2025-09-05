@@ -497,6 +497,22 @@
     ]
   },
   {
+    "name": "Vehemence 47-100%",
+    "id": "vehemence-47-100",
+    "player": "wPopoff",
+    "levelID": 96572223,
+    "date": "2025-08-31",
+    "length": 121,
+    "version": 2.2,
+    "video": "https://www.youtube.com/live/HMSp_zG84a4?t=7250",
+    "showcaseVideo": "https://youtu.be/FwxtJQQocKA",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "BOOBAWAMBA",
     "id": "boobawamba",
     "player": "EastShark1",
@@ -1792,22 +1808,6 @@
     "video": "https://youtu.be/ZKsQ-Sw-Iqo",
     "showcaseVideo": "https://youtu.be/Pui-sfRR_kQ",
     "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
-    "name": "Vehemence 53-100%",
-    "id": "vehemence-53-100",
-    "player": "wPopoff",
-    "levelID": 96572223,
-    "date": "2024-09-04",
-    "length": 111,
-    "version": 2.2,
-    "video": "https://youtu.be/Zd-C6L9AlD0",
-    "showcaseVideo": "https://youtu.be/FwxtJQQocKA",
-    "submitter": "Anceps",
     "tags": [
       "Level",
       "Progress"
@@ -3670,7 +3670,7 @@
       "Challenge",
       "Progress"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "Unnerfed Yatagarasu",
@@ -14392,3 +14392,4 @@
     ]
   }
 ]
+
