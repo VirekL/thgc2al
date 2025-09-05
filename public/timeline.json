@@ -1253,23 +1253,6 @@
         "showcaseVideo": "https://youtu.be/h-B-obfRtIw"
     },
     {
-        "id": "demon-world",
-        "name": "demon world",
-        "player": "superhexagon",
-        "tags": [
-            "Level",
-            "Rated",
-			"Verified"
-        ],
-        "length": "97",
-        "version": "1.3",
-        "date": "2013-11-24",
-        "submitter": "Grave",
-        "levelID": "72540",
-        "video": "https://web.archive.org/web/20250801165052/https://cdn.discordapp.com/attachments/1394056075828924467/1398947710161387582/image.png?ex=688dce95&is=688c7d15&hm=1ff3611d60733697bb43e4de384cf2d9df680af8ca817432d6c6b0b70db03d9a&",
-        "showcaseVideo": "https://youtu.be/bUMT_NRt5_0"
-    },
-    {
         "name": "Extreme Park",
         "id": "extreme-park",
         "player": "Rabbitical",
@@ -1443,6 +1426,7 @@
         "video": "https://youtu.be/727pUHwWSVg"
     }
 ]
+
 
 
 
