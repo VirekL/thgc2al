@@ -1240,6 +1240,26 @@
     ]
   },
   {
+    "name": "Nullscapes 120hz Mobile 42%",
+    "id": "nullscapes-120hz-mobile-42",
+    "player": "danielcookie",
+	  "levelID": 109780665,
+    "date": "2025-08-28",
+    "length": 40,
+    "version": 2.2,
+    "submitter": "goofygdplayer",
+    "video": "https://youtu.be/kwb4OHsWGmw",
+    "showcaseVideo": "https://youtu.be/C-KDhWkXlvI",
+    "tags": [
+      "Level",
+      "Low Hertz",
+	    "Mobile",
+	    "Progress",
+	    "CBF",
+      "Rated"
+    ]
+  },
+  {
     "name": "Banshee 21-100%",
     "id": "banshee-21-100",
     "player": "spcreat",
@@ -14392,4 +14412,5 @@
     ]
   }
 ]
+
 
