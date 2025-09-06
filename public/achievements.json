@@ -2516,6 +2516,26 @@
     "showcaseVideo": "https://www.youtube.com/watch?v=l6poOVWISJA"
   },
   {
+	"name": "Nullscapes 120hz Mobile 18-51%",
+    "id": "nullscapes-120hz-mobile-18-51",
+    "player": "danielcookie",
+	"levelID": 109780665,
+    "date": "2025-08-11",
+    "length": 35,
+    "version": 2.2,
+    "submitter": "goofygdplayer",
+    "video": "https://youtu.be/G9NAFdYwjgo",
+    "showcaseVideo": "https://youtu.be/C-KDhWkXlvI",
+    "tags": [
+      "Level",
+      "Low Hertz",
+	  "Mobile",
+	  "Progress",
+	  "CBF",
+      "Rated"
+    ]
+  },
+  {
     "name": "Lithium 60hz Mobile 87%",
     "id": "lithium-60hz-mobile-87",
     "player": "Archermence",
@@ -2585,6 +2605,26 @@
     ],
     "levelID": 13918016,
     "showcaseVideo": "https://youtu.be/lR70uK1NuKU"
+  },
+  {
+	"name": "Nullscapes 120hz Mobile 25-60%",
+    "id": "nullscapes-120hz-mobile-25-60",
+    "player": "danielcookie",
+	"levelID": 109780665,
+    "date": "2025-07-22",
+    "length": 35,
+    "version": 2.2,
+    "submitter": "goofygdplayer",
+    "video": "https://youtu.be/m1oQE9LgKfk",
+    "showcaseVideo": "https://youtu.be/C-KDhWkXlvI",
+    "tags": [
+      "Level",
+      "Low Hertz",
+	  "Mobile",
+	  "Progress",
+	  "CBF",
+      "Rated"
+    ]
   },
   {
     "name": "Acheron (serpentical)",
@@ -6910,6 +6950,26 @@
     ]
   },
   {
+	"name": "Tidal Wave 120hz Mobile 72-100%",
+    "id": "tidal-wave-120hz-mobile-72-100",
+    "player": "danielcookie",
+    "video": "https://youtu.be/q2kLvzvlESU",
+    "showcaseVideo": "https://youtu.be/PFHlkdz9UqM",
+    "tags": [
+      "Level",
+      "Low Hertz",
+	  "Mobile",
+	  "Progress",
+	  "CBF",
+      "Rated"
+    ],
+    "submitter": "Employed Kali",
+    "levelID": 86407629,
+    "date": "2024-09-14",
+    "length": 49,
+    "version": 2.2
+  },
+{
     "name": "Riots Demise (noname)",
     "id": "riots-demise-noname",
     "player": "noname228gg",
@@ -7911,6 +7971,26 @@
     ]
   },
   {
+	"name": "Tidal Wave 120hz Mobile 23-39%",
+    "id": "tidal-wave-120hz-mobile-23-39",
+    "player": "danielcookie",
+    "video": "https://youtu.be/ol2t4_rp5sc",
+    "showcaseVideo": "https://youtu.be/PFHlkdz9UqM",
+    "tags": [
+      "Level",
+      "Low Hertz",
+	  "Mobile",
+	  "Progress",
+	  "CBF",
+      "Rated"
+    ],
+    "submitter": "Employed Kali",
+    "levelID": 86407629,
+    "date": "2024-09-09",
+    "length": 27,
+    "version": 2.2
+  },
+{
     "name": "The Plunge",
     "id": "the-plunge",
     "player": "Gokill",
@@ -9490,13 +9570,13 @@
     "name": "Silent Clubstep II 18-37%",
     "id": "silent-clubstep-ii-18-37",
     "player": "SkittleCatastrophe",
-    "date": "2025-07-18",
+    "date": "2025-09-06",
     "length": "16",
     "version": "2.2",
     "levelID": "78614226",
-    "video": "https://youtu.be/iXXE0wBtClE",
+    "video": "https://youtube.com/shorts/3iplsk6sMyQ",
     "showcaseVideo": "https://youtu.be/mCj_PjC3rs0",
-    "submitter": "kyle1saurus",
+    "submitter": "froggasaurus",
     "tags": [
       "Level",
       "Progress"
@@ -14432,6 +14512,7 @@
     ]
   }
 ]
+
 
 
 
