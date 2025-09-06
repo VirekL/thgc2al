@@ -1,21 +1,5 @@
 [
   {
-    "name": "FLAMEWALL 50%, 99%",
-    "id": "flamewall-50-99",
-    "player": "Cuatrocientos",
-    "video": "https://www.youtube.com/live/8WPfiV3aD4w?t=4046s",
-    "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
-    "tags": [
-      "Level",
-      "Consistency"
-    ],
-    "date": "2025-08-31",
-    "length": 600,
-    "version": 2.2,
-    "submitter": "Excryst",
-    "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
-  },
-  {
     "name": "GRIEF 56-100%, 67%",
     "id": "grief-56-100-67",
     "player": "Doggie",
@@ -175,23 +159,6 @@
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/grief-unbuffed2.avif"
   },
   {
-    "name": "VSC x2",
-    "id": "vsc-x2",
-    "player": "-",
-    "date": "2025-08-25",
-    "length": 42,
-    "version": 2.2,
-    "levelID": 125131485,
-    "video": "https://youtu.be/92Msl_EI-5E",
-    "showcaseVideo": "https://youtu.be/TPnljyNS7Dg",
-    "submitter": "nensa",
-    "tags": [
-      "Level",
-      "Verified",
-      "Tentative"
-    ]
-  },
-  {
     "name": "Slaughterhouse 300%",
     "id": "slaughterhouse-300",
     "player": "wPopoff",
@@ -308,6 +275,23 @@
     "date": "2025-07-20",
     "length": "36",
     "version": "2.2"
+  },
+  {
+    "name": "VSC x2",
+    "id": "vsc-x2",
+    "player": "-",
+    "date": "2025-08-25",
+    "length": 42,
+    "version": 2.2,
+    "levelID": 125131485,
+    "video": "https://youtu.be/92Msl_EI-5E",
+    "showcaseVideo": "https://youtu.be/TPnljyNS7Dg",
+    "submitter": "nensa",
+    "tags": [
+      "Level",
+      "Verified",
+      "Tentative"
+    ]
   },
   {
     "name": "Sakupen circles (Old) 37-66%, 37-69%, 70%",
@@ -648,6 +632,23 @@
     ]
   },
   {
+    "name": "Amethyst (Trick) 61%",
+    "id": "amethyst-trick-61",
+    "player": "Trick",
+    "date": "2024-11-11",
+    "length": 54,
+    "version": 2.2,
+    "levelID": 119530462,
+    "video": " https://youtu.be/r4mCMyZgYI8",
+    "showcaseVideo": "https://youtu.be/iFBkJFUydkE",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/amethyst-trick2.avif",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Acheron (Riot) 17-92%",
     "id": "acheron-riot-17-92",
     "player": "LOL123",
@@ -681,6 +682,39 @@
       "Level",
       "Progress",
       "CBF"
+    ]
+  },
+  {
+    "name": "vsc infinity 79%, 100%",
+    "id": "vsc-infinity-79-100",
+    "player": "JACKSONAMORE",
+    "levelID": 78765594,
+    "date": "2024-07-12",
+    "length": 30,
+    "version": 2.2,
+    "video": "https://youtu.be/qmuJUkvYL5g",
+    "showcaseVideo": "https://youtu.be/OqF6C0m5VcQ",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Challenge",
+      "Consistency",
+      "CBF"
+    ]
+  },
+  {
+    "name": "VSC 72%, 100%",
+    "id": "vsc-72-100",
+    "player": "-",
+    "levelID": 60805571,
+    "date": "2024-09-09",
+    "length": 29,
+    "version": 2.1,
+    "video": "https://youtu.be/25p8fKnQnYo",
+    "showcaseVideo": "https://youtu.be/GbtLlQQezTA",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Challenge",
+      "Consistency"
     ]
   },
   {
@@ -932,23 +966,6 @@
       "Level",
       "Verified",
       "Outdated Version"
-    ]
-  },
-  {
-    "name": "Amethyst (Trick) 61%",
-    "id": "amethyst-trick-61",
-    "player": "Trick",
-    "date": "2024-11-11",
-    "length": 54,
-    "version": 2.2,
-    "levelID": 119530462,
-    "video": " https://youtu.be/r4mCMyZgYI8",
-    "showcaseVideo": "https://youtu.be/iFBkJFUydkE",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/amethyst-trick2.avif",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -1243,7 +1260,7 @@
     "name": "Nullscapes 120hz Mobile 42%",
     "id": "nullscapes-120hz-mobile-42",
     "player": "danielcookie",
-	  "levelID": 109780665,
+    "levelID": 109780665,
     "date": "2025-08-28",
     "length": 40,
     "version": 2.2,
@@ -1253,9 +1270,9 @@
     "tags": [
       "Level",
       "Low Hertz",
-	    "Mobile",
-	    "Progress",
-	    "CBF",
+      "Mobile",
+      "Progress",
+      "CBF",
       "Rated"
     ]
   },
@@ -1312,10 +1329,10 @@
     "levelID": null
   },
   {
-	"name": "Nullscapes 120hz Mobile 48-100%",
+    "name": "Nullscapes 120hz Mobile 48-100%",
     "id": "nullscapes-120hz-mobile-48-100",
     "player": "danielcookie",
-	"levelID": 109780665,
+    "levelID": 109780665,
     "date": "2025-09-03",
     "length": 37,
     "version": 2.2,
@@ -1325,13 +1342,13 @@
     "tags": [
       "Level",
       "Low Hertz",
-	  "Mobile",
-	  "Progress",
-	  "CBF",
+      "Mobile",
+      "Progress",
+      "CBF",
       "Rated"
     ]
   },
-{
+  {
     "name": "Blue Avernus 88%",
     "id": "blue-avernus-88",
     "player": "KlimK",
@@ -1377,39 +1394,6 @@
       "Low Hertz",
       "Mobile",
       "Outdated Version"
-    ]
-  },
-  {
-    "name": "vsc infinity 79%, 100%",
-    "id": "vsc-infinity-79-100",
-    "player": "JACKSONAMORE",
-    "levelID": 78765594,
-    "date": "2024-07-12",
-    "length": 30,
-    "version": 2.2,
-    "video": "https://youtu.be/qmuJUkvYL5g",
-    "showcaseVideo": "https://youtu.be/OqF6C0m5VcQ",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Challenge",
-      "Consistency",
-      "CBF"
-    ]
-  },
-  {
-    "name": "VSC 72%, 100%",
-    "id": "vsc-72-100",
-    "player": "-",
-    "levelID": 60805571,
-    "date": "2024-09-09",
-    "length": 29,
-    "version": 2.1,
-    "video": "https://youtu.be/25p8fKnQnYo",
-    "showcaseVideo": "https://youtu.be/GbtLlQQezTA",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Challenge",
-      "Consistency"
     ]
   },
   {
@@ -2516,10 +2500,10 @@
     "showcaseVideo": "https://www.youtube.com/watch?v=l6poOVWISJA"
   },
   {
-	"name": "Nullscapes 120hz Mobile 18-51%",
+    "name": "Nullscapes 120hz Mobile 18-51%",
     "id": "nullscapes-120hz-mobile-18-51",
     "player": "danielcookie",
-	"levelID": 109780665,
+    "levelID": 109780665,
     "date": "2025-08-11",
     "length": 35,
     "version": 2.2,
@@ -2529,9 +2513,9 @@
     "tags": [
       "Level",
       "Low Hertz",
-	  "Mobile",
-	  "Progress",
-	  "CBF",
+      "Mobile",
+      "Progress",
+      "CBF",
       "Rated"
     ]
   },
@@ -2607,10 +2591,10 @@
     "showcaseVideo": "https://youtu.be/lR70uK1NuKU"
   },
   {
-	"name": "Nullscapes 120hz Mobile 25-60%",
+    "name": "Nullscapes 120hz Mobile 25-60%",
     "id": "nullscapes-120hz-mobile-25-60",
     "player": "danielcookie",
-	"levelID": 109780665,
+    "levelID": 109780665,
     "date": "2025-07-22",
     "length": 35,
     "version": 2.2,
@@ -2620,9 +2604,9 @@
     "tags": [
       "Level",
       "Low Hertz",
-	  "Mobile",
-	  "Progress",
-	  "CBF",
+      "Mobile",
+      "Progress",
+      "CBF",
       "Rated"
     ]
   },
@@ -4610,22 +4594,6 @@
     ]
   },
   {
-    "name": "Avernus white 48%",
-    "id": "avernus-white-48",
-    "player": "SerVax",
-    "levelID": null,
-    "date": "2024-12-22",
-    "length": 36,
-    "version": 2.2,
-    "video": "https://www.youtube.com/live/WfnaiwqDHaE?t=9200",
-    "showcaseVideo": "https://youtu.be/8lNHaYbvQE0",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "The Yangire 144hz",
     "id": "the-yangire-144hz",
     "player": "Razzley",
@@ -6160,6 +6128,22 @@
     ]
   },
   {
+    "name": "Avernus white 48%",
+    "id": "avernus-white-48",
+    "player": "SerVax",
+    "levelID": 0,
+    "date": "2024-12-22",
+    "length": 36,
+    "version": 2.2,
+    "video": "https://www.youtube.com/live/WfnaiwqDHaE?t=9200",
+    "showcaseVideo": "https://youtu.be/8lNHaYbvQE0",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Lightning Machine 48-100%",
     "id": "lightning-machine-48-100",
     "player": "seels",
@@ -6209,23 +6193,6 @@
     ]
   },
   {
-    "name": "ORDINARY 44%, 100%",
-    "id": "ordinary-44-100",
-    "player": "w3rty",
-    "levelID": 105593215,
-    "date": "2024-08-25",
-    "length": 113,
-    "version": 2.2,
-    "submitter": "kyle1saurus",
-    "video": "https://youtu.be/bsJv0dPQ36k",
-    "showcaseVideo": "https://youtu.be/h55wbCsem9E",
-    "tags": [
-      "Level",
-      "Consistency",
-      "Rated"
-    ]
-  },
-  {
     "name": "Operation Evolution",
     "id": "operation_evolution",
     "player": "cobrablitz",
@@ -6240,22 +6207,6 @@
       "Level",
       "Verified",
       "Rated"
-    ]
-  },
-  {
-    "name": "Avernus pink 41%",
-    "id": "avernus-pink-41",
-    "player": "SerVax",
-    "levelID": null,
-    "date": "2024-12-22",
-    "length": 32,
-    "version": 2.2,
-    "video": "https://www.youtube.com/live/WfnaiwqDHaE&t=5135",
-    "showcaseVideo": "https://youtu.be/8lNHaYbvQE0",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -6427,6 +6378,22 @@
     ]
   },
   {
+    "name": "Avernus pink 41%",
+    "id": "avernus-pink-41",
+    "player": "SerVax",
+    "levelID": null,
+    "date": "2024-12-22",
+    "length": 32,
+    "version": 2.2,
+    "video": "https://www.youtube.com/live/WfnaiwqDHaE&t=5135",
+    "showcaseVideo": "https://youtu.be/8lNHaYbvQE0",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Lightning Machine 48%",
     "id": "lightning-machine-48",
     "player": "seels",
@@ -6474,24 +6441,6 @@
       "Level",
       "Verified",
       "Tentative"
-    ]
-  },
-  {
-    "name": "The Golden 1.1x 97%",
-    "id": "the-golden-1-1x-97",
-    "player": "Sid125",
-    "length": "65",
-    "version": "2.1",
-    "video": "https://youtu.be/b6dUBlA38_4?t=63",
-    "showcaseVideo": "https://youtu.be/lbrN3kasxR0",
-    "date": "2021-01-31",
-    "submitter": "Radiator",
-    "levelID": "60978746",
-    "tags": [
-      "Level",
-      "Speedhack",
-      "Progress",
-      "Rated"
     ]
   },
   {
@@ -6868,23 +6817,6 @@
     ]
   },
   {
-    "name": "Tartarus 46%, 100%",
-    "id": "tartarus-46-100",
-    "player": "Zoink",
-    "video": "https://www.youtube.com/watch?v=FlMGEos-wZU",
-    "showcaseVideo": "https://www.youtube.com/watch?v=lm1498Rfl0s",
-    "date": "2022-02-04",
-    "length": 110,
-    "version": 2.1,
-    "levelID": 59075347,
-    "submitter": "kittycatiscute",
-    "tags": [
-      "Level",
-      "Consistency",
-      "Rated"
-    ]
-  },
-  {
     "name": "DEATHWISH",
     "id": "deathwish",
     "player": "Wooshi",
@@ -6950,7 +6882,7 @@
     ]
   },
   {
-	"name": "Tidal Wave 120hz Mobile 72-100%",
+    "name": "Tidal Wave 120hz Mobile 72-100%",
     "id": "tidal-wave-120hz-mobile-72-100",
     "player": "danielcookie",
     "video": "https://youtu.be/q2kLvzvlESU",
@@ -6958,9 +6890,9 @@
     "tags": [
       "Level",
       "Low Hertz",
-	  "Mobile",
-	  "Progress",
-	  "CBF",
+      "Mobile",
+      "Progress",
+      "CBF",
       "Rated"
     ],
     "submitter": "Employed Kali",
@@ -6969,7 +6901,7 @@
     "length": 49,
     "version": 2.2
   },
-{
+  {
     "name": "Riots Demise (noname)",
     "id": "riots-demise-noname",
     "player": "noname228gg",
@@ -7971,7 +7903,7 @@
     ]
   },
   {
-	"name": "Tidal Wave 120hz Mobile 23-39%",
+    "name": "Tidal Wave 120hz Mobile 23-39%",
     "id": "tidal-wave-120hz-mobile-23-39",
     "player": "danielcookie",
     "video": "https://youtu.be/ol2t4_rp5sc",
@@ -7979,9 +7911,9 @@
     "tags": [
       "Level",
       "Low Hertz",
-	  "Mobile",
-	  "Progress",
-	  "CBF",
+      "Mobile",
+      "Progress",
+      "CBF",
       "Rated"
     ],
     "submitter": "Employed Kali",
@@ -7990,7 +7922,7 @@
     "length": 27,
     "version": 2.2
   },
-{
+  {
     "name": "The Plunge",
     "id": "the-plunge",
     "player": "Gokill",
@@ -9391,6 +9323,24 @@
     "tags": [
       "Level",
       "Verified",
+      "Rated"
+    ]
+  },
+  {
+    "name": "The Golden 1.1x 97%",
+    "id": "the-golden-1-1x-97",
+    "player": "Sid125",
+    "length": 65,
+    "version": 2.1,
+    "video": "https://youtu.be/b6dUBlA38_4?t=63",
+    "showcaseVideo": "https://youtu.be/lbrN3kasxR0",
+    "date": "2021-01-31",
+    "submitter": "Radiator",
+    "levelID": 60978746,
+    "tags": [
+      "Level",
+      "Speedhack",
+      "Progress",
       "Rated"
     ]
   },
@@ -14512,7 +14462,3 @@
     ]
   }
 ]
-
-
-
-
