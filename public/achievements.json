@@ -1036,6 +1036,20 @@
     ]
   },
   {
+    "name": "Blue Avernus 88%",
+    "id": "blue-avernus-88",
+    "player": "KlimK",
+    "length": "65",
+    "version": "2.2",
+    "video": "https://youtu.be/3VxupYycoOI?si=IE7QLt-cSfuxHlBx",
+    "date": "2025-04-26",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Aeternus 72-98%",
     "id": "aeternus-72-98",
     "player": "Trick",
@@ -1363,20 +1377,6 @@
       "Progress",
       "CBF",
       "Rated"
-    ]
-  },
-  {
-    "name": "Blue Avernus 88%",
-    "id": "blue-avernus-88",
-    "player": "KlimK",
-    "length": "65",
-    "version": "2.2",
-    "video": "https://youtu.be/tphKsRwp5OY",
-    "date": "2025-04-26",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -14497,6 +14497,7 @@
     ]
   }
 ]
+
 
 
 
