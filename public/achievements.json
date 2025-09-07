@@ -8151,21 +8151,6 @@
     ]
   },
   {
-    "name": "Silent Oppenheimer 36%",
-    "id": "silent-oppenheimer-36",
-    "player": "Dezstro",
-    "date": "2025-02-19",
-    "length": 40,
-    "version": 2.2,
-    "video": "https://youtu.be/hjXfRN7exhY",
-    "showcaseVideo": "https://youtu.be/Q-IT8xuqU9Q",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Our Special Place",
     "id": "our-special-place",
     "player": "D a G",
@@ -8490,21 +8475,6 @@
     ]
   },
   {
-    "name": "Silent Oppenheimer 32-57%",
-    "id": "silent-oppenheimer-32-57",
-    "player": "Dezstro",
-    "date": "2025-01-14",
-    "length": 30,
-    "version": 2.2,
-    "video": "https://youtu.be/0k6fLHK-Jgw",
-    "showcaseVideo": "https://youtu.be/Q-IT8xuqU9Q",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Bad Tr1p 25-100%",
     "id": "bad-tr1p-25-100",
     "player": "exsii",
@@ -8601,6 +8571,21 @@
       "Verified",
       "2P",
       "Rated"
+    ]
+  },
+  {
+    "name": "Silent Oppenheimer 35%",
+    "id": "silent-oppenheimer-35",
+    "player": "Dezstro",
+    "date": "2025-09-07",
+    "length": 38,
+    "version": 2.2,
+    "video": "https://youtu.be/v_bt9571W5o",
+    "showcaseVideo": "https://youtu.be/Q-IT8xuqU9Q",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -8717,6 +8702,21 @@
     "tags": [
       "Level",
       "Verified"
+    ]
+  },
+  {
+    "name": "Silent Oppenheimer 36%",
+    "id": "silent-oppenheimer-36",
+    "player": "Dezstro",
+    "date": "2025-02-19",
+    "length": 40,
+    "version": 2.2,
+    "video": "https://youtu.be/hjXfRN7exhY",
+    "showcaseVideo": "https://youtu.be/Q-IT8xuqU9Q",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -14497,6 +14497,7 @@
     ]
   }
 ]
+
 
 
 
