@@ -2822,8 +2822,8 @@
     ]
   },
   {
-    "name": "VSC",
-    "id": "vsc",
+    "name": "VSC 2.1",
+    "id": "vsc-2-1",
     "player": "Yossarian",
     "levelID": 60805571,
     "date": "2021-09-21",
@@ -2831,8 +2831,10 @@
     "version": 2.1,
     "submitter": "Anceps",
     "video": "https://youtu.be/ewlMbTR-c_w&t=5s",
+    "showcaseVideo": "https://youtu.be/GbtLlQQezTA",
     "tags": [
       "Challenge",
+      "Outdated Version",
       "Verified"
     ]
   },
@@ -3048,21 +3050,6 @@
     ]
   },
   {
-    "name": "Demotivation Dance",
-    "id": "demotivation-dance",
-    "player": "Cursed",
-    "levelID": 98446627,
-    "date": "2023-05-05",
-    "length": 48,
-    "version": 2.1,
-    "submitter": "Anceps",
-    "video": "https://youtu.be/JlhBdtzL99A",
-    "tags": [
-      "Level",
-      "Verified"
-    ]
-  },
-  {
     "name": "INTERCONNECTED",
     "id": "interconnected",
     "player": "NucGDStuff",
@@ -3077,6 +3064,37 @@
       "Challenge",
       "Verified",
       "CBF"
+    ]
+  },
+  {
+    "name": "VSC",
+    "id": "vsc",
+    "player": "The_Bat0",
+    "levelID": 60805571,
+    "date": "2024-04-09",
+    "length": 16,
+    "version": 2.2,
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/zCygYn5kiTw",
+    "showcaseVideo": "https://youtu.be/GbtLlQQezTA",
+    "tags": [
+      "Challenge",
+      "Verified"
+    ]
+  },
+  {
+    "name": "Demotivation Dance",
+    "id": "demotivation-dance",
+    "player": "Cursed",
+    "levelID": 98446627,
+    "date": "2023-05-05",
+    "length": 48,
+    "version": 2.1,
+    "submitter": "Anceps",
+    "video": "https://youtu.be/JlhBdtzL99A",
+    "tags": [
+      "Level",
+      "Verified"
     ]
   },
   {
@@ -14480,4 +14498,5 @@
     ]
   }
 ]
+
 
