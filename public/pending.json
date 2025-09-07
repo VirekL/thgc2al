@@ -19,63 +19,105 @@
 		]
 	},
 	{
-	"name": "Nullscapes 120hz Mobile 25-60%",
-    "id": "nullscapes-120hz-mobile-25-60",
-    "player": "danielcookie",
-	"levelID": 109780665,
-    "date": "2025-07-22",
-    "length": 35,
+	"name": "Sonic Wave Infinity 480hz Mobile",
+    "id": "sonic-wave-infinity-480hz-mobile",
+    "player": "Rotys",
+    "levelID": 69685815,
+    "date": "2025-08-05",
+    "length": 148,
     "version": 2.2,
-    "submitter": "goofygdplayer",
-    "video": "https://youtu.be/m1oQE9LgKfk",
-    "showcaseVideo": "https://youtu.be/C-KDhWkXlvI",
+    "submitter": "TYATYAPKA",
+    "video": "https://youtu.be/PnwraVsq2nk",
+    "showcaseVideo": "https://youtu.be/QYd2YdKtj8Y",
     "tags": [
       "Level",
-      "Low Hertz",
-	  "Mobile",
-	  "Progress",
+      "Mobile",
 	  "CBF",
       "Rated"
     ]
   },
   {
-	"name": "Nullscapes 120hz Mobile 18-51%",
-    "id": "nullscapes-120hz-mobile-18-51",
-    "player": "danielcookie",
-	"levelID": 109780665,
-    "date": "2025-08-11",
-    "length": 35,
-    "version": 2.2,
-    "submitter": "goofygdplayer",
-    "video": "https://youtu.be/G9NAFdYwjgo",
-    "showcaseVideo": "https://youtu.be/C-KDhWkXlvI",
+	"name": "shimmer 144hz",
+    "id": "shimmer-144hz",
+    "player": "Melted",
+    "length": "76",
+    "version": "2.2",
+    "video": "https://youtu.be/pK8jYmPZkWc",
+    "date": "2025-01-28",
+    "showcaseVideo": "https://www.youtube.com/watch?v=_vuXb2PHiOI",
+    "levelID": "94156085",
+    "submitter": "jak",
     "tags": [
       "Level",
       "Low Hertz",
-	  "Mobile",
-	  "Progress",
-	  "CBF",
       "Rated"
     ]
   },
   {
-	"name": "Nullscapes 120hz Mobile 48-100%",
-    "id": "nullscapes-120hz-mobile-48-100",
-    "player": "danielcookie",
-	"levelID": 109780665,
-    "date": "2025-09-03",
-    "length": 37,
+	"name": "BPATA MPAKA 144hz 76%",
+    "id": "bpata-mpaka-144hz-76",
+    "player": "Melted",
+    "date": "2025-03-01",
+    "length": 80,
     "version": 2.2,
-    "submitter": "danielcookie",
-    "video": "https://youtu.be/nfNdcMQtM58",
-    "showcaseVideo": "https://youtu.be/C-KDhWkXlvI",
+    "levelID": 109947627,
+    "video": "https://youtu.be/EzPTMKfE-gg",
+    "showcaseVideo": "https://youtu.be/SlpYDNeZP8w",
+    "submitter": "jak",
     "tags": [
       "Level",
       "Low Hertz",
-	  "Mobile",
-	  "Progress",
-	  "CBF",
       "Rated"
+    ]
+  },
+  {
+	"name": "Belladonna 144hz 76%",
+    "id": "belladonna-144hz-76",
+    "player": "Melted",
+    "levelID": 94969889,
+    "date": "2025-04-28",
+    "length": 82,
+    "version": 2.2,
+    "submitter": "jak",
+    "video": "https://youtu.be/Q2yWHdet-kY",
+    "showcaseVideo": "https://youtu.be/WxpF_bZxvIQ",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Rated"
+    ]
+  },
+  {
+	"name": "Sinister Silence 144hz 71%",
+    "id": "sinister-silence-144hz-71",
+    "player": "Melted",
+    "levelID": 82249742,
+    "date": "2025-08-09",
+    "length": 375,
+    "version": 2.2,
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/PeWdQGJKX7U",
+    "showcaseVideo": "https://youtu.be/0yfTwDma-j0",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Rated"
+    ]
+  },
+  {
+	"name": "Dark Dimension",
+    "id": "dark-dimension",
+    "player": "The Nixuz GD",
+    "levelID": 125617849,
+    "date": "2025-09-05",
+    "length": 121,
+    "version": 2.2,
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/g2DrT9bHjOI",
+    "showcaseVideo": "https://youtu.be/hHRcf7qQQdI",
+    "tags": [
+      "Level",
+      "Verified"
     ]
   }
 ]
