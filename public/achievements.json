@@ -6917,10 +6917,10 @@
     ]
   },
   {
-    "name": "Tidal Wave 120hz Mobile 72-100%",
-    "id": "tidal-wave-120hz-mobile-72-100",
+    "name": "Tidal Wave 120hz Mobile 23-39%",
+    "id": "tidal-wave-120hz-mobile-23-39",
     "player": "danielcookie",
-    "video": "https://youtu.be/q2kLvzvlESU",
+    "video": "https://youtu.be/ol2t4_rp5sc",
     "showcaseVideo": "https://youtu.be/PFHlkdz9UqM",
     "tags": [
       "Level",
@@ -6932,8 +6932,8 @@
     ],
     "submitter": "Employed Kali",
     "levelID": 86407629,
-    "date": "2024-09-14",
-    "length": 49,
+    "date": "2024-09-09",
+    "length": 27,
     "version": 2.2
   },
   {
@@ -7938,10 +7938,15 @@
     ]
   },
   {
-    "name": "Tidal Wave 120hz Mobile 23-39%",
-    "id": "tidal-wave-120hz-mobile-23-39",
+    "name": "Tidal Wave 120hz Mobile 72-100%",
+    "id": "tidal-wave-120hz-mobile-72-100",
     "player": "danielcookie",
-    "video": "https://youtu.be/ol2t4_rp5sc",
+    "submitter": "Employed Kali",
+    "levelID": 86407629,
+    "date": "2024-09-14",
+    "length": 49,
+    "version": 2.2,
+    "video": "https://youtu.be/q2kLvzvlESU",
     "showcaseVideo": "https://youtu.be/PFHlkdz9UqM",
     "tags": [
       "Level",
@@ -7950,12 +7955,7 @@
       "Progress",
       "CBF",
       "Rated"
-    ],
-    "submitter": "Employed Kali",
-    "levelID": 86407629,
-    "date": "2024-09-09",
-    "length": 27,
-    "version": 2.2
+    ]
   },
   {
     "name": "The Plunge",
@@ -14497,6 +14497,7 @@
     ]
   }
 ]
+
 
 
 
