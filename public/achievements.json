@@ -9635,21 +9635,20 @@
     ]
   },
   {
-    "name": "Spectrum Cyclone 60hz Mobile 91%",
-    "id": "spectrum-cyclone-60hz-mobile-91",
+    "name": "Spectrum Cyclone 60hz Mobile",
+    "id": "spectrum-cyclone-60hz-mobile",
     "player": "Cedric22",
-    "date": "2025-08-18",
-    "length": "110",
+    "date": "2025-09-07",
+    "length": "124",
     "version": "2.2",
     "levelID": "59209010",
-    "video": "https://youtu.be/EY_EMknkrQ0",
+    "video": "https://youtu.be/_FUGfutLgUs",
     "showcaseVideo": "https://youtu.be/wvNwc4NaJaw",
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Low Hertz",
       "Mobile",
-      "Progress",
       "Rated"
     ]
   },
@@ -12871,6 +12870,7 @@
     "version": 2.2,
     "video": "https://youtu.be/2KkDS9yjsgQ",
     "showcaseVideo": "https://youtu.be/dnNt2Ep24tY",
+    "submitter": "kyle1saurus",
     "tags": [
       "Challenge",
       "Verified"
@@ -13258,6 +13258,7 @@
     "length": 187,
     "version": 2.2,
     "video": "https://youtu.be/lI9yDamkxuI",
+    "showcaseVideo": "https://youtu.be/BvgLNIGeZFc",
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
@@ -13772,25 +13773,6 @@
     "tags": [
       "Level",
       "Progress"
-    ]
-  },
-  {
-    "name": "Spectrum Cyclone 60hz Mobile 28-100%",
-    "id": "spectrum-cyclone-60hz-mobile-28-100",
-    "player": "Cedric22",
-    "date": "2025-07-22",
-    "length": "85",
-    "version": "2.2",
-    "levelID": "59209010",
-    "video": "https://youtu.be/QTKtWTc6zJM",
-    "showcaseVideo": "https://youtu.be/wvNwc4NaJaw",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Progress",
-      "Rated"
     ]
   },
   {
@@ -14515,6 +14497,7 @@
     ]
   }
 ]
+
 
 
 
