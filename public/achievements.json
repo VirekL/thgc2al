@@ -1,5 +1,22 @@
 [
   {
+    "name": "FLAMEWALL 24-100%, 24-91%",
+    "id": "flamewall-24-100-24-91",
+    "player": "Cuatrocientos",
+    "video": "https://www.youtube.com/live/iivSAgP6w8M?t=15320",
+    "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
+    "tags": [
+      "Level",
+      "Consistency"
+    ],
+    "date": "2025-09-06",
+    "length": 615,
+    "version": 2.2,
+    "submitter": "TYATYAPKA",
+    "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg",
+    "levelID": null
+  },
+  {
     "name": "GRIEF 56-100%, 67%",
     "id": "grief-56-100-67",
     "player": "Doggie",
@@ -14498,5 +14515,6 @@
     ]
   }
 ]
+
 
 
