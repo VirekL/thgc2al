@@ -6657,6 +6657,23 @@
     ]
   },
   {
+    "name": "Tartarus 148%",
+    "id": "tartarus-148",
+    "player": "Netermind",
+    "levelID": 59075347,
+    "date": "2023-08-03",
+    "length": 112,
+    "version": 2.1,
+    "submitter": "jak",
+    "video": "https://youtu.be/gmwuDw_u80M",
+    "showcaseVideo": "https://youtu.be/lm1498Rfl0s",
+    "tags": [
+      "Level",
+      "Consistency",
+      "Rated"
+    ]
+  },
+  {
     "name": "LIMBO",
     "id": "limbo",
     "player": "BGram",
@@ -8520,6 +8537,24 @@
       "Level",
       "Verified",
       "Tentative"
+    ]
+  },
+  {
+    "name": "Sonic Wave Infinity 480hz Mobile",
+    "id": "sonic-wave-infinity-480hz-mobile",
+    "player": "Rotys",
+    "levelID": 69685815,
+    "date": "2025-08-05",
+    "length": 148,
+    "version": 2.2,
+    "submitter": "TYATYAPKA",
+    "video": "https://youtu.be/PnwraVsq2nk",
+    "showcaseVideo": "https://youtu.be/QYd2YdKtj8Y",
+    "tags": [
+      "Level",
+      "Mobile",
+	    "CBF",
+      "Rated"
     ]
   },
   {
@@ -10531,6 +10566,7 @@
     "length": 3,
     "version": 2.1,
     "video": "https://youtu.be/harwFhCwYlA",
+    "showcaseVideo": "https://youtu.be/PBzUGzfN4wg",
     "submitter": "Arcadie",
     "tags": [
       "Challenge",
@@ -14497,6 +14533,7 @@
     ]
   }
 ]
+
 
 
 
