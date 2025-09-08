@@ -908,7 +908,7 @@
     "date": "2025-06-09",
     "length": 54,
     "version": 2.2,
-    "video": "https://youtu.be/8_TjdTMcr-0",
+    "video": "https://youtu.be/EsaerH6JtFo",
     "showcaseVideo": "https://youtu.be/NDgTSUSu8-4",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/kocmoc-unleashed1.webp",
     "submitter": "TYATYAPKA",
@@ -1293,11 +1293,11 @@
     "player": "microforest",
     "length": 67,
     "version": 2.2,
-    "video": "https://youtu.be/bTb7U5KdLOM?si=_7YjQhxE4tjSGLJ4",
+    "video": "https://youtu.be/bTb7U5KdLOM",
     "showcaseVideo": "https://youtu.be/YQElFvT5ynk",
     "date": "2024-09-08",
     "levelID": 73667628,
-    "submitter": "Insert something here",
+    "submitter": "nota_goodusername",
     "tags": [
       "Level",
       "Verified",
@@ -1463,6 +1463,24 @@
       "Progress",
       "CBF"
     ]
+  },
+  {
+	"name": "Unnerfed Diabolic ClubStep",
+    "id": "unnerfed-diabolic-clubstep",
+    "player": "Sevant",
+    "date": "2025-08-08",
+    "length": 87,
+    "version": 2.2,
+    "levelID": 78149361,
+    "video": "https://youtu.be/WHOfO0OxbvM",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Verified",
+      "CBF",
+      "Tentative"
+    ],
+    "showcaseVideo": "https://youtu.be/AgQeRMZw-t4"
   },
   {
     "name": "Slaughterhouse 25-100%, GRIEF 65-100%",
@@ -2336,8 +2354,8 @@
     ]
   },
   {
-    "name": "FLAMEWALL (Unbuffed) 60%",
-    "id": "flamewall-unbuffed-60",
+    "name": "FLAMEWALL (OneAlphaHelix) 60%",
+    "id": "flamewall-onealphahelix-60",
     "player": "OneAlphaHelix",
     "date": "2023-12-22",
     "length": 253,
@@ -2350,24 +2368,6 @@
       "Level",
       "Progress"
     ]
-  },
-  {
-    "name": "Unnerfed Diabolic ClubStep",
-    "id": "unnerfed-diabolic-clubstep",
-    "player": "Sevant",
-    "date": "2025-08-08",
-    "length": 87,
-    "version": 2.2,
-    "levelID": 78149361,
-    "video": "https://youtu.be/WHOfO0OxbvM",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Verified",
-      "CBF",
-      "Tentative"
-    ],
-    "showcaseVideo": "https://youtu.be/AgQeRMZw-t4"
   },
   {
     "name": "Slaughterhouse (Unfixed)",
@@ -3663,8 +3663,8 @@
     "date": "2025-01-25",
     "length": 17,
     "version": 2.2,
-    "video": "https://youtu.be/sPmCPA8K7nU?si=x9wEyvKKyBm-X6r9",
-    "showcaseVideo": "https://youtu.be/fysCOZy3GkQ?si=vVu0PjuSj5qbgcKZ",
+    "video": "https://youtu.be/sPmCPA8K7nU",
+    "showcaseVideo": "https://youtu.be/fysCOZy3GkQ",
     "submitter": "TYATYAPKA",
     "tags": [
       "Challenge",
@@ -4123,23 +4123,6 @@
       "Progress",
       "Rated"
     ]
-  },
-  {
-    "name": "FLAMEWALL (Agent009) 44%",
-    "id": "flamewall-agent009-44",
-    "player": "Agent009",
-    "date": "2025-08-03",
-    "length": 150,
-    "version": 2.2,
-    "video": "https://youtube.com/shorts/itGXwSh91bI",
-    "showcaseVideo": "https://www.youtube.com/watch?v=c5qQh7h0zYM",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/flamewall-unbuffed2.webp",
-    "tags": [
-      "Level",
-      "Progress",
-      "Tentative"
-    ],
-    "submitter": "kyle1saurus"
   },
   {
     "name": "Flashbang 45-100%",
@@ -4835,23 +4818,6 @@
     "tags": [
       "Level",
       "Progress"
-    ]
-  },
-  {
-    "name": "FLAMEWALL (Agent009) 15-49%",
-    "id": "flamewall-agent009-15-49",
-    "player": "Agent009",
-    "date": "2024-09-17",
-    "length": 140,
-    "version": 2.2,
-    "video": "https://youtu.be/omuHLccWYfE",
-    "showcaseVideo": "https://youtu.be/c5qQh7h0zYM",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/flamewall-unbuffed2.webp",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress",
-      "Tentative"
     ]
   },
   {
@@ -14533,6 +14499,7 @@
     ]
   }
 ]
+
 
 
 
