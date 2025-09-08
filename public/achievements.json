@@ -1465,7 +1465,7 @@
     ]
   },
   {
-	"name": "Unnerfed Diabolic ClubStep",
+    "name": "Unnerfed Diabolic ClubStep",
     "id": "unnerfed-diabolic-clubstep",
     "player": "Sevant",
     "date": "2025-08-08",
@@ -2851,8 +2851,8 @@
     "showcaseVideo": "https://youtu.be/GbtLlQQezTA",
     "tags": [
       "Challenge",
-      "Outdated Version",
-      "Verified"
+      "Verified",
+      "Outdated Version"
     ]
   },
   {
@@ -6368,15 +6368,17 @@
     "id": "snowblind",
     "player": "Hippo",
     "date": "2025-09-02",
-    "length": "73",
-    "version": "2.2",
+    "length": 73,
+    "version": 2.2,
     "video": "https://youtu.be/OanPYvEy4X0",
-	"showcaseVideo": "https://youtu.be/xN7R-z4rMQA",
+    "showcaseVideo": "https://youtu.be/xN7R-z4rMQA",
     "submitter": "goofygdplayer",
     "tags": [
       "Level",
-      "Verified"
-    ]
+      "Verified",
+      "CBF"
+    ],
+    "levelID": 0
   },
   {
     "name": "Avernus pink 41%",
@@ -8631,7 +8633,7 @@
     "showcaseVideo": "https://www.youtube.com/watch?v=ng-VeF1O5aQ",
     "date": "2025-09-03",
     "levelID": 100990392,
-	"submitter": "Excryst",
+    "submitter": "Excryst",
     "tags": [
       "Level",
       "Consistency",
@@ -8704,7 +8706,7 @@
     ]
   },
   {
-	"name": "Sonic Wave Infinity 480hz Mobile",
+    "name": "Sonic Wave Infinity 480hz Mobile",
     "id": "sonic-wave-infinity-480hz-mobile",
     "player": "Rotys",
     "levelID": 69685815,
@@ -8717,7 +8719,7 @@
     "tags": [
       "Level",
       "Mobile",
-	    "CBF",
+      "CBF",
       "Rated"
     ]
   },
@@ -13088,7 +13090,6 @@
       "Progress"
     ]
   },
-  
   {
     "name": "626c7572 51%",
     "id": "626c7572-51",
@@ -13660,6 +13661,23 @@
     ]
   },
   {
+    "name": "The Paroxysm of Rage",
+    "id": "the-paroxysm-of-rage",
+    "player": "turtl",
+    "levelID": 87071894,
+    "date": "2022-12-24",
+    "length": 98,
+    "version": 2.1,
+    "submitter": "Anceps",
+    "video": "https://youtu.be/nq3i1qJQeEk",
+    "showcaseVideo": "https://youtu.be/0ap21i99o7Y",
+    "tags": [
+      "Level",
+      "Verified",
+      "Rated"
+    ]
+  },
+  {
     "name": "Silent Club Plus (Layout) 43-100%",
     "id": "silent-club-plus-layout-43-100",
     "player": "Whizkid05",
@@ -14045,23 +14063,6 @@
     "tags": [
       "Level",
       "Consistency",
-      "Rated"
-    ]
-  },
-  {
-    "name": "The Paroxysm of Rage",
-    "id": "the-paroxysm-of-rage",
-    "player": "turtl",
-    "levelID": 87071894,
-    "date": "2022-12-24",
-    "length": 98,
-    "version": 2.1,
-    "submitter": "Anceps",
-    "video": "https://youtu.be/nq3i1qJQeEk",
-    "showcaseVideo": "https://youtu.be/0ap21i99o7Y",
-    "tags": [
-      "Level",
-      "Verified",
       "Rated"
     ]
   },
@@ -14500,16 +14501,3 @@
     ]
   }
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
