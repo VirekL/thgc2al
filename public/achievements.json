@@ -908,7 +908,7 @@
     "date": "2025-06-09",
     "length": 54,
     "version": 2.2,
-    "video": "https://youtu.be/8_TjdTMcr-0",
+    "video": "https://youtu.be/EsaerH6JtFo",
     "showcaseVideo": "https://youtu.be/NDgTSUSu8-4",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/kocmoc-unleashed1.webp",
     "submitter": "TYATYAPKA",
@@ -1290,14 +1290,14 @@
   {
     "name": "Acheron",
     "id": "acheron",
-    "player": "FinleyGG",
+    "player": "microforest",
     "length": 67,
     "version": 2.2,
-    "video": "https://youtu.be/ytoz_jxB-qc",
+    "video": "https://youtu.be/bTb7U5KdLOM",
     "showcaseVideo": "https://youtu.be/YQElFvT5ynk",
     "date": "2024-09-08",
     "levelID": 73667628,
-    "submitter": "kyle1saurus",
+    "submitter": "nota_goodusername",
     "tags": [
       "Level",
       "Verified",
@@ -1462,6 +1462,24 @@
       "Level",
       "Progress",
       "CBF"
+    ]
+  },
+  {
+	"name": "Unnerfed Diabolic ClubStep",
+    "id": "unnerfed-diabolic-clubstep",
+    "player": "Sevant",
+    "date": "2025-08-08",
+    "length": 87,
+    "version": 2.2,
+    "levelID": 78149361,
+    "video": "https://youtu.be/WHOfO0OxbvM",
+	"showcaseVideo": "https://youtu.be/AgQeRMZw-t4",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Verified",
+      "CBF",
+      "Tentative"
     ]
   },
   {
@@ -2336,8 +2354,8 @@
     ]
   },
   {
-    "name": "FLAMEWALL (Unbuffed) 60%",
-    "id": "flamewall-unbuffed-60",
+    "name": "FLAMEWALL (OneAlphaHelix) 60%",
+    "id": "flamewall-onealphahelix-60",
     "player": "OneAlphaHelix",
     "date": "2023-12-22",
     "length": 253,
@@ -2350,24 +2368,6 @@
       "Level",
       "Progress"
     ]
-  },
-  {
-    "name": "Unnerfed Diabolic ClubStep",
-    "id": "unnerfed-diabolic-clubstep",
-    "player": "Sevant",
-    "date": "2025-08-08",
-    "length": 87,
-    "version": 2.2,
-    "levelID": 78149361,
-    "video": "https://youtu.be/WHOfO0OxbvM",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Verified",
-      "CBF",
-      "Tentative"
-    ],
-    "showcaseVideo": "https://youtu.be/AgQeRMZw-t4"
   },
   {
     "name": "Slaughterhouse (Unfixed)",
@@ -3663,8 +3663,8 @@
     "date": "2025-01-25",
     "length": 17,
     "version": 2.2,
-    "video": "https://youtu.be/1nltyMOpLqI",
-    "showcaseVideo": "https://youtu.be/XO0v_VBieow",
+    "video": "https://youtu.be/sPmCPA8K7nU",
+    "showcaseVideo": "https://youtu.be/fysCOZy3GkQ",
     "submitter": "TYATYAPKA",
     "tags": [
       "Challenge",
@@ -4125,23 +4125,6 @@
     ]
   },
   {
-    "name": "FLAMEWALL (Agent009) 44%",
-    "id": "flamewall-agent009-44",
-    "player": "Agent009",
-    "date": "2025-08-03",
-    "length": 150,
-    "version": 2.2,
-    "video": "https://youtube.com/shorts/itGXwSh91bI",
-    "showcaseVideo": "https://www.youtube.com/watch?v=c5qQh7h0zYM",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/flamewall-unbuffed2.webp",
-    "tags": [
-      "Level",
-      "Progress",
-      "Tentative"
-    ],
-    "submitter": "kyle1saurus"
-  },
-  {
     "name": "Flashbang 45-100%",
     "id": "flashbang-45-100",
     "player": "Noctal",
@@ -4264,7 +4247,7 @@
     "length": 127,
     "version": 2.2,
     "submitter": "TYATYAPKA",
-    "video": "https://youtu.be/QBe5x2o9v2w",
+    "video": "https://youtu.be/Kbb3eXeMHQo",
     "showcaseVideo": "https://youtu.be/DU6mRmGHy74",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/firework1.webp",
     "tags": [
@@ -4835,23 +4818,6 @@
     "tags": [
       "Level",
       "Progress"
-    ]
-  },
-  {
-    "name": "FLAMEWALL (Agent009) 15-49%",
-    "id": "flamewall-agent009-15-49",
-    "player": "Agent009",
-    "date": "2024-09-17",
-    "length": 140,
-    "version": 2.2,
-    "video": "https://youtu.be/omuHLccWYfE",
-    "showcaseVideo": "https://youtu.be/c5qQh7h0zYM",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/flamewall-unbuffed2.webp",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress",
-      "Tentative"
     ]
   },
   {
@@ -6404,8 +6370,8 @@
     "date": "2025-09-02",
     "length": "73",
     "version": "2.2",
-    "showcaseVideo": "https://youtu.be/OanPYvEy4X0",
-    "video": "https://youtu.be/Cb0dFP6BaI0",
+    "showcaseVideo": "https://youtu.be/Cb0dFP6BaI0",
+    "video": "https://youtu.be/xN7R-z4rMQA",
     "submitter": "goofygdplayer",
     "tags": [
       "Level",
@@ -6876,7 +6842,7 @@
     "date": "2025-03-15",
     "length": 74,
     "version": 2.2,
-    "video": "https://youtu.be/kdBOlsg-F9I",
+    "video": "https://youtu.be/VzP1phX8_aA",
     "showcaseVideo": "https://youtu.be/fzvALIu7Qto",
     "submitter": "kyle1saurus",
     "tags": [
@@ -8397,8 +8363,8 @@
     ]
   },
   {
-    "name": "Silent Oppenheimer 57-100%",
-    "id": "silent-oppenheimer-57-100",
+    "name": "Silent Oppenheimer (Old) 57-100%",
+    "id": "silent-oppenheimer-old-57-100",
     "player": "Dezstro",
     "date": "2025-02-02",
     "length": 32,
@@ -8540,24 +8506,6 @@
     ]
   },
   {
-    "name": "Sonic Wave Infinity 480hz Mobile",
-    "id": "sonic-wave-infinity-480hz-mobile",
-    "player": "Rotys",
-    "levelID": 69685815,
-    "date": "2025-08-05",
-    "length": 148,
-    "version": 2.2,
-    "submitter": "TYATYAPKA",
-    "video": "https://youtu.be/PnwraVsq2nk",
-    "showcaseVideo": "https://youtu.be/QYd2YdKtj8Y",
-    "tags": [
-      "Level",
-      "Mobile",
-	    "CBF",
-      "Rated"
-    ]
-  },
-  {
     "name": "Sonic Wave 60hz Mobile",
     "id": "sonic-wave-60hz-mobile",
     "player": "Biprex",
@@ -8683,6 +8631,7 @@
     "showcaseVideo": "https://www.youtube.com/watch?v=ng-VeF1O5aQ",
     "date": "2025-09-03",
     "levelID": 100990392,
+	"submitter": "Excryst",
     "tags": [
       "Level",
       "Consistency",
@@ -8740,8 +8689,8 @@
     ]
   },
   {
-    "name": "Silent Oppenheimer 36%",
-    "id": "silent-oppenheimer-36",
+    "name": "Silent Oppenheimer (Old) 36%",
+    "id": "silent-oppenheimer-old-36",
     "player": "Dezstro",
     "date": "2025-02-19",
     "length": 40,
@@ -8752,6 +8701,24 @@
     "tags": [
       "Level",
       "Progress"
+    ]
+  },
+  {
+	"name": "Sonic Wave Infinity 480hz Mobile",
+    "id": "sonic-wave-infinity-480hz-mobile",
+    "player": "Rotys",
+    "levelID": 69685815,
+    "date": "2025-08-05",
+    "length": 148,
+    "version": 2.2,
+    "submitter": "TYATYAPKA",
+    "video": "https://youtu.be/PnwraVsq2nk",
+    "showcaseVideo": "https://youtu.be/QYd2YdKtj8Y",
+    "tags": [
+      "Level",
+      "Mobile",
+	  "CBF",
+      "Rated"
     ]
   },
   {
@@ -9859,8 +9826,8 @@
     ]
   },
   {
-    "name": "Unnerfed BoJ 69%, 100%",
-    "id": "unnerfed-boj-69-100",
+    "name": "Unnerfed BoJ 67%, 100%",
+    "id": "unnerfed-boj-67-100",
     "player": "MostDefinitelyAlbert",
     "levelID": 35497549,
     "date": "2024-03-07",
@@ -14533,6 +14500,7 @@
     ]
   }
 ]
+
 
 
 
