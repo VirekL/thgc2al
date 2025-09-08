@@ -6370,8 +6370,8 @@
     "date": "2025-09-02",
     "length": "73",
     "version": "2.2",
-    "showcaseVideo": "https://www.youtube.com/watch?v=xN7R-z4rMQA&ab_channel=Neiro",
     "video": "https://youtu.be/OanPYvEy4X0",
+	"showcaseVideo": "https://youtu.be/xN7R-z4rMQA",
     "submitter": "goofygdplayer",
     "tags": [
       "Level",
@@ -6842,8 +6842,8 @@
     "date": "2025-03-15",
     "length": 74,
     "version": 2.2,
-    "video": "https://youtu.be/VzP1phX8_aA?si=89PDLphQKfWGeD9_",
-    "showcaseVideo": "https://www.youtube.com/watch?v=qFyLKase6GI&ab_channel=OsidGD",
+    "video": "https://youtu.be/VzP1phX8_aA",
+    "showcaseVideo": "https://youtu.be/qFyLKase6GI",
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
@@ -8363,8 +8363,8 @@
     ]
   },
   {
-    "name": "Silent Oppenheimer 57-100%",
-    "id": "silent-oppenheimer-57-100",
+    "name": "Silent Oppenheimer (Old) 57-100%",
+    "id": "silent-oppenheimer-old-57-100",
     "player": "Dezstro",
     "date": "2025-02-02",
     "length": 32,
@@ -8506,24 +8506,6 @@
     ]
   },
   {
-    "name": "Sonic Wave Infinity 480hz Mobile",
-    "id": "sonic-wave-infinity-480hz-mobile",
-    "player": "Rotys",
-    "levelID": 69685815,
-    "date": "2025-08-05",
-    "length": 148,
-    "version": 2.2,
-    "submitter": "TYATYAPKA",
-    "video": "https://youtu.be/PnwraVsq2nk",
-    "showcaseVideo": "https://youtu.be/QYd2YdKtj8Y",
-    "tags": [
-      "Level",
-      "Mobile",
-	    "CBF",
-      "Rated"
-    ]
-  },
-  {
     "name": "Sonic Wave 60hz Mobile",
     "id": "sonic-wave-60hz-mobile",
     "player": "Biprex",
@@ -8649,6 +8631,7 @@
     "showcaseVideo": "https://www.youtube.com/watch?v=ng-VeF1O5aQ",
     "date": "2025-09-03",
     "levelID": 100990392,
+	"submitter": "Excryst",
     "tags": [
       "Level",
       "Consistency",
@@ -8706,8 +8689,8 @@
     ]
   },
   {
-    "name": "Silent Oppenheimer 36%",
-    "id": "silent-oppenheimer-36",
+    "name": "Silent Oppenheimer (Old) 36%",
+    "id": "silent-oppenheimer-old-36",
     "player": "Dezstro",
     "date": "2025-02-19",
     "length": 40,
@@ -8718,6 +8701,24 @@
     "tags": [
       "Level",
       "Progress"
+    ]
+  },
+  {
+	"name": "Sonic Wave Infinity 480hz Mobile",
+    "id": "sonic-wave-infinity-480hz-mobile",
+    "player": "Rotys",
+    "levelID": 69685815,
+    "date": "2025-08-05",
+    "length": 148,
+    "version": 2.2,
+    "submitter": "TYATYAPKA",
+    "video": "https://youtu.be/PnwraVsq2nk",
+    "showcaseVideo": "https://youtu.be/QYd2YdKtj8Y",
+    "tags": [
+      "Level",
+      "Mobile",
+	    "CBF",
+      "Rated"
     ]
   },
   {
@@ -9825,8 +9826,8 @@
     ]
   },
   {
-    "name": "Unnerfed BoJ 69%, 100%",
-    "id": "unnerfed-boj-69-100",
+    "name": "Unnerfed BoJ 67%, 100%",
+    "id": "unnerfed-boj-67-100",
     "player": "MostDefinitelyAlbert",
     "levelID": 35497549,
     "date": "2024-03-07",
@@ -14499,6 +14500,7 @@
     ]
   }
 ]
+
 
 
 
