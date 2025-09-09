@@ -9979,13 +9979,14 @@
   {
     "name": "Tremor 55%",
     "id": "tremor-55",
-    "player": "VoltrixAce",
-    "date": "2024-07-01",
+    "player": "Cat enthusiast",
+    "levelID": 79823052,
+    "date": "2025-06-07",
     "length": 10,
     "version": 2.2,
-    "video": "https://youtu.be/C6K8IVpWvTY",
+    "video": "https://youtu.be/HH5i952FfjU",
     "showcaseVideo": "https://youtu.be/9xNMF78VvOA",
-    "submitter": "sydno",
+    "submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Progress"
@@ -10499,6 +10500,7 @@
     "name": "Tremor 50-100%",
     "id": "tremor-50-100",
     "player": "VoltrixAce",
+    "levelID": 79823052,
     "date": "2024-07-01",
     "length": 10,
     "version": 2.2,
@@ -10767,8 +10769,8 @@
     "date": "2025-08-29",
     "length": "137",
     "version": "2.2",
-    "video": "https://youtu.be/JFqLZfl73q4?si=pBtG0BP5ChFptiyW",
-    "showcaseVideo": "https://youtu.be/gVpqeqy6frU?si=2J4Tzdsky8fAXRcx",
+    "video": "https://youtu.be/JFqLZfl73q4?t=145",
+    "showcaseVideo": "https://youtu.be/gVpqeqy6frU",
     "submitter": "goofygdplayer",
     "tags": [
       "Level",
@@ -10783,8 +10785,8 @@
     "date": "2025-08-29",
     "length": "132",
     "version": "2.2",
-    "video": "https://youtu.be/JFqLZfl73q4?si=pBtG0BP5ChFptiyW",
-    "showcaseVideo": "https://youtu.be/gVpqeqy6frU?si=2J4Tzdsky8fAXRcx",
+    "video": "https://youtu.be/JFqLZfl73q4",
+    "showcaseVideo": "https://youtu.be/gVpqeqy6frU",
     "submitter": "goofygdplayer",
     "tags": [
       "Level",
@@ -10882,6 +10884,7 @@
     "length": 97,
     "version": 2.2,
     "video": "https://youtu.be/bnIxnsk2Rdw",
+    "showcaseVideo": "https://youtu.be/sMskU1x-0r8",
     "date": "2025-07-06",
     "submitter": "goofygdplayer",
     "levelID": 122394881,
@@ -10981,6 +10984,7 @@
     "version": 2.1,
     "submitter": "Anceps",
     "video": "https://youtu.be/5D2gTvCJwAk",
+    "showcaseVideo": "https://youtu.be/ZOAI0p5uAXk",
     "tags": [
       "Challenge",
       "Verified"
@@ -11043,7 +11047,7 @@
     "length": 68,
     "version": 2.1,
     "submitter": "Anceps",
-    "video": "https://youtu.be/ZcmDAm50BB0&t=4s",
+    "video": "https://youtu.be/ZcmDAm50BB0",
     "showcaseVideo": "https://youtu.be/QNs14m3HxJE",
     "tags": [
       "Level",
@@ -11390,6 +11394,7 @@
     "levelID": 99703915,
     "video": "https://youtu.be/R_-chk3SRFI",
     "showcaseVideo": "https://youtu.be/TroRY2oC4KM",
+    "submitter": "TYATYAPKA",
     "tags": [
       "Level",
       "Verified"
@@ -11617,7 +11622,7 @@
     "version": 2.1,
     "submitter": "Anceps",
     "video": "https://youtu.be/U4fEgFtEnfI",
-    "showcaseVideo": "https://youtu.be/DJyoNj1LVqQ?t=3",
+    "showcaseVideo": "https://youtu.be/DJyoNj1LVqQ",
     "tags": [
       "Level",
       "Verified",
@@ -11786,13 +11791,13 @@
     "length": 300,
     "version": 2.2,
     "video": "https://youtu.be/DWsUvcu-3Lg",
+    "showcaseVideo": "https://youtu.be/hbsoTBl84xE",
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Verified",
       "Tentative"
-    ],
-    "showcaseVideo": "https://youtu.be/hbsoTBl84xE"
+    ]
   },
   {
     "name": "ORDINARY 120hz Mobile 49%",
@@ -11893,12 +11898,12 @@
     "length": 4,
     "version": 2.2,
     "video": "https://youtu.be/Br6GLrBfZ8I",
+    "showcaseVideo": "https://www.youtube.com/watch?v=BkHzOE376Ik",
     "submitter": "MoonFrost",
     "tags": [
       "Challenge",
       "Verified"
-    ],
-    "showcaseVideo": "https://www.youtube.com/watch?v=BkHzOE376Ik"
+    ]
   },
   {
     "name": "Buffed Misanthrope 34-70%",
@@ -11979,12 +11984,12 @@
     "length": 12,
     "version": 2.2,
     "video": "https://youtu.be/8f8sjWX4Pjs",
+    "showcaseVideo": "https://youtu.be/aWdu1hYO-M4",
     "submitter": "kyle1saurus",
     "tags": [
       "Challenge",
       "Verified"
-    ],
-    "showcaseVideo": "https://youtu.be/aWdu1hYO-M4"
+    ]
   },
   {
     "name": "Eudemonic 62-100%",
@@ -12012,13 +12017,13 @@
     "version": 2.2,
     "levelID": 116511814,
     "video": "https://youtu.be/RNdMztbZrTk",
+    "showcaseVideo": "https://www.youtube.com/watch?v=p2pM7qzVvf0",
     "submitter": "kyle1saurus",
     "tags": [
       "Challenge",
       "Verified",
       "CBF"
-    ],
-    "showcaseVideo": "https://www.youtube.com/watch?v=p2pM7qzVvf0"
+    ]
   },
   {
     "name": "Henken",
@@ -12580,7 +12585,7 @@
     "date": "2024-12-22",
     "length": 45,
     "version": 2.2,
-    "video": "https://x.com/enzollz/status/1871048943343190040",
+    "video": "https://youtu.be/Vb7eADX5sAU",
     "showcaseVideo": "https://youtu.be/mD8bMlCV8Jc",
     "submitter": "kyle1saurus",
     "tags": [
@@ -12635,6 +12640,7 @@
     "version": 2.1,
     "video": "https://youtu.be/j2RIYF5ekuk",
     "showcaseVideo": "https://youtu.be/uOv_3JRXMRg",
+    "submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Low Hertz",
@@ -12992,6 +12998,7 @@
     "version": 2.1,
     "submitter": "Alistef",
     "video": "https://youtu.be/M469XJn9Vds",
+    "showcaseVideo": "https://youtu.be/NOHUj7QnN2A",
     "tags": [
       "Challenge",
       "Verified"
@@ -13166,11 +13173,12 @@
     "length": 13,
     "version": 2.1,
     "video": "https://youtu.be/y4kHcfFSjpE",
+    "showcaseVideo": "https://www.youtube.com/watch?v=as-foZIIKDE",
+    "submitter": "kyle1saurus",
     "tags": [
       "Challenge",
       "Verified"
-    ],
-    "showcaseVideo": "https://www.youtube.com/watch?v=as-foZIIKDE"
+    ]
   },
   {
     "name": "C Sharp",
@@ -13312,7 +13320,7 @@
     "version": 2.1,
     "video": "https://youtu.be/2AGiKiqpYO0",
     "showcaseVideo": "https://youtu.be/ipZl9Kvckc4",
-    "submitter:": "kittycatiscute",
+    "submitter:": "kyle1saurus",
     "tags": [
       "Level",
       "Low Hertz",
@@ -13489,13 +13497,13 @@
     "length": 24,
     "version": 2.1,
     "video": "https://youtu.be/g0Ca6bmIfDQ",
+    "levelID": "120453251",
+    "showcaseVideo": "https://youtu.be/1g-QVICgBzM",
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": "120453251",
-    "showcaseVideo": "https://youtu.be/1g-QVICgBzM"
+    ]
   },
   {
     "name": "Critical Heat",
@@ -13556,6 +13564,7 @@
     "version": 2.1,
     "video": "https://youtu.be/GM0GFMkWJZ8",
     "showcaseVideo": "https://www.youtube.com/watch?v=OVCv_K4fm0g",
+    "submitter": "kyle1saurus",
     "tags": [
       "Challenge",
       "Verified"
@@ -13571,6 +13580,7 @@
     "version": 2.1,
     "video": "https://youtu.be/p8f3g_oYtNQ",
     "showcaseVideo": "https://youtu.be/U6-UrdnGLoY",
+    "submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Low Hertz",
@@ -13856,6 +13866,7 @@
     "showcaseVideo": "https://www.youtube.com/watch?v=ng-VeF1O5aQ",
     "date": "2024-02-17",
     "levelID": 100990392,
+    "submitter": "Anceps",
     "tags": [
       "Level",
       "Verified",
@@ -13872,6 +13883,7 @@
     "version": 2.2,
     "video": "https://youtu.be/UUyzGg_4mqs",
     "showcaseVideo": "https://youtu.be/2q4f6CWXwwg",
+    "submitter": "Anceps",
     "tags": [
       "Level",
       "Verified",
@@ -13993,6 +14005,7 @@
     "date": "2023-02-19",
     "showcaseVideo": "https://youtu.be/rT3W0skPTZM",
     "levelID": "77681476",
+    "submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Low Hertz",
@@ -14090,6 +14103,7 @@
     "date": "2025-05-26",
     "showcaseVideo": "https://www.youtube.com/watch?v=gtOsT67txFs",
     "levelID": "79997992",
+    "submitter": "goofygdplayer",
     "tags": [
       "Level",
       "Low Hertz",
@@ -14141,6 +14155,7 @@
     "levelID": "38655495",
     "video": "https://youtu.be/8wq3lNvpxT8",
     "showcaseVideo": "https://youtu.be/Ccu1Td-q2Nk",
+    "submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Low Hertz",
@@ -14174,6 +14189,7 @@
     "levelID": "73667628",
     "video": "https://youtu.be/dKQvOX0S9Tg",
     "showcaseVideo": "https://youtu.be/YQElFvT5ynk",
+    "player": "TYATYAPKA",
     "tags": [
       "Level",
       "Low Hertz",
@@ -14223,8 +14239,8 @@
     "date": "2025-07-31",
     "length": 64,
     "version": 2.2,
-    "video": "https://www.youtube.com/watch?v=WiFwAU8pgr4&source_ve_path=MTc4NDI0",
-    "showcaseVideo": "https://youtu.be/MZx1i98tPuQ?si=cDhV3_xAOtD6bUEh",
+    "video": "https://youtu.be/VKZi4ZU1PY8",
+    "showcaseVideo": "https://youtu.be/MZx1i98tPuQ",
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
@@ -14379,6 +14395,7 @@
     "levelID": "80856489",
     "video": "https://youtu.be/ylxdbNcx85w",
     "showcaseVideo": "https://youtu.be/qPwbXQvqX8E",
+    "submitter": "tricklength",
     "tags": [
       "Level",
       "Noclip",
@@ -14500,4 +14517,5 @@
       "Rated"
     ]
   }
+
 ]
