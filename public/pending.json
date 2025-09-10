@@ -19,20 +19,36 @@
 		]
 	},
 	{
-	"name": "Sonic Wave Infinity 480hz Mobile",
-    "id": "sonic-wave-infinity-480hz-mobile",
-    "player": "Rotys",
-    "levelID": 69685815,
-    "date": "2025-08-05",
-    "length": 148,
+	"name": "TrakineS",
+    "id": "trakines",
+    "player": "mariner",
+    "levelID": 125788781,
+    "date": "2025-09-09",
+    "length": 64,
     "version": 2.2,
-    "submitter": "TYATYAPKA",
-    "video": "https://youtu.be/PnwraVsq2nk",
-    "showcaseVideo": "https://youtu.be/QYd2YdKtj8Y",
+    "submitter": "Exile_Shade",
+    "video": "https://youtu.be/oKuoI-_JzKU",
+    "showcaseVideo": "https://youtu.be/0H-a8yQzi5A",
     "tags": [
       "Level",
-      "Mobile",
-	  "CBF",
+      "Verified"
+    ]
+  },
+  {
+	"name": "Acheron 1.15x 20 deaths, 98.58 accuracy",
+    "id": "achero-1-15x-20-deaths-98-58-accuracy",
+    "player": "Doggie",
+    "length": 67,
+    "version": 2.2,
+    "video": "https://www.youtube.com/live/dAQsa9YeprA?t=5585s",
+    "showcaseVideo": "https://youtu.be/YQElFvT5ynk",
+    "date": "2025-09-09",
+    "levelID": 73667628,
+    "submitter": "Excryst",
+    "tags": [
+      "Level",
+      "Noclip",
+	  "Speedhack",
       "Rated"
     ]
   },
