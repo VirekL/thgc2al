@@ -10545,6 +10545,23 @@
     ]
   },
   {
+    "name": "IRIS 82%, 100%",
+    "id": "iris-82-100",
+    "player": "Timy",
+    "levelID": 123853954,
+    "date": "2025-09-09",
+    "length": 115,
+    "version": 2.2,
+    "video": "https://youtu.be/5OSx-9IeQkk",
+    "showcaseVideo": "https://youtu.be/MZx1i98tPuQ",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Verified",
+      "Rated"
+    ]
+  },
+  {
     "name": "Delta",
     "id": "delta",
     "player": "Doggie",
@@ -14257,7 +14274,7 @@
     "date": "2025-07-31",
     "length": 64,
     "version": 2.2,
-    "video": "https://youtu.be/VKZi4ZU1PY8",
+    "video": "https://youtu.be/WiFwAU8pgr4",
     "showcaseVideo": "https://youtu.be/MZx1i98tPuQ",
     "submitter": "kyle1saurus",
     "tags": [
@@ -14537,5 +14554,6 @@
   }
 
 ]
+
 
 
