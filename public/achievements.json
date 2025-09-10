@@ -986,6 +986,21 @@
     ]
   },
   {
+    "name": "Blue Avernus",
+    "id": "blue-avernus",
+    "player": "KlimK",
+    "levelID": 125795798,
+    "length": "65",
+    "version": "2.2",
+    "video": "https://youtu.be/GcJLo5sz_EM",
+    "date": "2025-09-10",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Verified"
+    ]
+  },
+  {
     "name": "Avernus",
     "id": "avernus",
     "player": "Zoink",
@@ -1033,20 +1048,6 @@
       "Level",
       "Consistency",
       "Rated"
-    ]
-  },
-  {
-    "name": "Blue Avernus 88%",
-    "id": "blue-avernus-88",
-    "player": "KlimK",
-    "length": "65",
-    "version": "2.2",
-    "video": "https://youtu.be/3VxupYycoOI?si=IE7QLt-cSfuxHlBx",
-    "date": "2025-04-26",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -7612,6 +7613,23 @@
     ]
   },
   {
+    "name": "Collapse",
+    "id": "collapse",
+    "player": "Nexel",
+    "levelID": 113256247,
+    "date": "2024-12-20",
+    "length": 123,
+    "version": 2.2,
+    "submitter": "Anceps",
+    "video": "https://youtu.be/RCFpXyf6bn0",
+    "showcaseVideo": "https://youtu.be/Hu3ZLVw7xKo",
+    "tags": [
+      "Level",
+      "Verified",
+      "Rated"
+    ]
+  },
+  {
     "name": "lure in ohio",
     "id": "lure-in-ohio",
     "player": "aytch0008",
@@ -7836,23 +7854,6 @@
       "Verified"
     ],
     "levelID": null
-  },
-  {
-    "name": "Collapse",
-    "id": "collapse",
-    "player": "Nexel",
-    "levelID": 113256247,
-    "date": "2024-12-20",
-    "length": 123,
-    "version": 2.2,
-    "submitter": "Anceps",
-    "video": "https://youtu.be/RCFpXyf6bn0",
-    "showcaseVideo": "https://youtu.be/Hu3ZLVw7xKo",
-    "tags": [
-      "Level",
-      "Verified",
-      "Rated"
-    ]
   },
   {
     "name": "shimmer 144hz Mobile",
@@ -13181,6 +13182,24 @@
     ]
   },
   {
+    "name": "andromeda 480hz Mobile 65-100%",
+    "id": "andromeda-480hz-mobile-65-100",
+    "player": "VERTOP",
+    "length": 28,
+    "version": 2.2,
+    "video": "https://youtu.be/Pau8CWTltDk",
+    "showcaseVideo": "https://youtu.be/xqQNv-Puq44",
+    "date": "2025-08-01",
+    "submitter": "Excryst",
+    "levelID": 114283297,
+    "tags": [
+      "Level",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
+  },
+  {
     "name": "C Sharp",
     "id": "c-sharp",
     "player": "ALiveWizard",
@@ -14519,3 +14538,4 @@
   }
 
 ]
+
