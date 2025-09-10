@@ -1154,15 +1154,15 @@
     ]
   },
   {
-    "name": "Sweeping Demon 2 (Taiago) 39-87%",
-    "id": "sweeping-demon-2-taiago-39-87",
+    "name": "Sweeping Demon 2 (Taiago) 39-88%",
+    "id": "sweeping-demon-2-taiago-39-88",
     "player": "Taiago",
-    "date": "2025-08-26",
+    "date": "2025-09-09",
     "length": "31",
     "version": "2.2",
-    "video": "https://youtu.be/3kVMCvgaql8?si=zZeOJ7ixiuQSVXjV",
+    "video": "https://www.youtube.com/live/xybJnkcmwjg?t=1749",
     "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
-    "submitter": "TYATYAPKA",
+    "submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Progress"
@@ -1227,7 +1227,7 @@
     "player": "paqoe",
     "length": 87,
     "version": 2.1,
-    "video": "https://youtu.be/GR4OMkS3SN8&t=4s",
+    "video": "https://youtu.be/GR4OMkS3SN8",
     "showcaseVideo": "https://youtu.be/Oos0Ptzqq-E",
     "date": "2022-07-17",
     "submitter": "Anceps",
@@ -1235,7 +1235,6 @@
     "tags": [
       "Level",
       "Verified",
-      "Rated",
       "Outdated Version"
     ]
   },
@@ -1264,7 +1263,7 @@
     "version": 2.1,
     "submitter": "johnlikesdiamond",
     "video": "https://youtu.be/LpS4JREhW98",
-    "showcaseVideo": "https://youtu.be/SgWZkTPHNaM?t=113",
+    "showcaseVideo": "https://youtu.be/hpy-lGthQ2Y",
     "tags": [
       "Level",
       "Consistency",
@@ -14538,4 +14537,5 @@
   }
 
 ]
+
 
