@@ -986,6 +986,25 @@
     ]
   },
   {
+    "name": "Nullscapes 120hz Mobile 53%",
+    "id": "nullscapes-120hz-mobile-53",
+    "player": "danielcookie",
+    "levelID": 109780665,
+    "date": "2025-09-10",
+    "length": 48,
+    "version": 2.2,
+    "submitter": "danielcookie",
+    "video": "https://youtu.be/J6dZO-mhw_Y",
+    "showcaseVideo": "https://youtu.be/C-KDhWkXlvI",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
+  },
+  {
     "name": "Blue Avernus",
     "id": "blue-avernus",
     "player": "KlimK",
@@ -1301,26 +1320,6 @@
     "tags": [
       "Level",
       "Verified",
-      "Rated"
-    ]
-  },
-  {
-    "name": "Nullscapes 120hz Mobile 42%",
-    "id": "nullscapes-120hz-mobile-42",
-    "player": "danielcookie",
-    "levelID": 109780665,
-    "date": "2025-08-28",
-    "length": 40,
-    "version": 2.2,
-    "submitter": "goofygdplayer",
-    "video": "https://youtu.be/kwb4OHsWGmw",
-    "showcaseVideo": "https://youtu.be/C-KDhWkXlvI",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Progress",
-      "CBF",
       "Rated"
     ]
   },
@@ -2517,26 +2516,6 @@
     "showcaseVideo": "https://www.youtube.com/watch?v=l6poOVWISJA"
   },
   {
-    "name": "Nullscapes 120hz Mobile 18-51%",
-    "id": "nullscapes-120hz-mobile-18-51",
-    "player": "danielcookie",
-    "levelID": 109780665,
-    "date": "2025-08-11",
-    "length": 35,
-    "version": 2.2,
-    "submitter": "goofygdplayer",
-    "video": "https://youtu.be/G9NAFdYwjgo",
-    "showcaseVideo": "https://youtu.be/C-KDhWkXlvI",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Progress",
-      "CBF",
-      "Rated"
-    ]
-  },
-  {
     "name": "Lithium 60hz Mobile 87%",
     "id": "lithium-60hz-mobile-87",
     "player": "Archermence",
@@ -3109,6 +3088,7 @@
     "version": 2.1,
     "submitter": "Anceps",
     "video": "https://youtu.be/JlhBdtzL99A",
+    "showcaseVideo": "https://youtu.be/DUAjNqop_p8",
     "tags": [
       "Level",
       "Verified"
@@ -3517,6 +3497,7 @@
     "date": "2024-08-18",
     "length": 24,
     "version": 2.2,
+    "submitter": "kyle1saurus",
     "video": "https://youtu.be/653-Er6VWcw",
     "showcaseVideo": "https://youtu.be/NxTslIsVMeI",
     "tags": [
@@ -4096,7 +4077,7 @@
     "date": "2022-03-14",
     "length": 194,
     "version": 2.1,
-    "video": " https://youtu.be/j8dy8g4rk-M",
+    "video": "https://youtu.be/j8dy8g4rk-M",
     "showcaseVideo": "https://youtu.be/9ZX_EHHpf04",
     "submitter": "kyle1saurus",
     "tags": [
@@ -14554,6 +14535,7 @@
   }
 
 ]
+
 
 
 
