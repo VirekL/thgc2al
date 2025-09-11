@@ -1008,6 +1008,23 @@
     ]
   },
   {
+    "name": "Heliopolis 24%",
+    "id": "heliopolis-24",
+    "player": "Garbag",
+    "date": "2025-09-12",
+    "length": 34,
+    "version": 2.2,
+    "video": "https://youtu.be/qp1CaQdZHAo?si=Ofj0S89KCqcNUeDj",
+    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
+    "submitter": "Exiled_shade",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "levelID": null
+  },
+  {
     "name": "Blue Avernus",
     "id": "blue-avernus",
     "player": "KlimK",
@@ -1291,23 +1308,6 @@
       "Consistency",
       "Rated"
     ]
-  },
-  {
-    "name": "Heliopolis 22%",
-    "id": "heliopolis-22",
-    "player": "Garbag",
-    "date": "2025-09-07",
-    "length": 36,
-    "version": 2.2,
-    "video": "https://youtu.be/CSgBQm2GFHU",
-    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
-    ],
-    "levelID": null
   },
   {
     "name": "Acheron",
@@ -14551,3 +14551,4 @@
     ]
   }
 ]
+
