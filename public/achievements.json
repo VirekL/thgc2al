@@ -669,21 +669,6 @@
     ]
   },
   {
-    "name": "Sweeping Demon 2 (Taiago) 39-100%",
-    "id": "sweeping-demon-2-taiago-39-100",
-    "player": "Taiago",
-    "date": "2025-09-11",
-    "length": "40",
-    "version": "2.2",
-    "video": "https://youtu.be/0w7mj16QAGg?si=DuD3i9Sjc9OGHUbz",
-    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
-    "submitter": "exiled_shade",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Acheron (Riot) 17-92%",
     "id": "acheron-riot-17-92",
     "player": "LOL123",
@@ -1173,6 +1158,36 @@
       "Level",
       "Low Hertz",
       "Rated"
+    ]
+  },
+  {
+    "name": "Sweeping Demon 2 (Taiago) 49-100%",
+    "id": "sweeping-demon-2-taiago-49-100",
+    "player": "Taiago",
+    "date": "2025-08-25",
+    "length": "33",
+    "version": "2.2",
+    "video": "https://youtu.be/-cj6FSvkf4Y",
+    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
+    "submitter": "exiled_shade",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
+    "name": "Sweeping Demon 2 (Taiago) 39-88%",
+    "id": "sweeping-demon-2-taiago-39-88",
+    "player": "Taiago",
+    "date": "2025-09-09",
+    "length": "31",
+    "version": "2.2",
+    "video": "https://www.youtube.com/live/xybJnkcmwjg?t=1749",
+    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -14536,4 +14551,3 @@
     ]
   }
 ]
-
