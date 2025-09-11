@@ -76,7 +76,7 @@
     "length": 65,
     "version": 2.2,
     "video": "https://youtu.be/mnaIfSOxurY",
-    "showcaseVideo": "https://youtu.be/F05aMR0F6YM",
+    "showcaseVideo": "https://www.youtube.com/watch?v=1cgpHlI3FcI",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/thinking-space-ii1.webp",
     "date": "2025-02-25",
     "tags": [
@@ -84,7 +84,7 @@
       "Progress",
       "Tentative"
     ],
-    "levelID": null,
+    "levelID": 0,
     "submitter": "Radiator"
   },
   {
@@ -303,7 +303,7 @@
     "length": 42,
     "version": 2.2,
     "levelID": 125131485,
-    "video": "https://youtu.be/92Msl_EI-5E",
+    "video": "https://youtu.be/WBBPfgnuGaw",
     "showcaseVideo": "https://youtu.be/TPnljyNS7Dg",
     "submitter": "nensa",
     "tags": [
@@ -440,13 +440,14 @@
     "length": 45,
     "version": 2.2,
     "video": "https://www.youtube.com/live/6a1C9HJVA2w?t=6960",
-    "showcaseVideo": "https://youtu.be/F05aMR0F6YM",
+    "showcaseVideo": "https://www.youtube.com/watch?v=1cgpHlI3FcI",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/thinking-space-ii3.webp",
     "submitter": "jak",
     "tags": [
       "Level",
       "Progress"
-    ]
+    ],
+    "levelID": 0
   },
   {
     "name": "KOCMOC UNLEASHED 14-78%",
