@@ -11816,6 +11816,23 @@
     ]
   },
   {
+    "name": "Terminal Rampancy",
+    "id": "terminal-rampancy",
+    "player": "Bigthunder556",
+    "levelID": 90057148,
+    "date": "2023-04-14",
+    "length": 99,
+    "version": 2.1,
+    "submitter": "Anceps",
+    "video": "https://youtu.be/29hRhhqQTLc",
+    "showcaseVideo": "https://youtu.be/H-9x_xi9UeY",
+    "tags": [
+      "Level",
+      "Verified",
+      "Rated"
+    ]
+  },
+  {
     "name": "ORDINARY 120hz Mobile 49%",
     "id": "ordinary-120hz-mobile-49",
     "player": "Mobileplayer0623",
@@ -13048,23 +13065,6 @@
     "tags": [
       "Challenge",
       "Progress"
-    ]
-  },
-  {
-    "name": "Terminal Rampancy",
-    "id": "terminal-rampancy",
-    "player": "Bigthunder556",
-    "levelID": 90057148,
-    "date": "2023-04-14",
-    "length": 99,
-    "version": 2.1,
-    "submitter": "Anceps",
-    "video": "https://youtu.be/29hRhhqQTLc",
-    "showcaseVideo": "https://youtu.be/H-9x_xi9UeY",
-    "tags": [
-      "Level",
-      "Verified",
-      "Rated"
     ]
   },
   {
@@ -14551,4 +14551,3 @@
     ]
   }
 ]
-
