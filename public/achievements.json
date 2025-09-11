@@ -5371,6 +5371,22 @@
     ]
   },
   {
+    "name": "Tremor 75%",
+    "id": "tremor-75",
+    "player": "VoltrixAce",
+    "levelID": 79823052,
+    "date": "2025-06-27",
+    "length": 15,
+    "version": 2.2,
+    "video": "https://youtu.be/6VfTp0RXiyY",
+    "showcaseVideo": "https://youtu.be/9xNMF78VvOA",
+    "submitter": "nensa",
+    "tags": [
+      "Challenge",
+      "Progress"
+    ]
+  },
+  {
     "name": "poocubed",
     "id": "poocubed",
     "player": "Kyasshukodo",
@@ -5715,6 +5731,21 @@
       "Level",
       "Verified",
       "CBF"
+    ]
+  },
+  {
+    "name": "Angelicide (Kaza) 79-100%",
+    "id": "angelicide-kaza-79-100",
+    "player": "Kaza",
+    "date": "2025-09-10",
+    "length": "16",
+    "version": "2.2",
+    "showcaseVideo": "https://youtu.be/678hOIaKzUk",
+    "video": "https://youtu.be/BRliFwd5jKs",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -9955,22 +9986,6 @@
       "Level",
       "Progress",
       "CBF"
-    ]
-  },
-  {
-    "name": "Tremor 55%",
-    "id": "tremor-55",
-    "player": "Cat enthusiast",
-    "levelID": 79823052,
-    "date": "2025-06-07",
-    "length": 10,
-    "version": 2.2,
-    "video": "https://youtu.be/HH5i952FfjU",
-    "showcaseVideo": "https://youtu.be/9xNMF78VvOA",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -14535,6 +14550,7 @@
   }
 
 ]
+
 
 
 
