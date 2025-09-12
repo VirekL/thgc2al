@@ -50,7 +50,7 @@
       "Progress",
       "Tentative"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "Thinking Space II",
@@ -84,7 +84,7 @@
       "Progress",
       "Tentative"
     ],
-    "levelID": 0,
+    "levelID": null,
     "submitter": "Radiator"
   },
   {
@@ -447,7 +447,7 @@
       "Level",
       "Progress"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "KOCMOC UNLEASHED 14-78%",
@@ -6147,7 +6147,7 @@
     "name": "Avernus white 48%",
     "id": "avernus-white-48",
     "player": "SerVax",
-    "levelID": 0,
+    "levelID": null,
     "date": "2024-12-22",
     "length": 36,
     "version": 2.2,
@@ -6379,6 +6379,21 @@
     ]
   },
   {
+    "name": "Bloodbath, GRIEF 33%",
+    "id": "bloodbath-grief-33",
+    "player": "Doggie",
+    "date": "2025-07-12",
+    "length": 168,
+    "video": "https://youtu.be/cXf9bfvePws",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/bb-grief.webp",
+    "version": 2.2,
+    "submitter": "Excryst",
+    "tags": [
+      "Miscellaneous",
+      "CBF"
+    ]
+  },
+  {
     "name": "Snowblind",
     "id": "snowblind",
     "player": "Hippo",
@@ -6393,7 +6408,7 @@
       "Verified",
       "CBF"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "Avernus pink 41%",
@@ -14551,3 +14566,4 @@
     ]
   }
 ]
+
