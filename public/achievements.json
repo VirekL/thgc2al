@@ -13,8 +13,7 @@
     "length": 615,
     "version": 2.2,
     "submitter": "TYATYAPKA",
-    "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg",
-    "levelID": null
+    "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
   },
   {
     "name": "GRIEF 56-100%, 67%",
@@ -49,8 +48,7 @@
       "Level",
       "Progress",
       "Tentative"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "Thinking Space II",
@@ -84,7 +82,6 @@
       "Progress",
       "Tentative"
     ],
-    "levelID": null,
     "submitter": "Radiator"
   },
   {
@@ -101,8 +98,7 @@
     "length": 403,
     "version": 2.2,
     "submitter": "kyle1saurus",
-    "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg",
-    "levelID": null
+    "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
   },
   {
     "name": "Amethyst",
@@ -412,8 +408,7 @@
     "length": 70,
     "version": 2.2,
     "thumbnail": "https://i.ytimg.com/vi/i8TGgQNAzDg/maxresdefault.jpg",
-    "showcaseVideo": "https://youtu.be/h14lmGH31_M",
-    "levelID": null
+    "showcaseVideo": "https://youtu.be/h14lmGH31_M"
   },
   {
     "name": "Banshee (Old) 86%",
@@ -429,8 +424,7 @@
     "submitter": "Anceps",
     "length": 78,
     "version": 2.2,
-    "thumbnail": "https://i.ytimg.com/vi/i8TGgQNAzDg/maxresdefault.jpg",
-    "levelID": null
+    "thumbnail": "https://i.ytimg.com/vi/i8TGgQNAzDg/maxresdefault.jpg"
   },
   {
     "name": "Thinking Space II (Old) 40-100%",
@@ -446,8 +440,7 @@
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "KOCMOC UNLEASHED 14-78%",
@@ -479,8 +472,7 @@
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "Anathema 156%",
@@ -547,8 +539,7 @@
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "Vehemence 39%",
@@ -918,8 +909,7 @@
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "Anathema",
@@ -1021,8 +1011,7 @@
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "Blue Avernus",
@@ -1341,8 +1330,7 @@
     "length": 80,
     "version": 2.2,
     "thumbnail": "https://i.ytimg.com/vi/i8TGgQNAzDg/maxresdefault.jpg",
-    "showcaseVideo": "https://youtu.be/h14lmGH31_M",
-    "levelID": null
+    "showcaseVideo": "https://youtu.be/h14lmGH31_M"
   },
   {
     "name": "Heliopolis (Thnnder) 17%",
@@ -1358,8 +1346,7 @@
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "Nullscapes 120hz Mobile 48-100%",
@@ -3179,25 +3166,25 @@
   },
   {
     "name": "Ouroboros 60hz Mobile 10-100%",
-		"id": "ouroboros-60hz-mobile-10-100",
-		"player": "Jastro",
-		"length": 137,
-		"version": 2.2,
-		"video": "https://youtu.be/Wv_pGGGE8A8",
-		"date": "2024-07-04",
-		"showcaseVideo": "https://youtu.be/Tks9DNwfxz4",
-		"levelID": 56703691,
-		"submitter": "kyle1saurus",
-		"tags": [
-			"Rated",
-			"Low Hertz",
-			"Mobile",
-			"Progress",
-			"Level",
+    "id": "ouroboros-60hz-mobile-10-100",
+    "player": "Jastro",
+    "length": 137,
+    "version": 2.2,
+    "video": "https://youtu.be/Wv_pGGGE8A8",
+    "date": "2024-07-04",
+    "showcaseVideo": "https://youtu.be/Tks9DNwfxz4",
+    "levelID": 56703691,
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated",
       "Tentative"
-		]
-	},
-	{
+    ]
+  },
+  {
     "name": "if FF was lvl 1",
     "id": "if-ff-was-lvl-1",
     "player": "DenseCabbage",
@@ -3772,8 +3759,7 @@
     "tags": [
       "Challenge",
       "Progress"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "Unnerfed Yatagarasu",
@@ -3958,8 +3944,7 @@
     "tags": [
       "Challenge",
       "Verified"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "Heliopolis 38-78%",
@@ -4367,7 +4352,8 @@
     "video": "https://youtu.be/RsOVrVlcE2g",
     "showcaseVideo": "https://youtu.be/t-2NVfHfXiI",
     "tags": [
-      "Level"
+      "Level",
+      "Verified"
     ]
   },
   {
@@ -4889,8 +4875,7 @@
       "Challenge",
       "Consistency",
       "Tentative"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "CONVULSION",
@@ -4974,7 +4959,6 @@
       "Level",
       "Progress"
     ],
-    "levelID": null,
     "showcaseVideo": "https://www.youtube.com/watch?v=sXEE5F9Zg9E"
   },
   {
@@ -5037,8 +5021,7 @@
     "tags": [
       "Miscellaneous"
     ],
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/bl-sc-wasu-sw.avif",
-    "levelID": null
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/bl-sc-wasu-sw.avif"
   },
   {
     "name": "surface (Old) 17-78%",
@@ -5198,8 +5181,7 @@
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "SWI Slithium Version 65%",
@@ -5687,8 +5669,7 @@
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "The Salt Factory",
@@ -5982,8 +5963,7 @@
     "tags": [
       "Level",
       "Verified"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "Zodiac 60hz 75%",
@@ -6118,7 +6098,6 @@
     "name": "Avernus white 48%",
     "id": "avernus-white-48",
     "player": "SerVax",
-    "levelID": null,
     "date": "2024-12-22",
     "length": 36,
     "version": 2.2,
@@ -6378,14 +6357,12 @@
       "Level",
       "Verified",
       "CBF"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "Avernus pink 41%",
     "id": "avernus-pink-41",
     "player": "SerVax",
-    "levelID": null,
     "date": "2024-12-22",
     "length": 32,
     "version": 2.2,
@@ -6526,6 +6503,7 @@
     "showcaseVideo": "https://youtu.be/8HpDleYxDQA",
     "tags": [
       "Level",
+      "Verified",
       "Rated"
     ]
   },
@@ -6660,7 +6638,7 @@
     ]
   },
   {
-	"name": "ETERNALtheory",
+    "name": "ETERNALtheory",
     "id": "eternaltheory",
     "player": "Hyperlith",
     "levelID": 92196326,
@@ -6792,7 +6770,7 @@
     ]
   },
   {
-	"name": "M I S F O R T U N E",
+    "name": "M I S F O R T U N E",
     "id": "m-i-s-f-o-r-t-u-n-e",
     "player": "serpentical",
     "levelID": 115093521,
@@ -6855,7 +6833,7 @@
     ]
   },
   {
-	"name": "Itsumade",
+    "name": "Itsumade",
     "id": "itsumade",
     "player": "CaveMelv",
     "date": "2025-06-09",
@@ -7026,7 +7004,7 @@
     ]
   },
   {
-	"name": "The Catacombs",
+    "name": "The Catacombs",
     "id": "the-catacombs",
     "player": "Slithium",
     "levelID": 104232191,
@@ -7091,7 +7069,7 @@
     ]
   },
   {
-	"name": "Moonflower",
+    "name": "Moonflower",
     "id": "moonflower",
     "player": "TFIBB",
     "levelID": 96660287,
@@ -7107,7 +7085,7 @@
     ]
   },
   {
-	"name": "Netherix",
+    "name": "Netherix",
     "id": "netherix",
     "player": "MostDefinitelyAlbert",
     "date": "2025-07-07",
@@ -7123,7 +7101,7 @@
     ]
   },
   {
-	"name": "DEATHWISH",
+    "name": "DEATHWISH",
     "id": "deathwish",
     "player": "Wooshi",
     "levelID": 116136112,
@@ -7155,7 +7133,7 @@
     ]
   },
   {
-	"name": "Riots Demise (noname)",
+    "name": "Riots Demise (noname)",
     "id": "riots-demise-noname",
     "player": "noname228gg",
     "date": "2025-07-17",
@@ -7167,7 +7145,7 @@
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
-	  "Verified",
+      "Verified",
       "CBF"
     ]
   },
@@ -7273,7 +7251,7 @@
     "levelID": 76401173
   },
   {
-	"name": "Heavenly Sakupen",
+    "name": "Heavenly Sakupen",
     "id": "heavenly-sakupen",
     "player": "fusion425",
     "date": "2025-08-02",
@@ -7495,8 +7473,7 @@
       "Level",
       "Progress",
       "CBF"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "Silent Acropolis 38%",
@@ -7516,7 +7493,7 @@
     ]
   },
   {
-	"name": "Damascus",
+    "name": "Damascus",
     "id": "damascus",
     "player": "Timo",
     "levelID": 93339534,
@@ -7643,8 +7620,7 @@
       "Progress",
       "CBF",
       "Tentative"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "PSYCHOPATH",
@@ -7664,7 +7640,7 @@
     ]
   },
   {
-	"name": "Stellar Night",
+    "name": "Stellar Night",
     "id": "stellar-night",
     "player": "Tuggy75",
     "levelID": 83244159,
@@ -7787,7 +7763,6 @@
       "Level",
       "Progress"
     ],
-    "levelID": null,
     "showcaseVideo": "https://www.youtube.com/watch?v=sXEE5F9Zg9E"
   },
   {
@@ -7902,8 +7877,7 @@
     "tags": [
       "Level",
       "Verified"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "shimmer 144hz Mobile",
@@ -7954,7 +7928,6 @@
       "Level",
       "Progress"
     ],
-    "levelID": null,
     "showcaseVideo": "https://youtu.be/_Fgb3DCCkxA"
   },
   {
@@ -8244,7 +8217,6 @@
     "showcaseVideo": "https://youtu.be/mHg2jrzpkxs",
     "date": "2025-08-21",
     "submitter": "TYATYAPKA",
-    "levelID": null,
     "tags": [
       "Level",
       "Progress"
@@ -9380,8 +9352,7 @@
       "Challenge",
       "Progress",
       "Tentative"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "Eternal Night 31%",
@@ -9400,7 +9371,7 @@
     ]
   },
   {
-	"name": "Kuzureta 60hz Mobile",
+    "name": "Kuzureta 60hz Mobile",
     "id": "kuzureta-60hz-mobile",
     "player": "Hydrus73",
     "levelID": 71216292,
@@ -9658,7 +9629,7 @@
     ]
   },
   {
-	"name": "xo 60hz Mobile",
+    "name": "xo 60hz Mobile",
     "id": "xo-60hz-mobile",
     "player": "pigchefer",
     "levelID": 58825144,
@@ -9778,7 +9749,7 @@
     ]
   },
   {
-	"name": "SAND SAILOR 60hz",
+    "name": "SAND SAILOR 60hz",
     "id": "sand-sailor-60hz",
     "player": "Cejelost",
     "levelID": 88868682,
@@ -9879,7 +9850,7 @@
     ]
   },
   {
-	"name": "RUST 60hz Mobile",
+    "name": "RUST 60hz Mobile",
     "id": "rust-60hz-mobile",
     "player": "Biprex",
     "levelID": 71912451,
@@ -9975,8 +9946,7 @@
       "Level",
       "Progress",
       "Tentative"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "Slaughterhouse (Buffed) 60-100%",
@@ -10128,7 +10098,7 @@
     "showcaseVideo": "https://youtu.be/RcIF9OcLsuQ"
   },
   {
-	"name": "Frozen Cave 60hz Mobile",
+    "name": "Frozen Cave 60hz Mobile",
     "id": "frozen-cave-60hz-mobile",
     "player": "Biprex",
     "levelID": 68908396,
@@ -10563,7 +10533,7 @@
     ]
   },
   {
-	"name": "Sides Of My Mind 60hz Mobile",
+    "name": "Sides Of My Mind 60hz Mobile",
     "id": "sides-of-my-mind-60hz-mobile",
     "player": "Batle",
     "levelID": 91042484,
@@ -10747,7 +10717,7 @@
     ]
   },
   {
-	"name": "Wasureta 60hz",
+    "name": "Wasureta 60hz",
     "id": "wasureta-60hz",
     "player": "shaggy712",
     "levelID": 64658786,
@@ -10945,7 +10915,7 @@
     ]
   },
   {
-	"name": "ZAPHKIEL 60hz",
+    "name": "ZAPHKIEL 60hz",
     "id": "zaphkiel-60hz",
     "player": "Sevant",
     "date": "2024-08-13",
@@ -11074,7 +11044,7 @@
     ]
   },
   {
-	"name": "Aronia 60hz Mobile",
+    "name": "Aronia 60hz Mobile",
     "id": "aronia-60hz-mobile",
     "player": "Biprex",
     "levelID": 60564010,
@@ -11179,7 +11149,7 @@
     ]
   },
   {
-	"name": "Erebus 60hz Mobile",
+    "name": "Erebus 60hz Mobile",
     "id": "erebus-60hz-mobile",
     "player": "Biprex",
     "date": "2021-10-10",
@@ -11819,7 +11789,7 @@
     ]
   },
   {
-	"name": "kowareta 60hz Mobile",
+    "name": "kowareta 60hz Mobile",
     "id": "kowareta-60hz-mobile",
     "player": "Biprex",
     "levelID": 46763581,
@@ -11921,7 +11891,7 @@
     ]
   },
   {
-	"name": "Fragile 60hz 44%",
+    "name": "Fragile 60hz 44%",
     "id": "fragile-60hz-44",
     "player": "lappwv",
     "levelID": 65588448,
@@ -13054,8 +13024,7 @@
       "Level",
       "Verified",
       "CBF"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "Acheron 2.1 120hz Mobile 32%",
@@ -13786,8 +13755,7 @@
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "Sonic Wave 1.5x 28-96%",
@@ -14281,8 +14249,7 @@
       "Progress",
       "CBF",
       "Tentative"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "Sweeping Demon 2 (Thnnder) 71-100%",
@@ -14450,8 +14417,7 @@
       "Progress",
       "CBF",
       "Tentative"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "Silent Circles (skeletonlol) 27-70% 7 deaths, 99.66 accuracy",
@@ -14586,8 +14552,3 @@
     ]
   }
 ]
-
-
-
-
-
