@@ -7516,6 +7516,23 @@
     ]
   },
   {
+	"name": "Damascus",
+    "id": "damascus",
+    "player": "Timo",
+    "levelID": 93339534,
+    "date": "2023-08-13",
+    "length": 309,
+    "version": 2.1,
+    "submitter": "Anceps",
+    "video": "https://youtu.be/MWQyCUGt76Y",
+    "showcaseVideo": "https://youtu.be/4rW5LcILMMo",
+    "tags": [
+      "Level",
+      "Verified",
+      "Rated"
+    ]
+  },
+  {
     "name": "Vomit Rose (Old)",
     "id": "vomit-rose-old",
     "player": "Dark Bear",
@@ -9383,19 +9400,37 @@
     ]
   },
   {
-    "name": "Damascus",
-    "id": "damascus",
-    "player": "Timo",
-    "levelID": 93339534,
-    "date": "2023-08-13",
-    "length": 309,
-    "version": 2.1,
-    "submitter": "Anceps",
-    "video": "https://youtu.be/MWQyCUGt76Y",
-    "showcaseVideo": "https://youtu.be/4rW5LcILMMo",
+	"name": "Kuzureta 60hz Mobile",
+    "id": "kuzureta-60hz-mobile",
+    "player": "Hydrus73",
+    "levelID": 71216292,
+    "date": "2025-04-11",
+    "length": 69,
+    "version": 2.2,
+    "video": "https://youtu.be/WeXNO96vNfI",
+    "showcaseVideo": "https://youtu.be/Q5LqZ9aKn78",
+    "submitter": "kyle1saurus",
     "tags": [
       "Level",
-      "Verified",
+      "Low Hertz",
+      "Mobile",
+      "Rated"
+    ]
+  },
+  {
+    "name": "Kuzureta 60hz",
+    "id": "kuzureta-60hz",
+    "player": "Ikarya",
+    "levelID": 71216292,
+    "date": "2024-02-28",
+    "length": 69,
+    "version": 2.2,
+    "video": "https://youtu.be/dJER1D69IMs",
+    "showcaseVideo": "https://youtu.be/Q5LqZ9aKn78",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
       "Rated"
     ]
   },
@@ -9623,6 +9658,23 @@
     ]
   },
   {
+	"name": "xo 60hz Mobile",
+    "id": "xo-60hz-mobile",
+    "player": "pigchefer",
+    "levelID": 58825144,
+    "date": "2021-03-26",
+    "length": 157,
+    "version": 2.1,
+    "video": "https://youtu.be/vWsAAcPGy5s",
+    "showcaseVideo": "https://youtu.be/0rvqYWQWswA",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Rated"
+    ]
+  },
+  {
     "name": "VENUS",
     "id": "venus",
     "player": "SeazeIsCool",
@@ -9691,41 +9743,6 @@
     ]
   },
   {
-    "name": "Kuzureta 60hz Mobile",
-    "id": "kuzureta-60hz-mobile",
-    "player": "Hydrus73",
-    "levelID": 71216292,
-    "date": "2025-04-11",
-    "length": 69,
-    "version": 2.2,
-    "video": "https://youtu.be/WeXNO96vNfI",
-    "showcaseVideo": "https://youtu.be/Q5LqZ9aKn78",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Rated"
-    ]
-  },
-  {
-    "name": "Kuzureta 60hz",
-    "id": "kuzureta-60hz",
-    "player": "Ikarya",
-    "levelID": 71216292,
-    "date": "2024-02-28",
-    "length": 69,
-    "version": 2.2,
-    "video": "https://youtu.be/dJER1D69IMs",
-    "showcaseVideo": "https://youtu.be/Q5LqZ9aKn78",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Rated"
-    ]
-  },
-  {
     "name": "Widestep 60hz 31-91%",
     "id": "widestep-60hz-31-91",
     "player": "Th3on3C",
@@ -9758,6 +9775,23 @@
       "Level",
       "Progress",
       "CBF"
+    ]
+  },
+  {
+	"name": "SAND SAILOR 60hz",
+    "id": "sand-sailor-60hz",
+    "player": "Cejelost",
+    "levelID": 88868682,
+    "date": "2024-08-19",
+    "length": 83,
+    "version": 2.1,
+    "video": "https://youtu.be/xnRa6mb-yRo",
+    "showcaseVideo": "https://youtu.be/Pbcaz-ziZX4",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Rated"
     ]
   },
   {
@@ -9812,23 +9846,6 @@
     ]
   },
   {
-    "name": "xo 60hz Mobile",
-    "id": "xo-60hz-mobile",
-    "player": "pigchefer",
-    "levelID": 58825144,
-    "date": "2021-03-26",
-    "length": 157,
-    "version": 2.1,
-    "video": "https://youtu.be/vWsAAcPGy5s",
-    "showcaseVideo": "https://youtu.be/0rvqYWQWswA",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Rated"
-    ]
-  },
-  {
     "name": "Riots Demise (Nerfed) 99%",
     "id": "riots-demise-nerfed-99",
     "player": "noname228gg",
@@ -9862,6 +9879,24 @@
     ]
   },
   {
+	"name": "RUST 60hz Mobile",
+    "id": "rust-60hz-mobile",
+    "player": "Biprex",
+    "levelID": 71912451,
+    "date": "2022-09-07",
+    "length": 84,
+    "version": 2.1,
+    "video": "https://youtu.be/p8f3g_oYtNQ",
+    "showcaseVideo": "https://youtu.be/U6-UrdnGLoY",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Rated"
+    ]
+  },
+  {
     "name": "Unnerfed BoJ 67%, 100%",
     "id": "unnerfed-boj-67-100",
     "player": "MostDefinitelyAlbert",
@@ -9875,23 +9910,6 @@
     "tags": [
       "Level",
       "Consistency"
-    ]
-  },
-  {
-    "name": "ZAPHKIEL 60hz",
-    "id": "zaphkiel-60hz",
-    "player": "Sevant",
-    "date": "2024-08-13",
-    "length": "76",
-    "version": "2.2",
-    "levelID": "36329434",
-    "video": "https://www.youtube.com/watch?v=wYFVQ9H7qms",
-    "showcaseVideo": "https://www.youtube.com/watch?v=1MR6qKNWpG8",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Rated"
     ]
   },
   {
@@ -9959,41 +9977,6 @@
       "Tentative"
     ],
     "levelID": null
-  },
-  {
-    "name": "Aronia 60hz Mobile",
-    "id": "aronia-60hz-mobile",
-    "player": "Biprex",
-    "levelID": 60564010,
-    "date": "2021-08-18",
-    "length": 79,
-    "version": 2.1,
-    "video": " https://youtu.be/SXTAoR0XSVk",
-    "showcaseVideo": "https://youtu.be/eJe3i5KyKOk",
-    "submitter": "Arcadie",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Rated"
-    ]
-  },
-  {
-    "name": "Aronia 60hz",
-    "id": "aronia-60hz",
-    "player": "Lavaclaw",
-    "levelID": 60564010,
-    "date": "2021-02-21",
-    "length": 79,
-    "version": 2.1,
-    "video": "https://youtu.be/RfwTihz276w",
-    "showcaseVideo": "https://youtu.be/eJe3i5KyKOk",
-    "submitter": "Arcadie",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Rated"
-    ]
   },
   {
     "name": "Slaughterhouse (Buffed) 60-100%",
@@ -10143,6 +10126,24 @@
       "Verified"
     ],
     "showcaseVideo": "https://youtu.be/RcIF9OcLsuQ"
+  },
+  {
+	"name": "Frozen Cave 60hz Mobile",
+    "id": "frozen-cave-60hz-mobile",
+    "player": "Biprex",
+    "levelID": 68908396,
+    "date": "2022-04-04",
+    "length": 73,
+    "version": 2.1,
+    "video": "https://youtu.be/4fdlOuCOimE",
+    "showcaseVideo": "https://youtu.be/XI_CWZX_3bQ",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Rated"
+    ]
   },
   {
     "name": "Subsuming Vortex 49%",
@@ -10309,41 +10310,6 @@
       "Progress",
       "Rated",
       "Tentative"
-    ]
-  },
-  {
-    "name": "kowareta 60hz Mobile",
-    "id": "kowareta-60hz-mobile",
-    "player": "Biprex",
-    "levelID": 46763581,
-    "date": "2021-10-15",
-    "length": 49,
-    "version": 2.1,
-    "video": "https://youtu.be/BX_zkpKL8bI",
-    "showcaseVideo": "https://youtu.be/tPFN83k6DWo",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Rated"
-    ]
-  },
-  {
-    "name": "kowareta 60hz",
-    "id": "kowareta-60hz",
-    "player": "lappwv",
-    "levelID": 46763581,
-    "date": "2020-12-30",
-    "length": 49,
-    "version": 2.1,
-    "video": "https://youtu.be/3BZUDV3UnC0",
-    "submitter": "Arcadie",
-    "showcaseVideo": "https://youtu.be/tPFN83k6DWo",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Rated"
     ]
   },
   {
@@ -10597,6 +10563,24 @@
     ]
   },
   {
+	"name": "Sides Of My Mind 60hz Mobile",
+    "id": "sides-of-my-mind-60hz-mobile",
+    "player": "Batle",
+    "levelID": 91042484,
+    "date": "2024-06-01",
+    "length": 61,
+    "version": 2.1,
+    "video": "https://youtu.be/co7fFtkg2U0",
+    "showcaseVideo": "https://youtu.be/XXNh5cbaT-Y",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "2P",
+      "Rated"
+    ]
+  },
+  {
     "name": "Blood Echo",
     "id": "blood-echo",
     "player": "swiborg",
@@ -10680,41 +10664,6 @@
     ]
   },
   {
-    "name": "Erebus 60hz Mobile",
-    "id": "erebus-60hz-mobile",
-    "player": "Biprex",
-    "date": "2021-10-10",
-    "length": "70",
-    "version": "2.1",
-    "levelID": "31462941",
-    "video": "https://youtu.be/jaP0R3svguA",
-    "showcaseVideo": "https://youtu.be/a2t8FSLtDiQ",
-    "submitter": "Arcadie",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Rated"
-    ]
-  },
-  {
-    "name": "Erebus 60hz",
-    "id": "erebus-60hz",
-    "player": "Exyl",
-    "levelID": 31462941,
-    "date": "2020-07-14",
-    "length": 70,
-    "version": 2.1,
-    "video": "https://youtu.be/-5_Eqr7cx7E",
-    "showcaseVideo": "https://youtu.be/9eaALX7VlnY",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Rated"
-    ]
-  },
-  {
     "name": "abocto",
     "id": "abocto",
     "player": "Raluca",
@@ -10794,6 +10743,23 @@
     "tags": [
       "Level",
       "Verified",
+      "Rated"
+    ]
+  },
+  {
+	"name": "Wasureta 60hz",
+    "id": "wasureta-60hz",
+    "player": "shaggy712",
+    "levelID": 64658786,
+    "date": "2024-08-29",
+    "length": 56,
+    "version": 2.1,
+    "video": "https://youtu.be/2AGiKiqpYO0",
+    "showcaseVideo": "https://youtu.be/ipZl9Kvckc4",
+    "submitter:": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
       "Rated"
     ]
   },
@@ -10979,6 +10945,23 @@
     ]
   },
   {
+	"name": "ZAPHKIEL 60hz",
+    "id": "zaphkiel-60hz",
+    "player": "Sevant",
+    "date": "2024-08-13",
+    "length": "76",
+    "version": "2.2",
+    "levelID": "36329434",
+    "video": "https://www.youtube.com/watch?v=wYFVQ9H7qms",
+    "showcaseVideo": "https://www.youtube.com/watch?v=1MR6qKNWpG8",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Rated"
+    ]
+  },
+  {
     "name": "Disturb",
     "id": "disturb",
     "player": "fusion425",
@@ -11091,6 +11074,41 @@
     ]
   },
   {
+	"name": "Aronia 60hz Mobile",
+    "id": "aronia-60hz-mobile",
+    "player": "Biprex",
+    "levelID": 60564010,
+    "date": "2021-08-18",
+    "length": 79,
+    "version": 2.1,
+    "video": "https://youtu.be/SXTAoR0XSVk",
+    "showcaseVideo": "https://youtu.be/eJe3i5KyKOk",
+    "submitter": "Arcadie",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Rated"
+    ]
+  },
+  {
+    "name": "Aronia 60hz",
+    "id": "aronia-60hz",
+    "player": "Lavaclaw",
+    "levelID": 60564010,
+    "date": "2021-02-21",
+    "length": 79,
+    "version": 2.1,
+    "video": "https://youtu.be/RfwTihz276w",
+    "showcaseVideo": "https://youtu.be/eJe3i5KyKOk",
+    "submitter": "Arcadie",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Rated"
+    ]
+  },
+  {
     "name": "Lotus Flower 60hz Mobile 62%",
     "id": "lotus-flower-60hz-mobile-62",
     "player": "SanctumGD",
@@ -11157,6 +11175,41 @@
     "tags": [
       "Level",
       "Verified",
+      "Rated"
+    ]
+  },
+  {
+	"name": "Erebus 60hz Mobile",
+    "id": "erebus-60hz-mobile",
+    "player": "Biprex",
+    "date": "2021-10-10",
+    "length": "70",
+    "version": "2.1",
+    "levelID": "31462941",
+    "video": "https://youtu.be/jaP0R3svguA",
+    "showcaseVideo": "https://youtu.be/a2t8FSLtDiQ",
+    "submitter": "Arcadie",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Rated"
+    ]
+  },
+  {
+    "name": "Erebus 60hz",
+    "id": "erebus-60hz",
+    "player": "Exyl",
+    "levelID": 31462941,
+    "date": "2020-07-14",
+    "length": 70,
+    "version": 2.1,
+    "video": "https://youtu.be/-5_Eqr7cx7E",
+    "showcaseVideo": "https://youtu.be/9eaALX7VlnY",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
       "Rated"
     ]
   },
@@ -11273,24 +11326,6 @@
       "Level",
       "Low Hertz",
       "Mobile",
-      "Progress",
-      "Rated"
-    ]
-  },
-  {
-    "name": "Fragile 60hz 44%",
-    "id": "fragile-60hz-44",
-    "player": "lappwv",
-    "levelID": 65588448,
-    "date": "2021-06-01",
-    "length": 44,
-    "version": 2.1,
-    "video": "https://youtu.be/Kgb88GA04Ik",
-    "showcaseVideo": "https://youtu.be/EnTxkYZ7JNE",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Low Hertz",
       "Progress",
       "Rated"
     ]
@@ -11784,6 +11819,41 @@
     ]
   },
   {
+	"name": "kowareta 60hz Mobile",
+    "id": "kowareta-60hz-mobile",
+    "player": "Biprex",
+    "levelID": 46763581,
+    "date": "2021-10-15",
+    "length": 49,
+    "version": 2.1,
+    "video": "https://youtu.be/BX_zkpKL8bI",
+    "showcaseVideo": "https://youtu.be/tPFN83k6DWo",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Rated"
+    ]
+  },
+  {
+    "name": "kowareta 60hz",
+    "id": "kowareta-60hz",
+    "player": "lappwv",
+    "levelID": 46763581,
+    "date": "2020-12-30",
+    "length": 49,
+    "version": 2.1,
+    "video": "https://youtu.be/3BZUDV3UnC0",
+    "submitter": "Arcadie",
+    "showcaseVideo": "https://youtu.be/tPFN83k6DWo",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Rated"
+    ]
+  },
+  {
     "name": "Swing Swing",
     "id": "swing-swing",
     "player": "Whizkid05",
@@ -11848,6 +11918,24 @@
       "Level",
       "Verified",
       "Tentative"
+    ]
+  },
+  {
+	"name": "Fragile 60hz 44%",
+    "id": "fragile-60hz-44",
+    "player": "lappwv",
+    "levelID": 65588448,
+    "date": "2021-06-01",
+    "length": 44,
+    "version": 2.1,
+    "video": "https://youtu.be/Kgb88GA04Ik",
+    "showcaseVideo": "https://youtu.be/EnTxkYZ7JNE",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -12227,24 +12315,6 @@
     "tags": [
       "Level",
       "Progress"
-    ]
-  },
-  {
-    "name": "Sides Of My Mind 60hz Mobile",
-    "id": "sides-of-my-mind-60hz-mobile",
-    "player": "Batle",
-    "levelID": 91042484,
-    "date": "2024-06-01",
-    "length": 61,
-    "version": 2.1,
-    "video": "https://youtu.be/co7fFtkg2U0",
-    "showcaseVideo": "https://youtu.be/XXNh5cbaT-Y",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "2P",
-      "Rated"
     ]
   },
   {
@@ -13380,23 +13450,6 @@
     ]
   },
   {
-    "name": "Wasureta 60hz",
-    "id": "wasureta-60hz",
-    "player": "shaggy712",
-    "levelID": 64658786,
-    "date": "2024-08-29",
-    "length": 56,
-    "version": 2.1,
-    "video": "https://youtu.be/2AGiKiqpYO0",
-    "showcaseVideo": "https://youtu.be/ipZl9Kvckc4",
-    "submitter:": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Rated"
-    ]
-  },
-  {
     "name": "Escalator (Slithium) 39-73%",
     "id": "escalator-slithium-39-73",
     "player": "Slithium",
@@ -13592,23 +13645,6 @@
     ]
   },
   {
-    "name": "SAND SAILOR 60hz",
-    "id": "sand-sailor-60hz",
-    "player": "Cejelost",
-    "levelID": 88868682,
-    "date": "2024-08-19",
-    "length": 83,
-    "version": 2.1,
-    "video": "https://youtu.be/xnRa6mb-yRo",
-    "showcaseVideo": "https://youtu.be/Pbcaz-ziZX4",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Rated"
-    ]
-  },
-  {
     "name": "Graceful (swiborg) 88%",
     "id": "graceful-swiborg-88",
     "player": "swiborg",
@@ -13637,24 +13673,6 @@
     "tags": [
       "Challenge",
       "Verified"
-    ]
-  },
-  {
-    "name": "RUST 60hz Mobile",
-    "id": "rust-60hz-mobile",
-    "player": "Biprex",
-    "levelID": 71912451,
-    "date": "2022-09-07",
-    "length": 84,
-    "version": 2.1,
-    "video": "https://youtu.be/p8f3g_oYtNQ",
-    "showcaseVideo": "https://youtu.be/U6-UrdnGLoY",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Rated"
     ]
   },
   {
@@ -14012,24 +14030,6 @@
       "Progress",
       "Rated",
       "Tentative"
-    ]
-  },
-  {
-    "name": "Frozen Cave 60hz Mobile",
-    "id": "frozen-cave-60hz-mobile",
-    "player": "Biprex",
-    "levelID": 68908396,
-    "date": "2022-04-04",
-    "length": 73,
-    "version": 2.1,
-    "video": "https://youtu.be/4fdlOuCOimE",
-    "showcaseVideo": "https://youtu.be/XI_CWZX_3bQ",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Rated"
     ]
   },
   {
@@ -14586,6 +14586,7 @@
     ]
   }
 ]
+
 
 
 
