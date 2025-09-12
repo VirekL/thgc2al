@@ -3178,6 +3178,26 @@
     ]
   },
   {
+    "name": "Ouroboros 60hz Mobile 10-100%",
+		"id": "ouroboros-60hz-mobile-10-100",
+		"player": "Jastro",
+		"length": 137,
+		"version": 2.2,
+		"video": "https://youtu.be/Wv_pGGGE8A8",
+		"date": "2024-07-04",
+		"showcaseVideo": "https://youtu.be/Tks9DNwfxz4",
+		"levelID": 56703691,
+		"submitter": "kyle1saurus",
+		"tags": [
+			"Rated",
+			"Low Hertz",
+			"Mobile",
+			"Progress",
+			"Level",
+      "Tentative"
+		]
+	},
+	{
     "name": "if FF was lvl 1",
     "id": "if-ff-was-lvl-1",
     "player": "DenseCabbage",
@@ -14566,4 +14586,5 @@
     ]
   }
 ]
+
 
