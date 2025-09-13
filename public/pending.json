@@ -26,9 +26,25 @@
     "date": "2025-09-09",
     "length": 64,
     "version": 2.2,
-    "submitter": "Exile_Shade",
+    "submitter": "Exiled_Shade",
     "video": "https://youtu.be/oKuoI-_JzKU",
     "showcaseVideo": "https://youtu.be/0H-a8yQzi5A",
+    "tags": [
+      "Level",
+      "Verified"
+    ]
+  },
+  {
+	"name": "Unnerfed Titan Complex",
+    "id": "unnerfed-titan-complex",
+    "player": "Dustabounds",
+    "levelID": 72900436,
+    "date": "2025-09-11",
+    "length": 201,
+    "version": 2.2,
+    "submitter": "Exiled_Shade",
+    "video": "https://youtu.be/VYodgEnIP0I",
+    "showcaseVideo": "https://youtu.be/OQrXQ8eqXYU",
     "tags": [
       "Level",
       "Verified"
@@ -53,6 +69,11 @@
 	"name": "Tidal Wave 1.1x 42-92% 6 deaths, ??.?? accuracy",
     "id": "tidal-wave1-1x-42-92-6-deaths-??-??-accuracy",
     "player": "JesseGamingGD",
+	"submitter": "Excryst",
+    "levelID": 86407629,
+    "date": "2025-04-14",
+    "length": 73,
+    "version": 2.2,
     "video": "https://youtu.be/LGse_IjjHpc",
     "showcaseVideo": "https://youtu.be/PFHlkdz9UqM",
     "tags": [
@@ -60,28 +81,24 @@
       "Speedhack",
 	  "Noclip",
       "Rated"
-    ],
-    "submitter": "Excryst",
-    "levelID": 86407629,
-    "date": "2025-04-14",
-    "length": 73,
-    "version": 2.2
+    ]
   },
   {
 	"name": "Sonic Wave Eternity 38-100%",
-		"id": "sonic-wave-eternity-38-100",
-		"player": "Jevan",
-		"length": "78",
-		"version": "2.2",
-		"video": "https://youtu.be/XflJWM3S6-4",
-		"date": "2025-09-11",
-		"showcaseVideo": "https://youtu.be/-Pn-UEb0Vn0",
-		"tags": [
-			"Progress",
-			"Level"
-		]
-	},
-	{
+	"id": "sonic-wave-eternity-38-100",
+	"player": "Jevan",
+	"length": "78",
+	"version": "2.2",
+	"video": "https://youtu.be/XflJWM3S6-4",
+	"date": "2025-09-11",
+	"submitter": "kyle1saurus",
+	"showcaseVideo": "https://youtu.be/-Pn-UEb0Vn0",
+	"tags": [
+		"Progress",
+		"Level"
+	]
+},
+{
 	"name": "Acheron 1.15x 20 deaths, 98.58 accuracy",
     "id": "achero-1-15x-20-deaths-98-58-accuracy",
     "player": "Doggie",
@@ -103,12 +120,12 @@
 	"name": "shimmer 144hz",
     "id": "shimmer-144hz",
     "player": "Melted",
-    "length": "76",
-    "version": "2.2",
+    "length": 76,
+    "version": 2.2,
     "video": "https://youtu.be/pK8jYmPZkWc",
     "date": "2025-01-28",
     "showcaseVideo": "https://www.youtube.com/watch?v=_vuXb2PHiOI",
-    "levelID": "94156085",
+    "levelID": 94156085,
     "submitter": "jak",
     "tags": [
       "Level",
@@ -117,6 +134,40 @@
     ]
   },
   {
+	"name": "Verdant Landscape 144hz",
+    "id": "verdant-landscape-144hz",
+    "player": "5shine",
+    "date": "2023-01-25",
+    "length": 129,
+    "version": 2.1,
+    "levelID": 76543324,
+    "video": "https://youtu.be/GU-L0LaW9Ak",
+    "showcaseVideo": "https://youtu.be/dSbox0NKuXs",
+    "submitter": "Excryst",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Rated"
+    ]
+  },
+  {
+	"name": "NEUTRA 144hz",
+	"id": "neutra-144hz",
+	"player": "5shine",
+	"length": 87,
+	"version": 2.1,
+	"video": "https://youtu.be/_1FEfXoG8Eg",
+	"date": "2023-04-11",
+	"showcaseVideo": "https://www.youtube.com/watch?v=5jd1xU6JCAI",
+	"levelID": 88611404,
+	"submitter": "Excryst",
+	"tags": [
+		"Rated",
+		"Level",
+		"Low Hertz"
+	]
+},
+{
 	"name": "BPATA MPAKA 144hz 76%",
     "id": "bpata-mpaka-144hz-76",
     "player": "Melted",
@@ -130,6 +181,7 @@
     "tags": [
       "Level",
       "Low Hertz",
+	  "Progress",
       "Rated"
     ]
   },
@@ -147,6 +199,7 @@
     "tags": [
       "Level",
       "Low Hertz",
+	  "Progress",
       "Rated"
     ]
   },
@@ -164,6 +217,7 @@
     "tags": [
       "Level",
       "Low Hertz",
+	  "Progress",
       "Rated"
     ]
   },
