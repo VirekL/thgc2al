@@ -8208,6 +8208,22 @@
     ]
   },
   {
+    "name": "Reality Spirituality 89%",
+    "id": "reality-spirituality-89",
+    "player": "LordVadercraft",
+    "date": "2025-09-10",
+    "length": "125",
+    "version": "2.2",
+    "video": "https://youtu.be/ViLh77t1B_4",
+    "showcaseVideo": "https://youtu.be/9QoecJbSKwY",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress",
+      "Tentative"
+    ]
+  },
+  {
     "name": "arcturus",
     "id": "arcturus",
     "player": "ultrakawaHD",
@@ -8988,22 +9004,6 @@
     "tags": [
       "Level",
       "Progress"
-    ]
-  },
-  {
-    "name": "Reality Spirituality 74%",
-    "id": "reality-spirituality-74",
-    "player": "LordVadercraft",
-    "date": "2025-08-24",
-    "length": "95",
-    "version": "2.2",
-    "video": "https://youtu.be/P6XqsaRZCsk",
-    "showcaseVideo": "https://youtu.be/9QoecJbSKwY",
-    "submitter": "cheesecake",
-    "tags": [
-      "Level",
-      "Progress",
-      "Tentative"
     ]
   },
   {
@@ -14537,4 +14537,5 @@
     ]
   }
 ]
+
 
