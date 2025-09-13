@@ -660,6 +660,21 @@
     ]
   },
   {
+    "name": "Sweeping Demon 2 (Taiago) 39-100%",
+    "id": "sweeping-demon-2-taiago-39-100",
+    "player": "Taiago",
+    "date": "2025-09-11",
+    "length": "31",
+    "version": "2.2",
+    "video": "https://youtu.be/0w7mj16QAGg",
+    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Acheron (Riot) 17-92%",
     "id": "acheron-riot-17-92",
     "player": "LOL123",
@@ -1164,36 +1179,6 @@
       "Level",
       "Low Hertz",
       "Rated"
-    ]
-  },
-  {
-    "name": "Sweeping Demon 2 (Taiago) 49-100%",
-    "id": "sweeping-demon-2-taiago-49-100",
-    "player": "Taiago",
-    "date": "2025-08-25",
-    "length": "33",
-    "version": "2.2",
-    "video": "https://youtu.be/-cj6FSvkf4Y",
-    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
-    "submitter": "exiled_shade",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
-    "name": "Sweeping Demon 2 (Taiago) 39-88%",
-    "id": "sweeping-demon-2-taiago-39-88",
-    "player": "Taiago",
-    "date": "2025-09-09",
-    "length": "31",
-    "version": "2.2",
-    "video": "https://www.youtube.com/live/xybJnkcmwjg?t=1749",
-    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -12450,7 +12435,7 @@
     "player": "zMythicc",
     "length": "43",
     "version": "2.1",
-    "submitter": "exiled_shade",
+    "submitter": "Exiled_Shade",
     "video": "https://youtu.be/hV8HKvW07Lg",
     "showcaseVideo": "https://youtu.be/Oos0Ptzqq-E",
     "date": "2022-08-08",
@@ -13252,6 +13237,23 @@
     "tags": [
       "Challenge",
       "Progress"
+    ]
+  },
+  {
+    "name": "Thinking Space 91%, 100%",
+    "id": "thinking-space-91-100",
+    "player": "syrcx",
+    "date": "2025-08-28",
+    "length": "150",
+    "version": "2.2",
+    "levelID": "54953085",
+    "video": "https://www.youtube.com/watch?v=8_tDeo5Kb0s",
+    "showcaseVideo": "https://youtu.be/rxcW9xgRZYI",
+    "submitter": "syrcx",
+    "tags": [
+      "Level",
+      "Consistency",
+      "Rated"
     ]
   },
   {
@@ -14100,23 +14102,6 @@
     ]
   },
   {
-    "name": "Thinking Space 85%, 100%",
-    "id": "thinking-space-85-100",
-    "player": "zLevii",
-    "date": "2025-07-11",
-    "length": "140",
-    "version": "2.2",
-    "levelID": "54953085",
-    "video": "https://youtu.be/lqJ1e5aQeVU",
-    "showcaseVideo": "https://youtu.be/rxcW9xgRZYI",
-    "submitter": "Exiled_Shade",
-    "tags": [
-      "Level",
-      "Consistency",
-      "Rated"
-    ]
-  },
-  {
     "name": "Dark Realm 39%",
     "id": "dark-realm-39",
     "player": "Striker GD",
@@ -14552,3 +14537,4 @@
     ]
   }
 ]
+
