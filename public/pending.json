@@ -1,15 +1,15 @@
 [
 	{
-		"name": "Ouroboros 60hz Mobile 10-100%",
-		"id": "ouroboros-60hz-mobile-10-100",
+		"name": "Ouroboros 60hz Mobile 76%",
+		"id": "ouroboros-60hz-mobile-76",
 		"player": "Jastro",
 		"length": "137",
 		"version": "2.2",
-		"video": "https://youtu.be/Wv_pGGGE8A8?si=71swRBg7yfBmsEG2",
-		"date": "2024-07-04",
-		"showcaseVideo": "https://youtu.be/Tks9DNwfxz4?si=vkThkNwjCBh4XP_-",
+		"video": "https://youtu.be/RilB5eljWC4",
+		"date": "2025-04-05",
+		"showcaseVideo": "https://youtu.be/Tks9DNwfxz4",
 		"levelID": "56703691",
-		"submitter": "kyle1saurus",
+		"submitter": "Excryst",
 		"tags": [
 			"Rated",
 			"Low Hertz",
@@ -35,6 +35,53 @@
     ]
   },
   {
+	"name": "Angelicide (Kaza) 68-94%",
+    "id": "angelicide-kaza-68-94",
+    "player": "Kaza",
+    "date": "2025-09-12",
+    "length": "21",
+    "version": "2.2",
+    "showcaseVideo": "https://youtu.be/xX5oNO-A_yc",
+    "video": "https://youtu.be/D7zVa1N6I9k",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
+	"name": "Tidal Wave 1.1x 42-92% 6 deaths, ??.?? accuracy",
+    "id": "tidal-wave1-1x-42-92-6-deaths-??-??-accuracy",
+    "player": "JesseGamingGD",
+    "video": "https://youtu.be/LGse_IjjHpc",
+    "showcaseVideo": "https://youtu.be/PFHlkdz9UqM",
+    "tags": [
+      "Level",
+      "Speedhack",
+	  "Noclip",
+      "Rated"
+    ],
+    "submitter": "Excryst",
+    "levelID": 86407629,
+    "date": "2025-04-14",
+    "length": 73,
+    "version": 2.2
+  },
+  {
+	"name": "Sonic Wave Eternity 38-100%",
+		"id": "sonic-wave-eternity-38-100",
+		"player": "Jevan",
+		"length": "78",
+		"version": "2.2",
+		"video": "https://youtu.be/XflJWM3S6-4",
+		"date": "2025-09-11",
+		"showcaseVideo": "https://youtu.be/-Pn-UEb0Vn0",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
 	"name": "Acheron 1.15x 20 deaths, 98.58 accuracy",
     "id": "achero-1-15x-20-deaths-98-58-accuracy",
     "player": "Doggie",
