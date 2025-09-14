@@ -1094,12 +1094,12 @@
     ]
   },
   {
-    "name": "Aeternus 72-98%",
-    "id": "aeternus-72-98",
+    "name": "Aeternus 72-97%",
+    "id": "aeternus-72-97",
     "player": "Trick",
     "levelID": 102647436,
     "date": "2025-06-20",
-    "length": "16",
+    "length": 16,
     "version": 2.2,
     "video": "https://www.youtube.com/live/eAZXXIFUWmg?t=3985s",
     "showcaseVideo": "https://youtu.be/p4QgFtKL5kE",
@@ -14586,9 +14586,3 @@
     ]
   }
 ]
-
-
-
-
-
-
