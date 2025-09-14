@@ -10834,6 +10834,22 @@
     ]
   },
   {
+    "name": "wocky circles 67%",
+    "id": "wocky-circles-67",
+    "player": "oguzok",
+    "date": "2025-09-14",
+    "levelID": 100420930,
+    "length": 38,
+    "version": 2.2,
+    "video": "https://youtu.be/BroC_Wly76w?si=on3T-X_ppkyhbbng",
+    "showcaseVideo": "https://youtu.be/yyZ9M5crxJc",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "UNKNOWN",
     "id": "unknown",
     "player": "Diamond",
@@ -10864,22 +10880,6 @@
     "tags": [
       "Level",
       "Verified"
-    ]
-  },
-  {
-    "name": "wocky circles 59%",
-    "id": "wocky-circles-59",
-    "player": "oguzok",
-    "date": "2025-09-13",
-    "levelID": 100420930,
-    "length": 36,
-    "version": 2.2,
-    "video": "https://youtu.be/zwcwwsXtj6E",
-    "showcaseVideo": "https://youtu.be/yyZ9M5crxJc",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -14586,6 +14586,7 @@
     ]
   }
 ]
+
 
 
 
