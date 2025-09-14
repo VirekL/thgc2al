@@ -1301,6 +1301,23 @@
     ]
   },
   {
+    "name": "Firework 2.1 82%, 100%",
+    "id": "firework-2.1-82-100",
+    "player": "Trick",
+    "levelID": 75206202,
+    "date": "2021-10-30",
+    "length": 220,
+    "version": 2.1,
+    "submitter": "kittycatiscute",
+    "video": "https://youtu.be/PaieCfSUBdg?t=13150",
+    "showcaseVideo": "https://youtu.be/DU6mRmGHy74",
+    "tags": [
+      "Level",
+      "Consistency",
+      "Outdated Version"
+    ]
+  },
+  {
     "name": "Banshee 21-100%",
     "id": "banshee-21-100",
     "player": "spcreat",
@@ -2027,23 +2044,6 @@
       "Level",
       "Progress",
       "CBF"
-    ]
-  },
-  {
-    "name": "Firework 2.1 82%, 100%",
-    "id": "firework-2.1-82-100",
-    "player": "Trick",
-    "levelID": 75206202,
-    "date": "2021-10-30",
-    "length": 220,
-    "version": 2.1,
-    "submitter": "kittycatiscute",
-    "video": "https://youtu.be/PaieCfSUBdg?t=13150",
-    "showcaseVideo": "https://youtu.be/DU6mRmGHy74",
-    "tags": [
-      "Level",
-      "Consistency",
-      "Outdated Version"
     ]
   },
   {
@@ -8630,16 +8630,16 @@
     ]
   },
   {
-    "name": "wocky circles 36-79%",
-    "id": "wocky-circles-36-79",
-    "player": "KYWY",
-    "date": "2023-01-05",
-    "levelID": "100420930",
-    "length": "25",
-    "version": "2.1",
-    "video": "https://youtu.be/i6DDyYdjfN0",
+    "name": "wocky circles 34-81%",
+    "id": "wocky-circles-34-81",
+    "player": "oguzok",
+    "date": "2025-09-13",
+    "levelID": 100420930,
+    "length": 27,
+    "version": 2.2,
+    "video": "https://www.youtube.com/live/OA_uZkwWQNM?t=2735s",
     "showcaseVideo": "https://youtu.be/yyZ9M5crxJc",
-    "submitter": "kyle1saurus",
+    "submitter": "TYATYAPKA",
     "tags": [
       "Level",
       "Progress",
@@ -10465,6 +10465,23 @@
     "tags": [
       "Challenge",
       "Progress"
+    ]
+  },
+  {
+    "name": "Torrent 86%, 81%",
+    "id": "torrent-86-81",
+    "player": "sydno",
+    "levelID": 80993342,
+    "date": "2025-09-15",
+    "length": 23,
+    "version": 2.2,
+    "submitter": "sydno",
+    "video": "https://www.youtube.com/watch?v=Zex7m2oUjjc",
+    "showcaseVideo": "https://youtu.be/ZOAI0p5uAXk",
+    "tags": [
+      "Challenge",
+      "Consistency",
+      "CBF"
     ]
   },
   {
@@ -14553,5 +14570,6 @@
     ]
   }
 ]
+
 
 
