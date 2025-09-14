@@ -7005,6 +7005,23 @@
     ]
   },
   {
+    "name": "wocky circles 34-100%",
+    "id": "wocky-circles-34-100",
+    "player": "oguzok",
+    "date": "2025-09-13",
+    "levelID": 100420930,
+    "length": 40,
+    "version": 2.2,
+    "video": "https://youtu.be/9Wj-oI1_vQg",
+    "showcaseVideo": "https://youtu.be/yyZ9M5crxJc",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress",
+      "Tentative"
+    ]
+  },
+  {
     "name": "The Catacombs",
     "id": "the-catacombs",
     "player": "Slithium",
@@ -8630,23 +8647,6 @@
     ]
   },
   {
-    "name": "wocky circles 34-81%",
-    "id": "wocky-circles-34-81",
-    "player": "oguzok",
-    "date": "2025-09-13",
-    "levelID": 100420930,
-    "length": 27,
-    "version": 2.2,
-    "video": "https://www.youtube.com/live/OA_uZkwWQNM?t=2735s",
-    "showcaseVideo": "https://youtu.be/yyZ9M5crxJc",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress",
-      "Tentative"
-    ]
-  },
-  {
     "name": "Ragnarok 75hz",
     "id": "ragnarok-75hz",
     "player": "wwdonut",
@@ -10231,21 +10231,6 @@
     ]
   },
   {
-    "name": "wocky circles 47-86%",
-    "id": "wocky-circles-47-86",
-    "player": "zXdasfsa",
-    "date": "2024-12-08",
-    "length": 20,
-    "version": 2.2,
-    "video": "https://youtu.be/K9koQKBAZwc",
-    "showcaseVideo": "https://youtu.be/yyZ9M5crxJc",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Sonic Wave Infinity 120hz Mobile 42%",
     "id": "sonic-wave-infinity-120hz-mobile-42",
     "player": "russoboy",
@@ -10864,6 +10849,21 @@
     "tags": [
       "Level",
       "Verified"
+    ]
+  },
+  {
+    "name": "wocky circles 59%",
+    "id": "wocky-circles-59",
+    "player": "oguzok",
+    "date": "2025-09-13",
+    "length": 36,
+    "version": 2.2,
+    "video": "https://youtu.be/zwcwwsXtj6E",
+    "showcaseVideo": "https://youtu.be/yyZ9M5crxJc",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -14570,6 +14570,7 @@
     ]
   }
 ]
+
 
 
 
