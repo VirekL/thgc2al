@@ -6229,6 +6229,21 @@
     ]
   },
   {
+    "name": "Silent Oppenheimer 32-54%",
+    "id": "silent-oppenheimer-32-54",
+    "player": "Dezstro",
+    "date": "2025-09-13",
+    "length": 29,
+    "version": 2.2,
+    "video": "https://youtu.be/IQBGUuERgF8",
+    "showcaseVideo": "https://youtu.be/Q-IT8xuqU9Q",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "The Hallucination",
     "id": "the-hallucination",
     "player": "VoTcHi",
@@ -10856,6 +10871,7 @@
     "id": "wocky-circles-59",
     "player": "oguzok",
     "date": "2025-09-13",
+    "levelID": 100420930,
     "length": 36,
     "version": 2.2,
     "video": "https://youtu.be/zwcwwsXtj6E",
@@ -14570,6 +14586,7 @@
     ]
   }
 ]
+
 
 
 
