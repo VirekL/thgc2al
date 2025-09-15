@@ -1,24 +1,5 @@
 [
 	{
-		"name": "Ouroboros 60hz Mobile 76%",
-		"id": "ouroboros-60hz-mobile-76",
-		"player": "Jastro",
-		"length": "137",
-		"version": "2.2",
-		"video": "https://youtu.be/RilB5eljWC4",
-		"date": "2025-04-05",
-		"showcaseVideo": "https://youtu.be/Tks9DNwfxz4",
-		"levelID": "56703691",
-		"submitter": "Excryst",
-		"tags": [
-			"Rated",
-			"Low Hertz",
-			"Mobile",
-			"Progress",
-			"Level"
-		]
-	},
-	{
 	"name": "TrakineS",
     "id": "trakines",
     "player": "mariner",
@@ -32,6 +13,134 @@
     "tags": [
       "Level",
       "Verified"
+    ]
+  },
+  {
+	"name": "Purplehouse 25-95%",
+    "id": "purplehouse-25-95",
+    "player": "Xtra8nugs",
+    "levelID": null,
+    "date": "2025-09-09",
+    "length": 38,
+    "version": 2.2,
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/f1WehtceFnk",
+    "showcaseVideo": null,
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
+	"name": "LiGHtmArE 74-86%",
+    "id": "lightmare-74-86",
+    "player": "merca",
+    "levelID": 77233362,
+    "date": "2025-09-15",
+    "length": 16,
+    "version": 2.2,
+    "submitter": "merca",
+    "video": "https://www.youtube.com/watch?v=bB40ILkV7zw",
+    "showcaseVideo": "https://www.youtube.com/watch?v=a37y9M8rCIU",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
+	"name": "LiGHtmArE 45-55%",
+    "id": "lightmare-45-55",
+    "player": "merca",
+    "levelID": 77233362,
+    "date": "2025-09-14",
+    "length": 13,
+    "version": 2.2,
+    "submitter": "merca",
+    "video": "https://www.youtube.com/watch?v=SBS-0V87tX0",
+    "showcaseVideo": "https://www.youtube.com/watch?v=a37y9M8rCIU",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
+	"name": "Silent Machine 39%",
+    "id": "silent-machine-39",
+    "player": "SeptaGon7",
+    "levelID": 90261044,
+    "date": "2025-09-13",
+    "length": 30,
+    "version": 2.2,
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/oHXOKxpym50",
+    "showcaseVideo": "https://www.youtube.com/watch?v=SCdMzUZ6DAI",
+    "tags": [
+      "Level",
+      "Verified",
+	  "CBF"
+    ]
+  },
+  {
+	"name": "Silent Machine 36-66%",
+    "id": "silent-machine-36-66",
+    "player": "SeptaGon7",
+    "levelID": 90261044,
+    "date": "2025-09-13",
+    "length": 28,
+    "version": 2.2,
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/oHXOKxpym50?t=34",
+    "showcaseVideo": "https://www.youtube.com/watch?v=SCdMzUZ6DAI",
+    "tags": [
+      "Level",
+      "Verified",
+	  "CBF"
+    ]
+  },
+  {
+	"name": "invisible legg",
+    "id": "invisible-legg",
+    "player": "pixelfactorial",
+    "levelID": null,
+    "date": "2025-09-15",
+    "length": 3,
+    "version": 2.1,
+    "video": "https://youtu.be/8Z1T8PIpzTQ",
+    "showcaseVideo": null,
+    "submitter": "pixelfactorial",
+    "tags": [
+      "Challenge",
+      "Verified"
+    ]
+  },
+  {
+	"name": "Silent Club Plus 58%",
+    "id": "silent-club-plus-58",
+    "player": "Whizkid05",
+    "date": "2025-09-14",
+    "length": 53,
+    "version": 2.2,
+    "submitter": "TYATYAPKA",
+    "video": "https://youtu.be/JBGDHHXUDFU",
+	"showcaseVideo": "https://youtu.be/8k7B_UJicnA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
+    "name": "Silent Club Plus 55-100%",
+    "id": "silent-club-plus-55-100",
+    "player": "Whizkid05",
+    "date": "2025-09-14",
+    "length": 48,
+    "version": 2.2,
+    "submitter": "TYATYAPKA",
+    "video": "https://youtu.be/JBGDHHXUDFU?t=65",
+	"showcaseVideo": "https://youtu.be/8k7B_UJicnA",
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -51,15 +160,15 @@
     ]
   },
   {
-	"name": "Angelicide (Kaza) 68-94%",
-    "id": "angelicide-kaza-68-94",
-    "player": "Kaza",
-    "date": "2025-09-12",
-    "length": "21",
-    "version": "2.2",
-    "showcaseVideo": "https://youtu.be/xX5oNO-A_yc",
-    "video": "https://youtu.be/D7zVa1N6I9k",
-    "submitter": "Exiled_Shade",
+	"name": "Angelicide (Xtra8nugz) 36-67%",
+    "id": "angelicide-xtra8nugz-36-67",
+    "player": "Xtra8nugz",
+    "date": "2025-09-14",
+    "length": 23,
+    "version": 2.2,
+    "showcaseVideo": "https://youtu.be/OVuh8hDHNvQ",
+    "video": null,
+    "submitter": "JustAComfyCookie",
     "tags": [
       "Level",
       "Progress"
@@ -67,7 +176,7 @@
   },
   {
 	"name": "Tidal Wave 1.1x 42-92% 6 deaths, ??.?? accuracy",
-    "id": "tidal-wave1-1x-42-92-6-deaths-??-??-accuracy",
+    "id": "tidal-wave-1-1x-42-92-6-deaths-??-??-accuracy",
     "player": "JesseGamingGD",
 	"submitter": "Excryst",
     "levelID": 86407629,
@@ -114,6 +223,57 @@
       "Noclip",
 	  "Speedhack",
       "Rated"
+    ]
+  },
+  {
+	"name": "Slaughterhouse 1.2x 49-82%",
+    "id": "slaughterhouse-1-2x-49-82",
+    "player": "Mechabrandon",
+    "levelID": 27690100,
+    "date": "2025-09-14",
+    "length": 18,
+    "version": 2.2,
+    "video": "https://youtu.be/Adie0p4hNgg",
+    "showcaseVideo": "https://youtu.be/ctmNCG3_1Gg",
+    "submitter": "Franoli2601",
+    "tags": [
+      "Level",
+      "Speedhack",
+      "Progress",
+      "Rated"
+    ]
+  },
+  {
+	"name": "Slaughterhouse 1.2x 25-53%",
+    "id": "slaughterhouse-1-2x-25-53",
+    "player": "Mechabrandon",
+    "levelID": 27690100,
+    "date": "2024-12-10",
+    "length": 12,
+    "version": 2.2,
+    "video": "https://youtu.be/zTWE26nxplE",
+    "showcaseVideo": "https://youtu.be/ctmNCG3_1Gg",
+    "submitter": "Franoli2601",
+    "tags": [
+      "Level",
+      "Speedhack",
+      "Progress",
+      "Rated"
+    ]
+  },
+  {
+	"name": "Sweeping Demon 2 (Taiago) 21-75%",
+    "id": "sweeping-demon-2-taiago-21-75",
+    "player": "Taiago",
+    "date": "2025-09-14",
+    "length": 38,
+    "version": 2.2,
+    "video": "https://youtu.be/SRO4ahOgs1s",
+    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
+    "submitter": "BlueGamer",
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
