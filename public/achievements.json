@@ -4067,12 +4067,12 @@
     "name": "Angelicide (Kaza) 37-65%",
     "id": "angelicide-kaza-37-65",
     "player": "Kaza",
-    "date": "2025-06-29",
-    "length": "26",
-    "version": "2.2",
-    "showcaseVideo": "https://youtu.be/678hOIaKzUk",
+    "date": "2025-09-15",
+    "length": 26,
+    "version": 2.2,
+    "showcaseVideo": "https://youtu.be/kJIHZ73fI_Y",
     "video": "https://youtu.be/D7zVa1N6I9k",
-    "submitter": "Exiled_Shade",
+    "submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Progress"
@@ -4100,9 +4100,9 @@
     "id": "limbo-but-uwu-ig-idk-60hz-mobile-67",
     "player": "freedom",
     "date": "2025-06-30",
-    "length": "59",
-    "version": "2.2",
-    "levelID": "110705712",
+    "length": 59,
+    "version": 2.2,
+    "levelID": 110705712,
     "video": "https://youtu.be/twbOOiF7a-0",
     "showcaseVideo": "https://youtu.be/-nja3I-CK50",
     "submitter": "kyle1saurus",
@@ -14605,4 +14605,5 @@
     ]
   }
 ]
+
 
