@@ -76,7 +76,7 @@
     "showcaseVideo": "https://www.youtube.com/watch?v=SCdMzUZ6DAI",
     "tags": [
       "Level",
-      "Verified",
+      "Progress",
 	  "CBF"
     ]
   },
@@ -93,7 +93,7 @@
     "showcaseVideo": "https://www.youtube.com/watch?v=SCdMzUZ6DAI",
     "tags": [
       "Level",
-      "Verified",
+      "Progress",
 	  "CBF"
     ]
   },
@@ -101,7 +101,7 @@
 	"name": "invisible legg",
     "id": "invisible-legg",
     "player": "pixelfactorial",
-    "levelID": null,
+    "levelID": 126013369,
     "date": "2025-09-15",
     "length": 3,
     "version": 2.1,
