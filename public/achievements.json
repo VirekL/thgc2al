@@ -3117,6 +3117,26 @@
     ]
   },
   {
+	"name": "Ouroboros 60hz Mobile 76%",
+    "id": "ouroboros-60hz-mobile-76",
+    "player": "Jastro",
+    "length": 125,
+    "version": 2.2,
+    "video": "https://youtu.be/RilB5eljWC4",
+    "date": "2025-04-05",
+    "showcaseVideo": "https://youtu.be/Tks9DNwfxz4",
+    "levelID": 56703691,
+    "submitter": "Excryst",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated",
+      "Tentative"
+    ]
+  },
+  {
     "name": "Gayouki 83%",
     "id": "gayouki-83",
     "player": "Kaza",
@@ -3345,7 +3365,7 @@
     "levelID": 100420930,
     "length": 55,
     "version": 2.2,
-    "video": "https://youtu.be/yOx5Q3BkWIg?si=VU9EtQ2yxuKD4yMs",
+    "video": "https://youtu.be/yOx5Q3BkWIg",
     "showcaseVideo": "https://youtu.be/yyZ9M5crxJc",
     "submitter": "TYATYAPKA",
     "tags": [
@@ -4296,25 +4316,6 @@
     ]
   },
   {
-    "name": "Ouroboros 60hz Mobile 76%",
-		"id": "ouroboros-60hz-mobile-76",
-		"player": "Jastro",
-		"length": "137",
-		"version": "2.2",
-		"video": "https://youtu.be/RilB5eljWC4",
-		"date": "2025-04-05",
-		"showcaseVideo": "https://youtu.be/Tks9DNwfxz4",
-		"levelID": "56703691",
-		"submitter": "Excryst",
-		"tags": [
-			"Rated",
-			"Low Hertz",
-			"Mobile",
-			"Progress",
-			"Level"
-		]
-	},
-	{
     "name": "SADOMASOCHISM 60%, 85%",
     "id": "sadomasochism-60-85",
     "player": "NucGDStuff",
@@ -14588,6 +14589,7 @@
     ]
   }
 ]
+
 
 
 
