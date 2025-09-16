@@ -3799,6 +3799,21 @@
     ]
   },
   {
+	"name": "Angelicide (Xtra8nugz) 36-67%",
+    "id": "angelicide-xtra8nugz-36-67",
+    "player": "Xtra8nugz",
+    "date": "2025-09-14",
+    "length": 23,
+    "version": 2.2,
+	"video": "https://youtu.be/OVuh8hDHNvQ",
+    "showcaseVideo": null,
+    "submitter": "JustAComfyCookie",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Unnerfed Yatagarasu",
     "id": "unnerfed-yatagarasu",
     "player": "Zoink",
@@ -4618,6 +4633,22 @@
     "showcaseVideo": "https://youtu.be/fiCwcuCl4c0",
     "tags": [
       "Challenge",
+      "Progress"
+    ]
+  },
+  {
+	"name": "LiGHtmArE 74-86%",
+    "id": "lightmare-74-86",
+    "player": "merca",
+    "levelID": 77233362,
+    "date": "2025-09-15",
+    "length": 16,
+    "version": 2.2,
+    "submitter": "merca",
+    "video": "https://www.youtube.com/watch?v=bB40ILkV7zw",
+    "showcaseVideo": "https://www.youtube.com/watch?v=a37y9M8rCIU",
+    "tags": [
+      "Level",
       "Progress"
     ]
   },
@@ -6593,6 +6624,22 @@
     ]
   },
   {
+	"name": "Dark Dimension",
+    "id": "dark-dimension",
+    "player": "The Nixuz GD",
+    "levelID": 125617849,
+    "date": "2025-09-05",
+    "length": 121,
+    "version": 2.2,
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/g2DrT9bHjOI",
+    "showcaseVideo": "https://youtu.be/hHRcf7qQQdI",
+    "tags": [
+      "Level",
+      "Verified"
+    ]
+  },
+  {
     "name": "Snowblind (Old) 59%",
     "id": "snowblind-old-59",
     "player": "Hippo",
@@ -7169,6 +7216,24 @@
     ]
   },
   {
+	"name": "Tidal Wave 1.1x 42-92% 6 deaths, ??.?? accuracy",
+    "id": "tidal-wave-1-1x-42-92-6-deaths-??-??-accuracy",
+    "player": "JesseGamingGD",
+	"submitter": "Excryst",
+    "levelID": 86407629,
+    "date": "2025-04-14",
+    "length": 73,
+    "version": 2.2,
+    "video": "https://youtu.be/LGse_IjjHpc",
+    "showcaseVideo": "https://youtu.be/PFHlkdz9UqM",
+    "tags": [
+      "Level",
+      "Speedhack",
+	  "Noclip",
+      "Rated"
+    ]
+  },
+  {
     "name": "Stercore",
     "id": "stercore",
     "player": "anix",
@@ -7401,6 +7466,22 @@
     ]
   },
   {
+	"name": "TrakineS",
+    "id": "trakines",
+    "player": "mariner",
+    "levelID": 125788781,
+    "date": "2025-09-09",
+    "length": 64,
+    "version": 2.2,
+    "submitter": "Exiled_Shade",
+    "video": "https://youtu.be/oKuoI-_JzKU",
+    "showcaseVideo": "https://youtu.be/0H-a8yQzi5A",
+    "tags": [
+      "Level",
+      "Verified"
+    ]
+  },
+  {
     "name": "walter white",
     "id": "walter-white",
     "player": "iliLaserili",
@@ -7575,6 +7656,24 @@
     "tags": [
       "Challenge",
       "Verified"
+    ]
+  },
+  {
+	"name": "Slaughterhouse 1.2x 49-82%",
+    "id": "slaughterhouse-1-2x-49-82",
+    "player": "Mechabrandon",
+    "levelID": 27690100,
+    "date": "2025-09-14",
+    "length": 18,
+    "version": 2.2,
+    "video": "https://youtu.be/Adie0p4hNgg",
+    "showcaseVideo": "https://youtu.be/ctmNCG3_1Gg",
+    "submitter": "Franoli2601",
+    "tags": [
+      "Level",
+      "Speedhack",
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -9571,6 +9670,21 @@
     ]
   },
   {
+	"name": "Silent Club Plus 58%",
+    "id": "silent-club-plus-58",
+    "player": "Whizkid05",
+    "date": "2025-09-14",
+    "length": 53,
+    "version": 2.2,
+    "submitter": "TYATYAPKA",
+    "video": "https://youtu.be/JBGDHHXUDFU",
+	"showcaseVideo": "https://youtu.be/8k7B_UJicnA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Dreamopolis",
     "id": "dreamopolis",
     "player": "Sirplus",
@@ -10392,6 +10506,21 @@
     ]
   },
   {
+	"name": "Silent Club Plus 55-100%",
+    "id": "silent-club-plus-55-100",
+    "player": "Whizkid05",
+    "date": "2025-09-14",
+    "length": 48,
+    "version": 2.2,
+    "submitter": "TYATYAPKA",
+    "video": "https://youtu.be/JBGDHHXUDFU?t=65",
+	"showcaseVideo": "https://youtu.be/8k7B_UJicnA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Misanthrope 65-100%",
     "id": "misanthrope-65-100",
     "player": "BigMacGD",
@@ -10520,6 +10649,22 @@
     ]
   },
   {
+	"name": "invisible legg",
+    "id": "invisible-legg",
+    "player": "pixelfactorial",
+    "levelID": 126013369,
+    "date": "2025-09-15",
+    "length": 3,
+    "version": 2.1,
+    "video": "https://youtu.be/8Z1T8PIpzTQ",
+    "showcaseVideo": null,
+    "submitter": "pixelfactorial",
+    "tags": [
+      "Challenge",
+      "Verified"
+    ]
+  },
+  {
     "name": "Fried lEgg",
     "id": "fried-leg",
     "player": "MoonFrost",
@@ -10601,6 +10746,24 @@
     "tags": [
       "Level",
       "Verified",
+      "Rated"
+    ]
+  },
+  {
+	"name": "Acheron 1.15x 20 deaths, 98.58 accuracy",
+    "id": "achero-1-15x-20-deaths-98-58-accuracy",
+    "player": "Doggie",
+    "length": 67,
+    "version": 2.2,
+    "video": "https://www.youtube.com/live/dAQsa9YeprA?t=5585s",
+    "showcaseVideo": "https://youtu.be/YQElFvT5ynk",
+    "date": "2025-09-09",
+    "levelID": 73667628,
+    "submitter": "Excryst",
+    "tags": [
+      "Level",
+      "Noclip",
+	  "Speedhack",
       "Rated"
     ]
   },
@@ -13407,6 +13570,24 @@
     ]
   },
   {
+	"name": "Slaughterhouse 1.2x 25-53%",
+    "id": "slaughterhouse-1-2x-25-53",
+    "player": "Mechabrandon",
+    "levelID": 27690100,
+    "date": "2024-12-10",
+    "length": 12,
+    "version": 2.2,
+    "video": "https://youtu.be/zTWE26nxplE",
+    "showcaseVideo": "https://youtu.be/ctmNCG3_1Gg",
+    "submitter": "Franoli2601",
+    "tags": [
+      "Level",
+      "Speedhack",
+      "Progress",
+      "Rated"
+    ]
+  },
+  {
     "name": "Sakupen Trials",
     "id": "sakupen-trials",
     "player": "Xanii",
@@ -13966,6 +14147,23 @@
     ]
   },
   {
+	"name": "Silent Machine 39%",
+    "id": "silent-machine-39",
+    "player": "SeptaGon7",
+    "levelID": 90261044,
+    "date": "2025-09-13",
+    "length": 30,
+    "version": 2.2,
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/oHXOKxpym50",
+    "showcaseVideo": "https://www.youtube.com/watch?v=SCdMzUZ6DAI",
+    "tags": [
+      "Level",
+      "Progress",
+	  "CBF"
+    ]
+  },
+  {
     "name": "VOID",
     "id": "void",
     "player": "Whizkid05",
@@ -13997,6 +14195,23 @@
       "Level",
       "Verified",
       "Rated"
+    ]
+  },
+  {
+	"name": "Silent Machine 36-66%",
+    "id": "silent-machine-36-66",
+    "player": "SeptaGon7",
+    "levelID": 90261044,
+    "date": "2025-09-13",
+    "length": 28,
+    "version": 2.2,
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/oHXOKxpym50?t=34",
+    "showcaseVideo": "https://www.youtube.com/watch?v=SCdMzUZ6DAI",
+    "tags": [
+      "Level",
+      "Progress",
+	  "CBF"
     ]
   },
   {
@@ -14234,6 +14449,22 @@
       "Level",
       "Low Hertz",
       "Rated"
+    ]
+  },
+  {
+	"name": "LiGHtmArE 45-55%",
+    "id": "lightmare-45-55",
+    "player": "merca",
+    "levelID": 77233362,
+    "date": "2025-09-14",
+    "length": 13,
+    "version": 2.2,
+    "submitter": "merca",
+    "video": "https://www.youtube.com/watch?v=SBS-0V87tX0",
+    "showcaseVideo": "https://www.youtube.com/watch?v=a37y9M8rCIU",
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -14539,6 +14770,22 @@
     ]
   },
   {
+	"name": "Unnerfed Titan Complex",
+    "id": "unnerfed-titan-complex",
+    "player": "Dustabounds",
+    "levelID": 72900436,
+    "date": "2025-09-11",
+    "length": 201,
+    "version": 2.2,
+    "submitter": "Exiled_Shade",
+    "video": "https://youtu.be/VYodgEnIP0I",
+    "showcaseVideo": "https://youtu.be/OQrXQ8eqXYU",
+    "tags": [
+      "Level",
+      "Verified"
+    ]
+  },
+  {
     "name": "Kenos",
     "id": "kenos",
     "player": "npesta",
@@ -14589,6 +14836,7 @@
     ]
   }
 ]
+
 
 
 
