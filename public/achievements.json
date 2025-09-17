@@ -7232,7 +7232,7 @@
     ]
   },
   {
-	"name": "Tidal Wave 1.1x 42-92% 6 deaths, ??.?? accuracy",
+	"name": "Tidal Wave 1.1x 42-92% 6 deaths, 99.38 accuracy",
     "id": "tidal-wave-1-1x-42-92-6-deaths-??-??-accuracy",
     "player": "JesseGamingGD",
 	"submitter": "Excryst",
@@ -10329,24 +10329,6 @@
     ]
   },
   {
-    "name": "True Unnerfed Slaughterhouse 25-100% 16 deaths, 97.96 accuracy",
-    "id": "true-unnerfed-slaughterhouse-25-100-16-deaths-97-96-accuracy",
-    "player": "Doggie",
-    "length": "60",
-    "version": "2.2",
-    "video": "https://youtu.be/8Z5_H0LCBpw&t=4547s",
-    "showcaseVideo": "https://youtu.be/8NBuqpGb1KY",
-    "date": "2025-05-18",
-    "submitter": "kittycatiscute",
-    "levelID": "77618325",
-    "tags": [
-      "Level",
-      "Noclip",
-      "Progress",
-      "CBF"
-    ]
-  },
-  {
     "name": "Heliopolis (Jif) 46%",
     "id": "heliopolis-jif-46",
     "player": "Jif",
@@ -10762,24 +10744,6 @@
     "tags": [
       "Level",
       "Verified",
-      "Rated"
-    ]
-  },
-  {
-	"name": "Acheron 1.15x 20 deaths, 98.58 accuracy",
-    "id": "achero-1-15x-20-deaths-98-58-accuracy",
-    "player": "Doggie",
-    "length": 67,
-    "version": 2.2,
-    "video": "https://www.youtube.com/live/dAQsa9YeprA?t=5585s",
-    "showcaseVideo": "https://youtu.be/YQElFvT5ynk",
-    "date": "2025-09-09",
-    "levelID": 73667628,
-    "submitter": "Excryst",
-    "tags": [
-      "Level",
-      "Noclip",
-	  "Speedhack",
       "Rated"
     ]
   },
@@ -12300,24 +12264,6 @@
     ]
   },
   {
-    "name": "Slaughterhouse 1.2x 30 deaths, 99.32 accuracy",
-    "id": "slaughterhouse-1-2x-30-deaths-99-32-accuracy",
-    "player": "RaeveZ",
-    "levelID": 27690100,
-    "date": "2024-03-27",
-    "length": 58,
-    "version": 2.1,
-    "video": "https://youtu.be/IH9krI_lFlQ",
-    "showcaseVideo": "https://youtu.be/ctmNCG3_1Gg",
-    "submitter": "Vedertesu",
-    "tags": [
-      "Level",
-      "Speedhack",
-      "Noclip",
-      "Rated"
-    ]
-  },
-  {
     "name": "racketeering v2",
     "id": "racketeering-v2",
     "player": "seels",
@@ -13586,24 +13532,6 @@
     ]
   },
   {
-	"name": "Slaughterhouse 1.2x 25-53%",
-    "id": "slaughterhouse-1-2x-25-53",
-    "player": "Mechabrandon",
-    "levelID": 27690100,
-    "date": "2024-12-10",
-    "length": 12,
-    "version": 2.2,
-    "video": "https://youtu.be/zTWE26nxplE",
-    "showcaseVideo": "https://youtu.be/ctmNCG3_1Gg",
-    "submitter": "Franoli2601",
-    "tags": [
-      "Level",
-      "Speedhack",
-      "Progress",
-      "Rated"
-    ]
-  },
-  {
     "name": "Sakupen Trials",
     "id": "sakupen-trials",
     "player": "Xanii",
@@ -14852,6 +14780,7 @@
     ]
   }
 ]
+
 
 
 
