@@ -6339,7 +6339,8 @@
     "submitter": "SeptaGon7",
     "tags": [
       "Level",
-      "Progress"
+      "Progress",
+	  "CBF"
     ]
   },
   {
@@ -6391,6 +6392,22 @@
       "Level",
       "Verified",
       "Rated"
+    ]
+  },
+  {
+	"name": "Old Orochi 19-81%",
+    "id": "old-orochi-19-81",
+    "player": "SeptaGon7",
+    "date": "2025-09-17",
+    "length": 76,
+    "version": 2.2,
+    "video": "https://youtu.be/mlBqUmow-jM",
+    "showcaseVideo": "https://youtu.be/kOjaffK5Rgo",
+    "submitter": "SeptaGon7",
+    "tags": [
+      "Level",
+      "Progress",
+	  "CBF"
     ]
   },
   {
@@ -14780,6 +14797,7 @@
     ]
   }
 ]
+
 
 
 
