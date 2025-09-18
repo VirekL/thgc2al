@@ -626,6 +626,21 @@
     ]
   },
   {
+	"name": "Sweeping Demon 2 (Taiago) 21-89%",
+    "id": "sweeping-demon-2-taiago-21-89",
+    "player": "Taiago",
+    "date": "2025-09-19",
+    "length": 44,
+    "version": 2.2,
+    "video": "https://youtu.be/0tFBzVMAORQ",
+    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "andromeda",
     "id": "andromeda",
     "player": "Taiago",
@@ -4976,6 +4991,22 @@
       "Level",
       "Verified",
       "Outdated Version"
+    ]
+  },
+  {
+	"name": "last stop 55%",
+    "id": "last-stop-55",
+    "player": "aytch0008",
+    "date": "2025-09-15",
+    "length": 13,
+    "version": 2.1,
+    "levelID": 64815983,
+    "video": "https://youtu.be/ge2_UFBkcHg",
+    "showcaseVideo": "https://youtu.be/QyDnUJqBd60",
+    "submitter": "aytch0009",
+    "tags": [
+      "Challenge",
+      "Progress"
     ]
   },
   {
@@ -11576,22 +11607,6 @@
     ]
   },
   {
-    "name": "last stop 49%",
-    "id": "last-stop-49",
-    "player": "aytch0008",
-    "date": "2023-08-31",
-    "length": "11",
-    "version": "2.1",
-    "levelID": "64815983",
-    "video": "https://youtu.be/j7ETMjad6uY",
-    "showcaseVideo": "https://youtu.be/QyDnUJqBd60",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Challenge",
-      "Progress"
-    ]
-  },
-  {
     "name": "Katarsis",
     "id": "katarsis",
     "player": "LordVadercraft",
@@ -14797,6 +14812,7 @@
     ]
   }
 ]
+
 
 
 
