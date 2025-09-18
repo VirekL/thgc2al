@@ -626,7 +626,7 @@
     ]
   },
   {
-	"name": "Sweeping Demon 2 (Taiago) 21-89%",
+    "name": "Sweeping Demon 2 (Taiago) 21-89%",
     "id": "sweeping-demon-2-taiago-21-89",
     "player": "Taiago",
     "date": "2025-09-19",
@@ -1728,6 +1728,23 @@
     "tags": [
       "Level",
       "Progress"
+    ]
+  },
+  {
+    "name": "Menace",
+    "id": "menace",
+    "player": "Whizkid05",
+    "levelID": 107805281,
+    "date": "2024-07-14",
+    "length": 189,
+    "version": 2.2,
+    "video": "https://youtu.be/nnkgghxxsEE",
+    "showcaseVideo": "https://youtu.be/ZT68SPg61CE",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Verified",
+      "Rated"
     ]
   },
   {
@@ -3132,7 +3149,7 @@
     ]
   },
   {
-	"name": "Ouroboros 60hz Mobile 76%",
+    "name": "Ouroboros 60hz Mobile 76%",
     "id": "ouroboros-60hz-mobile-76",
     "player": "Jastro",
     "length": 125,
@@ -3303,23 +3320,6 @@
       "Progress",
       "2P",
       "CBF"
-    ]
-  },
-  {
-    "name": "Menace",
-    "id": "menace",
-    "player": "Whizkid05",
-    "levelID": 107805281,
-    "date": "2024-07-14",
-    "length": 189,
-    "version": 2.2,
-    "video": "https://youtu.be/nnkgghxxsEE",
-    "showcaseVideo": "https://youtu.be/ZT68SPg61CE",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Verified",
-      "Rated"
     ]
   },
   {
@@ -3814,13 +3814,13 @@
     ]
   },
   {
-	"name": "Angelicide (Xtra8nugz) 36-67%",
+    "name": "Angelicide (Xtra8nugz) 36-67%",
     "id": "angelicide-xtra8nugz-36-67",
     "player": "Xtra8nugz",
     "date": "2025-09-14",
     "length": 23,
     "version": 2.2,
-	"video": "https://youtu.be/OVuh8hDHNvQ",
+    "video": "https://youtu.be/OVuh8hDHNvQ",
     "showcaseVideo": null,
     "submitter": "JustAComfyCookie",
     "tags": [
@@ -4652,7 +4652,7 @@
     ]
   },
   {
-	"name": "LiGHtmArE 74-86%",
+    "name": "LiGHtmArE 74-86%",
     "id": "lightmare-74-86",
     "player": "merca",
     "levelID": 77233362,
@@ -4994,7 +4994,7 @@
     ]
   },
   {
-	"name": "last stop 55%",
+    "name": "last stop 55%",
     "id": "last-stop-55",
     "player": "aytch0008",
     "date": "2025-09-15",
@@ -6371,7 +6371,7 @@
     "tags": [
       "Level",
       "Progress",
-	  "CBF"
+      "CBF"
     ]
   },
   {
@@ -6426,7 +6426,7 @@
     ]
   },
   {
-	"name": "Old Orochi 19-81%",
+    "name": "Old Orochi 19-81%",
     "id": "old-orochi-19-81",
     "player": "SeptaGon7",
     "date": "2025-09-17",
@@ -6438,7 +6438,7 @@
     "tags": [
       "Level",
       "Progress",
-	  "CBF"
+      "CBF"
     ]
   },
   {
@@ -6672,7 +6672,7 @@
     ]
   },
   {
-	"name": "Dark Dimension",
+    "name": "Dark Dimension",
     "id": "dark-dimension",
     "player": "The Nixuz GD",
     "levelID": 125617849,
@@ -7151,7 +7151,7 @@
     ]
   },
   {
-	"name": "wocky circles (Unifer) 74%",
+    "name": "wocky circles (Unifer) 74%",
     "id": "wocky-circles-unifer-74",
     "player": "oguzok",
     "date": "2025-09-15",
@@ -7280,10 +7280,10 @@
     ]
   },
   {
-	"name": "Tidal Wave 1.1x 42-92% 6 deaths, 99.38 accuracy",
+    "name": "Tidal Wave 1.1x 42-92% 6 deaths, 99.38 accuracy",
     "id": "tidal-wave-1-1x-42-92-6-deaths-??-??-accuracy",
     "player": "JesseGamingGD",
-	"submitter": "Excryst",
+    "submitter": "Excryst",
     "levelID": 86407629,
     "date": "2025-04-14",
     "length": 73,
@@ -7293,7 +7293,7 @@
     "tags": [
       "Level",
       "Speedhack",
-	  "Noclip",
+      "Noclip",
       "Rated"
     ]
   },
@@ -7530,7 +7530,7 @@
     ]
   },
   {
-	"name": "TrakineS",
+    "name": "TrakineS",
     "id": "trakines",
     "player": "mariner",
     "levelID": 125788781,
@@ -7723,7 +7723,7 @@
     ]
   },
   {
-	"name": "Slaughterhouse 1.2x 49-82%",
+    "name": "Slaughterhouse 1.2x 49-82%",
     "id": "slaughterhouse-1-2x-49-82",
     "player": "Mechabrandon",
     "levelID": 27690100,
@@ -9734,7 +9734,7 @@
     ]
   },
   {
-	"name": "Silent Club Plus 58%",
+    "name": "Silent Club Plus 58%",
     "id": "silent-club-plus-58",
     "player": "Whizkid05",
     "date": "2025-09-14",
@@ -9742,7 +9742,7 @@
     "version": 2.2,
     "submitter": "TYATYAPKA",
     "video": "https://youtu.be/JBGDHHXUDFU",
-	"showcaseVideo": "https://youtu.be/8k7B_UJicnA",
+    "showcaseVideo": "https://youtu.be/8k7B_UJicnA",
     "tags": [
       "Level",
       "Progress"
@@ -10552,7 +10552,7 @@
     ]
   },
   {
-	"name": "Silent Club Plus 55-100%",
+    "name": "Silent Club Plus 55-100%",
     "id": "silent-club-plus-55-100",
     "player": "Whizkid05",
     "date": "2025-09-14",
@@ -10560,7 +10560,7 @@
     "version": 2.2,
     "submitter": "TYATYAPKA",
     "video": "https://youtu.be/JBGDHHXUDFU?t=65",
-	"showcaseVideo": "https://youtu.be/8k7B_UJicnA",
+    "showcaseVideo": "https://youtu.be/8k7B_UJicnA",
     "tags": [
       "Level",
       "Progress"
@@ -10695,7 +10695,7 @@
     ]
   },
   {
-	"name": "invisible legg",
+    "name": "invisible legg",
     "id": "invisible-legg",
     "player": "pixelfactorial",
     "levelID": 126013369,
@@ -14123,7 +14123,7 @@
     ]
   },
   {
-	"name": "Silent Machine 39%",
+    "name": "Silent Machine 39%",
     "id": "silent-machine-39",
     "player": "SeptaGon7",
     "levelID": 90261044,
@@ -14136,7 +14136,7 @@
     "tags": [
       "Level",
       "Progress",
-	  "CBF"
+      "CBF"
     ]
   },
   {
@@ -14174,7 +14174,7 @@
     ]
   },
   {
-	"name": "Silent Machine 36-66%",
+    "name": "Silent Machine 36-66%",
     "id": "silent-machine-36-66",
     "player": "SeptaGon7",
     "levelID": 90261044,
@@ -14187,7 +14187,7 @@
     "tags": [
       "Level",
       "Progress",
-	  "CBF"
+      "CBF"
     ]
   },
   {
@@ -14428,7 +14428,7 @@
     ]
   },
   {
-	"name": "LiGHtmArE 45-55%",
+    "name": "LiGHtmArE 45-55%",
     "id": "lightmare-45-55",
     "player": "merca",
     "levelID": 77233362,
@@ -14746,7 +14746,7 @@
     ]
   },
   {
-	"name": "Unnerfed Titan Complex",
+    "name": "Unnerfed Titan Complex",
     "id": "unnerfed-titan-complex",
     "player": "Dustabounds",
     "levelID": 72900436,
@@ -14812,14 +14812,3 @@
     ]
   }
 ]
-
-
-
-
-
-
-
-
-
-
-
