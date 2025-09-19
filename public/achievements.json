@@ -1157,7 +1157,6 @@
       "Level",
       "Low Hertz",
       "Mobile",
-      "Progress",
       "Rated"
     ],
     "thumbnail": "https://tjcsucht.net/levelthumbs/75206202.png"
@@ -3949,7 +3948,6 @@
       "Level",
       "Verified",
       "CBF",
-      "Formerly Rated"
     ]
   },
   {
@@ -8795,6 +8793,7 @@
     "version": 2.1,
     "video": "https://youtu.be/2mMTcqsCc4c",
     "showcaseVideo": "https://youtu.be/6v_pWirR72Q",
+    "submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Low Hertz",
@@ -9335,6 +9334,7 @@
     "version": 2.1,
     "video": "https://youtu.be/xdZ7DhMu5jw",
     "showcaseVideo": "https://youtu.be/lE2jUb9qNNg",
+    "submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Low Hertz",
@@ -9366,6 +9366,7 @@
     "version": 2.1,
     "video": "https://youtu.be/b9OBCqnLyl8",
     "showcaseVideo": "https://youtu.be/k3ebBTBeUTg",
+    "submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Low Hertz",
@@ -9389,6 +9390,24 @@
     ]
   },
   {
+    "name": "Visible Ray 60hz Mobile",
+		"id": "visible-ray-60hz-mobile",
+		"player": "Timmydog",
+		"length": 156,
+		"version": 2.2,
+		"video": "https://youtu.be/OYhkPI5N6CU",
+		"date": "2025-09-19",
+		"showcaseVideo": "https://www.youtube.com/watch?v=4ngzCQDdMVA",
+		"levelID": 48267315,
+    "submitter": "kyle1saurus",
+		"tags": [
+			"Rated",
+			"Low Hertz",
+			"Mobile",
+			"Level"
+		]
+	},
+	{
     "name": "Buffbath",
     "id": "buffbath",
     "player": "AGSEcho",
@@ -9432,6 +9451,7 @@
     "version": 2.1,
     "video": "https://youtu.be/JSylL1BoxF0",
     "showcaseVideo": "https://youtu.be/3YQtDDnUEm4",
+    "submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Low Hertz",
@@ -14819,3 +14839,4 @@
     ]
   }
 ]
+
