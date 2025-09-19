@@ -974,7 +974,7 @@
         "submitter": "Anceps",
         "levelID": "2241592",
         "thumbnail": "https://i.ytimg.com/vi/S2EO10Z3M74/maxresdefault.jpg",
-        "video": "https://youtu.be/Q2oTRkJHmPU?si=hvgwMMjuJLl_2t1N",
+        "video": "https://youtu.be/Q2oTRkJHmPU",
         "showcaseVideo": "https://youtu.be/j3SgupWqHJw"
     },
     {
@@ -1023,7 +1023,7 @@
         "version": "1.8",
         "date": "2014-08-20",
         "levelID": "1782468",
-	    "showcaseVideo": "https://youtu.be/xrXOPg6SGyU?si=ngr5BkfjhmvYVbIf"
+	    "showcaseVideo": "https://youtu.be/xrXOPg6SGyU"
     },
     {
         "id": "primary-maze",
@@ -1071,7 +1071,7 @@
         "version": "1.6",
         "date": "2014-04-12",
         "levelID": "535596",
-	    "showcaseVideo": "https://youtu.be/HGAxTsdB_6o?si=dmwjAQY7oR579wOR"
+	    "showcaseVideo": "https://youtu.be/HGAxTsdB_6o"
     },
     {
         "id": "pg-clubstep-old",
@@ -1103,8 +1103,8 @@
         "version": "1.5",
         "date": "2014-03-02",
         "levelID": "296176",
-        "video": "https://youtu.be/qcfbTR7D_W8?si=RjlkvERAIXlWJ7S8",
-	    "showcaseVideo": "https://youtu.be/s5CBobn6D4c?si=MOXvuQqHGPWkRkDT"
+        "video": "https://youtu.be/qcfbTR7D_W8",
+	    "showcaseVideo": "https://youtu.be/s5CBobn6D4c"
     },
     {
         "id": "simg-factorial-6",
@@ -1218,7 +1218,7 @@
         "length": "81",
         "version": "1.4",
         "date": "2014-01-14",
-        "showcaseVideo": "https://youtu.be/I2773lgoM2I?si=JACNsuV8s5F_K3K9"
+        "showcaseVideo": "https://youtu.be/I2773lgoM2I"
     },
     {
         "id": "rythem-time-machine",
@@ -1325,7 +1325,7 @@
         "version": "1.0",
         "date": "2013-08-31",
         "levelID": "1063",
-        "showcaseVideo": "https://youtu.be/dJfdQgdwvTs?si=3lJzZ3xAncpuJ5qc"
+        "showcaseVideo": "https://youtu.be/dJfdQgdwvTs"
     },
     {
         "id": "m",
@@ -1340,7 +1340,7 @@
         "version": "1.0",
         "date": "2013-08-27",
         "levelID": "828",
-        "showcaseVideo": "https://youtu.be/tJVYJYQ2ySg?si=ca5cahVdX8zFxbyg"
+        "showcaseVideo": "https://youtu.be/tJVYJYQ2ySg"
     },
     {
         "id": "the-rainbow-road",
@@ -1407,7 +1407,7 @@
         "date": "2013-08-02",
         "levelID": "77237542",
         "submitter": "Anceps",
-        "video": "https://youtu.be/k90y6PIzIaE?t=45",
+        "video": null,
         "showcaseVideo": "https://youtu.be/RIeZSWzs50g"
     },
     {
@@ -1426,6 +1426,7 @@
         "video": "https://youtu.be/727pUHwWSVg"
     }
 ]
+
 
 
 
