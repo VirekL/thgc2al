@@ -64,7 +64,7 @@
     "tags": [
       "Level",
       "Verified",
-	  "Rated"
+      "Rated"
     ],
     "levelID": 119544028
   },
@@ -7172,7 +7172,7 @@
     ]
   },
   {
-	"name": "wocky circles (Unifer) 34-100%",
+    "name": "wocky circles (Unifer) 34-100%",
     "id": "wocky-circles-unifer-34-100",
     "player": "oguzok",
     "date": "2025-09-13",
@@ -8818,7 +8818,7 @@
     ]
   },
   {
-	"name": "Old Orochi 31-100%",
+    "name": "Old Orochi 31-100%",
     "id": "old-orochi-31-100",
     "player": "SeptaGon7",
     "date": "2025-09-18",
@@ -8830,7 +8830,7 @@
     "tags": [
       "Level",
       "Progress",
-	  "CBF"
+      "CBF"
     ]
   },
   {
@@ -9409,23 +9409,23 @@
   },
   {
     "name": "Visible Ray 60hz Mobile",
-		"id": "visible-ray-60hz-mobile",
-		"player": "Timmydog",
-		"length": 156,
-		"version": 2.2,
-		"video": "https://youtu.be/OYhkPI5N6CU",
-		"date": "2025-09-19",
-		"showcaseVideo": "https://www.youtube.com/watch?v=4ngzCQDdMVA",
-		"levelID": 48267315,
+    "id": "visible-ray-60hz-mobile",
+    "player": "Timmydog",
+    "length": 156,
+    "version": 2.2,
+    "video": "https://youtu.be/OYhkPI5N6CU",
+    "date": "2025-09-19",
+    "showcaseVideo": "https://www.youtube.com/watch?v=4ngzCQDdMVA",
+    "levelID": 48267315,
     "submitter": "kyle1saurus",
-		"tags": [
-			"Rated",
-			"Low Hertz",
-			"Mobile",
-			"Level"
-		]
-	},
-	{
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Rated"
+    ]
+  },
+  {
     "name": "Buffbath",
     "id": "buffbath",
     "player": "AGSEcho",
@@ -13026,8 +13026,8 @@
     ]
   },
   {
-    "name": "Hell Ball Finale",
-    "id": "hell-ball-finale",
+    "name": "Hell Ball Finale 60hz Mobile",
+    "id": "hell-ball-finale-60hz-mobile",
     "player": "cring",
     "levelID": 86047466,
     "date": "2022-11-24",
@@ -13038,7 +13038,9 @@
     "showcaseVideo": "https://youtu.be/cYe-BUOqixc",
     "tags": [
       "Challenge",
-      "Verified"
+      "Verified",
+      "Low Hertz",
+      "Mobile"
     ]
   },
   {
@@ -14857,7 +14859,3 @@
     ]
   }
 ]
-
-
-
-
