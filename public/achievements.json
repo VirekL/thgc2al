@@ -543,6 +543,23 @@
     ]
   },
   {
+    "name": "Heliopolis 28%",
+    "id": "heliopolis-28",
+    "player": "Garbag",
+    "date": "2025-09-20",
+    "length": 39,
+    "version": 2.2,
+    "video": "https://youtu.be/ZKBxvqtQyl4?si=oUd-9-CqhC0me6bp",
+    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
+    "submitter": "MindCap",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "levelID": 0
+  },
+  {
     "name": "Heliopolis (Thnnder) 48-87%",
     "id": "heliopolis-thnnder-48-87",
     "player": "Thnnder",
@@ -1042,22 +1059,6 @@
       "Mobile",
       "Progress",
       "Rated"
-    ]
-  },
-  {
-    "name": "Heliopolis 24%",
-    "id": "heliopolis-24",
-    "player": "Garbag",
-    "date": "2025-09-12",
-    "length": 34,
-    "version": 2.2,
-    "video": "https://youtu.be/qp1CaQdZHAo?si=Ofj0S89KCqcNUeDj",
-    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
-    "submitter": "Exiled_shade",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -5938,22 +5939,6 @@
       "Level",
       "Progress",
       "CBF"
-    ]
-  },
-  {
-    "name": "Heliopolis 10-25%",
-    "id": "heliopolis-10-25",
-    "player": "Abdieldevil",
-    "date": "2025-07-15",
-    "length": "16",
-    "version": "2.2",
-    "video": "https://youtu.be/WeqKiZTqc1A?t=30",
-    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
