@@ -8493,6 +8493,23 @@
     ]
   },
   {
+    "name": "Verdant Landscape 144hz",
+    "id": "verdant-landscape-144hz",
+    "player": "5shine",
+    "date": "2023-01-25",
+    "length": 129,
+    "version": 2.1,
+    "levelID": 76543324,
+    "video": "https://youtu.be/GU-L0LaW9Ak",
+    "showcaseVideo": "https://youtu.be/dSbox0NKuXs",
+    "submitter": "Excryst",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Rated"
+    ]
+  },
+  {
     "name": "Firework (Fash) 55-91%",
     "id": "firework-fash-55-91",
     "player": "Fash",
@@ -14859,3 +14876,4 @@
     ]
   }
 ]
+
