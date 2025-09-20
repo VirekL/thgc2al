@@ -9461,6 +9461,22 @@
     ]
   },
   {
+    "name": "Riots Demise 99%",
+    "id": "riots-demise-99",
+    "player": "noname228gg",
+    "date": "2024-12-02",
+    "length": 111,
+    "version": 2.2,
+    "video": "https://youtu.be/LDs-XQCVlW8",
+    "showcaseVideo": "https://youtu.be/w4xRVYOn8oQ",
+    "submitter": "Anceps",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "levelID": 75080274
+  },
+  {
     "name": "Buffbath",
     "id": "buffbath",
     "player": "AGSEcho",
@@ -10107,21 +10123,6 @@
       "Mobile",
       "Progress",
       "Rated"
-    ]
-  },
-  {
-    "name": "Riots Demise (Nerfed) 99%",
-    "id": "riots-demise-nerfed-99",
-    "player": "noname228gg",
-    "date": "2024-12-02",
-    "length": 111,
-    "version": 2.2,
-    "video": "https://youtu.be/LDs-XQCVlW8",
-    "showcaseVideo": "https://youtu.be/w4xRVYOn8oQ",
-    "submitter": "Anceps",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
