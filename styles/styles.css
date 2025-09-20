@@ -450,6 +450,8 @@ main {
   /* Thin scrollbar for Firefox */
   scrollbar-width: thin;
   scrollbar-color: #3b4058 transparent;
+  /* Reserve space for scrollbar when present to avoid layout shift */
+  scrollbar-gutter: stable both-edges;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -458,6 +460,7 @@ main {
 
 .sidebar::-webkit-scrollbar-track {
   background: transparent;
+  border-radius: 10px;
 }
 
 .sidebar::-webkit-scrollbar-thumb {
@@ -465,6 +468,18 @@ main {
   border-radius: 8px;
   border: 2px solid transparent;
   background-clip: content-box;
+  transition: background-color 0.18s ease, transform 0.12s ease;
+}
+
+.sidebar:hover::-webkit-scrollbar-thumb,
+.sidebar:focus-within::-webkit-scrollbar-thumb {
+  background-color: #4a526e;
+}
+
+/* On Firefox, slightly darker thumb on hover via scrollbar-color change on :hover */
+.sidebar:hover,
+.sidebar:focus-within {
+  scrollbar-color: #4a526e transparent;
 }
 
 .sidebar a:hover {
