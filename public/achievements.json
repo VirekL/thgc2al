@@ -6431,20 +6431,21 @@
     ]
   },
   {
-    "name": "Old Orochi 19-81%",
-    "id": "old-orochi-19-81",
+    "name": "Old Orochi 19-87%",
+    "id": "old-orochi-19-87",
     "player": "SeptaGon7",
-    "date": "2025-09-17",
-    "length": 76,
+    "date": "2025-09-20",
+    "length": 69,
     "version": 2.2,
-    "video": "https://youtu.be/mlBqUmow-jM",
+    "video": "https://youtu.be/bbzVGtj3myE?si=6URlgJkvr5QTR_dG",
     "showcaseVideo": "https://youtu.be/kOjaffK5Rgo",
-    "submitter": "SeptaGon7",
+    "submitter": "TYATYAPKA",
     "tags": [
       "Level",
       "Progress",
       "CBF"
-    ]
+    ],
+    "levelID": 0
   },
   {
     "name": "Singularity 61%",
@@ -7908,6 +7909,23 @@
       "Verified",
       "Rated"
     ]
+  },
+  {
+    "name": "DISCONNECT 88%",
+    "id": "disconnect-88",
+    "player": "Elinore",
+    "date": "2025-09-20",
+    "length": 154,
+    "version": 2.2,
+    "video": "https://youtu.be/L6sa72_zD04?si=dvy61DGFaogwgYJ_",
+    "showcaseVideo": "https://youtu.be/gVpqeqy6frU",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress",
+      "Tentative"
+    ],
+    "levelID": 0
   },
   {
     "name": "The Yangire",
@@ -11031,22 +11049,6 @@
     "length": "137",
     "version": "2.2",
     "video": "https://youtu.be/JFqLZfl73q4?t=145",
-    "showcaseVideo": "https://youtu.be/gVpqeqy6frU",
-    "submitter": "goofygdplayer",
-    "tags": [
-      "Level",
-      "Progress",
-      "Tentative"
-    ]
-  },
-  {
-    "name": "DISCONNECT 72%",
-    "id": "disconnect-72",
-    "player": "Elinore",
-    "date": "2025-08-29",
-    "length": "132",
-    "version": "2.2",
-    "video": "https://youtu.be/JFqLZfl73q4",
     "showcaseVideo": "https://youtu.be/gVpqeqy6frU",
     "submitter": "goofygdplayer",
     "tags": [
@@ -14876,4 +14878,3 @@
     ]
   }
 ]
-
