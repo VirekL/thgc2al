@@ -48,7 +48,7 @@ function SidebarInner() {
         flexDirection: 'column',
         height: '100%',
         maxHeight: 'calc(100vh - 2rem)',
-        /* make the sidebar itself scrollable so the scrollbar appears on the sidebar */
+        /* make the sidebar itself scrollable so the scrollbar appears on the sidebar when needed */
         overflowY: 'auto',
         WebkitOverflowScrolling: 'touch',
       }}
@@ -129,19 +129,19 @@ function SidebarInner() {
         createPortal(
           <div
             className="settings-modal-overlay"
-              style={{
-                position: 'fixed',
-                top: 0,
-                left: 0,
-                width: '100vw',
-                height: '100vh',
-                background: 'rgba(0,0,0,0.5)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                zIndex: 2147483647,
-                padding: 12,
-              }}
+            style={{
+              position: 'fixed',
+              top: 0,
+              left: 0,
+              width: '100vw',
+              height: '100vh',
+              background: 'rgba(0,0,0,0.5)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              zIndex: 2147483647,
+              padding: 12,
+            }}
             onClick={() => setShowSettings(false)}
           >
             <div
@@ -150,10 +150,10 @@ function SidebarInner() {
                 background: '#23283E',
                 borderRadius: 12,
                 padding: 32,
-                  minWidth: 280,
-                  maxWidth: 'min(680px, 96vw)',
-                  maxHeight: '90vh',
-                  overflowY: 'auto',
+                minWidth: 280,
+                maxWidth: 'min(680px, 96vw)',
+                maxHeight: '90vh',
+                overflowY: 'auto',
                 boxShadow: '0 8px 32px rgba(0,0,0,0.4)',
                 display: 'flex',
                 flexDirection: 'column',
@@ -250,14 +250,14 @@ function SidebarInner() {
                       setItemsPerPage(n === '' ? '' : n);
                       try {
                         if (raw !== '') localStorage.setItem('itemsPerPage', String(n));
-                      } catch {}
+                      } catch { }
                     }}
                     onBlur={() => {
                       if (itemsPerPage === '' || itemsPerPage === 0) {
                         setItemsPerPage(100);
                         try {
                           localStorage.setItem('itemsPerPage', '100');
-                        } catch {}
+                        } catch { }
                       }
                     }}
                     style={{
@@ -286,12 +286,12 @@ function SidebarInner() {
                           setItemsPerPage('all');
                           try {
                             localStorage.setItem('itemsPerPage', 'all');
-                          } catch {}
+                          } catch { }
                         } else {
                           setItemsPerPage(100);
                           try {
                             localStorage.setItem('itemsPerPage', '100');
-                          } catch {}
+                          } catch { }
                         }
                       }}
                     />
