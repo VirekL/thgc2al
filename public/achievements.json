@@ -1267,6 +1267,23 @@
     ]
   },
   {
+    "name": "Menace 65%, 100%",
+    "id": "menace-65-100",
+    "player": "Flavyola64",
+    "levelID": 107805281,
+    "date": "2025-05-10",
+    "length": 189,
+    "version": 2.2,
+    "video": "https://youtu.be/nbSuGhp3_a4",
+    "showcaseVideo": "https://youtu.be/ZT68SPg61CE",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Consistency",
+      "Rated"
+    ]
+  },
+  {
     "name": "Silent clubstep 2.1",
     "id": "silent-clubstep-2-1",
     "player": "paqoe",
@@ -1860,23 +1877,6 @@
     "tags": [
       "Level",
       "Verified"
-    ]
-  },
-  {
-    "name": "Menace 65%, 100%",
-    "id": "menace-65-100",
-    "player": "Flavyola64",
-    "levelID": 107805281,
-    "date": "2025-05-10",
-    "length": 189,
-    "version": 2.2,
-    "video": "https://youtu.be/nbSuGhp3_a4",
-    "showcaseVideo": "https://youtu.be/ZT68SPg61CE",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Consistency",
-      "Rated"
     ]
   },
   {
