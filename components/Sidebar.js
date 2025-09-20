@@ -9,7 +9,6 @@ function SidebarInner() {
   const { dateFormat, setDateFormat } = useDateFormat();
   const [showSettings, setShowSettings] = useState(false);
 
-  // itemsPerPage: number or 'all'
   const [itemsPerPage, setItemsPerPage] = useState(() => {
     try {
       if (typeof window === 'undefined') return 100;
@@ -49,6 +48,7 @@ function SidebarInner() {
         flexDirection: 'column',
         height: '100%',
         maxHeight: 'calc(100vh - 2rem)',
+        overflow: 'hidden',
       }}
     >
       <div style={{ flex: '1 1 auto', overflowY: 'auto', minHeight: 0 }}>
@@ -99,6 +99,9 @@ function SidebarInner() {
           position: 'relative',
           width: '100%',
           height: '350px',
+          maxHeight: '35vh',
+          minHeight: 120,
+          overflow: 'hidden',
           marginTop: 'auto',
         }}
       >
@@ -110,6 +113,7 @@ function SidebarInner() {
             left: 0,
             width: '100%',
             height: '100%',
+            maxHeight: '35vh',
           }}
           allowTransparency="true"
           frameBorder="0"
@@ -123,18 +127,19 @@ function SidebarInner() {
         createPortal(
           <div
             className="settings-modal-overlay"
-            style={{
-              position: 'fixed',
-              top: 0,
-              left: 0,
-              width: '100vw',
-              height: '100vh',
-              background: 'rgba(0,0,0,0.5)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              zIndex: 2147483647,
-            }}
+              style={{
+                position: 'fixed',
+                top: 0,
+                left: 0,
+                width: '100vw',
+                height: '100vh',
+                background: 'rgba(0,0,0,0.5)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                zIndex: 2147483647,
+                padding: 12,
+              }}
             onClick={() => setShowSettings(false)}
           >
             <div
@@ -143,8 +148,10 @@ function SidebarInner() {
                 background: '#23283E',
                 borderRadius: 12,
                 padding: 32,
-                minWidth: 300,
-                minHeight: 180,
+                  minWidth: 280,
+                  maxWidth: 'min(680px, 96vw)',
+                  maxHeight: '90vh',
+                  overflowY: 'auto',
                 boxShadow: '0 8px 32px rgba(0,0,0,0.4)',
                 display: 'flex',
                 flexDirection: 'column',
@@ -172,7 +179,6 @@ function SidebarInner() {
               </button>
               <h2 style={{ color: '#DFE3F5', marginBottom: 24 }}>Settings</h2>
 
-              {/* Date Format */}
               <div style={{ width: '100%', marginBottom: 12 }}>
                 <label
                   style={{
@@ -211,7 +217,6 @@ function SidebarInner() {
                 </div>
               </div>
 
-              {/* Items Per Page */}
               <div style={{ width: '100%', marginTop: 12 }}>
                 <label
                   style={{
