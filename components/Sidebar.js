@@ -48,10 +48,12 @@ function SidebarInner() {
         flexDirection: 'column',
         height: '100%',
         maxHeight: 'calc(100vh - 2rem)',
-        overflow: 'hidden',
+        /* make the sidebar itself scrollable so the scrollbar appears on the sidebar */
+        overflowY: 'auto',
+        WebkitOverflowScrolling: 'touch',
       }}
     >
-      <div style={{ flex: '1 1 auto', overflowY: 'auto', minHeight: 0 }}>
+      <div style={{ flex: '1 1 auto', minHeight: 0 }}>
         <Link href="/list" className="sidebar-link">
           Main List
         </Link>
