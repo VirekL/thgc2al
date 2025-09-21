@@ -1,5 +1,21 @@
-[	
+[
     {
+        "name": "FLAMEWALL 73%, 100%",
+        "id": "flamewall-73-100",
+        "player": "Cuatrocientos",
+        "video": "https://www.youtube.com/live/18ixmjwoG6Q?si=OpJuJI6tQMyVC0xb&t=5626s",
+        "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
+        "tags": [
+      "Level",
+      "Consistency"
+    ],
+        "date": "2025-09-21",
+        "length": 714,
+        "version": 2.2,
+        "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg",
+        "levelID": 0
+   },	
+   {
 		"name": "FLAMEWALL 24-100%, 24-91%",
 		"id": "flamewall-24-100-24-91",
         "player": "Cuatrocientos",
@@ -10,7 +26,7 @@
       "Consistency"
     ],
         "date": "2025-09-06",
-        "length": 600,
+        "length": 615,
         "version": 2.2,
         "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
   },
@@ -1441,6 +1457,7 @@
         "video": "https://youtu.be/727pUHwWSVg"
     }
 ]
+
 
 
 
