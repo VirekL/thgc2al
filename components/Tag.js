@@ -7,24 +7,101 @@ const TAG_PRIORITY_ORDER = [
 ];
 
 const TAG_DEFINITIONS = {
-  LEVEL: { className: 'tag-level', text: 'Level' },
-  CHALLENGE: { className: 'tag-challenge', text: 'Challenge' },
-  'LOW HERTZ': { className: 'tag-low-hertz', text: 'Low Hertz' },
-  MOBILE: { className: 'tag-mobile', text: 'Mobile' },
-  SPEEDHACK: { className: 'tag-speedhack', text: 'Speedhack' },
-  NOCLIP: { className: 'tag-noclip', text: 'Noclip' },
-  MISCELLANEOUS: { className: 'tag-miscellaneous', text: 'Miscellaneous' },
-  PROGRESS: { className: 'tag-progress', text: 'Progress' },
-  CONSISTENCY: { className: 'tag-consistency', text: 'Consistency' },
-  '2P': { className: 'tag-2p', icon: '/assets/2p-icon.webp', text: '2 Player' },
-  CBF: { className: 'tag-cbf', icon: '/assets/cbf-logo.webp', text: 'CBF' },
-  RATED: { className: 'tag-rated', icon: '/assets/rated-icon.webp', text: 'Rated' },
-  'FORMERLY RATED': { className: 'tag-formerly-rated', icon: '/assets/formerly-rated-icon.webp', text: 'Formerly Rated' },
-  'OUTDATED VERSION': { className: 'tag-outdated-version', icon: '/assets/outdated-version-icon.webp', text: 'Outdated Version' },
-  VERIFIED: { className: 'tag-verified', text: 'Verified' },
-  'COIN ROUTE': { className: 'tag-coin-route', icon: '/assets/coin-icon.webp', text: 'Coin Route' },
-  TENTATIVE: { className: 'tag-tentative', icon: '/assets/warning-icon.webp', text: 'Tentative' },
+  LEVEL: {
+    className: 'tag-level',
+    text: 'Level',
+    tooltip: 'A traditional level, which spans 30+ seconds.'
+  },
+  CHALLENGE: {
+    className: 'tag-challenge',
+    text: 'Challenge',
+    tooltip: 'Tiny or short length level; a level that spans under 30 seconds.'
+  },
+  'LOW HERTZ': {
+    className: 'tag-low-hertz',
+    text: 'Low Hertz',
+    tooltip: 'Done at a low hz. Added when it significantly increases difficulty.'
+  },
+  MOBILE: {
+    className: 'tag-mobile',
+    text: 'Mobile',
+    tooltip: 'Played on mobile.'
+  },
+  SPEEDHACK: {
+    className: 'tag-speedhack',
+    text: 'Speedhack',
+    tooltip: 'Altered speed using hacks.'
+  },
+  NOCLIP: {
+    className: 'tag-noclip',
+    text: 'Noclip',
+    tooltip: 'Completed using noclip.'
+  },
+  MISCELLANEOUS: {
+    className: 'tag-miscellaneous',
+    text: 'Miscellaneous',
+    tooltip: "An achievement that doesn't fit with any other types."
+  },
+  PROGRESS: {
+    className: 'tag-progress',
+    text: 'Progress',
+    tooltip: 'Parts of the level completed.'
+  },
+  CONSISTENCY: {
+    className: 'tag-consistency',
+    text: 'Consistency',
+    tooltip: 'Progress done in a row (consistency-based achievements).'
+  },
+  '2P': {
+    className: 'tag-2p',
+    icon: '/assets/2p-icon.webp',
+    text: '2 Player',
+    tooltip: 'Level uses 2 player mode.'
+  },
+  CBF: {
+    className: 'tag-cbf',
+    icon: '/assets/cbf-logo.webp',
+    text: 'CBF',
+    tooltip: 'Uses Geode mod Click Between Frames to increase input precision.'
+  },
+  RATED: {
+    className: 'tag-rated',
+    icon: '/assets/rated-icon.webp',
+    text: 'Rated',
+    tooltip: 'Level is rated in-game.'
+  },
+  'FORMERLY RATED': {
+    className: 'tag-formerly-rated',
+    icon: '/assets/formerly-rated-icon.webp',
+    text: 'Formerly Rated',
+    tooltip: 'Level was rated but had its rating status removed.'
+  },
+  'OUTDATED VERSION': {
+    className: 'tag-outdated-version',
+    icon: '/assets/outdated-version-icon.webp',
+    text: 'Outdated Version',
+    tooltip: 'Level is on an older version than the current one.'
+  },
+  VERIFIED: {
+    className: 'tag-verified',
+    text: 'Verified',
+    tooltip: 'Levels that are fully verified without alterations.'
+  },
+  'COIN ROUTE': {
+    className: 'tag-coin-route',
+    icon: '/assets/coin-icon.webp',
+    text: 'Coin Route',
+    tooltip: "Coin(s) collected that contribute to the difficulty."
+  },
+  TENTATIVE: {
+    className: 'tag-tentative',
+    icon: '/assets/warning-icon.webp',
+    text: 'Tentative',
+    tooltip: 'Tentative placement; unfixed; subject to change.'
+  },
 };
+
+// Tooltip/help text added from project definitions
 
 const TagComponent = function Tag({ tag, onClick, tabIndex, clickable, state }) {
   const def = TAG_DEFINITIONS[tag.toUpperCase()] || {};
@@ -40,6 +117,8 @@ const TagComponent = function Tag({ tag, onClick, tabIndex, clickable, state }) 
     <>
       <span
         className={classNames}
+        title={def.tooltip ? `${def.text || tag} — ${def.tooltip}` : (def.text || tag)}
+        aria-label={def.tooltip ? `${def.text || tag}: ${def.tooltip}` : (def.text || tag)}
         onClick={clickable ? onClick : undefined}
         tabIndex={clickable ? (tabIndex ?? 0) : undefined}
         role={clickable ? 'button' : undefined}
