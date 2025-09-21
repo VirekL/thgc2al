@@ -1,19 +1,20 @@
 [
   {
-    "name": "FLAMEWALL 24-100%, 24-91%",
-    "id": "flamewall-24-100-24-91",
+    "name": "FLAMEWALL 73%, 100%",
+    "id": "flamewall-73-100",
     "player": "Cuatrocientos",
-    "video": "https://www.youtube.com/live/iivSAgP6w8M?t=15320",
+    "video": "https://www.youtube.com/live/18ixmjwoG6Q?si=OpJuJI6tQMyVC0xb&t=5626s",
     "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
     "tags": [
       "Level",
       "Consistency"
     ],
-    "date": "2025-09-06",
-    "length": 615,
+    "date": "2025-09-21",
+    "length": 720,
     "version": 2.2,
     "submitter": "TYATYAPKA",
-    "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
+    "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg",
+    "levelID": 0
   },
   {
     "name": "GRIEF 56-100%, 67%",
@@ -86,20 +87,21 @@
     "submitter": "Radiator"
   },
   {
-    "name": "FLAMEWALL 99%",
-    "id": "flamewall-99",
+    "name": "FLAMEWALL 100%",
+    "id": "flamewall-100",
     "player": "Cuatrocientos",
-    "video": "https://youtu.be/1gZEJI-2yQQ",
+    "video": "https://www.youtube.com/live/18ixmjwoG6Q?si=OpJuJI6tQMyVC0xb&t=5963s",
     "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
     "tags": [
       "Level",
-      "Progress"
+      "Verified"
     ],
-    "date": "2025-08-31",
-    "length": 403,
+    "date": "2025-09-21",
+    "length": 407,
     "version": 2.2,
-    "submitter": "kyle1saurus",
-    "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
+    "submitter": "TYATYAPKA",
+    "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg",
+    "levelID": 0
   },
   {
     "name": "Amethyst",
