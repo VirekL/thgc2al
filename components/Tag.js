@@ -117,8 +117,8 @@ const TagComponent = function Tag({ tag, onClick, tabIndex, clickable, state }) 
     <>
       <span
         className={classNames}
-        title={def.tooltip ? `${def.text || tag} — ${def.tooltip}` : (def.text || tag)}
-        aria-label={def.tooltip ? `${def.text || tag}: ${def.tooltip}` : (def.text || tag)}
+        title={def.tooltip || (def.text || tag)}
+        aria-label={def.tooltip || (def.text || tag)}
         onClick={clickable ? onClick : undefined}
         tabIndex={clickable ? (tabIndex ?? 0) : undefined}
         role={clickable ? 'button' : undefined}
