@@ -1,6 +1,6 @@
 [
     {
-        "name": "FLAMEWALL 73%, 100%",
+        "name": "Flamewall 73%, 100%",
         "id": "flamewall-73-100",
         "player": "Cuatrocientos",
         "video": "https://www.youtube.com/live/18ixmjwoG6Q?si=OpJuJI6tQMyVC0xb&t=5626s",
@@ -16,7 +16,7 @@
         "levelID": 0
    },	
    {
-		"name": "FLAMEWALL 24-100%, 24-91%",
+		"name": "Flamewall 24-100%, 24-91%",
 		"id": "flamewall-24-100-24-91",
         "player": "Cuatrocientos",
         "video": "https://www.youtube.com/live/iivSAgP6w8M?t=15320",
@@ -31,7 +31,7 @@
         "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
   },
   {
-		"name": "FLAMEWALL 50%, 99%",
+		"name": "Flamewall 50%, 99%",
 		"id": "flamewall-50-99",
         "player": "Cuatrocientos",
         "video": "https://www.youtube.com/live/8WPfiV3aD4w?t=4046s",
@@ -1457,6 +1457,7 @@
         "video": "https://youtu.be/727pUHwWSVg"
     }
 ]
+
 
 
 
