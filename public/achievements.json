@@ -210,23 +210,6 @@
     "version": "2.1"
   },
   {
-    "name": "FLAMEWALL 24-100%",
-    "id": "flamewall-24-100",
-    "player": "Cuatrocientos",
-    "video": "https://youtu.be/rOIeaaJdYYs",
-    "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
-    "tags": [
-      "Level",
-      "Progress",
-      "Tentative"
-    ],
-    "date": "2025-08-19",
-    "length": 242,
-    "version": 2.2,
-    "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg",
-    "submitter": "jak"
-  },
-  {
     "name": "FLAMEWALL (Old) 3-86%",
     "id": "flamewall-old-3-86",
     "player": "Cuatrocientos",
@@ -14889,6 +14872,7 @@
     ]
   }
 ]
+
 
 
 
