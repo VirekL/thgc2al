@@ -460,22 +460,6 @@
     ]
   },
   {
-    "name": "Heliopolis (Thnnder) 60-100%",
-    "id": "heliopolis-thnnder-60-100",
-    "player": "Thnnder",
-    "length": 78,
-    "version": 2.2,
-    "video": "https://youtu.be/G08eCti1e68",
-    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
-    "date": "2024-11-13",
-    "submitter": "gdspeedcuber",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis1.avif",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Anathema 156%",
     "id": "anathema-156",
     "player": "Netermind",
@@ -558,22 +542,6 @@
       "Progress"
     ],
     "levelID": 0
-  },
-  {
-    "name": "Heliopolis (Thnnder) 48-87%",
-    "id": "heliopolis-thnnder-48-87",
-    "player": "Thnnder",
-    "date": "2025-02-04",
-    "length": 40,
-    "version": 2.2,
-    "video": "https://www.youtube.com/live/R-hg3r25hMs?t=13963",
-    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
   },
   {
     "name": "Vehemence 39%",
@@ -860,21 +828,6 @@
     ]
   },
   {
-    "name": "Heliopolis 48-100%",
-    "id": "heliopolis-48-100",
-    "player": "Abdieldevil",
-    "length": "72",
-    "version": "2.2",
-    "video": "https://youtu.be/cOvrkgWrGHU",
-    "date": "2025-03-01",
-    "submitter": "CS2100",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Silent clubstep (Old) 5-100% 5 deaths, 99.97 accuracy",
     "id": "silent-clubstep-old-5-100-5-deaths-99-97-accuracy",
     "player": "Diamond",
@@ -1111,6 +1064,23 @@
     ]
   },
   {
+    "name": "Heliopolis (Thnnder old) 60-100%",
+    "id": "heliopolis-thnnder-old-60-100",
+    "player": "Thnnder",
+    "length": 78,
+    "version": 2.2,
+    "video": "https://youtu.be/G08eCti1e68",
+    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
+    "date": "2024-11-13",
+    "submitter": "gdspeedcuber",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis1.avif",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "levelID": 0
+  },
+  {
     "name": "Acheron 24-100%, 17-96%",
     "id": "acheron-24-100-17-96",
     "player": "fallengmd",
@@ -1301,6 +1271,22 @@
     ]
   },
   {
+    "name": "Heliopolis 48-100%",
+    "id": "heliopolis-48-100",
+    "player": "Abdieldevil",
+    "length": 72,
+    "version": 2.2,
+    "video": "https://youtu.be/cOvrkgWrGHU",
+    "date": "2025-03-01",
+    "submitter": "CS2100",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "levelID": 0
+  },
+  {
     "name": "Sweeping Demon 2 (Taiago) 62%",
     "id": "sweeping-demon-2-taiago-62",
     "player": "Taiago",
@@ -1384,8 +1370,25 @@
     "showcaseVideo": "https://youtu.be/h14lmGH31_M"
   },
   {
-    "name": "Heliopolis (Thnnder) 17%",
-    "id": "heliopolis-thnnder-17",
+    "name": "Heliopolis (Thnnder) 48-87%",
+    "id": "heliopolis-thnnder-48-87",
+    "player": "Thnnder",
+    "date": "2025-02-04",
+    "length": 40,
+    "version": 2.2,
+    "video": "https://www.youtube.com/live/R-hg3r25hMs?t=13963",
+    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "levelID": 0
+  },
+  {
+    "name": "Heliopolis (Thnnder old) 17%",
+    "id": "heliopolis-thnnder-old-17",
     "player": "Thnnder",
     "date": "2024-11-15",
     "length": 20,
@@ -1397,7 +1400,8 @@
     "tags": [
       "Level",
       "Progress"
-    ]
+    ],
+    "levelID": 0
   },
   {
     "name": "Nullscapes 120hz Mobile 48-100%",
@@ -3363,6 +3367,23 @@
     ]
   },
   {
+    "name": "Heliopolis 27-50%",
+    "id": "heliopolis-27-50",
+    "player": "Abdieldevil",
+    "date": "2025-04-14",
+    "length": 28,
+    "version": 2.2,
+    "video": "https://youtu.be/kfC3oEUVZAs",
+    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "levelID": 0
+  },
+  {
     "name": "wocky circles",
     "id": "wocky-circles",
     "player": "ROZE GD",
@@ -4018,21 +4039,6 @@
     ]
   },
   {
-    "name": "Heliopolis 38-78%",
-    "id": "heliopolis-38-78",
-    "player": "Abdieldevil",
-    "date": "2025-02-27",
-    "length": 55,
-    "version": 2.2,
-    "video": "https://youtu.be/cOvrkgWrGHU",
-    "submitter": "Exiled_Shade",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "demotivation dance (Aquamarine)",
     "id": "demotivation-dance-aquamarine",
     "player": "goldix",
@@ -4312,7 +4318,7 @@
     "tags": [
       "Level",
       "Low Hertz",
-	    "Progress",
+      "Progress",
       "Rated"
     ]
   },
@@ -5417,22 +5423,6 @@
     ]
   },
   {
-    "name": "Heliopolis 27-50%",
-    "id": "heliopolis-27-50",
-    "player": "Abdieldevil",
-    "date": "2025-04-14",
-    "length": 28,
-    "version": 2.2,
-    "video": "https://youtu.be/kfC3oEUVZAs",
-    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Ex Vacuo 58%",
     "id": "ex-vacuo-58",
     "player": "Laniakea",
@@ -6413,6 +6403,22 @@
       "Progress",
       "Rated"
     ]
+  },
+  {
+    "name": "Heliopolis 38-78%",
+    "id": "heliopolis-38-78",
+    "player": "Abdieldevil",
+    "date": "2025-02-27",
+    "length": 55,
+    "version": 2.2,
+    "video": "https://youtu.be/cOvrkgWrGHU",
+    "submitter": "Exiled_Shade",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
+    "tags": [
+      "Level",
+      "Progress"
+    ],
+    "levelID": 0
   },
   {
     "name": "COMBUSTION",
@@ -14628,21 +14634,6 @@
     ]
   },
   {
-    "name": "Heliopolis (DraxitIII) 37-65%",
-    "id": "heliopolis-draxitiii-37-65",
-    "player": "DraxitIII",
-    "date": "2025-02-24",
-    "length": 39,
-    "version": 2.2,
-    "video": "https://youtu.be/3HnX3Yc3eD8",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Judgement Knights",
     "id": "judgement-knights",
     "player": "Helix",
@@ -14896,4 +14887,3 @@
     ]
   }
 ]
-
