@@ -1,6 +1,6 @@
 [
   {
-    "name": "FLAMEWALL 73%, 100%",
+    "name": "Flamewall 73%, 100%",
     "id": "flamewall-73-100",
     "player": "Cuatrocientos",
     "video": "https://www.youtube.com/live/18ixmjwoG6Q?si=OpJuJI6tQMyVC0xb&t=5626s",
@@ -87,7 +87,7 @@
     "submitter": "Radiator"
   },
   {
-    "name": "FLAMEWALL",
+    "name": "Flamewall",
     "id": "flamewall",
     "player": "Cuatrocientos",
     "video": "https://www.youtube.com/live/18ixmjwoG6Q?si=OpJuJI6tQMyVC0xb&t=5963s",
@@ -14889,6 +14889,7 @@
     ]
   }
 ]
+
 
 
 
