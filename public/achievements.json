@@ -6473,6 +6473,23 @@
     ]
   },
   {
+    "name": "Deadlier Clubstep",
+    "id": "deadlier-clubstep",
+    "player": "Jenath",
+    "levelID": 96314787,
+    "date": "2023-10-20",
+    "length": 104,
+    "version": 2.1,
+    "submitter": "Anceps",
+    "video": "https://youtu.be/eRhgaF0r5Q0&t=6s",
+    "showcaseVideo": "https://youtu.be/s8XXG6Mf-GU",
+    "tags": [
+      "Level",
+      "Verified",
+      "Rated"
+    ]
+  },
+  {
     "name": "Snowblind",
     "id": "snowblind",
     "player": "Hippo",
@@ -7636,23 +7653,6 @@
     "tags": [
       "Level",
       "Consistency",
-      "Rated"
-    ]
-  },
-  {
-    "name": "Deadlier Clubstep",
-    "id": "deadlier-clubstep",
-    "player": "Jenath",
-    "levelID": 96314787,
-    "date": "2023-10-20",
-    "length": 104,
-    "version": 2.1,
-    "submitter": "Anceps",
-    "video": "https://youtu.be/eRhgaF0r5Q0&t=6s",
-    "showcaseVideo": "https://youtu.be/s8XXG6Mf-GU",
-    "tags": [
-      "Level",
-      "Verified",
       "Rated"
     ]
   },
@@ -14872,15 +14872,3 @@
     ]
   }
 ]
-
-
-
-
-
-
-
-
-
-
-
-
