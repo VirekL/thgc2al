@@ -210,20 +210,21 @@
     "version": "2.1"
   },
   {
-    "name": "Flamewall (Old) 3-86%",
-    "id": "flamewall-old-3-86",
-    "player": "Cuatrocientos",
-    "video": "https://youtu.be/dlVnGdWRLeQ",
-    "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/flamewall-unbuffed2.webp",
+    "name": "Acheron 60hz 17-67%",
+    "id": "acheron-60hz-17-67",
+    "player": "Llqne",
+    "video": "https://youtu.be/KNnqBr8YsZI",
+    "showcaseVideo": "https://youtu.be/ZHAMV_Jw9PM",
     "tags": [
       "Level",
+      "Low Hertz",
       "Progress",
-      "Tentative"
+      "Rated"
     ],
-    "date": "2024-09-10",
-    "length": 333,
-    "submitter": "Anceps",
+    "levelID": 73667628,
+    "submitter": "cheesecake",
+    "date": "2025-09-23",
+    "length": 30,
     "version": 2.2
   },
   {
@@ -271,11 +272,28 @@
       "Progress",
       "Rated"
     ],
-    "levelID": "73667628",
+    "levelID": 73667628,
     "submitter": "BlueGamer",
     "date": "2025-07-20",
-    "length": "36",
-    "version": "2.2"
+    "length": 36,
+    "version": 2.2
+  },
+  {
+    "name": "Flamewall (Old) 3-86%",
+    "id": "flamewall-old-3-86",
+    "player": "Cuatrocientos",
+    "video": "https://youtu.be/dlVnGdWRLeQ",
+    "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/flamewall-unbuffed2.webp",
+    "tags": [
+      "Level",
+      "Progress",
+      "Tentative"
+    ],
+    "date": "2024-09-10",
+    "length": 333,
+    "submitter": "Anceps",
+    "version": 2.2
   },
   {
     "name": "VSC x2",
@@ -518,7 +536,7 @@
     "date": "2025-09-20",
     "length": 39,
     "version": 2.2,
-    "video": "https://youtu.be/ZKBxvqtQyl4?si=oUd-9-CqhC0me6bp",
+    "video": "https://youtu.be/ZKBxvqtQyl4",
     "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
     "submitter": "MindCap",
@@ -526,7 +544,7 @@
       "Level",
       "Progress"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "Vehemence 39%",
@@ -1269,7 +1287,7 @@
       "Level",
       "Progress"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "Sweeping Demon 2 (Taiago) 62%",
@@ -1654,7 +1672,7 @@
     "showcaseVideo": "https://youtu.be/UvLvEh_xN5A?si=U_k-Oub0nCmTKyaQ",
     "date": "2025-09-12",
     "submitter": "Exiled_Shade",
-    "levelID": 0,
+    "levelID": null,
     "tags": [
       "Level",
       "Progress"
@@ -1671,6 +1689,22 @@
     "video": "https://www.youtube.com/live/WfnaiwqDHaE&t=5135",
     "showcaseVideo": "https://youtu.be/8lNHaYbvQE0",
     "submitter": "Arcadie",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
+    "name": "LiGHtmArE 74-100%",
+    "id": "lightmare-74-100",
+    "player": "merca",
+    "levelID": 77233362,
+    "date": "2025-09-22",
+    "length": 47,
+    "version": 2.2,
+    "submitter": "merca",
+    "video": "https://www.youtube.com/watch?v=zpKRvlXwHyo",
+    "showcaseVideo": "https://youtu.be/a37y9M8rCIU",
     "tags": [
       "Level",
       "Progress"
@@ -4290,24 +4324,6 @@
     ]
   },
   {
-    "name": "Belladonna 144hz 76%",
-    "id": "belladonna-144hz-76",
-    "player": "Melted",
-    "levelID": 94969889,
-    "date": "2025-04-28",
-    "length": 82,
-    "version": 2.2,
-    "submitter": "jak",
-    "video": "https://youtu.be/Q2yWHdet-kY",
-    "showcaseVideo": "https://youtu.be/WxpF_bZxvIQ",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Progress",
-      "Rated"
-    ]
-  },
-  {
     "name": "Firework",
     "id": "firework",
     "player": "Hyperlith",
@@ -4661,22 +4677,6 @@
     "showcaseVideo": "https://youtu.be/fiCwcuCl4c0",
     "tags": [
       "Challenge",
-      "Progress"
-    ]
-  },
-  {
-    "name": "LiGHtmArE 74-86%",
-    "id": "lightmare-74-86",
-    "player": "merca",
-    "levelID": 77233362,
-    "date": "2025-09-15",
-    "length": 16,
-    "version": 2.2,
-    "submitter": "merca",
-    "video": "https://youtu.be/bB40ILkV7zw",
-    "showcaseVideo": "https://youtu.be/a37y9M8rCIU",
-    "tags": [
-      "Level",
       "Progress"
     ]
   },
@@ -6223,6 +6223,24 @@
     ]
   },
   {
+    "name": "Belladonna 144hz 76%",
+    "id": "belladonna-144hz-76",
+    "player": "Melted",
+    "levelID": 94969889,
+    "date": "2025-04-28",
+    "length": 82,
+    "version": 2.2,
+    "submitter": "jak",
+    "video": "https://youtu.be/Q2yWHdet-kY",
+    "showcaseVideo": "https://youtu.be/WxpF_bZxvIQ",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Progress",
+      "Rated"
+    ]
+  },
+  {
     "name": "Old Blade of Justice 30-95%",
     "id": "old-blade-of-justice-30-95",
     "player": "AGSEcho",
@@ -6403,7 +6421,7 @@
       "Level",
       "Progress"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "COMBUSTION",
@@ -6437,7 +6455,7 @@
       "Progress",
       "CBF"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "Singularity 61%",
@@ -6733,7 +6751,7 @@
     ]
   },
   {
-    "name": "Silent Circles 27-51% 1st coin",
+    "name": "Silent Circles 27-51% (1st coin)",
     "id": "silent-circles-27-51-1st-coin",
     "player": "SeptaGon7",
     "date": "2025-06-06",
@@ -10768,54 +10786,6 @@
     ]
   },
   {
-    "name": "Cerulean GR",
-    "id": "cerulean-gr",
-    "player": "Xyhil",
-    "date": "2021-08-29",
-    "length": 4,
-    "version": 2.1,
-    "levelID": 73113904,
-    "video": "https://youtu.be/4xgc3kER5a8",
-    "showcaseVideo": "https://youtu.be/wAISI6ke55Y",
-    "submitter": "Anceps",
-    "tags": [
-      "Challenge",
-      "Verified"
-    ]
-  },
-  {
-    "name": "invisible legg",
-    "id": "invisible-legg",
-    "player": "pixelfactorial",
-    "levelID": 126013369,
-    "date": "2025-09-15",
-    "length": 3,
-    "version": 2.1,
-    "video": "https://youtu.be/8Z1T8PIpzTQ",
-    "showcaseVideo": null,
-    "submitter": "pixelfactorial",
-    "tags": [
-      "Challenge",
-      "Verified"
-    ]
-  },
-  {
-    "name": "Fried lEgg",
-    "id": "fried-leg",
-    "player": "MoonFrost",
-    "levelID": 90202908,
-    "date": "2023-06-05",
-    "length": 3,
-    "version": 2.1,
-    "video": "https://youtu.be/harwFhCwYlA",
-    "showcaseVideo": "https://youtu.be/PBzUGzfN4wg",
-    "submitter": "Arcadie",
-    "tags": [
-      "Challenge",
-      "Verified"
-    ]
-  },
-  {
     "name": "IRIS 82%, 100%",
     "id": "iris-82-100",
     "player": "Timy",
@@ -10982,6 +10952,24 @@
       "Consistency",
       "CBF",
       "Rated"
+    ]
+  },
+  {
+    "name": "Time Lapse 144hz Mobile 68%",
+    "id": "time-lapse-144hz-mobile-68",
+    "player": "Mateex",
+    "length": 46,
+    "version": 2.2,
+    "video": "https://youtu.be/yi7jyf261tc",
+    "date": "2025-09-22",
+    "showcaseVideo": "https://youtu.be/SGlmK7YVLGY",
+    "levelID": 97705490,
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress"
     ]
   },
   {
@@ -12465,24 +12453,6 @@
     "tags": [
       "Level",
       "Verified"
-    ]
-  },
-  {
-    "name": "Time Lapse 144hz Mobile 64%",
-    "id": "time-lapse-144hz-mobile-64",
-    "player": "Mateex",
-    "length": "46",
-    "version": "2.2",
-    "video": "https://youtu.be/SgybWTuvWb4",
-    "date": "2025-08-05",
-    "showcaseVideo": "https://youtu.be/SGlmK7YVLGY",
-    "levelID": "97705490",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Progress"
     ]
   },
   {
@@ -14872,3 +14842,4 @@
     ]
   }
 ]
+
