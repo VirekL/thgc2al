@@ -1560,6 +1560,25 @@
     ]
   },
   {
+    "name": "Lithium 60hz Mobile 91%",
+    "id": "lithium-60hz-mobile-91",
+    "player": "Archermence",
+    "date": "2025-09-23",
+    "length": 109,
+    "version": 2.2,
+    "levelID": 97364686,
+    "video": "https://youtu.be/7b7LBrWhsz8?si=K2Gf7kCwcqtg62PP",
+    "showcaseVideo": "https://youtu.be/IHqODLf_ZLY",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
+  },
+  {
     "name": "Lithium 60hz Mobile 7-100%",
     "id": "lithium-60hz-mobile-7-100",
     "player": "Archermence",
@@ -2544,25 +2563,6 @@
     ],
     "levelID": 89216381,
     "showcaseVideo": "https://youtu.be/l6poOVWISJA"
-  },
-  {
-    "name": "Lithium 60hz Mobile 87%",
-    "id": "lithium-60hz-mobile-87",
-    "player": "Archermence",
-    "date": "2025-08-12",
-    "length": 100,
-    "version": 2.2,
-    "levelID": 97364686,
-    "video": "https://youtu.be/eCFJy_JHApc",
-    "showcaseVideo": "https://youtu.be/IHqODLf_ZLY",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Progress",
-      "Rated"
-    ]
   },
   {
     "name": "Acheron 60hz 69-100%",
