@@ -16,52 +16,51 @@
     ]
   },
   {
-	"name": "Sweeping Demon 2 (Taiago) 21-75%",
-    "id": "sweeping-demon-2-taiago-21-75",
-    "player": "Taiago",
+	"name": "Eclipse",
+    "id": "eclipse",
+    "player": "kyy",
+    "date": "2025-08-16",
+    "length": 60,
+	"levelID": 124722258,
+    "version": 2.2,
+    "video": "https://youtu.be/xLm0ClnvCNE",
+    "showcaseVideo": "https://youtu.be/jP_LDMw0xHk",
+    "submitter": "goofygdplayer",
+    "tags": [
+      "Level",
+      "Verified"
+    ]
+  },
+  {
+	"name": "True Evil",
+    "id": "true-evil",
+    "player": "dizbro",
     "date": "2025-09-14",
-    "length": 38,
+    "length": 92,
+	"levelID": 126200583,
     "version": 2.2,
-    "video": "https://youtu.be/SRO4ahOgs1s",
-    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
-    "submitter": "BlueGamer",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
-	"name": "shimmer 144hz",
-    "id": "shimmer-144hz",
-    "player": "Melted",
-    "length": 76,
-    "version": 2.2,
-    "video": "https://youtu.be/pK8jYmPZkWc",
-    "date": "2025-01-28",
-    "showcaseVideo": "https://www.youtube.com/watch?v=_vuXb2PHiOI",
-    "levelID": 94156085,
-    "submitter": "jak",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Rated"
-    ]
-  },
-  {
-	"name": "Verdant Landscape 144hz",
-    "id": "verdant-landscape-144hz",
-    "player": "5shine",
-    "date": "2023-01-25",
-    "length": 129,
-    "version": 2.1,
-    "levelID": 76543324,
-    "video": "https://youtu.be/GU-L0LaW9Ak",
-    "showcaseVideo": "https://youtu.be/dSbox0NKuXs",
+    "video": "https://youtu.be/xLm0ClnvCNE",
+    "showcaseVideo": "https://youtu.be/QuFPOTwxrbQ",
     "submitter": "Excryst",
     "tags": [
       "Level",
-      "Low Hertz",
-      "Rated"
+      "Verified"
+    ]
+  },
+  {
+	"name": "Re",
+    "id": "re",
+    "player": "torn",
+    "date": "2025-09-23",
+    "length": 13,
+	"levelID": 126279500,
+    "version": 2.2,
+    "video": "https://youtu.be/Rz7Um6lxYYU",
+    "showcaseVideo": "https://youtu.be/RX9mJmScTd8",
+    "submitter": "nensa",
+    "tags": [
+      "Challenge",
+      "Verified"
     ]
   },
   {
@@ -92,42 +91,6 @@
     "video": "https://youtu.be/EzPTMKfE-gg",
     "showcaseVideo": "https://youtu.be/SlpYDNeZP8w",
     "submitter": "jak",
-    "tags": [
-      "Level",
-      "Low Hertz",
-	  "Progress",
-      "Rated"
-    ]
-  },
-  {
-	"name": "Belladonna 144hz 76%",
-    "id": "belladonna-144hz-76",
-    "player": "Melted",
-    "levelID": 94969889,
-    "date": "2025-04-28",
-    "length": 82,
-    "version": 2.2,
-    "submitter": "jak",
-    "video": "https://youtu.be/Q2yWHdet-kY",
-    "showcaseVideo": "https://youtu.be/WxpF_bZxvIQ",
-    "tags": [
-      "Level",
-      "Low Hertz",
-	  "Progress",
-      "Rated"
-    ]
-  },
-  {
-	"name": "Sinister Silence 144hz 71%",
-    "id": "sinister-silence-144hz-71",
-    "player": "Melted",
-    "levelID": 82249742,
-    "date": "2025-08-09",
-    "length": 375,
-    "version": 2.2,
-    "submitter": "kyle1saurus",
-    "video": "https://youtu.be/PeWdQGJKX7U",
-    "showcaseVideo": "https://youtu.be/0yfTwDma-j0",
     "tags": [
       "Level",
       "Low Hertz",
