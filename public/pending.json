@@ -32,19 +32,59 @@
     ]
   },
   {
-	"name": "True Evil",
-    "id": "true-evil",
-    "player": "dizbro",
-    "date": "2025-09-14",
-    "length": 92,
-	"levelID": 126200583,
-    "version": 2.2,
-    "video": "https://youtu.be/xLm0ClnvCNE",
-    "showcaseVideo": "https://youtu.be/QuFPOTwxrbQ",
+	"name": "Tenkai 60hz Mobile",
+	"id": "tenkai-60hz-mobile",
+	"player": "batle",
+	"length": 146,
+	"version": 2.2,
+	"levelID": 64100176,
+	"date": "2025-09-19",
+	"submitter": "kyle1saurus",
+	"video": "https://youtu.be/JCX47Ed7tuM",
+	"showcaseVideo": "https://www.youtube.com/watch?v=I2ISOu9N4P0",
+	"tags": [
+		"2P",
+		"Rated",
+		"Low Hertz",
+		"Mobile",
+		"Level"
+		]
+	},
+	{
+	"name": "Congregation 60hz 65%",
+    "id": "congregation-60hz-65",
+    "player": "Clutter",
+    "levelID": 68668045,
+    "date": "2023-03-29",
+    "length": 130,
+    "version": 2.1,
+    "video": "https://youtu.be/jKzratR2xDk",
+    "showcaseVideo": "https://youtu.be/k3ebBTBeUTg",
     "submitter": "Excryst",
     "tags": [
       "Level",
-      "Verified"
+      "Low Hertz",
+	  "Progress",
+      "Rated"
+    ]
+  },
+  {
+	"name": "Congregation 60hz Mobile 42-100%",
+    "id": "congregation-60hz-42-100",
+    "player": "ForcedDragon",
+    "levelID": 68668045,
+    "date": "2022-11-23",
+    "length": 87,
+    "version": 2.1,
+    "video": "https://youtu.be/2l2Q8ceh_i4",
+    "showcaseVideo": "https://youtu.be/k3ebBTBeUTg",
+    "submitter": "Excryst",
+    "tags": [
+      "Level",
+      "Low Hertz",
+	  "Mobile",
+	  "Progress",
+      "Rated"
     ]
   },
   {
