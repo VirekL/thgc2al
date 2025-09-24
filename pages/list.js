@@ -352,6 +352,13 @@ export default function List() {
   function handleEditFormSave() {
     const entry = {};
     Object.entries(editForm).forEach(([k, v]) => {
+      if (k === 'levelID') {
+        const num = Number(v);
+        if (!isNaN(num) && num > 0) {
+          entry[k] = num;
+        }
+        return;
+      }
       if (typeof v === 'string') {
         if (v.trim() !== '') entry[k] = v.trim();
       } else if (v !== undefined && v !== null && v !== '') {
@@ -556,6 +563,13 @@ export default function List() {
     }
     const entry = {};
     Object.entries(newForm).forEach(([k, v]) => {
+      if (k === 'levelID') {
+        const num = Number(v);
+        if (!isNaN(num) && num > 0) {
+          entry[k] = num;
+        }
+        return;
+      }
       if (typeof v === 'string') {
         if (v.trim() !== '') entry[k] = v.trim();
       } else if (v !== undefined && v !== null && v !== '') {
@@ -602,6 +616,11 @@ export default function List() {
     }
     const entry = {};
     Object.entries(newForm).forEach(([k, v]) => {
+      if (k === 'levelID') {
+        const num = Number(v);
+        if (!isNaN(num) && num > 0) entry[k] = num;
+        return;
+      }
       if (typeof v === 'string') {
         if (v.trim() !== '') entry[k] = v.trim();
       } else if (v !== undefined && v !== null && v !== '') {
@@ -666,7 +685,7 @@ export default function List() {
 
   useEffect(() => {
     if (scrollToIdx === null) return;
-    if (devMode) return; // dev mode handled by the other effect
+    if (devMode) return;
     try {
       const idx = Math.max(0, Math.min(scrollToIdx, filtered.length - 1));
       if (listRef && listRef.current && typeof listRef.current.scrollToItem === 'function') {
