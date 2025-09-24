@@ -40,22 +40,39 @@ function normalizeYoutubeUrl(input) {
 
   if (host === 'youtu.be') {
     const id = parsed.pathname.split('/').filter(Boolean)[0];
-    if (id) return `https://youtu.be/${id}`;
-    return `https://youtu.be/${parsed.pathname.replace(/^\//, '')}`;
+    if (id) {
+      // preserve timestamp params if present
+      const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
+      return t ? `https://youtu.be/${id}?t=${t}` : `https://youtu.be/${id}`;
+    }
+    const raw = parsed.pathname.replace(/^\//, '');
+    const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
+    return t ? `https://youtu.be/${raw}?t=${t}` : `https://youtu.be/${raw}`;
   }
 
   if (host.endsWith('youtube.com') || host.endsWith('youtube-nocookie.com')) {
     const v = parsed.searchParams.get('v');
-    if (v) return `https://youtu.be/${v}`;
+    if (v) {
+      const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
+      return t ? `https://youtu.be/${v}?t=${t}` : `https://youtu.be/${v}`;
+    }
 
     const path = parsed.pathname || '';
     let parts = path.split('/').filter(Boolean);
 
     const liveIdx = parts.indexOf('live');
-    if (liveIdx !== -1 && parts[liveIdx + 1]) return `https://youtu.be/${parts[liveIdx + 1]}`;
+    if (liveIdx !== -1 && parts[liveIdx + 1]) {
+      const id = parts[liveIdx + 1];
+      const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
+      return t ? `https://youtu.be/${id}?t=${t}` : `https://youtu.be/${id}`;
+    }
 
     const shortsIdx = parts.indexOf('shorts');
-    if (shortsIdx !== -1 && parts[shortsIdx + 1]) return `https://youtu.be/${parts[shortsIdx + 1]}`;
+    if (shortsIdx !== -1 && parts[shortsIdx + 1]) {
+      const id = parts[shortsIdx + 1];
+      const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
+      return t ? `https://youtu.be/${id}?t=${t}` : `https://youtu.be/${id}`;
+    }
 
     if (parsed.searchParams.has('si')) parsed.searchParams.delete('si');
 
