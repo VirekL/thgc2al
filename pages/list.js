@@ -23,18 +23,44 @@ function normalizeYoutubeUrl(input) {
   let m = s.match(/(?:https?:\/\/)?(?:www\.)?youtu\.be\/([^?&#\/]+)/i);
   if (m) return `https://youtu.be/${m[1]}`;
 
-  m = s.match(/[?&]v=([^?&#]+)/);
-  if (m) return `https://youtu.be/${m[1]}`;
+  let parsed;
+  try {
+    parsed = new URL(s.startsWith('http') ? s : `https://${s}`);
+  } catch (err) {
+    m = s.match(/[?&]v=([^?&#]+)/);
+    if (m) return `https://youtu.be/${m[1]}`;
+    m = s.match(/(?:https?:\/\/)?(?:www\.)?youtube\.com\/live\/([^?&#\/]+)/i);
+    if (m) return `https://youtu.be/${m[1]}`;
+    m = s.match(/(?:https?:\/\/)?(?:www\.)?youtube\.com\/shorts\/([^?&#\/]+)/i);
+    if (m) return `https://youtu.be/${m[1]}`;
+    return input;
+  }
 
-  m = s.match(/(?:https?:\/\/)?(?:www\.)?youtube\.com\/live\/([^?&#\/]+)/i);
-  if (m) return `https://youtu.be/${m[1]}`;
+  const host = parsed.hostname.toLowerCase();
 
-  m = s.match(/(?:https?:\/\/)?(?:www\.)?youtube\.com\/shorts\/([^?&#\/]+)/i);
-  if (m) return `https://youtu.be/${m[1]}`;
+  if (host === 'youtu.be') {
+    const id = parsed.pathname.split('/').filter(Boolean)[0];
+    if (id) return `https://youtu.be/${id}`;
+    return `https://youtu.be/${parsed.pathname.replace(/^\//, '')}`;
+  }
 
-  if (s.includes('youtube.com') || s.includes('youtu.be')) {
-    const noParams = s.split(/[?&#]/)[0];
-    return noParams;
+  if (host.endsWith('youtube.com') || host.endsWith('youtube-nocookie.com')) {
+    const v = parsed.searchParams.get('v');
+    if (v) return `https://youtu.be/${v}`;
+
+    const path = parsed.pathname || '';
+    let parts = path.split('/').filter(Boolean);
+
+    const liveIdx = parts.indexOf('live');
+    if (liveIdx !== -1 && parts[liveIdx + 1]) return `https://youtu.be/${parts[liveIdx + 1]}`;
+
+    const shortsIdx = parts.indexOf('shorts');
+    if (shortsIdx !== -1 && parts[shortsIdx + 1]) return `https://youtu.be/${parts[shortsIdx + 1]}`;
+
+    if (parsed.searchParams.has('si')) parsed.searchParams.delete('si');
+
+    const remainingParams = parsed.searchParams.toString();
+    return `${parsed.origin}${parsed.pathname}${remainingParams ? `?${remainingParams}` : ''}`;
   }
 
   return input;
