@@ -385,17 +385,18 @@
     "id": "subsuming-vortex-renn241-37-75-37-68",
     "player": "Wity",
     "date": "2025-08-03",
-    "length": "55",
+    "length": 55,
     "version": 2.2,
     "video": "https://youtu.be/9V8mSuYmgOU",
-    "showcaseVideo": "https://m.youtube.com/watch?si=rcNNt1_lbY9uXLOx&v=3dKj12cQSII&feature=youtu.be",
+    "showcaseVideo": "https://youtu.be/3dKj12cQSII",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/subsuming-vortex-renn241-1.webp",
     "submitter": "goofygdplayer",
     "tags": [
       "Level",
       "Consistency",
       "CBF"
-    ]
+    ],
+    "levelID": 0
   },
   {
     "name": "Banshee 77%",
@@ -504,7 +505,7 @@
     "date": "2025-09-20",
     "length": 48,
     "version": 2.2,
-    "video": "https://youtu.be/E7rn2IphGfw?si=GNEySChlAUHHe6oi",
+    "video": "https://youtu.be/E7rn2IphGfw",
     "showcaseVideo": "https://youtu.be/9nSkkXZ628E",
     "submitter": "TYATYAPKA",
     "tags": [
@@ -872,7 +873,7 @@
     "length": 87,
     "version": 2.2,
     "submitter": "Tr1bto",
-    "video": "https://youtu.be/a5hC-SA8gOM?si=uTYAsEGsScj6Zy_V",
+    "video": "https://youtu.be/a5hC-SA8gOM",
     "showcaseVideo": "https://youtu.be/Oos0Ptzqq-E",
     "date": "2024-05-11",
     "levelID": 4125776,
@@ -1724,7 +1725,7 @@
     "length": 47,
     "version": 2.2,
     "submitter": "merca",
-    "video": "https://www.youtube.com/watch?v=zpKRvlXwHyo",
+    "video": "https://youtu.be/zpKRvlXwHyo",
     "showcaseVideo": "https://youtu.be/a37y9M8rCIU",
     "tags": [
       "Level",
@@ -3557,8 +3558,8 @@
     "player": "ROZE GD",
     "length": 27,
     "version": 2.2,
-    "video": "https://youtu.be/jkesz0JlTdE?si=amrQUSNj0i3QGTwK",
-    "showcaseVideo": "https://youtu.be/IDVjiFbrMkM?si=H4tpRdisqagbcSyo",
+    "video": "https://youtu.be/jkesz0JlTdE",
+    "showcaseVideo": "https://youtu.be/IDVjiFbrMkM",
     "date": "2025-09-20",
     "submitter": "TYATYAPKA",
     "levelID": 84722782,
@@ -4334,7 +4335,7 @@
     "length": 127,
     "version": 2.2,
     "submitter": "TYATYAPKA",
-    "video": "https://youtu.be/Kbb3eXeMHQo?si=u6-L39rtPh19EiKE",
+    "video": "https://youtu.be/Kbb3eXeMHQo",
     "showcaseVideo": "https://youtu.be/DU6mRmGHy74",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/firework1.webp",
     "tags": [
@@ -6449,7 +6450,7 @@
     "date": "2025-09-20",
     "length": 69,
     "version": 2.2,
-    "video": "https://youtu.be/bbzVGtj3myE?si=6URlgJkvr5QTR_dG",
+    "video": "https://youtu.be/bbzVGtj3myE",
     "showcaseVideo": "https://youtu.be/kOjaffK5Rgo",
     "submitter": "TYATYAPKA",
     "tags": [
@@ -6457,7 +6458,7 @@
       "Progress",
       "CBF"
     ],
-    "levelID": null
+    "levelID": 0
   },
   {
     "name": "Singularity 61%",
@@ -7929,7 +7930,7 @@
     "date": "2025-09-20",
     "length": 154,
     "version": 2.2,
-    "video": "https://youtu.be/L6sa72_zD04?si=dvy61DGFaogwgYJ_",
+    "video": "https://youtu.be/L6sa72_zD04",
     "showcaseVideo": "https://youtu.be/gVpqeqy6frU",
     "submitter": "kyle1saurus",
     "tags": [
@@ -9462,7 +9463,7 @@
     "version": 2.2,
     "video": "https://youtu.be/OYhkPI5N6CU",
     "date": "2025-09-19",
-    "showcaseVideo": "https://www.youtube.com/watch?v=4ngzCQDdMVA",
+    "showcaseVideo": "https://youtu.be/4ngzCQDdMVA",
     "levelID": 48267315,
     "submitter": "kyle1saurus",
     "tags": [
@@ -10507,7 +10508,7 @@
     "player": "Bacon",
     "length": 41,
     "version": 2.2,
-    "video": "https://youtu.be/73yW9ew8nDE?si=313xJV4HSJZr76S2",
+    "video": "https://youtu.be/73yW9ew8nDE",
     "date": "2025-09-20",
     "submitter": "Bacon",
     "levelID": 126194250,
@@ -14843,4 +14844,3 @@
     ]
   }
 ]
-
