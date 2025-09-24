@@ -3,8 +3,8 @@
     "name": "Flamewall 73%, 100%",
     "id": "flamewall-73-100",
     "player": "Cuatrocientos",
-    "video": "https://www.youtube.com/live/18ixmjwoG6Q?si=OpJuJI6tQMyVC0xb&t=5622s",
-    "showcaseVideo": "https://youtu.be/eeTlZnCGP_k?si=N4tdbiQeCnbaEYMV",
+    "video": "https://www.youtube.com/live/18ixmjwoG6Q?t=5622s",
+    "showcaseVideo": "https://youtu.be/eeTlZnCGP_k",
     "tags": [
       "Level",
       "Consistency"
@@ -90,8 +90,8 @@
     "name": "Flamewall",
     "id": "flamewall",
     "player": "Cuatrocientos",
-    "video": "https://youtu.be/x4Io4zkWVRw?si=lX9_kd5dzfkaOrVK",
-    "showcaseVideo": "https://youtu.be/eeTlZnCGP_k?si=N4tdbiQeCnbaEYMV",
+    "video": "https://youtu.be/x4Io4zkWVRw",
+    "showcaseVideo": "https://youtu.be/eeTlZnCGP_k",
     "tags": [
       "Level",
       "Verified"
@@ -932,6 +932,23 @@
     ]
   },
   {
+    "name": "Acheron 24-100%, 17-96%",
+    "id": "acheron-24-100-17-96",
+    "player": "fallengmd",
+    "length": 97,
+    "version": 2.2,
+    "video": "https://youtu.be/PaOYC5i57C8",
+    "showcaseVideo": "https://youtu.be/YQElFvT5ynk",
+    "date": "2025-01-20",
+    "submitter": "jak",
+    "levelID": 73667628,
+    "tags": [
+      "Level",
+      "Consistency",
+      "Rated"
+    ]
+  },
+  {
     "name": "Anathema",
     "id": "anathema",
     "player": "Whizkid05",
@@ -1081,23 +1098,7 @@
       "Level",
       "Progress"
     ],
-    "levelID": 0
-  },
-  {
-    "name": "Acheron 24-100%, 17-96%",
-    "id": "acheron-24-100-17-96",
-    "player": "fallengmd",
-    "length": "97",
-    "version": "2.2",
-    "video": "https://youtu.be/PaOYC5i57C8",
-    "date": "2025-01-20",
-    "submitter": "jak",
-    "levelID": "73667628",
-    "tags": [
-      "Level",
-      "Consistency",
-      "Rated"
-    ]
+    "levelID": null
   },
   {
     "name": "Aeternus 72-97%",
@@ -1280,6 +1281,7 @@
     "length": 72,
     "version": 2.2,
     "video": "https://youtu.be/cOvrkgWrGHU",
+    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
     "date": "2025-03-01",
     "submitter": "CS2100",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
@@ -1387,7 +1389,7 @@
       "Level",
       "Progress"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "Heliopolis (Thnnder old) 17%",
@@ -1404,7 +1406,7 @@
       "Level",
       "Progress"
     ],
-    "levelID": 0
+    "levelID": null
   },
   {
     "name": "Nullscapes 120hz Mobile 48-100%",
@@ -1567,7 +1569,7 @@
     "length": 109,
     "version": 2.2,
     "levelID": 97364686,
-    "video": "https://youtu.be/7b7LBrWhsz8?si=K2Gf7kCwcqtg62PP",
+    "video": "https://youtu.be/7b7LBrWhsz8",
     "showcaseVideo": "https://youtu.be/IHqODLf_ZLY",
     "submitter": "TYATYAPKA",
     "tags": [
@@ -1687,8 +1689,8 @@
     "player": "Kaza",
     "length": 22,
     "version": 2.2,
-    "video": "https://youtu.be/xX5oNO-A_yc&ab_channel=KazaClips",
-    "showcaseVideo": "https://youtu.be/UvLvEh_xN5A?si=U_k-Oub0nCmTKyaQ",
+    "video": "https://youtu.be/xX5oNO-A_yc",
+    "showcaseVideo": "https://youtu.be/UvLvEh_xN5A",
     "date": "2025-09-12",
     "submitter": "Exiled_Shade",
     "levelID": null,
@@ -10791,8 +10793,8 @@
     "player": "dizbro",
     "length": 94,
     "version": 2.2,
-    "video": "https://youtu.be/fCKnHGGiZLs?si=TvwBZlb15dQ9f0s1",
-    "showcaseVideo": "https://youtu.be/QuFPOTwxrbQ?si=WN0z_bMxnZKYhrCG",
+    "video": "https://youtu.be/fCKnHGGiZLs",
+    "showcaseVideo": "https://youtu.be/QuFPOTwxrbQ",
     "date": "2025-09-21",
     "submitter": "Excryst",
     "levelID": 126200583,
@@ -14841,3 +14843,4 @@
     ]
   }
 ]
+
