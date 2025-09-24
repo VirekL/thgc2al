@@ -3,7 +3,7 @@
     "name": "Flamewall 73%, 100%",
     "id": "flamewall-73-100",
     "player": "Cuatrocientos",
-    "video": "https://www.youtube.com/live/18ixmjwoG6Q?t=5622s",
+    "video": "https://youtu.be/18ixmjwoG6Q",
     "showcaseVideo": "https://youtu.be/eeTlZnCGP_k",
     "tags": [
       "Level",
@@ -354,7 +354,7 @@
     "date": "2024-12-09",
     "length": 194,
     "version": 2.2,
-    "video": "https://www.youtube.com/live/DYI1IPtInws&t=5649",
+    "video": "https://youtu.be/DYI1IPtInws&t=5649",
     "showcaseVideo": "https://youtu.be/ulaXL0SdzZk",
     "submitter": "Swift",
     "tags": [
@@ -395,14 +395,13 @@
       "Level",
       "Consistency",
       "CBF"
-    ],
-    "levelID": 0
+    ]
   },
   {
     "name": "Banshee 77%",
     "id": "banshee-77",
     "player": "spcreat",
-    "video": "https://www.youtube.com/live/i5Xd9I4Zx1w?t=6032",
+    "video": "https://youtu.be/i5Xd9I4Zx1w",
     "tags": [
       "Level",
       "Progress",
@@ -438,7 +437,7 @@
     "date": "2025-02-18",
     "length": 45,
     "version": 2.2,
-    "video": "https://www.youtube.com/live/6a1C9HJVA2w?t=6960",
+    "video": "https://youtu.be/6a1C9HJVA2w",
     "showcaseVideo": "https://youtu.be/1cgpHlI3FcI",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/thinking-space-ii3.webp",
     "submitter": "jak",
@@ -467,14 +466,14 @@
     "name": "Anathema 156%",
     "id": "anathema-156",
     "player": "Netermind",
-    "length": "202",
-    "version": "2.2",
-    "video": "https://www.youtube.com/live/6gr65nqLXZU?t=2940s",
+    "length": 202,
+    "version": 2.2,
+    "video": "https://youtu.be/6gr65nqLXZU",
     "showcaseVideo": "https://youtu.be/XYvhc8b_wb8",
     "date": "2025-03-18",
     "submitter": "Buhbuh7",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/anathema1.avif",
-    "levelID": "112313819",
+    "levelID": 112313819,
     "tags": [
       "Level",
       "Consistency",
@@ -489,7 +488,7 @@
     "date": "2025-08-31",
     "length": 121,
     "version": 2.2,
-    "video": "https://www.youtube.com/live/HMSp_zG84a4?t=7250",
+    "video": "https://youtu.be/HMSp_zG84a4?t=7250",
     "showcaseVideo": "https://youtu.be/FwxtJQQocKA",
     "submitter": "kyle1saurus",
     "tags": [
@@ -544,8 +543,7 @@
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "Vehemence 39%",
@@ -622,7 +620,7 @@
     "date": "2025-08-21",
     "length": 221,
     "version": 2.2,
-    "video": "https://www.youtube.com/live/vomRQRxmJpY",
+    "video": "https://youtu.be/vomRQRxmJpY",
     "showcaseVideo": "https://youtu.be/G6ugI_TtEl8",
     "submitter": "TYATYAPKA",
     "tags": [
@@ -908,7 +906,7 @@
     "date": "2025-08-08",
     "length": 80,
     "version": 2.2,
-    "video": "https://www.youtube.com/live/OCyCMPj_RIQ?t=8952",
+    "video": "https://youtu.be/OCyCMPj_RIQ",
     "showcaseVideo": "https://youtu.be/G6ugI_TtEl8",
     "submitter": "kyle1saurus",
     "tags": [
@@ -972,7 +970,7 @@
     "player": "wPopoff",
     "length": 67,
     "version": 2.1,
-    "video": "https://www.youtube.com/live/YueacvC98cU?t=6780",
+    "video": "https://youtu.be/YueacvC98cU?t=6780",
     "showcaseVideo": "https://youtu.be/V_XGGfefoeg",
     "date": "2024-07-28",
     "levelID": 124037650,
@@ -1071,13 +1069,13 @@
     "name": "Avernus green 95%",
     "id": "avernus-green-95",
     "player": "SerVax",
-    "length": "74",
-    "version": "2.2",
-    "video": "https://www.youtube.com/live/WfnaiwqDHaE?t=5876s",
+    "length": 74,
+    "version": 2.2,
+    "video": "https://youtu.be/WfnaiwqDHaE?t=5876s",
     "showcaseVideo": "https://youtu.be/8lNHaYbvQE0",
     "date": "2024-12-22",
     "submitter": "kyle1saurus",
-    "levelID": "113341338",
+    "levelID": 113341338,
     "tags": [
       "Level",
       "Progress",
@@ -1098,8 +1096,7 @@
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "Aeternus 72-97%",
@@ -1109,7 +1106,7 @@
     "date": "2025-06-20",
     "length": 16,
     "version": 2.2,
-    "video": "https://www.youtube.com/live/eAZXXIFUWmg?t=3985s",
+    "video": "https://youtu.be/eAZXXIFUWmg?t=3985s",
     "showcaseVideo": "https://youtu.be/p4QgFtKL5kE",
     "submitter": "TYATYAPKA",
     "tags": [
@@ -1289,8 +1286,7 @@
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "Sweeping Demon 2 (Taiago) 62%",
@@ -1362,7 +1358,7 @@
     "name": "Banshee 21-100%",
     "id": "banshee-21-100",
     "player": "spcreat",
-    "video": "https://www.youtube.com/live/hGRJKeBB14k?t=1149",
+    "video": "https://youtu.be/hGRJKeBB14k?t=1149",
     "tags": [
       "Level",
       "Progress",
@@ -1382,15 +1378,14 @@
     "date": "2025-02-04",
     "length": 40,
     "version": 2.2,
-    "video": "https://www.youtube.com/live/R-hg3r25hMs?t=13963",
+    "video": "https://youtu.be/R-hg3r25hMs?t=13963",
     "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "Heliopolis (Thnnder old) 17%",
@@ -1401,13 +1396,12 @@
     "version": 2.2,
     "submitter": "TYATYAPKA",
     "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
-    "video": "https://www.youtube.com/live/IQLEFiJ9a98?t=4678s",
+    "video": "https://youtu.be/IQLEFiJ9a98?t=4678s",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "Nullscapes 120hz Mobile 48-100%",
@@ -1694,7 +1688,6 @@
     "showcaseVideo": "https://youtu.be/UvLvEh_xN5A",
     "date": "2025-09-12",
     "submitter": "Exiled_Shade",
-    "levelID": null,
     "tags": [
       "Level",
       "Progress"
@@ -1708,7 +1701,7 @@
     "date": "2024-12-22",
     "length": 65,
     "version": 2.2,
-    "video": "https://www.youtube.com/live/WfnaiwqDHaE&t=5135",
+    "video": "https://youtu.be/WfnaiwqDHaE",
     "showcaseVideo": "https://youtu.be/8lNHaYbvQE0",
     "submitter": "Arcadie",
     "tags": [
@@ -2033,7 +2026,7 @@
     "date": "2024-11-26",
     "length": 63,
     "version": 2.1,
-    "video": "https://www.youtube.com/live/ynMmyR2e5i0&t=7301",
+    "video": "https://youtu.be/ynMmyR2e5i0&t=7301",
     "showcaseVideo": "https://youtu.be/sysQa0IE1n4",
     "submitter": "vaughn",
     "tags": [
@@ -2335,7 +2328,7 @@
     "length": 23,
     "version": 2.2,
     "submitter": "ScorchBTD",
-    "video": "https://www.youtube.com/live/JJNmHzg3iD0?t=8986",
+    "video": "https://youtu.be/JJNmHzg3iD0?t=8986",
     "showcaseVideo": "https://youtu.be/sysQa0IE1n4",
     "tags": [
       "Level",
@@ -3326,7 +3319,7 @@
     "date": "2025-05-09",
     "length": 24,
     "version": 2.2,
-    "video": "https://www.youtube.com/live/bRPVDAmmzlw&t=3132",
+    "video": "https://youtu.be/bRPVDAmmzlw&t=3132",
     "showcaseVideo": "https://youtu.be/1GolW8jKK7k",
     "submitter": "tmtsps12",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/grief-unbuffed1.avif",
@@ -3402,8 +3395,7 @@
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": 0
+    ]
   },
   {
     "name": "wocky circles",
@@ -4248,11 +4240,11 @@
     "id": "vehemence-33-60",
     "player": "wPopoff",
     "date": "2025-07-15",
-    "length": "90",
-    "version": "2.2",
-    "levelID": "96572223",
+    "length": 90,
+    "version": 2.2,
+    "levelID": 96572223,
     "showcaseVideo": "https://youtu.be/FwxtJQQocKA",
-    "video": "https://www.youtube.com/live/hC2Cy4-RlTg?t=5754",
+    "video": "https://youtu.be/hC2Cy4-RlTg?t=5754",
     "submitter": "Exiled_Shade",
     "tags": [
       "Level",
@@ -4740,10 +4732,10 @@
     "id": "vehemence-24-55",
     "player": "wPopoff",
     "date": "2025-07-21",
-    "length": "32",
-    "version": "2.2",
-    "levelID": "96572223",
-    "video": "https://www.youtube.com/live/0A9WtwjR-X0?t=2639",
+    "length": 32,
+    "version": 2.2,
+    "levelID": 96572223,
+    "video": "https://youtu.be/0A9WtwjR-X0?t=2639",
     "showcaseVideo": "https://youtu.be/FwxtJQQocKA",
     "submitter": "tmtsps12",
     "tags": [
@@ -5414,9 +5406,9 @@
     "name": "Ex Vacuo 58%",
     "id": "ex-vacuo-58",
     "player": "Laniakea",
-    "length": "75",
-    "version": "2.2",
-    "video": "https://www.youtube.com/live/WDTXRr0cGCg?t=3592",
+    "length": 75,
+    "version": 2.2,
+    "video": "https://youtu.be/WDTXRr0cGCg?t=3592",
     "showcaseVideo": "https://youtu.be/CVXC2_bveBQ",
     "date": "2025-08-23",
     "submitter": "TYATYAPKA",
@@ -6120,7 +6112,7 @@
     "date": "2022-02-17",
     "length": 99,
     "version": 2.1,
-    "video": "https://www.youtube.com/live/pMy_Jm_jgj8?t=4817",
+    "video": "https://youtu.be/pMy_Jm_jgj8?t=4817",
     "showcaseVideo": "https://youtu.be/GKQc2JECHLs",
     "submitter": "YoumanJY",
     "tags": [
@@ -6184,7 +6176,7 @@
     "date": "2024-12-22",
     "length": 36,
     "version": 2.2,
-    "video": "https://www.youtube.com/live/WfnaiwqDHaE?t=9200",
+    "video": "https://youtu.be/WfnaiwqDHaE?t=9200",
     "showcaseVideo": "https://youtu.be/8lNHaYbvQE0",
     "submitter": "kyle1saurus",
     "tags": [
@@ -6423,8 +6415,7 @@
     "tags": [
       "Level",
       "Progress"
-    ],
-    "levelID": null
+    ]
   },
   {
     "name": "COMBUSTION",
@@ -6457,8 +6448,7 @@
       "Level",
       "Progress",
       "CBF"
-    ],
-    "levelID": 0
+    ]
   },
   {
     "name": "Singularity 61%",
@@ -6533,7 +6523,7 @@
     "date": "2024-12-22",
     "length": 32,
     "version": 2.2,
-    "video": "https://www.youtube.com/live/WfnaiwqDHaE&t=5135",
+    "video": "https://youtu.be/WfnaiwqDHaE&t=5135",
     "showcaseVideo": "https://youtu.be/8lNHaYbvQE0",
     "submitter": "kyle1saurus",
     "tags": [
@@ -7191,7 +7181,6 @@
     "id": "wocky-circles-unifer-74",
     "player": "oguzok",
     "date": "2025-09-15",
-    "levelID": null,
     "length": 41,
     "version": 2.2,
     "video": "https://youtu.be/oxc7jqYrduI",
@@ -7207,7 +7196,6 @@
     "id": "wocky-circles-unifer-34-100",
     "player": "oguzok",
     "date": "2025-09-13",
-    "levelID": null,
     "length": 40,
     "version": 2.2,
     "video": "https://youtu.be/9Wj-oI1_vQg",
@@ -7937,8 +7925,7 @@
       "Level",
       "Progress",
       "Tentative"
-    ],
-    "levelID": 0
+    ]
   },
   {
     "name": "The Yangire",
@@ -8953,7 +8940,7 @@
     "player": "Zoink",
     "length": 176,
     "version": 2.2,
-    "video": "https://www.youtube.com/live/V18LCMb9108?t=1339s",
+    "video": "https://youtu.be/V18LCMb9108?t=1339s",
     "showcaseVideo": "https://youtu.be/ng-VeF1O5aQ",
     "date": "2025-09-03",
     "levelID": 100990392,
@@ -9173,7 +9160,7 @@
     "date": "2025-04-14",
     "length": 22,
     "version": 2.2,
-    "video": "https://www.youtube.com/live/2au6VIqVBPM?t=5149",
+    "video": "https://youtu.be/2au6VIqVBPM?t=5149",
     "showcaseVideo": "https://youtu.be/PFHlkdz9UqM",
     "submitter": "Grave",
     "tags": [
@@ -9922,10 +9909,10 @@
     "id": "silent-clubstep-ii-18-37",
     "player": "SkittleCatastrophe",
     "date": "2025-09-06",
-    "length": "16",
-    "version": "2.2",
-    "levelID": "78614226",
-    "video": "https://youtube.com/shorts/3iplsk6sMyQ",
+    "length": 16,
+    "version": 2.2,
+    "levelID": 78614226,
+    "video": "https://youtu.be/3iplsk6sMyQ",
     "showcaseVideo": "https://youtu.be/mCj_PjC3rs0",
     "submitter": "froggasaurus",
     "tags": [
@@ -10058,10 +10045,10 @@
     "id": "silent-clubstep-ii-27-42",
     "player": "SkittleCatastrophe",
     "date": "2025-08-30",
-    "length": "15",
-    "version": "2.2",
-    "levelID": "78614226",
-    "video": "https://youtube.com/shorts/IEKI1xzMZaw",
+    "length": 15,
+    "version": 2.2,
+    "levelID": 78614226,
+    "video": "https://youtu.be/IEKI1xzMZaw",
     "showcaseVideo": "https://youtu.be/mCj_PjC3rs0",
     "submitter": "Excryst",
     "tags": [
@@ -10292,10 +10279,10 @@
     "id": "gumi-86",
     "player": "Thnnder",
     "date": "2025-07-19",
-    "length": "40",
-    "version": "2.2",
-    "levelID": "75330074",
-    "video": "https://www.youtube.com/live/y1Nl5An8-zc?t=4644s",
+    "length": 40,
+    "version": 2.2,
+    "levelID": 75330074,
+    "video": "https://youtu.be/y1Nl5An8-zc?t=4644s",
     "showcaseVideo": "https://youtu.be/6orHVe5GBX0",
     "submitter": "Exiled_Shade",
     "tags": [
@@ -10311,7 +10298,7 @@
     "date": "2025-04-14",
     "length": 22,
     "version": 2.2,
-    "video": "https://www.youtube.com/live/2au6VIqVBPM?t=6680",
+    "video": "https://youtu.be/2au6VIqVBPM?t=6680",
     "showcaseVideo": "https://youtu.be/PFHlkdz9UqM",
     "submitter": "jak",
     "tags": [
@@ -10343,10 +10330,10 @@
     "id": "cimmerian-shade-142",
     "player": "Zoink",
     "date": "2025-06-06",
-    "length": "120",
-    "version": "2.2",
-    "levelID": "93340783",
-    "video": "https://www.youtube.com/live/L32T5dYadLg?t=7217",
+    "length": 120,
+    "version": 2.2,
+    "levelID": 93340783,
+    "video": "https://youtu.be/L32T5dYadLg?t=7217",
     "showcaseVideo": "https://youtu.be/CcvGGDzxOJo",
     "submitter": "Emp",
     "tags": [
@@ -11920,7 +11907,7 @@
     "date": "2024-09-22",
     "length": 490,
     "version": 2.1,
-    "video": "https://www.youtube.com/live/VoDeNvvxvGc?t=1606",
+    "video": "https://youtu.be/VoDeNvvxvGc?t=1606",
     "showcaseVideo": "https://youtu.be/ipZl9Kvckc4",
     "submitter": "jak",
     "tags": [
@@ -11938,7 +11925,7 @@
     "length": 16,
     "version": 2.1,
     "submitter": "TYATYAPKA",
-    "video": "https://www.youtube.com/live/g1ujb--8lyg?t=9327",
+    "video": "https://youtu.be/g1ujb--8lyg?t=9327",
     "showcaseVideo": "https://youtu.be/8NBuqpGb1KY",
     "tags": [
       "Level",
@@ -13357,9 +13344,9 @@
     "id": "wavterminal-74",
     "player": "Frice",
     "date": "2025-06-04",
-    "length": "70",
-    "version": "2.2",
-    "video": "https://www.youtube.com/live/G54F6TenmBI?t=590",
+    "length": 70,
+    "version": 2.2,
+    "video": "https://youtu.be/G54F6TenmBI?t=590",
     "showcaseVideo": "https://youtu.be/EfrKH-CuT50",
     "submitter": "kyle1saurus",
     "tags": [
@@ -13959,7 +13946,7 @@
     "date": "2024-09-07",
     "length": 541,
     "version": 2.2,
-    "video": "https://www.youtube.com/live/XD0UqeRaYCE?t=3183",
+    "video": "https://youtu.be/XD0UqeRaYCE?t=3183",
     "showcaseVideo": "https://youtu.be/5VWq3JL3DnA",
     "submitter": "kyle1saurus",
     "tags": [
