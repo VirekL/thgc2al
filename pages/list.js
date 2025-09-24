@@ -76,6 +76,12 @@ function normalizeYoutubeUrl(input) {
 
     if (parsed.searchParams.has('si')) parsed.searchParams.delete('si');
 
+    try {
+      if (parsed.searchParams.get('feature')) parsed.searchParams.delete('feature');
+    } catch (e) {
+      // ignore
+    }
+
     const remainingParams = parsed.searchParams.toString();
     return `${parsed.origin}${parsed.pathname}${remainingParams ? `?${remainingParams}` : ''}`;
   }
