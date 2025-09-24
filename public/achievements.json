@@ -35,23 +35,6 @@
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/grief-unbuffed1.avif"
   },
   {
-    "name": "KOCMOC UNLEASHED 19-91%",
-    "id": "kocmoc-unleashed-19-91",
-    "player": "Arshadow",
-    "date": "2025-08-19",
-    "length": 50,
-    "version": 2.2,
-    "video": "https://youtu.be/9p8gPt7704c",
-    "showcaseVideo": "https://youtu.be/bYswI_NVbQ4",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/kocmoc-unleashed1.webp",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress",
-      "Tentative"
-    ]
-  },
-  {
     "name": "Thinking Space II",
     "id": "thinking-space-ii",
     "player": "Zoink",
@@ -68,23 +51,6 @@
       "Rated"
     ],
     "levelID": 119544028
-  },
-  {
-    "name": "Thinking Space II (Old) 79%",
-    "id": "thinking-space-ii-old-79",
-    "player": "Zoink",
-    "length": 65,
-    "version": 2.2,
-    "video": "https://youtu.be/mnaIfSOxurY",
-    "showcaseVideo": "https://youtu.be/1cgpHlI3FcI",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/thinking-space-ii1.webp",
-    "date": "2025-02-25",
-    "tags": [
-      "Level",
-      "Progress",
-      "Tentative"
-    ],
-    "submitter": "Radiator"
   },
   {
     "name": "Flamewall",
@@ -156,6 +122,23 @@
     "version": "2.2",
     "submitter": "ScorchBTD",
     "thumbnail": "https://tjcsucht.net/levelthumbs/102303428.png"
+  },
+  {
+    "name": "KOCMOC UNLEASHED 19-91%",
+    "id": "kocmoc-unleashed-19-91",
+    "player": "Arshadow",
+    "date": "2025-08-19",
+    "length": 50,
+    "version": 2.2,
+    "video": "https://youtu.be/9p8gPt7704c",
+    "showcaseVideo": "https://youtu.be/bYswI_NVbQ4",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/kocmoc-unleashed1.webp",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress",
+      "Tentative"
+    ]
   },
   {
     "name": "GRIEF 17-92%",
@@ -429,22 +412,6 @@
     "length": 78,
     "version": 2.2,
     "thumbnail": "https://i.ytimg.com/vi/i8TGgQNAzDg/maxresdefault.jpg"
-  },
-  {
-    "name": "Thinking Space II (Old) 40-100%",
-    "id": "thinking-space-ii-old-40-100",
-    "player": "Zoink",
-    "date": "2025-02-18",
-    "length": 45,
-    "version": 2.2,
-    "video": "https://youtu.be/6a1C9HJVA2w",
-    "showcaseVideo": "https://youtu.be/1cgpHlI3FcI",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/thinking-space-ii3.webp",
-    "submitter": "jak",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
   },
   {
     "name": "KOCMOC UNLEASHED 14-78%",
@@ -1902,6 +1869,34 @@
     ]
   },
   {
+    "name": "Tidal Wave (Ultrabuffed) 22-61%",
+    "id": "tidal-wave-ultrabuffed-22-61",
+    "player": "Loliklee",
+    "date": "2025-06-22",
+    "length": 74,
+    "version": 2.2,
+    "video": "https://youtu.be/OqodbR8-Tmc",
+    "submitter": "tmtsps12",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
+    "name": "Tidal Wave (Ultrabuffed) 40%",
+    "id": "tidal-wave-ultrabuffed-40",
+    "player": "A6",
+    "date": "2025-06-25",
+    "length": 74,
+    "version": 2.2,
+    "video": "https://youtu.be/wgNI_7Bh4wc",
+    "submitter": "tmtsps12",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Unnerfed Firework",
     "id": "unnerfed-firework",
     "player": "Openix",
@@ -2371,20 +2366,6 @@
     ]
   },
   {
-    "name": "Tidal Wave (Ultrabuffed) 22-61%",
-    "id": "tidal-wave-ultrabuffed-22-61",
-    "player": "Loliklee",
-    "date": "2025-06-22",
-    "length": "74",
-    "version": "2.2",
-    "video": "https://youtu.be/OqodbR8-Tmc",
-    "submitter": "tmtsps12",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Acheron (Wolvez) 96%",
     "id": "acheron-wolvez-96",
     "player": "Wolvez",
@@ -2395,20 +2376,6 @@
     "showcaseVideo": "https://youtu.be/EuZY748OnYU",
     "video": "https://youtu.be/Hjmtt7q5boA",
     "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
-    "name": "Tidal Wave (Ultrabuffed) 40%",
-    "id": "tidal-wave-ultrabuffed-40",
-    "player": "A6",
-    "date": "2025-06-25",
-    "length": "74",
-    "version": "2.2",
-    "video": "https://youtu.be/wgNI_7Bh4wc",
-    "submitter": "tmtsps12",
     "tags": [
       "Level",
       "Progress"
@@ -3092,22 +3059,6 @@
       "Challenge",
       "Verified",
       "CBF"
-    ]
-  },
-  {
-    "name": "VSC",
-    "id": "vsc",
-    "player": "The_Bat0",
-    "levelID": 60805571,
-    "date": "2024-04-09",
-    "length": 16,
-    "version": 2.2,
-    "submitter": "kyle1saurus",
-    "video": "https://youtu.be/zCygYn5kiTw",
-    "showcaseVideo": "https://youtu.be/GbtLlQQezTA",
-    "tags": [
-      "Challenge",
-      "Verified"
     ]
   },
   {
@@ -4036,6 +3987,22 @@
       "Level",
       "Verified",
       "Rated"
+    ]
+  },
+  {
+    "name": "VSC",
+    "id": "vsc",
+    "player": "The_Bat0",
+    "levelID": 60805571,
+    "date": "2024-04-09",
+    "length": 16,
+    "version": 2.2,
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/zCygYn5kiTw",
+    "showcaseVideo": "https://youtu.be/GbtLlQQezTA",
+    "tags": [
+      "Challenge",
+      "Verified"
     ]
   },
   {
@@ -7501,8 +7468,7 @@
     "tags": [
       "Level",
       "Verified"
-    ],
-    "showcaseVideo": "https://youtu.be/vMciL0VKO1g"
+    ]
   },
   {
     "name": "Firework 1.1x 64%",
