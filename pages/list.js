@@ -16,6 +16,30 @@ import { useDateFormat } from '../components/DateFormatContext';
 import Tag, { TAG_PRIORITY_ORDER } from '../components/Tag';
 import DevModePanel from '../components/DevModePanel';
 
+function normalizeYoutubeUrl(input) {
+  if (!input || typeof input !== 'string') return input;
+  const s = input.trim();
+
+  let m = s.match(/(?:https?:\/\/)?(?:www\.)?youtu\.be\/([^?&#\/]+)/i);
+  if (m) return `https://youtu.be/${m[1]}`;
+
+  m = s.match(/[?&]v=([^?&#]+)/);
+  if (m) return `https://youtu.be/${m[1]}`;
+
+  m = s.match(/(?:https?:\/\/)?(?:www\.)?youtube\.com\/live\/([^?&#\/]+)/i);
+  if (m) return `https://youtu.be/${m[1]}`;
+
+  m = s.match(/(?:https?:\/\/)?(?:www\.)?youtube\.com\/shorts\/([^?&#\/]+)/i);
+  if (m) return `https://youtu.be/${m[1]}`;
+
+  if (s.includes('youtube.com') || s.includes('youtu.be')) {
+    const noParams = s.split(/[?&#]/)[0];
+    return noParams;
+  }
+
+  return input;
+}
+
 function TagFilterPillsInner({ allTags, filterTags, setFilterTags, isMobile, show, setShow }) {
   const tagStates = {};
   allTags.forEach(tag => {
@@ -267,9 +291,10 @@ export default function List() {
 
   function handleEditFormChange(e) {
     const { name, value } = e.target;
+    const newVal = (name === 'video' || name === 'showcaseVideo') ? normalizeYoutubeUrl(value) : (['version', 'levelID', 'length'].includes(name) ? Number(value) : value);
     setEditForm(f => ({
       ...f,
-      [name]: ['version', 'levelID', 'length'].includes(name) ? Number(value) : value
+      [name]: newVal
     }));
   }
 
@@ -297,6 +322,9 @@ export default function List() {
       });
     }
     if (tags.length > 0) entry.tags = tags;
+
+    if (entry.video) entry.video = normalizeYoutubeUrl(entry.video);
+    if (entry.showcaseVideo) entry.showcaseVideo = normalizeYoutubeUrl(entry.showcaseVideo);
 
     setReordered(prev => {
       if (!prev) return prev;
@@ -464,9 +492,10 @@ export default function List() {
 
   function handleNewFormChange(e) {
     const { name, value } = e.target;
+    const newVal = (name === 'video' || name === 'showcaseVideo') ? normalizeYoutubeUrl(value) : (['version', 'levelID', 'length'].includes(name) ? Number(value) : value);
     setNewForm(f => ({
       ...f,
-      [name]: ['version', 'levelID', 'length'].includes(name) ? Number(value) : value
+      [name]: newVal
     }));
   }
   function handleNewFormTagClick(tag) {
@@ -491,6 +520,8 @@ export default function List() {
       }
     });
     if (tags.length > 0) entry.tags = tags;
+    if (entry.video) entry.video = normalizeYoutubeUrl(entry.video);
+    if (entry.showcaseVideo) entry.showcaseVideo = normalizeYoutubeUrl(entry.showcaseVideo);
     setReordered(prev => {
       let newArr;
       if (!prev) {
