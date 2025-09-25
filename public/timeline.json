@@ -7,7 +7,8 @@
         "showcaseVideo": "https://youtu.be/eeTlZnCGP_k?si=N4tdbiQeCnbaEYMV",
         "tags": [
       "Level",
-      "Consistency"
+      "Consistency",
+	  "Rated"
     ],
         "date": "2025-09-21",
         "length": 714,
@@ -23,7 +24,8 @@
 	    "levelID": "126242564",
         "tags": [
       "Level",
-      "Consistency"
+      "Consistency",
+	  "Rated"
     ],
         "date": "2025-09-06",
         "length": 615,
@@ -39,7 +41,8 @@
 	    "levelID": "126242564",
         "tags": [
       "Level",
-      "Consistency"
+      "Consistency",
+	  "Rated"	
     ],
         "date": "2025-08-31",
         "length": 600,
@@ -1458,6 +1461,7 @@
         "video": "https://youtu.be/727pUHwWSVg"
     }
 ]
+
 
 
 
