@@ -6533,6 +6533,21 @@
     ]
   },
   {
+    "name": "Silent Oppenheimer 40%",
+    "id": "silent-oppenheimer-40",
+    "player": "Dezstro",
+    "date": "2025-09-24",
+    "length": 44,
+    "version": 2.2,
+    "video": "https://youtu.be/OukvALqTyxE",
+    "showcaseVideo": "https://youtu.be/Q-IT8xuqU9Q",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Azure Flare (polar) 25-47%",
     "id": "azure-flare-polar-25-47",
     "player": "polar",
@@ -8838,21 +8853,6 @@
     ]
   },
   {
-    "name": "Silent Oppenheimer 35%",
-    "id": "silent-oppenheimer-35",
-    "player": "Dezstro",
-    "date": "2025-09-07",
-    "length": 38,
-    "version": 2.2,
-    "video": "https://youtu.be/v_bt9571W5o",
-    "showcaseVideo": "https://youtu.be/Q-IT8xuqU9Q",
-    "submitter": "Exiled_Shade",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "RUTHLESS Unnerfed",
     "id": "ruthless-unnerfed",
     "player": "LordVadercraft",
@@ -8950,21 +8950,6 @@
     "tags": [
       "Level",
       "Verified"
-    ]
-  },
-  {
-    "name": "Silent Oppenheimer (Old) 36%",
-    "id": "silent-oppenheimer-old-36",
-    "player": "Dezstro",
-    "date": "2025-02-19",
-    "length": 40,
-    "version": 2.2,
-    "video": "https://youtu.be/hjXfRN7exhY",
-    "showcaseVideo": "https://youtu.be/Q-IT8xuqU9Q",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -14413,22 +14398,6 @@
     ]
   },
   {
-    "name": "LiGHtmArE 45-55%",
-    "id": "lightmare-45-55",
-    "player": "merca",
-    "levelID": 77233362,
-    "date": "2025-09-14",
-    "length": 13,
-    "version": 2.2,
-    "submitter": "merca",
-    "video": "https://youtu.be/SBS-0V87tX0",
-    "showcaseVideo": "https://youtu.be/a37y9M8rCIU",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Starlight Summit",
     "id": "starlight-summit",
     "player": "Pengi1",
@@ -14782,3 +14751,4 @@
     ]
   }
 ]
+
