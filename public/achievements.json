@@ -7373,6 +7373,25 @@
     ]
   },
   {
+    "name": "Codependence 144hz",
+    "id": "codependence-144hz",
+    "player": "ty3544",
+    "levelID": 62556400,
+    "date": "2025-09-25",
+    "length": 125,
+    "version": 2.2,
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/AjWkUSunFRc",
+    "showcaseVideo": "https://youtu.be/ti5G-c3wcM0",
+    "tags": [
+      "Level",
+      "Verified",
+      "Low Hertz",
+      "2P",
+      "Rated"
+    ]
+  },
+  {
     "name": "Codependence",
     "id": "codependence",
     "player": "Pukklez",
@@ -8677,10 +8696,10 @@
     "name": "Fracture Circles",
     "id": "fracture-circles",
     "player": "lsdlsdlsdlsd",
-    "levelID": "124602649",
+    "levelID": 124602649,
     "date": "2025-09-02",
-    "length": "72",
-    "version": "2.2",
+    "length": 72,
+    "version": 2.2,
     "video": "https://youtu.be/OUo_JhNI-is",
     "showcaseVideo": "https://youtu.be/sQHICAjpQOA",
     "submitter": "goofygdplayer",
@@ -8835,6 +8854,25 @@
     ]
   },
   {
+    "name": "BEELINE 144hz",
+    "id": "beeline-144hz",
+    "player": "Nsaynchkn",
+    "levelID": 93792764,
+    "date": "2025-05-16",
+    "length": 71,
+    "version": 2.2,
+    "video": "https://youtu.be/bQ5Or3rYNpw",
+    "showcaseVideo": "https://youtu.be/GcJyKYkbyfE",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Verified",
+      "Low Hertz",
+      "2P",
+      "Rated"
+    ]
+  },
+  {
     "name": "BEELINE",
     "id": "beeline",
     "player": "Motor8",
@@ -8862,6 +8900,7 @@
     "version": 2.1,
     "submitter": "Anceps",
     "video": "https://youtu.be/RmItPs84OOk",
+    "showcaseVideo": "https://youtu.be/gTNCsNy-_Ow",
     "tags": [
       "Level",
       "Verified",
@@ -14751,4 +14790,5 @@
     ]
   }
 ]
+
 
