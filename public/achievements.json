@@ -198,19 +198,19 @@
     "name": "Acheron 60hz 17-67%",
     "id": "acheron-60hz-17-67",
     "player": "Llqne",
+    "levelID": 73667628,
+    "submitter": "cheesecake",
+    "date": "2025-09-23",
+    "length": 30,
+    "version": 2.2,
     "video": "https://youtu.be/KNnqBr8YsZI",
-    "showcaseVideo": "https://youtu.be/ZHAMV_Jw9PM",
+    "showcaseVideo": "https://www.youtube.com/watch?v=YQElFvT5ynk",
     "tags": [
       "Level",
       "Low Hertz",
       "Progress",
       "Rated"
-    ],
-    "levelID": 73667628,
-    "submitter": "cheesecake",
-    "date": "2025-09-23",
-    "length": 30,
-    "version": 2.2
+    ]
   },
   {
     "name": "Tidal Wave buffed",
@@ -249,36 +249,19 @@
     "name": "Acheron 60hz 50%",
     "id": "acheron-60hz-50",
     "player": "Llqne",
+    "levelID": 73667628,
+    "submitter": "BlueGamer",
+    "date": "2025-07-20",
+    "length": 36,
+    "version": 2.2,
     "video": "https://youtu.be/g9tPTVjdnVA",
-    "showcaseVideo": "https://youtu.be/ZHAMV_Jw9PM",
+    "showcaseVideo": "https://www.youtube.com/watch?v=YQElFvT5ynk",
     "tags": [
       "Level",
       "Low Hertz",
       "Progress",
       "Rated"
-    ],
-    "levelID": 73667628,
-    "submitter": "BlueGamer",
-    "date": "2025-07-20",
-    "length": 36,
-    "version": 2.2
-  },
-  {
-    "name": "Flamewall (Old) 3-86%",
-    "id": "flamewall-old-3-86",
-    "player": "Cuatrocientos",
-    "video": "https://youtu.be/dlVnGdWRLeQ",
-    "showcaseVideo": "https://youtu.be/c5qQh7h0zYMU",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/flamewall-unbuffed2.webp",
-    "tags": [
-      "Level",
-      "Progress",
-      "Tentative"
-    ],
-    "date": "2024-09-10",
-    "length": 333,
-    "submitter": "Anceps",
-    "version": 2.2
+    ]
   },
   {
     "name": "VSC x2",
@@ -14808,6 +14791,7 @@
     ]
   }
 ]
+
 
 
 
