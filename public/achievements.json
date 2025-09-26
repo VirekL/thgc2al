@@ -3513,6 +3513,25 @@
     ]
   },
   {
+    "name": "limbo but uwu ig idk 60hz Mobile 71%",
+    "id": "limbo-but-uwu-ig-idk-60hz-mobile-71",
+    "player": "freedom",
+    "date": "2025-09-26",
+    "length": 62,
+    "version": 2.2,
+    "levelID": 110705712,
+    "video": "https://youtu.be/Zlh0mulk6u8",
+    "showcaseVideo": "https://youtu.be/-nja3I-CK50",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
+  },
+  {
     "name": "Unnerfed Zodiac",
     "id": "unnerfed-zodiac",
     "player": "mageman85",
@@ -4135,25 +4154,6 @@
     "tags": [
       "Level",
       "Low Hertz",
-      "Rated"
-    ]
-  },
-  {
-    "name": "limbo but uwu ig idk 60hz Mobile 67%",
-    "id": "limbo-but-uwu-ig-idk-60hz-mobile-67",
-    "player": "freedom",
-    "date": "2025-06-30",
-    "length": 59,
-    "version": 2.2,
-    "levelID": 110705712,
-    "video": "https://youtu.be/twbOOiF7a-0",
-    "showcaseVideo": "https://youtu.be/-nja3I-CK50",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Progress",
       "Rated"
     ]
   },
@@ -8465,12 +8465,28 @@
     ]
   },
   {
+    "name": "Reality Spirituality 37-100%",
+    "id": "reality-spirituality-37-100",
+    "player": "LordVadercraft",
+    "date": "2025-09-25",
+    "length": 80,
+    "version": 2.2,
+    "video": "https://youtu.be/RviDtamrK2I",
+    "showcaseVideo": "https://youtu.be/9QoecJbSKwY",
+    "submitter": "Excryst",
+    "tags": [
+      "Level",
+      "Progress",
+      "Tentative"
+    ]
+  },
+  {
     "name": "Reality Spirituality 89%",
     "id": "reality-spirituality-89",
     "player": "LordVadercraft",
     "date": "2025-09-10",
-    "length": "125",
-    "version": "2.2",
+    "length": 125,
+    "version": 2.2,
     "video": "https://youtu.be/ViLh77t1B_4",
     "showcaseVideo": "https://youtu.be/9QoecJbSKwY",
     "submitter": "kyle1saurus",
@@ -14792,6 +14808,7 @@
     ]
   }
 ]
+
 
 
 
