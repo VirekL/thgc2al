@@ -1509,44 +1509,6 @@
     ]
   },
   {
-    "name": "Lithium 60hz Mobile 91%",
-    "id": "lithium-60hz-mobile-91",
-    "player": "Archermence",
-    "date": "2025-09-23",
-    "length": 109,
-    "version": 2.2,
-    "levelID": 97364686,
-    "video": "https://youtu.be/7b7LBrWhsz8",
-    "showcaseVideo": "https://youtu.be/IHqODLf_ZLY",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Progress",
-      "Rated"
-    ]
-  },
-  {
-    "name": "Lithium 60hz Mobile 7-100%",
-    "id": "lithium-60hz-mobile-7-100",
-    "player": "Archermence",
-    "length": 113,
-    "version": 2.2,
-    "video": "https://youtu.be/6tOxAetxo1g",
-    "showcaseVideo": "https://youtu.be/IHqODLf_ZLY",
-    "date": "2025-08-10",
-    "submitter": "TYATYAPKA",
-    "levelID": 97364686,
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Progress",
-      "Rated"
-    ]
-  },
-  {
     "name": "Bloodlust 72hz 95%",
     "id": "bloodlust-72hz-95",
     "player": "AGSEcho",
@@ -1723,6 +1685,23 @@
     ]
   },
   {
+    "name": "The Rupture 60hz",
+    "id": "the-rupture-60hz",
+    "player": "LaChataigne",
+    "levelID": 57828784,
+    "date": "2024-06-02",
+    "length": 85,
+    "version": 2.1,
+    "submitter": "Anceps",
+    "video": "https://youtu.be/z_U8zR1CpOY",
+    "showcaseVideo": "https://youtu.be/FQLS9G52wQ8",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Rated"
+    ]
+  },
+  {
     "name": "Menace",
     "id": "menace",
     "player": "Whizkid05",
@@ -1736,6 +1715,44 @@
     "tags": [
       "Level",
       "Verified",
+      "Rated"
+    ]
+  },
+  {
+    "name": "Lithium 60hz Mobile 91%",
+    "id": "lithium-60hz-mobile-91",
+    "player": "Archermence",
+    "date": "2025-09-23",
+    "length": 109,
+    "version": 2.2,
+    "levelID": 97364686,
+    "video": "https://youtu.be/7b7LBrWhsz8",
+    "showcaseVideo": "https://youtu.be/IHqODLf_ZLY",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
+  },
+  {
+    "name": "Lithium 60hz Mobile 7-100%",
+    "id": "lithium-60hz-mobile-7-100",
+    "player": "Archermence",
+    "length": 113,
+    "version": 2.2,
+    "video": "https://youtu.be/6tOxAetxo1g",
+    "showcaseVideo": "https://youtu.be/IHqODLf_ZLY",
+    "date": "2025-08-10",
+    "submitter": "TYATYAPKA",
+    "levelID": 97364686,
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
       "Rated"
     ]
   },
@@ -2688,38 +2705,6 @@
     "thumbnail": "https://tjcsucht.net/levelthumbs/85140035.png"
   },
   {
-    "name": "VSC Out",
-    "id": "vsc-out",
-    "player": "-",
-    "levelID": 126120756,
-    "date": "2024-09-05",
-    "length": 99,
-    "version": 2.2,
-    "submitter": "kyle1saurus",
-    "video": "https://youtu.be/SVHsQz-bwqU",
-    "tags": [
-      "Challenge",
-      "Verified"
-    ],
-    "showcaseVideo": "https://youtu.be/FTJEXVRizyo"
-  },
-  {
-    "name": "VSC Geist",
-    "id": "vsc-geist",
-    "player": "-",
-    "levelID": 90775826,
-    "date": "2024-09-03",
-    "length": 108,
-    "version": 2.2,
-    "video": "https://youtu.be/FJnOov1Y7PE",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Challenge",
-      "Verified"
-    ],
-    "showcaseVideo": "https://youtu.be/Vdk0TvRbTZs"
-  },
-  {
     "name": "VSC Madness",
     "id": "vsc-madness",
     "player": "-",
@@ -2750,23 +2735,6 @@
       "Verified"
     ],
     "showcaseVideo": "https://youtu.be/USXvXPKulKw"
-  },
-  {
-    "name": "VSC Lost Sense Deco",
-    "id": "vsc-lost-sense-deco",
-    "player": "JACKSONAMORE",
-    "length": 16,
-    "version": 2.2,
-    "video": "https://youtu.be/WO5kCdWHvR4",
-    "showcaseVideo": "https://youtu.be/ncrjA6pmrZI",
-    "date": "2025-05-30",
-    "submitter": "kyle1saurus",
-    "levelID": 82200638,
-    "tags": [
-      "Challenge",
-      "Verified",
-      "CBF"
-    ]
   },
   {
     "name": "vsc infinity",
@@ -3110,23 +3078,6 @@
       "Level",
       "Progress",
       "CBF"
-    ]
-  },
-  {
-    "name": "The Rupture 60hz",
-    "id": "the-rupture-60hz",
-    "player": "LaChataigne",
-    "levelID": 57828784,
-    "date": "2024-06-02",
-    "length": 85,
-    "version": 2.1,
-    "submitter": "Anceps",
-    "video": "https://youtu.be/z_U8zR1CpOY",
-    "showcaseVideo": "https://youtu.be/FQLS9G52wQ8",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Rated"
     ]
   },
   {
@@ -3975,6 +3926,55 @@
       "Level",
       "Verified",
       "Rated"
+    ]
+  },
+  {
+    "name": "VSC Out",
+    "id": "vsc-out",
+    "player": "-",
+    "levelID": 126120756,
+    "date": "2024-09-05",
+    "length": 99,
+    "version": 2.2,
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/SVHsQz-bwqU",
+    "tags": [
+      "Challenge",
+      "Verified"
+    ],
+    "showcaseVideo": "https://youtu.be/FTJEXVRizyo"
+  },
+  {
+    "name": "VSC Geist",
+    "id": "vsc-geist",
+    "player": "-",
+    "levelID": 90775826,
+    "date": "2024-09-03",
+    "length": 108,
+    "version": 2.2,
+    "video": "https://youtu.be/FJnOov1Y7PE",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Challenge",
+      "Verified"
+    ],
+    "showcaseVideo": "https://youtu.be/Vdk0TvRbTZs"
+  },
+  {
+    "name": "VSC Lost Sense Deco",
+    "id": "vsc-lost-sense-deco",
+    "player": "JACKSONAMORE",
+    "length": 16,
+    "version": 2.2,
+    "video": "https://youtu.be/WO5kCdWHvR4",
+    "showcaseVideo": "https://youtu.be/ncrjA6pmrZI",
+    "date": "2025-05-30",
+    "submitter": "kyle1saurus",
+    "levelID": 82200638,
+    "tags": [
+      "Challenge",
+      "Verified",
+      "CBF"
     ]
   },
   {
@@ -14791,3 +14791,4 @@
     ]
   }
 ]
+
