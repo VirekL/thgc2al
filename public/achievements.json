@@ -682,23 +682,6 @@
     ]
   },
   {
-    "name": "vsc infinity 79%, 100%",
-    "id": "vsc-infinity-79-100",
-    "player": "JACKSONAMORE",
-    "levelID": 78765594,
-    "date": "2024-07-12",
-    "length": 30,
-    "version": 2.2,
-    "video": "https://youtu.be/qmuJUkvYL5g",
-    "showcaseVideo": "https://youtu.be/OqF6C0m5VcQ",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Challenge",
-      "Consistency",
-      "CBF"
-    ]
-  },
-  {
     "name": "VSC 72%, 100%",
     "id": "vsc-72-100",
     "player": "-",
@@ -712,6 +695,21 @@
     "tags": [
       "Challenge",
       "Consistency"
+    ]
+  },
+  {
+    "name": "Sweeping Demon 2 (Taiago) 71%",
+    "id": "sweeping-demon-2-taiago-71",
+    "player": "Taiago",
+    "date": "2025-09-27",
+    "length": 60,
+    "version": 2.2,
+    "video": "https://youtu.be/Iobk3wnqx2I",
+    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
+    "submitter": "Excryst",
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -1241,21 +1239,6 @@
     ]
   },
   {
-    "name": "Sweeping Demon 2 (Taiago) 62%",
-    "id": "sweeping-demon-2-taiago-62",
-    "player": "Taiago",
-    "date": "2025-08-13",
-    "length": "48",
-    "version": "2.2",
-    "video": "https://youtu.be/Kjf02JTmXjw",
-    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Tunnel of Despair 71%, 70%",
     "id": "tunnel-of-despair-71-70",
     "player": "johnlikesdiamond",
@@ -1287,6 +1270,23 @@
       "Level",
       "Verified",
       "Rated"
+    ]
+  },
+  {
+    "name": "vsc infinity 79%, 100%",
+    "id": "vsc-infinity-79-100",
+    "player": "JACKSONAMORE",
+    "levelID": 78765594,
+    "date": "2024-07-12",
+    "length": 30,
+    "version": 2.2,
+    "video": "https://youtu.be/qmuJUkvYL5g",
+    "showcaseVideo": "https://youtu.be/OqF6C0m5VcQ",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Challenge",
+      "Consistency",
+      "CBF"
     ]
   },
   {
@@ -2688,15 +2688,15 @@
     "thumbnail": "https://tjcsucht.net/levelthumbs/83526910.png"
   },
   {
-    "name": "VSC Nev Finale 25-67%",
-    "id": "vsc-nev-finale-25-67",
+    "name": "VSC Nev Finale 25-68%",
+    "id": "vsc-nev-finale-25-68",
     "player": "-",
     "levelID": 126120486,
-    "date": "2023-07-23",
+    "date": "2023-08-03",
     "length": 7,
     "version": 2.1,
-    "submitter": "kyle1saurus",
-    "video": "https://youtu.be/--ddn3Px9Ew",
+    "submitter": "Excryst",
+    "video": "https://youtu.be/aIPghFsU8d8",
     "tags": [
       "Challenge",
       "Progress"
@@ -2818,6 +2818,22 @@
       "Speedhack",
       "Noclip"
     ]
+  },
+  {
+    "name": "VSC layout",
+    "id": "vsc-layout",
+    "player": "-",
+    "date": "2022-11-09",
+    "length": 16,
+    "version": 2.1,
+    "video": "https://youtu.be/SGT-I-lGIIA",
+    "submitter": "Excryst",
+    "tags": [
+      "Challenge",
+      "Verified"
+    ],
+    "levelID": 60811038,
+    "showcaseVideo": "https://youtu.be/ZFjjdfEqwhQ"
   },
   {
     "name": "VSC 144hz 54%",
@@ -4141,6 +4157,23 @@
     ]
   },
   {
+    "name": "VSC 1.1x 16-86%",
+    "id": "vsc-1-1x-16-86",
+    "player": "-",
+    "date": "2022-10-18",
+    "length": 10,
+    "version": 2.1,
+    "levelID": 60805571,
+    "video": "https://youtu.be/dCqvmKM-_8I",
+    "showcaseVideo": "https://youtu.be/GbtLlQQezTA",
+    "submitter": "Excryst",
+    "tags": [
+      "Challenge",
+      "Speedhack",
+      "Progress"
+    ]
+  },
+  {
     "name": "Zodiac 75hz",
     "id": "zodiac-75hz",
     "player": "wwdonut",
@@ -4448,6 +4481,23 @@
     "showcaseVideo": "https://youtu.be/9PZUn06msKc",
     "tags": [
       "Level",
+      "Progress"
+    ]
+  },
+  {
+    "name": "VSC 1.1x 61%",
+    "id": "vsc-1-1x-61",
+    "player": "-",
+    "date": "2022-10-18",
+    "length": 9,
+    "version": 2.1,
+    "levelID": 60805571,
+    "video": "https://youtu.be/XYbR72OWPHM",
+    "showcaseVideo": "https://youtu.be/GbtLlQQezTA",
+    "submitter": "Excryst",
+    "tags": [
+      "Challenge",
+      "Speedhack",
       "Progress"
     ]
   },
@@ -5598,23 +5648,6 @@
     ]
   },
   {
-    "name": "VSC 1.1x 46%",
-    "id": "vsc-1-1x-46",
-    "player": "-",
-    "date": "2022-10-09",
-    "length": 7,
-    "version": 2.1,
-    "levelID": 60805571,
-    "video": "https://youtu.be/2jml0YFq_eQ",
-    "showcaseVideo": "https://youtu.be/GbtLlQQezTA",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Challenge",
-      "Speedhack",
-      "Progress"
-    ]
-  },
-  {
     "name": "Silent Circles 42%",
     "id": "silent-circles-42",
     "player": "seels",
@@ -5784,23 +5817,6 @@
     ]
   },
   {
-    "name": "VSC layout 74%",
-    "id": "vsc-layout-74",
-    "player": "DehydratedMoron",
-    "date": "2024-11-24",
-    "length": 12,
-    "version": 2.2,
-    "video": "https://youtu.be/lEIG4qEI784",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Challenge",
-      "Progress",
-      "CBF"
-    ],
-    "levelID": 60811038,
-    "showcaseVideo": "https://youtu.be/ZFjjdfEqwhQ"
-  },
-  {
     "name": "Our Special Place 64%, 66%",
     "id": "our-special-place-64-66",
     "player": "NucGDStuff",
@@ -5831,6 +5847,23 @@
       "Challenge",
       "Verified"
     ]
+  },
+  {
+    "name": "VSC Nev Finale 49-84%",
+    "id": "vsc-nev-finale-49-84",
+    "player": "-",
+    "levelID": 126120486,
+    "date": "2023-06-08",
+    "length": 6,
+    "version": 2.1,
+    "submitter": "Excryst",
+    "video": "https://youtu.be/83ZB6AmisMs",
+    "tags": [
+      "Challenge",
+      "Progress"
+    ],
+    "showcaseVideo": "https://youtu.be/MuFaJ57ItPU",
+    "thumbnail": "https://tjcsucht.net/levelthumbs/85140035.png"
   },
   {
     "name": "CSE 63%",
@@ -14776,5 +14809,6 @@
     ]
   }
 ]
+
 
 
