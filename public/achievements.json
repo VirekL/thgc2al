@@ -3249,7 +3249,8 @@
     "tags": [
       "Level",
       "Verified",
-      "Tentative"
+      "Tentative",
+      "Rated"
     ]
   },
   {
@@ -3788,6 +3789,22 @@
     "tags": [
       "Level",
       "Verified"
+    ]
+  },
+  {
+    "name": "Old Orochi 19-100%",
+    "id": "old-orochi-19-100",
+    "player": "SeptaGon7",
+    "date": "2025-09-27",
+    "length": 79,
+    "version": 2.2,
+    "video": "https://youtu.be/XedLqg5H8Ow",
+    "showcaseVideo": "https://youtu.be/kOjaffK5Rgo",
+    "submitter": "SeptaGon7",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
     ]
   },
   {
@@ -6371,22 +6388,6 @@
     ]
   },
   {
-    "name": "Old Orochi 19-87%",
-    "id": "old-orochi-19-87",
-    "player": "SeptaGon7",
-    "date": "2025-09-20",
-    "length": 69,
-    "version": 2.2,
-    "video": "https://youtu.be/bbzVGtj3myE",
-    "showcaseVideo": "https://youtu.be/kOjaffK5Rgo",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress",
-      "CBF"
-    ]
-  },
-  {
     "name": "Singularity 61%",
     "id": "singularity-61",
     "player": "SeptaGon7",
@@ -8836,22 +8837,6 @@
       "Level",
       "Low Hertz",
       "Rated"
-    ]
-  },
-  {
-    "name": "Old Orochi 31-100%",
-    "id": "old-orochi-31-100",
-    "player": "SeptaGon7",
-    "date": "2025-09-18",
-    "length": 70,
-    "version": 2.2,
-    "video": "https://youtu.be/Uv6CEvuWA8o",
-    "showcaseVideo": "https://youtu.be/kOjaffK5Rgo",
-    "submitter": "SeptaGon7",
-    "tags": [
-      "Level",
-      "Progress",
-      "CBF"
     ]
   },
   {
@@ -14791,4 +14776,5 @@
     ]
   }
 ]
+
 
