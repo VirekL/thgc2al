@@ -1720,14 +1720,14 @@
     ]
   },
   {
-    "name": "Lithium 60hz Mobile 91%",
-    "id": "lithium-60hz-mobile-91",
+    "name": "Lithium 60hz Mobile 95%",
+    "id": "lithium-60hz-mobile-95",
     "player": "Archermence",
-    "date": "2025-09-23",
-    "length": 109,
+    "date": "2025-09-27",
+    "length": 118,
     "version": 2.2,
     "levelID": 97364686,
-    "video": "https://youtu.be/7b7LBrWhsz8",
+    "video": "https://youtube.com/shorts/UDwZ4PsbcVo",
     "showcaseVideo": "https://youtu.be/IHqODLf_ZLY",
     "submitter": "TYATYAPKA",
     "tags": [
@@ -2379,6 +2379,22 @@
     "showcaseVideo": "https://youtu.be/ZpPm8WhG6zI",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/flamewall-unbuffed2.webp",
     "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
+    "name": "Heat Stroke 59-96%",
+    "id": "heat-stroke-59-96",
+    "player": "serpentical",
+    "levelID": 113989022,
+    "date": "2025-09-25",
+    "length": 45,
+    "version": 2.2,
+    "submitter": "Excryst",
+    "video": "https://www.youtube.com/live/-cz3aXm1c6Q?t=6649s",
+    "showcaseVideo": "https://youtu.be/MAeaU8Z3E68",
     "tags": [
       "Level",
       "Progress"
@@ -8159,23 +8175,6 @@
     ]
   },
   {
-    "name": "ORDINARY",
-    "id": "ordinary",
-    "player": "wPopoff",
-    "levelID": 105593215,
-    "date": "2024-05-22",
-    "length": 78,
-    "version": 2.2,
-    "submitter": "Anceps",
-    "video": "https://youtu.be/4QiHP3jpGnk",
-    "showcaseVideo": "https://youtu.be/h55wbCsem9E",
-    "tags": [
-      "Level",
-      "Verified",
-      "Rated"
-    ]
-  },
-  {
     "name": "Firework (Pre-Balance) 54%",
     "id": "firework-pre-balance-54",
     "player": "Trick",
@@ -8238,6 +8237,23 @@
     "video": "https://youtu.be/8gW1-_u1K0Y",
     "showcaseVideo": "https://youtu.be/S_pBi3nlEDo",
     "submitter": "Arcadie",
+    "tags": [
+      "Level",
+      "Verified",
+      "Rated"
+    ]
+  },
+  {
+    "name": "ORDINARY",
+    "id": "ordinary",
+    "player": "wPopoff",
+    "levelID": 105593215,
+    "date": "2024-05-22",
+    "length": 78,
+    "version": 2.2,
+    "submitter": "Anceps",
+    "video": "https://youtu.be/4QiHP3jpGnk",
+    "showcaseVideo": "https://youtu.be/h55wbCsem9E",
     "tags": [
       "Level",
       "Verified",
@@ -8530,6 +8546,22 @@
       "Level",
       "Verified",
       "Rated"
+    ]
+  },
+  {
+    "name": "lobotomy 29%, 32%",
+    "id": "lobotomy-29-32",
+    "player": "SeptaGon7",
+    "levelID": 67322789,
+    "date": "2023-12-02",
+    "length": 16,
+    "version": 2.1,
+    "video": "https://youtu.be/l6dLiZBcDis",
+    "showcaseVideo": "https://youtu.be/gRpjtJPQ6DE",
+    "submitter": "SeptaGon7",
+    "tags": [
+      "Level",
+      "Consistency"
     ]
   },
   {
@@ -10773,6 +10805,23 @@
     ]
   },
   {
+    "name": "Blood Echo 85%, 53%x2",
+    "id": "blood-echo-85-53x2",
+    "player": "GuillExprex52",
+    "length": 130,
+    "version": 2.2,
+    "video": "https://youtu.be/iOfHL5eLY5c",
+    "showcaseVideo": "https://youtu.be/OTVqy8n_dOU",
+    "date": "2025-09-27",
+    "levelID": 112242564,
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Consistency",
+      "Rated"
+    ]
+  },
+  {
     "name": "True evil",
     "id": "true-evil",
     "player": "dizbro",
@@ -10837,23 +10886,6 @@
       "Low Hertz",
       "Mobile",
       "2P",
-      "Rated"
-    ]
-  },
-  {
-    "name": "Blood Echo",
-    "id": "blood-echo",
-    "player": "swiborg",
-    "length": 81,
-    "version": 2.2,
-    "video": "https://youtu.be/fSvk4tLlQzQ",
-    "showcaseVideo": "https://youtu.be/OTVqy8n_dOU",
-    "date": "2024-11-18",
-    "levelID": 112242564,
-    "submitter": "kittycatiscute",
-    "tags": [
-      "Level",
-      "Verified",
       "Rated"
     ]
   },
@@ -14054,6 +14086,23 @@
     ]
   },
   {
+    "name": "Blood Echo",
+    "id": "blood-echo",
+    "player": "swiborg",
+    "length": 81,
+    "version": 2.2,
+    "video": "https://youtu.be/fSvk4tLlQzQ",
+    "showcaseVideo": "https://youtu.be/OTVqy8n_dOU",
+    "date": "2024-11-18",
+    "levelID": 112242564,
+    "submitter": "kittycatiscute",
+    "tags": [
+      "Level",
+      "Verified",
+      "Rated"
+    ]
+  },
+  {
     "name": "Starlit Stroll",
     "id": "starlit-stroll",
     "player": "Nocta XI",
@@ -14812,6 +14861,7 @@
     ]
   }
 ]
+
 
 
 
