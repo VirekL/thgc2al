@@ -242,24 +242,11 @@ export default function List() {
     const targetIdx = targetList.findIndex(matchesQuery);
     if (targetIdx === -1) return;
 
-    setVisibleCount(v => Math.max(v, targetIdx + 20));
-    setSearch('');
+  setVisibleCount(v => Math.max(v, targetIdx + 20));
 
-    if (devMode) {
-      setScrollToIdx(targetIdx);
-    } else {
-      requestAnimationFrame(() => requestAnimationFrame(() => {
-        try {
-          if (listRef && listRef.current && typeof listRef.current.scrollToItem === 'function') {
-            listRef.current.scrollToItem(targetIdx, 'center');
-          }
-        } catch (err) {
-        }
-      }));
-    }
-    if (document && document.activeElement && typeof document.activeElement.blur === 'function') {
-      document.activeElement.blur();
-    }
+  setPendingClearSearch(true);
+
+    setPendingJumpId(targetList[targetIdx] ? (targetList[targetIdx].id || null) : null);
   }
   const [filterTags, setFilterTags] = useState({ include: [], exclude: [] });
   const [allTags, setAllTags] = useState([]);
@@ -326,6 +313,7 @@ export default function List() {
   }
   const [scrollToIdx, setScrollToIdx] = useState(null);
   const [pendingJumpId, setPendingJumpId] = useState(null);
+  const [pendingClearSearch, setPendingClearSearch] = useState(false);
   function handleEditAchievement(idx) {
     if (!reordered || !reordered[idx]) return;
     const a = reordered[idx];
@@ -528,7 +516,16 @@ export default function List() {
         }
       }
     } catch (e) {}
-    setPendingJumpId(null);
+      if (pendingClearSearch) {
+        try {
+          setSearch('');
+          if (document && document.activeElement && typeof document.activeElement.blur === 'function') {
+            document.activeElement.blur();
+          }
+        } catch (e) {}
+        setPendingClearSearch(false);
+      }
+      setPendingJumpId(null);
   }, [pendingJumpId, filtered, devMode]);
 
   useEffect(() => {
