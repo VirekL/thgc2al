@@ -250,7 +250,6 @@ export default function List() {
 
     setSearch(''); // clear input
     setManualSearch(rawQuery);
-    // signal that we're doing a search-jump so effects don't immediately reset visibleCount
     setSearchJumpPending(true);
     setVisibleCount(0);
 
@@ -264,7 +263,6 @@ export default function List() {
         setScrollToIdx(0);
       }
       // allow other effects to resume after we've triggered the scroll
-      setTimeout(() => setSearchJumpPending(false), 80);
     }));
 
     if (document && document.activeElement && typeof document.activeElement.blur === 'function') {
@@ -544,6 +542,7 @@ export default function List() {
 
   useEffect(() => {
     let pref = 100;
+    if (searchJumpPending) return;
     try {
       if (typeof window !== 'undefined') {
         const v = localStorage.getItem('itemsPerPage');
@@ -701,6 +700,7 @@ export default function List() {
     if (scrollToIdx !== null && achievementRefs.current[scrollToIdx]) {
       achievementRefs.current[scrollToIdx].scrollIntoView({ behavior: 'smooth', block: 'center' });
       setScrollToIdx(null);
+      if (searchJumpPending) setSearchJumpPending(false);
     }
   }, [scrollToIdx, devAchievements]);
 
@@ -718,10 +718,12 @@ export default function List() {
               const offset = idx * 150;
               listRef.current.scrollTo(offset);
             }
+            if (searchJumpPending) setSearchJumpPending(false);
           } catch (e) { }
         }));
       } else if (achievementRefs.current && achievementRefs.current[idx]) {
         achievementRefs.current[idx].scrollIntoView({ behavior: 'smooth', block: 'center' });
+        if (searchJumpPending) setSearchJumpPending(false);
       }
     } catch (e) {
     }
