@@ -234,19 +234,23 @@ export default function List() {
       return candidates.some(c => String(c).toLowerCase().includes(query));
     };
 
-    const baseList = devMode && reordered ? reordered : achievements;
-    const matchesTagsOnly = a => {
+    const respectsTagFilters = a => {
       const tags = (a.tags || []).map(t => t.toUpperCase());
       if (filterTags.include.length && !filterTags.include.every(tag => tags.includes(tag.toUpperCase()))) return false;
       if (filterTags.exclude.length && filterTags.exclude.some(tag => tags.includes(tag.toUpperCase()))) return false;
       return true;
     };
 
-    const matchingItems = baseList.filter(a => matchesTagsOnly(a) && matchesQuery(a));
+    const baseList = devMode && reordered ? reordered : achievements;
+
+    const preFiltered = baseList.filter(a => respectsTagFilters(a));
+
+    const matchingItems = preFiltered.filter(a => matchesQuery(a));
     if (!matchingItems || matchingItems.length === 0) return;
 
     const firstMatch = matchingItems[0];
-    const baseMatchIdx = baseList.findIndex(a => a === firstMatch);
+
+    const targetIdxInPreFiltered = preFiltered.findIndex(a => a === firstMatch);
 
     setSearch(''); // clear input
     setManualSearch(rawQuery);
@@ -258,11 +262,26 @@ export default function List() {
       setVisibleCount(prev => Math.max(prev, countToShow));
 
       if (devMode) {
-        setScrollToIdx(baseMatchIdx);
+        setScrollToIdx(targetIdxInPreFiltered);
       } else {
-        setScrollToIdx(0);
+
+        const visibleFiltered = achievements.filter(a => {
+          if (manualSearch || debouncedSearch) {
+            const s = manualSearch ? manualSearch : debouncedSearch;
+            const sLower = (s || '').trim().toLowerCase();
+            if (sLower) {
+              if (typeof a.name !== 'string' || !a.name.toLowerCase().includes(sLower)) return false;
+            }
+          }
+          const tags = (a.tags || []).map(t => t.toUpperCase());
+          if (filterTags.include.length && !filterTags.include.every(tag => tags.includes(tag.toUpperCase()))) return false;
+          if (filterTags.exclude.length && filterTags.exclude.some(tag => tags.includes(tag.toUpperCase()))) return false;
+          return true;
+        });
+
+        const finalIdx = visibleFiltered.findIndex(a => a === firstMatch);
+        setScrollToIdx(finalIdx === -1 ? 0 : finalIdx);
       }
-      // allow other effects to resume after we've triggered the scroll
     }));
 
     if (document && document.activeElement && typeof document.activeElement.blur === 'function') {
