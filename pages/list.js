@@ -223,16 +223,20 @@ export default function List() {
   const [highlightedIdx, setHighlightedIdx] = useState(null);
   const [noMatchMessage, setNoMatchMessage] = useState('');
   const debouncedSearch = useDebouncedValue(search, 200);
+  const [matchPointer, setMatchPointer] = useState(0);
+  const [matchCount, setMatchCount] = useState(0);
+  const lastQueryRef = useRef('');
 
   function handleSearchKeyDown(e) {
     if (e.key !== 'Enter') return;
     e.preventDefault();
     const rawQuery = (search || '').trim();
     if (!rawQuery) return;
-    searchAndJump(rawQuery);
+    if (e.shiftKey) searchAndJump(rawQuery, 'prev');
+    else searchAndJump(rawQuery, 'next');
   }
 
-  function searchAndJump(rawQuery) {
+  function searchAndJump(rawQuery, direction = 'first') {
     const query = (rawQuery || '').trim().toLowerCase();
     if (!query) return;
 
@@ -252,10 +256,26 @@ export default function List() {
     const baseList = devMode && reordered ? reordered : achievements;
     const preFiltered = baseList.filter(a => respectsTagFilters(a));
     const matchingItems = preFiltered.filter(a => matchesQuery(a));
-    if (!matchingItems || matchingItems.length === 0) return;
+    if (!matchingItems || matchingItems.length === 0) {
+      setMatchCount(0);
+      setMatchPointer(0);
+      lastQueryRef.current = query;
+      return;
+    }
 
-    const firstMatch = matchingItems[0];
+    let pointer = matchPointer || 0;
+    if (lastQueryRef.current !== query) {
+      pointer = -1;
+    }
+    if (direction === 'first') pointer = 0;
+    else if (direction === 'next') pointer = (pointer + 1) % matchingItems.length;
+    else if (direction === 'prev') pointer = (pointer - 1 + matchingItems.length) % matchingItems.length;
+
+    const firstMatch = matchingItems[pointer];
     const targetIdxInPreFiltered = preFiltered.findIndex(a => a === firstMatch);
+    setMatchCount(matchingItems.length);
+    setMatchPointer(pointer);
+    lastQueryRef.current = query;
 
     setManualSearch(rawQuery);
     setSearchJumpPending(true);
@@ -299,6 +319,12 @@ export default function List() {
       document.activeElement.blur();
     }
   }
+
+  useEffect(() => {
+    const q = (debouncedSearch || '').trim();
+    if (!q) return;
+    searchAndJump(q, 'first');
+  }, [debouncedSearch]);
   const [filterTags, setFilterTags] = useState({ include: [], exclude: [] });
   const [allTags, setAllTags] = useState([]);
   const [isMobile, setIsMobile] = useState(false);
@@ -866,17 +892,30 @@ export default function List() {
           {isMobile && (
             <div style={{ width: '100%', marginTop: 12 }}>
               <div className="search-bar" style={{ width: '100%', maxWidth: 400, margin: '0 auto' }}>
-                <input
-                  ref={searchInputRef}
-                  type="text"
-                  placeholder="Search achievements..."
-                  value={search}
-                  onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
-                  onKeyDown={handleSearchKeyDown}
-                  aria-label="Search achievements"
-                  className="search-input"
-                  style={{ width: '100%' }}
-                />
+                <div style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
+                  <input
+                    ref={searchInputRef}
+                    type="text"
+                    placeholder="Search achievements..."
+                    value={search}
+                    onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
+                    onKeyDown={handleSearchKeyDown}
+                    aria-label="Search achievements"
+                    className="search-input"
+                    style={{ width: '100%' }}
+                  />
+                  <div style={{ marginLeft: 8, fontSize: 12, color: '#ccc', minWidth: 46, textAlign: 'right' }}>
+                    {matchCount > 0 ? `${matchPointer + 1}/${matchCount}` : ''}
+                  </div>
+                  {search ? (
+                    <button
+                      aria-label="Clear search"
+                      title="Clear search"
+                      onClick={() => { setSearch(''); setManualSearch(''); setMatchCount(0); setMatchPointer(0); lastQueryRef.current = ''; }}
+                      style={{ marginLeft: 8, background: 'transparent', border: 'none', color: '#ccc', cursor: 'pointer' }}
+                    >✕</button>
+                  ) : null}
+                </div>
               </div>
               <div className="tag-filter-pills-container" style={{ width: '100%' }}>
                 <TagFilterPills
@@ -906,17 +945,30 @@ export default function List() {
           )}
           {!isMobile && (
             <div className="search-bar" style={{ width: '100%', maxWidth: 400, marginLeft: 'auto' }}>
-              <input
-                ref={searchInputRef}
-                type="text"
-                placeholder="Search achievements..."
-                value={search}
-                onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
-                onKeyDown={handleSearchKeyDown}
-                aria-label="Search achievements"
-                className="search-input"
-                style={{ width: '100%' }}
-              />
+              <div style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
+                <input
+                  ref={searchInputRef}
+                  type="text"
+                  placeholder="Search achievements..."
+                  value={search}
+                  onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
+                  onKeyDown={handleSearchKeyDown}
+                  aria-label="Search achievements"
+                  className="search-input"
+                  style={{ width: '100%' }}
+                />
+                <div style={{ marginLeft: 8, fontSize: 12, color: '#ccc', minWidth: 46, textAlign: 'right' }}>
+                  {matchCount > 0 ? `${matchPointer + 1}/${matchCount}` : ''}
+                </div>
+                {search ? (
+                  <button
+                    aria-label="Clear search"
+                    title="Clear search"
+                    onClick={() => { setSearch(''); setManualSearch(''); setMatchCount(0); setMatchPointer(0); lastQueryRef.current = ''; }}
+                    style={{ marginLeft: 8, background: 'transparent', border: 'none', color: '#ccc', cursor: 'pointer' }}
+                  >✕</button>
+                ) : null}
+              </div>
             </div>
           )}
         </div>
