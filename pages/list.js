@@ -219,25 +219,15 @@ export default function List() {
   const listRef = useRef(null);
   const [search, setSearch] = useState('');
   const [manualSearch, setManualSearch] = useState('');
-  const searchInputRef = useRef(null);
   const [highlightedIdx, setHighlightedIdx] = useState(null);
   const [noMatchMessage, setNoMatchMessage] = useState('');
   const debouncedSearch = useDebouncedValue(search, 200);
-  const [matchPointer, setMatchPointer] = useState(0);
-  const [matchCount, setMatchCount] = useState(0);
-  const lastQueryRef = useRef('');
 
   function handleSearchKeyDown(e) {
     if (e.key !== 'Enter') return;
     e.preventDefault();
     const rawQuery = (search || '').trim();
-    if (!rawQuery) return;
-    if (e.shiftKey) searchAndJump(rawQuery, 'prev');
-    else searchAndJump(rawQuery, 'next');
-  }
-
-  function searchAndJump(rawQuery, direction = 'first') {
-    const query = (rawQuery || '').trim().toLowerCase();
+    const query = rawQuery.toLowerCase();
     if (!query) return;
 
     const matchesQuery = a => {
@@ -254,30 +244,17 @@ export default function List() {
     };
 
     const baseList = devMode && reordered ? reordered : achievements;
+
     const preFiltered = baseList.filter(a => respectsTagFilters(a));
+
     const matchingItems = preFiltered.filter(a => matchesQuery(a));
-    if (!matchingItems || matchingItems.length === 0) {
-      setMatchCount(0);
-      setMatchPointer(0);
-      lastQueryRef.current = query;
-      return;
-    }
+    if (!matchingItems || matchingItems.length === 0) return;
 
-    let pointer = matchPointer || 0;
-    if (lastQueryRef.current !== query) {
-      pointer = -1;
-    }
-    if (direction === 'first') pointer = 0;
-    else if (direction === 'next') pointer = (pointer + 1) % matchingItems.length;
-    else if (direction === 'prev') pointer = (pointer - 1 + matchingItems.length) % matchingItems.length;
+    const firstMatch = matchingItems[0];
 
-    const firstMatch = matchingItems[pointer];
     const targetIdxInPreFiltered = preFiltered.findIndex(a => a === firstMatch);
-    setMatchCount(matchingItems.length);
-    setMatchPointer(pointer);
-    lastQueryRef.current = query;
 
-    setManualSearch(rawQuery);
+  setManualSearch(rawQuery);
     setSearchJumpPending(true);
     setVisibleCount(0);
 
@@ -289,6 +266,7 @@ export default function List() {
         setScrollToIdx(targetIdxInPreFiltered);
         setHighlightedIdx(targetIdxInPreFiltered);
       } else {
+
         const visibleFiltered = achievements.filter(a => {
           if (manualSearch || debouncedSearch) {
             const s = manualSearch ? manualSearch : debouncedSearch;
@@ -319,12 +297,6 @@ export default function List() {
       document.activeElement.blur();
     }
   }
-
-  useEffect(() => {
-    const q = (debouncedSearch || '').trim();
-    if (!q) return;
-    searchAndJump(q, 'first');
-  }, [debouncedSearch]);
   const [filterTags, setFilterTags] = useState({ include: [], exclude: [] });
   const [allTags, setAllTags] = useState([]);
   const [isMobile, setIsMobile] = useState(false);
@@ -513,35 +485,6 @@ export default function List() {
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [achievements]);
-
-  useEffect(() => {
-    function onGlobalFind(e) {
-      const isMac = typeof navigator !== 'undefined' && /mac/i.test(navigator.platform || '');
-      const findPressed = (isMac && e.metaKey && e.key === 'f') || (!isMac && e.ctrlKey && e.key === 'f');
-      if (!findPressed) return;
-      try {
-        e.preventDefault();
-      } catch (err) {}
-
-      let selected = '';
-      try {
-        selected = (window.getSelection && window.getSelection().toString()) || '';
-      } catch (err) { selected = ''; }
-
-      if (selected && selected.trim()) {
-        setSearch(selected.trim());
-        setManualSearch('');
-        setTimeout(() => searchAndJump(selected.trim()), 0);
-      } else {
-        if (searchInputRef && searchInputRef.current && typeof searchInputRef.current.focus === 'function') {
-          try { searchInputRef.current.focus(); } catch (err) {}
-        }
-      }
-    }
-
-    window.addEventListener('keydown', onGlobalFind);
-    return () => window.removeEventListener('keydown', onGlobalFind);
-  }, [searchInputRef, achievements, reordered, devMode, filterTags, manualSearch, debouncedSearch]);
 
   useEffect(() => {
     if (!isMobile) return;
@@ -892,30 +835,16 @@ export default function List() {
           {isMobile && (
             <div style={{ width: '100%', marginTop: 12 }}>
               <div className="search-bar" style={{ width: '100%', maxWidth: 400, margin: '0 auto' }}>
-                <div style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
-                  <input
-                    ref={searchInputRef}
-                    type="text"
-                    placeholder="Search achievements..."
-                    value={search}
-                    onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
-                    onKeyDown={handleSearchKeyDown}
-                    aria-label="Search achievements"
-                    className="search-input"
-                    style={{ width: '100%' }}
-                  />
-                  <div style={{ marginLeft: 8, fontSize: 12, color: '#ccc', minWidth: 46, textAlign: 'right' }}>
-                    {matchCount > 0 ? `${matchPointer + 1}/${matchCount}` : ''}
-                  </div>
-                  {search ? (
-                    <button
-                      aria-label="Clear search"
-                      title="Clear search"
-                      onClick={() => { setSearch(''); setManualSearch(''); setMatchCount(0); setMatchPointer(0); lastQueryRef.current = ''; }}
-                      style={{ marginLeft: 8, background: 'transparent', border: 'none', color: '#ccc', cursor: 'pointer' }}
-                    >✕</button>
-                  ) : null}
-                </div>
+                <input
+                  type="text"
+                  placeholder="Search achievements..."
+                  value={search}
+                  onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
+                  onKeyDown={handleSearchKeyDown}
+                  aria-label="Search achievements"
+                  className="search-input"
+                  style={{ width: '100%' }}
+                />
               </div>
               <div className="tag-filter-pills-container" style={{ width: '100%' }}>
                 <TagFilterPills
@@ -945,30 +874,16 @@ export default function List() {
           )}
           {!isMobile && (
             <div className="search-bar" style={{ width: '100%', maxWidth: 400, marginLeft: 'auto' }}>
-              <div style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
-                <input
-                  ref={searchInputRef}
-                  type="text"
-                  placeholder="Search achievements..."
-                  value={search}
-                  onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
-                  onKeyDown={handleSearchKeyDown}
-                  aria-label="Search achievements"
-                  className="search-input"
-                  style={{ width: '100%' }}
-                />
-                <div style={{ marginLeft: 8, fontSize: 12, color: '#ccc', minWidth: 46, textAlign: 'right' }}>
-                  {matchCount > 0 ? `${matchPointer + 1}/${matchCount}` : ''}
-                </div>
-                {search ? (
-                  <button
-                    aria-label="Clear search"
-                    title="Clear search"
-                    onClick={() => { setSearch(''); setManualSearch(''); setMatchCount(0); setMatchPointer(0); lastQueryRef.current = ''; }}
-                    style={{ marginLeft: 8, background: 'transparent', border: 'none', color: '#ccc', cursor: 'pointer' }}
-                  >✕</button>
-                ) : null}
-              </div>
+              <input
+                type="text"
+                placeholder="Search achievements..."
+                value={search}
+                onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
+                onKeyDown={handleSearchKeyDown}
+                aria-label="Search achievements"
+                className="search-input"
+                style={{ width: '100%' }}
+              />
             </div>
           )}
         </div>
