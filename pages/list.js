@@ -219,6 +219,8 @@ export default function List() {
   const listRef = useRef(null);
   const [search, setSearch] = useState('');
   const [manualSearch, setManualSearch] = useState('');
+  const [highlightedIdx, setHighlightedIdx] = useState(null);
+  const [noMatchMessage, setNoMatchMessage] = useState('');
   const debouncedSearch = useDebouncedValue(search, 200);
 
   function handleSearchKeyDown(e) {
@@ -252,8 +254,7 @@ export default function List() {
 
     const targetIdxInPreFiltered = preFiltered.findIndex(a => a === firstMatch);
 
-    setSearch(''); // clear input
-    setManualSearch(rawQuery);
+  setManualSearch(rawQuery);
     setSearchJumpPending(true);
     setVisibleCount(0);
 
@@ -263,6 +264,7 @@ export default function List() {
 
       if (devMode) {
         setScrollToIdx(targetIdxInPreFiltered);
+        setHighlightedIdx(targetIdxInPreFiltered);
       } else {
 
         const visibleFiltered = achievements.filter(a => {
@@ -280,7 +282,14 @@ export default function List() {
         });
 
         const finalIdx = visibleFiltered.findIndex(a => a === firstMatch);
-        setScrollToIdx(finalIdx === -1 ? 0 : finalIdx);
+        const idxToUse = finalIdx === -1 ? 0 : finalIdx;
+        setScrollToIdx(idxToUse);
+        if (finalIdx === -1) {
+          setNoMatchMessage('No matching achievement is currently visible with the active filters.');
+          window.setTimeout(() => setNoMatchMessage(''), 3000);
+        } else {
+          setHighlightedIdx(idxToUse);
+        }
       }
     }));
 
@@ -724,6 +733,12 @@ export default function List() {
   }, [scrollToIdx, devAchievements]);
 
   useEffect(() => {
+    if (highlightedIdx === null) return;
+    const id = window.setTimeout(() => setHighlightedIdx(null), 3000);
+    return () => window.clearTimeout(id);
+  }, [highlightedIdx]);
+
+  useEffect(() => {
     if (scrollToIdx === null) return;
     if (devMode) return;
     try {
@@ -1149,7 +1164,7 @@ export default function List() {
                   transition: 'opacity 0.2s',
                   position: 'relative',
                   zIndex: 1
-                }}>
+                }} className={highlightedIdx === i ? 'search-highlight' : ''}>
                   <AchievementCard achievement={a} devMode={devMode} />
                 </div>
               </div>
@@ -1186,7 +1201,7 @@ export default function List() {
                   const thumb = (a && a.thumbnail) ? a.thumbnail : (a && a.levelID) ? `https://tjcsucht.net/levelthumbs/${a.levelID}.png` : '';
                   const isDup = duplicateThumbKeys.has((thumb || '').trim());
                   return (
-                    <div style={itemStyle} key={a.id || index} className={isDup ? 'duplicate-thumb-item' : ''}>
+                    <div style={itemStyle} key={a.id || index} className={`${isDup ? 'duplicate-thumb-item' : ''} ${highlightedIdx === index ? 'search-highlight' : ''}`}>
                       <AchievementCard achievement={a} devMode={devMode} />
                     </div>
                   );
@@ -1196,6 +1211,9 @@ export default function List() {
           ))}
         </section>
       </main>
+      <div aria-live="polite" aria-atomic="true" style={{position:'absolute', left:-9999, top:'auto', width:1, height:1, overflow:'hidden'}}>
+        {noMatchMessage}
+      </div>
     </>
   );
 }
