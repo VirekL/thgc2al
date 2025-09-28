@@ -217,13 +217,16 @@ export default function List() {
   const [visibleCount, setVisibleCount] = useState(100);
   const listRef = useRef(null);
   const [search, setSearch] = useState('');
+  const [manualSearch, setManualSearch] = useState('');
   const debouncedSearch = useDebouncedValue(search, 200);
 
   function handleSearchKeyDown(e) {
     if (e.key !== 'Enter') return;
     e.preventDefault();
-    const query = (search || '').trim().toLowerCase();
+    const rawQuery = (search || '').trim();
+    const query = rawQuery.toLowerCase();
     if (!query) return;
+
     const matchesQuery = a => {
       if (!a) return false;
       const candidates = [a.name, a.player, a.id, a.levelID, a.submitter, (a.tags || []).join(' ')].filter(Boolean);
@@ -237,16 +240,35 @@ export default function List() {
       if (filterTags.exclude.length && filterTags.exclude.some(tag => tags.includes(tag.toUpperCase()))) return false;
       return true;
     };
-    const targetList = baseList.filter(matchesTagsOnly);
 
-    const targetIdx = targetList.findIndex(matchesQuery);
-    if (targetIdx === -1) return;
+    const matchingItems = baseList.filter(a => matchesTagsOnly(a) && matchesQuery(a));
+    if (!matchingItems || matchingItems.length === 0) return;
 
-  setVisibleCount(v => Math.max(v, targetIdx + 20));
+    const firstMatch = matchingItems[0];
+    const baseMatchIdx = baseList.findIndex(a => a === firstMatch);
 
-  setPendingClearSearch(true);
+    setSearch(''); // clear input
+    setManualSearch(rawQuery);
+    setVisibleCount(0);
 
-    setPendingJumpId(targetList[targetIdx] ? (targetList[targetIdx].id || null) : null);
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      const countToShow = Math.max(20, matchingItems.length);
+      setVisibleCount(prev => Math.max(prev, countToShow));
+
+      if (devMode) {
+        setScrollToIdx(baseMatchIdx);
+      } else {
+        try {
+          if (listRef && listRef.current && typeof listRef.current.scrollToItem === 'function') {
+            listRef.current.scrollToItem(0, 'center');
+          }
+        } catch (err) { }
+      }
+    }));
+
+    if (document && document.activeElement && typeof document.activeElement.blur === 'function') {
+      document.activeElement.blur();
+    }
   }
   const [filterTags, setFilterTags] = useState({ include: [], exclude: [] });
   const [allTags, setAllTags] = useState([]);
@@ -312,8 +334,6 @@ export default function List() {
     setDuplicateThumbKeys(dupKeys);
   }
   const [scrollToIdx, setScrollToIdx] = useState(null);
-  const [pendingJumpId, setPendingJumpId] = useState(null);
-  const [pendingClearSearch, setPendingClearSearch] = useState(false);
   function handleEditAchievement(idx) {
     if (!reordered || !reordered[idx]) return;
     const a = reordered[idx];
@@ -340,6 +360,28 @@ export default function List() {
 
   function handleEditFormTagClick(tag) {
     setEditFormTags(tags => tags.includes(tag) ? tags.filter(t => t !== tag) : [...tags, tag]);
+  }
+
+  function handleEditFormCustomTagsChange(e) {
+    setEditFormCustomTags(e.target.value);
+  }
+
+  function handleEditFormSave() {
+    const entry = {};
+    Object.entries(editForm).forEach(([k, v]) => {
+      if (k === 'levelID') {
+        const num = Number(v);
+        if (!isNaN(num) && num > 0) {
+          entry[k] = num;
+        }
+        return;
+      }
+      if (typeof v === 'string') {
+        if (v.trim() !== '') entry[k] = v.trim();
+      } else if (v !== undefined && v !== null && v !== '') {
+        entry[k] = v;
+      }
+    });
     let tags = [...editFormTags];
     if (typeof editFormCustomTags === 'string' && editFormCustomTags.trim()) {
       editFormCustomTags.split(',').map(t => (typeof t === 'string' ? t.trim() : t)).filter(Boolean).forEach(t => {
@@ -476,7 +518,10 @@ export default function List() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const searchLower = useMemo(() => debouncedSearch.trim().toLowerCase(), [debouncedSearch]);
+  const searchLower = useMemo(() => {
+    const s = manualSearch ? manualSearch : debouncedSearch;
+    return (s || '').trim().toLowerCase();
+  }, [manualSearch, debouncedSearch]);
 
   const filterFn = useCallback(
     a => {
@@ -495,38 +540,6 @@ export default function List() {
   const filtered = useMemo(() => {
     return achievements.filter(filterFn);
   }, [achievements, filterFn]);
-
-  useEffect(() => {
-    if (!pendingJumpId) return;
-    try {
-      const idx = filtered.findIndex(a => (a && (a.id === pendingJumpId || a.id === String(pendingJumpId))));
-      if (idx === -1) {
-      } else {
-        const clamped = Math.max(0, Math.min(idx, filtered.length - 1));
-        if (devMode) {
-          setScrollToIdx(clamped);
-        } else if (listRef && listRef.current && typeof listRef.current.scrollToItem === 'function') {
-          try {
-            listRef.current.scrollToItem(clamped, 'center');
-          } catch (e) {
-            // ignore
-          }
-        } else if (achievementRefs.current && achievementRefs.current[clamped]) {
-          try { achievementRefs.current[clamped].scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch (e) {}
-        }
-      }
-    } catch (e) {}
-      if (pendingClearSearch) {
-        try {
-          setSearch('');
-          if (document && document.activeElement && typeof document.activeElement.blur === 'function') {
-            document.activeElement.blur();
-          }
-        } catch (e) {}
-        setPendingClearSearch(false);
-      }
-      setPendingJumpId(null);
-  }, [pendingJumpId, filtered, devMode]);
 
   useEffect(() => {
     let pref = 100;
@@ -788,8 +801,8 @@ export default function List() {
                 <input
                   type="text"
                   placeholder="Search achievements..."
-                  value={search}
-                  onChange={e => setSearch(e.target.value)}
+                    value={search}
+                    onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
                   onKeyDown={handleSearchKeyDown}
                   aria-label="Search achievements"
                   className="search-input"
@@ -828,7 +841,7 @@ export default function List() {
                 type="text"
                 placeholder="Search achievements..."
                 value={search}
-                onChange={e => setSearch(e.target.value)}
+                onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
                 onKeyDown={handleSearchKeyDown}
                 aria-label="Search achievements"
                 className="search-input"
