@@ -254,15 +254,11 @@ export default function List() {
     requestAnimationFrame(() => requestAnimationFrame(() => {
       const countToShow = Math.max(20, matchingItems.length);
       setVisibleCount(prev => Math.max(prev, countToShow));
-
+      
       if (devMode) {
         setScrollToIdx(baseMatchIdx);
       } else {
-        try {
-          if (listRef && listRef.current && typeof listRef.current.scrollToItem === 'function') {
-            listRef.current.scrollToItem(0, 'center');
-          }
-        } catch (err) { }
+        setScrollToIdx(0);
       }
     }));
 
