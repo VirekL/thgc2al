@@ -43,18 +43,20 @@ function normalizeYoutubeUrl(input) {
     if (id) {
       // preserve timestamp params if present
       const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
-      return t ? `https://youtu.be/${id}?t=${t}` : `https://youtu.be/${id}`;
+      if (t) return `https://www.youtube.com/watch?v=${id}&t=${t}`;
+      return `https://youtu.be/${id}`;
     }
     const raw = parsed.pathname.replace(/^\//, '');
     const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
-    return t ? `https://youtu.be/${raw}?t=${t}` : `https://youtu.be/${raw}`;
+    if (t) return `https://www.youtube.com/watch?v=${raw}&t=${t}`;
+    return `https://youtu.be/${raw}`;
   }
 
   if (host.endsWith('youtube.com') || host.endsWith('youtube-nocookie.com')) {
     const v = parsed.searchParams.get('v');
     if (v) {
       const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
-      return t ? `https://youtu.be/${v}?t=${t}` : `https://youtu.be/${v}`;
+      return t ? `https://www.youtube.com/watch?v=${v}&t=${t}` : `https://www.youtube.com/watch?v=${v}`;
     }
 
     const path = parsed.pathname || '';
@@ -64,14 +66,14 @@ function normalizeYoutubeUrl(input) {
     if (liveIdx !== -1 && parts[liveIdx + 1]) {
       const id = parts[liveIdx + 1];
       const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
-      return t ? `https://youtu.be/${id}?t=${t}` : `https://youtu.be/${id}`;
+      return t ? `https://www.youtube.com/watch?v=${id}&t=${t}` : `https://www.youtube.com/watch?v=${id}`;
     }
 
     const shortsIdx = parts.indexOf('shorts');
     if (shortsIdx !== -1 && parts[shortsIdx + 1]) {
       const id = parts[shortsIdx + 1];
       const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
-      return t ? `https://youtu.be/${id}?t=${t}` : `https://youtu.be/${id}`;
+      return t ? `https://www.youtube.com/watch?v=${id}&t=${t}` : `https://www.youtube.com/watch?v=${id}`;
     }
 
     if (parsed.searchParams.has('si')) parsed.searchParams.delete('si');
@@ -323,6 +325,7 @@ export default function List() {
     setDuplicateThumbKeys(dupKeys);
   }
   const [scrollToIdx, setScrollToIdx] = useState(null);
+  const [pendingJumpId, setPendingJumpId] = useState(null);
   function handleEditAchievement(idx) {
     if (!reordered || !reordered[idx]) return;
     const a = reordered[idx];
@@ -349,28 +352,6 @@ export default function List() {
 
   function handleEditFormTagClick(tag) {
     setEditFormTags(tags => tags.includes(tag) ? tags.filter(t => t !== tag) : [...tags, tag]);
-  }
-
-  function handleEditFormCustomTagsChange(e) {
-    setEditFormCustomTags(e.target.value);
-  }
-
-  function handleEditFormSave() {
-    const entry = {};
-    Object.entries(editForm).forEach(([k, v]) => {
-      if (k === 'levelID') {
-        const num = Number(v);
-        if (!isNaN(num) && num > 0) {
-          entry[k] = num;
-        }
-        return;
-      }
-      if (typeof v === 'string') {
-        if (v.trim() !== '') entry[k] = v.trim();
-      } else if (v !== undefined && v !== null && v !== '') {
-        entry[k] = v;
-      }
-    });
     let tags = [...editFormTags];
     if (typeof editFormCustomTags === 'string' && editFormCustomTags.trim()) {
       editFormCustomTags.split(',').map(t => (typeof t === 'string' ? t.trim() : t)).filter(Boolean).forEach(t => {
@@ -526,6 +507,29 @@ export default function List() {
   const filtered = useMemo(() => {
     return achievements.filter(filterFn);
   }, [achievements, filterFn]);
+
+  useEffect(() => {
+    if (!pendingJumpId) return;
+    try {
+      const idx = filtered.findIndex(a => (a && (a.id === pendingJumpId || a.id === String(pendingJumpId))));
+      if (idx === -1) {
+      } else {
+        const clamped = Math.max(0, Math.min(idx, filtered.length - 1));
+        if (devMode) {
+          setScrollToIdx(clamped);
+        } else if (listRef && listRef.current && typeof listRef.current.scrollToItem === 'function') {
+          try {
+            listRef.current.scrollToItem(clamped, 'center');
+          } catch (e) {
+            // ignore
+          }
+        } else if (achievementRefs.current && achievementRefs.current[clamped]) {
+          try { achievementRefs.current[clamped].scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch (e) {}
+        }
+      }
+    } catch (e) {}
+    setPendingJumpId(null);
+  }, [pendingJumpId, filtered, devMode]);
 
   useEffect(() => {
     let pref = 100;
