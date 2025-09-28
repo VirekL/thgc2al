@@ -251,20 +251,23 @@ export default function List() {
     setManualSearch(rawQuery);
     setVisibleCount(0);
 
-    requestAnimationFrame(() => requestAnimationFrame(() => {
-      const countToShow = Math.max(20, matchingItems.length);
-      setVisibleCount(prev => Math.max(prev, countToShow));
+    const countToShow = Math.max(20, matchingItems.length);
 
-      if (devMode) {
-        setScrollToIdx(baseMatchIdx);
-      } else {
+    setVisibleCount(countToShow);
+
+    if (devMode) {
+
+      setScrollToIdx(baseMatchIdx);
+    } else {
+      setTimeout(() => {
         try {
-          if (listRef && listRef.current && typeof listRef.current.scrollToItem === 'function') {
-            listRef.current.scrollToItem(0, 'center');
-          }
+          if (!listRef || !listRef.current || typeof listRef.current.scrollToItem !== 'function') return;
+          const filteredFirstIdx = (typeof window !== 'undefined' ? (filtered.findIndex(a => matchesQuery(a))) : -1);
+          const idxToScroll = filteredFirstIdx >= 0 ? filteredFirstIdx : 0;
+          listRef.current.scrollToItem(idxToScroll, 'center');
         } catch (err) { }
-      }
-    }));
+      }, 80);
+    }
 
     if (document && document.activeElement && typeof document.activeElement.blur === 'function') {
       document.activeElement.blur();
