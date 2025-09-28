@@ -215,6 +215,7 @@ function useDebouncedValue(value, delay) {
 export default function List() {
   const [achievements, setAchievements] = useState([]);
   const [visibleCount, setVisibleCount] = useState(100);
+  const [searchJumpPending, setSearchJumpPending] = useState(false);
   const listRef = useRef(null);
   const [search, setSearch] = useState('');
   const [manualSearch, setManualSearch] = useState('');
@@ -249,17 +250,21 @@ export default function List() {
 
     setSearch(''); // clear input
     setManualSearch(rawQuery);
+    // signal that we're doing a search-jump so effects don't immediately reset visibleCount
+    setSearchJumpPending(true);
     setVisibleCount(0);
 
     requestAnimationFrame(() => requestAnimationFrame(() => {
       const countToShow = Math.max(20, matchingItems.length);
       setVisibleCount(prev => Math.max(prev, countToShow));
-      
+
       if (devMode) {
         setScrollToIdx(baseMatchIdx);
       } else {
         setScrollToIdx(0);
       }
+      // allow other effects to resume after we've triggered the scroll
+      setTimeout(() => setSearchJumpPending(false), 80);
     }));
 
     if (document && document.activeElement && typeof document.activeElement.blur === 'function') {
@@ -797,8 +802,8 @@ export default function List() {
                 <input
                   type="text"
                   placeholder="Search achievements..."
-                    value={search}
-                    onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
+                  value={search}
+                  onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
                   onKeyDown={handleSearchKeyDown}
                   aria-label="Search achievements"
                   className="search-input"
