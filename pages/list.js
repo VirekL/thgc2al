@@ -43,18 +43,20 @@ function normalizeYoutubeUrl(input) {
     if (id) {
       // preserve timestamp params if present
       const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
-      return t ? `https://youtu.be/${id}?t=${t}` : `https://youtu.be/${id}`;
+      if (t) return `https://www.youtube.com/watch?v=${id}&t=${t}`;
+      return `https://youtu.be/${id}`;
     }
     const raw = parsed.pathname.replace(/^\//, '');
     const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
-    return t ? `https://youtu.be/${raw}?t=${t}` : `https://youtu.be/${raw}`;
+    if (t) return `https://www.youtube.com/watch?v=${raw}&t=${t}`;
+    return `https://youtu.be/${raw}`;
   }
 
   if (host.endsWith('youtube.com') || host.endsWith('youtube-nocookie.com')) {
     const v = parsed.searchParams.get('v');
     if (v) {
       const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
-      return t ? `https://youtu.be/${v}?t=${t}` : `https://youtu.be/${v}`;
+      return t ? `https://www.youtube.com/watch?v=${v}&t=${t}` : `https://www.youtube.com/watch?v=${v}`;
     }
 
     const path = parsed.pathname || '';
@@ -64,14 +66,14 @@ function normalizeYoutubeUrl(input) {
     if (liveIdx !== -1 && parts[liveIdx + 1]) {
       const id = parts[liveIdx + 1];
       const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
-      return t ? `https://youtu.be/${id}?t=${t}` : `https://youtu.be/${id}`;
+      return t ? `https://www.youtube.com/watch?v=${id}&t=${t}` : `https://www.youtube.com/watch?v=${id}`;
     }
 
     const shortsIdx = parts.indexOf('shorts');
     if (shortsIdx !== -1 && parts[shortsIdx + 1]) {
       const id = parts[shortsIdx + 1];
       const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
-      return t ? `https://youtu.be/${id}?t=${t}` : `https://youtu.be/${id}`;
+      return t ? `https://www.youtube.com/watch?v=${id}&t=${t}` : `https://www.youtube.com/watch?v=${id}`;
     }
 
     if (parsed.searchParams.has('si')) parsed.searchParams.delete('si');
@@ -213,48 +215,86 @@ function useDebouncedValue(value, delay) {
 export default function List() {
   const [achievements, setAchievements] = useState([]);
   const [visibleCount, setVisibleCount] = useState(100);
+  const [searchJumpPending, setSearchJumpPending] = useState(false);
   const listRef = useRef(null);
   const [search, setSearch] = useState('');
+  const [manualSearch, setManualSearch] = useState('');
+  const searchInputRef = useRef(null);
+  const [highlightedIdx, setHighlightedIdx] = useState(null);
+  const [noMatchMessage, setNoMatchMessage] = useState('');
   const debouncedSearch = useDebouncedValue(search, 200);
 
   function handleSearchKeyDown(e) {
     if (e.key !== 'Enter') return;
     e.preventDefault();
-    const query = (search || '').trim().toLowerCase();
+    const rawQuery = (search || '').trim();
+    if (!rawQuery) return;
+    searchAndJump(rawQuery);
+  }
+
+  function searchAndJump(rawQuery) {
+    const query = (rawQuery || '').trim().toLowerCase();
     if (!query) return;
+
     const matchesQuery = a => {
       if (!a) return false;
       const candidates = [a.name, a.player, a.id, a.levelID, a.submitter, (a.tags || []).join(' ')].filter(Boolean);
       return candidates.some(c => String(c).toLowerCase().includes(query));
     };
 
-    const baseList = devMode && reordered ? reordered : achievements;
-    const matchesTagsOnly = a => {
+    const respectsTagFilters = a => {
       const tags = (a.tags || []).map(t => t.toUpperCase());
       if (filterTags.include.length && !filterTags.include.every(tag => tags.includes(tag.toUpperCase()))) return false;
       if (filterTags.exclude.length && filterTags.exclude.some(tag => tags.includes(tag.toUpperCase()))) return false;
       return true;
     };
-    const targetList = baseList.filter(matchesTagsOnly);
 
-    const targetIdx = targetList.findIndex(matchesQuery);
-    if (targetIdx === -1) return;
+    const baseList = devMode && reordered ? reordered : achievements;
+    const preFiltered = baseList.filter(a => respectsTagFilters(a));
+    const matchingItems = preFiltered.filter(a => matchesQuery(a));
+    if (!matchingItems || matchingItems.length === 0) return;
 
-    setVisibleCount(v => Math.max(v, targetIdx + 20));
-    setSearch('');
+    const firstMatch = matchingItems[0];
+    const targetIdxInPreFiltered = preFiltered.findIndex(a => a === firstMatch);
 
-    if (devMode) {
-      setScrollToIdx(targetIdx);
-    } else {
-      requestAnimationFrame(() => requestAnimationFrame(() => {
-        try {
-          if (listRef && listRef.current && typeof listRef.current.scrollToItem === 'function') {
-            listRef.current.scrollToItem(targetIdx, 'center');
+    setManualSearch(rawQuery);
+    setSearchJumpPending(true);
+    setVisibleCount(0);
+
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      const countToShow = Math.max(20, matchingItems.length);
+      setVisibleCount(prev => Math.max(prev, countToShow));
+
+      if (devMode) {
+        setScrollToIdx(targetIdxInPreFiltered);
+        setHighlightedIdx(targetIdxInPreFiltered);
+      } else {
+        const visibleFiltered = achievements.filter(a => {
+          if (manualSearch || debouncedSearch) {
+            const s = manualSearch ? manualSearch : debouncedSearch;
+            const sLower = (s || '').trim().toLowerCase();
+            if (sLower) {
+              if (typeof a.name !== 'string' || !a.name.toLowerCase().includes(sLower)) return false;
+            }
           }
-        } catch (err) {
+          const tags = (a.tags || []).map(t => t.toUpperCase());
+          if (filterTags.include.length && !filterTags.include.every(tag => tags.includes(tag.toUpperCase()))) return false;
+          if (filterTags.exclude.length && filterTags.exclude.some(tag => tags.includes(tag.toUpperCase()))) return false;
+          return true;
+        });
+
+        const finalIdx = visibleFiltered.findIndex(a => a === firstMatch);
+        const idxToUse = finalIdx === -1 ? 0 : finalIdx;
+        setScrollToIdx(idxToUse);
+        if (finalIdx === -1) {
+          setNoMatchMessage('No matching achievement is currently visible with the active filters.');
+          window.setTimeout(() => setNoMatchMessage(''), 3000);
+        } else {
+          setHighlightedIdx(idxToUse);
         }
-      }));
-    }
+      }
+    }));
+
     if (document && document.activeElement && typeof document.activeElement.blur === 'function') {
       document.activeElement.blur();
     }
@@ -449,6 +489,35 @@ export default function List() {
   }, [achievements]);
 
   useEffect(() => {
+    function onGlobalFind(e) {
+      const isMac = typeof navigator !== 'undefined' && /mac/i.test(navigator.platform || '');
+      const findPressed = (isMac && e.metaKey && e.key === 'f') || (!isMac && e.ctrlKey && e.key === 'f');
+      if (!findPressed) return;
+      try {
+        e.preventDefault();
+      } catch (err) {}
+
+      let selected = '';
+      try {
+        selected = (window.getSelection && window.getSelection().toString()) || '';
+      } catch (err) { selected = ''; }
+
+      if (selected && selected.trim()) {
+        setSearch(selected.trim());
+        setManualSearch('');
+        setTimeout(() => searchAndJump(selected.trim()), 0);
+      } else {
+        if (searchInputRef && searchInputRef.current && typeof searchInputRef.current.focus === 'function') {
+          try { searchInputRef.current.focus(); } catch (err) {}
+        }
+      }
+    }
+
+    window.addEventListener('keydown', onGlobalFind);
+    return () => window.removeEventListener('keydown', onGlobalFind);
+  }, [searchInputRef, achievements, reordered, devMode, filterTags, manualSearch, debouncedSearch]);
+
+  useEffect(() => {
     if (!isMobile) return;
     let pinchActive = false;
     let lastTouches = [];
@@ -507,7 +576,10 @@ export default function List() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const searchLower = useMemo(() => debouncedSearch.trim().toLowerCase(), [debouncedSearch]);
+  const searchLower = useMemo(() => {
+    const s = manualSearch ? manualSearch : debouncedSearch;
+    return (s || '').trim().toLowerCase();
+  }, [manualSearch, debouncedSearch]);
 
   const filterFn = useCallback(
     a => {
@@ -529,6 +601,7 @@ export default function List() {
 
   useEffect(() => {
     let pref = 100;
+    if (searchJumpPending) return;
     try {
       if (typeof window !== 'undefined') {
         const v = localStorage.getItem('itemsPerPage');
@@ -686,8 +759,15 @@ export default function List() {
     if (scrollToIdx !== null && achievementRefs.current[scrollToIdx]) {
       achievementRefs.current[scrollToIdx].scrollIntoView({ behavior: 'smooth', block: 'center' });
       setScrollToIdx(null);
+      if (searchJumpPending) setSearchJumpPending(false);
     }
   }, [scrollToIdx, devAchievements]);
+
+  useEffect(() => {
+    if (highlightedIdx === null) return;
+    const id = window.setTimeout(() => setHighlightedIdx(null), 3000);
+    return () => window.clearTimeout(id);
+  }, [highlightedIdx]);
 
   useEffect(() => {
     if (scrollToIdx === null) return;
@@ -703,10 +783,12 @@ export default function List() {
               const offset = idx * 150;
               listRef.current.scrollTo(offset);
             }
+            if (searchJumpPending) setSearchJumpPending(false);
           } catch (e) { }
         }));
       } else if (achievementRefs.current && achievementRefs.current[idx]) {
         achievementRefs.current[idx].scrollIntoView({ behavior: 'smooth', block: 'center' });
+        if (searchJumpPending) setSearchJumpPending(false);
       }
     } catch (e) {
     }
@@ -785,10 +867,11 @@ export default function List() {
             <div style={{ width: '100%', marginTop: 12 }}>
               <div className="search-bar" style={{ width: '100%', maxWidth: 400, margin: '0 auto' }}>
                 <input
+                  ref={searchInputRef}
                   type="text"
                   placeholder="Search achievements..."
                   value={search}
-                  onChange={e => setSearch(e.target.value)}
+                  onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
                   onKeyDown={handleSearchKeyDown}
                   aria-label="Search achievements"
                   className="search-input"
@@ -824,10 +907,11 @@ export default function List() {
           {!isMobile && (
             <div className="search-bar" style={{ width: '100%', maxWidth: 400, marginLeft: 'auto' }}>
               <input
+                ref={searchInputRef}
                 type="text"
                 placeholder="Search achievements..."
                 value={search}
-                onChange={e => setSearch(e.target.value)}
+                onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
                 onKeyDown={handleSearchKeyDown}
                 aria-label="Search achievements"
                 className="search-input"
@@ -910,7 +994,7 @@ export default function List() {
       )}
       <main className="main-content achievements-main">
         {!isMobile && <Sidebar />}
-                <div
+        <div
           id="achievements-search-index"
           aria-hidden="true"
           style={{
@@ -1141,7 +1225,7 @@ export default function List() {
                   transition: 'opacity 0.2s',
                   position: 'relative',
                   zIndex: 1
-                }}>
+                }} className={highlightedIdx === i ? 'search-highlight' : ''}>
                   <AchievementCard achievement={a} devMode={devMode} />
                 </div>
               </div>
@@ -1178,7 +1262,7 @@ export default function List() {
                   const thumb = (a && a.thumbnail) ? a.thumbnail : (a && a.levelID) ? `https://tjcsucht.net/levelthumbs/${a.levelID}.png` : '';
                   const isDup = duplicateThumbKeys.has((thumb || '').trim());
                   return (
-                    <div style={itemStyle} key={a.id || index} className={isDup ? 'duplicate-thumb-item' : ''}>
+                    <div style={itemStyle} key={a.id || index} className={`${isDup ? 'duplicate-thumb-item' : ''} ${highlightedIdx === index ? 'search-highlight' : ''}`}>
                       <AchievementCard achievement={a} devMode={devMode} />
                     </div>
                   );
@@ -1188,6 +1272,9 @@ export default function List() {
           ))}
         </section>
       </main>
+      <div aria-live="polite" aria-atomic="true" style={{position:'absolute', left:-9999, top:'auto', width:1, height:1, overflow:'hidden'}}>
+        {noMatchMessage}
+      </div>
     </>
   );
 }
