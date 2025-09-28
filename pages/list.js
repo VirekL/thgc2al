@@ -961,6 +961,34 @@ export default function List() {
       )}
       <main className="main-content achievements-main">
         {!isMobile && <Sidebar />}
+        <div
+          id="achievements-search-index"
+          aria-hidden="true"
+          style={{
+            position: 'absolute',
+            left: -9999,
+            top: 'auto',
+            width: 1,
+            height: 1,
+            overflow: 'hidden',
+            whiteSpace: 'pre-wrap'
+          }}
+        >
+          {(devMode && reordered ? reordered : achievements).map((a, i) => {
+            const parts = [];
+            if (a && a.name) parts.push(a.name);
+            if (a && a.player) parts.push(a.player);
+            if (a && a.id) parts.push(String(a.id));
+            if (a && a.levelID) parts.push(String(a.levelID));
+            if (a && a.submitter) parts.push(a.submitter);
+            if (a && Array.isArray(a.tags) && a.tags.length) parts.push(a.tags.join(', '));
+            return (
+              <span key={a && a.id ? a.id : `s-${i}`}>
+                {parts.join(' \u2014 ')}
+              </span>
+            );
+          })}
+        </div>
         <section className="achievements achievements-section">
           <DevModePanel
             devMode={devMode}
