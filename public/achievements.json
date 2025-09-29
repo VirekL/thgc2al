@@ -5002,7 +5002,8 @@
     "submitter": "TYATYAPKA",
     "tags": [
       "Level",
-      "Verified"
+      "Verified",
+      "Rated"
     ]
   },
   {
@@ -11008,6 +11009,25 @@
     ]
   },
   {
+  "name": "Tenkai 60hz Mobile",
+	"id": "tenkai-60hz-mobile",
+	"player": "batle",
+	"length": 146,
+	"version": 2.2,
+	"levelID": 64100176,
+	"date": "2025-09-19",
+	"submitter": "kyle1saurus",
+	"video": "https://youtu.be/JCX47Ed7tuM",
+	"showcaseVideo": "https://www.youtube.com/watch?v=I2ISOu9N4P0",
+	"tags": [
+		"2P",
+		"Rated",
+		"Low Hertz",
+		"Mobile",
+		"Level"
+		]
+	},
+	{
     "name": "Peaceful Mode",
     "id": "peaceful-mode",
     "player": "SoggyDash",
@@ -14861,6 +14881,7 @@
     ]
   }
 ]
+
 
 
 
