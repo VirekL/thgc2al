@@ -4209,12 +4209,27 @@
     ]
   },
   {
+	"name": "ANTARCTIC LIGHTS 39-94%",
+    "id": "antarctic-lights-39-94",
+    "player": "Axinity",
+    "date": "2025-09-30",
+    "length": 36,
+    "version": 2.2,
+    "video": "https://youtu.be/fBN-DEyrMaY",
+    "showcaseVideo": "https://youtu.be/oZfKkZ36L9Q",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Flashbang 45-100%",
     "id": "flashbang-45-100",
     "player": "Noctal",
     "date": "2025-07-10",
-    "length": "84",
-    "version": "2.2",
+    "length": 84,
+    "version": 2.2,
     "showcaseVideo": "https://youtu.be/2j9nLPyE2Tw",
     "video": "https://youtu.be/Fjl5LbxcnrM",
     "submitter": "goofygdplayer",
@@ -4987,6 +5002,21 @@
       "Challenge",
       "Consistency",
       "Tentative"
+    ]
+  },
+  {
+	"name": "ANTARCTIC LIGHTS 49-100%",
+    "id": "antarctic-lights-49-100",
+    "player": "Axinity",
+    "date": "2025-09-26",
+    "length": 27,
+    "version": 2.2,
+    "video": "https://youtu.be/uejMVI9fXaI",
+    "showcaseVideo": "https://youtu.be/oZfKkZ36L9Q",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -8694,21 +8724,6 @@
     "video": "https://youtu.be/BJ_n-BCtOgs",
     "showcaseVideo": "https://youtu.be/0byEIPOLDVY&t=2",
     "submitter": "Exiled_Shade",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
-    "name": "ANTARCTIC LIGHTS 49-100%",
-    "id": "antarctic-lights-49-100",
-    "player": "Axinity",
-    "date": "2024-03-22",
-    "length": 27,
-    "version": 2.2,
-    "video": "https://youtu.be/jA1ojHctjsY",
-    "showcaseVideo": "https://youtu.be/oZfKkZ36L9Q",
-    "submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Progress"
@@ -14831,6 +14846,21 @@
     ]
   },
   {
+	"name": "Frost Pass",
+		"id": "frost-pass",
+		"player": "CyroFox",
+	    "levelID": 126436495,
+		"length": 57,
+		"version": 2.2,
+		"video": "https://youtu.be/7r09myGPcwI",
+		"date": "2025-09-27",
+		"showcaseVideo": "https://youtu.be/7r09myGPcwI?t=83",
+		"tags": [
+			"Verified",
+			"Level"
+		]
+	},
+	{
     "name": "Kenos",
     "id": "kenos",
     "player": "npesta",
@@ -14881,6 +14911,7 @@
     ]
   }
 ]
+
 
 
 
