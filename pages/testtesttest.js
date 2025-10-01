@@ -695,7 +695,7 @@ export default function List() {
     const json = JSON.stringify(reordered.map(({ rank, ...rest }) => rest), null, 2);
     if (navigator.clipboard) {
       navigator.clipboard.writeText(json);
-      alert('Copied new achievements.json to clipboard!');
+      alert(`Copied new ${usePlatformers ? 'platformers.json' : 'achievements.json'} to clipboard!`);
     } else {
       const textarea = document.createElement('textarea');
       textarea.value = json;
@@ -703,7 +703,7 @@ export default function List() {
       textarea.select();
       document.execCommand('copy');
       document.body.removeChild(textarea);
-      alert('Copied new achievements.json to clipboard!');
+      alert(`Copied new ${usePlatformers ? 'platformers.json' : 'achievements.json'} to clipboard!`);
     }
   }
 
@@ -1059,14 +1059,15 @@ export default function List() {
             onImportAchievementsJson={json => {
               let imported = Array.isArray(json) ? json : (json.achievements || []);
               if (!Array.isArray(imported)) {
-                alert('Invalid achievements.json format.');
+                alert(`Invalid ${usePlatformers ? 'platformers.json' : 'achievements.json'} format.`);
                 return;
               }
               imported = imported.map((a, i) => ({ ...a, rank: i + 1 }));
               setReordered(imported);
               setDevMode(true);
-              alert('Imported achievements.json!');
+              alert(`Imported ${usePlatformers ? 'platformers.json' : 'achievements.json'}!`);
             }}
+            dataFileName={usePlatformers ? 'platformers.json' : 'achievements.json'}
           />
           {isPending ? (
             <div className="no-achievements">Loading...</div>
