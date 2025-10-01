@@ -25,7 +25,8 @@ function DevModePanelInner({
   handleShowNewForm,
   newFormPreview,
   handleCheckDuplicateThumbnails,
-  onImportAchievementsJson
+  onImportAchievementsJson,
+  dataFileName = 'achievements.json'
 }) {
   return (
     <>
@@ -34,10 +35,10 @@ function DevModePanelInner({
         <div className="devmode-floating-panel">
           <span className="devmode-title">Developer Mode Enabled (SHIFT+M)</span>
           <div className="devmode-btn-row" style={{gap: 8}}>
-            <button className="devmode-btn" onClick={handleCopyJson}>Copy achievements.json</button>
+            <button className="devmode-btn" onClick={handleCopyJson}>Copy {dataFileName}</button>
             <button className="devmode-btn" onClick={handleCheckDuplicateThumbnails}>Check duplicate thumbnails</button>
             <label className="devmode-btn" style={{display:'inline-block',cursor:'pointer',margin:0}}>
-              Import achievements.json
+              Import {dataFileName}
               <input
                 type="file"
                 accept="application/json,.json"
@@ -53,7 +54,7 @@ function DevModePanelInner({
                         onImportAchievementsJson(json);
                       }
                     } catch (err) {
-                      alert('Invalid achievements.json file.');
+                      alert(`Invalid ${dataFileName} file.`);
                     }
                   };
                   reader.readAsText(file);
@@ -176,7 +177,8 @@ const DevModePanel = React.memo(DevModePanelInner, (prev, next) => {
     && prev.handleCopyJson === next.handleCopyJson
     && prev.handleShowNewForm === next.handleShowNewForm
   && prev.handleCheckDuplicateThumbnails === next.handleCheckDuplicateThumbnails
-    && prev.onImportAchievementsJson === next.onImportAchievementsJson;
+    && prev.onImportAchievementsJson === next.onImportAchievementsJson
+    && prev.dataFileName === next.dataFileName;
 });
 
 export default DevModePanel;
