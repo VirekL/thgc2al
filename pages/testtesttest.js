@@ -3,7 +3,7 @@ import React, { useEffect, useState, useMemo, useRef, useCallback, useTransition
 import { VariableSizeList as ListWindow } from 'react-window';
 
 const AVAILABLE_TAGS = [
-  "Level", "Challenge", "Verified", "Coin Route", "Low Hertz", "Mobile", "Speedhack",
+  "Level", "Challenge", "Platformer", "Verified", "Deathless", "Coin Route", "Low Hertz", "Mobile", "Speedhack",
   "Noclip", "Miscellaneous", "Progress", "Consistency",
   "2P", "CBF", "Rated", "Formerly Rated", "Outdated Version", "Tentative"
 ];
