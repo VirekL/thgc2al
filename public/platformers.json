@@ -1,0 +1,519 @@
+[
+  {
+    "name": "delightful climb 75-100%, 22-96%",
+    "id": "delightful-climb-75-100-22-96",
+    "player": "Aibyou",
+    "fastestPlayer": "Aibyou",
+    "fastestTime": "01:26.558",
+    "levelID": 115206404,
+    "tags": [
+      "Consistency (Level)"
+    ]
+  },
+  {
+    "name": "delightful climb",
+    "id": "delightful-climb",
+    "player": "GToast",
+    "fastestPlayer": "Aibyou",
+    "fastestTime": "01:37.987",
+    "levelID": 115206404,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "The Abyss (Deathless)",
+    "id": "the-abyss-deathless",
+    "player": "GToast",
+    "fastestPlayer": "GToast",
+    "fastestTime": "12:34.090",
+    "levelID": 98163412,
+    "tags": [
+      "Rated"
+    ]
+  },
+  {
+    "name": "Diamond For Dashers",
+    "id": "diamond-for-dashers",
+    "player": "nng12",
+    "fastestPlayer": "GToast",
+    "fastestTime": "04:00.397",
+    "levelID": 118798387,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "Meat Tower",
+    "id": "meat-tower",
+    "player": "Crerro",
+    "fastestPlayer": "samamba",
+    "fastestTime": "06:14.000",
+    "levelID": 119709734,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "ㅤRuined",
+    "id": "ruined",
+    "player": "GToast",
+    "fastestPlayer": "GToast",
+    "fastestTime": "43.350",
+    "levelID": 99303885,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "FLORESCENCE",
+    "id": "florescence",
+    "player": "p1nkempress",
+    "fastestPlayer": "Artemka_Klutoy",
+    "fastestTime": "33:49.220",
+    "levelID": 112737943,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "Null (Deathless)",
+    "id": "null-deathless",
+    "player": "Ayumi",
+    "fastestPlayer": "Ayumi",
+    "fastestTime": "1:27.150",
+    "levelID": 104031134,
+    "tags": [
+      "Rated"
+    ]
+  },
+  {
+    "name": "Nullspace",
+    "id": "nullspace",
+    "player": "Tanuklen",
+    "fastestPlayer": "GToast",
+    "fastestTime": "01:04.162",
+    "levelID": 115705984,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "IM HAPPY 4 U",
+    "id": "im-happy-4-u",
+    "player": "Candy",
+    "fastestPlayer": "Candy",
+    "fastestTime": "03:22.851",
+    "levelID": 99195306,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "CONVOLUTION",
+    "id": "convolution",
+    "player": "GToast",
+    "fastestPlayer": "GrittySoup",
+    "fastestTime": "01:11.862",
+    "levelID": 105724358,
+    "tags": [
+      "Rated"
+    ]
+  },
+  {
+    "name": "Its MF Kaiji Sunday",
+    "id": "its-mf-kaiji-sunday",
+    "player": "MahjongLegend",
+    "fastestPlayer": "Superkobster",
+    "fastestTime": "20.716",
+    "levelID": 109540925,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "glungus",
+    "id": "glungus",
+    "player": "dpoopoop",
+    "fastestPlayer": "ungafo",
+    "fastestTime": "08:55.508",
+    "levelID": 112482571,
+    "tags": [
+      "Rated"
+    ]
+  },
+  {
+    "name": "dish rags",
+    "id": "dish-rags",
+    "player": "ali_gd",
+    "fastestPlayer": "ali_gd",
+    "fastestTime": "19:31.625",
+    "levelID": 115455352,
+    "tags": [
+      "Rated"
+    ]
+  },
+  {
+    "name": "IWannaPlatformerList",
+    "id": "iwanna-platformer-list",
+    "player": "mikoshii",
+    "fastestPlayer": "mikoshii",
+    "fastestTime": "26:41:15.359",
+    "levelID": 122391065,
+    "tags": [
+      "Rated"
+    ]
+  },
+  {
+    "name": "HEAVIER METAL",
+    "id": "heavier-metal",
+    "player": "samamba",
+    "fastestPlayer": "shroomy",
+    "fastestTime": "01:10:22.154",
+    "levelID": 116667069,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "Rabbit Hole",
+    "id": "rabbit-hole",
+    "player": "shroomy",
+    "fastestPlayer": "Gabest",
+    "fastestTime": "02:41.429",
+    "levelID": 115881666,
+    "tags": [
+      "Rated"
+    ]
+  },
+  {
+    "name": "Void World (Deathless)",
+    "id": "void-world-deathless",
+    "player": "Peasant Banana",
+    "fastestPlayer": "Peasant Banana",
+    "fastestTime": "09:15.045",
+    "levelID": 107052022,
+    "tags": [
+      "Rated"
+    ]
+  },
+  {
+    "name": "CaveOfTheScarletSky",
+    "id": "cave-of-the-scarlet-sky",
+    "player": "npesta",
+    "fastestPlayer": "Ayumi",
+    "fastestTime": "02:37.337",
+    "levelID": 113224510,
+    "tags": [
+      "Rated"
+    ]
+  },
+  {
+    "name": "ECSTASIS unnerfed",
+    "id": "ecstasis-unnerfed",
+    "player": "Dxshing",
+    "fastestPlayer": "Tanuklen",
+    "fastestTime": "16:40.683",
+    "levelID": 111338608,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "Cl5u37r0ph0b1a",
+    "id": "cl5u37r0ph0b1a",
+    "player": "Aibyou",
+    "fastestPlayer": "VoPlat",
+    "fastestTime": "01:36.475",
+    "levelID": 112059085,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "Pandora",
+    "id": "pandora",
+    "player": "mikoshii",
+    "fastestPlayer": "macloris",
+    "fastestTime": "01:05.850",
+    "levelID": 115809824,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "vortex",
+    "id": "vortex",
+    "player": "Dxshing",
+    "fastestPlayer": "Laayte",
+    "fastestTime": "01:02.608",
+    "levelID": 124275094,
+    "tags": [
+      "Rated"
+    ]
+  },
+  {
+    "name": "r a g e",
+    "id": "r-a-g-e",
+    "player": "kgamesnyc",
+    "fastestPlayer": "macloris",
+    "fastestTime": "48.141",
+    "levelID": 112834935,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "The Blooming Garden",
+    "id": "the-blooming-garden",
+    "player": "Abby135",
+    "fastestPlayer": "p1nkempress",
+    "fastestTime": "01:02.875",
+    "levelID": 115979065,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "Kurroku",
+    "id": "kurroku",
+    "player": "Artemka_Klutoy",
+    "fastestPlayer": "VoPlat",
+    "fastestTime": "01:14.766",
+    "levelID": 114859422,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "MT UBER",
+    "id": "mt-uber",
+    "player": "thearmyants",
+    "fastestPlayer": "thearmyants",
+    "fastestTime": "05:13.229",
+    "levelID": 123260275,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "Null",
+    "id": "null",
+    "player": "Viare",
+    "fastestPlayer": "Cucu",
+    "fastestTime": "01:05.329",
+    "levelID": 104031134,
+    "tags": [
+      "Rated"
+    ]
+  },
+  {
+    "name": "GRID unLOCK",
+    "id": "grid-unlock",
+    "player": "Crerro",
+    "fastestPlayer": "Crerro",
+    "fastestTime": "04:05:35.668",
+    "levelID": 116220145,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "TM3",
+    "id": "tm3",
+    "player": "Artemka_Klutoy",
+    "fastestPlayer": "Artemka_Klutoy",
+    "fastestTime": "01:31.733",
+    "levelID": 113439179,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "ascend",
+    "id": "ascend",
+    "player": "Toboz",
+    "fastestPlayer": "JungleWolf",
+    "fastestTime": "01:20.045",
+    "levelID": 124303654,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "Uhm Huh",
+    "id": "uhm-huh",
+    "player": "Crerro",
+    "fastestPlayer": "kgamesnyc",
+    "fastestTime": "43.154",
+    "levelID": 112426437,
+    "tags": [
+      "Rated"
+    ]
+  },
+  {
+    "name": "Tower Of Infinity (Deathless)",
+    "id": "tower-of-infinity-deathless",
+    "player": "GToast",
+    "fastestPlayer": "GToast",
+    "fastestTime": "02:55.750",
+    "levelID": 97713011,
+    "tags": [
+      "Rated"
+    ]
+  },
+  {
+    "name": "The Elephants Foot",
+    "id": "the-elephants-foot",
+    "player": "Ayumi",
+    "fastestPlayer": "Superkobster",
+    "fastestTime": "43.331",
+    "levelID": 104896656,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "Starlight Cyclone",
+    "id": "starlight-cyclone",
+    "player": "ungafo",
+    "fastestPlayer": "ungafo",
+    "fastestTime": "02:18.050",
+    "levelID": 117632770,
+    "tags": [
+      "Rated"
+    ]
+  },
+  {
+    "name": "High gravity is SWAG",
+    "id": "high-gravity-is-swag",
+    "player": "nng12",
+    "fastestPlayer": "nng12",
+    "fastestTime": "01:11.450",
+    "levelID": 121386057,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "im happy 4 you",
+    "id": "im-happy-4-you",
+    "player": "mikoshii",
+    "fastestPlayer": "ungafo",
+    "fastestTime": "05:20.770",
+    "levelID": 99195742,
+    "tags": [
+      "Rated"
+    ]
+  },
+  {
+    "name": "Super Temu Guy",
+    "id": "super-temu-guy",
+    "player": "panap",
+    "fastestPlayer": "panap",
+    "fastestTime": "02:00.152",
+    "levelID": 108057924,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "Troncy Ball",
+    "id": "troncy-ball",
+    "player": "spycold",
+    "fastestPlayer": "FakeHATETAG",
+    "fastestTime": "08:50.266",
+    "levelID": 112972263,
+    "tags": [
+      "Rated"
+    ]
+  },
+  {
+    "name": "Yimu ",
+    "id": "yimu",
+    "player": "Lutz127",
+    "fastestPlayer": "Lutz127",
+    "fastestTime": "55:28.454",
+    "levelID": 116921752,
+    "tags": [
+      "Rated"
+    ]
+  },
+  {
+    "name": "Medramint",
+    "id": "medramint",
+    "player": "vLibra",
+    "fastestPlayer": "vLibra",
+    "fastestTime": "01:17.112",
+    "levelID": 116728888,
+    "tags": [
+      "Rated"
+    ]
+  },
+  {
+    "name": "apricot tower",
+    "id": "apricot-tower",
+    "player": "whitepoop",
+    "fastestPlayer": "Tanuklen",
+    "fastestTime": "02:43.625",
+    "levelID": 103312515,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "Super egg hunt 64",
+    "id": "super-egg-hunt-64",
+    "player": "ashfalcon44",
+    "fastestPlayer": "Artemka_Klutoy",
+    "fastestTime": "02:26.800",
+    "levelID": 114333870,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "rainbow tylenol",
+    "id": "rainbow-tylenol",
+    "player": "Extatica",
+    "fastestPlayer": "Superkobster",
+    "fastestTime": "02:16.595",
+    "levelID": 110192855,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "cell tower",
+    "id": "cell-tower",
+    "player": "p1nkempress",
+    "fastestPlayer": "p1nkempress",
+    "fastestTime": "02:05.254",
+    "levelID": 111808927,
+    "tags": [
+      "Level"
+    ]
+  },
+  {
+    "name": "Dead Of Night",
+    "id": "dead-of-night",
+    "player": "GD Iris",
+    "fastestPlayer": "GD Iris",
+    "fastestTime": "05:41:19.217",
+    "levelID": 117297448,
+    "tags": [
+      "Rated"
+    ]
+  },
+  {
+    "name": "Project BUZZKILL",
+    "id": "project-buzzkill",
+    "player": "Superkobster",
+    "fastestPlayer": "Dxshing",
+    "fastestTime": "02:16.250",
+    "levelID": 111113059,
+    "tags": [
+      "Level"
+    ]
+  }
+]
