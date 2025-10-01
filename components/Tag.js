@@ -1,16 +1,21 @@
 import React from 'react';
 
 const TAG_PRIORITY_ORDER = [
-  'LEVEL', 'CHALLENGE', 'VERIFIED', 'COIN ROUTE', 'LOW HERTZ', 'MOBILE', 'SPEEDHACK',
+  'LEVEL', 'CHALLENGE', 'VERIFIED', 'PLATFORMER', 'DEATHLESS', 'COIN ROUTE', 'LOW HERTZ', 'MOBILE', 'SPEEDHACK',
   'NOCLIP', 'MISCELLANEOUS', 'PROGRESS', 'CONSISTENCY', '2P', 'CBF',
   'RATED', 'FORMERLY RATED', 'OUTDATED VERSION', 'TENTATIVE'
 ];
 
 const TAG_DEFINITIONS = {
+  PLATFORMER: {
+    className: 'tag-platformer',
+    text: 'Platformer',
+    tooltip: 'A side-scrolling mode added in update 2.2.'
+  },
   LEVEL: {
     className: 'tag-level',
     text: 'Level',
-    tooltip: 'A traditional level, which spans 30+ seconds.'
+    tooltip: 'A traditional classic level, which spans 30+ seconds.'
   },
   CHALLENGE: {
     className: 'tag-challenge',
@@ -36,6 +41,11 @@ const TAG_DEFINITIONS = {
     className: 'tag-noclip',
     text: 'Noclip',
     tooltip: 'Completed using noclip.'
+  },
+  DEATHLESS: {
+    className: 'tag-deathless',
+    text: 'Deathless',
+    tooltip: 'Achievement done without dying. Tag is used for platformers.'
   },
   MISCELLANEOUS: {
     className: 'tag-miscellaneous',
@@ -100,8 +110,6 @@ const TAG_DEFINITIONS = {
     tooltip: 'Tentative placement; unfixed; subject to change.'
   },
 };
-
-// Tooltip/help text added from project definitions
 
 const TagComponent = function Tag({ tag, onClick, tabIndex, clickable, state }) {
   const def = TAG_DEFINITIONS[tag.toUpperCase()] || {};
@@ -194,7 +202,7 @@ const TagComponent = function Tag({ tag, onClick, tabIndex, clickable, state }) 
   background: linear-gradient(135deg, #4facfe 0%,rgb(28, 92, 175) 100%);
 }
 .tag-speedhack {
-  background: linear-gradient(135deg, #ff6a00 0%,rgb(192, 82, 31) 100%);
+  background: linear-gradient(135deg, #e92eaaff 0%,rgba(163, 36, 121, 1) 100%);
 }
 .tag-noclip {
   background: linear-gradient(135deg, #e52d27 0%,rgb(139, 0, 46) 100%);
@@ -203,10 +211,10 @@ const TagComponent = function Tag({ tag, onClick, tabIndex, clickable, state }) 
   background: linear-gradient(135deg, #545466 0%,rgb(41, 39, 47)100%)
 }
 .tag-progress {
-  background: linear-gradient(135deg, #6dd5ed 0%, #4682b4 100%);
+  background: linear-gradient(135deg, #53abddff 0%, #4682b4 100%);
 }
 .tag-consistency {
-  background: linear-gradient(135deg, #8f94fb 0%,rgb(48, 55, 180) 100%);
+  background: linear-gradient(135deg, #8f94fb 0%,rgba(42, 49, 173, 1) 100%);
 }
 .tag-2p {
   background: linear-gradient(135deg,rgb(245, 122, 41) 0%,rgb(190, 88, 40) 100%);
@@ -227,10 +235,16 @@ const TagComponent = function Tag({ tag, onClick, tabIndex, clickable, state }) 
   background: linear-gradient(135deg, #9ef04d 0%, #259947 100%)
 }
 .tag-coin-route {
-  background: linear-gradient(135deg,rgb(168, 172, 179) 0%,rgb(99, 107, 110) 100%);
+  background: linear-gradient(135deg,rgb(168, 172, 179) 0%,rgba(90, 96, 99, 1) 100%);
 }
 .tag-tentative {
   background: linear-gradient(135deg, #a68b62 0%,rgb(68, 57, 47)100%)
+}
+.tag-platformer {
+  background: linear-gradient(135deg, #4372d8ff 0%, #ff8262ff 50%, 100%);
+}
+.tag-deathless {
+  background: linear-gradient(135deg, #2b0000ff 0%, #050000ff 50%, 100%);
 }
       `}</style>
       <style jsx>{`
