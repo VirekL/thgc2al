@@ -32,25 +32,6 @@
     ]
   },
   {
-	"name": "Tenkai 60hz Mobile",
-	"id": "tenkai-60hz-mobile",
-	"player": "batle",
-	"length": 146,
-	"version": 2.2,
-	"levelID": 64100176,
-	"date": "2025-09-19",
-	"submitter": "kyle1saurus",
-	"video": "https://youtu.be/JCX47Ed7tuM",
-	"showcaseVideo": "https://www.youtube.com/watch?v=I2ISOu9N4P0",
-	"tags": [
-		"2P",
-		"Rated",
-		"Low Hertz",
-		"Mobile",
-		"Level"
-		]
-	},
-	{
 	"name": "Congregation 60hz 65%",
     "id": "congregation-60hz-65",
     "player": "Clutter",
@@ -98,6 +79,22 @@
     "video": "https://youtu.be/Rz7Um6lxYYU",
     "showcaseVideo": "https://youtu.be/RX9mJmScTd8",
     "submitter": "nensa",
+    "tags": [
+      "Challenge",
+      "Verified"
+    ]
+  },
+  {
+	"name": "khmeli suneli",
+    "id": "khmeli-suneli",
+    "player": "kwezy",
+    "date": "2025-10-01",
+    "length": 8,
+	"levelID": 126565319,
+    "version": 2.2,
+    "video": "https://youtu.be/hiAtw-soAmg",
+    "showcaseVideo": null,
+    "submitter": "TYATYAPKA",
     "tags": [
       "Challenge",
       "Verified"
