@@ -2531,6 +2531,22 @@
     "showcaseVideo": "https://youtu.be/l6poOVWISJA"
   },
   {
+    "name": "Heliopolis 27-57%",
+    "id": "heliopolis-27-57",
+    "player": "Abdieldevil",
+    "date": "2025-10-01",
+    "length": 28,
+    "version": 2.2,
+    "video": "https://www.youtube.com/watch?v=t8_aXJf9aQI?t=76",
+    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
+    "submitter": "cheesecake",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Acheron 60hz 69-100%",
     "id": "acheron-60hz-69-100",
     "player": "Llqne",
@@ -3284,22 +3300,6 @@
       "Verified",
       "Rated",
       "Tentative"
-    ]
-  },
-  {
-    "name": "Heliopolis 27-50%",
-    "id": "heliopolis-27-50",
-    "player": "Abdieldevil",
-    "date": "2025-04-14",
-    "length": 28,
-    "version": 2.2,
-    "video": "https://youtu.be/kfC3oEUVZAs",
-    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -14896,3 +14896,4 @@
     ]
   }
 ]
+
