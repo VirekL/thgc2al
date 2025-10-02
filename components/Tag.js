@@ -153,18 +153,18 @@ const TagComponent = function Tag({ tag, onClick, tabIndex, clickable, state }) 
           padding: 4px 10px;
           border-radius: 8px;
           margin-right: 4px;
-          box-shadow: 0 2px 8px rgba(0,0,0,0.22), 0 4px 16px rgba(0,0,0,0.10); /* Enhanced drop shadow */
-          color: #fff;
+          box-shadow: 0 2px 8px #00000038, 0 4px 16px #0000001A; /* Enhanced drop shadow */
+          color: #FFFFFF;
           background: linear-gradient(135deg, #23283E 0%, #2E3451 100%);
           text-transform: uppercase;
-          text-shadow: 2px 2px 6px rgba(0,0,0,0.85), 0 1px 2px #000;
+          text-shadow: 2px 2px 6px #000000D9, 0 1px 2px #000000;
           transition: background 0.3s, border 0.2s, opacity 0.2s;
           outline: none;
           cursor: default;
         }
         .tag-clickable {
           cursor: pointer;
-          box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+          box-shadow: 0 2px 8px #0000002E;
         }
         .tag-clickable:hover {
           opacity: 0.85;
@@ -172,11 +172,11 @@ const TagComponent = function Tag({ tag, onClick, tabIndex, clickable, state }) 
         }
         .tag-include {
           border: none;
-          box-shadow: 0 0 0 3px rgb(94, 255, 62);
+          box-shadow: 0 0 0 3px #5EFF3E;
         }
         .tag-exclude {
           border: none;
-          box-shadow: 0 0 0 3px rgb(233, 64, 59);
+          box-shadow: 0 0 0 3px #E9403B;
           opacity: 0.7;
         }
         .tag-neutral {
@@ -187,64 +187,64 @@ const TagComponent = function Tag({ tag, onClick, tabIndex, clickable, state }) 
           width: 16px;
           height: 16px;
           vertical-align: middle;
-          filter: drop-shadow(0 2px 4px rgba(0,0,0,0.7)) drop-shadow(0 0px 1px #000);
+          filter: drop-shadow(0 2px 4px #000000B3) drop-shadow(0 0px 1px #000000);
         }
 .tag-level {
-  background: linear-gradient(135deg, #43e97b 0%,rgb(37, 164, 180) 100%);
+  background: linear-gradient(135deg, #43E97B 0%, #25A4B4 100%);
 }
 .tag-challenge {
-  background: linear-gradient(135deg, #ffb347 0%,rgb(255, 95, 162) 100%);
+  background: linear-gradient(135deg, #FFB347 0%, #FF5FA2 100%);
 }
 .tag-low-hertz {
-  background: linear-gradient(135deg,rgb(215, 36, 231) 0%,rgb(98, 50, 209) 100%);
+  background: linear-gradient(135deg, #D724E7 0%, #6232D1 100%);
 }
 .tag-mobile {
-  background: linear-gradient(135deg, #4facfe 0%,rgb(28, 92, 175) 100%);
+  background: linear-gradient(135deg, #2398FF 0%, #4FFFF7 100%)
 }
 .tag-speedhack {
-  background: linear-gradient(135deg, #e92eaaff 0%,rgba(163, 36, 121, 1) 100%);
+  background: linear-gradient(135deg, #E92EAAFF 0%, #93225c 100%);
 }
 .tag-noclip {
-  background: linear-gradient(135deg, #e52d27 0%,rgb(139, 0, 46) 100%);
+  background: linear-gradient(135deg, #E52D27 0%, #5e004f 100%);
 }
 .tag-miscellaneous {
-  background: linear-gradient(135deg, #545466 0%,rgb(41, 39, 47)100%)
+  background: linear-gradient(135deg, #545466 0%, #29272F 100%);
 }
 .tag-progress {
-  background: linear-gradient(135deg, #53abddff 0%, #4682b4 100%);
+  background: linear-gradient(135deg, #87ebbc 0%, #2f9bc6 100%);
 }
 .tag-consistency {
-  background: linear-gradient(135deg, #8f94fb 0%,rgba(42, 49, 173, 1) 100%);
+  background: linear-gradient(135deg, #4f58e4 0%, #1b007e 100%);
 }
 .tag-2p {
-  background: linear-gradient(135deg,rgb(245, 122, 41) 0%,rgb(190, 88, 40) 100%);
+  background: linear-gradient(135deg, #ff7800 0%, #3e89ff 100%);
 }
 .tag-cbf {
-  background: linear-gradient(135deg, #ff758c 0%, #db303f 100%);
+  background: linear-gradient(135deg, #FF758C 0%, #DB303F 100%);
 }
 .tag-rated {
-  background: linear-gradient(135deg,rgb(255, 183, 89) 0%,rgb(179, 145, 51) 100%);
+  background: linear-gradient(135deg, #ffcd58 0%, #db6f46 100%);
 }
 .tag-formerly-rated {
-  background: linear-gradient(135deg, #ff9966 0%, #833325 100%);
+  background: linear-gradient(135deg, #FF9966 0%, #833325 100%);
 }
 .tag-outdated-version {
-  background: linear-gradient(135deg,rgb(138, 134, 115) 0%,rgb(206, 155, 47) 100%);
+  background: linear-gradient(135deg, #8A8673 0%, #CE9B2F 100%);
 }
 .tag-verified {
-  background: linear-gradient(135deg, #9ef04d 0%, #259947 100%)
+  background: linear-gradient(135deg, #9EF04D 0%, #00b896 100%)
 }
 .tag-coin-route {
-  background: linear-gradient(135deg,rgb(168, 172, 179) 0%,rgba(90, 96, 99, 1) 100%);
+  background: linear-gradient(135deg, #A8ACB3 0%, #35383A 100%);
 }
 .tag-tentative {
-  background: linear-gradient(135deg, #a68b62 0%,rgb(68, 57, 47)100%)
+  background: linear-gradient(135deg, #A68B62 0%, #44392F 100%)
 }
 .tag-platformer {
-  background: linear-gradient(135deg, #4372d8ff 0%, #ff8262ff 50%, 100%);
+  background: linear-gradient(135deg, #4372D8 0%, #FF8262 100%);
 }
 .tag-deathless {
-  background: linear-gradient(135deg, #2b0000ff 0%, #050000ff 50%, 100%);
+  background: linear-gradient(135deg, #2B0000 0%, #050000 100%);
 }
       `}</style>
       <style jsx>{`
