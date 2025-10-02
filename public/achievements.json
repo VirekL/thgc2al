@@ -1720,16 +1720,16 @@
     ]
   },
   {
-    "name": "Lithium 60hz Mobile 95%",
-    "id": "lithium-60hz-mobile-95",
+    "name": "Lithium 60hz Mobile 97%",
+    "id": "lithium-60hz-mobile-97",
     "player": "Archermence",
-    "date": "2025-09-27",
-    "length": 118,
+    "date": "2025-10-01",
+    "length": 130,
     "version": 2.2,
     "levelID": 97364686,
-    "video": "https://youtube.com/shorts/UDwZ4PsbcVo",
+    "video": "https://youtu.be/xg39E3gZVAQ",
     "showcaseVideo": "https://youtu.be/IHqODLf_ZLY",
-    "submitter": "TYATYAPKA",
+    "submitter": "kyle1saurus",
     "tags": [
       "Level",
       "Low Hertz",
@@ -7976,6 +7976,23 @@
     "tags": [
       "Level",
       "Verified"
+    ]
+  },
+  {
+    "name": "Silent clubstep (Sailence) 17%",
+    "id": "silent-clubstep-Sailence-17",
+    "player": "Emp",
+    "length": 16,
+    "version": 2.2,
+    "video": "https://youtu.be/wbkOlEWWM-k",
+    "showcaseVideo": null,
+    "date": "2025-10-02",
+    "submitter": "Emp",
+    "levelID": null,
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
     ]
   },
   {
@@ -14896,4 +14913,5 @@
     ]
   }
 ]
+
 
