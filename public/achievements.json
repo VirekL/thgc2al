@@ -3282,8 +3282,8 @@
     "tags": [
       "Level",
       "Verified",
-      "Tentative",
-      "Rated"
+      "Rated",
+      "Tentative"
     ]
   },
   {
@@ -3632,7 +3632,7 @@
     ]
   },
   {
-	"name": "ANTARCTIC LIGHTS 39-100%",
+    "name": "ANTARCTIC LIGHTS 39-100%",
     "id": "antarctic-lights-39-100",
     "player": "Axinity",
     "date": "2025-10-01",
@@ -7041,7 +7041,7 @@
     ]
   },
   {
-	"name": "BRITNEY NO SCLEARS (Old) 74%",
+    "name": "BRITNEY NO SCLEARS (Old) 74%",
     "id": "britney-no-sclears-Old-74",
     "player": "Scotchtape",
     "date": "2025-06-05",
@@ -7575,7 +7575,7 @@
     ]
   },
   {
-	"name": "BRITNEY NO SCLEARS",
+    "name": "BRITNEY NO SCLEARS",
     "id": "britney-no-sclears",
     "player": "Scotchtape",
     "date": "2025-08-29",
@@ -7847,7 +7847,7 @@
     ]
   },
   {
-	"name": "Armageddon Tarnish C",
+    "name": "Armageddon Tarnish C",
     "id": "armageddon-tarnish-c",
     "player": "TFIBB",
     "length": 46,
@@ -11009,25 +11009,25 @@
     ]
   },
   {
-  "name": "Tenkai 60hz Mobile",
-	"id": "tenkai-60hz-mobile",
-	"player": "batle",
-	"length": 146,
-	"version": 2.2,
-	"levelID": 64100176,
-	"date": "2025-09-19",
-	"submitter": "kyle1saurus",
-	"video": "https://youtu.be/JCX47Ed7tuM",
-	"showcaseVideo": "https://www.youtube.com/watch?v=I2ISOu9N4P0",
-	"tags": [
-		"2P",
-		"Rated",
-		"Low Hertz",
-		"Mobile",
-		"Level"
-		]
-	},
-	{
+    "name": "Tenkai 60hz Mobile",
+    "id": "tenkai-60hz-mobile",
+    "player": "batle",
+    "length": 146,
+    "version": 2.2,
+    "levelID": 64100176,
+    "date": "2025-09-19",
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/JCX47Ed7tuM",
+    "showcaseVideo": "https://www.youtube.com/watch?v=I2ISOu9N4P0",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "2P",
+      "Rated"
+    ]
+  },
+  {
     "name": "Peaceful Mode",
     "id": "peaceful-mode",
     "player": "SoggyDash",
@@ -11157,22 +11157,6 @@
       "Mobile",
       "Progress",
       "Rated"
-    ]
-  },
-  {
-	"name": "Lotus Chamber 59-100%",
-    "id": "lotus-chamber-59-100",
-    "player": "wshock",
-    "levelID": 81117568,
-    "date": "2025-09-29",
-    "length": 5,
-    "version": 2.2,
-    "submitter": "Swift",
-    "video": "https://youtu.be/8MUlsmjB4jk",
-    "showcaseVideo": "https://youtu.be/WEKTnEYmGNk",
-    "tags": [
-      "Challenge",
-      "Progress"
     ]
   },
   {
@@ -11785,7 +11769,7 @@
     ]
   },
   {
-	"name": "Acid Rain",
+    "name": "Acid Rain",
     "id": "acid-rain",
     "player": "ShadowMyth",
     "levelID": 125150457,
@@ -14847,21 +14831,21 @@
     ]
   },
   {
-	"name": "Frost Pass",
-		"id": "frost-pass",
-		"player": "CyroFox",
-	    "levelID": 126436495,
-		"length": 57,
-		"version": 2.2,
-		"video": "https://youtu.be/7r09myGPcwI",
-		"date": "2025-09-27",
-		"showcaseVideo": "https://youtu.be/7r09myGPcwI?t=83",
-		"tags": [
-			"Verified",
-			"Level"
-		]
-	},
-	{
+    "name": "Frost Pass",
+    "id": "frost-pass",
+    "player": "CyroFox",
+    "levelID": 126436495,
+    "length": 57,
+    "version": 2.2,
+    "video": "https://youtu.be/7r09myGPcwI",
+    "date": "2025-09-27",
+    "showcaseVideo": "https://youtu.be/7r09myGPcwI?t=83",
+    "tags": [
+      "Level",
+      "Verified"
+    ]
+  },
+  {
     "name": "Kenos",
     "id": "kenos",
     "player": "npesta",
@@ -14912,12 +14896,3 @@
     ]
   }
 ]
-
-
-
-
-
-
-
-
-
