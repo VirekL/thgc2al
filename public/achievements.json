@@ -6782,6 +6782,40 @@
     ]
   },
   {
+    "name": "Silent Circles (Anceps) 27-52%",
+    "id": "silent-circles-anceps-27-52",
+    "player": "tricklength",
+    "date": "2025-04-28",
+    "length": 13,
+    "version": 2.2,
+    "video": "https://youtu.be/QFASgWByRgs",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/assets/thumbnails/silent-circles-anceps1.png",
+    "submitter": "tricklength",
+    "tags": [
+      "Level",
+      "Progress",
+      "2P",
+      "CBF"
+    ]
+  },
+  {
+    "name": "SC2751p",
+    "id": "sc2751p",
+    "player": "UFokinWotM8",
+    "levelID": 74068023,
+    "date": "2021-09-27",
+    "length": 12,
+    "version": 2.1,
+    "submitter": "Anceps",
+    "video": "https://youtu.be/XWBPITWsptc",
+    "showcaseVideo": "https://youtu.be/Tpf3IrvpWTo",
+    "tags": [
+      "Challenge",
+      "Verified",
+      "2P"
+    ]
+  },
+  {
     "name": "uskc 37-67 x2 72%",
     "id": "uskc-37-67-x2-72",
     "player": "Emp",
@@ -6893,40 +6927,6 @@
       "Level",
       "Progress",
       "CBF"
-    ]
-  },
-  {
-    "name": "Silent Circles (Anceps) 27-52%",
-    "id": "silent-circles-anceps-27-52",
-    "player": "tricklength",
-    "date": "2025-04-28",
-    "length": 13,
-    "version": 2.2,
-    "video": "https://youtu.be/QFASgWByRgs",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/assets/thumbnails/silent-circles-anceps1.png",
-    "submitter": "tricklength",
-    "tags": [
-      "Level",
-      "Progress",
-      "2P",
-      "CBF"
-    ]
-  },
-  {
-    "name": "SC2751p",
-    "id": "sc2751p",
-    "player": "UFokinWotM8",
-    "levelID": 74068023,
-    "date": "2021-09-27",
-    "length": 12,
-    "version": 2.1,
-    "submitter": "Anceps",
-    "video": "https://youtu.be/XWBPITWsptc",
-    "showcaseVideo": "https://youtu.be/Tpf3IrvpWTo",
-    "tags": [
-      "Challenge",
-      "Verified",
-      "2P"
     ]
   },
   {
@@ -14929,6 +14929,3 @@
     ]
   }
 ]
-
-
-
