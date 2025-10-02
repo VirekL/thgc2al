@@ -1966,6 +1966,22 @@
     ]
   },
   {
+    "name": "Heliopolis 27-68%",
+    "id": "heliopolis-27-68",
+    "player": "Abdieldevil",
+    "date": "2025-10-02",
+    "length": 59,
+    "version": 2.2,
+    "video": "https://www.youtube.com/live/rDR2hB65po4?t=708",
+    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Illusion of Hell",
     "id": "illusion-of-hell",
     "player": "Diamond",
@@ -2529,22 +2545,6 @@
     ],
     "levelID": 89216381,
     "showcaseVideo": "https://youtu.be/l6poOVWISJA"
-  },
-  {
-    "name": "Heliopolis 27-57%",
-    "id": "heliopolis-27-57",
-    "player": "Abdieldevil",
-    "date": "2025-10-01",
-    "length": 28,
-    "version": 2.2,
-    "video": "https://www.youtube.com/watch?v=t8_aXJf9aQI?t=76",
-    "showcaseVideo": "https://youtu.be/7yaKGl_2Dsw",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
-    "submitter": "cheesecake",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
   },
   {
     "name": "Acheron 60hz 69-100%",
@@ -6827,6 +6827,22 @@
       "Level",
       "Verified",
       "Rated"
+    ]
+  },
+  {
+    "name": "Purplehouse 25-95%",
+    "id": "purplehouse-25-95",
+    "player": "Xtra8nugs",
+    "levelID": null,
+    "date": "2025-09-09",
+    "length": 38,
+    "version": 2.2,
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/f1WehtceFnk",
+    "showcaseVideo": null,
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -14913,5 +14929,6 @@
     ]
   }
 ]
+
 
 
