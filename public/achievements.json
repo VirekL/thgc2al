@@ -13874,6 +13874,22 @@
     ]
   },
   {
+    "name": "paranoia",
+    "id": "paranoia",
+    "player": "Amplitron",
+    "length": 74,
+    "version": 2.2,
+    "video": "https://youtu.be/Aw83i8Zmh_0",
+    "date": "2024-12-22",
+    "showcaseVideo": "https://youtu.be/rg06lq4HL2c",
+    "levelID": 113364415,
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Verified"
+    ]
+  },
+  {
     "name": "Sonic Wave 30hz 54%",
     "id": "sonic-wave-30hz-54",
     "player": "Bread",
@@ -14395,22 +14411,6 @@
     ]
   },
   {
-    "name": "paranoia",
-    "id": "paranoia",
-    "player": "Amplitron",
-    "length": 74,
-    "version": 2.2,
-    "video": "https://youtu.be/Aw83i8Zmh_0",
-    "date": "2024-12-22",
-    "showcaseVideo": "https://youtu.be/rg06lq4HL2c",
-    "levelID": 113364415,
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Verified"
-    ]
-  },
-  {
     "name": "ATOMIC CANNON 60hz Mobile",
     "id": "atomic-cannon-60hz-mobile",
     "player": "Biprex",
@@ -14896,6 +14896,24 @@
     ]
   },
   {
+    "name": "WOBBLING MACHINE",
+		"id": "wobbling-machine",
+		"player": "conski",
+		"length": 60,
+		"version": 2.2,
+    "submitter": "kyle1saurus",
+		"video": "https://www.youtube.com/watch?v=RKX6VOsICOg",
+		"date": "2024-09-09",
+		"showcaseVideo": "https://youtu.be/RKX6VOsICOg",
+		"levelID": 87130877,
+		"tags": [
+			"2P",
+			"Level",
+      "Verified",
+      "Rated"
+		]
+	},
+	{
     "name": "Eternal Silence (Old) 24-100%",
     "id": "eternal-silence-old-24-100",
     "player": "Diamond",
@@ -14929,3 +14947,4 @@
     ]
   }
 ]
+
