@@ -5123,6 +5123,21 @@
     ]
   },
   {
+	"name": "ANTARCTIC LIGHTS 25-73%",
+		"id": "antarctic-lights-25-73",
+		"player": "Axinity",
+		"length": 27,
+		"version": 2.2,
+		"video": "https://www.twitch.tv/axinitygd/clip/FurtiveSpikyGalagoWutFace-q0unIL4lErilg0m0?tt_content=clip&tt_medium=mobile_web_share",
+		"date": "2025-10-04",
+		"showcaseVideo": "https://youtu.be/oZfKkZ36L9Q",
+	    "submitter": "kyle1saurus",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
     "name": "Lunatic Eyes",
     "id": "lunatic-eyes",
     "player": "DNM121",
@@ -10889,6 +10904,21 @@
     ]
   },
   {
+	"name": "ANTARCTIC LIGHTS 44%",
+		"id": "antarctic-lights-44",
+		"player": "Axinity",
+		"length": 34,
+		"version": 2.2,
+		"video": "https://youtu.be/LjNl_drijSw",
+		"date": "2025-10-04",
+		"showcaseVideo": "https://youtu.be/oZfKkZ36L9Q",
+	    "submitter": "Exiled_shade",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
     "name": "Delta",
     "id": "delta",
     "player": "Doggie",
@@ -14947,4 +14977,5 @@
     ]
   }
 ]
+
 
