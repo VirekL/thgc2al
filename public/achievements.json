@@ -1720,16 +1720,16 @@
     ]
   },
   {
-    "name": "Lithium 60hz Mobile 97%",
-    "id": "lithium-60hz-mobile-97",
+    "name": "Lithium 60hz Mobile 99%",
+    "id": "lithium-60hz-mobile-99",
     "player": "Archermence",
-    "date": "2025-10-01",
-    "length": 130,
+    "date": "2025-10-04",
+    "length": 132,
     "version": 2.2,
     "levelID": 97364686,
-    "video": "https://youtu.be/xg39E3gZVAQ",
+    "video": "https://youtu.be/DttONfenO5w",
     "showcaseVideo": "https://youtu.be/IHqODLf_ZLY",
-    "submitter": "kyle1saurus",
+    "submitter": "Excryst",
     "tags": [
       "Level",
       "Low Hertz",
@@ -14977,5 +14977,6 @@
     ]
   }
 ]
+
 
 
