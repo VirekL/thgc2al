@@ -1810,12 +1810,12 @@
     "id": "tunnel-of-despair",
     "player": "Zoink",
     "levelID": 91351939,
-    "date": "2024-07-02",
+    "date": "2023-06-07",
     "length": 105,
     "version": 2.1,
     "submitter": "Anceps",
     "video": "https://youtu.be/LpS4JREhW98",
-    "showcaseVideo": "https://youtu.be/SgWZkTPHNaM&t=113",
+    "showcaseVideo": "https://youtu.be/SgWZkTPHNaM",
     "tags": [
       "Level",
       "Verified",
@@ -2137,7 +2137,7 @@
     "id": "kyouki",
     "player": "{出見塩}Demishio",
     "levelID": 86018142,
-    "date": "2024-05-15",
+    "date": "2022-11-24",
     "length": 98,
     "version": 2.2,
     "submitter": "Anceps",
@@ -3002,7 +3002,7 @@
     "id": "anodyne",
     "player": "zXdasfsa",
     "levelID": 105191372,
-    "date": "2024-08-27",
+    "date": "2024-05-12",
     "length": 12,
     "version": 2.2,
     "video": "https://youtu.be/zl7cgZI0jrU",
@@ -3873,7 +3873,7 @@
     ]
   },
   {
-	"name": "Old Orochi 52%",
+    "name": "Old Orochi 52%",
     "id": "old-orochi-52",
     "player": "SeptaGon7",
     "date": "2025-10-05",
@@ -5139,21 +5139,21 @@
     ]
   },
   {
-	"name": "ANTARCTIC LIGHTS 25-73%",
-		"id": "antarctic-lights-25-73",
-		"player": "Axinity",
-		"length": 27,
-		"version": 2.2,
-		"video": "https://www.twitch.tv/axinitygd/clip/FurtiveSpikyGalagoWutFace-q0unIL4lErilg0m0?tt_content=clip&tt_medium=mobile_web_share",
-		"date": "2025-10-04",
-		"showcaseVideo": "https://youtu.be/oZfKkZ36L9Q",
-	    "submitter": "kyle1saurus",
-		"tags": [
-			"Progress",
-			"Level"
-		]
-	},
-	{
+    "name": "ANTARCTIC LIGHTS 25-73%",
+    "id": "antarctic-lights-25-73",
+    "player": "Axinity",
+    "length": 27,
+    "version": 2.2,
+    "video": "https://www.twitch.tv/axinitygd/clip/FurtiveSpikyGalagoWutFace-q0unIL4lErilg0m0?tt_content=clip&tt_medium=mobile_web_share",
+    "date": "2025-10-04",
+    "showcaseVideo": "https://youtu.be/oZfKkZ36L9Q",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Lunatic Eyes",
     "id": "lunatic-eyes",
     "player": "DNM121",
@@ -8264,7 +8264,8 @@
     "tags": [
       "Level",
       "Verified"
-    ]
+    ],
+    "showcaseVideo": "https://youtu.be/AauwACwyVBo"
   },
   {
     "name": "shimmer 144hz Mobile",
@@ -9094,21 +9095,21 @@
     ]
   },
   {
-	"name": "ANTARCTIC LIGHTS 51%",
-		"id": "antarctic-lights-51",
-		"player": "Axinity",
-		"length": 37,
-		"version": 2.2,
-		"video": "https://youtu.be/JH8wb8E6ZUM",
-		"date": "2025-10-05",
-		"showcaseVideo": "https://youtu.be/oZfKkZ36L9Q",
-	    "submitter": "Exiled_shade",
-		"tags": [
-			"Progress",
-			"Level"
-		]
-	},
-	{
+    "name": "ANTARCTIC LIGHTS 51%",
+    "id": "antarctic-lights-51",
+    "player": "Axinity",
+    "length": 37,
+    "version": 2.2,
+    "video": "https://youtu.be/JH8wb8E6ZUM",
+    "date": "2025-10-05",
+    "showcaseVideo": "https://youtu.be/oZfKkZ36L9Q",
+    "submitter": "Exiled_shade",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Sonic Wave Infinity 480hz Mobile",
     "id": "sonic-wave-infinity-480hz-mobile",
     "player": "Rotys",
@@ -12561,7 +12562,7 @@
     "id": "the-golden",
     "player": "nSwish",
     "levelID": 60978746,
-    "date": "2023-09-24",
+    "date": "2020-04-18",
     "length": 84,
     "version": 2.1,
     "submitter": "Anceps",
@@ -14927,23 +14928,23 @@
   },
   {
     "name": "WOBBLING MACHINE",
-		"id": "wobbling-machine",
-		"player": "conski",
-		"length": 60,
-		"version": 2.2,
+    "id": "wobbling-machine",
+    "player": "conski",
+    "length": 60,
+    "version": 2.2,
     "submitter": "kyle1saurus",
-		"video": "https://www.youtube.com/watch?v=RKX6VOsICOg",
-		"date": "2024-09-09",
-		"showcaseVideo": "https://youtu.be/RKX6VOsICOg",
-		"levelID": 87130877,
-		"tags": [
-			"2P",
-			"Level",
+    "video": "https://www.youtube.com/watch?v=RKX6VOsICOg",
+    "date": "2024-09-09",
+    "showcaseVideo": "https://youtu.be/RKX6VOsICOg",
+    "levelID": 87130877,
+    "tags": [
+      "Level",
       "Verified",
+      "2P",
       "Rated"
-		]
-	},
-	{
+    ]
+  },
+  {
     "name": "Eternal Silence (Old) 24-100%",
     "id": "eternal-silence-old-24-100",
     "player": "Diamond",
@@ -14977,8 +14978,3 @@
     ]
   }
 ]
-
-
-
-
-
