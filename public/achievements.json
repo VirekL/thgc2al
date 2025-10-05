@@ -3873,6 +3873,22 @@
     ]
   },
   {
+	"name": "Old Orochi 52%",
+    "id": "old-orochi-52",
+    "player": "SeptaGon7",
+    "date": "2025-10-05",
+    "length": 47,
+    "version": 2.2,
+    "video": "https://youtu.be/gSgZ5y4hwc0",
+    "showcaseVideo": "https://youtu.be/kOjaffK5Rgo",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
+  },
+  {
     "name": "leaky faucet",
     "id": "leaky-faucet",
     "player": "seels",
@@ -6385,22 +6401,6 @@
       "Level",
       "Verified",
       "Rated"
-    ]
-  },
-  {
-    "name": "Old Orochi 40%",
-    "id": "old-orochi-40",
-    "player": "SeptaGon7",
-    "date": "2025-02-22",
-    "length": 33,
-    "version": 2.2,
-    "video": "https://youtu.be/pyGEB0EZqiI",
-    "showcaseVideo": "https://youtu.be/kOjaffK5Rgo",
-    "submitter": "SeptaGon7",
-    "tags": [
-      "Level",
-      "Progress",
-      "CBF"
     ]
   },
   {
@@ -9094,6 +9094,21 @@
     ]
   },
   {
+	"name": "ANTARCTIC LIGHTS 51%",
+		"id": "antarctic-lights-51",
+		"player": "Axinity",
+		"length": 37,
+		"version": 2.2,
+		"video": "https://youtu.be/JH8wb8E6ZUM",
+		"date": "2025-10-05",
+		"showcaseVideo": "https://youtu.be/oZfKkZ36L9Q",
+	    "submitter": "Exiled_shade",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
     "name": "Sonic Wave Infinity 480hz Mobile",
     "id": "sonic-wave-infinity-480hz-mobile",
     "player": "Rotys",
@@ -10904,21 +10919,6 @@
     ]
   },
   {
-	"name": "ANTARCTIC LIGHTS 44%",
-		"id": "antarctic-lights-44",
-		"player": "Axinity",
-		"length": 34,
-		"version": 2.2,
-		"video": "https://youtu.be/LjNl_drijSw",
-		"date": "2025-10-04",
-		"showcaseVideo": "https://youtu.be/oZfKkZ36L9Q",
-	    "submitter": "Exiled_shade",
-		"tags": [
-			"Progress",
-			"Level"
-		]
-	},
-	{
     "name": "Delta",
     "id": "delta",
     "player": "Doggie",
@@ -14977,6 +14977,7 @@
     ]
   }
 ]
+
 
 
 
