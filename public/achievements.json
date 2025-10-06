@@ -984,6 +984,23 @@
     ]
   },
   {
+    "name": "Old Orochi 40%x2",
+    "id": "old-orochi-40x2",
+    "player": "SeptaGon7",
+    "date": "2025-10-06",
+    "length": 80,
+    "version": 2.2,
+    "video": "https://www.youtube.com/watch?v=jHWXVKazr98",
+    "showcaseVideo": "https://youtu.be/kOjaffK5Rgo",
+    "submitter": "SeptaGon7",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
+  },
+   {
+   {
     "name": "Blue Avernus",
     "id": "blue-avernus",
     "player": "KlimK",
@@ -9100,7 +9117,7 @@
     "player": "Axinity",
     "length": 37,
     "version": 2.2,
-    "video": "https://youtu.be/JH8wb8E6ZUM",
+    "video": "https://youtu.be/3BvEZmCKcFo",
     "date": "2025-10-05",
     "showcaseVideo": "https://youtu.be/oZfKkZ36L9Q",
     "submitter": "Exiled_shade",
@@ -9587,6 +9604,23 @@
     ]
   },
   {
+    "name": "Silent Clubstep II 18-39%",
+    "id": "silent-clubstep-ii-18-39",
+    "player": "SkittleCatastrophe",
+    "date": "2025-10-04",
+    "length": 18,
+    "version": 2.2,
+    "levelID": 78614226,
+    "video": "https://youtu.be/wdvIUop96iA",
+    "showcaseVideo": "https://youtu.be/mCj_PjC3rs0",
+    "submitter": "Excryst",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+   {
+   {
     "name": "Silent Clubstep II 37-54%",
     "id": "silent-clubstep-ii-37-54",
     "player": "SkittleCatastrophe",
@@ -9998,22 +10032,6 @@
     ]
   },
   {
-    "name": "Silent Clubstep II 18-37%",
-    "id": "silent-clubstep-ii-18-37",
-    "player": "SkittleCatastrophe",
-    "date": "2025-09-06",
-    "length": 16,
-    "version": 2.2,
-    "levelID": 78614226,
-    "video": "https://youtu.be/3iplsk6sMyQ",
-    "showcaseVideo": "https://youtu.be/mCj_PjC3rs0",
-    "submitter": "froggasaurus",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Silent Clubstep II 26%",
     "id": "silent-clubstep-ii-26",
     "player": "SkittleCatastrophe",
@@ -10368,6 +10386,24 @@
     ]
   },
   {
+    "name": "Labyrinth 37%",
+    "id": "labyrinth-37",
+    "player": "GGonop",
+    "length": 31,
+    "version": 2.2,
+    "video": "https://youtu.be/C-zRHRuq0oQ?t=160",
+    "showcaseVideo": "https://youtu.be/skRj5RpaCVk",
+    "date": "2025-08-30",
+    "submitter": "Exiled_shade",
+    "levelID": null,
+    "thumbnail": null,
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+   {
+   {
     "name": "Gumi 86%",
     "id": "gumi-86",
     "player": "Thnnder",
@@ -14979,3 +15015,4 @@
   }
 
 ]
+
