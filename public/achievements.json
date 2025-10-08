@@ -480,7 +480,7 @@
       "Progress"
     ]
   },
-   {
+  {
     "name": "BOOBAWAMBA",
     "id": "boobawamba",
     "player": "EastShark1",
@@ -999,7 +999,7 @@
       "CBF"
     ]
   },
-   {
+  {
     "name": "Blue Avernus",
     "id": "blue-avernus",
     "player": "KlimK",
@@ -2657,7 +2657,7 @@
     "date": "2022-11-02",
     "length": 11,
     "version": 2.1,
-    "video": "https://youtu.be/to_ZI35QuN8",
+    "video": "https://youtu.be/E-nT4bkk4jE",
     "showcaseVideo": "https://youtu.be/GbtLlQQezTA",
     "submitter": "notmaxwell",
     "tags": [
@@ -2726,7 +2726,7 @@
     "length": 7,
     "version": 2.1,
     "submitter": "Excryst",
-    "video": "https://youtu.be/aIPghFsU8d8",
+    "video": "https://youtu.be/N_z_dkKevQ4",
     "tags": [
       "Challenge",
       "Progress"
@@ -2808,7 +2808,7 @@
     "length": 16,
     "version": 2.1,
     "submitter": "Anceps",
-    "video": "https://youtu.be/70c4SvUe-EA",
+    "video": "https://youtu.be/8mEMOrg3RZc",
     "tags": [
       "Challenge",
       "Verified"
@@ -2825,7 +2825,7 @@
     "version": 2.1,
     "levelID": 126120596,
     "showcaseVideo": "https://youtu.be/gTmHcwyymX0",
-    "video": "https://youtu.be/IB5GvwzrB9c",
+    "video": "https://youtu.be/p3NdbRErpoA",
     "submitter": "Anceps",
     "tags": [
       "Challenge",
@@ -2840,7 +2840,7 @@
     "date": "2022-10-15",
     "length": 14,
     "version": 2.1,
-    "video": "https://youtu.be/93XUo7M87nk",
+    "video": "https://youtu.be/SMg9Pl7eyUk",
     "showcaseVideo": "https://youtu.be/GbtLlQQezTA",
     "submitter": "kyle1saurus",
     "tags": [
@@ -2874,7 +2874,7 @@
     "version": 2.1,
     "levelID": 60805571,
     "showcaseVideo": "https://youtu.be/GbtLlQQezTA",
-    "video": "https://youtu.be/A9f2CYbI8r0",
+    "video": "https://youtu.be/-Lftx4xc2GI",
     "submitter": "kyle1saurus",
     "tags": [
       "Challenge",
@@ -3783,7 +3783,7 @@
     "date": "2023-01-06",
     "length": 9,
     "version": 2.1,
-    "video": "https://youtu.be/A2fduFqvL2I",
+    "video": "https://www.youtube.com/watch?v=kjiqujqXoxw",
     "submitter": "kyle1saurus",
     "tags": [
       "Challenge",
@@ -9599,7 +9599,7 @@
       "Progress"
     ]
   },
-   {
+  {
     "name": "Silent Clubstep II 37-54%",
     "id": "silent-clubstep-ii-37-54",
     "player": "SkittleCatastrophe",
@@ -9690,13 +9690,13 @@
     ]
   },
   {
-    "name": "Silent Circles 70%",
-    "id": "silent-circles-70",
-    "player": "Dolphy",
+    "name": "Silent Circles 70% (Zynvire Unnerfed)",
+    "id": "silent-circles-70-zynvire-unnerfed",
+    "player": "-",
     "date": "2021-11-14",
     "length": 80,
     "version": 2.1,
-    "video": "https://youtu.be/lr0t9ea0tck",
+    "video": "https://youtu.be/2kxxOEbS58o",
     "showcaseVideo": "https://youtu.be/lMTOnatGZjg",
     "submitter": "TYATYAPKA",
     "tags": [
@@ -10397,7 +10397,7 @@
       "Progress"
     ]
   },
-   {
+  {
     "name": "Gumi 86%",
     "id": "gumi-86",
     "player": "Thnnder",
@@ -10484,13 +10484,13 @@
   {
     "name": "Tartarus",
     "id": "tartarus",
-    "player": "Dolphy",
+    "player": "Mullsy",
     "levelID": 59075347,
-    "date": "2020-01-06",
+    "date": "2020-02-09",
     "length": 87,
     "version": 2.1,
     "submitter": "Anceps",
-    "video": "https://youtu.be/9YYQBbrsV5Y",
+    "video": "https://youtu.be/Yx2IHj6YpRw",
     "showcaseVideo": "https://youtu.be/lm1498Rfl0s",
     "tags": [
       "Level",
@@ -12752,13 +12752,13 @@
     ]
   },
   {
-    "name": "Silent Circles 30-100%",
-    "id": "silent-circles-30-100",
-    "player": "Dolphy",
+    "name": "Silent Circles 30-100% (Zynvire Unnerfed)",
+    "id": "silent-circles-30-100-zynvire-unnerfed",
+    "player": "-",
     "date": "2020-12-28",
     "length": 84,
     "version": 2.1,
-    "video": "https://youtu.be/qBDq2KFY0WQ",
+    "video": "https://youtu.be/bWPl6WoT8mk",
     "showcaseVideo": "https://youtu.be/lMTOnatGZjg",
     "submitter": "TYATYAPKA",
     "tags": [
@@ -15007,6 +15007,4 @@
       "Rated"
     ]
   }
-
 ]
-
