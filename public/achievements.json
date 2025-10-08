@@ -264,6 +264,22 @@
     ]
   },
   {
+    "name": "SARY NEVER CLEAR",
+    "id": "sary-never-clear",
+    "player": "Glow",
+    "length": 75,
+    "version": 2.1,
+    "video": "https://youtu.be/Hpo77uVq75M",
+    "showcaseVideo": "https://youtu.be/a-xQc7_GnA8",
+    "date": "2025-10-05",
+    "submitter": "Exiled_Shade",
+    "levelID": 609629,
+    "tags": [
+      "Level",
+      "Verified"
+    ]
+  },
+  {
     "name": "VSC x2",
     "id": "vsc-x2",
     "player": "-",
@@ -11004,7 +11020,7 @@
   {
     "name": "Theory Of Darkness (Old)",
     "id": "theory-of-darkness-old",
-    "player": "Sirplus",
+    "player": "Glow",
     "levelID": 68243886,
     "date": "2024-12-14",
     "length": 84,
