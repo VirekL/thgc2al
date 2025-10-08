@@ -477,7 +477,7 @@
     {
         "id": "tartarus",
         "name": "Tartarus",
-        "player": "Dolphy",
+        "player": "-",
         "tags": [
             "Level",
             "Rated",
@@ -487,13 +487,13 @@
         "version": "2.1",
         "date": "2020-01-06",
         "levelID": "59075347",
-        "video": "https://youtu.be/9YYQBbrsV5Y",
+        "video": "https://youtu.be/UGzWwFD3-gk",
         "showcaseVideo": "https://youtu.be/lm1498Rfl0s"
     },
     {
         "id": "tartarus-98",
         "name": "Tartarus 98%",
-        "player": "Dolphy",
+        "player": "-",
         "thumbnail": "https://i.ytimg.com/vi/sz66-l_kdrk/hq720.jpg",
         "tags": [
             "Progress",
@@ -504,7 +504,7 @@
         "version": "2.1",
         "date": "2019-12-30",
         "levelID": "59075347",
-        "video": "https://youtu.be/o7fzA4O_Aak",
+        "video": "https://youtu.be/jAHi9t6l7b4",
         "showcaseVideo": "https://youtu.be/lm1498Rfl0s"
     },
     {
@@ -1461,6 +1461,7 @@
         "video": "https://youtu.be/727pUHwWSVg"
     }
 ]
+
 
 
 
