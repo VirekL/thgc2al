@@ -7,18 +7,34 @@ import Tag, { TAG_PRIORITY_ORDER } from '../components/Tag';
 import Link from 'next/link';
 import DevModePanel from '../components/DevModePanel';
 
+function parseAsLocal(input) {
+  if (!input) return null;
+  if (input instanceof Date) return input;
+  if (typeof input === 'number') return new Date(input);
+  if (typeof input !== 'string') return new Date(input);
+  const m = input.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (m) {
+    const y = Number(m[1]);
+    const mo = Number(m[2]);
+    const d = Number(m[3]);
+    return new Date(y, mo - 1, d);
+  }
+  return new Date(input);
+}
+
 function calculateDaysLasted(currentDate, previousDate) {
   if (!currentDate || !previousDate) return 'N/A';
-  const current = new Date(currentDate);
-  const previous = new Date(previousDate);
+  const current = parseAsLocal(currentDate);
+  const previous = parseAsLocal(previousDate);
+  if (!current || !previous || isNaN(current) || isNaN(previous)) return 'N/A';
   const diffTime = Math.abs(current - previous);
   return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 }
 
 function formatDate(date, dateFormat) {
   if (!date) return 'N/A';
-  const d = new Date(date);
-  if (isNaN(d)) return 'N/A';
+  const d = parseAsLocal(date);
+  if (!d || isNaN(d)) return 'N/A';
   const yy = String(d.getFullYear()).slice(-2);
   const yyyy = d.getFullYear();
   const mm = String(d.getMonth() + 1).padStart(2, '0');
@@ -39,8 +55,8 @@ function TimelineAchievementCardInner({ achievement, previousAchievement, onEdit
   } else {
     // Calculate days from achievement date to today
     const today = new Date();
-    const achievementDate = new Date(achievement.date);
-    if (!achievement.date || isNaN(achievementDate)) {
+    const achievementDate = parseAsLocal(achievement.date);
+    if (!achievement.date || !achievementDate || isNaN(achievementDate)) {
       lastedLabel = 'Lasting N/A days';
     } else {
       const diffTime = Math.abs(today - achievementDate);
@@ -170,7 +186,11 @@ export default function Timeline() {
     fetch('/timeline.json')
       .then(res => res.json())
       .then(data => {
-        const sorted = [...data].sort((a, b) => new Date(b.date) - new Date(a.date));
+        const sorted = [...data].sort((a, b) => {
+          const da = parseAsLocal(a.date);
+          const db = parseAsLocal(b.date);
+          return (db ? db.getTime() : 0) - (da ? da.getTime() : 0);
+        });
         setAchievements(sorted);
         const tags = new Set();
         sorted.forEach(a => (a.tags || []).forEach(t => tags.add(t)));
