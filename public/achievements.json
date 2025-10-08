@@ -1755,25 +1755,6 @@
     ]
   },
   {
-    "name": "Lithium 60hz Mobile 7-100%",
-    "id": "lithium-60hz-mobile-7-100",
-    "player": "Archermence",
-    "length": 113,
-    "version": 2.2,
-    "video": "https://youtu.be/6tOxAetxo1g",
-    "showcaseVideo": "https://youtu.be/IHqODLf_ZLY",
-    "date": "2025-08-10",
-    "submitter": "TYATYAPKA",
-    "levelID": 97364686,
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Progress",
-      "Rated"
-    ]
-  },
-  {
     "name": "Exens limit 165%",
     "id": "exens-limit-165",
     "player": "Skylar",
@@ -10336,6 +10317,22 @@
     ]
   },
   {
+    "name": "ULTRA PARACOSM 22-100%",
+    "id": "ultra-paracosm-22-100",
+    "player": "Wity",
+    "levelID": null,
+    "date": "2025-10-07",
+    "length": 56,
+    "version": 2.2,
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/nuoSvINCKm8",
+    "showcaseVideo": "https://youtu.be/E0sQ4n9gCfc",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Blooming Blossoms 67%",
     "id": "blooming-blossoms-67",
     "player": "piesy",
@@ -15012,3 +15009,4 @@
   }
 
 ]
+
