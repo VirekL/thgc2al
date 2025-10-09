@@ -15275,6 +15275,22 @@
 		]
 	},
 	{
+		"name": "angels trumpet",
+		"id": "angels-trumpet",
+		"player": "Karmakaze",
+		"length": "87",
+		"version": "2.1",
+		"video": "https://www.youtube.com/watch?v=eqyd78Vwi60",
+		"date": "2025-07-22",
+		"showcaseVideo": "https://youtu.be/rDbWp7Ct5K0",
+        "submitter": "kyle1saurus",
+		"levelID": 123332770,
+		"tags": [
+			"Verified",
+			"Level"
+		]
+	},
+	{
 		"name": "Lotus Flower 120hz Mobile 70%",
 		"id": "lotus-flower-120hz-mobile-70",
 		"player": "Quivert",
@@ -15348,11 +15364,11 @@
 		"video": "https://www.youtube.com/watch?v=JVujJ9q3R8A",
 		"date": "2024-08-26",
 		"showcaseVideo": "https://www.youtube.com/watch?v=kNf9czeolCk",
-    "submitter": "Anceps",
+        "submitter": "Anceps",
 		"levelID": 8814333,
 		"tags": [
 			"2P",
-      "Verified",
+            "Verified",
 			"Level"
 		]
 	},
@@ -15365,10 +15381,10 @@
 		"video": "https://youtu.be/MVVzz79Pbfs",
 		"date": "2025-01-20",
 		"showcaseVideo": "https://youtu.be/MVVzz79Pbfs",
-    "submitter": "kyle1saurus",
+        "submitter": "kyle1saurus",
 		"levelID": 110029882,
 		"tags": [
-      "Verified",
+            "Verified",
 			"Level"
 		]
 	},
@@ -15381,7 +15397,7 @@
 		"video": "https://youtu.be/yKaqqOouQvc",
 		"date": "2023-01-15",
 		"showcaseVideo": "https://youtu.be/Go2xnL5uStI",
-    "submitter": "TYATYAPKA",
+        "submitter": "TYATYAPKA",
 		"tags": [
 			"Progress",
 			"Level"
@@ -15396,10 +15412,26 @@
 		"video": "https://www.youtube.com/watch?v=eo0o8YNiVSc",
 		"date": "2022-02-09",
 		"showcaseVideo": "https://www.youtube.com/watch?v=J3-uOsU29bQ",
-    "submitter": "Anceps",
+        "submitter": "Anceps",
 		"levelID": 78004719,
 		"tags": [
-      "Verified",
+            "Verified",
+			"Level"
+		]
+	},
+	{
+		"name": "Fate",
+		"id": "Fate",
+		"player": "paranoiacAK",
+		"length": 98,
+		"version": 2.2,
+		"video": "https://youtu.be/lqHosZ1gN6A",
+		"date": "2025-07-22",
+		"showcaseVideo": "https://youtu.be/2NEl6HQNnAQ",
+        "submitter": "kyle1saurus",
+		"levelID": 49856549,
+		"tags": [
+			"Verified",
 			"Level"
 		]
 	},
@@ -15412,10 +15444,10 @@
 		"video": "https://www.youtube.com/watch?v=gtiDd4Fqpgc",
 		"date": "2024-07-29",
 		"showcaseVideo": "https://www.youtube.com/watch?v=gtiDd4Fqpgc",
-    "submitter": "Anceps",
+        "submitter": "Anceps",
 		"levelID": "108391836",
 		"tags": [
-      "Verified",
+            "Verified",
 			"Level"
 		]
 	},
@@ -15428,7 +15460,7 @@
 		"video": "https://youtu.be/UQBB6_nDe8Y",
 		"date": "2022-07-19",
 		"showcaseVideo": "https://youtu.be/uzhaj0VgK7Q",
-    "submitter": "kyle1saurus",
+        "submitter": "kyle1saurus",
 		"tags": [
 			"Progress",
 			"Level"
@@ -15832,5 +15864,6 @@
     ]
   }
 ]
+
 
 
