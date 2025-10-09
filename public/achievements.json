@@ -15007,6 +15007,783 @@
     ]
   },
   {
+		"name": "Escalator (swiborg) 31%",
+		"id": "escalator-swiborg-31",
+		"player": "swiborg",
+		"length": 31,
+		"version": 2.2,
+		"video": "https://youtu.be/yfckXIfkr74",
+		"date": "2024-08-23",
+		"showcaseVideo": "https://youtu.be/aeDdsVuYeH0",
+    "submitter": "kyle1saurus",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Firework (OverGD) 5-51%",
+		"id": "firework-overgd-5-51",
+		"player": "OverGD",
+		"length": 58,
+		"version": 2.1,
+		"video": "https://youtu.be/5R3iYp-B0yg",
+		"date": "2021-10-15",
+		"levelID": 74745688,
+    "submitter": "kyle1saurus",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Multiplicity",
+		"id": "multiplicity",
+		"player": "cobrablitz",
+		"length": 201,
+		"version": 2.2,
+		"video": "https://www.youtube.com/watch?v=6YVLBQ8xKyo",
+		"date": "2024-02-25",
+		"showcaseVideo": "https://youtu.be/3WJX3exhm1c?t=2",
+		"levelID": 101502608,
+    "submitter": "Anceps",
+		"tags": [
+      "Verified",
+			"Level"
+		]
+	},
+	{
+		"name": "Sonic Wave Rebirth 60hz 27-100%",
+		"id": "sonic-wave-rebirth-60hz-27-100",
+		"player": "Cedric22",
+		"length": 91,
+		"version": 2.2,
+		"video": "https://youtu.be/9J_vEAnzwuE",
+		"date": "2024-09-03",
+		"showcaseVideo": "https://youtu.be/5VWq3JL3DnA",
+		"levelID": 68688849,
+    "submitter": "kyle1saurus",
+		"tags": [
+			"Rated",
+			"Low Hertz",
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Delusion 1.2x",
+		"id": "delusion-12x",
+		"player": "Nintenfox",
+		"length": 13,
+		"version": 2.1,
+		"video": "https://youtu.be/rNnG_6Jjf-c",
+		"date": "2022-10-29",
+		"showcaseVideo": "https://youtu.be/z624rRd1Z2U",
+		"levelID": 65348932,
+    "submitter": "Nintenfox",
+		"tags": [
+			"Speedhack",
+			"Challenge"
+		]
+	},
+	{
+		"name": "Moscow Moment",
+		"id": "moscow-moment",
+		"player": "coakmuffer",
+		"length": 14,
+		"version": 2.1,
+		"video": "https://youtu.be/z6jD095t9mI",
+		"date": "2024-02-16",
+		"showcaseVideo": "https://youtu.be/9lDFDUTNrmg",
+    "submitter": "Arcadie",
+		"levelID": 100997107,
+		"tags": [
+      "Verified",
+			"Challenge"
+		]
+	},
+	{
+		"name": "Edge of the Blade 75hz",
+		"id": "edge-of-the-blade-75hz",
+		"player": "wwdonut",
+		"length": 146,
+		"version": 2.1,
+		"video": "https://www.youtube.com/watch?v=51yUPVx5y_A",
+		"date": "2022-01-31",
+		"showcaseVideo": "https://www.youtube.com/watch?v=rR625vRY_Qc",
+		"levelID": 61366470,
+    "submitter": "kyle1saurus",
+		"tags": [
+			"Rated",
+			"Low Hertz",
+			"Level"
+		]
+	},
+	{
+		"name": "Graceful (enzbro) 78%",
+		"id": "graceful-enzbro-78",
+		"player": "enzbro",
+		"length": 112,
+		"version": 2.2,
+		"video": "https://youtu.be/jocmg-mkxFE",
+		"date": "2024-08-07",
+		"showcaseVideo": "https://youtu.be/ZWToZZ5EYw0",
+    "submitter": "TYATYAPKA",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Ganja Guay",
+		"id": "ganja-guay",
+		"player": "nintenfox",
+		"length": 16,
+		"version": 2.1,
+		"video": "https://youtu.be/aKVG06xmgbc",
+		"date": "2022-12-10",
+		"showcaseVideo": "https://youtu.be/BNLDlXCJXc0",
+    "submitter": "Arcadie",
+		"levelID": 86603466,
+		"tags": [
+      "Verified",
+			"Challenge"
+		]
+	},
+	{
+		"name": "Mega Epic Theory",
+		"id": "mega-epic-theory",
+		"player": "Paranoiac",
+		"length": 89,
+		"version": 2.2,
+		"video": "https://youtu.be/9hxHZRwCSO8",
+		"date": "2024-10-27",
+		"showcaseVideo": "https://youtu.be/9hxHZRwCSO8",
+    "submitter": "kyle1saurus",
+		"levelID": 97429118,
+		"tags": [
+      "Verified",
+			"Level"
+		]
+	},
+	{
+		"name": "tartartus spaceuk",
+		"id": "tartartus-spaceuk",
+		"player": "Sevant",
+		"length": 87,
+		"version": 2.2,
+		"video": "https://youtu.be/HnccqQYQofo",
+		"date": "2025-01-17",
+		"showcaseVideo": "https://youtu.be/HnccqQYQofo",
+    "submitter": "kyle1saurus",
+		"levelID": 71715538,
+		"tags": [
+			"CBF",
+      "Verified",
+			"Level"
+		]
+	},
+	{
+		"name": "Forsaken Hell",
+		"id": "forsaken-hell",
+		"player": "SpirteX",
+		"length": 83,
+		"version": 2.1,
+		"video": "https://www.youtube.com/watch?v=ZQsSRZpcWsY",
+		"date": "2023-08-03",
+		"showcaseVideo": "https://www.youtube.com/watch?v=M7JnAzuAirg",
+    "submitter": "Anceps",
+		"levelID": 67073198,
+		"tags": [
+      "Verified",
+			"Level"
+		]
+	},
+	{
+		"name": "Delirium (Buter) 45-100%",
+		"id": "delirium-buter-45-100",
+		"player": "Buter",
+		"length": 8,
+		"version": 2.1,
+		"video": "https://youtu.be/ctLYNf4FEag",
+    "submitter": "sydno",
+		"date": "2023-01-15",
+		"tags": [
+			"Progress",
+			"Challenge"
+		]
+	},
+	{
+		"name": "LESOPOWAL (Layout) 48-100%",
+		"id": "lesopowal-layout-48-100",
+		"player": "Kopyedz",
+		"length": 53,
+		"version": 2.2,
+		"video": "https://www.youtube.com/live/kS_QUh8678g?t=2607",
+		"date": "2024-06-05",
+		"showcaseVideo": "https://youtu.be/BgcDoAgWG5U",
+    "submitter": "kyle1saurus",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "DeathCorridor Oldest 47%",
+		"id": "deathcorridor-oldest-47",
+		"player": "Hover",
+		"length": 62,
+		"version": 2.2,
+		"video": "https://youtu.be/wPzn1IibZ3Q",
+		"date": "2025-01-17",
+		"showcaseVideo": "https://www.youtube.com/watch?v=zlhz-xZJ3hI",
+    "submitter": "kyle1saurus",
+		"levelID": 95122145,
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Invisible Slaughterhouse 25-51%",
+		"id": "invisible-slaughterhouse-25-51",
+		"player": "enfix",
+		"length": 14,
+		"version": 2.1,
+		"video": "https://youtu.be/yIeX5TA4yvs",
+    "submitter": "kyle1saurus",
+		"date": "2023-03-17",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "DOOM",
+		"id": "doom",
+		"player": "Hover",
+		"length": 102,
+		"version": 2.1,
+		"video": "https://www.youtube.com/watch?v=JnQ5D7M58wg",
+		"date": "2021-11-26",
+		"showcaseVideo": "https://www.youtube.com/watch?v=z-6gm2rRZWI",
+    "submitter": "Anceps",
+		"levelID": 76067580,
+		"tags": [
+      "Verified",
+			"Level"
+		]
+	},
+	{
+		"name": "Lotus Flower 120hz Mobile 70%",
+		"id": "lotus-flower-120hz-mobile-70",
+		"player": "Quivert",
+		"length": 65,
+		"version": 2.1,
+		"video": "https://youtu.be/dtF1yYbYIeQ",
+		"date": "2023-06-19",
+		"showcaseVideo": "https://youtu.be/VdkP-9DvGsw",
+    "submitter": "Quivert",
+		"levelID": 75813671,
+		"tags": [
+			"Rated",
+			"Low Hertz",
+			"Mobile",
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Lust 31-100%",
+		"id": "lust-31-100",
+		"player": "Meatius",
+		"length": 14,
+		"version": 2.1,
+		"video": "https://youtu.be/KT9R7Tm4IxA",
+		"date": "2020-09-14",
+		"showcaseVideo": "https://youtu.be/05o99giT0aM",
+    "submitter": "TYATYAPKA",
+		"tags": [
+			"Progress",
+			"Challenge"
+		]
+	},
+	{
+		"name": "Silent Circles (Xanii old) 41-100%",
+		"id": "silent-circles-xanii-old-41-100",
+		"player": "Xanii",
+		"length": 58,
+		"version": 2.1,
+		"video": "https://www.youtube.com/watch?v=oKyfbdkxuzw",
+		"date": "2022-02-07",
+		"showcaseVideo": "https://youtu.be/lMTOnatGZjg?si=2n493aJ-zxQ59WJO",
+    "submitter": "TYATYAPKA",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Cyclone Machine",
+		"id": "cyclone-machine",
+		"player": "exsii",
+		"length": 97,
+		"version": 2.1,
+		"video": "https://www.youtube.com/watch?v=MF-LcRdvjHQ",
+		"date": "2024-09-14",
+		"showcaseVideo": "https://www.youtube.com/watch?v=DZAtOKifjSM",
+    "submitter": "Anceps",
+		"levelID": 58176589,
+		"tags": [
+      "Verified",
+			"Level"
+		]
+	},
+	{
+		"name": "vortex",
+		"id": "vortex",
+		"player": "exsii",
+		"length": "84",
+		"version": "2.1",
+		"video": "https://www.youtube.com/watch?v=JVujJ9q3R8A",
+		"date": "2024-08-26",
+		"showcaseVideo": "https://www.youtube.com/watch?v=kNf9czeolCk",
+    "submitter": "Anceps",
+		"levelID": 8814333,
+		"tags": [
+			"2P",
+      "Verified",
+			"Level"
+		]
+	},
+	{
+		"name": "Demons",
+		"id": "demons",
+		"player": "JohnLikesDiamond",
+		"length": "90",
+		"version": "2.2",
+		"video": "https://youtu.be/MVVzz79Pbfs",
+		"date": "2025-01-20",
+		"showcaseVideo": "https://youtu.be/MVVzz79Pbfs",
+    "submitter": "kyle1saurus",
+		"levelID": 110029882,
+		"tags": [
+      "Verified",
+			"Level"
+		]
+	},
+	{
+		"name": "Anemesis (Old) 21-95%",
+		"id": "anemesis-old-21-95",
+		"player": "The Nixuz GD",
+		"length": "69",
+		"version": "2.1",
+		"video": "https://youtu.be/yKaqqOouQvc",
+		"date": "2023-01-15",
+		"showcaseVideo": "https://youtu.be/Go2xnL5uStI",
+    "submitter": "TYATYAPKA",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Enjoy",
+		"id": "enjoy",
+		"player": "HipoAR",
+		"length": "60",
+		"version": "2.1",
+		"video": "https://www.youtube.com/watch?v=eo0o8YNiVSc",
+		"date": "2022-02-09",
+		"showcaseVideo": "https://www.youtube.com/watch?v=J3-uOsU29bQ",
+    "submitter": "Anceps",
+		"levelID": 78004719,
+		"tags": [
+      "Verified",
+			"Level"
+		]
+	},
+	{
+		"name": "Sephiroth",
+		"id": "sephiroth",
+		"player": "ElEek",
+		"length": "33",
+		"version": "2.2",
+		"video": "https://www.youtube.com/watch?v=gtiDd4Fqpgc",
+		"date": "2024-07-29",
+		"showcaseVideo": "https://www.youtube.com/watch?v=gtiDd4Fqpgc",
+    "submitter": "Anceps",
+		"levelID": "108391836",
+		"tags": [
+      "Verified",
+			"Level"
+		]
+	},
+	{
+		"name": "Sweeping Demon 2 (Thnnder) 21-55%",
+		"id": "sweeping-demon-2-thnnder-21-55",
+		"player": "Thnnder",
+		"length": "19",
+		"version": "2.1",
+		"video": "https://youtu.be/UQBB6_nDe8Y",
+		"date": "2022-07-19",
+		"showcaseVideo": "https://youtu.be/uzhaj0VgK7Q",
+    "submitter": "kyle1saurus",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Zero Factorial (lMarro) 31%",
+		"id": "zero-factorial-lmarro-31",
+		"player": "Cat enthusiast",
+		"length": "9",
+		"version": "2.2",
+		"video": "https://youtu.be/nbAto465Spg",
+		"date": "2024-06-04",
+		"showcaseVideo": "https://youtu.be/A5bn2ayPdu8",
+		"levelID": 71132224,
+    "submitter": "TYATYAPKA",
+		"tags": [
+			"CBF",
+			"Progress",
+			"Challenge"
+		]
+	},
+	{
+		"name": "Surface",
+		"id": "surface",
+		"player": "yolettuce",
+		"length": "144",
+		"version": "2.2",
+		"video": "https://www.youtube.com/watch?v=bLYjChY-FY0",
+		"date": "2024-04-28",
+		"showcaseVideo": "https://www.youtube.com/watch?v=bLYjChY-FY0",
+    "submitter": "Anceps",
+		"levelID": 104594106,
+		"tags": [
+      "Verified",
+			"Level"
+		]
+	},
+	{
+		"name": "Snowblind (Old) 49-100%",
+		"id": "snowblind-old-49-100",
+		"player": "Hippo",
+		"length": "35",
+		"version": "2.2",
+		"video": "https://youtu.be/gQhEsawxg-o",
+		"date": "2025-01-13",
+		"showcaseVideo": "https://youtu.be/Qi6yu86LUZY",
+    "submitter": "kyle1saurus",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Haunted Corridor",
+		"id": "haunted-corridor",
+		"player": "fusion425",
+		"length": "102",
+		"version": "2.1",
+		"video": "https://www.youtube.com/watch?v=mvroqJQBvCo",
+		"date": "2023-07-26",
+		"showcaseVideo": "https://www.youtube.com/watch?v=zGS45zQzIaE",
+    "submitter": "Anceps",
+		"levelID": "75638264",
+		"tags": [
+      "Verified",
+			"Level"
+		]
+	},
+	{
+		"name": "Haunted Corridor (Old)",
+		"id": "haunted-corridor-old",
+		"player": "Axinity",
+		"length": "102",
+		"version": "2.1",
+		"video": "https://youtu.be/sfbxSiOWZQI",
+    "submitter": "kyle1saurus",
+		"date": "2021-11-12",
+		"tags": [
+			"Level"
+		]
+	},
+	{
+		"name": "Iceberg (Old)",
+		"id": "iceberg-old",
+		"player": "fusion425",
+		"length": "71",
+		"version": "2.1",
+		"video": "https://youtu.be/-ZuH8YEe8Bw",
+    "submitter": "Anceps",
+		"date": "2024-02-21",
+		"tags": [
+      "Verified",
+			"Level"
+		]
+	},
+	{
+		"name": "Iceberg",
+		"id": "iceberg",
+		"player": "fusion425",
+		"length": "71",
+		"version": "2.1",
+		"video": "https://youtu.be/cOxFhUMx4SI",
+		"date": "2024-09-24",
+		"showcaseVideo": "https://www.youtube.com/watch?v=pbMxgNMwzLU",
+    "submitter": "kyle1saurus",
+		"levelID": 101377930,
+		"tags": [
+      "Verified",
+			"Level"
+		]
+	},
+	{
+		"name": "Sonic Wave 30hz 64-100%",
+		"id": "sonic-wave-30hz-64-100",
+		"player": "Bread",
+		"length": "43",
+		"version": "2.1",
+		"video": "https://youtu.be/wI5RrVHqjsI",
+		"date": "2023-10-27",
+		"showcaseVideo": "https://www.youtube.com/watch?v=6v_pWirR72Q",
+    "submitter": "kyle1saurus",
+		"levelID": "26681070",
+		"tags": [
+			"Rated",
+			"Low Hertz",
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Esfera",
+		"id": "esfera",
+		"player": "Baeru",
+		"length": "266",
+		"version": "2.1",
+		"video": "https://www.youtube.com/watch?v=GK0Z8rgziH4",
+		"date": "2022-02-27",
+		"showcaseVideo": "https://www.youtube.com/watch?v=12GvuLkEtLI",
+    "submitter": "Anceps",
+		"levelID": 78435955,
+		"tags": [
+			"Rated",
+      "Verified",
+			"Level"
+		]
+	},
+	{
+		"name": "Heliopolis (Pablohh) 36%",
+		"id": "heliopolis-pablohh-36",
+		"player": "Pablohh",
+		"length": "65",
+		"version": "2.1",
+		"video": "https://youtu.be/pftgX9CP3AU",
+		"date": "2023-10-31",
+		"showcaseVideo": "https://youtu.be/cauESqvblKw",
+    "submitter": "kyle1saurus",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "521 MINIONS",
+		"id": "521-minions",
+		"player": "OverGD",
+		"length": "6",
+		"version": "2.1",
+		"video": "https://youtu.be/5SI40uhCJ94",
+		"date": "2023-08-20",
+		"showcaseVideo": "https://youtu.be/5SI40uhCJ94",
+    "submitter": "Nintenfox",
+		"levelID": 93628238,
+		"tags": [
+      "Verified",
+			"Challenge"
+		]
+	},
+	{
+		"name": "521",
+		"id": "521",
+		"player": "NcaT",
+		"length": "6",
+		"version": "2.1",
+		"video": "https://youtu.be/fTCTfyjFjGQ",
+		"date": "2022-11-15",
+    "submitter": "Anceps",
+		"levelID": 85701165,
+		"tags": [
+      "Verified",
+			"Challenge"
+		]
+	},
+	{
+		"name": "Silent Circles (SerVax) 42-100%",
+		"id": "silent-circles-servax-42-100",
+		"player": "SerVax",
+		"length": "58",
+		"version": "2.2",
+		"video": "https://youtu.be/w_Bp_QS4tsI",
+    "submitter": "kyle1saurus",
+		"date": "2024-12-10",
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "Omega 60hz",
+		"id": "omega-60hz",
+		"player": "JudeRB",
+		"length": "156",
+		"version": "2.1",
+		"video": "https://youtu.be/vu99yigOo7g",
+		"date": "2024-06-26",
+		"showcaseVideo": "https://www.youtube.com/watch?v=N33-73ESbx8",
+    "submitter": "kyle1saurus",
+		"levelID": 59706883,
+		"tags": [
+			"Rated",
+			"Low Hertz",
+			"Level"
+		]
+	},
+	{
+		"name": "lebron james",
+		"id": "lebron-james",
+		"player": "LAMINGTON",
+		"length": "5",
+		"version": "2.2",
+		"video": "https://youtu.be/CwuLCJiX4c0",
+		"date": "2025-01-11",
+		"showcaseVideo": "https://youtu.be/CwuLCJiX4c0",
+    "submitter": "kyle1saurus",
+		"levelID": 112934309,
+		"tags": [
+      "Verified",
+			"Challenge"
+		]
+	},
+	{
+		"name": "cooked",
+		"id": "cooked",
+		"player": "seels",
+		"length": "27",
+		"version": "2.1",
+		"video": "https://youtu.be/pwMc6S7mUF8?t=242",
+		"date": "2024-01-26",
+		"showcaseVideo": "https://youtu.be/pwMc6S7mUF8?t=242",
+    "submitter": "Anceps",
+		"levelID": 99525944,
+		"tags": [
+      "Verified",
+			"Challenge"
+		]
+	},
+	{
+		"name": "Aeternus 15%",
+		"id": "aeternus-15",
+		"player": "Chill Guy",
+		"length": "11",
+		"version": "2.2",
+		"video": "https://www.youtube.com/watch?v=oWaLfIH1hwk",
+		"date": "2024-10-21",
+		"showcaseVideo": "https://www.youtube.com/watch?v=p4QgFtKL5kE",
+    "submitter": "kyle1saurus",
+		"levelID": 102647436,
+		"tags": [
+			"Progress",
+			"Level"
+		]
+	},
+	{
+		"name": "WarCora Challenge",
+		"id": "warcora-challenge",
+		"player": "GD!Frisk",
+		"length": "9",
+		"version": "2.1",
+		"video": "https://youtu.be/NgJBgU3kEUM",
+		"date": "2023-09-25",
+		"showcaseVideo": "https://youtu.be/NgJBgU3kEUM",
+    "submitter": "GD!Frisk",
+		"levelID": 92648956,
+		"tags": [
+      "Verified",
+			"Challenge"
+		]
+	},
+	{
+		"name": "Glaz Diavola",
+		"id": "glaz-diavola",
+		"player": "cring",
+		"length": "9",
+		"version": "2.1",
+		"video": "https://youtu.be/jOZRbHU5ldA",
+		"date": "2023-10-16",
+		"showcaseVideo": "https://youtu.be/5UtPYnXjy_Q",
+    "submitter": "Anceps",
+		"levelID": 77593145,
+		"tags": [
+      "Verified",
+			"Challenge"
+		]
+	},
+	{
+		"name": "Axinie",
+		"id": "axinie",
+		"player": "SaturMan",
+		"length": "119",
+		"version": "2.2",
+		"video": "https://www.youtube.com/watch?v=LjfO2fqnozI",
+		"date": "2024-07-02",
+		"showcaseVideo": "https://www.youtube.com/watch?v=9YkrYVZ8X_8",
+    "submitter": "Anceps",
+		"levelID": 107299600,
+		"tags": [
+			"Rated",
+      "Verified",
+			"Level"
+		]
+	},
+	{
+		"name": "ktw",
+		"id": "ktw",
+		"player": "zRoud",
+		"length": "18",
+		"version": "2.1",
+		"video": "https://youtu.be/6osZEpKGgks",
+		"date": "2023-07-21",
+		"showcaseVideo": "https://youtu.be/6osZEpKGgks",
+    "submitter": "kyle1saurus",
+		"levelID": 90432431,
+		"tags": [
+			"Challenge",
+      "Verified"
+		]
+	},
+	{
+		"name": "NEUTRA",
+		"id": "neutra",
+		"player": "AeonAir",
+		"length": "87",
+		"version": "2.1",
+		"video": "https://www.youtube.com/watch?v=0fNBFwNS1qg",
+		"date": "2023-02-14",
+		"showcaseVideo": "https://www.youtube.com/watch?v=5jd1xU6JCAI",
+    "submitter": "Anceps",
+		"levelID": 88611404,
+		"tags": [
+			"Rated",
+      "Verified",
+			"Level"
+		]
+	},
+	{
     "name": "Zodiac",
     "id": "zodiac",
     "player": "Technical",
@@ -15024,3 +15801,4 @@
     ]
   }
 ]
+
