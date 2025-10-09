@@ -1,18 +1,34 @@
 [
 	{
-	"name": "Purplehouse 25-95%",
-    "id": "purplehouse-25-95",
-    "player": "Xtra8nugs",
-    "levelID": null,
-    "date": "2025-09-09",
-    "length": 38,
+	"name": "fladge",
+    "id": "fladge",
+    "player": "CHOOONK",
+    "levelID": 126722733,
+    "date": "2025-10-05",
+    "length": 79,
     "version": 2.2,
     "submitter": "kyle1saurus",
-    "video": "https://youtu.be/f1WehtceFnk",
-    "showcaseVideo": null,
+    "video": "https://www.youtube.com/watch?v=ghiJjEQB-mY",
+    "showcaseVideo": "https://www.youtube.com/watch?v=ghiJjEQB-mY?t=115",
     "tags": [
       "Level",
-      "Progress"
+      "Verified"
+    ]
+  },
+  {
+	"name": "Make Paul Dance",
+    "id": "make-paul-dance",
+    "player": "AiriCloud",
+    "levelID": 115860808,
+    "date": "2025-10-08",
+    "length": 60,
+    "version": 2.2,
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/XQoF35hNKpg",
+    "showcaseVideo": "https://youtu.be/yOqxB9aWhIE",
+    "tags": [
+      "Level",
+      "Verified"
     ]
   },
   {
