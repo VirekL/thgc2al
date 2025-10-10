@@ -4629,12 +4629,12 @@
   {
     "name": "Silent clubstep (Old) 9-65%",
     "id": "silent-clubstep-old-9-65",
-    "player": "Vision",
+    "player": "Emp",
     "date": "2025-06-09",
     "length": 50,
     "version": 2.2,
     "levelID": 38692301,
-    "video": "https://youtu.be/wLa7FiKY-Q0?t=480",
+    "video": "https://youtu.be/wLa7FiKY-Q0",
     "showcaseVideo": "https://youtu.be/mTkrql917bE",
     "submitter": "tricklength",
     "tags": [
