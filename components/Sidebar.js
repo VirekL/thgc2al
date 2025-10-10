@@ -95,22 +95,7 @@ function SidebarInner() {
         </a>
       </div>
 
-      <div
-        style={{
-          flex: '0 0 auto',
-          position: 'relative',
-          width: '100%',
-          height: '350px',
-          maxHeight: '35vh',
-          minHeight: 120,
-          overflow: 'hidden',
-          marginTop: 'auto',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          padding: 12,
-        }}
-      >
+      <div className="sidebar-footer" style={{ flex: '0 0 auto', marginTop: 'auto', padding: '12px' }}>
         <Link href="/discord" className="sidebar-link">
           Discord
         </Link>
