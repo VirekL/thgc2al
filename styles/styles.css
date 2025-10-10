@@ -1418,7 +1418,7 @@ main {
     padding: 0 !important;
     height: auto;
   }
-
+}
 @media (max-width: 900px) {
   .sidebar {
     display: none !important;
@@ -1549,7 +1549,7 @@ main {
     font-size: 0.92rem !important;
     word-break: break-word;
   }
-}
+
 
 
 /* Remove compact/zoomed-out leaderboard styles for a more spacious look */
