@@ -70,7 +70,7 @@ export default function Header({ children }) {
           onClick={() => setShowSidebar(false)}
         >
           <div
-            className="sidebar sidebar-mobile-open"
+            className="sidebar sidebar-mobile-modal"
             style={{
               position: "fixed",
               top: "50%",
