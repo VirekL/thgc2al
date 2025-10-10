@@ -75,6 +75,13 @@ function LeaderboardRow({ player, points, count, achievements, rank, allAchievem
 export default function Leaderboard() {
   const [achievements, setAchievements] = useState([]);
   const [leaderboard, setLeaderboard] = useState([]);
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    function handleResize() { setIsMobile(typeof window !== 'undefined' && window.innerWidth <= 900); }
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   useEffect(() => {
     fetch('/achievements.json')
       .then(res => res.json())
@@ -102,7 +109,7 @@ export default function Leaderboard() {
       <Background />
       <Header />
       <main className="main-content">
-        <Sidebar />
+        {!isMobile && <Sidebar />}
         <section id="leaderboard-section" className="leaderboard-container" style={{ flexGrow: 1, padding: '2rem' }}>
           <table className="leaderboard-table" style={{ width: '100%', borderCollapse: 'collapse' }}>
             <thead>
