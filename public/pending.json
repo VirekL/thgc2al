@@ -48,43 +48,6 @@
     ]
   },
   {
-	"name": "Congregation 60hz 65%",
-    "id": "congregation-60hz-65",
-    "player": "Clutter",
-    "levelID": 68668045,
-    "date": "2023-03-29",
-    "length": 130,
-    "version": 2.1,
-    "video": "https://youtu.be/jKzratR2xDk",
-    "showcaseVideo": "https://youtu.be/k3ebBTBeUTg",
-    "submitter": "Excryst",
-    "tags": [
-      "Level",
-      "Low Hertz",
-	  "Progress",
-      "Rated"
-    ]
-  },
-  {
-	"name": "Congregation 60hz Mobile 42-100%",
-    "id": "congregation-60hz-42-100",
-    "player": "ForcedDragon",
-    "levelID": 68668045,
-    "date": "2022-11-23",
-    "length": 87,
-    "version": 2.1,
-    "video": "https://youtu.be/2l2Q8ceh_i4",
-    "showcaseVideo": "https://youtu.be/k3ebBTBeUTg",
-    "submitter": "Excryst",
-    "tags": [
-      "Level",
-      "Low Hertz",
-	  "Mobile",
-	  "Progress",
-      "Rated"
-    ]
-  },
-  {
 	"name": "Re",
     "id": "re",
     "player": "torn",
@@ -117,23 +80,6 @@
     ]
   },
   {
-	"name": "NEUTRA 144hz",
-	"id": "neutra-144hz",
-	"player": "5shine",
-	"length": 87,
-	"version": 2.1,
-	"video": "https://youtu.be/_1FEfXoG8Eg",
-	"date": "2023-04-11",
-	"showcaseVideo": "https://www.youtube.com/watch?v=5jd1xU6JCAI",
-	"levelID": 88611404,
-	"submitter": "Excryst",
-	"tags": [
-		"Rated",
-		"Level",
-		"Low Hertz"
-	]
-},
-{
 	"name": "BPATA MPAKA 144hz 76%",
     "id": "bpata-mpaka-144hz-76",
     "player": "Melted",
