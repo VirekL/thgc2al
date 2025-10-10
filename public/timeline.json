@@ -6,50 +6,50 @@
         "video": "https://www.youtube.com/live/18ixmjwoG6Q?si=OpJuJI6tQMyVC0xb&t=5622s",
         "showcaseVideo": "https://youtu.be/eeTlZnCGP_k?si=N4tdbiQeCnbaEYMV",
         "tags": [
-      "Level",
-      "Consistency",
-	  "Rated"
-    ],
+            "Level",
+            "Consistency",
+            "Rated"
+        ],
         "date": "2025-09-21",
         "length": 714,
         "version": 2.2,
         "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
-   },	
-   {
-		"name": "Flamewall 24-100%, 24-91% in a row",
-		"id": "flamewall-24-100-24-91-in-a-row",
+    },
+    {
+        "name": "Flamewall 24-100%, 24-91% in a row",
+        "id": "flamewall-24-100-24-91-in-a-row",
         "player": "Cuatrocientos",
         "video": "https://www.youtube.com/live/iivSAgP6w8M?t=15320",
         "showcaseVideo": "https://youtu.be/eeTlZnCGP_k?si=N4tdbiQeCnbaEYMV",
-	    "levelID": "126242564",
+        "levelID": "126242564",
         "tags": [
-      "Level",
-      "Consistency",
-	  "Rated"
-    ],
+            "Level",
+            "Consistency",
+            "Rated"
+        ],
         "date": "2025-09-06",
         "length": 615,
         "version": 2.2,
         "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
-  },
-  {
-		"name": "Flamewall 50%, 99% in a row",
-		"id": "flamewall-50-99-in-a-row",
+    },
+    {
+        "name": "Flamewall 50%, 99% in a row",
+        "id": "flamewall-50-99-in-a-row",
         "player": "Cuatrocientos",
         "video": "https://www.youtube.com/live/8WPfiV3aD4w?t=4046s",
         "showcaseVideo": "https://youtu.be/eeTlZnCGP_k?si=N4tdbiQeCnbaEYMV",
-	    "levelID": "126242564",
+        "levelID": "126242564",
         "tags": [
-      "Level",
-      "Consistency",
-	  "Rated"	
-    ],
+            "Level",
+            "Consistency",
+            "Rated"
+        ],
         "date": "2025-08-31",
         "length": 600,
         "version": 2.2,
         "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
-  },
-  {
+    },
+    {
         "id": "grief-56-100-67-in-a-row",
         "name": "GRIEF 56-100%, 67% in a row",
         "player": "Doggie",
@@ -153,7 +153,7 @@
         "tags": [
             "Level",
             "Rated",
-			"Verified"
+            "Verified"
         ],
         "length": "181",
         "version": "2.1",
@@ -280,7 +280,7 @@
         "video": "https://youtu.be/jSPADYiEJk8?si=4SqmuoOqbqsKlGDN&t=615",
         "showcaseVideo": "https://youtu.be/YQElFvT5ynk"
     },
-  {
+    {
         "id": "acheron-2-1-96",
         "name": "Acheron 2.1 96%",
         "player": "Zoink",
@@ -315,54 +315,21 @@
         "showcaseVideo": "https://youtu.be/YQElFvT5ynk"
     },
     {
-        "id": "bloodlust-72hz-95",
-        "name": "Bloodlust 72hz 95%",
-        "player": "AGSEcho",
+        "name": "Firework 82%, 100% in a row",
+        "id": "firework-82-100-in-a-row",
+        "player": "Trick",
+        "levelID": 75206202,
+        "date": "2021-10-30",
+        "length": 220,
+        "version": 2.1,
+        "submitter": "kittycatiscute",
+        "video": "https://youtu.be/PaieCfSUBdg",
+        "showcaseVideo": "https://youtu.be/DU6mRmGHy74",
         "tags": [
             "Level",
-            "Rated",
-            "Progress",
-            "Low Hertz"
-        ],
-        "length": "167",
-        "version": "2.1",
-        "date": "2022-05-10",
-        "levelID": "42584142",
-        "video": "https://youtu.be/hgdMalJmvwY",
-        "showcaseVideo": "https://youtu.be/pZlRHWuVDn4"
-    },
-    {
-        "id": "abyss-of-darkness",
-        "name": "Abyss of Darkness",
-        "player": "Cursed",
-        "tags": [
-            "Level",
-            "Rated",
-			"Verified"
-        ],
-        "length": "125",
-        "version": "2.1",
-        "date": "2022-04-03",
-        "levelID": "49896559",
-        "video": "https://youtu.be/ejJkpqcMMCY",
-        "showcaseVideo": "https://youtu.be/A7i2m-yL-mA"
-    },
-    {
-        "id": "abyss-of-darkness-95",
-        "name": "Abyss of Darkness 95%",
-        "player": "Cursed",
-        "tags": [
-            "Progress",
-            "Level",
-            "Rated"
-        ],
-        "length": "120",
-        "version": "2.1",
-        "date": "2022-03-05",
-        "submitter": "Arcadie",
-        "levelID": "49896559",
-        "video": "https://youtu.be/bYVZztfvx1Q?si=J_kDffAxRt8lrgAL",
-	    "showcaseVideo": "https://youtu.be/A7i2m-yL-mA"
+            "Consistency",
+            "Outdated Version"
+        ]
     },
     {
         "id": "old-aod-98",
@@ -417,8 +384,8 @@
         "player": "Bradenbowl",
         "tags": [
             "Level",
-			"Verified",
-			"Tentative"
+            "Verified",
+            "Tentative"
         ],
         "length": "100",
         "version": "2.1",
@@ -434,7 +401,7 @@
         "tags": [
             "Progress",
             "Level",
-			"Tentative"
+            "Tentative"
         ],
         "length": "97",
         "version": "2.1",
@@ -450,7 +417,7 @@
         "tags": [
             "Progress",
             "Level",
-			"Tentative"
+            "Tentative"
         ],
         "length": "76",
         "version": "2.1",
@@ -465,7 +432,7 @@
         "player": "UFokinWotM8",
         "tags": [
             "Challenge",
-			"Verified"
+            "Verified"
         ],
         "length": "12",
         "version": "2.1",
@@ -481,7 +448,7 @@
         "tags": [
             "Level",
             "Rated",
-			"Verified"
+            "Verified"
         ],
         "length": "87",
         "version": "2.1",
@@ -694,7 +661,7 @@
         "id": "bloodlust-97",
         "name": "Bloodlust 97%",
         "player": "knobbelboy",
-		"submitter":"atavoidirc",
+        "submitter": "atavoidirc",
         "thumbnail": "https://i.ytimg.com/vi/wNSSwERjDT4/maxresdefault.jpg",
         "tags": [
             "Progress",
@@ -780,7 +747,7 @@
         "tags": [
             "Level",
             "Rated",
-			"Verified"
+            "Verified"
         ],
         "length": "112",
         "version": "1.9",
@@ -839,7 +806,7 @@
         "video": "https://youtu.be/lZCBqIa_Jfk?t=951",
         "showcaseVideo": "https://youtu.be/Js7TtZ99J04"
     },
-	{
+    {
         "id": "the-Ultimate Phase (Old)",
         "name": "The Ultimate Phase (Old)",
         "player": "GMDElite",
@@ -847,7 +814,7 @@
         "tags": [
             "Level",
             "Outdated Version",
-			"Verified"
+            "Verified"
         ],
         "length": "121",
         "version": "1.9",
@@ -880,15 +847,15 @@
         "tags": [
             "Level",
             "Rated",
-			"Verified",
-			"Tentative"
+            "Verified",
+            "Tentative"
         ],
         "length": "87",
         "version": "1.9",
         "date": "2015-05-24",
         "levelID": "814678",
         "video": "https://youtu.be/mhYRW_yNtWA?si=jZ6kgaQETjom54BI",
-	    "showcaseVideo": "https://youtu.be/gSZVFyZg8ys"
+        "showcaseVideo": "https://youtu.be/gSZVFyZg8ys"
     },
     {
         "id": "cataclysm-old",
@@ -898,7 +865,7 @@
         "tags": [
             "Level",
             "Outdated Version",
-			"Verified"
+            "Verified"
         ],
         "length": "79",
         "version": "1.9",
@@ -951,7 +918,7 @@
         "tags": [
             "Level",
             "Rated",
-			"Verified"
+            "Verified"
         ],
         "length": "95",
         "version": "1.9",
@@ -985,7 +952,7 @@
         "tags": [
             "Level",
             "Rated",
-			"Verified"
+            "Verified"
         ],
         "length": "74",
         "version": "1.9",
@@ -1025,7 +992,7 @@
         "tags": [
             "Level",
             "Rated",
-			"Verified"
+            "Verified"
         ]
     },
     {
@@ -1041,7 +1008,7 @@
         "tags": [
             "Level",
             "Rated",
-			"Verified"
+            "Verified"
         ]
     },
     {
@@ -1052,13 +1019,13 @@
             "Level",
             "Rated",
             "2P",
-			"Verified"
+            "Verified"
         ],
         "length": "88",
         "version": "1.8",
         "date": "2014-08-20",
         "levelID": "1782468",
-	    "showcaseVideo": "https://youtu.be/xrXOPg6SGyU"
+        "showcaseVideo": "https://youtu.be/xrXOPg6SGyU"
     },
     {
         "id": "primary-maze",
@@ -1067,7 +1034,7 @@
         "tags": [
             "Level",
             "Rated",
-			"Verified"
+            "Verified"
         ],
         "length": "136",
         "version": "1.6",
@@ -1084,7 +1051,7 @@
         "tags": [
             "Level",
             "Outdated Version",
-			"Verified"
+            "Verified"
         ],
         "length": "75",
         "version": "1.6",
@@ -1100,13 +1067,13 @@
         "player": "Darkflame",
         "tags": [
             "Level",
-			"Verified"
+            "Verified"
         ],
         "length": "73",
         "version": "1.6",
         "date": "2014-04-12",
         "levelID": "535596",
-	    "showcaseVideo": "https://youtu.be/HGAxTsdB_6o"
+        "showcaseVideo": "https://youtu.be/HGAxTsdB_6o"
     },
     {
         "id": "pg-clubstep-old",
@@ -1115,7 +1082,7 @@
         "tags": [
             "Level",
             "Outdated Version",
-			"Verified"
+            "Verified"
         ],
         "length": "87",
         "version": "1.6",
@@ -1132,14 +1099,14 @@
         "tags": [
             "Level",
             "Rated",
-			"Verified"
+            "Verified"
         ],
         "length": "95",
         "version": "1.5",
         "date": "2014-03-02",
         "levelID": "296176",
         "video": "https://youtu.be/qcfbTR7D_W8",
-	    "showcaseVideo": "https://youtu.be/s5CBobn6D4c"
+        "showcaseVideo": "https://youtu.be/s5CBobn6D4c"
     },
     {
         "id": "simg-factorial-6",
@@ -1148,8 +1115,8 @@
         "tags": [
             "Level",
             "Rated",
-			"Verified",
-			"Tentative"
+            "Verified",
+            "Tentative"
         ],
         "length": "97",
         "version": "1.5",
@@ -1165,8 +1132,8 @@
         "tags": [
             "Level",
             "Outdated Version",
-			"Verified",
-			"Tentative"
+            "Verified",
+            "Tentative"
         ],
         "length": "94",
         "version": "1.5",
@@ -1182,8 +1149,8 @@
         "player": "GW Popomon",
         "tags": [
             "Level",
-			"Verified",
-			"Tentative"
+            "Verified",
+            "Tentative"
         ],
         "length": "69",
         "version": "1.5",
@@ -1200,7 +1167,7 @@
         "tags": [
             "Level",
             "Outdated Version",
-			"Verified"
+            "Verified"
         ],
         "length": "97",
         "version": "1.4",
@@ -1216,7 +1183,7 @@
         "tags": [
             "Level",
             "Rated",
-			"Verified"
+            "Verified"
         ],
         "length": "87",
         "version": "1.4",
@@ -1233,7 +1200,7 @@
         "tags": [
             "Level",
             "Rated",
-			"Verified"
+            "Verified"
         ],
         "length": "75",
         "version": "1.4",
@@ -1248,7 +1215,7 @@
         "tags": [
             "Level",
             "Outdated Version",
-			"Verified"
+            "Verified"
         ],
         "length": "81",
         "version": "1.4",
@@ -1261,8 +1228,8 @@
         "player": "GW Popomon",
         "tags": [
             "Level",
-			"Verified",
-			"Tentative"
+            "Verified",
+            "Tentative"
         ],
         "length": "96",
         "version": "1.4",
@@ -1279,7 +1246,7 @@
         "tags": [
             "Level",
             "Rated",
-			"Verified"
+            "Verified"
         ],
         "length": "78",
         "version": "1.4",
@@ -1300,7 +1267,7 @@
         "tags": [
             "Level",
             "Rated",
-			"Verified"
+            "Verified"
         ]
     },
     {
@@ -1310,7 +1277,7 @@
         "tags": [
             "Level",
             "Rated",
-			"Verified"
+            "Verified"
         ],
         "length": "93",
         "version": "1.2",
@@ -1326,7 +1293,7 @@
         "player": "ChunSonghun",
         "tags": [
             "Level",
-			"Verified"
+            "Verified"
         ],
         "length": "97",
         "version": "1.1",
@@ -1340,7 +1307,7 @@
         "player": "Matty",
         "tags": [
             "Level",
-			"Verified"
+            "Verified"
         ],
         "length": "93",
         "version": "1.1",
@@ -1354,7 +1321,7 @@
         "player": "Manny Fresh",
         "tags": [
             "Level",
-			"Verified"
+            "Verified"
         ],
         "length": "84",
         "version": "1.0",
@@ -1369,7 +1336,7 @@
         "tags": [
             "Level",
             "Rated",
-			"Verified"
+            "Verified"
         ],
         "length": "81",
         "version": "1.0",
@@ -1384,7 +1351,7 @@
         "tags": [
             "Level",
             "Rated",
-			"Verified"
+            "Verified"
         ],
         "length": "60",
         "version": "1.0",
@@ -1401,7 +1368,7 @@
         "tags": [
             "Level",
             "Rated",
-			"Verified"
+            "Verified"
         ],
         "length": "52",
         "version": "1.0",
@@ -1425,7 +1392,7 @@
         "tags": [
             "Level",
             "Rated",
-			"Verified"
+            "Verified"
         ]
     },
     {
@@ -1435,14 +1402,14 @@
         "tags": [
             "Level",
             "Outdated Version",
-			"Verified"
+            "Verified"
         ],
         "length": "80",
         "version": "Beta",
         "date": "2013-08-02",
         "levelID": "77237542",
         "submitter": "Anceps",
-        "video": null,
+        "video": "https://youtu.be/k90y6PIzIaE?t=45",
         "showcaseVideo": "https://youtu.be/RIeZSWzs50g"
     },
     {
@@ -1451,7 +1418,7 @@
         "player": "RobTop",
         "tags": [
             "Level",
-			"Verified"
+            "Verified"
         ],
         "length": "65",
         "version": "Beta",
@@ -1461,23 +1428,3 @@
         "video": "https://youtu.be/727pUHwWSVg"
     }
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
