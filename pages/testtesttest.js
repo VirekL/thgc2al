@@ -959,7 +959,7 @@ export default function List() {
           onClick={() => setShowSidebar(false)}
         >
           <div
-            className="sidebar sidebar-mobile-modal"
+            className="sidebar-mobile-modal"
             style={{
               position: "fixed",
               top: "50%",
