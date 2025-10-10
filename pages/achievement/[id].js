@@ -4,7 +4,7 @@ import Header from '../../components/Header';
 import Sidebar from '../../components/Sidebar';
 import fs from 'fs';
 import path from 'path';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useDateFormat } from '../../components/DateFormatContext';
 import Tag, { TAG_PRIORITY_ORDER } from '../../components/Tag';
 
