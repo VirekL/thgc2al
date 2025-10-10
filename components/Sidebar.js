@@ -111,33 +111,8 @@ function SidebarInner() {
           padding: 12,
         }}
       >
-        <Link href="/discord">
-          <a
-            className="sidebar-link discord-link"
-            role="button"
-            aria-label="Open Discord page"
-            title="Open Discord"
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: 8,
-              padding: '12px 18px',
-              background: '#5865F2',
-              color: '#fff',
-              textDecoration: 'none',
-              borderRadius: 8,
-              border: 'none',
-              cursor: 'pointer',
-              fontWeight: 600,
-            }}
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-              <path d="M20.317 4.369A19.791 19.791 0 0016.82 3c-.03.05-.065.12-.09.17-1.542 2.276-3.31 4.13-5.18 5.533-2.345 1.7-4.525 2.842-6.23 3.476a6.868 6.868 0 00-.45.177c1.02-.23 2.008-.523 2.942-.868 1.513-.57 2.96-1.315 4.373-2.215 1.457-.92 2.87-2.106 4.137-3.55.03-.03.058-.06.087-.09.38-.123.77-.243 1.153-.365z" fill="#ffffff" />
-              <path d="M7.119 15.456c-1.487-.41-2.473-1.01-3.095-1.71 1.074.227 2.184.35 3.328.346 1.202-.004 2.43-.118 3.678-.35 1.879-.323 3.852-.97 5.768-1.888a26.026 26.026 0 003.3-1.61c-.76.967-1.703 1.783-2.77 2.39-1.527.92-3.128 1.603-4.78 2.053a32.767 32.767 0 01-5.43 1.36 33.06 33.06 0 01-1.01.09z" fill="#ffffff" />
-            </svg>
-            <span>Open Discord</span>
-          </a>
+        <Link href="/discord" className="sidebar-link">
+          Discord
         </Link>
       </div>
 
