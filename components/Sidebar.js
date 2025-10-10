@@ -8,6 +8,7 @@ function SidebarInner() {
   const router = useRouter();
   const { dateFormat, setDateFormat } = useDateFormat();
   const [showSettings, setShowSettings] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   const [itemsPerPage, setItemsPerPage] = useState(() => {
     try {
@@ -40,14 +41,27 @@ function SidebarInner() {
     setMounted(true);
   }, []);
 
+  useEffect(() => {
+    function handleResize() {
+      try {
+        setIsMobile(typeof window !== 'undefined' && window.innerWidth <= 900);
+      } catch (e) {
+        setIsMobile(false);
+      }
+    }
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <nav
       className="sidebar"
       style={{
         display: 'flex',
         flexDirection: 'column',
-        height: '100%',
-        maxHeight: 'calc(100vh - 2rem)',
+        height: isMobile ? 'auto' : '100%',
+        maxHeight: isMobile ? '90vh' : 'calc(100vh - 2rem)',
         /* make the sidebar itself scrollable so the scrollbar appears on the sidebar when needed */
         overflowY: 'auto',
         WebkitOverflowScrolling: 'touch',
