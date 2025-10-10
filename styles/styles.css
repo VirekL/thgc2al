@@ -1659,6 +1659,50 @@ main {
   }
 }
 
+/* Strong override: ensure mobile sidebar modal/overlay are shown when opened by the hamburger.
+   Placed at end to avoid being accidentally overridden earlier. */
+@media (max-width: 900px) {
+  .sidebar-mobile-overlay {
+    display: flex !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: rgba(0,0,0,0.75) !important;
+    z-index: 1100 !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .sidebar.sidebar-mobile-modal,
+  .sidebar.sidebar-mobile-open,
+  .sidebar.sidebar-mobile-fullscreen {
+    display: flex !important;
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 92vw !important;
+    max-width: 420px !important;
+    max-height: 92vh !important;
+    background: var(--secondary-bg) !important;
+    border-radius: 1.2rem !important;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.6) !important;
+    padding: 1rem !important;
+    overflow-y: auto !important;
+    z-index: 1110 !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  /* ensure the modal is fully opaque and interactive */
+  .sidebar.sidebar-mobile-modal,
+  .sidebar.sidebar-mobile-open {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
+
 .link-favicon {
   background-image: url('/assets/favicon.ico');
 }
