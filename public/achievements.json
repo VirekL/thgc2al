@@ -4644,6 +4644,23 @@
     "levelID": 118680356
   },
   {
+	"name": "Silent clubstep (Old) 9-65%",
+    "id": "silent-clubstep-old-9-65",
+    "player": "Vision",
+    "date": "2025-06-09",
+    "length": 50,
+    "version": 2.2,
+    "levelID": 38692301,
+    "video": "https://youtu.be/wLa7FiKY-Q0?t=480",
+    "showcaseVideo": "https://youtu.be/mTkrql917bE",
+    "submitter": "tricklength",
+    "tags": [
+      "Level",
+      "Progress",
+	  "CBF"
+    ]
+  },
+  {
     "name": "Determination Dance",
     "id": "determination-dance",
     "player": "Cursed",
@@ -6676,22 +6693,6 @@
       "Speedhack",
       "Progress",
       "Rated"
-    ]
-  },
-  {
-    "name": "Silent clubstep (Old) 11-65%",
-    "id": "silent-clubstep-old-11-65",
-    "player": "Vision",
-    "date": "2024-05-11",
-    "length": "48",
-    "version": "2.1",
-    "levelID": "38692301",
-    "video": "https://youtu.be/cbpknzRbF0o",
-    "showcaseVideo": "https://youtu.be/mTkrql917bE",
-    "submitter": "jak",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -15886,3 +15887,4 @@
   }
 
 ]
+
