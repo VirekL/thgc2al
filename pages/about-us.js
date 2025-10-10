@@ -4,6 +4,13 @@ import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
 
 export default function AboutUs() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    function handleResize() { setIsMobile(typeof window !== 'undefined' && window.innerWidth <= 900); }
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   return (
     <>
       <Head>
@@ -24,7 +31,7 @@ export default function AboutUs() {
       <Header />
       <main className="main-content" style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', gap: '2rem', padding: '2rem 1rem' }}>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', gap: '2rem', maxWidth: '1100px', width: '100%', margin: '0 auto' }}>
-          <Sidebar />
+          {!isMobile && <Sidebar />}
           <section className="about-us about-us-container">
             <h2>The Hardest Achievements List</h2>
             <p>What is this list?</p>
