@@ -1,7 +1,7 @@
 [
     {
-        "name": "Flamewall 73%, 100%",
-        "id": "flamewall-73-100",
+        "name": "Flamewall 73%, 100% in a row",
+        "id": "flamewall-73-100-in-a-row",
         "player": "Cuatrocientos",
         "video": "https://www.youtube.com/live/18ixmjwoG6Q?si=OpJuJI6tQMyVC0xb&t=5622s",
         "showcaseVideo": "https://youtu.be/eeTlZnCGP_k?si=N4tdbiQeCnbaEYMV",
@@ -16,8 +16,8 @@
         "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
    },	
    {
-		"name": "Flamewall 24-100%, 24-91%",
-		"id": "flamewall-24-100-24-91",
+		"name": "Flamewall 24-100%, 24-91% in a row",
+		"id": "flamewall-24-100-24-91-in-a-row",
         "player": "Cuatrocientos",
         "video": "https://www.youtube.com/live/iivSAgP6w8M?t=15320",
         "showcaseVideo": "https://youtu.be/eeTlZnCGP_k?si=N4tdbiQeCnbaEYMV",
@@ -33,8 +33,8 @@
         "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
   },
   {
-		"name": "Flamewall 50%, 99%",
-		"id": "flamewall-50-99",
+		"name": "Flamewall 50%, 99% in a row",
+		"id": "flamewall-50-99-in-a-row",
         "player": "Cuatrocientos",
         "video": "https://www.youtube.com/live/8WPfiV3aD4w?t=4046s",
         "showcaseVideo": "https://youtu.be/eeTlZnCGP_k?si=N4tdbiQeCnbaEYMV",
@@ -50,8 +50,8 @@
         "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
   },
   {
-        "id": "grief-56-100-67",
-        "name": "GRIEF 56-100%, 67%",
+        "id": "grief-56-100-67-in-a-row",
+        "name": "GRIEF 56-100%, 67% in a row",
         "player": "Doggie",
         "thumbnail": "https://tjcsucht.net/levelthumbs/103524537.png",
         "tags": [
@@ -1461,6 +1461,7 @@
         "video": "https://youtu.be/727pUHwWSVg"
     }
 ]
+
 
 
 
