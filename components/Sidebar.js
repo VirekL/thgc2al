@@ -79,6 +79,9 @@ function SidebarInner() {
         <Link href="/about-us" className="sidebar-link">
           About Us
         </Link>
+        <Link href="/discord" className="sidebar-link">
+          Discord
+        </Link>
         <a
           href="#"
           className="sidebar-link"
@@ -93,12 +96,6 @@ function SidebarInner() {
         >
           Settings
         </a>
-      </div>
-
-      <div className="sidebar-footer" style={{ flex: '0 0 auto', marginTop: 'auto', padding: '12px' }}>
-        <Link href="/discord" className="sidebar-link">
-          Discord
-        </Link>
       </div>
 
       {showSettings &&
