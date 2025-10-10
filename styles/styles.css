@@ -1940,3 +1940,41 @@ main {
     width: 92vw !important;
   }
 }
+
+@media (max-width: 900px) {
+  .sidebar.sidebar-mobile-open,
+  .sidebar.sidebar-mobile-fullscreen,
+  .sidebar-mobile-modal,
+  .sidebar-mobile-overlay {
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+
+  .sidebar.sidebar-mobile-open,
+  .sidebar-mobile-modal {
+    width: 90vw !important;
+    max-width: 420px !important;
+    min-width: 260px !important;
+    max-height: 92vh !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    position: fixed !important;
+    z-index: 2000 !important;
+    background: var(--secondary-bg) !important;
+    border-radius: 1rem !important;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.6) !important;
+    overflow-y: auto !important;
+  }
+
+  .sidebar-mobile-modal .sidebar,
+  .sidebar.sidebar-mobile-open .sidebar {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 80vh !important;
+    overflow: auto !important;
+  }
+}
