@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import Background from '../../components/Background';
 import Header from '../../components/Header';
 import Sidebar from '../../components/Sidebar';
@@ -65,6 +64,13 @@ export async function getStaticProps({ params }) {
 
 export default function AchievementPage({ achievement, placement }) {
   const [copyMsg, setCopyMsg] = useState('');
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    function handleResize() { setIsMobile(typeof window !== 'undefined' && window.innerWidth <= 900); }
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   const { dateFormat } = useDateFormat();
   function showCopyNotification(text) {
     setCopyMsg(text);
@@ -128,9 +134,8 @@ export default function AchievementPage({ achievement, placement }) {
         </Head>
         <Background />
         <Header />
-        <Sidebar />
-        <div>Achievement not found.</div>
-        <Link href="/list">← Back to List</Link>
+        {!isMobile && <Sidebar />}
+  <div>Achievement not found.</div>
       </div>
     );
   }
@@ -150,7 +155,7 @@ export default function AchievementPage({ achievement, placement }) {
       <Background bgImage={bgImage} />
       <Header />
       <main style={{ display: 'flex', gap: '2rem', padding: '2rem', justifyContent: 'center', alignItems: 'flex-start', minHeight: '100vh', overflowY: 'auto' }}>
-        <Sidebar />
+        {!isMobile && <Sidebar />}
         <section style={{ flex: '1 1 0%', maxWidth: 900, overflowY: 'auto', maxHeight: 'calc(100vh - 4rem)', position: 'relative' }}>
           <div
             className="achievement-card"
@@ -267,9 +272,6 @@ export default function AchievementPage({ achievement, placement }) {
                   <strong>Thanks for submitting this achievement,</strong> {achievement.submitter}
                 </div>
               )}
-              <div style={{ marginTop: 24 }}>
-                <Link href="/list" style={{ color: '#7ecfff', textDecoration: 'underline', fontWeight: 500 }}>← Back to List</Link>
-              </div>
             </div>
           </div>
           {copyMsg && (
