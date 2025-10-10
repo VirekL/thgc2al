@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import React, { useState, useEffect } from 'react';
 import Background from '../components/Background';
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
