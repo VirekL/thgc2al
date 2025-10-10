@@ -1,7 +1,7 @@
 [
   {
-    "name": "Flamewall 73%, 100%",
-    "id": "flamewall-73-100",
+    "name": "Flamewall 73%, 100% in a row",
+    "id": "flamewall-73-100-in-a-row",
     "player": "Cuatrocientos",
     "video": "https://youtu.be/18ixmjwoG6Q",
     "showcaseVideo": "https://youtu.be/eeTlZnCGP_k",
@@ -18,8 +18,8 @@
     "levelID": 126242564
   },
   {
-    "name": "GRIEF 56-100%, 67%",
-    "id": "grief-56-100-67",
+    "name": "GRIEF 56-100%, 67% in a row",
+    "id": "grief-56-100-67-in-a-row",
     "player": "Doggie",
     "video": "https://youtu.be/aqg-2kThaSc",
     "showcaseVideo": "https://youtu.be/1GolW8jKK7k",
@@ -30,8 +30,8 @@
       "CBF"
     ],
     "date": "2025-04-23",
-    "length": "200",
-    "version": "2.2",
+    "length": 200,
+    "version": 2.2,
     "submitter": "TYATYAPKA",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/grief-unbuffed1.avif"
   },
@@ -297,8 +297,8 @@
     ]
   },
   {
-    "name": "Sakupen circles (Old) 37-66%, 37-69%, 70%",
-    "id": "sakupen-circles-old-37-66-37-69-70",
+    "name": "Sakupen circles (Old) 37-66%, 37-69%, 70% in a row",
+    "id": "sakupen-circles-old-37-66-37-69-70-in-a-row",
     "player": "ad3usgmd",
     "length": 91,
     "version": 2.2,
@@ -314,16 +314,16 @@
     ]
   },
   {
-    "name": "Sakupen Circles 69%, 67%, 69%, 80%",
-    "id": "sakupen-circles-69-67-69-80",
+    "name": "Sakupen Circles 69%, 67%, 69%, 80% in a row",
+    "id": "sakupen-circles-69-67-69-80-in-a-row",
     "player": "ad3usgmd",
-    "length": "151",
-    "version": "2.2",
-    "video": "https://youtu.be/WwHQ2jiRSeo&t=4609",
+    "length": 151,
+    "version": 2.2,
+    "video": "https://youtu.be/WwHQ2jiRSeo",
     "showcaseVideo": "https://youtu.be/b66_Oe4Xo1w",
     "date": "2025-06-19",
     "submitter": "ad3usgmd",
-    "levelID": "76962930",
+    "levelID": 76962930,
     "tags": [
       "Level",
       "Consistency",
@@ -698,8 +698,8 @@
     ]
   },
   {
-    "name": "VSC 72%, 100%",
-    "id": "vsc-72-100",
+    "name": "VSC 72%, 100% in a row",
+    "id": "vsc-72-100-in-a-row",
     "player": "-",
     "levelID": 60805571,
     "date": "2024-09-09",
@@ -729,16 +729,16 @@
     ]
   },
   {
-    "name": "Avernus 28-100%, 23-95%",
-    "id": "avernus-28-100-23-95",
+    "name": "Avernus 28-100%, 23-95% in a row",
+    "id": "avernus-28-100-23-95-in-a-row",
     "player": "To1ick",
-    "length": "107",
-    "version": "2.2",
+    "length": 107,
+    "version": 2.2,
     "video": "https://youtu.be/ybBqBmbor0E",
     "showcaseVideo": "https://youtu.be/JL30R7f-iBE",
     "date": "2025-05-10",
     "submitter": "TYATYAPKA",
-    "levelID": "89496627",
+    "levelID": 89496627,
     "tags": [
       "Level",
       "Consistency",
@@ -746,16 +746,16 @@
     ]
   },
   {
-    "name": "Silent clubstep 16%, 95%",
-    "id": "silent-clubstep-16-95",
+    "name": "Silent clubstep 16%, 95% in a row",
+    "id": "silent-clubstep-16-95-in-a-row",
     "player": "faukkk",
-    "length": "75",
-    "version": "2.2",
+    "length": 75,
+    "version": 2.2,
     "video": "https://youtu.be/Cf3e8FtEKSc",
     "showcaseVideo": "https://youtu.be/Oos0Ptzqq-E",
     "date": "2024-11-29",
     "submitter": "TYATYAPKA",
-    "levelID": "4125776",
+    "levelID": 4125776,
     "tags": [
       "Level",
       "Consistency",
@@ -848,8 +848,8 @@
     ]
   },
   {
-    "name": "Silent Acropolis unn 31%, 54%",
-    "id": "silent-acropolis-unn-31-54",
+    "name": "Silent Acropolis unn 31%, 54% in a row",
+    "id": "silent-acropolis-unn-31-54-in-a-row",
     "player": "SeptaGon7",
     "levelID": 83143127,
     "date": "2025-07-29",
@@ -897,8 +897,8 @@
     ]
   },
   {
-    "name": "Acheron 24-100%, 17-96%",
-    "id": "acheron-24-100-17-96",
+    "name": "Acheron 24-100%, 17-96% in a row",
+    "id": "acheron-24-100-17-96-in-a-row",
     "player": "fallengmd",
     "length": 97,
     "version": 2.2,
@@ -1000,8 +1000,8 @@
     ]
   },
   {
-    "name": "Old Orochi 40%x2",
-    "id": "old-orochi-40x2",
+    "name": "Old Orochi 40%x2 in a row",
+    "id": "old-orochi-40x2-in-a-row",
     "player": "SeptaGon7",
     "date": "2025-10-06",
     "length": 80,
@@ -1222,8 +1222,8 @@
     ]
   },
   {
-    "name": "Menace 65%, 100%",
-    "id": "menace-65-100",
+    "name": "Menace 65%, 100% in a row",
+    "id": "menace-65-100-in-a-row",
     "player": "Flavyola64",
     "levelID": 107805281,
     "date": "2025-05-10",
@@ -1272,8 +1272,8 @@
     ]
   },
   {
-    "name": "Tunnel of Despair 71%, 70%",
-    "id": "tunnel-of-despair-71-70",
+    "name": "Tunnel of Despair 71%, 70% in a row",
+    "id": "tunnel-of-despair-71-70-in-a-row",
     "player": "johnlikesdiamond",
     "levelID": 91351939,
     "date": "2025-08-23",
@@ -1306,8 +1306,8 @@
     ]
   },
   {
-    "name": "vsc infinity 79%, 100%",
-    "id": "vsc-infinity-79-100",
+    "name": "vsc infinity 79%, 100% in a row",
+    "id": "vsc-infinity-79-100-in-a-row",
     "player": "JACKSONAMORE",
     "levelID": 78765594,
     "date": "2024-07-12",
@@ -1323,15 +1323,15 @@
     ]
   },
   {
-    "name": "Firework 2.1 82%, 100%",
-    "id": "firework-2.1-82-100",
+    "name": "Firework 82%, 100% in a row",
+    "id": "firework-82-100-in-a-row",
     "player": "Trick",
     "levelID": 75206202,
     "date": "2021-10-30",
     "length": 220,
     "version": 2.1,
     "submitter": "kittycatiscute",
-    "video": "https://youtu.be/PaieCfSUBdg&t=13150",
+    "video": "https://youtu.be/PaieCfSUBdg",
     "showcaseVideo": "https://youtu.be/DU6mRmGHy74",
     "tags": [
       "Level",
@@ -2129,8 +2129,8 @@
     ]
   },
   {
-    "name": "Deimos 57%, 100%",
-    "id": "deimos-57-1000",
+    "name": "Deimos 57%, 100% in a row",
+    "id": "deimos-57-100-in-a-row",
     "player": "Dezstro",
     "levelID": 93091893,
     "date": "2024-10-09",
@@ -2301,8 +2301,8 @@
     ]
   },
   {
-    "name": "FINAL FANTASY 73%, 67%",
-    "id": "final-fantasy-73-67",
+    "name": "FINAL FANTASY 73%, 67% in a row",
+    "id": "final-fantasy-73-67-in-a-row",
     "player": "DenseCabbage",
     "levelID": 76767195,
     "date": "2024-02-18",
@@ -2963,8 +2963,8 @@
     ]
   },
   {
-    "name": "Extra Mile 77%, 69%, 53%",
-    "id": "extra-mile-77-69-53",
+    "name": "Extra Mile 77%, 69%, 53% in a row",
+    "id": "extra-mile-77-69-53-in-a-row",
     "player": "DenseCabbage",
     "levelID": 68766469,
     "date": "2025-03-20",
@@ -3196,8 +3196,8 @@
     ]
   },
   {
-    "name": "last stop 24%, 36%",
-    "id": "last-stop-24-36",
+    "name": "last stop 24%, 36% in a row",
+    "id": "last-stop-24-36-in-a-row",
     "player": "aytch0008",
     "date": "2025-08-22",
     "length": 17,
@@ -3990,15 +3990,15 @@
     ]
   },
   {
-    "name": "Leaves 77-100%, 65-80%, 65-78%, 65-86%, 65-80%, 65-100%, 65-91%, 65-78%, 65-79%x4, 65-86%, 65-84%, 65-87%, 65-79%",
-    "id": "leaves-77-100-65-80-65-78-65-86-65-80-65-100-65-91-65-78-65-79-x4-65-86-65-84-65-87-65-79",
+    "name": "Leaves 77-100%, 65-80%, 65-78%, 65-86%, 65-80%, 65-100%, 65-91%, 65-78%, 65-79%x4, 65-86%, 65-84%, 65-87%, 65-79% in a row",
+    "id": "leaves-77-100-65-80-65-78-65-86-65-80-65-100-65-91-65-78-65-79-x4-65-86-65-84-65-87-65-79-in-a-row",
     "player": "subabo",
-    "length": "200",
-    "version": "2.2",
+    "length": 200,
+    "version": 2.2,
     "video": "https://youtu.be/igekb2lWp9M",
     "date": "2025-09-01",
     "showcaseVideo": "https://youtu.be/S0WKrJx7Bq0",
-    "levelID": "82602651",
+    "levelID": 82602651,
     "submitter": "subabo",
     "tags": [
       "Level",
@@ -4186,13 +4186,13 @@
     ]
   },
   {
-    "name": "Saul Goodman 41-100%, 100%",
-    "id": "saul-goodman-41-100-100",
+    "name": "Saul Goodman 41-100%, 100% in a row",
+    "id": "saul-goodman-41-100-100-in-a-row",
     "player": "Slithium",
     "date": "2024-07-17",
-    "length": "86",
-    "version": "2.2",
-    "levelID": "90477539",
+    "length": 86,
+    "version": 2.2,
+    "levelID": 90477539,
     "showcaseVideo": "https://youtu.be/ktVdIYE9P-I",
     "video": "https://youtu.be/1qUQccpP9mA",
     "submitter": "53ek",
@@ -4401,25 +4401,8 @@
     "showcaseVideo": "https://youtu.be/RHmVk0pUIPI"
   },
   {
-    "name": "Firework 2.1",
-    "id": "firework-2.1",
-    "player": "Trick",
-    "levelID": 75206202,
-    "date": "2021-10-30",
-    "length": 127,
-    "version": 2.1,
-    "submitter": "Anceps",
-    "video": "https://youtu.be/QBe5x2o9v2w",
-    "showcaseVideo": "https://youtu.be/DU6mRmGHy74",
-    "tags": [
-      "Level",
-      "Verified",
-      "Outdated Version"
-    ]
-  },
-  {
-    "name": "SADOMASOCHISM 60%, 85%",
-    "id": "sadomasochism-60-85",
+    "name": "SADOMASOCHISM 60%, 85% in a row",
+    "id": "sadomasochism-60-85-in-a-row",
     "player": "NucGDStuff",
     "levelID": 76213334,
     "date": "2025-04-14",
@@ -4644,7 +4627,7 @@
     "levelID": 118680356
   },
   {
-	"name": "Silent clubstep (Old) 9-65%",
+    "name": "Silent clubstep (Old) 9-65%",
     "id": "silent-clubstep-old-9-65",
     "player": "Vision",
     "date": "2025-06-09",
@@ -4657,7 +4640,7 @@
     "tags": [
       "Level",
       "Progress",
-	  "CBF"
+      "CBF"
     ]
   },
   {
@@ -5035,14 +5018,14 @@
     ]
   },
   {
-    "name": "FF 14%, 17%",
-    "id": "ff-14-17",
+    "name": "FF 14%, 17% in a row",
+    "id": "ff-14-17-in-a-row",
     "player": "Caleger",
     "date": "2025-04-16",
     "length": 10,
     "version": 2.1,
     "video": "https://youtu.be/vb6Q7Ay22ZE",
-    "showcaseVideo": "https://youtu.be/ho6rZGHQlsY&t=5",
+    "showcaseVideo": "https://youtu.be/ho6rZGHQlsY",
     "submitter": "kyle1saurus",
     "tags": [
       "Challenge",
@@ -5200,8 +5183,8 @@
     "levelID": 123417713
   },
   {
-    "name": "Sad Chamber 55%, 51%x2",
-    "id": "sad-chamber-55-51x2",
+    "name": "Sad Chamber 55%, 51%x2 in a row",
+    "id": "sad-chamber-55-51x2-in-a-row",
     "player": "nensa",
     "levelID": 100242794,
     "date": "2025-08-02",
@@ -5291,8 +5274,8 @@
     ]
   },
   {
-    "name": "521 37%, 42%, 23%, 21%, 100%",
-    "id": "521-37-42-23-21-100",
+    "name": "521 37%, 42%, 23%, 21%, 100% in a row",
+    "id": "521-37-42-23-21-100-in-a-row",
     "player": "seels",
     "levelID": 85701165,
     "date": "2023-08-03",
@@ -5912,8 +5895,8 @@
     ]
   },
   {
-    "name": "Our Special Place 64%, 66%",
-    "id": "our-special-place-64-66",
+    "name": "Our Special Place 64%, 66% in a row",
+    "id": "our-special-place-64-66-in-a-row",
     "player": "NucGDStuff",
     "levelID": 94294850,
     "date": "2025-02-21",
@@ -6186,14 +6169,14 @@
     ]
   },
   {
-    "name": "arcturus 75%, 100%",
-    "id": "arcturus-75-100",
+    "name": "arcturus 75%, 100% in a row",
+    "id": "arcturus-75-100-in-a-row",
     "player": "Cursed",
     "levelID": 72315402,
     "date": "2022-02-17",
     "length": 99,
     "version": 2.1,
-    "video": "https://youtu.be/pMy_Jm_jgj8&t=4817",
+    "video": "https://youtu.be/pMy_Jm_jgj8",
     "showcaseVideo": "https://youtu.be/GKQc2JECHLs",
     "submitter": "YoumanJY",
     "tags": [
@@ -8628,8 +8611,8 @@
     ]
   },
   {
-    "name": "lobotomy 29%, 32%",
-    "id": "lobotomy-29-32",
+    "name": "lobotomy 29%, 32% in a row",
+    "id": "lobotomy-29-32-in-a-row",
     "player": "SeptaGon7",
     "levelID": 67322789,
     "date": "2023-12-02",
@@ -8711,16 +8694,16 @@
     ]
   },
   {
-    "name": "Aerial Gleam 69%, 100%",
-    "id": "aerial-gleam-69-100",
+    "name": "Aerial Gleam 69%, 100% in a row",
+    "id": "aerial-gleam-69-100-in-a-row",
     "player": "Cuatrocientos",
-    "length": "107",
-    "version": "2.2",
+    "length": 107,
+    "version": 2.2,
     "video": "https://youtu.be/Z4-GzRg6XBw",
     "showcaseVideo": "https://youtu.be/YrwMLHHmUJY",
     "date": "2025-01-02",
     "submitter": "kyle1saurus",
-    "levelID": "79771070",
+    "levelID": 79771070,
     "tags": [
       "Level",
       "Consistency",
@@ -9042,12 +9025,12 @@
     ]
   },
   {
-    "name": "VOID 96%, 97%, 68%",
-    "id": "void-96-97-68",
+    "name": "VOID 96%, 97%, 68% in a row",
+    "id": "void-96-97-68-in-a-row",
     "player": "Zoink",
     "length": 176,
     "version": 2.2,
-    "video": "https://youtu.be/V18LCMb9108&t=1339s",
+    "video": "https://youtu.be/V18LCMb9108",
     "showcaseVideo": "https://youtu.be/ng-VeF1O5aQ",
     "date": "2025-09-03",
     "levelID": 100990392,
@@ -10269,8 +10252,8 @@
     ]
   },
   {
-    "name": "Unnerfed BoJ 67%, 100%",
-    "id": "unnerfed-boj-67-100",
+    "name": "Unnerfed BoJ 67%, 100% in a row",
+    "id": "unnerfed-boj-67-100-in-a-row",
     "player": "MostDefinitelyAlbert",
     "levelID": 35497549,
     "date": "2024-03-07",
