@@ -1656,7 +1656,7 @@ main {
     display: block !important;
     position: relative !important;
     height: auto !important;
-    width: 100%z !important;
+    width: 100% !important;
     max-height: 80vh !important;
     overflow: visible !important;
   }
