@@ -1434,7 +1434,7 @@ main {
   }
 
   .sidebar.sidebar-mobile-open,
-  .sidebar.sidebar-mobile-modal {
+  .sidebar-mobile-modal {
     display: block !important;
     width: 90vw !important;
     max-width: 360px !important;
@@ -1611,7 +1611,7 @@ main {
   }
 
   /* New modal class for mobile sidebars to avoid full-screen takeover */
-  .sidebar.sidebar-mobile-modal {
+  .sidebar-mobile-modal {
     position: fixed !important;
     top: 50% !important;
     left: 50% !important;
@@ -1650,6 +1650,19 @@ main {
 }
 
 @media (max-width: 900px) {
+  .sidebar-mobile-modal .sidebar,
+  .sidebar.sidebar-mobile-open .sidebar,
+  .sidebar.sidebar-mobile-fullscreen .sidebar {
+    display: block !important;
+    position: relative !important;
+    height: auto !important;
+    width: 100%z !important;
+    max-height: 80vh !important;
+    overflow: visible !important;
+  }
+}
+
+@media (max-width: 900px) {
   .sidebar {
     display: none;
   }
@@ -1675,7 +1688,7 @@ main {
     justify-content: center !important;
   }
 
-  .sidebar.sidebar-mobile-modal,
+  .sidebar-mobile-modal,
   .sidebar.sidebar-mobile-open,
   .sidebar.sidebar-mobile-fullscreen {
     display: flex !important;
@@ -1696,7 +1709,7 @@ main {
   }
 
   /* ensure the modal is fully opaque and interactive */
-  .sidebar.sidebar-mobile-modal,
+  .sidebar-mobile-modal,
   .sidebar.sidebar-mobile-open {
     opacity: 1 !important;
     visibility: visible !important;
