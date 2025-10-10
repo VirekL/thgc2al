@@ -10738,6 +10738,43 @@
     ]
   },
   {
+    "name": "Congregation 60hz 65%",
+    "id": "congregation-60hz-65",
+    "player": "Clutter",
+    "levelID": 68668045,
+    "date": "2023-03-29",
+    "length": 130,
+    "version": 2.1,
+    "video": "https://youtu.be/jKzratR2xDk",
+    "showcaseVideo": "https://youtu.be/k3ebBTBeUTg",
+    "submitter": "Excryst",
+    "tags": [
+      "Level",
+      "Low Hertz",
+	    "Progress",
+      "Rated"
+    ]
+  },
+  {
+	"name": "Congregation 60hz Mobile 42-100%",
+    "id": "congregation-60hz-42-100",
+    "player": "ForcedDragon",
+    "levelID": 68668045,
+    "date": "2022-11-23",
+    "length": 87,
+    "version": 2.1,
+    "video": "https://youtu.be/2l2Q8ceh_i4",
+    "showcaseVideo": "https://youtu.be/k3ebBTBeUTg",
+    "submitter": "Excryst",
+    "tags": [
+      "Level",
+      "Low Hertz",
+	    "Mobile",
+	    "Progress",
+      "Rated"
+    ]
+  },
+  {
     "name": "Renevant 120hz Mobile",
     "id": "renevant-120hz-mobile",
     "player": "SoulRise",
@@ -15765,22 +15802,6 @@
     ]
   },
   {
-    "name": "WarCora Challenge",
-    "id": "warcora-challenge",
-    "player": "GD!Frisk",
-    "length": "9",
-    "version": "2.1",
-    "video": "https://youtu.be/NgJBgU3kEUM",
-    "date": "2023-09-25",
-    "showcaseVideo": "https://youtu.be/NgJBgU3kEUM",
-    "submitter": "GD!Frisk",
-    "levelID": 92648956,
-    "tags": [
-      "Challenge",
-      "Verified"
-    ]
-  },
-  {
     "name": "Glaz Diavola",
     "id": "glaz-diavola",
     "player": "cring",
@@ -15863,4 +15884,5 @@
       "Rated"
     ]
   }
+
 ]
