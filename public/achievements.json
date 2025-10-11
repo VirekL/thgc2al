@@ -2163,6 +2163,22 @@
     ]
   },
   {
+    "name": "IT MEANS EVERYTHING 33-75%, 37%",
+    "id": "it-means-everything-33-75, 37%",
+    "player": "Waltty",
+    "length": 50,
+    "version": 2.2,
+    "video": "https://youtu.be/Cy52QePuvk4?t=46",
+    "showcaseVideo": "https://youtu.be/9nSkkXZ628E",
+    "date": "2025-10-10",
+    "submitter": "Emp",
+    "levelID": 106165639,
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Sakupen Circles 1.1x 37-100%",
     "id": "sakupen-circles-1-1x-37-100",
     "player": "Skylar",
@@ -2909,6 +2925,22 @@
     "video": "https://youtu.be/Z-LOnJKawIE",
     "showcaseVideo": "https://youtu.be/0Grvott58g0",
     "submitter": "TheShadowRealm",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
+    "name": "IT MEANS EVERYTHING 56%",
+    "id": "it-means-everything-56",
+    "player": "Waltty",
+    "length": 39,
+    "version": 2.2,
+    "video": "https://youtu.be/Cy52QePuvk4",
+    "showcaseVideo": "https://youtu.be/9nSkkXZ628E",
+    "date": "2025-10-10",
+    "submitter": "Emp",
+    "levelID": 106165639,
     "tags": [
       "Level",
       "Progress"
@@ -5238,22 +5270,6 @@
     "submitter": "kyle1saurus",
     "tags": [
       "Challenge",
-      "Progress"
-    ]
-  },
-  {
-    "name": "IT MEANS EVERYTHING 46%",
-    "id": "it-means-everything-46",
-    "player": "Waltty",
-    "length": 32,
-    "version": 2.2,
-    "video": "https://youtu.be/dfYIJyEsxt8",
-    "showcaseVideo": "https://youtu.be/9nSkkXZ628E",
-    "date": "2025-05-07",
-    "submitter": "TYATYAPKA",
-    "levelID": 106165639,
-    "tags": [
-      "Level",
       "Progress"
     ]
   },
@@ -10499,3 +10515,4 @@
     ]
   }
 ]
+
