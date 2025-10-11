@@ -1039,7 +1039,7 @@
 		"date": "2022-12-11",
 		"showcaseVideo": "https://www.youtube.com/watch?v=e1eiAvcQT_M",
 		"levelID": "86592424",
-		"removalReason": ""
+		"removalReason": "",
 		"tags": [
 			"Challenge"
 		]
@@ -1135,5 +1135,23 @@
 			"Level"
 		]
 	},
+	{
+  		"name": "Infinite Chaos",
+  		"id": "infinite-chaos",
+  		"player": "Victurkey",
+  		"date": "2025-05-26",
+  		"length": 140,
+  		"version": 2.2,
+  		"levelID": 119689515,
+  		"video": "https://youtu.be/wOMVERxU5IA",
+  		"showcaseVideo": "https://youtu.be/MQE8pRKzW0Q",
+  		"submitter": "Exiled_Shade",
+		"removalReason": "Not List Worthy",
+  		"tags": [
+    		"Level",
+    		"Verified"
+  		],
+  		"rank": 531
+}
 
 ]

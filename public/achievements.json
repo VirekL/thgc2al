@@ -4366,22 +4366,6 @@
     ]
   },
   {
-    "name": "Nautical Nebula",
-    "id": "nautical-nebula",
-    "player": "manu",
-    "levelID": 110891882,
-    "date": "2024-10-07",
-    "length": 76,
-    "version": 2.2,
-    "video": "https://youtu.be/JdmURAYP1-k",
-    "showcaseVideo": "https://youtu.be/f1PKnZWYoJQ",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Verified"
-    ]
-  },
-  {
     "name": "Leaves 25-82%",
     "id": "leaves-25-82",
     "player": "subabo",
@@ -5197,22 +5181,6 @@
       "Level",
       "Progress"
     ]
-  },
-  {
-    "name": "Lunatic Eyes",
-    "id": "lunatic-eyes",
-    "player": "DNM121",
-    "date": "2025-07-23",
-    "length": 86,
-    "version": 2.2,
-    "video": "https://youtu.be/0M1sMbchs68",
-    "showcaseVideo": "https://youtu.be/q3M4_gezvLc",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Verified"
-    ],
-    "levelID": 123417713
   },
   {
     "name": "Sad Chamber 55%, 51%x2 in a row",
@@ -6072,20 +6040,6 @@
       "Challenge",
       "Progress",
       "CBF"
-    ]
-  },
-  {
-    "name": "Lunatic Eyes (Old) 71%",
-    "id": "lunatic-eyes-old-71",
-    "player": "DNM121",
-    "date": "2025-04-24",
-    "length": 51,
-    "version": 2.2,
-    "video": "https://youtu.be/jWUkVGeXiXM",
-    "showcaseVideo": "https://youtu.be/q3M4_gezvLc",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -6990,6 +6944,22 @@
     ]
   },
   {
+    "name": "Itsumade",
+    "id": "itsumade",
+    "player": "CaveMelv",
+    "date": "2025-06-09",
+    "length": 188,
+    "version": 2.2,
+    "levelID": 120590716,
+    "video": "https://youtu.be/Oh8t09JF-EA",
+    "showcaseVideo": "https://youtu.be/qS3mHt8CeFU",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Verified"
+    ]
+  },
+  {
     "name": "M I S F O R T U N E",
     "id": "m-i-s-f-o-r-t-u-n-e",
     "player": "serpentical",
@@ -7049,22 +7019,6 @@
     "submitter": "goofygdplayer",
     "tags": [
       "Challenge",
-      "Verified"
-    ]
-  },
-  {
-    "name": "Itsumade",
-    "id": "itsumade",
-    "player": "CaveMelv",
-    "date": "2025-06-09",
-    "length": 188,
-    "version": 2.2,
-    "levelID": 120590716,
-    "video": "https://youtu.be/Oh8t09JF-EA",
-    "showcaseVideo": "https://youtu.be/qS3mHt8CeFU",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
       "Verified"
     ]
   },
@@ -7269,24 +7223,6 @@
     ]
   },
   {
-    "name": "The Catacombs",
-    "id": "the-catacombs",
-    "player": "Slithium",
-    "levelID": 104232191,
-    "date": "2024-04-20",
-    "length": 73,
-    "version": 2.2,
-    "submitter": "Anceps",
-    "video": "https://youtu.be/T9-75lfKVQg",
-    "showcaseVideo": "https://youtu.be/ULW2gj0bJNs",
-    "tags": [
-      "Level",
-      "Verified",
-      "CBF",
-      "Tentative"
-    ]
-  },
-  {
     "name": "Buffed Misanthrope 24-66%",
     "id": "buffed-misanthrope-24-66",
     "player": "BigMacGD",
@@ -7447,6 +7383,24 @@
       "Level",
       "Progress",
       "2P"
+    ]
+  },
+  {
+    "name": "The Catacombs",
+    "id": "the-catacombs",
+    "player": "Slithium",
+    "levelID": 104232191,
+    "date": "2024-04-20",
+    "length": 73,
+    "version": 2.2,
+    "submitter": "Anceps",
+    "video": "https://youtu.be/T9-75lfKVQg",
+    "showcaseVideo": "https://youtu.be/ULW2gj0bJNs",
+    "tags": [
+      "Level",
+      "Verified",
+      "CBF",
+      "Tentative"
     ]
   },
   {
@@ -7648,6 +7602,22 @@
       "Level",
       "Progress"
     ]
+  },
+  {
+    "name": "Lunatic Eyes",
+    "id": "lunatic-eyes",
+    "player": "DNM121",
+    "date": "2025-07-23",
+    "length": 86,
+    "version": 2.2,
+    "video": "https://youtu.be/0M1sMbchs68",
+    "showcaseVideo": "https://youtu.be/q3M4_gezvLc",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Verified"
+    ],
+    "levelID": 123417713
   },
   {
     "name": "MIGRAINE 50%",
@@ -8793,7 +8763,7 @@
   },
   {
     "name": "Infinite Chaos",
-    "id": "infinite-chaos",
+    "id": "infinite-chaos-copy",
     "player": "Victurkey",
     "date": "2025-05-26",
     "length": 140,
@@ -8957,23 +8927,6 @@
     ]
   },
   {
-    "name": "RUTHLESS Unnerfed",
-    "id": "ruthless-unnerfed",
-    "player": "LordVadercraft",
-    "levelID": 90219949,
-    "date": "2022-11-12",
-    "length": 125,
-    "version": 2.1,
-    "submitter": "Anceps",
-    "video": "https://youtu.be/RmItPs84OOk",
-    "showcaseVideo": "https://youtu.be/gTNCsNy-_Ow",
-    "tags": [
-      "Level",
-      "Verified",
-      "Outdated Version"
-    ]
-  },
-  {
     "name": "Ragnarok 75hz",
     "id": "ragnarok-75hz",
     "player": "wwdonut",
@@ -9055,6 +9008,23 @@
     "tags": [
       "Level",
       "Verified"
+    ]
+  },
+  {
+    "name": "RUTHLESS Unnerfed",
+    "id": "ruthless-unnerfed",
+    "player": "LordVadercraft",
+    "levelID": 90219949,
+    "date": "2022-11-12",
+    "length": 125,
+    "version": 2.1,
+    "submitter": "Anceps",
+    "video": "https://youtu.be/RmItPs84OOk",
+    "showcaseVideo": "https://youtu.be/gTNCsNy-_Ow",
+    "tags": [
+      "Level",
+      "Verified",
+      "Outdated Version"
     ]
   },
   {
@@ -9155,6 +9125,20 @@
       "Verified",
       "Coin Route",
       "Rated"
+    ]
+  },
+  {
+    "name": "Lunatic Eyes (Old) 71%",
+    "id": "lunatic-eyes-old-71",
+    "player": "DNM121",
+    "date": "2025-04-24",
+    "length": 51,
+    "version": 2.2,
+    "video": "https://youtu.be/jWUkVGeXiXM",
+    "showcaseVideo": "https://youtu.be/q3M4_gezvLc",
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -9427,6 +9411,22 @@
     "video": "https://youtu.be/-zApYHbfezM",
     "showcaseVideo": "https://youtu.be/OIoKQlFpDuE",
     "date": "2025-08-13",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Verified"
+    ]
+  },
+  {
+    "name": "Nautical Nebula",
+    "id": "nautical-nebula",
+    "player": "manu",
+    "levelID": 110891882,
+    "date": "2024-10-07",
+    "length": 76,
+    "version": 2.2,
+    "video": "https://youtu.be/JdmURAYP1-k",
+    "showcaseVideo": "https://youtu.be/f1PKnZWYoJQ",
     "submitter": "kyle1saurus",
     "tags": [
       "Level",
@@ -9865,6 +9865,22 @@
     "tags": [
       "Level",
       "Progress"
+    ]
+  },
+  {
+    "name": "Plastic Death",
+    "id": "plastic-death",
+    "player": "zLevii",
+    "length": 224,
+    "version": 2.2,
+    "video": "https://youtu.be/6LhxJhOgJEw",
+    "showcaseVideo": "https://youtu.be/QaSPgwCai9w",
+    "date": "2024-12-05",
+    "submitter": "kyle1saurus",
+    "levelID": 112788538,
+    "tags": [
+      "Level",
+      "Verified"
     ]
   },
   {
