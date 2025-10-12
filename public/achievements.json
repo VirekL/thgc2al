@@ -3314,6 +3314,21 @@
     ]
   },
   {
+    "name": "GREEN BULLET 57%",
+    "id": "green-bullet-57",
+    "player": "nickname",
+    "length": 70,
+    "version": 2.2,
+    "video": "https://www.youtube.com/watch?v=cfTDQbIpXQw",
+    "showcaseVideo": "https://youtu.be/mHg2jrzpkxs",
+    "date": "2025-10-11",
+    "submitter": "Anceps",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "KOCMOC",
     "id": "kocmoc",
     "player": "Zoink",
@@ -8500,7 +8515,7 @@
     ]
   },
   {
-    "name": "GREEN BULLET 43-100%",
+    "name": "GREEN BULLET (Old) 43-100%",
     "id": "green-bullet-43-100",
     "player": "nickname",
     "length": 69,
@@ -10464,4 +10479,5 @@
       "Rated"
     ]
   }
+
 ]
