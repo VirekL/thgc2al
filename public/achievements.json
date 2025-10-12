@@ -9010,6 +9010,23 @@
     ]
   },
   {
+    "name": "Zodiac 77%, 80%, 100%, 42%",
+    "id": "zodiac-77-80-100-42",
+    "player": "yomayoCB",
+    "levelID": 52374843,
+    "date": "2025-08-09",
+    "length": 400,
+    "version": 2.2,
+    "video": "https://www.twitch.tv/videos/2534630136?filter=highlights&sort=time",
+    "showcaseVideo": "https://youtu.be/9ZX_EHHpf04",
+    "submitter": "yomayoCB",
+    "tags": [
+      "Level",
+      "Consistency",
+      "Rated"
+    ]
+  },
+  {
     "name": "RUTHLESS Unnerfed",
     "id": "ruthless-unnerfed",
     "player": "LordVadercraft",
@@ -10481,4 +10498,5 @@
   }
 
 ]
+
 
