@@ -5647,6 +5647,22 @@
     ]
   },
   {
+    "name": "ad3us limit 65%",
+    "id": "ad3us-limit-65",
+    "player": "ad3usgmd",
+    "date": "2025-10-11",
+    "length": 35,
+    "version": 2.2,
+    "video": "https://youtu.be/RSD8ptr-dw0",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF",
+      "Tentative"
+    ]
+  },
+  {
     "name": "SADOMINIONISM",
     "id": "sadominionism",
     "player": "torn",
@@ -7537,6 +7553,22 @@
     ]
   },
   {
+    "name": "DISCONNECT 94%",
+    "id": "disconnect-94",
+    "player": "Elinore",
+    "date": "2025-10-11",
+    "length": 163,
+    "version": 2.2,
+    "video": "https://youtu.be/EHjR8bzao8I",
+    "showcaseVideo": "https://youtu.be/gVpqeqy6frU",
+    "submitter": "Emp",
+    "tags": [
+      "Level",
+      "Progress",
+      "Tentative"
+    ]
+  },
+  {
     "name": "riverlasting",
     "id": "riverlasting",
     "player": "seels",
@@ -7912,9 +7944,9 @@
     "id": "qoueo-120hz-mobile",
     "player": "DENISKA",
     "date": "2025-07-21",
-    "length": "52",
-    "version": "2.2",
-    "levelID": "81721025",
+    "length": 52,
+    "version": 2.2,
+    "levelID": 81721025,
     "video": "https://youtu.be/rX_NEeaxXmU",
     "showcaseVideo": "https://youtu.be/-foVEwyJS_A",
     "submitter": "TYATYAPKA",
@@ -7923,22 +7955,6 @@
       "Low Hertz",
       "Mobile",
       "Rated"
-    ]
-  },
-  {
-    "name": "ad3us limit 62%",
-    "id": "ad3us-limit-62",
-    "player": "ad3usgmd",
-    "date": "2025-06-17",
-    "length": 33,
-    "version": 2.2,
-    "video": "https://youtu.be/nqFR6igEZtw",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress",
-      "CBF",
-      "Tentative"
     ]
   },
   {
@@ -8006,22 +8022,6 @@
       "Level",
       "Verified",
       "Rated"
-    ]
-  },
-  {
-    "name": "DISCONNECT 88%",
-    "id": "disconnect-88",
-    "player": "Elinore",
-    "date": "2025-09-20",
-    "length": 154,
-    "version": 2.2,
-    "video": "https://youtu.be/L6sa72_zD04",
-    "showcaseVideo": "https://youtu.be/gVpqeqy6frU",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Progress",
-      "Tentative"
     ]
   },
   {
@@ -10481,3 +10481,4 @@
   }
 
 ]
+
