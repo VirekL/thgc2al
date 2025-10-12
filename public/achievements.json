@@ -1703,7 +1703,7 @@
     ]
   },
   {
-    "name": "Silent Clubstep (Old) 24-100%",
+    "name": "Silent clubstep (Old) 24-100%",
     "id": "silent-clubstep-old-24-100",
     "player": "sobot",
     "length": 65,
@@ -2030,6 +2030,22 @@
     ]
   },
   {
+    "name": "Silent clubstep (Old) 11-72%",
+    "id": "silent-clubstep-old-11-72",
+    "player": "noname228gg",
+    "length": 53,
+    "version": 2.2,
+    "video": "https://youtu.be/KmFQScxQhxo",
+    "showcaseVideo": "https://youtu.be/mTkrql917bE",
+    "date": "2024-06-02",
+    "submitter": "NeRz1",
+    "levelID": 38692301,
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Slaughterhouse 1.1x",
     "id": "slaughterhouse-1-1x",
     "player": "Zoink",
@@ -2109,23 +2125,6 @@
     "tags": [
       "Level",
       "Progress"
-    ]
-  },
-  {
-    "name": "Silent clubstep (Old) 14-73%",
-    "id": "silent-clubstep-old-14-73",
-    "player": "Vision",
-    "levelID": 38692301,
-    "date": "2024-08-19",
-    "length": 50,
-    "version": 2.2,
-    "video": "https://youtu.be/vxZ6NOzEQ-4",
-    "showcaseVideo": "https://youtu.be/mTkrql917bE",
-    "submitter": "Emp",
-    "tags": [
-      "Level",
-      "Progress",
-      "CBF"
     ]
   },
   {
@@ -4656,23 +4655,6 @@
       "CBF"
     ],
     "levelID": 118680356
-  },
-  {
-    "name": "Silent clubstep (Old) 9-65%",
-    "id": "silent-clubstep-old-9-65",
-    "player": "Emp",
-    "date": "2025-06-09",
-    "length": 50,
-    "version": 2.2,
-    "levelID": 38692301,
-    "video": "https://youtu.be/wLa7FiKY-Q0",
-    "showcaseVideo": "https://youtu.be/mTkrql917bE",
-    "submitter": "tricklength",
-    "tags": [
-      "Level",
-      "Progress",
-      "CBF"
-    ]
   },
   {
     "name": "Determination Dance",
