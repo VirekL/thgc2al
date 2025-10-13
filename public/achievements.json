@@ -3411,6 +3411,22 @@
     ]
   },
   {
+    "name": "Old Orochi 63%",
+    "id": "old-orochi-63",
+    "player": "SeptaGon7",
+    "date": "2025-10-10",
+    "length": 54,
+    "version": 2.2,
+    "video": "https://youtu.be/ozOOAJ7Hixw",
+    "showcaseVideo": "https://youtu.be/kOjaffK5Rgo",
+    "submitter": "Exiled_shade",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
+  },
+  {
     "name": "Sakupen Circles",
     "id": "sakupen-circles",
     "player": "Diamond",
@@ -3929,22 +3945,6 @@
     "tags": [
       "Level",
       "Verified"
-    ]
-  },
-  {
-    "name": "Old Orochi 52%",
-    "id": "old-orochi-52",
-    "player": "SeptaGon7",
-    "date": "2025-10-05",
-    "length": 47,
-    "version": 2.2,
-    "video": "https://youtu.be/gSgZ5y4hwc0",
-    "showcaseVideo": "https://youtu.be/kOjaffK5Rgo",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress",
-      "CBF"
     ]
   },
   {
@@ -10495,4 +10495,5 @@
     ]
   }
 ]
+
 
