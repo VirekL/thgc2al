@@ -2145,6 +2145,26 @@
     ]
   },
   {
+    "name": "Ouroboros 60hz Mobile 83%",
+    "id": "ouroboros-60hz-mobile-83",
+    "player": "Jastro",
+    "length": 135,
+    "version": 2.2,
+    "video": "https://youtu.be/1z0DqY4Pxqw",
+    "date": "2025-10-12",
+    "showcaseVideo": "https://youtu.be/Tks9DNwfxz4",
+    "levelID": 56703691,
+    "submitter": "Excryst",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated",
+      "Tentative"
+    ]
+  },
+  {
     "name": "Kyouki",
     "id": "kyouki",
     "player": "{出見塩}Demishio",
@@ -3136,26 +3156,6 @@
     "tags": [
       "Level",
       "Progress"
-    ]
-  },
-  {
-    "name": "Ouroboros 60hz Mobile 76%",
-    "id": "ouroboros-60hz-mobile-76",
-    "player": "Jastro",
-    "length": 125,
-    "version": 2.2,
-    "video": "https://youtu.be/RilB5eljWC4",
-    "date": "2025-04-05",
-    "showcaseVideo": "https://youtu.be/Tks9DNwfxz4",
-    "levelID": 56703691,
-    "submitter": "Excryst",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Progress",
-      "Rated",
-      "Tentative"
     ]
   },
   {
@@ -10297,6 +10297,22 @@
     ]
   },
   {
+    "name": "ULTRA PARACOSM 62%",
+    "id": "ultra-paracosm-62",
+    "player": "Wity",
+    "levelID": null,
+    "date": "2025-10-12",
+    "length": 40,
+    "version": 2.2,
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/LpwrrIUizCA",
+    "showcaseVideo": "https://youtu.be/E0sQ4n9gCfc",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "ULTRA PARACOSM 22-100%",
     "id": "ultra-paracosm-22-100",
     "player": "Wity",
@@ -10479,3 +10495,4 @@
     ]
   }
 ]
+
