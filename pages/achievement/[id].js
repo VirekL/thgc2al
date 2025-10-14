@@ -11,8 +11,10 @@ import Tag, { TAG_PRIORITY_ORDER } from '../../components/Tag';
 export async function getStaticPaths() {
   const achievementsPath = path.join(process.cwd(), 'public', 'achievements.json');
   const timelinePath = path.join(process.cwd(), 'public', 'timeline.json');
+  const platformersPath = path.join(process.cwd(), 'public', 'platformers.json');
   let achievements = [];
   let timeline = [];
+  let platformers = [];
 
   try {
     const achievementsData = fs.readFileSync(achievementsPath, 'utf8');
@@ -24,7 +26,12 @@ export async function getStaticPaths() {
     timeline = JSON.parse(timelineData);
   } catch (e) {}
 
-  const combinedData = [...achievements, ...timeline];
+  try {
+    const platformersData = fs.readFileSync(platformersPath, 'utf8');
+    platformers = JSON.parse(platformersData);
+  } catch (e) {}
+
+  const combinedData = [...achievements, ...timeline, ...platformers];
 
   const paths = combinedData
     .filter(a => a && a.id && a.name)
@@ -36,8 +43,10 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const achievementsPath = path.join(process.cwd(), 'public', 'achievements.json');
   const timelinePath = path.join(process.cwd(), 'public', 'timeline.json');
+  const platformersPath = path.join(process.cwd(), 'public', 'platformers.json');
   let achievements = [];
   let timeline = [];
+  let platformers = [];
 
   try {
     const achievementsData = fs.readFileSync(achievementsPath, 'utf8');
@@ -49,7 +58,12 @@ export async function getStaticProps({ params }) {
     timeline = JSON.parse(timelineData);
   } catch (e) {}
 
-  const combinedData = [...achievements, ...timeline].filter(a => a && a.id && a.name);
+  try {
+    const platformersData = fs.readFileSync(platformersPath, 'utf8');
+    platformers = JSON.parse(platformersData);
+  } catch (e) {}
+
+  const combinedData = [...achievements, ...timeline, ...platformers].filter(a => a && a.id && a.name);
 
   const achievement = combinedData.find(a => a.id.toString() === params.id) || null;
 
