@@ -5386,6 +5386,21 @@
     ]
   },
   {
+    "name": "Angelicide (Kaza) 76-100%",
+    "id": "angelicide-kaza-76-100",
+    "player": "Kaza",
+    "date": "2025-10-14",
+    "length": 19,
+    "version": 2.2,
+    "showcaseVideo": "https://youtu.be/J3zsCA6a-TQ",
+    "video": "https://youtu.be/BRliFwd5jKs",
+    "submitter": "tmtsps12",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Gay Acheron 17-100%",
     "id": "gay-acheron-17-100",
     "player": "turtl",
@@ -5838,21 +5853,6 @@
       "Level",
       "Verified",
       "CBF"
-    ]
-  },
-  {
-    "name": "Angelicide (Kaza) 79-100%",
-    "id": "angelicide-kaza-79-100",
-    "player": "Kaza",
-    "date": "2025-09-10",
-    "length": "16",
-    "version": "2.2",
-    "showcaseVideo": "https://youtu.be/678hOIaKzUk",
-    "video": "https://youtu.be/BRliFwd5jKs",
-    "submitter": "Exiled_Shade",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -7535,19 +7535,18 @@
     ]
   },
   {
-    "name": "DISCONNECT 94%",
-    "id": "disconnect-94",
+    "name": "DISCONNECT",
+    "id": "disconnect",
     "player": "Elinore",
-    "date": "2025-10-11",
-    "length": 163,
+    "date": "2025-10-13",
+    "length": 176,
     "version": 2.2,
-    "video": "https://youtu.be/EHjR8bzao8I",
+    "video": "https://youtu.be/HxHo-LzwSao",
     "showcaseVideo": "https://youtu.be/gVpqeqy6frU",
     "submitter": "Emp",
     "tags": [
       "Level",
-      "Progress",
-      "Tentative"
+      "Verified"
     ]
   },
   {
@@ -10495,5 +10494,6 @@
     ]
   }
 ]
+
 
 
