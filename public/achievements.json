@@ -8214,24 +8214,23 @@
     "showcaseVideo": "https://youtu.be/AauwACwyVBo"
   },
   {
-    "name": "shimmer 144hz Mobile",
-    "id": "shimmer-144hz-mobile",
-    "player": "Mateex",
-    "length": "76",
-    "version": "2.2",
-    "video": "https://youtu.be/YeZoM3jJEqA",
-    "date": "2025-08-27",
-    "showcaseVideo": "https://youtu.be/_vuXb2PHiOI",
-    "levelID": "94156085",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Rated"
-    ]
-  },
-  {
+    "name": "Time Lapse 144hz Mobile",
+        "id": "time-lapse-144hz-mobile",
+        "player": "Mateex",
+        "length": 64,
+        "version": 2.2,
+        "video": "https://youtu.be/ns2RJoy4MpE",
+        "date": "2025-10-14",
+        "showcaseVideo": "https://youtu.be/SGlmK7YVLGY",
+        "levelID": 97705490,
+        "submitter": "kyle1saurus",
+        "tags": [
+            "Level",
+            "Low Hertz",
+            "Mobile"
+        ]
+    },
+    {
     "name": "Firework (Pre-Balance) 54%",
     "id": "firework-pre-balance-54",
     "player": "Trick",
@@ -10494,6 +10493,7 @@
     ]
   }
 ]
+
 
 
 
