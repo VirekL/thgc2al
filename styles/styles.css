@@ -2013,27 +2013,24 @@ main {
 }
 
 .pill-toggle .track {
-  /* tighter pill: reduce padding and min-width so there's less empty space */
   width: auto;
   min-width: calc(var(--thumb-size) * 2 + 8px);
   height: var(--pill-height);
   background: var(--hover-bg);
   border-radius: 999px;
-  /* reserve half the thumb on both sides so labels can't sit under the thumb */
-  padding: 6px calc(var(--thumb-size) / 2 + 6px);
+  padding: 6px 8px;
   position: relative;
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.02), 0 2px 6px rgba(0,0,0,0.35);
   transition: background 160ms ease, box-shadow 160ms ease, transform 160ms ease;
   cursor: pointer;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr var(--thumb-size) 1fr;
   align-items: center;
-  justify-content: center;
-  gap: 8px; /* small gap between label and thumb */
 }
 
 .pill-toggle .thumb {
-  --thumb-left: calc(var(--thumb-size) / 2 + 6px);
-  --thumb-right: calc(100% - var(--thumb-size) / 2 - 6px);
+  --thumb-left: calc(var(--thumb-size) / 2 + 4px);
+  --thumb-right: calc(100% - var(--thumb-size) / 2 - 4px);
   width: var(--thumb-size);
   height: var(--thumb-size);
   background: var(--secondary-bg);
@@ -2068,49 +2065,47 @@ main {
   white-space: nowrap;
   text-align: center;
   z-index: 2;
-  margin: 0 6px; /* small breathing room next to thumb */
 }
 
 .pill-toggle .track .label-left {
+  grid-column: 1 / 2;
+  justify-self: start;
+  padding-left: 10px;
   opacity: 1;
   transform: translateX(0);
-  padding-left: 4px;
 }
 
 .pill-toggle .track .label-right {
+  grid-column: 3 / 4;
+  justify-self: end;
+  padding-right: 10px;
   opacity: 0.6;
   transform: translateX(0);
-  padding-right: 4px;
 }
 
 .pill-toggle .track .inner-label { display: none; }
+.pill-toggle .track .label-left { display: none; }
+.pill-toggle input[type="checkbox"] + .track .label-left { display: inline-block; opacity: 1; }
+.pill-toggle input[type="checkbox"] + .track .label-right { display: none; }
 
+.pill-toggle input[type="checkbox"]:checked + .track .label-left { display: none; }
+.pill-toggle input[type="checkbox"]:checked + .track .label-right { display: inline-block; opacity: 1; }
 
-.pill-toggle .track .label-left,
-.pill-toggle .track .label-right {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  white-space: nowrap;
-  pointer-events: none;
-  z-index: 3;
-  display: none;
-}
-
-.pill-toggle input[type="checkbox"] + .track .label-left {
-  display: block;
-  left: 0;
-  transform: translateX(calc(var(--thumb-size) / 2 + 10px)) translateY(-50%);
+.pill-toggle input[type="checkbox"]:checked + .track .label-left {
+  opacity: 0.6;
 }
 
 .pill-toggle input[type="checkbox"]:checked + .track .label-right {
-  display: block;
-  right: 0;
-  transform: translateX(calc(-1 * (var(--thumb-size) / 2 + 10px))) translateY(-50%);
+  opacity: 1;
 }
 
-.pill-toggle input[type="checkbox"]:checked + .track .label-left { opacity: 0.6; transform: translateX(calc(var(--thumb-size) / 2 + 10px)) translateY(-50%); }
-.pill-toggle input[type="checkbox"]:checked + .track .label-right { opacity: 1; }
+.pill-toggle input[type="checkbox"]:checked + .track .label-left {
+  transform: translateX(-8px);
+}
+
+.pill-toggle input[type="checkbox"]:checked + .track .label-right {
+  transform: translateX(8px);
+}
 
 .pill-toggle .label { display: none; }
 
