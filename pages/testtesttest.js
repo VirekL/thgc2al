@@ -986,6 +986,40 @@ export default function List() {
                 />
               </div>
               <div style={{ display: 'flex', justifyContent: 'center', marginTop: 8 }}>
+                <div style={{ display: 'flex', gap: 8, alignItems: 'center', maxWidth: 360, width: '100%', padding: '0 12px' }}>
+                  <label style={{ color: 'var(--text-color)', fontSize: 13, marginRight: 4 }}>Sort:</label>
+                  <select
+                    aria-label="Sort achievements"
+                    value={sortKey}
+                    onChange={e => {
+                      const v = e.target.value;
+                      setSortKey(v);
+                      try { localStorage.setItem('sortKey', v); } catch (err) {}
+                    }}
+                    style={{ padding: '6px 8px', borderRadius: 6, background: 'var(--primary-bg)', color: 'var(--text-color)', border: '1px solid var(--hover-bg)', flex: 1 }}
+                  >
+                    <option value="rank">Rank (Default)</option>
+                    <option value="name">Name</option>
+                    <option value="length">Length</option>
+                    <option value="levelID">Level ID</option>
+                    <option value="random">Random</option>
+                    <option value="date">Date</option>
+                  </select>
+                  <button
+                    aria-label="Toggle sort direction"
+                    title={sortDir === 'asc' ? 'Ascending' : 'Descending'}
+                    onClick={() => {
+                      const next = sortDir === 'asc' ? 'desc' : 'asc';
+                      setSortDir(next);
+                      try { localStorage.setItem('sortDir', next); } catch (err) {}
+                    }}
+                    style={{ padding: '6px 10px', borderRadius: 6, background: 'var(--primary-accent)', color: '#fff', border: 'none', cursor: 'pointer' }}
+                  >
+                    {sortDir === 'asc' ? '↑' : '↓'}
+                  </button>
+                </div>
+              </div>
+              <div style={{ display: 'flex', justifyContent: 'center', marginTop: 8 }}>
                 <label className="pill-toggle" data-variant="platformer" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: 'var(--muted, #DFE3F5)', fontSize: 14 }}>
                   <input
                     type="checkbox"
