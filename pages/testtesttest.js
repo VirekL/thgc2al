@@ -966,8 +966,30 @@ export default function List() {
             </div>
           )}
           {!isMobile && (
-            <div style={{ display: 'flex', alignItems: 'center', marginLeft: 12 }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginRight: 12 }}>
+            <div style={{ display: 'flex', alignItems: 'flex-start', marginLeft: 12, flexDirection: 'column', gap: 8 }}>
+              <label className="pill-toggle" data-variant="platformer" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: 'var(--muted, #DFE3F5)', fontSize: 14 }}>
+                <input
+                  type="checkbox"
+                  checked={usePlatformers}
+                  onChange={e => {
+                    const next = !!e.target.checked;
+                    setUsePlatformers(next);
+                    try { localStorage.setItem('usePlatformers', next ? '1' : '0'); } catch (err) {}
+                  }}
+                />
+                <span
+                  className="track"
+                  role="switch"
+                  aria-checked={usePlatformers}
+                  tabIndex={0}
+                >
+                  <span className="inner-label label-left">Platformer</span>
+                  <span className="thumb" aria-hidden="true" />
+                  <span className="inner-label label-right">Classic</span>
+                </span>
+              </label>
+
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                 <label style={{ color: 'var(--text-color)', fontSize: 13 }}>Sort:</label>
                 <select
                   aria-label="Sort achievements"
@@ -998,27 +1020,6 @@ export default function List() {
                   {sortDir === 'asc' ? '↑' : '↓'}
                 </button>
               </div>
-              <label className="pill-toggle" data-variant="platformer" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: 'var(--muted, #DFE3F5)', fontSize: 14 }}>
-                <input
-                  type="checkbox"
-                  checked={usePlatformers}
-                  onChange={e => {
-                    const next = !!e.target.checked;
-                    setUsePlatformers(next);
-                    try { localStorage.setItem('usePlatformers', next ? '1' : '0'); } catch (err) {}
-                  }}
-                />
-                <span
-                  className="track"
-                  role="switch"
-                  aria-checked={usePlatformers}
-                  tabIndex={0}
-                >
-                  <span className="inner-label label-left">Platformer</span>
-                  <span className="thumb" aria-hidden="true" />
-                  <span className="inner-label label-right">Classic</span>
-                </span>
-              </label>
             </div>
           )}
         </div>
