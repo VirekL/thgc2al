@@ -2074,13 +2074,13 @@ main {
   padding-right: 8px;
 }
 
-.pill-toggle .track .inner-label { display: none; }
-.pill-toggle .track .label-left { display: none; }
-.pill-toggle input[type="checkbox"] + .track .label-left { display: inline-block; opacity: 1; }
-.pill-toggle input[type="checkbox"] + .track .label-right { display: none; }
+.pill-toggle .track .inner-label { display: none !important; }
+.pill-toggle .track .label-left { display: none !important; }
+.pill-toggle input[type="checkbox"] + .track .label-left { display: inline-block !important; opacity: 1 !important; }
+.pill-toggle input[type="checkbox"] + .track .label-right { display: none !important; }
 
-.pill-toggle input[type="checkbox"]:checked + .track .label-left { display: none; }
-.pill-toggle input[type="checkbox"]:checked + .track .label-right { display: inline-block; opacity: 1; }
+.pill-toggle input[type="checkbox"]:checked + .track .label-left { display: none !important; }
+.pill-toggle input[type="checkbox"]:checked + .track .label-right { display: inline-block !important; opacity: 1 !important; }
 
 .pill-toggle input[type="checkbox"]:checked + .track .label-left {
   opacity: 0.6;
