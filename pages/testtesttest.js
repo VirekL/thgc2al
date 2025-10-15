@@ -858,7 +858,7 @@ export default function List() {
                 />
               </div>
               <div style={{ display: 'flex', justifyContent: 'center', marginTop: 8 }}>
-                <label style={{ display: 'flex', alignItems: 'center', gap: 8, color: 'var(--muted, #DFE3F5)', fontSize: 14 }}>
+                <label className="pill-toggle" data-variant="platformer" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: 'var(--muted, #DFE3F5)', fontSize: 14 }}>
                   <input
                     type="checkbox"
                     checked={usePlatformers}
@@ -868,7 +868,10 @@ export default function List() {
                       try { localStorage.setItem('usePlatformers', next ? '1' : '0'); } catch (err) {}
                     }}
                   />
-                  Platformers
+                  <span className="track" role="switch" aria-checked={usePlatformers} tabIndex={0}>
+                    <span className="thumb" aria-hidden="true" />
+                  </span>
+                  <span className="label">Platformers</span>
                 </label>
               </div>
               <div className="tag-filter-pills-container" style={{ width: '100%' }}>
@@ -913,7 +916,7 @@ export default function List() {
           )}
           {!isMobile && (
             <div style={{ display: 'flex', alignItems: 'center', marginLeft: 12 }}>
-              <label style={{ display: 'flex', alignItems: 'center', gap: 8, color: 'var(--muted, #DFE3F5)', fontSize: 14 }}>
+              <label className="pill-toggle" data-variant="platformer" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: 'var(--muted, #DFE3F5)', fontSize: 14 }}>
                 <input
                   type="checkbox"
                   checked={usePlatformers}
@@ -923,7 +926,10 @@ export default function List() {
                     try { localStorage.setItem('usePlatformers', next ? '1' : '0'); } catch (err) {}
                   }}
                 />
-                Platformers
+                <span className="track" role="switch" aria-checked={usePlatformers} tabIndex={0}>
+                  <span className="thumb" aria-hidden="true" />
+                </span>
+                <span className="label">Platformers</span>
               </label>
             </div>
           )}
