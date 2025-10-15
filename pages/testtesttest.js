@@ -868,10 +868,21 @@ export default function List() {
                       try { localStorage.setItem('usePlatformers', next ? '1' : '0'); } catch (err) {}
                     }}
                   />
-                  <span className="track" role="switch" aria-checked={usePlatformers} tabIndex={0}>
+                  <span
+                    className="track"
+                    role="switch"
+                    aria-checked={usePlatformers}
+                    tabIndex={0}
+                    onClick={() => {
+                      const next = !usePlatformers;
+                      setUsePlatformers(next);
+                      try { localStorage.setItem('usePlatformers', next ? '1' : '0'); } catch (err) {}
+                    }}
+                  >
+                    <span className="inner-label label-left">Platformer</span>
                     <span className="thumb" aria-hidden="true" />
+                    <span className="inner-label label-right">Classic</span>
                   </span>
-                  <span className="label">Platformers</span>
                 </label>
               </div>
               <div className="tag-filter-pills-container" style={{ width: '100%' }}>
@@ -926,10 +937,21 @@ export default function List() {
                     try { localStorage.setItem('usePlatformers', next ? '1' : '0'); } catch (err) {}
                   }}
                 />
-                <span className="track" role="switch" aria-checked={usePlatformers} tabIndex={0}>
+                <span
+                  className="track"
+                  role="switch"
+                  aria-checked={usePlatformers}
+                  tabIndex={0}
+                  onClick={() => {
+                    const next = !usePlatformers;
+                    setUsePlatformers(next);
+                    try { localStorage.setItem('usePlatformers', next ? '1' : '0'); } catch (err) {}
+                  }}
+                >
+                  <span className="inner-label label-left">Platformer</span>
                   <span className="thumb" aria-hidden="true" />
+                  <span className="inner-label label-right">Classic</span>
                 </span>
-                <span className="label">Platformers</span>
               </label>
             </div>
           )}
