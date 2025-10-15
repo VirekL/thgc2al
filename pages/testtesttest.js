@@ -343,6 +343,8 @@ export default function List() {
     if (va > vb) return 1;
     return 0;
   }, []);
+  // stable random order mapping: key -> index
+  const [randomOrderMap, setRandomOrderMap] = useState({});
   
   const [reordered, setReordered] = useState(null);
   const [showNewForm, setShowNewForm] = useState(false);
@@ -607,11 +609,17 @@ export default function List() {
   const filtered = useMemo(() => {
     const base = achievements.filter(filterFn);
     if (!sortKey || sortKey === 'rank') return base;
+    if (sortKey === 'random') {
+      const copy = [...base];
+      const getKey = item => (item && item.id) ? String(item.id) : `__idx_${base.indexOf(item)}`;
+      copy.sort((x, y) => ( (randomOrderMap[getKey(x)] || 0) - (randomOrderMap[getKey(y)] || 0) ));
+      return copy;
+    }
     const copy = [...base];
     copy.sort((x, y) => compareByKey(x, y, sortKey));
     if (sortDir === 'desc') copy.reverse();
     return copy;
-  }, [achievements, filterFn, sortKey, sortDir, compareByKey]);
+  }, [achievements, filterFn, sortKey, sortDir, compareByKey, randomOrderMap]);
 
   useEffect(() => {
     let pref = 100;
@@ -634,11 +642,34 @@ export default function List() {
   const devAchievements = useMemo(() => {
     if (!baseDev) return baseDev;
     if (!sortKey || sortKey === 'rank') return baseDev;
+    if (sortKey === 'random') {
+      const copy = [...baseDev];
+      const getKey = item => (item && item.id) ? String(item.id) : `__idx_${baseDev.indexOf(item)}`;
+      copy.sort((x, y) => ( (randomOrderMap[getKey(x)] || 0) - (randomOrderMap[getKey(y)] || 0) ));
+      if (sortDir === 'desc') copy.reverse();
+      return copy;
+    }
     const copy = [...baseDev];
     copy.sort((x, y) => compareByKey(x, y, sortKey));
     if (sortDir === 'desc') copy.reverse();
     return copy;
-  }, [baseDev, sortKey, sortDir, compareByKey]);
+  }, [baseDev, sortKey, sortDir, compareByKey, randomOrderMap]);
+
+  // regenerate stable random order map when the underlying lists change
+  useEffect(() => {
+    const items = (reordered && Array.isArray(reordered) && reordered.length) ? reordered : achievements;
+    const keys = (items || []).map((a, i) => (a && a.id) ? String(a.id) : `__idx_${i}`);
+    // Fisher-Yates shuffle
+    for (let i = keys.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const t = keys[i];
+      keys[i] = keys[j];
+      keys[j] = t;
+    }
+    const map = {};
+    keys.forEach((k, i) => { map[k] = i; });
+    setRandomOrderMap(map);
+  }, [achievements, reordered]);
 
   function handleMobileToggle() {
     setShowMobileFilters(v => !v);
@@ -979,10 +1010,11 @@ export default function List() {
                   }}
                   style={{ padding: '6px 8px', borderRadius: 6, background: 'var(--primary-bg)', color: 'var(--text-color)', border: '1px solid var(--hover-bg)' }}
                 >
-                  <option value="rank">Default (Rank)</option>
+                  <option value="rank">Rank (Default)</option>
                   <option value="name">Name</option>
                   <option value="length">Length</option>
                   <option value="levelID">Level ID</option>
+                  <option value="random">Random</option>
                   <option value="date">Date</option>
                 </select>
                 <button
