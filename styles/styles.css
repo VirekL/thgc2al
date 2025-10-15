@@ -2034,11 +2034,12 @@ main {
   background: var(--secondary-bg);
   border-radius: 50%;
   position: absolute;
-  left: 50%;
+  /* vertically center the thumb while allowing horizontal positioning */
   top: 50%;
-  transform: translate(-50%, -50%);
+  left: 8px; /* start near the left padding of the track */
+  transform: translateY(-50%);
   box-shadow: 0 2px 6px rgba(0,0,0,0.55);
-  transition: background 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+  transition: background 160ms ease, box-shadow 160ms ease, left 160ms ease, transform 160ms ease;
   z-index: 3;
 }
 
@@ -2049,6 +2050,8 @@ main {
 .pill-toggle input[type="checkbox"]:checked + .track .thumb {
   background: #fff;
   box-shadow: 0 4px 14px rgba(0,0,0,0.45);
+  /* move thumb to the right side while keeping vertical centering */
+  left: calc(100% - var(--thumb-size) - 8px);
 }
 
 
