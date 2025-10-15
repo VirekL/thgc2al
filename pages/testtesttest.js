@@ -347,6 +347,7 @@ export default function List() {
   const [randomOrderMap, setRandomOrderMap] = useState({});
   
   const [reordered, setReordered] = useState(null);
+  const [bgImage, setBgImage] = useState(null);
   const [showNewForm, setShowNewForm] = useState(false);
   const [hoveredIdx, setHoveredIdx] = useState(null);
   const [duplicateThumbKeys, setDuplicateThumbKeys] = useState(new Set());
@@ -499,6 +500,27 @@ export default function List() {
       });
   }, [usePlatformers]);
 
+  // update background image to the thumbnail of the top (rank 1) achievement for the current dataset
+  useEffect(() => {
+    try {
+      const srcList = achievements || [];
+      if (!srcList || !srcList.length) {
+        setBgImage(null);
+        return;
+      }
+      // find the top-ranked achievement (rank === 1) or first item
+      const top = srcList.find(a => Number(a.rank) === 1) || srcList[0];
+      if (!top) {
+        setBgImage(null);
+        return;
+      }
+      const thumb = (top.thumbnail && String(top.thumbnail).trim()) ? top.thumbnail : (top.levelID ? `https://tjcsucht.net/levelthumbs/${top.levelID}.png` : null);
+      setBgImage(thumb || null);
+    } catch (e) {
+      setBgImage(null);
+    }
+  }, [achievements, usePlatformers]);
+
   const router = useRouter();
 
   useEffect(() => {
@@ -607,8 +629,23 @@ export default function List() {
   );
 
   const filtered = useMemo(() => {
-    const base = achievements.filter(filterFn);
-    if (!sortKey || sortKey === 'rank') return base;
+    let base = achievements.filter(filterFn);
+    if (!sortKey) return base;
+    if (sortKey === 'rank') {
+      const copy = [...base];
+      if (sortDir === 'desc') copy.reverse();
+      return copy;
+    }
+    if (sortKey === 'levelID') {
+      base = base.filter(a => {
+        const num = Number(a && a.levelID);
+        return !isNaN(num) && num > 0;
+      });
+      const copy = [...base];
+      copy.sort((x, y) => compareByKey(x, y, 'levelID'));
+      if (sortDir === 'desc') copy.reverse();
+      return copy;
+    }
     if (sortKey === 'random') {
       const copy = [...base];
       const getKey = item => (item && item.id) ? String(item.id) : `__idx_${base.indexOf(item)}`;
@@ -641,7 +678,22 @@ export default function List() {
 
   const devAchievements = useMemo(() => {
     if (!baseDev) return baseDev;
-    if (!sortKey || sortKey === 'rank') return baseDev;
+    if (!sortKey) return baseDev;
+    if (sortKey === 'rank') {
+      const copy = [...baseDev];
+      if (sortDir === 'desc') copy.reverse();
+      return copy;
+    }
+    if (sortKey === 'levelID') {
+      const onlyWithLevel = baseDev.filter(a => {
+        const num = Number(a && a.levelID);
+        return !isNaN(num) && num > 0;
+      });
+      const copy = [...onlyWithLevel];
+      copy.sort((x, y) => compareByKey(x, y, 'levelID'));
+      if (sortDir === 'desc') copy.reverse();
+      return copy;
+    }
     if (sortKey === 'random') {
       const copy = [...baseDev];
       const getKey = item => (item && item.id) ? String(item.id) : `__idx_${baseDev.indexOf(item)}`;
@@ -887,7 +939,7 @@ export default function List() {
           content="This Geometry Dash list ranks rated, unrated, challenges, runs, speedhacked, low refresh rate, (and more) all under one list."
         />
       </Head>
-      <Background />
+  <Background bgImage={bgImage} />
       <header className="main-header">
         <div
           className="header-bar"
