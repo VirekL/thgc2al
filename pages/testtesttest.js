@@ -322,6 +322,28 @@ export default function List() {
   const [sortDir, setSortDir] = useState(() => {
     try { return typeof window !== 'undefined' ? localStorage.getItem('sortDir') || 'asc' : 'asc'; } catch (e) { return 'asc'; }
   });
+  // comparator helper (define early so filtered can use it during module init / SSR)
+  const compareByKey = useCallback((a, b, key) => {
+    if (!a && !b) return 0;
+    if (!a) return -1;
+    if (!b) return 1;
+    const getVal = item => {
+      if (!item) return '';
+      if (key === 'name') return (item.name || '').toString().toLowerCase();
+      if (key === 'length') return Number(item.length) || 0;
+      if (key === 'levelID') return Number(item.levelID) || 0;
+      if (key === 'date') return item.date ? new Date(item.date).getTime() || 0 : 0;
+      if (key === 'rank') return Number(item.rank) || 0;
+      return (item[key] || '').toString().toLowerCase();
+    };
+    const va = getVal(a);
+    const vb = getVal(b);
+    if (typeof va === 'number' && typeof vb === 'number') return va - vb;
+    if (va < vb) return -1;
+    if (va > vb) return 1;
+    return 0;
+  }, []);
+  
   const [reordered, setReordered] = useState(null);
   const [showNewForm, setShowNewForm] = useState(false);
   const [hoveredIdx, setHoveredIdx] = useState(null);
@@ -607,27 +629,7 @@ export default function List() {
 
   const baseDev = devMode && reordered ? reordered : achievements;
 
-  // sorting helpers
-  const compareByKey = useCallback((a, b, key) => {
-    if (!a && !b) return 0;
-    if (!a) return -1;
-    if (!b) return 1;
-    const getVal = item => {
-      if (!item) return '';
-      if (key === 'name') return (item.name || '').toString().toLowerCase();
-      if (key === 'length') return Number(item.length) || 0;
-      if (key === 'levelID') return Number(item.levelID) || 0;
-      if (key === 'date') return item.date ? new Date(item.date).getTime() || 0 : 0;
-      if (key === 'rank') return Number(item.rank) || 0;
-      return (item[key] || '').toString().toLowerCase();
-    };
-    const va = getVal(a);
-    const vb = getVal(b);
-    if (typeof va === 'number' && typeof vb === 'number') return va - vb;
-    if (va < vb) return -1;
-    if (va > vb) return 1;
-    return 0;
-  }, []);
+  
 
   const devAchievements = useMemo(() => {
     if (!baseDev) return baseDev;
