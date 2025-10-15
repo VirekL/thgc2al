@@ -873,11 +873,6 @@ export default function List() {
                     role="switch"
                     aria-checked={usePlatformers}
                     tabIndex={0}
-                    onClick={() => {
-                      const next = !usePlatformers;
-                      setUsePlatformers(next);
-                      try { localStorage.setItem('usePlatformers', next ? '1' : '0'); } catch (err) {}
-                    }}
                   >
                     <span className="inner-label label-left">Platformer</span>
                     <span className="thumb" aria-hidden="true" />
@@ -942,11 +937,6 @@ export default function List() {
                   role="switch"
                   aria-checked={usePlatformers}
                   tabIndex={0}
-                  onClick={() => {
-                    const next = !usePlatformers;
-                    setUsePlatformers(next);
-                    try { localStorage.setItem('usePlatformers', next ? '1' : '0'); } catch (err) {}
-                  }}
                 >
                   <span className="inner-label label-left">Platformer</span>
                   <span className="thumb" aria-hidden="true" />
