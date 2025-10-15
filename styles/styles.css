@@ -2024,7 +2024,7 @@ main {
   transition: background 160ms ease, box-shadow 160ms ease, transform 160ms ease;
   cursor: pointer;
   display: grid;
-  grid-template-columns: 1fr var(--thumb-size) 1fr;
+  grid-template-columns: auto var(--thumb-size) auto;
   align-items: center;
 }
 
