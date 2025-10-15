@@ -2080,6 +2080,17 @@ main {
   padding-right: 6px;
 }
 
+.pill-toggle .track .inner-label { opacity: 0; visibility: hidden; }
+.pill-toggle .track .label-left { opacity: 0; visibility: hidden; }
+.pill-toggle input[type="checkbox"] + .track .label-left { opacity: 0; visibility: hidden; }
+.pill-toggle input[type="checkbox"] + .track .label-right { opacity: 0; visibility: hidden; }
+
+.pill-toggle input[type="checkbox"] + .track .label-left { opacity: 1; visibility: visible; }
+.pill-toggle input[type="checkbox"] + .track .label-right { opacity: 0; visibility: hidden; }
+
+.pill-toggle input[type="checkbox"]:checked + .track .label-left { opacity: 0; visibility: hidden; }
+.pill-toggle input[type="checkbox"]:checked + .track .label-right { opacity: 1; visibility: visible; }
+
 .pill-toggle input[type="checkbox"]:checked + .track .label-left {
   opacity: 0.6;
 }
