@@ -1,1311 +1,2139 @@
-import Head from 'next/head';
-import React, { useEffect, useState, useMemo, useRef, useCallback, useTransition, memo } from 'react';
-import { VariableSizeList as ListWindow } from 'react-window';
-
-const AVAILABLE_TAGS = [
-  "Level", "Challenge", "Platformer", "Verified", "Deathless", "Coin Route", "Low Hertz", "Mobile", "Speedhack",
-  "Noclip", "Miscellaneous", "Progress", "Consistency",
-  "2P", "CBF", "Rated", "Formerly Rated", "Outdated Version", "Tentative"
-];
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-
-import Sidebar from '../components/Sidebar';
-import Background from '../components/Background';
-import { useDateFormat } from '../components/DateFormatContext';
-import Tag, { TAG_PRIORITY_ORDER } from '../components/Tag';
-import DevModePanel from '../components/DevModePanel';
-
-function normalizeYoutubeUrl(input) {
-  if (!input || typeof input !== 'string') return input;
-  const s = input.trim();
-
-  let m = s.match(/(?:https?:\/\/)?(?:www\.)?youtu\.be\/([^?&#\/]+)/i);
-  if (m) return `https://youtu.be/${m[1]}`;
-
-  let parsed;
-  try {
-    parsed = new URL(s.startsWith('http') ? s : `https://${s}`);
-  } catch (err) {
-    m = s.match(/[?&]v=([^?&#]+)/);
-    if (m) return `https://youtu.be/${m[1]}`;
-    m = s.match(/(?:https?:\/\/)?(?:www\.)?youtube\.com\/live\/([^?&#\/]+)/i);
-    if (m) return `https://youtu.be/${m[1]}`;
-    m = s.match(/(?:https?:\/\/)?(?:www\.)?youtube\.com\/shorts\/([^?&#\/]+)/i);
-    if (m) return `https://youtu.be/${m[1]}`;
-    return input;
-  }
-
-  const host = parsed.hostname.toLowerCase();
-
-  if (host === 'youtu.be') {
-    const id = parsed.pathname.split('/').filter(Boolean)[0];
-    if (id) {
-      // preserve timestamp params if present
-      const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
-      if (t) return `https://www.youtube.com/watch?v=${id}&t=${t}`;
-      return `https://youtu.be/${id}`;
-    }
-    const raw = parsed.pathname.replace(/^\//, '');
-    const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
-    if (t) return `https://www.youtube.com/watch?v=${raw}&t=${t}`;
-    return `https://youtu.be/${raw}`;
-  }
-
-  if (host.endsWith('youtube.com') || host.endsWith('youtube-nocookie.com')) {
-    const v = parsed.searchParams.get('v');
-    if (v) {
-      const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
-      return t ? `https://www.youtube.com/watch?v=${v}&t=${t}` : `https://www.youtube.com/watch?v=${v}`;
-    }
-
-    const path = parsed.pathname || '';
-    let parts = path.split('/').filter(Boolean);
-
-    const liveIdx = parts.indexOf('live');
-    if (liveIdx !== -1 && parts[liveIdx + 1]) {
-      const id = parts[liveIdx + 1];
-      const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
-      return t ? `https://www.youtube.com/watch?v=${id}&t=${t}` : `https://www.youtube.com/watch?v=${id}`;
-    }
-
-    const shortsIdx = parts.indexOf('shorts');
-    if (shortsIdx !== -1 && parts[shortsIdx + 1]) {
-      const id = parts[shortsIdx + 1];
-      const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
-      return t ? `https://www.youtube.com/watch?v=${id}&t=${t}` : `https://www.youtube.com/watch?v=${id}`;
-    }
-
-    if (parsed.searchParams.has('si')) parsed.searchParams.delete('si');
-
-    try {
-      if (parsed.searchParams.get('feature')) parsed.searchParams.delete('feature');
-    } catch (e) {
-      // ignore
-    }
-
-    const remainingParams = parsed.searchParams.toString();
-    return `${parsed.origin}${parsed.pathname}${remainingParams ? `?${remainingParams}` : ''}`;
-  }
-
-  return input;
+/* Developer Mode UI (devmode-*) */
+.devmode-floating-panel {
+  position: fixed;
+  z-index: 3000;
+  bottom: 24px;
+  right: 24px;
+  background: var(--secondary-bg, #232323);
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 12px #0006;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  min-width: 220px;
+  border: 1.5px solid var(--primary-accent, #e67e22);
 }
 
-function TagFilterPillsInner({ allTags, filterTags, setFilterTags, isMobile, show, setShow }) {
-  const tagStates = {};
-  allTags.forEach(tag => {
-    if (filterTags.include.includes(tag)) tagStates[tag] = 'include';
-    else if (filterTags.exclude.includes(tag)) tagStates[tag] = 'exclude';
-    else tagStates[tag] = 'neutral';
-  });
-
-  function handlePillClick(tag) {
-    if (tagStates[tag] === 'neutral') setFilterTags(prev => ({ ...prev, include: [...prev.include, tag] }));
-    else if (tagStates[tag] === 'include') setFilterTags(prev => ({ ...prev, include: prev.include.filter(t => t !== tag), exclude: [...prev.exclude, tag] }));
-    else setFilterTags(prev => ({ ...prev, exclude: prev.exclude.filter(t => t !== tag) }));
-  }
-
-  return (
-    <div
-      className="tag-filter-pills"
-      style={{
-        minHeight: 40,
-        marginBottom: 16,
-        display: isMobile ? (show ? 'flex' : 'none') : 'flex',
-        flexWrap: 'wrap',
-        gap: 8,
-        alignItems: 'center',
-        transition: 'all 0.2s',
-      }}
-    >
-      {allTags.length === 0 ? (
-        <span style={{ color: '#aaa', fontSize: 13 }}>Loading tags...</span>
-      ) : (
-        allTags.sort((a, b) => TAG_PRIORITY_ORDER.indexOf(a.toUpperCase()) - TAG_PRIORITY_ORDER.indexOf(b.toUpperCase())).map(tag => (
-          <Tag
-            key={tag}
-            tag={tag}
-            state={tagStates[tag]}
-            onClick={() => handlePillClick(tag)}
-            tabIndex={0}
-            clickable={true}
-          />
-        ))
-      )}
-    </div>
-  );
+.devmode-title {
+  color: var(--primary-accent, #e67e22);
+  font-weight: 600;
+  margin-bottom: 2px;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
 }
 
-function formatDate(date, dateFormat) {
-  if (!date) return 'N/A';
-  const d = new Date(date);
-  if (isNaN(d)) return 'N/A';
-  d.setDate(d.getDate() + 1);
-  const yy = String(d.getFullYear()).slice(-2);
-  const yyyy = d.getFullYear();
-  const mm = String(d.getMonth() + 1).padStart(2, '0');
-  const dd = String(d.getDate()).padStart(2, '0');
-  if (dateFormat === 'YYYY/MM/DD') return `${yyyy}/${mm}/${dd}`;
-  if (dateFormat === 'MM/DD/YY') return `${mm}/${dd}/${yy}`;
-  if (dateFormat === 'DD/MM/YY') return `${dd}/${mm}/${yy}`;
-  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+.devmode-btn-row {
+  display: flex;
+  gap: 8px;
 }
 
-const AchievementCard = memo(function AchievementCard({ achievement, devMode }) {
-  const { dateFormat } = useDateFormat();
-  const handleClick = e => {
-    if (devMode) {
-      if (e.ctrlKey || e.button === 1) return;
-      e.preventDefault();
-      e.stopPropagation();
-    }
-  };
-  return (
-    <Link href={`/achievement/${achievement.id}`} passHref legacyBehavior>
-      <a
-        style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }}
-        onClick={handleClick}
-        onMouseDown={handleClick}
-        tabIndex={devMode ? -1 : 0}
-        aria-disabled={devMode ? 'true' : undefined}
-      >
-        <div
-          className="achievement-item"
-          tabIndex={0}
-          style={{ cursor: 'pointer' }}
-        >
-          <div className="rank-date-container">
-            <div className="achievement-length">
-              {achievement.length ? `${Math.floor(achievement.length / 60)}:${(achievement.length % 60).toString().padStart(2, '0')}` : 'N/A'}
-            </div>
-            <div className="achievement-date">
-              {achievement.date ? formatDate(achievement.date, dateFormat) : 'N/A'}
-            </div>
-            <div className="rank"><strong>#{achievement.rank}</strong></div>
-          </div>
-          <div className="tag-container">
-            {(achievement.tags || []).sort((a, b) => TAG_PRIORITY_ORDER.indexOf(a.toUpperCase()) - TAG_PRIORITY_ORDER.indexOf(b.toUpperCase())).map(tag => (
-              <Tag tag={tag} key={tag} />
-            ))}
-          </div>
-          <div className="achievement-details">
-            <div className="text">
-              <h2>{achievement.name}</h2>
-              <p>{achievement.player}</p>
-            </div>
-            <div className="thumbnail-container">
-              <img src={achievement.thumbnail || (achievement.levelID ? `https://tjcsucht.net/levelthumbs/${achievement.levelID}.png` : '/assets/default-thumbnail.png')} alt={achievement.name} loading="lazy" />
-            </div>
-          </div>
-        </div>
-      </a>
-    </Link>
-  );
-}, (prev, next) => prev.achievement === next.achievement && prev.devMode === next.devMode);
-
-function useDebouncedValue(value, delay) {
-  const [debounced, setDebounced] = useState(value);
-  useEffect(() => {
-    const handler = setTimeout(() => setDebounced(value), delay);
-    return () => clearTimeout(handler);
-  }, [value, delay]);
-  return debounced;
+.devmode-btn {
+  padding: 6px 16px;
+  border-radius: 6px;
+  border: 1.5px solid var(--primary-accent, #e67e22);
+  background: var(--primary-accent, #e67e22);
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border 0.15s;
+  box-shadow: 0 1px 4px #0002;
 }
 
-export default function List() {
-  const [achievements, setAchievements] = useState([]);
-  const [usePlatformers, setUsePlatformers] = useState(() => {
-    try {
-      const v = typeof window !== 'undefined' ? window.localStorage.getItem('usePlatformers') : null;
-      return v === '1' || v === 'true';
-    } catch (e) {
-      return false;
-    }
-  });
-  const [visibleCount, setVisibleCount] = useState(100);
-  const [searchJumpPending, setSearchJumpPending] = useState(false);
-  const listRef = useRef(null);
-  const [search, setSearch] = useState('');
-  const [manualSearch, setManualSearch] = useState('');
-  const [highlightedIdx, setHighlightedIdx] = useState(null);
-  const [noMatchMessage, setNoMatchMessage] = useState('');
-  const debouncedSearch = useDebouncedValue(search, 200);
-
-  function handleSearchKeyDown(e) {
-    if (e.key !== 'Enter') return;
-    e.preventDefault();
-    const rawQuery = (search || '').trim();
-    const query = rawQuery.toLowerCase();
-    if (!query) return;
-
-    const matchesQuery = a => {
-      if (!a) return false;
-      const candidates = [a.name, a.player, a.id, a.levelID, a.submitter, (a.tags || []).join(' ')].filter(Boolean);
-      return candidates.some(c => String(c).toLowerCase().includes(query));
-    };
-
-    const respectsTagFilters = a => {
-      const tags = (a.tags || []).map(t => t.toUpperCase());
-      if (filterTags.include.length && !filterTags.include.every(tag => tags.includes(tag.toUpperCase()))) return false;
-      if (filterTags.exclude.length && filterTags.exclude.some(tag => tags.includes(tag.toUpperCase()))) return false;
-      return true;
-    };
-
-    const baseList = devMode && reordered ? reordered : achievements;
-
-    const preFiltered = baseList.filter(a => respectsTagFilters(a));
-
-    const matchingItems = preFiltered.filter(a => matchesQuery(a));
-    if (!matchingItems || matchingItems.length === 0) return;
-
-    const firstMatch = matchingItems[0];
-
-    const targetIdxInPreFiltered = preFiltered.findIndex(a => a === firstMatch);
-
-  setManualSearch(rawQuery);
-    setSearchJumpPending(true);
-    setVisibleCount(0);
-
-    requestAnimationFrame(() => requestAnimationFrame(() => {
-      const countToShow = Math.max(20, matchingItems.length);
-      setVisibleCount(prev => Math.max(prev, countToShow));
-
-      if (devMode) {
-        setScrollToIdx(targetIdxInPreFiltered);
-        setHighlightedIdx(targetIdxInPreFiltered);
-      } else {
-
-        const visibleFiltered = achievements.filter(a => {
-          if (manualSearch || debouncedSearch) {
-            const s = manualSearch ? manualSearch : debouncedSearch;
-            const sLower = (s || '').trim().toLowerCase();
-            if (sLower) {
-              if (typeof a.name !== 'string' || !a.name.toLowerCase().includes(sLower)) return false;
-            }
-          }
-          const tags = (a.tags || []).map(t => t.toUpperCase());
-          if (filterTags.include.length && !filterTags.include.every(tag => tags.includes(tag.toUpperCase()))) return false;
-          if (filterTags.exclude.length && filterTags.exclude.some(tag => tags.includes(tag.toUpperCase()))) return false;
-          return true;
-        });
-
-        const finalIdx = visibleFiltered.findIndex(a => a === firstMatch);
-        const idxToUse = finalIdx === -1 ? 0 : finalIdx;
-        setScrollToIdx(idxToUse);
-        if (finalIdx === -1) {
-          setNoMatchMessage('No matching achievement is currently visible with the active filters.');
-          window.setTimeout(() => setNoMatchMessage(''), 3000);
-        } else {
-          setHighlightedIdx(idxToUse);
-        }
-      }
-    }));
-
-    if (document && document.activeElement && typeof document.activeElement.blur === 'function') {
-      document.activeElement.blur();
-    }
-  }
-  const [filterTags, setFilterTags] = useState({ include: [], exclude: [] });
-  const [allTags, setAllTags] = useState([]);
-  const [isMobile, setIsMobile] = useState(false);
-  const [showMobileFilters, setShowMobileFilters] = useState(false);
-  const [showSidebar, setShowSidebar] = useState(false);
-  const mobileBtnRef = useRef();
-  const [isPending, startTransition] = typeof useTransition === 'function' ? useTransition() : [false, fn => fn()];
-  const { dateFormat, setDateFormat } = useDateFormat();
-  const [showSettings, setShowSettings] = useState(false);
-  const [devMode, setDevMode] = useState(false);
-  const [reordered, setReordered] = useState(null);
-  const [showNewForm, setShowNewForm] = useState(false);
-  const [hoveredIdx, setHoveredIdx] = useState(null);
-  const [duplicateThumbKeys, setDuplicateThumbKeys] = useState(new Set());
-  const [newForm, setNewForm] = useState({
-    name: '', id: '', player: '', length: 0, version: 2, video: '', showcaseVideo: '', date: '', submitter: '', levelID: 0, thumbnail: '', tags: []
-  });
-  const [newFormTags, setNewFormTags] = useState([]);
-  const [newFormCustomTags, setNewFormCustomTags] = useState('');
-  const [insertIdx, setInsertIdx] = useState(null);
-  const [editIdx, setEditIdx] = useState(null);
-  const [editForm, setEditForm] = useState(null);
-  const [editFormTags, setEditFormTags] = useState([]);
-  const [editFormCustomTags, setEditFormCustomTags] = useState('');
-  const achievementRefs = useRef([]);
-
-  function handleMoveAchievementUp(idx) {
-    setReordered(prev => {
-      if (!prev || idx <= 0) return prev;
-      const arr = [...prev];
-      const temp = arr[idx - 1];
-      arr[idx - 1] = arr[idx];
-      arr[idx] = temp;
-      arr.forEach((a, i) => { a.rank = i + 1; });
-      return arr;
-    });
-  }
-
-  function handleMoveAchievementDown(idx) {
-    setReordered(prev => {
-      if (!prev || idx >= prev.length - 1) return prev;
-      const arr = [...prev];
-      const temp = arr[idx + 1];
-      arr[idx + 1] = arr[idx];
-      arr[idx] = temp;
-      arr.forEach((a, i) => { a.rank = i + 1; });
-      return arr;
-    });
-  }
-
-  function handleCheckDuplicateThumbnails() {
-    const items = devMode && reordered ? reordered : achievements;
-    const map = new Map();
-    items.forEach((a, i) => {
-      const thumb = (a && a.thumbnail) ? a.thumbnail : (a && a.levelID) ? `https://tjcsucht.net/levelthumbs/${a.levelID}.png` : '';
-      const key = String(thumb || '').trim();
-      if (!key) return;
-      map.set(key, (map.get(key) || 0) + 1);
-    });
-    const dupKeys = new Set();
-    map.forEach((count, key) => { if (count > 1) dupKeys.add(key); });
-    setDuplicateThumbKeys(dupKeys);
-  }
-  const [scrollToIdx, setScrollToIdx] = useState(null);
-  function handleEditAchievement(idx) {
-    if (!reordered || !reordered[idx]) return;
-    const a = reordered[idx];
-    setEditIdx(idx);
-    setEditForm({
-      ...a,
-      version: Number(a.version) || 2,
-      levelID: Number(a.levelID) || 0,
-      length: Number(a.length) || 0
-    });
-    setEditFormTags(Array.isArray(a.tags) ? [...a.tags] : []);
-    setEditFormCustomTags('');
-    setShowNewForm(false);
-  }
-
-  function handleEditFormChange(e) {
-    const { name, value } = e.target;
-    const newVal = (name === 'video' || name === 'showcaseVideo') ? normalizeYoutubeUrl(value) : (['version', 'levelID', 'length'].includes(name) ? Number(value) : value);
-    setEditForm(f => ({
-      ...f,
-      [name]: newVal
-    }));
-  }
-
-  function handleEditFormTagClick(tag) {
-    setEditFormTags(tags => tags.includes(tag) ? tags.filter(t => t !== tag) : [...tags, tag]);
-  }
-
-  function handleEditFormCustomTagsChange(e) {
-    setEditFormCustomTags(e.target.value);
-  }
-
-  function handleEditFormSave() {
-    const entry = {};
-    Object.entries(editForm).forEach(([k, v]) => {
-      if (k === 'levelID') {
-        const num = Number(v);
-        if (!isNaN(num) && num > 0) {
-          entry[k] = num;
-        }
-        return;
-      }
-      if (typeof v === 'string') {
-        if (v.trim() !== '') entry[k] = v.trim();
-      } else if (v !== undefined && v !== null && v !== '') {
-        entry[k] = v;
-      }
-    });
-    let tags = [...editFormTags];
-    if (typeof editFormCustomTags === 'string' && editFormCustomTags.trim()) {
-      editFormCustomTags.split(',').map(t => (typeof t === 'string' ? t.trim() : t)).filter(Boolean).forEach(t => {
-        if (!tags.includes(t)) tags.push(t);
-      });
-    }
-    if (tags.length > 0) entry.tags = tags;
-
-    if (entry.video) entry.video = normalizeYoutubeUrl(entry.video);
-    if (entry.showcaseVideo) entry.showcaseVideo = normalizeYoutubeUrl(entry.showcaseVideo);
-
-    setReordered(prev => {
-      if (!prev) return prev;
-      const arr = [...prev];
-      const [removed] = arr.splice(editIdx, 1);
-      const updated = { ...removed, ...entry };
-      let newRank = parseInt(updated.rank, 10);
-      if (isNaN(newRank) || newRank < 1) newRank = arr.length + 1;
-      arr.splice(newRank - 1, 0, updated);
-      arr.forEach((a, i) => { a.rank = i + 1; });
-      return arr;
-    });
-    setEditIdx(null);
-    setEditForm(null);
-    setEditFormTags([]);
-    setEditFormCustomTags('');
-  }
-
-  function handleEditFormCancel() {
-    setEditIdx(null);
-    setEditForm(null);
-    setEditFormTags([]);
-    setEditFormCustomTags('');
-  }
-
-  // fetch data whenever the selected source changes
-  useEffect(() => {
-    const file = usePlatformers ? '/platformers.json' : '/achievements.json';
-    fetch(file)
-      .then(res => res.json())
-      .then(data => {
-        const list = Array.isArray(data) ? data : (data.achievements || []);
-        const valid = list.filter(a => a && typeof a.name === 'string' && a.name && a.id);
-        const withRank = valid.map((a, i) => ({ ...a, rank: i + 1 }));
-        setAchievements(withRank);
-        const tags = new Set();
-        withRank.forEach(a => (a.tags || []).forEach(t => tags.add(t)));
-        setAllTags(Array.from(tags));
-      });
-  }, [usePlatformers]);
-
-  const router = useRouter();
-
-  useEffect(() => {
-    if (!router || !router.isReady) return;
-    try {
-      const hasDev = router.query && (router.query.dev === '1' || router.query.dev === 'true' || router.query.dev !== undefined);
-      if (hasDev && achievements && achievements.length && !devMode) {
-        setDevMode(true);
-        setReordered(achievements.map(a => ({ ...a })));
-      }
-    } catch (e) {
-    }
-  }, [router, router && router.isReady, router && router.query, achievements]);
-
-  useEffect(() => {
-    function handleKeyDown(e) {
-      if (e.shiftKey && (e.key === 'M' || e.key === 'm')) {
-        setDevMode(v => {
-          const next = !v;
-          if (!next) setReordered(null);
-          else setReordered(achievements);
-          return next;
-        });
-      }
-    }
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [achievements]);
-
-  useEffect(() => {
-    if (!isMobile) return;
-    let pinchActive = false;
-    let lastTouches = [];
-    let pinchStartDist = null;
-    let pinchEndDist = null;
-
-    function getDistance(touches) {
-      if (touches.length < 2) return 0;
-      const dx = touches[0].clientX - touches[1].clientX;
-      const dy = touches[0].clientY - touches[1].clientY;
-      return Math.sqrt(dx * dx + dy * dy);
-    }
-
-    function handleTouchStart(e) {
-      if (e.touches.length === 2) {
-        pinchActive = true;
-        pinchStartDist = getDistance(e.touches);
-      }
-      lastTouches = Array.from(e.touches);
-    }
-
-    function handleTouchMove(e) {
-      if (pinchActive && e.touches.length === 2) {
-        pinchEndDist = getDistance(e.touches);
-      }
-      lastTouches = Array.from(e.touches);
-    }
-
-    function handleTouchEnd(e) {
-      if (pinchActive && pinchStartDist && pinchEndDist && pinchEndDist < pinchStartDist - 40) {
-        pinchActive = false;
-        pinchStartDist = null;
-        pinchEndDist = null;
-        return;
-      }
-      lastTouches = Array.from(e.touches);
-    }
-
-    window.addEventListener('touchstart', handleTouchStart, { passive: false });
-    window.addEventListener('touchmove', handleTouchMove, { passive: false });
-    window.addEventListener('touchend', handleTouchEnd, { passive: false });
-    return () => {
-      window.removeEventListener('touchstart', handleTouchStart);
-      window.removeEventListener('touchmove', handleTouchMove);
-      window.removeEventListener('touchend', handleTouchEnd);
-    };
-  }, [isMobile, achievements]);
-
-  useEffect(() => {
-    function handleResize() {
-      setIsMobile(window.innerWidth <= 900);
-      if (window.innerWidth > 900) setShowMobileFilters(false);
-    }
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  const searchLower = useMemo(() => {
-    const s = manualSearch ? manualSearch : debouncedSearch;
-    return (s || '').trim().toLowerCase();
-  }, [manualSearch, debouncedSearch]);
-
-  const filterFn = useCallback(
-    a => {
-      if (searchLower) {
-        if (typeof a.name !== 'string') return false;
-        if (!a.name.toLowerCase().includes(searchLower)) return false;
-      }
-      const tags = (a.tags || []).map(t => t.toUpperCase());
-      if (filterTags.include.length && !filterTags.include.every(tag => tags.includes(tag.toUpperCase()))) return false;
-      if (filterTags.exclude.length && filterTags.exclude.some(tag => tags.includes(tag.toUpperCase()))) return false;
-      return true;
-    },
-    [searchLower, filterTags]
-  );
-
-  const filtered = useMemo(() => {
-    return achievements.filter(filterFn);
-  }, [achievements, filterFn]);
-
-  useEffect(() => {
-    let pref = 100;
-    if (searchJumpPending) return;
-    try {
-      if (typeof window !== 'undefined') {
-        const v = localStorage.getItem('itemsPerPage');
-        pref = v === 'all' ? 'all' : (v ? Number(v) || 100 : 100);
-      }
-    } catch (e) { pref = 100; }
-
-    if (pref === 'all') setVisibleCount(filtered.length);
-    else setVisibleCount(Math.min(pref, filtered.length));
-  }, [filtered]);
-
-  const devAchievements = devMode && reordered ? reordered : achievements;
-
-  function handleMobileToggle() {
-    setShowMobileFilters(v => !v);
-  }
-
-  function handleNewFormChange(e) {
-    const { name, value } = e.target;
-    const newVal = (name === 'video' || name === 'showcaseVideo') ? normalizeYoutubeUrl(value) : (['version', 'levelID', 'length'].includes(name) ? Number(value) : value);
-    setNewForm(f => ({
-      ...f,
-      [name]: newVal
-    }));
-  }
-  function handleNewFormTagClick(tag) {
-    setNewFormTags(tags => tags.includes(tag) ? tags.filter(t => t !== tag) : [...tags, tag]);
-  }
-  function handleNewFormCustomTagsChange(e) {
-    setNewFormCustomTags(e.target.value);
-  }
-  function handleNewFormAdd() {
-    let tags = [...newFormTags];
-    if (typeof newFormCustomTags === 'string' && newFormCustomTags.trim()) {
-      newFormCustomTags.split(',').map(t => (typeof t === 'string' ? t.trim() : t)).filter(Boolean).forEach(t => {
-        if (!tags.includes(t)) tags.push(t);
-      });
-    }
-    const entry = {};
-    Object.entries(newForm).forEach(([k, v]) => {
-      if (k === 'levelID') {
-        const num = Number(v);
-        if (!isNaN(num) && num > 0) {
-          entry[k] = num;
-        }
-        return;
-      }
-      if (typeof v === 'string') {
-        if (v.trim() !== '') entry[k] = v.trim();
-      } else if (v !== undefined && v !== null && v !== '') {
-        entry[k] = v;
-      }
-    });
-    if (tags.length > 0) entry.tags = tags;
-    if (entry.video) entry.video = normalizeYoutubeUrl(entry.video);
-    if (entry.showcaseVideo) entry.showcaseVideo = normalizeYoutubeUrl(entry.showcaseVideo);
-    setReordered(prev => {
-      let newArr;
-      if (!prev) {
-        setScrollToIdx(0);
-        newArr = [entry];
-      } else if (insertIdx === null || insertIdx < 0 || insertIdx > prev.length - 1) {
-        setScrollToIdx(prev.length);
-        newArr = [...prev, entry];
-      } else {
-        newArr = [...prev];
-        newArr.splice(insertIdx + 1, 0, entry);
-        setScrollToIdx(insertIdx + 1);
-      }
-      newArr.forEach((a, i) => { a.rank = i + 1; });
-      return newArr;
-    });
-    setShowNewForm(false);
-    setNewForm({ name: '', id: '', player: '', length: 0, version: 2, video: '', showcaseVideo: '', date: '', submitter: '', levelID: 0, thumbnail: '', tags: [] });
-    setNewFormTags([]);
-    setNewFormCustomTags('');
-    setInsertIdx(null);
-  }
-  function handleNewFormCancel() {
-    setShowNewForm(false);
-    setNewForm({ name: '', id: '', player: '', length: 0, version: 2, video: '', showcaseVideo: '', date: '', submitter: '', levelID: 0, thumbnail: '', tags: [] });
-    setNewFormTags([]);
-    setNewFormCustomTags('');
-  }
-  const newFormPreview = useMemo(() => {
-    let tags = [...newFormTags];
-    if (typeof newFormCustomTags === 'string' && newFormCustomTags.trim()) {
-      newFormCustomTags.split(',').map(t => (typeof t === 'string' ? t.trim() : t)).filter(Boolean).forEach(t => {
-        if (!tags.includes(t)) tags.push(t);
-      });
-    }
-    const entry = {};
-    Object.entries(newForm).forEach(([k, v]) => {
-      if (k === 'levelID') {
-        const num = Number(v);
-        if (!isNaN(num) && num > 0) entry[k] = num;
-        return;
-      }
-      if (typeof v === 'string') {
-        if (v.trim() !== '') entry[k] = v.trim();
-      } else if (v !== undefined && v !== null && v !== '') {
-        entry[k] = v;
-      }
-    });
-    if (tags.length > 0) entry.tags = tags;
-    return entry;
-  }, [newForm, newFormTags, newFormCustomTags]);
-
-  function handleCopyJson() {
-    if (!reordered) return;
-    const json = JSON.stringify(reordered.map(({ rank, ...rest }) => rest), null, 2);
-    if (navigator.clipboard) {
-      navigator.clipboard.writeText(json);
-      alert(`Copied new ${usePlatformers ? 'platformers.json' : 'achievements.json'} to clipboard!`);
-    } else {
-      const textarea = document.createElement('textarea');
-      textarea.value = json;
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand('copy');
-      document.body.removeChild(textarea);
-      alert(`Copied new ${usePlatformers ? 'platformers.json' : 'achievements.json'} to clipboard!`);
-    }
-  }
-
-  function getMostVisibleIdx() {
-    if (!achievementRefs.current) return null;
-    let maxVisible = 0;
-    let bestIdx = null;
-    achievementRefs.current.forEach((ref, idx) => {
-      if (!ref) return;
-      const rect = ref.getBoundingClientRect();
-      const visible = Math.max(0, Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0));
-      if (visible > maxVisible) {
-        maxVisible = visible;
-        bestIdx = idx;
-      }
-    });
-    return bestIdx;
-  }
-  function handleShowNewForm() {
-    if (showNewForm) {
-      setShowNewForm(false);
-      setInsertIdx(null);
-      setNewForm({ name: '', id: '', player: '', length: 0, version: 2, video: '', showcaseVideo: '', date: '', submitter: '', levelID: 0, thumbnail: '', tags: [] });
-      setNewFormTags([]);
-      setNewFormCustomTags('');
-      return;
-    }
-    setInsertIdx(getMostVisibleIdx());
-    setShowNewForm(true);
-  }
-
-  useEffect(() => {
-    if (scrollToIdx !== null && achievementRefs.current[scrollToIdx]) {
-      achievementRefs.current[scrollToIdx].scrollIntoView({ behavior: 'smooth', block: 'center' });
-      setScrollToIdx(null);
-      if (searchJumpPending) setSearchJumpPending(false);
-    }
-  }, [scrollToIdx, devAchievements]);
-
-  useEffect(() => {
-    if (highlightedIdx === null) return;
-    const id = window.setTimeout(() => setHighlightedIdx(null), 3000);
-    return () => window.clearTimeout(id);
-  }, [highlightedIdx]);
-
-  useEffect(() => {
-    if (scrollToIdx === null) return;
-    if (devMode) return;
-    try {
-      const idx = Math.max(0, Math.min(scrollToIdx, filtered.length - 1));
-      if (listRef && listRef.current && typeof listRef.current.scrollToItem === 'function') {
-        requestAnimationFrame(() => requestAnimationFrame(() => {
-          try {
-            if (typeof listRef.current.scrollToItem === 'function') {
-              listRef.current.scrollToItem(idx, 'center');
-            } else if (typeof listRef.current.scrollTo === 'function') {
-              const offset = idx * 150;
-              listRef.current.scrollTo(offset);
-            }
-            if (searchJumpPending) setSearchJumpPending(false);
-          } catch (e) { }
-        }));
-      } else if (achievementRefs.current && achievementRefs.current[idx]) {
-        achievementRefs.current[idx].scrollIntoView({ behavior: 'smooth', block: 'center' });
-        if (searchJumpPending) setSearchJumpPending(false);
-      }
-    } catch (e) {
-    }
-    setScrollToIdx(null);
-  }, [scrollToIdx, filtered, devMode]);
-
-  function handleRemoveAchievement(idx) {
-    setReordered(prev => {
-      if (!prev) return prev;
-      const arr = [...prev];
-      arr.splice(idx, 1);
-      return arr;
-    });
-  }
-
-  function handleDuplicateAchievement(idx) {
-    setReordered(prev => {
-      if (!prev) return prev;
-      const arr = [...prev];
-      const copy = { ...arr[idx], id: arr[idx].id + '-copy' };
-      arr.splice(idx + 1, 0, copy);
-      setScrollToIdx(idx + 1);
-      return arr;
-    });
-  }
-
-  return (
-    <>
-      <Head>
-        <title>The Hardest Achievements List</title>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
-        <link rel="shortcut icon" href="/assets/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
-        <meta name="apple-mobile-web-app-title" content="THAL" />
-        <link rel="manifest" href="/assets/site.webmanifest" />
-        <meta
-          name="description"
-          content="This Geometry Dash list ranks rated, unrated, challenges, runs, speedhacked, low refresh rate, (and more) all under one list."
-        />
-      </Head>
-      <Background />
-      <header className="main-header">
-        <div
-          className="header-bar"
-          style={{
-            display: 'flex',
-            flexDirection: isMobile ? 'column' : 'row',
-            alignItems: isMobile ? 'flex-start' : 'center',
-            gap: isMobile ? 0 : 16,
-            width: '100%',
-            paddingBottom: isMobile ? 8 : 0
-          }}
-        >
-          <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', width: isMobile ? '100%' : 'auto' }}>
-            <button
-              id="mobile-hamburger-btn"
-              className="mobile-hamburger-btn"
-              type="button"
-              aria-label="Open sidebar"
-              title="Open sidebar menu"
-              onClick={() => isMobile && setShowSidebar(true)}
-              style={{ marginRight: 12 }}
-            >
-              <span className="bi bi-list hamburger-icon" aria-hidden="true"></span>
-            </button>
-            <div className="logo">
-              <img src="/assets/favicon-96x96.png" alt="The Hardest Achievements List Logo" title="The Hardest Achievements List Logo" className="logo-img" />
-            </div>
-            <h1 className="title main-title" style={{ marginLeft: 12, fontSize: isMobile ? 22 : undefined, lineHeight: 1.1 }}>
-              The Hardest Achievements List
-            </h1>
-          </div>
-          {isMobile && (
-            <div style={{ width: '100%', marginTop: 12 }}>
-              <div className="search-bar" style={{ width: '100%', maxWidth: 400, margin: '0 auto' }}>
-                <input
-                  type="text"
-                  placeholder="Search achievements..."
-                  value={search}
-                  onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
-                  onKeyDown={handleSearchKeyDown}
-                  aria-label="Search achievements"
-                  className="search-input"
-                  style={{ width: '100%' }}
-                />
-              </div>
-              <div style={{ display: 'flex', justifyContent: 'center', marginTop: 8 }}>
-                <label className="pill-toggle" data-variant="platformer" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: 'var(--muted, #DFE3F5)', fontSize: 14 }}>
-                  <input
-                    type="checkbox"
-                    checked={usePlatformers}
-                    onChange={e => {
-                      const next = !!e.target.checked;
-                      setUsePlatformers(next);
-                      try { localStorage.setItem('usePlatformers', next ? '1' : '0'); } catch (err) {}
-                    }}
-                  />
-                  <span
-                    className="track"
-                    role="switch"
-                    aria-checked={usePlatformers}
-                    tabIndex={0}
-                  >
-                    <span className="inner-label label-left">Platformer</span>
-                    <span className="thumb" aria-hidden="true" />
-                    <span className="inner-label label-right">Classic</span>
-                  </span>
-                </label>
-              </div>
-              <div className="tag-filter-pills-container" style={{ width: '100%' }}>
-                <TagFilterPills
-                  allTags={allTags}
-                  filterTags={filterTags}
-                  setFilterTags={setFilterTags}
-                  isMobile={isMobile}
-                  show={showMobileFilters}
-                  setShow={setShowMobileFilters}
-                />
-              </div>
-              <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: 8 }}>
-                <button
-                  ref={mobileBtnRef}
-                  id="mobile-filter-toggle-btn"
-                  aria-label={showMobileFilters ? 'Hide Filters' : 'Show Filters'}
-                  onClick={handleMobileToggle}
-                  className="mobile-filter-toggle"
-                  dangerouslySetInnerHTML={{
-                    __html: showMobileFilters
-                      ? '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-up.svg" alt="Hide Filters" class="arrow-img" /></span>'
-                      : '<span class="arrow-img-wrapper"><img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/chevron-down.svg" alt="Show Filters" class="arrow-img" /></span>'
-                  }}
-                />
-              </div>
-            </div>
-          )}
-          {!isMobile && (
-            <div className="search-bar" style={{ width: '100%', maxWidth: 400, marginLeft: 'auto' }}>
-              <input
-                type="text"
-                placeholder="Search achievements..."
-                value={search}
-                onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
-                onKeyDown={handleSearchKeyDown}
-                aria-label="Search achievements"
-                className="search-input"
-                style={{ width: '100%' }}
-              />
-            </div>
-          )}
-          {!isMobile && (
-            <div style={{ display: 'flex', alignItems: 'center', marginLeft: 12 }}>
-              <label className="pill-toggle" data-variant="platformer" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: 'var(--muted, #DFE3F5)', fontSize: 14 }}>
-                <input
-                  type="checkbox"
-                  checked={usePlatformers}
-                  onChange={e => {
-                    const next = !!e.target.checked;
-                    setUsePlatformers(next);
-                    try { localStorage.setItem('usePlatformers', next ? '1' : '0'); } catch (err) {}
-                  }}
-                />
-                <span
-                  className="track"
-                  role="switch"
-                  aria-checked={usePlatformers}
-                  tabIndex={0}
-                >
-                  <span className="inner-label label-left">Platformer</span>
-                  <span className="thumb" aria-hidden="true" />
-                  <span className="inner-label label-right">Classic</span>
-                </span>
-              </label>
-            </div>
-          )}
-        </div>
-        {!isMobile && (
-          <div className="tag-filter-pills-container">
-            <TagFilterPills
-              allTags={allTags}
-              filterTags={filterTags}
-              setFilterTags={setFilterTags}
-              isMobile={isMobile}
-              show={showMobileFilters}
-              setShow={setShowMobileFilters}
-            />
-          </div>
-        )}
-      </header>
-      {isMobile && showSidebar && (
-        <div
-          className="sidebar-mobile-overlay"
-          style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            width: "100vw",
-            height: "100vh",
-            background: "rgba(0,0,0,0.75)",
-            zIndex: 1001,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center"
-          }}
-          onClick={() => setShowSidebar(false)}
-        >
-          <div
-            className="sidebar-mobile-modal"
-            style={{
-              position: "fixed",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              zIndex: 1002,
-              width: "90vw",
-              maxWidth: 350,
-              maxHeight: "90vh",
-              boxShadow: "0 8px 32px rgba(0,0,0,0.45)",
-              display: "flex",
-              flexDirection: "column",
-              background: "var(--secondary-bg)",
-              borderRadius: "1.2rem",
-              overflowY: "auto"
-            }}
-            onClick={e => e.stopPropagation()}
-          >
-            <button
-              aria-label="Close sidebar"
-              title="Close sidebar"
-              style={{
-                position: "absolute",
-                top: 12,
-                right: 12,
-                background: "none",
-                border: "none",
-                color: "#DFE3F5",
-                fontSize: 28,
-                cursor: "pointer",
-                zIndex: 1003
-              }}
-              onClick={() => setShowSidebar(false)}
-            >
-              ×
-            </button>
-            <Sidebar />
-          </div>
-        </div>
-      )}
-      <main className="main-content achievements-main">
-        {!isMobile && <Sidebar />}
-        <div
-          id="achievements-search-index"
-          aria-hidden="true"
-          style={{
-            position: 'absolute',
-            left: -9999,
-            top: 'auto',
-            width: 1,
-            height: 1,
-            overflow: 'hidden',
-            whiteSpace: 'pre-wrap'
-          }}
-        >
-          {(devMode && reordered ? reordered : achievements).map((a, i) => {
-            const parts = [];
-            if (a && a.name) parts.push(a.name);
-            if (a && a.player) parts.push(a.player);
-            if (a && a.id) parts.push(String(a.id));
-            if (a && a.levelID) parts.push(String(a.levelID));
-            if (a && a.submitter) parts.push(a.submitter);
-            if (a && Array.isArray(a.tags) && a.tags.length) parts.push(a.tags.join(', '));
-            return (
-              <span key={a && a.id ? a.id : `s-${i}`}>
-                {parts.join(' \u2014 ')}
-              </span>
-            );
-          })}
-        </div>
-        <section className="achievements achievements-section">
-          <DevModePanel
-            devMode={devMode}
-            handleCheckDuplicateThumbnails={handleCheckDuplicateThumbnails}
-            editIdx={editIdx}
-            editForm={editForm}
-            editFormTags={editFormTags}
-            editFormCustomTags={editFormCustomTags}
-            AVAILABLE_TAGS={AVAILABLE_TAGS}
-            handleEditFormChange={handleEditFormChange}
-            handleEditFormTagClick={handleEditFormTagClick}
-            handleEditFormCustomTagsChange={handleEditFormCustomTagsChange}
-            handleEditFormSave={handleEditFormSave}
-            handleEditFormCancel={handleEditFormCancel}
-            showNewForm={showNewForm}
-            newForm={newForm}
-            newFormTags={newFormTags}
-            newFormCustomTags={newFormCustomTags}
-            handleNewFormChange={handleNewFormChange}
-            handleNewFormTagClick={handleNewFormTagClick}
-            handleNewFormCustomTagsChange={handleNewFormCustomTagsChange}
-            handleNewFormAdd={handleNewFormAdd}
-            handleNewFormCancel={handleNewFormCancel}
-            handleCopyJson={handleCopyJson}
-            handleShowNewForm={handleShowNewForm}
-            newFormPreview={newFormPreview}
-            onImportAchievementsJson={json => {
-              let imported = Array.isArray(json) ? json : (json.achievements || []);
-              if (!Array.isArray(imported)) {
-                alert(`Invalid ${usePlatformers ? 'platformers.json' : 'achievements.json'} format.`);
-                return;
-              }
-              imported = imported.map((a, i) => ({ ...a, rank: i + 1 }));
-              setReordered(imported);
-              setDevMode(true);
-              alert(`Imported ${usePlatformers ? 'platformers.json' : 'achievements.json'}!`);
-            }}
-            dataFileName={usePlatformers ? 'platformers.json' : 'achievements.json'}
-          />
-          {isPending ? (
-            <div className="no-achievements">Loading...</div>
-          ) : (devMode ? (
-            devAchievements.map((a, i) => (
-              <div
-                key={a.id || i}
-                ref={el => {
-                  achievementRefs.current[i] = el;
-                }}
-                className={(() => {
-                  const thumb = (a && a.thumbnail) ? a.thumbnail : (a && a.levelID) ? `https://tjcsucht.net/levelthumbs/${a.levelID}.png` : '';
-                  return duplicateThumbKeys.has((thumb || '').trim()) ? 'duplicate-thumb-item' : '';
-                })()}
-                style={{
-                  border: '1px solid #333',
-                  marginBottom: 8,
-                  background: '#181818',
-                  borderRadius: 8,
-                  position: 'relative'
-                }}
-                onClick={() => {
-                  if (showNewForm && scrollToIdx === i) setShowNewForm(false);
-                }}
-                onMouseEnter={() => setHoveredIdx(i)}
-                onMouseLeave={() => setHoveredIdx(v => v === i ? null : v)}
-              >
-                {(hoveredIdx === i) && (
-                  <div style={{
-                    position: 'absolute',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    display: 'flex',
-                    gap: 32,
-                    zIndex: 3,
-                    background: 'var(--secondary-bg, #232323)',
-                    borderRadius: '1.5rem',
-                    padding: '22px 40px',
-                    boxShadow: '0 4px 24px #000b',
-                    alignItems: 'center',
-                    border: '2px solid var(--primary-accent, #e67e22)',
-                    transition: 'background 0.2s, border 0.2s',
-                  }}>
-                    <button
-                      title="Move Up"
-                      style={{
-                        background: 'var(--primary-accent, #e67e22)',
-                        border: 'none',
-                        color: '#fff',
-                        fontSize: 36,
-                        cursor: 'pointer',
-                        opacity: 1,
-                        borderRadius: '50%',
-                        width: 48,
-                        height: 48,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        boxShadow: '0 2px 8px #0006',
-                        transition: 'background 0.15s, transform 0.1s',
-                        outline: 'none',
-                        marginRight: 8,
-                      }}
-                      disabled={i === 0}
-                      onClick={e => { e.stopPropagation(); handleMoveAchievementUp(i); }}
-                    >▲</button>
-                    <button
-                      title="Move Down"
-                      style={{
-                        background: 'var(--primary-accent, #e67e22)',
-                        border: 'none',
-                        color: '#fff',
-                        fontSize: 36,
-                        cursor: 'pointer',
-                        opacity: 1,
-                        borderRadius: '50%',
-                        width: 48,
-                        height: 48,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        boxShadow: '0 2px 8px #0006',
-                        transition: 'background 0.15s, transform 0.1s',
-                        outline: 'none',
-                        marginRight: 8,
-                      }}
-                      disabled={i === devAchievements.length - 1}
-                      onClick={e => { e.stopPropagation(); handleMoveAchievementDown(i); }}
-                    >▼</button>
-                    <button
-                      title="Edit"
-                      style={{
-                        background: 'var(--info, #2980b9)',
-                        border: 'none',
-                        color: '#fff',
-                        fontSize: 44,
-                        cursor: 'pointer',
-                        opacity: 1,
-                        borderRadius: '50%',
-                        width: 64,
-                        height: 64,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        boxShadow: '0 2px 8px #0006',
-                        transition: 'background 0.15s, transform 0.1s',
-                        outline: 'none',
-                      }}
-                      onMouseOver={e => e.currentTarget.style.background = 'var(--info-hover, #3498db)'}
-                      onMouseOut={e => e.currentTarget.style.background = 'var(--info, #2980b9)'}
-                      onClick={e => { e.stopPropagation(); handleEditAchievement(i); }}
-                    >✏️</button>
-                    <button
-                      title="Duplicate"
-                      style={{
-                        background: 'var(--primary-accent, #e67e22)',
-                        border: 'none',
-                        color: '#fff',
-                        fontSize: 44,
-                        cursor: 'pointer',
-                        opacity: 1,
-                        borderRadius: '50%',
-                        width: 64,
-                        height: 64,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        boxShadow: '0 2px 8px #0006',
-                        transition: 'background 0.15s, transform 0.1s',
-                        outline: 'none',
-                      }}
-                      onMouseOver={e => e.currentTarget.style.background = 'var(--primary-accent-hover, #ff9800)'}
-                      onMouseOut={e => e.currentTarget.style.background = 'var(--primary-accent, #e67e22)'}
-                      onClick={e => { e.stopPropagation(); handleDuplicateAchievement(i); }}
-                    >📄</button>
-                    <button
-                      title="Remove"
-                      style={{
-                        background: 'var(--danger, #c0392b)',
-                        border: 'none',
-                        color: '#fff',
-                        fontSize: 44,
-                        cursor: 'pointer',
-                        opacity: 1,
-                        borderRadius: '50%',
-                        width: 64,
-                        height: 64,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        boxShadow: '0 2px 8px #0006',
-                        transition: 'background 0.15s, transform 0.1s',
-                        outline: 'none',
-                      }}
-                      onMouseOver={e => e.currentTarget.style.background = 'var(--danger-hover, #e74c3c)'}
-                      onMouseOut={e => e.currentTarget.style.background = 'var(--danger, #c0392b)'}
-                      onClick={e => { e.stopPropagation(); handleRemoveAchievement(i); }}
-                    >🗑️</button>
-                  </div>
-                )}
-                <div style={{
-                  opacity: hoveredIdx === i ? 0.3 : 1,
-                  transition: 'opacity 0.2s',
-                  position: 'relative',
-                  zIndex: 1
-                }} className={highlightedIdx === i ? 'search-highlight' : ''}>
-                  <AchievementCard achievement={a} devMode={devMode} />
-                </div>
-              </div>
-            ))
-          ) : (
-            filtered.length === 0 ? (
-              <div className="no-achievements">No achievements found.</div>
-            ) : (
-              <ListWindow
-                ref={listRef}
-                height={Math.min(720, (typeof window !== 'undefined' ? window.innerHeight - 200 : 720))}
-                itemCount={Math.min(visibleCount, filtered.length)}
-                itemSize={() => 150}
-                width={'100%'}
-                style={{ overflowX: 'hidden' }}
-                onItemsRendered={({ visibleStopIndex }) => {
-                  try {
-                    const v = typeof window !== 'undefined' ? localStorage.getItem('itemsPerPage') : null;
-                    const pageSize = v === 'all' ? 'all' : (v ? Number(v) || 100 : 100);
-                    if (pageSize === 'all') return;
-                    if (visibleStopIndex >= Math.min(visibleCount, filtered.length) - 5 && visibleCount < filtered.length) {
-                      setVisibleCount(prev => Math.min(prev + (Number(pageSize) || 100), filtered.length));
-                    }
-                  } catch (err) {
-                    if (visibleStopIndex >= Math.min(visibleCount, filtered.length) - 5 && visibleCount < filtered.length) {
-                      setVisibleCount(prev => Math.min(prev + 100, filtered.length));
-                    }
-                  }
-                }}
-              >
-                {({ index, style }) => {
-                  const a = filtered[index];
-                  const itemStyle = { ...style, padding: 8, boxSizing: 'border-box' };
-                  const thumb = (a && a.thumbnail) ? a.thumbnail : (a && a.levelID) ? `https://tjcsucht.net/levelthumbs/${a.levelID}.png` : '';
-                  const isDup = duplicateThumbKeys.has((thumb || '').trim());
-                  return (
-                    <div style={itemStyle} key={a.id || index} className={`${isDup ? 'duplicate-thumb-item' : ''} ${highlightedIdx === index ? 'search-highlight' : ''}`}>
-                      <AchievementCard achievement={a} devMode={devMode} />
-                    </div>
-                  );
-                }}
-              </ListWindow>
-            )
-          ))}
-        </section>
-      </main>
-      <div aria-live="polite" aria-atomic="true" style={{position:'absolute', left:-9999, top:'auto', width:1, height:1, overflow:'hidden'}}>
-        {noMatchMessage}
-      </div>
-    </>
-  );
+.devmode-btn:hover,
+.devmode-btn:focus {
+  background: var(--primary-accent-hover, #ff9800);
+  color: #fff;
+  border-color: var(--primary-accent-hover, #ff9800);
 }
 
-const TagFilterPills = React.memo(TagFilterPillsInner, (prev, next) => {
-  return prev.allTags === next.allTags && prev.filterTags === next.filterTags && prev.isMobile === next.isMobile && prev.show === next.show;
-});
+.devmode-form-panel {
+  position: fixed;
+  z-index: 3001;
+  bottom: 24px;
+  left: 24px;
+  background: var(--secondary-bg, #232323);
+  border-radius: 10px;
+  padding: 10px 32px 6px 32px;
+  margin-bottom: 0;
+  max-width: 600px;
+  width: 96vw;
+  min-width: 320px;
+  box-shadow: 0 2px 12px #0006;
+  border: 1.5px solid var(--primary-accent, #e67e22);
+  color: var(--text-color, #DFE3F5);
+  font-size: 0.97rem;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.devmode-form-title {
+  margin-top: 0;
+  color: var(--primary-accent, #e67e22);
+  font-size: 1.08rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.devmode-form-btn-row {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.devmode-preview-box {
+  margin-top: 10px;
+  background: var(--card-bg, #181818);
+  padding: 7px 7px 7px 7px;
+  font-size: 12px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  border-radius: 7px;
+  color: var(--text-color, #232323);
+  border: 1.2px solid var(--primary-accent, #e67e22);
+  box-shadow: 0 1px 4px #0002;
+}
+
+:root {
+  --primary-bg: #23283E;
+  --secondary-bg: #1B1F30;
+  --accent-bg: #2E3451;
+  --text-color: #DFE3F5;
+  --hover-bg: #343A52;
+  --active-bg: #424A66;
+  --shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  --border-radius: 8px;
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comfortaa', Arial, sans-serif;
+}
+
+body {
+  background: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .achievement-card {
+    margin-top: 0 !important;
+    padding-top: 0.5rem !important;
+  }
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 0 0 auto;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 20%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.7s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  background: url('/assets/cbf-logo.png') no-repeat center center/cover;
+}
+
+.logo img:hover {
+  transform: scale(1.15);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+  transition: transform 0.7s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+}
+
+.tab-link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+  transition: color 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.tab-link:hover {
+  color: #FFFFFF;
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid var(--hover-bg);
+  border-radius: var(--border-radius);
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.search-bar input:focus {
+  border-color: var(--active-bg);
+  outline: none;
+}
+
+.search-bar button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--border-radius);
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.search-bar button:hover {
+  transform: scale(1.1);
+  background-color: var(--active-bg);
+}
+
+search-bar button:active {
+  background-color: var(--active-bg);
+}
+
+main {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: calc(100vh - 72px);
+}
+
+.rank-date-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  font-weight: normal;
+  z-index: 5;
+  text-shadow: 1px 1px 4px rgb(0, 0, 0), -1px -1px 4px rgb(0, 0, 0);
+  white-space: nowrap;
+}
+
+.achievements {
+  flex-grow: 1;
+  width: 70%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  /* fill available vertical space inside main and allow internal scrolling */
+  min-height: 0; /* allow flex child to shrink properly */
+  height: 100%;
+  max-height: none; /* removed fixed calc to avoid cutoff */
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--hover-bg) transparent;
+  background: transparent !important;
+  /* Ensure background stays consistent on mobile/dev mode */
+  position: relative;
+  /* Prevent shifting upward when dev tools are open */
+  box-sizing: border-box;
+}
+
+.achievements::-webkit-scrollbar {
+  width: 8px;
+}
+
+.achievements::-webkit-scrollbar-thumb {
+  background-color: var(--hover-bg);
+  border-radius: 4px;
+}
+
+.achievements::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.achievement-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: auto;
+  min-height: 130px;
+  max-height: none;
+}
+
+.achievement-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+  transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+}
+
+.thumbnail-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.thumbnail-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  transition: transform var(--transition);
+  display: block;
+}
+
+.achievement-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--solid-block-width, 6%);
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-bg) 0%, rgba(46, 52, 81, 0.7) 100%);
+  z-index: 2;
+}
+
+.achievement-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: var(--solid-block-width, 6%);
+  width: var(--fade-length, 18%);
+  height: 100%;
+  background: linear-gradient(90deg, rgba(46, 52, 81, 0.7) 0%, rgba(46, 52, 81, 0.0) 100%);
+  z-index: 3;
+}
+
+.text {
+  position: relative;
+  z-index: 4;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--text-color);
+}
+
+.text h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  text-shadow: 
+    2px 2px 2px rgba(0,0,0,0.25),
+   -2px -2px 2px rgba(0,0,0,0.25),
+    2px -2px 2px rgba(0,0,0,0.25),
+   -2px 2px 2px rgba(0,0,0,0.25),
+    0px 2px 2px rgba(0,0,0,0.25),
+    0px -2px 2px rgba(0,0,0,0.25),
+    2px 0px 2px rgba(0,0,0,0.25),
+   -2px 0px 2px rgba(0,0,0,0.25);
+}
+
+.text p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  text-shadow: 
+    2px 2px 2px rgba(0,0,0,0.25),
+   -2px -2px 2px rgba(0,0,0,0.25),
+    2px -2px 2px rgba(0,0,0,0.25),
+   -2px 2px 2px rgba(0,0,0,0.25),
+    0px 2px 2px rgba(0,0,0,0.25),
+    0px -2px 2px rgba(0,0,0,0.25),
+    2px 0px 2px rgba(0,0,0,0.25),
+   -2px 0px 2px rgba(0,0,0,0.25);
+}
+
+.achievement-length,
+.rank,
+.lasted-days,
+.achievement-date {
+  line-height: 1.4;
+  margin: 0.5rem 0 0 0.5rem;
+}
+
+.copy-notification {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 2rem;
+  left: auto;
+  transform: none;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: .5rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  font-size: 1rem;
+  display: block;
+}
+
+.copy-notification.show {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.sidebar {
+  width: 250px;
+  height: calc(100vh - 2rem);
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
+  background-color: var(--secondary-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  position: sticky;
+  top: 1rem;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 5px;
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.sidebar {
+  /* Thin scrollbar for Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #3b4058 transparent;
+  /* Reserve space for scrollbar when present to avoid layout shift */
+  scrollbar-gutter: stable both-edges;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #3b4058;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  transition: background-color 0.18s ease, transform 0.12s ease;
+}
+
+.sidebar:hover::-webkit-scrollbar-thumb,
+.sidebar:focus-within::-webkit-scrollbar-thumb {
+  background-color: #4a526e;
+}
+
+/* On Firefox, slightly darker thumb on hover via scrollbar-color change on :hover */
+.sidebar:hover,
+.sidebar:focus-within {
+  scrollbar-color: #4a526e transparent;
+}
+
+.sidebar a:hover {
+  background-color: var(--hover-bg);
+  color: #FFFFFF;
+}
+
+.sidebar a.active {
+  background-color: var(--accent-bg);
+  color: #FFFFFF;
+  position: relative;
+  padding: 10px 5px;
+}
+
+.sidebar a.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: #ffc800;
+  border-radius: 2px;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--accent-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sidebar-footer p {
+  font-size: 0.875rem;
+  color: #9FA6C0;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 0.95rem 1.2rem;
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  transition: background-color var(--transition), color var(--transition);
+  margin-bottom: 1.1rem;
+}
+
+.sidebar-link:hover {
+  background-color: var(--hover-bg);
+  color: #FFFFFF;
+}
+
+.sidebar-link.active {
+  background-color: var(--active-bg);
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .achievement-card {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    min-width: 100vw !important;
+    padding: 1rem 0rem !important;
+    border-radius: 0 !important;
+    box-sizing: border-box;
+    margin: 0 !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 0.5rem;
+  }
+
+  .title {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .search-bar {
+    width: 100vw;
+    margin-top: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin: 1rem auto 0 auto;
+    max-width: 100vw;
+  }
+
+  .search-bar input {
+    width: 100%;
+    font-size: 0.9rem;
+    max-width: 100vw;
+  }
+
+  .sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-color: var(--secondary-bg);
+    z-index: 1000;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    overflow-y: auto;
+  }
+
+  .sidebar.active {
+    display: block;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .achievements {
+    padding: 1rem;
+  }
+
+  .achievement-item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .achievement-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .thumbnail-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  #dynamic-background {
+    display: block;
+  }
+
+  #blue-tint-overlay {
+    display: block;
+  }
+
+  .tag-container {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+  }
+
+  .tag {
+    font-size: 0.4rem;
+    padding: 0.15rem 0.3rem;
+  }
+
+  .rank-date-container {
+    font-size: 0.8rem;
+    right: 0.25rem;
+    bottom: 0.25rem;
+  }
+
+  main {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .achievement-card {
+    margin-top: 0 !important;
+    padding-top: 0.5rem !important;
+  }
+
+  .achievements {
+    background: var(--primary-bg) !important;
+    /* Ensure background stays consistent on mobile/dev mode */
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .achievement-details .text h2 {
+  position: relative;
+  z-index: 1;
+    font-size: 1rem;
+  }
+
+  .achievement-details .text p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .title {
+    font-size: 1.1rem;
+  }
+
+  header {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35), var(--shadow);
+    z-index: 10;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .title {
+    font-size: 0.95rem;
+  }
+}
+
+.copy-notification {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 2rem;
+  left: auto;
+  transform: none;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: .5rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  font-size: 1rem;
+  display: block;
+}
+
+.copy-notification.show {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: flex-start;
+  height: auto;
+  overflow-y: auto;
+}
+
+.achievement-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  overflow-y: auto;
+  background-size: cover;
+  position: relative;
+  max-width: 1200px;
+  width: 50%;
+  min-height: 0;
+  max-height: 100%;
+  padding-bottom: 1rem;
+}
+
+.achievement-details-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.achievement-card {
+  background-color: var(--accent-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  color: var(--text-color);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.achievement-title,
+.achievement-player {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  color: var(--text-color);
+}
+
+.achievement-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.achievement-player {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.achievement-video {
+  width: 100%;
+  height: 400px;
+  border-radius: var(--border-radius);
+  margin-bottom: 1.5rem;
+  box-shadow: var (--shadow);
+}
+
+.achievement-tags-container {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.tags-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Duplicate thumbnail highlighting */
+.duplicate-thumb-item {
+  box-shadow: 0 0 24px 4px rgba(255, 200, 0, 0.9) !important;
+  border-color: rgba(255, 200, 0, 0.9) !important;
+  transition: box-shadow 0.25s ease, transform 0.15s ease;
+}
+
+.duplicate-thumb-item .achievement-item {
+  transform: scale(1.01);
+}
+
+.achievement-level-id {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.no-video {
+  font-size: 1.2rem;
+  color: var (--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.error-message {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.achievement-info {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-align: left;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.achievement-info span {
+  background-color: rgba(0, 0, 0, 0.329);
+  padding: 0.4rem 0.4em;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: background-color var(--transition), transform var(--transition);
+  cursor: pointer;
+}
+
+.achievement-info span:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: scale(1.02);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.discord-container {
+  background-color: var(--secondary-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  height: fit-content;
+}
+
+.discord-widget {
+  width: 100%;
+  height: 750px;
+  border: none;
+}
+
+.showcase-video {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.showcase-video h3 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.showcase-video .achievement-video {
+  width: 100%;
+  height: 400px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.achievement-id-length {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  margin-top: 0.5rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  font-style: italic;
+}
+
+#sidebar a.active {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: normal;
+  color: inherit;
+  background-color: var(--accent-bg);
+  padding: 10px 5px;
+  margin-bottom: 5px;
+  border-radius: var(--border-radius);
+}
+
+#sidebar a.active:hover {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#sidebar a {
+  display: block;
+  font-size: 1rem;
+  font-weight: normal;
+  background-color: transparent;
+  padding: 10px 5px;
+  margin-bottom: 5px;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#sidebar a:hover {
+  background-color: var(--hover-bg);
+}
+
+/* Spacious leaderboard styles */
+.leaderboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.5rem 3rem 3.5rem 3rem;
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  max-width: 900px;
+  width: 100%;
+  margin: 3.5rem auto;
+  max-height: 90vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--hover-bg) transparent;
+  overflow-x: auto;
+  font-size: 1.25rem;
+  gap: 2.5rem;
+}
+
+.leaderboard-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.leaderboard-container::-webkit-scrollbar-thumb {
+  background-color: var(--hover-bg);
+  border-radius: 4px;
+}
+
+.leaderboard-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.leaderboard-table {
+  width: 100%;
+  max-width: 1100px;
+  border-collapse: collapse;
+  min-width: 600px;
+  font-size: 1.2rem;
+  background: transparent;
+}
+
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 1.2rem 1.2rem;
+  text-align: left;
+  border-bottom: 1.5px solid var(--hover-bg);
+  font-size: 1.18rem;
+  letter-spacing: 0.01em;
+  line-height: 1.5;
+}
+
+
+.leaderboard-table th {
+  background-color: var(--secondary-bg);
+  color: var(--text-color);
+  font-size: 1.22rem;
+  font-weight: 700;
+  border-radius: 0;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+
+.leaderboard-table tr:hover {
+  background-color: var(--hover-bg);
+  transition: background 0.3s;
+}
+
+
+.leaderboard-table td a {
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.18rem;
+  padding: 0.2em 0.5em;
+}
+
+.leaderboard-table td a:hover {
+  text-decoration: underline;
+}
+
+.hidden-row {
+  user-select: text;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+
+.hidden-row ul li {
+  margin-bottom: 0.5rem;
+}
+
+.clickable-row {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: var(--border-radius);
+}
+
+.clickable-row:hover {
+  background-color: var(--hover-bg);
+}
+
+#leaderboard-section {
+  user-select: none;
+}
+
+.hidden-row a {
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hidden-row a:hover {
+  text-decoration: underline;
+}
+
+.about-us {
+  padding: 2rem;
+  background-color: var(--secondary-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  color: var(--text-color);
+  max-width: 800px;
+  line-height: 1.6;
+  overflow-y: auto;
+  max-height: calc(85vh - 4rem);
+}
+
+.about-us h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.about-us p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.about-us h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.about-us ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+.about-us ul li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  /* Remove background and box for rules lists */
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  text-align: left;
+  transition: none;
+}
+
+.about-us ul li:hover {
+  background: none;
+  transform: none;
+}
+
+.achievements-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.search-filter-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-left: 1rem;
+  background: var(--secondary-bg);
+  border-radius: var(--border-radius);
+  padding: 0.75rem 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.search-filter-container label,
+.search-filter-container span {
+  color: var(--text-color);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  letter-spacing: 0.01em;
+}
+
+.search-filter-container select {
+  padding: 0.5rem 1.2rem 0.5rem 0.7rem;
+  border-radius: var(--border-radius);
+  border: 1.5px solid var(--hover-bg);
+  background: var(--primary-bg);
+  color: var(--text-color);
+  font-size: 1.05rem;
+  font-weight: 500;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.10);
+  transition: border-color 0.2s;
+}
+
+.search-filter-container select:focus {
+  border-color: var(--active-bg);
+  outline: none;
+}
+
+.tag-filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  min-width: 120px;
+  max-width: 600px;
+  max-height: 140px;
+  overflow-y: auto;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+}
+
+.tag-filter-pill {
+  background: linear-gradient(135deg, #23283E 0%, #2E3451 100%);
+  /* fallback for tag color below */
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  margin-right: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10);
+  transition: background 0.3s, border 0.2s, opacity 0.2s;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.85), 0 1px 2px #000;
+}
+
+.tag-filter-pill.neutral {
+  /* fallback for neutral, will be overridden inline if tag color is set */
+  background: linear-gradient(135deg, #23283E 0%, #2E3451 100%);
+}
+
+.tag-filter-pill.include {
+  background: linear-gradient(135deg, #34d058 0%, #218838 100%);
+  border: 2px solid #fff;
+}
+
+.tag-filter-pill.exclude {
+  background: linear-gradient(135deg, #f55 0%, #a00 100%);
+  border: 2px solid #f55;
+  opacity: 0.5;
+}
+
+.tag-filter-pill:hover,
+.tag-filter-pill:focus {
+  filter: brightness(1.1) drop-shadow(0 2px 6px rgba(0, 0, 0, 0.15));
+  outline: none;
+}
+
+.tag-filter-pill img {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.7)) drop-shadow(0 0px 1px #000);
+}
+
+@media (max-width: 900px) {
+  .search-filter-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 0.75rem 0.5rem;
+    margin-left: 0;
+  }
+
+  .tag-filter-pills {
+    min-width: 120px;
+    padding: 0.3rem 0.1rem 0.1rem 0.1rem;
+  }
+
+  .search-filter-container:not(.mobile-filters-shown) .tag-filter-pills {
+    display: flex !important;
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+    padding: 0 0.1rem;
+  }
+
+  .search-filter-container.mobile-filters-shown .tag-filter-pills {
+    display: flex !important;
+    max-height: none;
+    overflow-y: visible;
+    opacity: 1;
+    pointer-events: auto;
+    padding: 0.3rem 0.1rem 0.1rem 0.1rem;
+  }
+}
+
+.tag-include-box,
+.tag-exclude-box {
+  display: none !important;
+}
+
+.mobile-filter-toggle {
+  display: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 100%;
+  max-width: 400px;
+  height: 32px;
+  display: flex;
+  max-width: 520px;
+  margin: 0 auto;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: static;
+  left: unset;
+  z-index: 2;
+}
+
+@media (max-width: 900px) {
+  .mobile-filter-toggle {
+    display: flex;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.arrow-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.mobile-filter-toggle img {
+  width: 24px;
+  height: 24px;
+  pointer-events: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .mobile-filter-toggle {
+    display: flex;
+  }
+}
+
+@media (max-width: 900px) {
+  .search-filter-container:not(.mobile-filters-shown) .tag-filter-pills {
+    display: none !important;
+  }
+
+  .search-filter-container.mobile-filters-shown .tag-filter-pills {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 900px) {
+  #search-filter-static-container .search-filter-container:not(.mobile-filters-shown) {
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    opacity: 0.1;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  #search-filter-static-container .search-filter-container.mobile-filters-shown {
+    height: auto !important;
+    min-height: unset !important;
+    max-height: unset !important;
+    padding: 0.75rem 1.25rem !important;
+    margin: 0.5rem 0 0.5rem 0 !important;
+    opacity: 1;
+    overflow: visible !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.mobile-hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  padding: 0.3rem 0.7rem 0.3rem 0.2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.mobile-hamburger-btn img {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .mobile-hamburger-btn {
+    display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    padding: 0 !important;
+    height: auto;
+  }
+}
+@media (max-width: 900px) {
+  .sidebar {
+    display: none !important;
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+    opacity: 0;
+    z-index: 1002;
+  }
+
+  .sidebar.sidebar-mobile-open,
+  .sidebar-mobile-modal {
+    display: block !important;
+    width: 90vw !important;
+    max-width: 360px !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .sidebar-mobile-overlay {
+    position: fixed !important;
+    inset: 0 !important; /* top:0; right:0; bottom:0; left:0 */
+    background: rgba(0,0,0,0.5) !important;
+    z-index: 2147483630 !important; /* below the sidebar but above content */
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+}
+
+  .sidebar {
+    display: none;
+  }
+
+  .achievement-details-container {
+    width: 100vw;
+    max-width: 100vw;
+    min-width: 0;
+    padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+    box-sizing: border-box;
+    align-items: stretch;
+  }
+
+  .achievement-card {
+    max-width: 100vw;
+    width: 100%;
+    padding: 1rem 0.5rem;
+    border-radius: 0.7rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .achievement-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    word-break: break-word;
+  }
+
+  .achievement-player {
+    font-size: 1.05rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .achievement-video,
+  .showcase-video .achievement-video {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16/9;
+    min-height: 180px;
+    max-height: 220px;
+    margin-bottom: 1rem;
+  }
+
+  .achievement-tags-container {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  .tags-header {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .tag-container {
+    gap: 0.3rem;
+  }
+
+  .tag {
+    font-size: 0.6rem;
+    padding: 0.15rem 0.4rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .achievement-info {
+    font-size: 0.95rem;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.2rem;
+  }
+
+  .showcase-video h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .copy-notification {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.7rem;
+    bottom: 0.5rem;
+  }
+
+  .leaderboard-container {
+    width: 98vw !important;
+    max-width: 98vw !important;
+    border-radius: 0.7rem !important;
+    box-shadow: var(--shadow) !important;
+    padding: 1rem 0.2rem !important;
+    margin: 1rem auto !important;
+    min-width: 0 !important;
+  }
+
+  .leaderboard-table {
+    min-width: 280px;
+    width: 100%;
+    max-width: 98vw !important;
+    margin: 0 auto;
+    overflow-x: auto;
+    display: block;
+  }
+
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 0.6rem 0.2rem !important;
+    font-size: 0.92rem !important;
+    word-break: break-word;
+  }
+
+
+
+/* Remove compact/zoomed-out leaderboard styles for a more spacious look */
+@media (max-width: 600px) {
+  .leaderboard-container {
+    font-size: 1.05rem !important;
+    padding: 1.2rem 0.5rem !important;
+    margin: 1rem auto !important;
+    max-height: 80vh !important;
+  }
+
+  .leaderboard-table {
+    font-size: 1.05rem !important;
+  }
+
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 1.2rem 0.5rem !important;
+    font-size: 1.05rem !important;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 900px) {
+  .sidebar-mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s;
+  }
+
+  .sidebar-mobile-overlay.hidden {
+    display: none;
+  }
+
+  .sidebar.sidebar-mobile-open {
+    position: fixed !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1002;
+    width: 90vw;
+    max-width: 350px;
+    max-height: 90vh;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+    display: flex;
+    flex-direction: column;
+    background: var(--secondary-bg);
+    border-radius: 1.2rem;
+    overflow-y: auto;
+    animation: sidebarModalIn 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* New modal class for mobile sidebars to avoid full-screen takeover */
+  .sidebar-mobile-modal {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 1002 !important;
+    width: 90vw !important;
+    max-width: 420px !important;
+    max-height: 90vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    background: var(--secondary-bg) !important;
+    border-radius: 1.2rem !important;
+    overflow-y: auto !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.45) !important;
+    animation: sidebarModalIn 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  }
+
+  .sidebar.sidebar-mobile-open,
+  .sidebar.sidebar-mobile-fullscreen {
+    scrollbar-gutter: auto !important;
+    -webkit-overflow-scrolling: touch;
+    padding-right: 1rem;
+  }
+
+  @keyframes sidebarModalIn {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -60%) scale(0.95);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .sidebar-mobile-modal .sidebar,
+  .sidebar.sidebar-mobile-open .sidebar,
+  .sidebar.sidebar-mobile-fullscreen .sidebar {
+    display: block !important;
+    position: relative !important;
+    height: auto !important;
+    width: 100% !important;
+    max-height: 80vh !important;
+    overflow: visible !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+
+  .sidebar.sidebar-mobile-open {
+    display: flex !important;
+  }
+}
+
+/* Strong override: ensure mobile sidebar modal/overlay are shown when opened by the hamburger.
+   Placed at end to avoid being accidentally overridden earlier. */
+@media (max-width: 900px) {
+  .sidebar-mobile-overlay {
+    display: flex !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: rgba(0,0,0,0.75) !important;
+    z-index: 1100 !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .sidebar-mobile-modal,
+  .sidebar.sidebar-mobile-open,
+  .sidebar.sidebar-mobile-fullscreen {
+    display: flex !important;
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 92vw !important;
+    max-width: 420px !important;
+    max-height: 92vh !important;
+    background: var(--secondary-bg) !important;
+    border-radius: 1.2rem !important;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.6) !important;
+    padding: 1rem !important;
+    overflow-y: auto !important;
+    z-index: 1110 !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  /* ensure the modal is fully opaque and interactive */
+  .sidebar-mobile-modal,
+  .sidebar.sidebar-mobile-open {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
+
+.link-favicon {
+  background-image: url('/assets/favicon.ico');
+}
+
+.link-apple-touch-icon {
+  background-image: url('/assets/apple-touch-icon.png');
+}
+
+.link-web-app-manifest-192 {
+  background-image: url('/assets/web-app-manifest-192x192.png');
+}
+
+.link-web-app-manifest-512 {
+  background-image: url('/assets/web-app-manifest-512x512.png');
+}
+
+.main-header {
+  width: 100%;
+  background: var(--primary-bg);
+  border-bottom: 2px solid var(--hover-bg);
+  padding: 0 0 1rem 0;
+  margin-bottom: 0;
+  box-shadow: 0 2px 8px 0 #181a24;
+  z-index: 10;
+  position: relative;
+  display: flex;
+}
+
+.header-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 1.2rem 2rem 0.5rem 2rem;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.main-title {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin: 0;
+  font-weight: 700;
+}
+
+.splash-text {
+  font-style: italic;
+  color: #4d566e;
+  margin-top: 0.2em;
+  font-size: 1.1em;
+  padding-left: 4.5rem;
+  padding-bottom: 8px;
+  text-align: right;
+  margin-right: 2rem;
+  margin-left: auto;
+  display: block;
+}
+
+.search-bar {
+  margin: 0.5rem 2rem 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 1 0%;
+  width: 100%;
+  max-width: none;
+}
+
+.search-input {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 2px solid var(--hover-bg);
+  width: 100%;
+  background: var(--primary-bg);
+  color: var(--text-color);
+  font-size: 1rem;
+  flex: 1 1 0%;
+  min-width: 0;
+}
+
+.tag-filter-pills-container {
+  margin: 0.5rem 2rem 0 2rem;
+}
+
+.hamburger-icon {
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+.achievements-main {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.achievements-section {
+  flex-grow: 1;
+  width: 70%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
+}
+
+.no-achievements {
+  color: #aaa;
+}
+
+.arrow-img {
+  width: 20px;
+  height: 20px;
+  filter: invert(92%) sepia(7%) saturate(104%) hue-rotate(200deg) brightness(97%) contrast(92%);
+}
+
+.copy-btn {
+  background: var(--primary-bg);
+  color: var(--text-color);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.2em 0.7em;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  margin-left: 0.3em;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.copy-btn:hover,
+.copy-btn:focus {
+  background: linear-gradient(135deg, var(--active-bg), var(--hover-bg));
+  color: #fff;
+  transform: scale(1.06);
+}
+
+.copy-btn:active {
+  background: var(--active-bg);
+  color: #ffe066;
+  transform: scale(0.98);
+}
+
+.achievement-item .tag-container {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 6;
+}
+
+@media (max-width: 600px) {
+  .main-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-title {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar.sidebar-mobile-fullscreen {
+    display: flex !important;
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 3000 !important;
+    width: 92vw !important;
+    max-width: 420px !important;
+    height: auto !important;
+    max-height: 92vh !important;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.5) !important;
+    display: flex;
+    flex-direction: column;
+    background: var(--secondary-bg);
+    border-radius: 1rem !important;
+    padding: 1rem;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transition: transform 0.25s ease, width 0.2s ease, height 0.2s ease;
+  }
+}
+
+@media (max-width: 900px) {
+  .sidebar.sidebar-mobile-open,
+  .sidebar.sidebar-mobile-fullscreen {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 92vw !important;
+    max-width: 420px !important;
+    min-width: 280px !important;
+    height: auto !important;
+    max-height: 92vh !important;
+    border-radius: 1rem !important;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.5) !important;
+    padding: 1rem !important;
+    overflow-y: auto !important;
+    background: var(--secondary-bg) !important;
+  }
+
+  .sidebar.sidebar-mobile-open[style],
+  .sidebar.sidebar-mobile-fullscreen[style] {
+    height: auto !important;
+    max-height: 92vh !important;
+    width: 92vw !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .sidebar.sidebar-mobile-open,
+  .sidebar.sidebar-mobile-fullscreen,
+  .sidebar-mobile-modal,
+  .sidebar-mobile-overlay {
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+
+  .sidebar.sidebar-mobile-open,
+  .sidebar-mobile-modal {
+    width: 90vw !important;
+    max-width: 420px !important;
+    min-width: 260px !important;
+    max-height: 92vh !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    position: fixed !important;
+    z-index: 2000 !important;
+    background: var(--secondary-bg) !important;
+    border-radius: 1rem !important;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.6) !important;
+    overflow-y: auto !important;
+  }
+
+  .sidebar-mobile-modal .sidebar,
+  .sidebar.sidebar-mobile-open .sidebar {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 80vh !important;
+    overflow: auto !important;
+  }
+}
+
+.pill-toggle {
+  --pill-width: 64px;
+  --pill-height: 34px;
+  --thumb-size: 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: inherit;
+}
+
+.pill-toggle input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.pill-toggle .track {
+  width: auto;
+  min-width: calc(var(--thumb-size) * 2 + 20px);
+  height: var(--pill-height);
+  background: var(--hover-bg);
+  border-radius: 999px;
+  padding: 6px 8px;
+  position: relative;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.02), 0 2px 6px rgba(0,0,0,0.35);
+  transition: background 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto var(--thumb-size) auto;
+  align-items: center; /* vertically center content inside grid */
+  line-height: 1; /* normalize inline text centering */
+}
+
+.pill-toggle .thumb {
+  width: var(--thumb-size);
+  height: var(--thumb-size);
+  background: var(--secondary-bg);
+  border-radius: 50%;
+  grid-column: 2 / 3; /* stay in center column */
+  justify-self: center;
+  align-self: center; /* ensure thumb is vertically centered in its grid cell */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.55);
+  transition: background 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+  z-index: 3;
+}
+
+.pill-toggle input[type="checkbox"]:checked + .track {
+  background: #4D48E9;
+}
+
+.pill-toggle input[type="checkbox"]:checked + .track .thumb {
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.45);
+}
+
+
+.pill-toggle .track .inner-label {
+  pointer-events: none;
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: transform 160ms cubic-bezier(0.2,0.9,0.2,1), opacity 140ms ease;
+  white-space: nowrap;
+  text-align: center;
+  z-index: 2;
+  margin: 0 6px; /* small breathing room next to thumb */
+}
+
+.pill-toggle .track .label-left {
+  grid-column: 1 / 2;
+  justify-self: start;
+  padding-left: 8px;
+}
+
+.pill-toggle .track .label-right {
+  grid-column: 3 / 4;
+  justify-self: end;
+  padding-right: 8px;
+}
+
+.pill-toggle .track .inner-label { display: none !important; }
+.pill-toggle .track .label-left { display: none !important; }
+.pill-toggle input[type="checkbox"] + .track .label-left { display: inline-block !important; opacity: 1 !important; }
+.pill-toggle input[type="checkbox"] + .track .label-right { display: none !important; }
+
+.pill-toggle input[type="checkbox"]:checked + .track .label-left { display: none !important; }
+.pill-toggle input[type="checkbox"]:checked + .track .label-right { display: inline-block !important; opacity: 1 !important; }
+
+.pill-toggle input[type="checkbox"]:checked + .track .label-left {
+  opacity: 0.6;
+}
+
+.pill-toggle input[type="checkbox"]:checked + .track .label-right {
+  opacity: 1;
+}
+
+.pill-toggle input[type="checkbox"]:checked + .track .label-left {
+  transform: translateX(-8px);
+}
+
+.pill-toggle input[type="checkbox"]:checked + .track .label-right {
+  transform: translateX(8px);
+}
+
+.pill-toggle .label { display: none; }
+
+.pill-toggle .track .inner-label { z-index: 1; }
+
+.pill-toggle[data-variant="platformer"] input[type="checkbox"]:checked + .track,
+.pill-toggle[data-variant="classic"] input[type="checkbox"]:checked + .track {
+  background: #4D48E9;
+}
+
+.pill-toggle input[type="checkbox"]:focus + .track {
+  box-shadow: 0 0 0 3px rgba(230,126,34,0.16), inset 0 1px 0 rgba(255,255,255,0.02);
+}
+
+.pill-toggle .label {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 0.95rem;
+  user-select: none;
+}
+
+.pill-toggle[data-variant="platformer"] input[type="checkbox"]:checked + .track,
+.pill-toggle[data-variant="classic"] input[type="checkbox"]:checked + .track {
+  background: #4D48E9;
+}
+
+.pill-toggle.pill-small {
+  --pill-width: 48px;
+  --pill-height: 26px;
+  --thumb-size: 22px;
+}
+
+.pill-toggle .track { user-select: none; }
