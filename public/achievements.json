@@ -1626,6 +1626,21 @@
     ]
   },
   {
+    "name": "Angelicide (Xtra8nugz) 68-95%",
+    "id": "angelicide-xtra8nugz-68-95",
+    "player": "Xtra8nugz",
+    "length": 23,
+    "version": 2.2,
+    "video": "https://youtu.be/J-zGawKanA0",
+    "showcaseVideo": "https://youtu.be/UvLvEh_xN5A",
+    "date": "2025-10-14",
+    "submitter": "JustAComfyCookie",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Angelicide (Kaza) 68-94%",
     "id": "angelicide-kaza-68-94",
     "player": "Kaza",
@@ -3537,6 +3552,7 @@
     "submitter": "TYATYAPKA",
     "levelID": 84722782,
     "tags": [
+      "Level",
       "Progress"
     ]
   },
@@ -10493,3 +10509,4 @@
     ]
   }
 ]
+
