@@ -16,6 +16,39 @@
     ]
   },
   {
+	"name": "Lava Trials II",
+  "id": "lava-trials-ii",
+  "player": "Thearmyants",
+  "length": null,
+  "version": 2,
+  "video": "https://www.youtube.com/watch?v=nas9pK8iOBY",
+  "showcaseVideo": "https://youtu.be/E6WUAzBTGgM",
+  "date": "2025-10-05",
+  "submitter": "toolazytogetausername",
+  "levelID": 120722125,
+  "tags": [
+    "Platformer",
+    "Verified",
+    "Rated"
+  ]
+  },
+	{
+	"name": "Sedulous",
+  "id": "sedulous",
+  "player": "mikoshii",
+  "length": null,
+  "version": 2,
+  "video": "https://youtu.be/VGX3PFO55ps",
+  "showcaseVideo": "https://youtu.be/T03qx2HDBe4",
+  "date": "2025-10-16",
+  "submitter": "kyle1saurus",
+  "levelID": 111126817,
+  "tags": [
+    "Platformer",
+    "Verified"
+  ]
+	},
+	{
 	"name": "Make Paul Dance",
     "id": "make-paul-dance",
     "player": "AiriCloud",
