@@ -418,7 +418,15 @@ export default function List() {
 
   function handleEditFormChange(e) {
     const { name, value } = e.target;
-    const newVal = (name === 'video' || name === 'showcaseVideo') ? normalizeYoutubeUrl(value) : (['version', 'levelID', 'length'].includes(name) ? Number(value) : value);
+    let newVal;
+    if (name === 'id') {
+      // normalize id: trim, lowercase, convert spaces to hyphens
+      newVal = String(value || '').trim().toLowerCase().replace(/\s+/g, '-');
+    } else {
+      newVal = (name === 'video' || name === 'showcaseVideo')
+        ? normalizeYoutubeUrl(value)
+        : (['version', 'levelID', 'length'].includes(name) ? Number(value) : value);
+    }
     setEditForm(f => ({
       ...f,
       [name]: newVal
@@ -729,7 +737,15 @@ export default function List() {
 
   function handleNewFormChange(e) {
     const { name, value } = e.target;
-    const newVal = (name === 'video' || name === 'showcaseVideo') ? normalizeYoutubeUrl(value) : (['version', 'levelID', 'length'].includes(name) ? Number(value) : value);
+    let newVal;
+    if (name === 'id') {
+      // normalize id: trim, lowercase, convert spaces to hyphens
+      newVal = String(value || '').trim().toLowerCase().replace(/\s+/g, '-');
+    } else {
+      newVal = (name === 'video' || name === 'showcaseVideo')
+        ? normalizeYoutubeUrl(value)
+        : (['version', 'levelID', 'length'].includes(name) ? Number(value) : value);
+    }
     setNewForm(f => ({
       ...f,
       [name]: newVal
