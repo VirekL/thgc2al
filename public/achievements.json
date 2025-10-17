@@ -6758,7 +6758,7 @@
     ]
   },
   {
-    "name": "Silent Circles 27-51% (1st coin)",
+    "name": "Silent Circles 27-51% (1st Coin)",
     "id": "silent-circles-27-51-1st-coin",
     "player": "SeptaGon7",
     "date": "2025-06-06",
@@ -9122,8 +9122,8 @@
     ]
   },
   {
-    "name": "Checked Steam (Coin Route)",
-    "id": "checked-steam-coin-route",
+    "name": "Checked Steam (1st Coin)",
+    "id": "checked-steam-1st-coin",
     "player": "Whizkid05",
     "levelID": 105748155,
     "date": "2024-05-27",
@@ -10509,4 +10509,3 @@
     ]
   }
 ]
-
