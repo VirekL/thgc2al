@@ -71,7 +71,7 @@ function SidebarInner() {
         <Link href="/list" className="sidebar-link">
           Main List
         </Link>
-        <Link href="/list?source=timeline" className="sidebar-link">
+        <Link href="/timeline" className="sidebar-link">
           Timeline
         </Link>
         <Link href="/leaderboard" className="sidebar-link">
