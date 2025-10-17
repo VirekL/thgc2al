@@ -47,10 +47,9 @@
     "name": "Terminal Heaven (Speedrun)",
     "id": "terminal-heaven-speedrun",
     "player": "Cucu",
-    "length": 0,
     "version": 2,
-    "video": "https://youtu.be/e3GHd6jx1es",
-    "showcaseVideo": "https://youtu.be/8jnLnq377Bk",
+    "video": "https://youtu.be/8jnLnq377Bk",
+    "showcaseVideo": "https://youtu.be/e3GHd6jx1es",
     "date": "2025-03-01",
     "submitter": "Cucu",
     "levelID": 99335322,
@@ -78,8 +77,8 @@
     "submitter": "toolazytogetausername"
   },
   {
-    "name": "Diamond For Dashers",
-    "id": "diamond-for-dashers",
+    "name": "Diamonds For Dashers",
+    "id": "diamonds-for-dashers",
     "player": "nng12",
     "levelID": 118798387,
     "tags": [
@@ -258,7 +257,7 @@
     ],
     "version": 2.2,
     "date": "2025-04-06",
-    "showcaseVideo": "https://youtu.be/pFU9WYSUc2o",
+    "showcaseVideo": "https://www.youtube.com/watch?v=l-LFktd4gi4",
     "video": "https://www.youtube.com/watch?v=y9o5WkasWXw",
     "submitter": "kyle1saurus"
   },
