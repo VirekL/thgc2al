@@ -1482,8 +1482,6 @@ export default function List() {
                     achievement={a}
                     previousAchievement={devAchievements[i - 1]}
                     onEdit={() => handleEditAchievement(i)}
-                    onHoverEnter={() => setHoveredIdx(i)}
-                    onHoverLeave={() => setHoveredIdx(v => (v === i ? null : v))}
                     isHovered={hoveredIdx === i}
                     devMode={devMode}
                   />
