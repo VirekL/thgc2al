@@ -609,6 +609,23 @@
     ]
   },
   {
+    "name": "Digital Descent 60hz",
+    "id": "digital-descent-60hz",
+    "player": "Jaeger",
+    "length": 137,
+    "version": 2.1,
+    "video": "https://www.youtube.com/watch?v=nV6fiTzM_OI",
+    "showcaseVideo": "https://www.youtube.com/watch?v=IJHKpwXSaV0",
+    "date": "2018-05-19",
+    "submitter": "TTB18",
+    "levelID": 37456092,
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Rated"
+    ]
+  },
+  {
     "id": "crimson-planet-unnerfed-92",
     "name": "Crimson Planet (Unnerfed) 92%",
     "player": "Wooshi",
