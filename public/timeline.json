@@ -441,6 +441,21 @@
         "video": "https://youtu.be/E3-9s2DyjJI",
         "showcaseVideo": "https://youtu.be/E3-9s2DyjJI"
     },
+        {
+        "id": "3sh-in-hell-89",
+        "name": "3SH in Hell 89%",
+        "player": "UFokinWotM8",
+        "tags": [
+            "Challenge",
+            "Progress"
+        ],
+        "length": "11",
+        "version": "2.1",
+        "date": "2020-05-17",
+        "levelID": "61614466",
+        "video": "https://cdn.discordapp.com/attachments/1364175601014931527/1427111557585834145/image.png?ex=68f2f2b5&is=68f1a135&hm=bf4a0341ddaf2f47ecc200db9fdcd66d3973532eaad6f500ceaf00792cde9407&",
+        "showcaseVideo": "https://youtu.be/E3-9s2DyjJI"
+    },
     {
         "id": "tartarus",
         "name": "Tartarus",
@@ -1253,6 +1268,37 @@
         "date": "2013-12-26",
         "levelID": "120432",
         "showcaseVideo": "https://youtu.be/h-B-obfRtIw"
+    },
+    {
+        "name": "YCO",
+        "id": "yco",
+        "player": "YUUSHA",
+        "length": "97",
+        "version": "1.2",
+        "showcaseVideo": "https://www.youtube.com/watch?v=ghX8JxQCq7E",
+        "date": "2013-12-07",
+        "levelID": "93931",
+        "submitter": "Anceps",
+        "tags": [
+            "Level",
+            "Verified"
+        ]
+    },
+    {
+        "name": "FINAL DESTINATION",
+        "id": "final--destination",
+        "player": "ZurkQyulox",
+        "length": "97",
+        "version": "1.3",
+        "showcaseVideo": "https://www.youtube.com/watch?v=Q8C2R7eTgIs",
+        "date": "2013-12-05",
+        "levelID": "91402",
+        "submitter": "Anceps",
+        "tags": [
+            "Level",
+            "Rated",
+            "Verified"
+        ]
     },
     {
         "name": "Extreme Park",
