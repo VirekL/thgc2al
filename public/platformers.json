@@ -299,7 +299,7 @@
     "name": "glungus",
     "id": "glungus",
     "player": "Dxshing",
-    "levelID": null,
+    "levelID": 112482571,
     "tags": [
       "Verified",
       "Platformer",
@@ -359,6 +359,39 @@
     "submitter": "kyle1saurus"
   },
   {
+  "name": "Exaltation (Deathless)",
+  "id": "exaltation-deathless",
+  "player": "Cucu",
+  "length": null,
+  "version": 2,
+  "video": "https://www.youtube.com/watch?v=jGRr3uuUMZY",
+  "showcaseVideo": "https://youtu.be/fVUFC2dvMbg",
+  "date": "2025-03-03",
+  "submitter": "Cucu",
+  "levelID": 116026249,
+  "tags": [
+    "Platformer",
+    "Deathless",
+    "Rated"
+  ]
+  }
+  {
+  "name": "Crime And Punishment",
+  "id": "crime-and-punishment",
+  "player": "itzCyberCube",
+  "length": null,
+  "version": 2,
+  "video": "https://youtu.be/hy6bUSzVM_g",
+  "showcaseVideo": "https://youtu.be/DZZl3IftwQQ",
+  "date": "2025-08-31",
+  "submitter": "toolazytogetausername",
+  "levelID": 125430986,
+  "tags": [
+    "Platformer",
+    "Verified"
+  ]
+  }
+  {
     "name": "Void World (Deathless)",
     "id": "void-world-deathless",
     "player": "Peasant Banana",
@@ -374,6 +407,20 @@
     "showcaseVideo": "https://youtu.be/D0K6eHjngVE",
     "submitter": "kyle1saurus"
   },
+  {
+    "name": "Closed Square X",
+  "id": "closed-square-x",
+  "player": "zXdasfsa",
+  "length": null,
+  "version": 2,
+  "video": "https://youtu.be/mx_VDrBApiY",
+  "date": "2024-07-09",
+  "levelID": 107457912,
+  "tags": [
+    "Platformer",
+    "Verified"
+  ]
+  }
   {
     "name": "CaveOfTheScarletSky",
     "id": "cave-of-the-scarlet-sky",
