@@ -486,25 +486,19 @@ export default function List() {
 
   // fetch data whenever the selected source changes
   useEffect(() => {
-    // choose file based on query param `source=timeline`, or platformers flag
-    try {
-      const src = (router && router.isReady && router.query && router.query.source) ? String(router.query.source) : null;
-      const file = src === 'timeline' ? '/timeline.json' : (usePlatformers ? '/platformers.json' : '/achievements.json');
-      fetch(file)
-        .then(res => res.json())
-        .then(data => {
-          const list = Array.isArray(data) ? data : (data.achievements || []);
-          const valid = list.filter(a => a && typeof a.name === 'string' && a.name && a.id);
-          const withRank = valid.map((a, i) => ({ ...a, rank: i + 1 }));
-          setAchievements(withRank);
-          const tags = new Set();
-          withRank.forEach(a => (a.tags || []).forEach(t => tags.add(t)));
-          setAllTags(Array.from(tags));
-        });
-    } catch (e) {
-      // swallow fetch/init errors
-    }
-  }, [usePlatformers, router && router.isReady, router && router.query]);
+    const file = usePlatformers ? '/platformers.json' : '/achievements.json';
+    fetch(file)
+      .then(res => res.json())
+      .then(data => {
+        const list = Array.isArray(data) ? data : (data.achievements || []);
+        const valid = list.filter(a => a && typeof a.name === 'string' && a.name && a.id);
+        const withRank = valid.map((a, i) => ({ ...a, rank: i + 1 }));
+        setAchievements(withRank);
+        const tags = new Set();
+        withRank.forEach(a => (a.tags || []).forEach(t => tags.add(t)));
+        setAllTags(Array.from(tags));
+      });
+  }, [usePlatformers]);
 
   // update background image to the thumbnail of the top (rank 1) achievement for the current dataset
   useEffect(() => {
