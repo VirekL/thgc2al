@@ -486,7 +486,7 @@ export default function List() {
 
   // fetch data whenever the selected source changes
   useEffect(() => {
-    const file = usePlatformers ? '/platformertimeline.js' : '/timeline.json';
+    const file = usePlatformers ? '/platformertimeline.json' : '/timeline.json';
     fetch(file)
       .then(res => res.json())
       .then(data => {
@@ -823,7 +823,7 @@ export default function List() {
     const json = JSON.stringify(reordered.map(({ rank, ...rest }) => rest), null, 2);
     if (navigator.clipboard) {
       navigator.clipboard.writeText(json);
-      alert(`Copied new ${usePlatformers ? 'platformertimeline.js' : 'timeline.json'} to clipboard!`);
+      alert(`Copied new ${usePlatformers ? 'platformertimeline.json' : 'timeline.json'} to clipboard!`);
     } else {
       const textarea = document.createElement('textarea');
       textarea.value = json;
@@ -831,7 +831,7 @@ export default function List() {
       textarea.select();
       document.execCommand('copy');
       document.body.removeChild(textarea);
-      alert(`Copied new ${usePlatformers ? 'platformertimeline.js' : 'timeline.json'} to clipboard!`);
+      alert(`Copied new ${usePlatformers ? 'platformertimeline.json' : 'timeline.json'} to clipboard!`);
     }
   }
 
@@ -1237,15 +1237,15 @@ export default function List() {
             onImportAchievementsJson={json => {
               let imported = Array.isArray(json) ? json : (json.achievements || []);
               if (!Array.isArray(imported)) {
-                alert(`Invalid ${usePlatformers ? 'platformertimeline.js' : 'timeline.json'} format.`);
+                alert(`Invalid ${usePlatformers ? 'platformertimeline.json' : 'timeline.json'} format.`);
                 return;
               }
               imported = imported.map((a, i) => ({ ...a, rank: i + 1 }));
               setReordered(imported);
               setDevMode(true);
-              alert(`Imported ${usePlatformers ? 'platformertimeline.js' : 'timeline.json'}!`);
+              alert(`Imported ${usePlatformers ? 'platformertimeline.json' : 'timeline.json'}!`);
             }}
-            dataFileName={usePlatformers ? 'platformertimeline.js' : 'timeline.json'}
+            dataFileName={usePlatformers ? 'platformertimeline.json' : 'timeline.json'}
           />
           {isPending ? (
             <div className="no-achievements">Loading...</div>
