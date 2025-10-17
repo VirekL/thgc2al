@@ -122,7 +122,9 @@ body {
   flex-direction: column;
   min-height: 100vh;
   position: relative;
-  overflow: hidden;
+  /* allow page to scroll vertically so content isn't clipped on resize */
+  overflow-y: auto;
+  overflow-x: hidden;
   z-index: 0;
 }
 
@@ -784,6 +786,49 @@ main {
   min-height: 0;
   max-height: 100%;
   padding-bottom: 1rem;
+}
+
+html, body, #__next {
+  height: 100%;
+  min-height: 100%;
+}
+
+main, .main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  min-height: 0;
+}
+
+.achievements {
+  flex: 1 1 auto;
+  min-height: 0;
+  height: auto;
+  max-height: calc(100vh - 140px);
+  overflow-y: auto;
+}
+
+@media (max-width: 900px) {
+  main, .main-content {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .achievements {
+    width: 100%;
+    max-height: none;
+    min-height: 0;
+    height: auto;
+    overflow: visible;
+  }
+
+  .sidebar, .achievement-details-container {
+    width: 100%;
+    max-height: none;
+  }
 }
 
 .achievement-details-container::before {
@@ -1839,7 +1884,9 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-height: calc(100vh - 150px);
+  min-height: 0;
+  height: auto;
+  max-height: none;
   overflow-y: auto;
 }
 
