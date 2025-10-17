@@ -12,9 +12,11 @@ export async function getStaticPaths() {
   const achievementsPath = path.join(process.cwd(), 'public', 'achievements.json');
   const timelinePath = path.join(process.cwd(), 'public', 'timeline.json');
   const platformersPath = path.join(process.cwd(), 'public', 'platformers.json');
+  const platformerTimelinePath = path.join(process.cwd(), 'public', 'platformertimeline.json');
   let achievements = [];
   let timeline = [];
   let platformers = [];
+  let platformerTimeline = [];
 
   try {
     const achievementsData = fs.readFileSync(achievementsPath, 'utf8');
@@ -31,7 +33,12 @@ export async function getStaticPaths() {
     platformers = JSON.parse(platformersData);
   } catch (e) {}
 
-  const combinedData = [...achievements, ...timeline, ...platformers];
+  try {
+    const platformerTimelineData = fs.readFileSync(platformerTimelinePath, 'utf8');
+    platformerTimeline = JSON.parse(platformerTimelineData);
+  } catch (e) {}
+
+  const combinedData = [...achievements, ...timeline, ...platformers, ...platformerTimeline];
 
   const paths = combinedData
     .filter(a => a && a.id && a.name)
@@ -44,9 +51,11 @@ export async function getStaticProps({ params }) {
   const achievementsPath = path.join(process.cwd(), 'public', 'achievements.json');
   const timelinePath = path.join(process.cwd(), 'public', 'timeline.json');
   const platformersPath = path.join(process.cwd(), 'public', 'platformers.json');
+  const platformerTimelinePath = path.join(process.cwd(), 'public', 'platformertimeline.json');
   let achievements = [];
   let timeline = [];
   let platformers = [];
+  let platformerTimeline = [];
 
   try {
     const achievementsData = fs.readFileSync(achievementsPath, 'utf8');
@@ -63,7 +72,12 @@ export async function getStaticProps({ params }) {
     platformers = JSON.parse(platformersData);
   } catch (e) {}
 
-  const combinedData = [...achievements, ...timeline, ...platformers].filter(a => a && a.id && a.name);
+  try {
+    const platformerTimelineData = fs.readFileSync(platformerTimelinePath, 'utf8');
+    platformerTimeline = JSON.parse(platformerTimelineData);
+  } catch (e) {}
+
+  const combinedData = [...achievements, ...timeline, ...platformers, ...platformerTimeline].filter(a => a && a.id && a.name);
 
   const achievement = combinedData.find(a => a.id.toString() === params.id) || null;
 
