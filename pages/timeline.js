@@ -151,7 +151,28 @@ function formatDate(date, dateFormat) {
   return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
-const AchievementCard = memo(function AchievementCard({ achievement, devMode }) {
+function parseAsLocal(d) {
+  if (!d) return null;
+  try {
+    if (/^\d{4}-\d{2}-\d{2}$/.test(String(d).trim())) {
+      return new Date(String(d).trim().replace(/-/g, '/'));
+    }
+    return new Date(d);
+  } catch (e) {
+    return null;
+  }
+}
+
+function calculateDaysLasted(currentDate, previousDate) {
+  if (!currentDate || !previousDate) return 'N/A';
+  const current = parseAsLocal(currentDate);
+  const previous = parseAsLocal(previousDate);
+  if (!current || !previous || isNaN(current) || isNaN(previous)) return 'N/A';
+  const diffTime = Math.abs(current - previous);
+  return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+}
+
+function TimelineAchievementCardInner({ achievement, previousAchievement, onEdit, onHover, isHovered, devMode }) {
   const { dateFormat } = useDateFormat();
   const handleClick = e => {
     if (devMode) {
@@ -160,6 +181,24 @@ const AchievementCard = memo(function AchievementCard({ achievement, devMode }) 
       e.stopPropagation();
     }
   };
+
+  let lastedDays, lastedLabel;
+  if (previousAchievement && previousAchievement.date && achievement && achievement.date) {
+    lastedDays = calculateDaysLasted(achievement.date, previousAchievement.date);
+    lastedLabel = typeof lastedDays === 'number' ? `Lasted ${lastedDays} days` : 'Lasted N/A days';
+  } else {
+    // top item or missing previous -> calculate days from achievement date to today
+    const today = new Date();
+    const achievementDate = parseAsLocal(achievement && achievement.date);
+    if (!achievement || !achievement.date || !achievementDate || isNaN(achievementDate)) {
+      lastedLabel = 'Lasting N/A days';
+    } else {
+      const diffTime = Math.abs(today - achievementDate);
+      const days = Math.max(1, Math.ceil(diffTime / (1000 * 60 * 60 * 24)));
+      lastedLabel = `Lasting ${days} days`;
+    }
+  }
+
   return (
     <Link href={`/achievement/${achievement.id}`} passHref legacyBehavior>
       <a
@@ -170,18 +209,18 @@ const AchievementCard = memo(function AchievementCard({ achievement, devMode }) 
         aria-disabled={devMode ? 'true' : undefined}
       >
         <div
-          className="achievement-item"
+          className={`achievement-item ${isHovered ? 'hovered' : ''}`}
           tabIndex={0}
           style={{ cursor: 'pointer' }}
+          onMouseEnter={onHover}
+          onMouseLeave={onHover}
         >
           <div className="rank-date-container">
             <div className="achievement-length">
               {achievement.length ? `${Math.floor(achievement.length / 60)}:${(achievement.length % 60).toString().padStart(2, '0')}` : 'N/A'}
             </div>
-            <div className="achievement-date">
-              {achievement.date ? formatDate(achievement.date, dateFormat) : 'N/A'}
-            </div>
-            <div className="rank"><strong>#{achievement.rank}</strong></div>
+            <div className="lasted-days">{lastedLabel}</div>
+            <div className="rank"><strong>{achievement.date ? formatDate(achievement.date, dateFormat) : 'N/A'}</strong></div>
           </div>
           <div className="tag-container">
             {(achievement.tags || []).sort((a, b) => TAG_PRIORITY_ORDER.indexOf(a.toUpperCase()) - TAG_PRIORITY_ORDER.indexOf(b.toUpperCase())).map(tag => (
@@ -197,11 +236,21 @@ const AchievementCard = memo(function AchievementCard({ achievement, devMode }) 
               <img src={achievement.thumbnail || (achievement.levelID ? `https://tjcsucht.net/levelthumbs/${achievement.levelID}.png` : '/assets/default-thumbnail.png')} alt={achievement.name} loading="lazy" />
             </div>
           </div>
+          {/* Developer mode hover menu */}
+          {onEdit && (
+            <div className="hover-menu" style={{ display: isHovered ? 'flex' : 'none' }}>
+              <button className="hover-menu-btn" onClick={onEdit} title="Edit achievement">
+                <span className="bi bi-pencil" aria-hidden="true"></span>
+              </button>
+            </div>
+          )}
         </div>
       </a>
     </Link>
   );
-}, (prev, next) => prev.achievement === next.achievement && prev.devMode === next.devMode);
+}
+
+const AchievementCard = memo(TimelineAchievementCardInner, (prev, next) => prev.achievement === next.achievement && prev.devMode === next.devMode);
 
 function useDebouncedValue(value, delay) {
   const [debounced, setDebounced] = useState(value);
@@ -1429,7 +1478,14 @@ export default function List() {
                   position: 'relative',
                   zIndex: 1
                 }} className={highlightedIdx === i ? 'search-highlight' : ''}>
-                  <AchievementCard achievement={a} devMode={devMode} />
+                  <AchievementCard
+                    achievement={a}
+                    previousAchievement={devAchievements[i - 1]}
+                    onEdit={() => handleEditAchievement(i)}
+                    onHover={() => setHoveredIdx(v => (v === i ? null : i))}
+                    isHovered={hoveredIdx === i}
+                    devMode={devMode}
+                  />
                 </div>
               </div>
             ))
@@ -1466,7 +1522,14 @@ export default function List() {
                   const isDup = duplicateThumbKeys.has((thumb || '').trim());
                   return (
                     <div style={itemStyle} key={a.id || index} className={`${isDup ? 'duplicate-thumb-item' : ''} ${highlightedIdx === index ? 'search-highlight' : ''}`}>
-                      <AchievementCard achievement={a} devMode={devMode} />
+                      <AchievementCard
+                        achievement={a}
+                        previousAchievement={index > 0 ? filtered[index - 1] : null}
+                        onEdit={null}
+                        onHover={null}
+                        isHovered={false}
+                        devMode={devMode}
+                      />
                     </div>
                   );
                 }}
