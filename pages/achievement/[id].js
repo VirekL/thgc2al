@@ -135,9 +135,12 @@ export default function AchievementPage({ achievement, placement }) {
     return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
   }
   function formatLength(length) {
-    if (!length || isNaN(length)) return 'N/A';
-    const min = Math.floor(Number(length) / 60);
-    const sec = (Number(length) % 60).toString().padStart(2, '0');
+    // Only treat null / undefined / empty string as "no length"
+    if (length === null || length === undefined || length === '') return 'N/A';
+    const num = Number(length);
+    if (isNaN(num)) return 'N/A';
+    const min = Math.floor(num / 60);
+    const sec = (num % 60).toString().padStart(2, '0');
     return `${min}:${sec}`;
   }
   function getEmbedLink(url) {
@@ -247,7 +250,7 @@ export default function AchievementPage({ achievement, placement }) {
                     >{formatDate(achievement.date)}</button>
                   </div>
                 )}
-                {achievement.length && (
+                {achievement.length !== undefined && achievement.length !== null && achievement.length !== '' && (
                   <div style={{ marginBottom: 4, display: 'flex', alignItems: 'center', gap: 8 }}>
                     <strong>Length:</strong>
                     <button
