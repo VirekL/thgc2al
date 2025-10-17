@@ -92,27 +92,18 @@ function normalizeYoutubeUrl(input) {
 }
 
 function TagFilterPillsInner({ allTags, filterTags, setFilterTags, isMobile, show, setShow }) {
-  // memoize computed tag states and sorted tags to avoid repeated work on render
-  const sortedTags = useMemo(() => {
-    return (allTags || []).slice().sort((a, b) => TAG_PRIORITY_ORDER.indexOf(a.toUpperCase()) - TAG_PRIORITY_ORDER.indexOf(b.toUpperCase()));
-  }, [allTags]);
+  const tagStates = {};
+  allTags.forEach(tag => {
+    if (filterTags.include.includes(tag)) tagStates[tag] = 'include';
+    else if (filterTags.exclude.includes(tag)) tagStates[tag] = 'exclude';
+    else tagStates[tag] = 'neutral';
+  });
 
-  const tagStates = useMemo(() => {
-    const map = {};
-    (allTags || []).forEach(tag => {
-      if ((filterTags.include || []).includes(tag)) map[tag] = 'include';
-      else if ((filterTags.exclude || []).includes(tag)) map[tag] = 'exclude';
-      else map[tag] = 'neutral';
-    });
-    return map;
-  }, [allTags, filterTags]);
-
-  const handlePillClick = useCallback((tag) => {
-    const state = tagStates[tag];
-    if (state === 'neutral') setFilterTags(prev => ({ ...prev, include: [...prev.include, tag] }));
-    else if (state === 'include') setFilterTags(prev => ({ ...prev, include: prev.include.filter(t => t !== tag), exclude: [...prev.exclude, tag] }));
+  function handlePillClick(tag) {
+    if (tagStates[tag] === 'neutral') setFilterTags(prev => ({ ...prev, include: [...prev.include, tag] }));
+    else if (tagStates[tag] === 'include') setFilterTags(prev => ({ ...prev, include: prev.include.filter(t => t !== tag), exclude: [...prev.exclude, tag] }));
     else setFilterTags(prev => ({ ...prev, exclude: prev.exclude.filter(t => t !== tag) }));
-  }, [setFilterTags, tagStates]);
+  }
 
   return (
     <div
@@ -130,7 +121,7 @@ function TagFilterPillsInner({ allTags, filterTags, setFilterTags, isMobile, sho
       {allTags.length === 0 ? (
         <span style={{ color: '#aaa', fontSize: 13 }}>Loading tags...</span>
       ) : (
-        sortedTags.map(tag => (
+        allTags.sort((a, b) => TAG_PRIORITY_ORDER.indexOf(a.toUpperCase()) - TAG_PRIORITY_ORDER.indexOf(b.toUpperCase())).map(tag => (
           <Tag
             key={tag}
             tag={tag}
@@ -210,27 +201,7 @@ const AchievementCard = memo(function AchievementCard({ achievement, devMode }) 
       </a>
     </Link>
   );
-}, (prev, next) => {
-  // faster shallow comparison of fields we actually render to avoid deep equality checks
-  if (prev.devMode !== next.devMode) return false;
-  const a = prev.achievement || {};
-  const b = next.achievement || {};
-  if (a.id !== b.id) return false;
-  if (a.name !== b.name) return false;
-  if (a.player !== b.player) return false;
-  if (String(a.thumbnail) !== String(b.thumbnail)) return false;
-  if (Number(a.rank) !== Number(b.rank)) return false;
-  if (Number(a.length) !== Number(b.length)) return false;
-  if (String(a.date) !== String(b.date)) return false;
-  // cheap tags check: length and first/last string
-  const ta = Array.isArray(a.tags) ? a.tags : [];
-  const tb = Array.isArray(b.tags) ? b.tags : [];
-  if (ta.length !== tb.length) return false;
-  if (ta.length > 0) {
-    if (ta[0] !== tb[0] || ta[ta.length - 1] !== tb[tb.length - 1]) return false;
-  }
-  return true;
-});
+}, (prev, next) => prev.achievement === next.achievement && prev.devMode === next.devMode);
 
 function useDebouncedValue(value, delay) {
   const [debounced, setDebounced] = useState(value);
@@ -1209,39 +1180,34 @@ export default function List() {
       )}
       <main className="main-content achievements-main">
         {!isMobile && <Sidebar />}
-        {useMemo(() => {
-          const listForIndex = (devMode && reordered ? reordered : achievements) || [];
-          return (
-            <div
-              id="achievements-search-index"
-              aria-hidden="true"
-              style={{
-                position: 'absolute',
-                left: -9999,
-                top: 'auto',
-                width: 1,
-                height: 1,
-                overflow: 'hidden',
-                whiteSpace: 'pre-wrap'
-              }}
-            >
-              {listForIndex.map((a, i) => {
-                const parts = [];
-                if (a && a.name) parts.push(a.name);
-                if (a && a.player) parts.push(a.player);
-                if (a && a.id) parts.push(String(a.id));
-                if (a && a.levelID) parts.push(String(a.levelID));
-                if (a && a.submitter) parts.push(a.submitter);
-                if (a && Array.isArray(a.tags) && a.tags.length) parts.push(a.tags.join(', '));
-                return (
-                  <span key={a && a.id ? a.id : `s-${i}`}>
-                    {parts.join(' \u2014 ')}
-                  </span>
-                );
-              })}
-            </div>
-          );
-        }, [devMode, reordered, achievements])}
+        <div
+          id="achievements-search-index"
+          aria-hidden="true"
+          style={{
+            position: 'absolute',
+            left: -9999,
+            top: 'auto',
+            width: 1,
+            height: 1,
+            overflow: 'hidden',
+            whiteSpace: 'pre-wrap'
+          }}
+        >
+          {(devMode && reordered ? reordered : achievements).map((a, i) => {
+            const parts = [];
+            if (a && a.name) parts.push(a.name);
+            if (a && a.player) parts.push(a.player);
+            if (a && a.id) parts.push(String(a.id));
+            if (a && a.levelID) parts.push(String(a.levelID));
+            if (a && a.submitter) parts.push(a.submitter);
+            if (a && Array.isArray(a.tags) && a.tags.length) parts.push(a.tags.join(', '));
+            return (
+              <span key={a && a.id ? a.id : `s-${i}`}>
+                {parts.join(' \u2014 ')}
+              </span>
+            );
+          })}
+        </div>
         <section className="achievements achievements-section">
           <DevModePanel
             devMode={devMode}
@@ -1459,10 +1425,10 @@ export default function List() {
                 ref={listRef}
                 height={Math.min(720, (typeof window !== 'undefined' ? window.innerHeight - 200 : 720))}
                 itemCount={Math.min(visibleCount, filtered.length)}
-                itemSize={150}
+                itemSize={() => 150}
                 width={'100%'}
                 style={{ overflowX: 'hidden' }}
-                onItemsRendered={useCallback(({ visibleStopIndex }) => {
+                onItemsRendered={({ visibleStopIndex }) => {
                   try {
                     const v = typeof window !== 'undefined' ? localStorage.getItem('itemsPerPage') : null;
                     const pageSize = v === 'all' ? 'all' : (v ? Number(v) || 100 : 100);
@@ -1475,9 +1441,9 @@ export default function List() {
                       setVisibleCount(prev => Math.min(prev + 100, filtered.length));
                     }
                   }
-                }, [visibleCount, filtered.length])}
+                }}
               >
-                {useCallback(({ index, style }) => {
+                {({ index, style }) => {
                   const a = filtered[index];
                   const itemStyle = { ...style, padding: 8, boxSizing: 'border-box' };
                   const thumb = (a && a.thumbnail) ? a.thumbnail : (a && a.levelID) ? `https://tjcsucht.net/levelthumbs/${a.levelID}.png` : '';
@@ -1487,7 +1453,7 @@ export default function List() {
                       <AchievementCard achievement={a} devMode={devMode} />
                     </div>
                   );
-                }, [filtered, duplicateThumbKeys, highlightedIdx, devMode])}
+                }}
               </ListWindow>
             )
           ))}
