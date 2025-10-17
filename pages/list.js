@@ -674,6 +674,9 @@ export default function List() {
 
   const baseDev = devMode && reordered ? reordered : achievements;
 
+  // compute a height for the list area to match the ListWindow height
+  const listHeight = (typeof window !== 'undefined' ? Math.min(720, window.innerHeight - 200) : 720);
+
   
 
   const devAchievements = useMemo(() => {
@@ -1250,173 +1253,176 @@ export default function List() {
           {isPending ? (
             <div className="no-achievements">Loading...</div>
           ) : (devMode ? (
-            devAchievements.map((a, i) => (
-              <div
-                key={a.id || i}
-                ref={el => {
-                  achievementRefs.current[i] = el;
-                }}
-                className={(() => {
-                  const thumb = (a && a.thumbnail) ? a.thumbnail : (a && a.levelID) ? `https://tjcsucht.net/levelthumbs/${a.levelID}.png` : '';
-                  return duplicateThumbKeys.has((thumb || '').trim()) ? 'duplicate-thumb-item' : '';
-                })()}
-                style={{
-                  border: '1px solid #333',
-                  marginBottom: 8,
-                  background: '#181818',
-                  borderRadius: 8,
-                  position: 'relative'
-                }}
-                onClick={() => {
-                  if (showNewForm && scrollToIdx === i) setShowNewForm(false);
-                }}
-                onMouseEnter={() => setHoveredIdx(i)}
-                onMouseLeave={() => setHoveredIdx(v => v === i ? null : v)}
-              >
-                {(hoveredIdx === i) && (
+            // wrap devMode list in a fixed-height scrollable container so it can be scrolled
+            <div style={{ height: listHeight, overflowY: 'auto', paddingRight: 8 }}>
+              {devAchievements.map((a, i) => (
+                <div
+                  key={a.id || i}
+                  ref={el => {
+                    achievementRefs.current[i] = el;
+                  }}
+                  className={(() => {
+                    const thumb = (a && a.thumbnail) ? a.thumbnail : (a && a.levelID) ? `https://tjcsucht.net/levelthumbs/${a.levelID}.png` : '';
+                    return duplicateThumbKeys.has((thumb || '').trim()) ? 'duplicate-thumb-item' : '';
+                  })()}
+                  style={{
+                    border: '1px solid #333',
+                    marginBottom: 8,
+                    background: '#181818',
+                    borderRadius: 8,
+                    position: 'relative'
+                  }}
+                  onClick={() => {
+                    if (showNewForm && scrollToIdx === i) setShowNewForm(false);
+                  }}
+                  onMouseEnter={() => setHoveredIdx(i)}
+                  onMouseLeave={() => setHoveredIdx(v => v === i ? null : v)}
+                >
+                  {(hoveredIdx === i) && (
+                    <div style={{
+                      position: 'absolute',
+                      top: '50%',
+                      left: '50%',
+                      transform: 'translate(-50%, -50%)',
+                      display: 'flex',
+                      gap: 32,
+                      zIndex: 3,
+                      background: 'var(--secondary-bg, #232323)',
+                      borderRadius: '1.5rem',
+                      padding: '22px 40px',
+                      boxShadow: '0 4px 24px #000b',
+                      alignItems: 'center',
+                      border: '2px solid var(--primary-accent, #e67e22)',
+                      transition: 'background 0.2s, border 0.2s',
+                    }}>
+                      <button
+                        title="Move Up"
+                        style={{
+                          background: 'var(--primary-accent, #e67e22)',
+                          border: 'none',
+                          color: '#fff',
+                          fontSize: 36,
+                          cursor: 'pointer',
+                          opacity: 1,
+                          borderRadius: '50%',
+                          width: 48,
+                          height: 48,
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          boxShadow: '0 2px 8px #0006',
+                          transition: 'background 0.15s, transform 0.1s',
+                          outline: 'none',
+                          marginRight: 8,
+                        }}
+                        disabled={i === 0}
+                        onClick={e => { e.stopPropagation(); handleMoveAchievementUp(i); }}
+                      >▲</button>
+                      <button
+                        title="Move Down"
+                        style={{
+                          background: 'var(--primary-accent, #e67e22)',
+                          border: 'none',
+                          color: '#fff',
+                          fontSize: 36,
+                          cursor: 'pointer',
+                          opacity: 1,
+                          borderRadius: '50%',
+                          width: 48,
+                          height: 48,
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          boxShadow: '0 2px 8px #0006',
+                          transition: 'background 0.15s, transform 0.1s',
+                          outline: 'none',
+                          marginRight: 8,
+                        }}
+                        disabled={i === devAchievements.length - 1}
+                        onClick={e => { e.stopPropagation(); handleMoveAchievementDown(i); }}
+                      >▼</button>
+                      <button
+                        title="Edit"
+                        style={{
+                          background: 'var(--info, #2980b9)',
+                          border: 'none',
+                          color: '#fff',
+                          fontSize: 44,
+                          cursor: 'pointer',
+                          opacity: 1,
+                          borderRadius: '50%',
+                          width: 64,
+                          height: 64,
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          boxShadow: '0 2px 8px #0006',
+                          transition: 'background 0.15s, transform 0.1s',
+                          outline: 'none',
+                        }}
+                        onMouseOver={e => e.currentTarget.style.background = 'var(--info-hover, #3498db)'}
+                        onMouseOut={e => e.currentTarget.style.background = 'var(--info, #2980b9)'}
+                        onClick={e => { e.stopPropagation(); handleEditAchievement(i); }}
+                      >✏️</button>
+                      <button
+                        title="Duplicate"
+                        style={{
+                          background: 'var(--primary-accent, #e67e22)',
+                          border: 'none',
+                          color: '#fff',
+                          fontSize: 44,
+                          cursor: 'pointer',
+                          opacity: 1,
+                          borderRadius: '50%',
+                          width: 64,
+                          height: 64,
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          boxShadow: '0 2px 8px #0006',
+                          transition: 'background 0.15s, transform 0.1s',
+                          outline: 'none',
+                        }}
+                        onMouseOver={e => e.currentTarget.style.background = 'var(--primary-accent-hover, #ff9800)'}
+                        onMouseOut={e => e.currentTarget.style.background = 'var(--primary-accent, #e67e22)'}
+                        onClick={e => { e.stopPropagation(); handleDuplicateAchievement(i); }}
+                      >📄</button>
+                      <button
+                        title="Remove"
+                        style={{
+                          background: 'var(--danger, #c0392b)',
+                          border: 'none',
+                          color: '#fff',
+                          fontSize: 44,
+                          cursor: 'pointer',
+                          opacity: 1,
+                          borderRadius: '50%',
+                          width: 64,
+                          height: 64,
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          boxShadow: '0 2px 8px #0006',
+                          transition: 'background 0.15s, transform 0.1s',
+                          outline: 'none',
+                        }}
+                        onMouseOver={e => e.currentTarget.style.background = 'var(--danger-hover, #e74c3c)'}
+                        onMouseOut={e => e.currentTarget.style.background = 'var(--danger, #c0392b)'}
+                        onClick={e => { e.stopPropagation(); handleRemoveAchievement(i); }}
+                      >🗑️</button>
+                    </div>
+                  )}
                   <div style={{
-                    position: 'absolute',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    display: 'flex',
-                    gap: 32,
-                    zIndex: 3,
-                    background: 'var(--secondary-bg, #232323)',
-                    borderRadius: '1.5rem',
-                    padding: '22px 40px',
-                    boxShadow: '0 4px 24px #000b',
-                    alignItems: 'center',
-                    border: '2px solid var(--primary-accent, #e67e22)',
-                    transition: 'background 0.2s, border 0.2s',
-                  }}>
-                    <button
-                      title="Move Up"
-                      style={{
-                        background: 'var(--primary-accent, #e67e22)',
-                        border: 'none',
-                        color: '#fff',
-                        fontSize: 36,
-                        cursor: 'pointer',
-                        opacity: 1,
-                        borderRadius: '50%',
-                        width: 48,
-                        height: 48,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        boxShadow: '0 2px 8px #0006',
-                        transition: 'background 0.15s, transform 0.1s',
-                        outline: 'none',
-                        marginRight: 8,
-                      }}
-                      disabled={i === 0}
-                      onClick={e => { e.stopPropagation(); handleMoveAchievementUp(i); }}
-                    >▲</button>
-                    <button
-                      title="Move Down"
-                      style={{
-                        background: 'var(--primary-accent, #e67e22)',
-                        border: 'none',
-                        color: '#fff',
-                        fontSize: 36,
-                        cursor: 'pointer',
-                        opacity: 1,
-                        borderRadius: '50%',
-                        width: 48,
-                        height: 48,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        boxShadow: '0 2px 8px #0006',
-                        transition: 'background 0.15s, transform 0.1s',
-                        outline: 'none',
-                        marginRight: 8,
-                      }}
-                      disabled={i === devAchievements.length - 1}
-                      onClick={e => { e.stopPropagation(); handleMoveAchievementDown(i); }}
-                    >▼</button>
-                    <button
-                      title="Edit"
-                      style={{
-                        background: 'var(--info, #2980b9)',
-                        border: 'none',
-                        color: '#fff',
-                        fontSize: 44,
-                        cursor: 'pointer',
-                        opacity: 1,
-                        borderRadius: '50%',
-                        width: 64,
-                        height: 64,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        boxShadow: '0 2px 8px #0006',
-                        transition: 'background 0.15s, transform 0.1s',
-                        outline: 'none',
-                      }}
-                      onMouseOver={e => e.currentTarget.style.background = 'var(--info-hover, #3498db)'}
-                      onMouseOut={e => e.currentTarget.style.background = 'var(--info, #2980b9)'}
-                      onClick={e => { e.stopPropagation(); handleEditAchievement(i); }}
-                    >✏️</button>
-                    <button
-                      title="Duplicate"
-                      style={{
-                        background: 'var(--primary-accent, #e67e22)',
-                        border: 'none',
-                        color: '#fff',
-                        fontSize: 44,
-                        cursor: 'pointer',
-                        opacity: 1,
-                        borderRadius: '50%',
-                        width: 64,
-                        height: 64,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        boxShadow: '0 2px 8px #0006',
-                        transition: 'background 0.15s, transform 0.1s',
-                        outline: 'none',
-                      }}
-                      onMouseOver={e => e.currentTarget.style.background = 'var(--primary-accent-hover, #ff9800)'}
-                      onMouseOut={e => e.currentTarget.style.background = 'var(--primary-accent, #e67e22)'}
-                      onClick={e => { e.stopPropagation(); handleDuplicateAchievement(i); }}
-                    >📄</button>
-                    <button
-                      title="Remove"
-                      style={{
-                        background: 'var(--danger, #c0392b)',
-                        border: 'none',
-                        color: '#fff',
-                        fontSize: 44,
-                        cursor: 'pointer',
-                        opacity: 1,
-                        borderRadius: '50%',
-                        width: 64,
-                        height: 64,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        boxShadow: '0 2px 8px #0006',
-                        transition: 'background 0.15s, transform 0.1s',
-                        outline: 'none',
-                      }}
-                      onMouseOver={e => e.currentTarget.style.background = 'var(--danger-hover, #e74c3c)'}
-                      onMouseOut={e => e.currentTarget.style.background = 'var(--danger, #c0392b)'}
-                      onClick={e => { e.stopPropagation(); handleRemoveAchievement(i); }}
-                    >🗑️</button>
+                    opacity: hoveredIdx === i ? 0.3 : 1,
+                    transition: 'opacity 0.2s',
+                    position: 'relative',
+                    zIndex: 1
+                  }} className={highlightedIdx === i ? 'search-highlight' : ''}>
+                    <AchievementCard achievement={a} devMode={devMode} />
                   </div>
-                )}
-                <div style={{
-                  opacity: hoveredIdx === i ? 0.3 : 1,
-                  transition: 'opacity 0.2s',
-                  position: 'relative',
-                  zIndex: 1
-                }} className={highlightedIdx === i ? 'search-highlight' : ''}>
-                  <AchievementCard achievement={a} devMode={devMode} />
                 </div>
-              </div>
-            ))
+              ))}
+            </div>
           ) : (
             filtered.length === 0 ? (
               <div className="no-achievements">No achievements found.</div>
