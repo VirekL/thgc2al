@@ -172,7 +172,7 @@ function calculateDaysLasted(currentDate, previousDate) {
   return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 }
 
-function TimelineAchievementCardInner({ achievement, previousAchievement, onEdit, onHover, isHovered, devMode }) {
+function TimelineAchievementCardInner({ achievement, previousAchievement, onEdit, onHoverEnter, onHoverLeave, isHovered, devMode }) {
   const { dateFormat } = useDateFormat();
   const handleClick = e => {
     if (devMode) {
@@ -212,8 +212,8 @@ function TimelineAchievementCardInner({ achievement, previousAchievement, onEdit
           className={`achievement-item ${isHovered ? 'hovered' : ''}`}
           tabIndex={0}
           style={{ cursor: 'pointer' }}
-          onMouseEnter={onHover}
-          onMouseLeave={onHover}
+          onMouseEnter={onHoverEnter}
+          onMouseLeave={onHoverLeave}
         >
           <div className="rank-date-container">
             <div className="achievement-length">
@@ -1482,7 +1482,8 @@ export default function List() {
                     achievement={a}
                     previousAchievement={devAchievements[i - 1]}
                     onEdit={() => handleEditAchievement(i)}
-                    onHover={() => setHoveredIdx(v => (v === i ? null : i))}
+                    onHoverEnter={() => setHoveredIdx(i)}
+                    onHoverLeave={() => setHoveredIdx(v => (v === i ? null : v))}
                     isHovered={hoveredIdx === i}
                     devMode={devMode}
                   />
@@ -1526,7 +1527,8 @@ export default function List() {
                         achievement={a}
                         previousAchievement={index > 0 ? filtered[index - 1] : null}
                         onEdit={null}
-                        onHover={null}
+                        onHoverEnter={null}
+                        onHoverLeave={null}
                         isHovered={false}
                         devMode={devMode}
                       />
