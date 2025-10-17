@@ -1406,6 +1406,23 @@
     ]
   },
   {
+    "name": "The Climax",
+    "id": "the-climax",
+    "player": "meisitijeun",
+    "length": 84,
+    "version": 1.2,
+    "video": "https://web.archive.org/web/20251017221403/https://cdn.discordapp.com/attachments/1394056075828924467/1401571042022916218/image.png?ex=68f3a2c0&is=68f25140&hm=0b218a0e82d1f4602eca704065357c79248c3aa40619e6dab22cbe398c961f8e",
+    "showcaseVideo": "https://youtu.be/2OIS1SgDSCg",
+    "date": "2013-11-12",
+    "submitter": "Arcadie",
+    "levelID": 41254,
+    "tags": [
+      "Level",
+      "Verified",
+      "Rated"
+    ]
+  },
+  {
     "id": "to-the-grave",
     "name": "To the Grave",
     "player": "darnoc2",
