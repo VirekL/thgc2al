@@ -1062,6 +1062,23 @@
     "showcaseVideo": "https://youtu.be/xrXOPg6SGyU"
   },
   {
+    "name": "Deadly ClubStep 6-100%",
+    "id": "deadly-clubstep-6-100",
+    "player": "AeonAir",
+    "length": 80,
+    "version": 2,
+    "showcaseVideo": "https://www.youtube.com/watch?v=jslIaQz4eNU",
+    "date": "2024-06-??",
+    "submitter": "Dave4681",
+    "levelID": 1299298,
+    "tags": [
+      "Level",
+      "Progress",
+      "Rated"
+    ],
+    "video": "https://youtu.be/0vEYZ1LqBcI"
+  },
+  {
     "id": "primary-maze",
     "name": "Primary Maze",
     "player": "Centuple",
@@ -1495,5 +1512,3 @@
     "video": "https://youtu.be/727pUHwWSVg"
   }
 ]
-
-
