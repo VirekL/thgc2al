@@ -61,12 +61,13 @@
     ]
   },
   {
-    "name": "The Abyss (Deathless)",
-    "id": "the-abyss-deathless",
-    "player": "GToast",
+    "name": "The Abyss (3rd Coin)",
+    "id": "the-abyss-3rd-coin",
+    "player": "mikoshii",
     "levelID": 98163412,
     "tags": [
       "Platformer",
+      "Coin",
       "Deathless",
       "Rated"
     ],
@@ -121,6 +122,7 @@
     "version": 2.2,
     "date": "2025-05-27",
     "video": "https://www.youtube.com/watch?v=2HRu26YzDUo",
+    "showcaseVideo": "https://youtu.be/_-ACXbZmdlE",
     "submitter": "kyle1saurus"
   },
   {
@@ -245,22 +247,6 @@
     "submitter": "kyle1saurus"
   },
   {
-    "name": "glungus",
-    "id": "glungus",
-    "player": "dpoopoop",
-    "levelID": 112482571,
-    "tags": [
-      "Verified",
-      "Platformer",
-      "Rated"
-    ],
-    "version": 2.2,
-    "date": "2025-02-13",
-    "video": "https://www.youtube.com/watch?v=a9099BQ1Suk",
-    "showcaseVideo": "https://youtu.be/muYSrubZ1kk",
-    "submitter": "kyle1saurus"
-  },
-  {
     "name": "dish rags",
     "id": "dish-rags",
     "player": "ali_gd",
@@ -274,6 +260,55 @@
     "date": "2025-04-06",
     "showcaseVideo": "https://youtu.be/pFU9WYSUc2o",
     "video": "https://www.youtube.com/watch?v=y9o5WkasWXw",
+    "submitter": "kyle1saurus"
+  },
+  {
+    "name": "glungus 60hz Mobile",
+    "id": "glungus",
+    "player": "Ray131",
+    "levelID": 112482571,
+    "tags": [
+      "Platformer",
+      "Low Hertz",
+      "Mobile",
+      "Rated"
+    ],
+    "version": 2.2,
+    "date": "2025-08-15",
+    "video": "https://www.youtube.com/watch?v=a9099BQ1Suk",
+    "showcaseVideo": "https://youtu.be/muYSrubZ1kk",
+    "submitter": "kyle1saurus"
+  },
+  {
+    "name": "glungus (Unnerfed)",
+    "id": "glungus-unnerfed",
+    "player": "dpoopoop",
+    "levelID": null,
+    "tags": [
+      "Verified",
+      "Platformer",
+      "Outdated Version"
+    ],
+    "version": 2.2,
+    "date": "2025-02-13",
+    "video": "https://www.youtube.com/watch?v=a9099BQ1Suk",
+    "showcaseVideo": "https://youtu.be/muYSrubZ1kk",
+    "submitter": "kyle1saurus"
+  },
+  {
+    "name": "glungus",
+    "id": "glungus",
+    "player": "Dxshing",
+    "levelID": null,
+    "tags": [
+      "Verified",
+      "Platformer",
+      "Rated"
+    ],
+    "version": 2.2,
+    "date": "2025-03-13",
+    "video": "https://youtu.be/pC1CEQapXfo",
+    "showcaseVideo": "https://youtu.be/muYSrubZ1kk",
     "submitter": "kyle1saurus"
   },
   {
