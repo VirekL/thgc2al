@@ -710,7 +710,25 @@
     "showcaseVideo": "https://youtu.be/pZlRHWuVDn4"
   },
   {
-    "id": "bloodlust-76",
+    "id": "bloodlust-78",
+    "name": "Bloodlust 78%",
+    "player": "knobbelboy",
+    "thumbnail": "https://tjcsucht.net/levelthumbs/19678264.png",
+    "tags": [
+      "Level",
+      "Progress",
+      "Rated"
+    ],
+    "length": 134,
+    "version": 2.1,
+    "date": "2017-06-09",
+    "levelID": 42584142,
+    "video": "https://clips.twitch.tv/CharmingSleepyLardStoneLightning",
+    "showcaseVideo": "https://youtu.be/pZlRHWuVDn4",
+    "submitter": "Anceps"
+  },
+  {
+    "id": "bloodlust-76-copy",
     "name": "Bloodlust 76%",
     "player": "knobbelboy",
     "thumbnail": "https://tjcsucht.net/levelthumbs/19678264.png",
@@ -1528,4 +1546,3 @@
     "video": "https://youtu.be/727pUHwWSVg"
   }
 ]
-
