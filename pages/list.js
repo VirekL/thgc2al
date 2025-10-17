@@ -3,7 +3,7 @@ import React, { useEffect, useState, useMemo, useRef, useCallback, useTransition
 import { VariableSizeList as ListWindow } from 'react-window';
 
 const AVAILABLE_TAGS = [
-  "Level", "Challenge", "Verified", "Coin Route", "Low Hertz", "Mobile", "Speedhack",
+  "Level", "Challenge", "Platformer", "Verified", "Deathless", "Coin Route", "Low Hertz", "Mobile", "Speedhack",
   "Noclip", "Miscellaneous", "Progress", "Consistency",
   "2P", "CBF", "Rated", "Formerly Rated", "Outdated Version", "Tentative"
 ];
@@ -214,6 +214,14 @@ function useDebouncedValue(value, delay) {
 
 export default function List() {
   const [achievements, setAchievements] = useState([]);
+  const [usePlatformers, setUsePlatformers] = useState(() => {
+    try {
+      const v = typeof window !== 'undefined' ? window.localStorage.getItem('usePlatformers') : null;
+      return v === '1' || v === 'true';
+    } catch (e) {
+      return false;
+    }
+  });
   const [visibleCount, setVisibleCount] = useState(100);
   const [searchJumpPending, setSearchJumpPending] = useState(false);
   const listRef = useRef(null);
@@ -307,7 +315,39 @@ export default function List() {
   const { dateFormat, setDateFormat } = useDateFormat();
   const [showSettings, setShowSettings] = useState(false);
   const [devMode, setDevMode] = useState(false);
+  // sorting state: key and direction
+  const [sortKey, setSortKey] = useState(() => {
+    try { return typeof window !== 'undefined' ? localStorage.getItem('sortKey') || 'rank' : 'rank'; } catch (e) { return 'rank'; }
+  });
+  const [sortDir, setSortDir] = useState(() => {
+    try { return typeof window !== 'undefined' ? localStorage.getItem('sortDir') || 'asc' : 'asc'; } catch (e) { return 'asc'; }
+  });
+  // comparator helper (define early so filtered can use it during module init / SSR)
+  const compareByKey = useCallback((a, b, key) => {
+    if (!a && !b) return 0;
+    if (!a) return -1;
+    if (!b) return 1;
+    const getVal = item => {
+      if (!item) return '';
+      if (key === 'name') return (item.name || '').toString().toLowerCase();
+      if (key === 'length') return Number(item.length) || 0;
+      if (key === 'levelID') return Number(item.levelID) || 0;
+      if (key === 'date') return item.date ? new Date(item.date).getTime() || 0 : 0;
+      if (key === 'rank') return Number(item.rank) || 0;
+      return (item[key] || '').toString().toLowerCase();
+    };
+    const va = getVal(a);
+    const vb = getVal(b);
+    if (typeof va === 'number' && typeof vb === 'number') return va - vb;
+    if (va < vb) return -1;
+    if (va > vb) return 1;
+    return 0;
+  }, []);
+  // stable random order mapping: key -> index
+  const [randomOrderMap, setRandomOrderMap] = useState({});
+  
   const [reordered, setReordered] = useState(null);
+  const [bgImage, setBgImage] = useState(null);
   const [showNewForm, setShowNewForm] = useState(false);
   const [hoveredIdx, setHoveredIdx] = useState(null);
   const [duplicateThumbKeys, setDuplicateThumbKeys] = useState(new Set());
@@ -444,18 +484,42 @@ export default function List() {
     setEditFormCustomTags('');
   }
 
+  // fetch data whenever the selected source changes
   useEffect(() => {
-    fetch('/achievements.json')
+    const file = usePlatformers ? '/platformers.json' : '/achievements.json';
+    fetch(file)
       .then(res => res.json())
       .then(data => {
-        const valid = data.filter(a => a && typeof a.name === 'string' && a.name && a.id);
+        const list = Array.isArray(data) ? data : (data.achievements || []);
+        const valid = list.filter(a => a && typeof a.name === 'string' && a.name && a.id);
         const withRank = valid.map((a, i) => ({ ...a, rank: i + 1 }));
         setAchievements(withRank);
         const tags = new Set();
         withRank.forEach(a => (a.tags || []).forEach(t => tags.add(t)));
         setAllTags(Array.from(tags));
       });
-  }, []);
+  }, [usePlatformers]);
+
+  // update background image to the thumbnail of the top (rank 1) achievement for the current dataset
+  useEffect(() => {
+    try {
+      const srcList = achievements || [];
+      if (!srcList || !srcList.length) {
+        setBgImage(null);
+        return;
+      }
+      // find the top-ranked achievement (rank === 1) or first item
+      const top = srcList.find(a => Number(a.rank) === 1) || srcList[0];
+      if (!top) {
+        setBgImage(null);
+        return;
+      }
+      const thumb = (top.thumbnail && String(top.thumbnail).trim()) ? top.thumbnail : (top.levelID ? `https://tjcsucht.net/levelthumbs/${top.levelID}.png` : null);
+      setBgImage(thumb || null);
+    } catch (e) {
+      setBgImage(null);
+    }
+  }, [achievements, usePlatformers]);
 
   const router = useRouter();
 
@@ -565,8 +629,34 @@ export default function List() {
   );
 
   const filtered = useMemo(() => {
-    return achievements.filter(filterFn);
-  }, [achievements, filterFn]);
+    let base = achievements.filter(filterFn);
+    if (!sortKey) return base;
+    if (sortKey === 'rank') {
+      const copy = [...base];
+      if (sortDir === 'desc') copy.reverse();
+      return copy;
+    }
+    if (sortKey === 'levelID') {
+      base = base.filter(a => {
+        const num = Number(a && a.levelID);
+        return !isNaN(num) && num > 0;
+      });
+      const copy = [...base];
+      copy.sort((x, y) => compareByKey(x, y, 'levelID'));
+      if (sortDir === 'desc') copy.reverse();
+      return copy;
+    }
+    if (sortKey === 'random') {
+      const copy = [...base];
+      const getKey = item => (item && item.id) ? String(item.id) : `__idx_${base.indexOf(item)}`;
+      copy.sort((x, y) => ( (randomOrderMap[getKey(x)] || 0) - (randomOrderMap[getKey(y)] || 0) ));
+      return copy;
+    }
+    const copy = [...base];
+    copy.sort((x, y) => compareByKey(x, y, sortKey));
+    if (sortDir === 'desc') copy.reverse();
+    return copy;
+  }, [achievements, filterFn, sortKey, sortDir, compareByKey, randomOrderMap]);
 
   useEffect(() => {
     let pref = 100;
@@ -582,7 +672,56 @@ export default function List() {
     else setVisibleCount(Math.min(pref, filtered.length));
   }, [filtered]);
 
-  const devAchievements = devMode && reordered ? reordered : achievements;
+  const baseDev = devMode && reordered ? reordered : achievements;
+
+  
+
+  const devAchievements = useMemo(() => {
+    if (!baseDev) return baseDev;
+    if (!sortKey) return baseDev;
+    if (sortKey === 'rank') {
+      const copy = [...baseDev];
+      if (sortDir === 'desc') copy.reverse();
+      return copy;
+    }
+    if (sortKey === 'levelID') {
+      const onlyWithLevel = baseDev.filter(a => {
+        const num = Number(a && a.levelID);
+        return !isNaN(num) && num > 0;
+      });
+      const copy = [...onlyWithLevel];
+      copy.sort((x, y) => compareByKey(x, y, 'levelID'));
+      if (sortDir === 'desc') copy.reverse();
+      return copy;
+    }
+    if (sortKey === 'random') {
+      const copy = [...baseDev];
+      const getKey = item => (item && item.id) ? String(item.id) : `__idx_${baseDev.indexOf(item)}`;
+      copy.sort((x, y) => ( (randomOrderMap[getKey(x)] || 0) - (randomOrderMap[getKey(y)] || 0) ));
+      if (sortDir === 'desc') copy.reverse();
+      return copy;
+    }
+    const copy = [...baseDev];
+    copy.sort((x, y) => compareByKey(x, y, sortKey));
+    if (sortDir === 'desc') copy.reverse();
+    return copy;
+  }, [baseDev, sortKey, sortDir, compareByKey, randomOrderMap]);
+
+  // regenerate stable random order map when the underlying lists change
+  useEffect(() => {
+    const items = (reordered && Array.isArray(reordered) && reordered.length) ? reordered : achievements;
+    const keys = (items || []).map((a, i) => (a && a.id) ? String(a.id) : `__idx_${i}`);
+    // Fisher-Yates shuffle
+    for (let i = keys.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const t = keys[i];
+      keys[i] = keys[j];
+      keys[j] = t;
+    }
+    const map = {};
+    keys.forEach((k, i) => { map[k] = i; });
+    setRandomOrderMap(map);
+  }, [achievements, reordered]);
 
   function handleMobileToggle() {
     setShowMobileFilters(v => !v);
@@ -684,7 +823,7 @@ export default function List() {
     const json = JSON.stringify(reordered.map(({ rank, ...rest }) => rest), null, 2);
     if (navigator.clipboard) {
       navigator.clipboard.writeText(json);
-      alert('Copied new achievements.json to clipboard!');
+      alert(`Copied new ${usePlatformers ? 'platformers.json' : 'achievements.json'} to clipboard!`);
     } else {
       const textarea = document.createElement('textarea');
       textarea.value = json;
@@ -692,7 +831,7 @@ export default function List() {
       textarea.select();
       document.execCommand('copy');
       document.body.removeChild(textarea);
-      alert('Copied new achievements.json to clipboard!');
+      alert(`Copied new ${usePlatformers ? 'platformers.json' : 'achievements.json'} to clipboard!`);
     }
   }
 
@@ -800,7 +939,7 @@ export default function List() {
           content="This Geometry Dash list ranks rated, unrated, challenges, runs, speedhacked, low refresh rate, (and more) all under one list."
         />
       </Head>
-      <Background />
+  <Background bgImage={bgImage} />
       <header className="main-header">
         <div
           className="header-bar"
@@ -846,6 +985,29 @@ export default function List() {
                   style={{ width: '100%' }}
                 />
               </div>
+              <div style={{ display: 'flex', justifyContent: 'center', marginTop: 8 }}>
+                <label className="pill-toggle" data-variant="platformer" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: 'var(--muted, #DFE3F5)', fontSize: 14 }}>
+                  <input
+                    type="checkbox"
+                    checked={usePlatformers}
+                    onChange={e => {
+                      const next = !!e.target.checked;
+                      setUsePlatformers(next);
+                      try { localStorage.setItem('usePlatformers', next ? '1' : '0'); } catch (err) {}
+                    }}
+                  />
+                  <span
+                    className="track"
+                    role="switch"
+                    aria-checked={usePlatformers}
+                    tabIndex={0}
+                  >
+                    <span className="inner-label label-left">Platformer</span>
+                    <span className="thumb" aria-hidden="true" />
+                    <span className="inner-label label-right">Classic</span>
+                  </span>
+                </label>
+              </div>
               <div className="tag-filter-pills-container" style={{ width: '100%' }}>
                 <TagFilterPills
                   allTags={allTags}
@@ -884,6 +1046,63 @@ export default function List() {
                 className="search-input"
                 style={{ width: '100%' }}
               />
+            </div>
+          )}
+          {!isMobile && (
+            <div style={{ display: 'flex', alignItems: 'center', marginLeft: 12 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginRight: 12 }}>
+                <label style={{ color: 'var(--text-color)', fontSize: 13 }}>Sort:</label>
+                <select
+                  aria-label="Sort achievements"
+                  value={sortKey}
+                  onChange={e => {
+                    const v = e.target.value;
+                    setSortKey(v);
+                    try { localStorage.setItem('sortKey', v); } catch (err) {}
+                  }}
+                  style={{ padding: '6px 8px', borderRadius: 6, background: 'var(--primary-bg)', color: 'var(--text-color)', border: '1px solid var(--hover-bg)' }}
+                >
+                  <option value="rank">Rank (Default)</option>
+                  <option value="name">Name</option>
+                  <option value="length">Length</option>
+                  <option value="levelID">Level ID</option>
+                  <option value="random">Random</option>
+                  <option value="date">Date</option>
+                </select>
+                <button
+                  aria-label="Toggle sort direction"
+                  title={sortDir === 'asc' ? 'Ascending' : 'Descending'}
+                  onClick={() => {
+                    const next = sortDir === 'asc' ? 'desc' : 'asc';
+                    setSortDir(next);
+                    try { localStorage.setItem('sortDir', next); } catch (err) {}
+                  }}
+                  style={{ padding: '6px 10px', borderRadius: 6, background: 'var(--primary-accent)', color: '#fff', border: 'none', cursor: 'pointer' }}
+                >
+                  {sortDir === 'asc' ? '↑' : '↓'}
+                </button>
+              </div>
+              <label className="pill-toggle" data-variant="platformer" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: 'var(--muted, #DFE3F5)', fontSize: 14 }}>
+                <input
+                  type="checkbox"
+                  checked={usePlatformers}
+                  onChange={e => {
+                    const next = !!e.target.checked;
+                    setUsePlatformers(next);
+                    try { localStorage.setItem('usePlatformers', next ? '1' : '0'); } catch (err) {}
+                  }}
+                />
+                <span
+                  className="track"
+                  role="switch"
+                  aria-checked={usePlatformers}
+                  tabIndex={0}
+                >
+                  <span className="inner-label label-left">Platformer</span>
+                  <span className="thumb" aria-hidden="true" />
+                  <span className="inner-label label-right">Classic</span>
+                </span>
+              </label>
             </div>
           )}
         </div>
@@ -1018,14 +1237,15 @@ export default function List() {
             onImportAchievementsJson={json => {
               let imported = Array.isArray(json) ? json : (json.achievements || []);
               if (!Array.isArray(imported)) {
-                alert('Invalid achievements.json format.');
+                alert(`Invalid ${usePlatformers ? 'platformers.json' : 'achievements.json'} format.`);
                 return;
               }
               imported = imported.map((a, i) => ({ ...a, rank: i + 1 }));
               setReordered(imported);
               setDevMode(true);
-              alert('Imported achievements.json!');
+              alert(`Imported ${usePlatformers ? 'platformers.json' : 'achievements.json'}!`);
             }}
+            dataFileName={usePlatformers ? 'platformers.json' : 'achievements.json'}
           />
           {isPending ? (
             <div className="no-achievements">Loading...</div>
