@@ -727,6 +727,24 @@
     "showcaseVideo": "https://youtu.be/pZlRHWuVDn4"
   },
   {
+    "name": "Black Blizzard (Unnerfed) 60hz 45%",
+    "id": "black-blizzard-unnerfed-60hz-45",
+    "player": "KrmaL",
+    "length": 54,
+    "version": 2.1,
+    "video": "https://m.twitch.tv/krmal/clip/RefinedAltruisticRatWutFace",
+    "showcaseVideo": "https://www.youtube.com/watch?v=6is4VIEOnA0",
+    "date": "2017-02-21",
+    "submitter": "Relayne",
+    "levelID": 34109118,
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Progress",
+      "Tentative"
+    ]
+  },
+  {
     "id": "sonic-wave-mefewe-98",
     "name": "Sonic Wave (Mefewe) 98%",
     "player": "Mefewe",
