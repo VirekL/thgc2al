@@ -3738,6 +3738,21 @@
     ]
   },
   {
+    "name": "ANTARCTIC LIGHTS 25-85%",
+    "id": "antarctic-lights-25-85",
+    "player": "Axinity",
+    "length": 33,
+    "version": 2.2,
+    "video": "https://youtu.be/olGmPqgSQ0o",
+    "date": "2025-10-16",
+    "showcaseVideo": "https://youtu.be/oZfKkZ36L9Q",
+    "submitter": "Exiled_shade",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "EXPIRATION DATE",
     "id": "expiration-date",
     "player": "Quad",
@@ -5181,18 +5196,21 @@
     ]
   },
   {
-    "name": "ANTARCTIC LIGHTS 25-73%",
-    "id": "antarctic-lights-25-73",
-    "player": "Axinity",
-    "length": 27,
+    "name": "Bloodlust 90hz Mobile",
+    "id": "bloodlust-90hz-mobile",
+    "player": "NESVIGOD",
+    "date": "2025-03-22",
+    "length": 170,
     "version": 2.2,
-    "video": "https://www.twitch.tv/axinitygd/clip/FurtiveSpikyGalagoWutFace-q0unIL4lErilg0m0?tt_content=clip&tt_medium=mobile_web_share",
-    "date": "2025-10-04",
-    "showcaseVideo": "https://youtu.be/oZfKkZ36L9Q",
-    "submitter": "kyle1saurus",
+    "levelID": 42584142,
+    "video": "https://youtu.be/4DYd3lQLhoI",
+    "showcaseVideo": "https://youtu.be/kTToIer9QfY",
+    "submitter": "TTB18",
     "tags": [
       "Level",
-      "Progress"
+      "Low Hertz",
+      "Mobile",
+      "Rated"
     ]
   },
   {
@@ -7170,24 +7188,6 @@
       "Level",
       "Progress",
       "CBF"
-    ]
-  },
-  {
-    "name": "Bloodlust 120hz Mobile",
-    "id": "bloodlust-120hz-mobile",
-    "player": "Exectorr",
-    "date": "2025-07-15",
-    "length": "170",
-    "version": "2.2",
-    "levelID": "42584142",
-    "video": "https://youtu.be/cDi8TaMlo2M",
-    "showcaseVideo": "https://youtu.be/kTToIer9QfY",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Rated"
     ]
   },
   {
@@ -10510,3 +10510,4 @@
     ]
   }
 ]
+
