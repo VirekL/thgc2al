@@ -121,7 +121,7 @@ export default function AboutUs() {
               <ol>
                 <li>
                   <b>Significant Difficulty Increase</b>
-                  <p>A consistency achievement must represent a clear and substantial increase in difficulty compared to the standard execution of the level. (e.g., 60% then 100%, 140%, 70 spots above, exceptions are obviously made if it's unbalanced.)</p>
+                  <p>A consistency achievement must represent a clear and substantial increase in difficulty compared to the standard execution of the level. (e.g., 75% then 100%, 150%, 70 spots above, exceptions are obviously made if it's unbalanced.)</p>
                 </li>
                 <li>
                   <b>One Achievement Per Level</b>
@@ -161,3 +161,4 @@ export default function AboutUs() {
     </>
   );
 }
+
