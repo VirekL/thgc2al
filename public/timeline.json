@@ -839,7 +839,7 @@
     "showcaseVideo": "https://youtu.be/Js7TtZ99J04"
   },
   {
-    "id": "the-Ultimate Phase (Old)",
+    "id": "the-ultimate-phase-old",
     "name": "The Ultimate Phase (Old)",
     "player": "GMDElite",
     "thumbnail": "https://tjcsucht.net/levelthumbs/7174110.png",
@@ -848,12 +848,13 @@
       "Verified",
       "Outdated Version"
     ],
-    "length": "121",
-    "version": "1.9",
+    "length": 121,
+    "version": 1.9,
     "date": "2015-07-29",
-    "levelID": "104041294",
+    "levelID": 104041294,
     "video": "https://www.youtube.com/watch?v=LKp4VHT_10s",
-    "showcaseVideo": "https://www.youtube.com/watch?v=PGyRS6tjJNY"
+    "showcaseVideo": "https://www.youtube.com/watch?v=PGyRS6tjJNY",
+    "submitter": "kittycatiscute"
   },
   {
     "id": "bloodbath-58",
@@ -882,11 +883,11 @@
       "Rated",
       "Tentative"
     ],
-    "length": "87",
-    "version": "1.9",
+    "length": 87,
+    "version": 1.9,
     "date": "2015-05-24",
-    "levelID": "814678",
-    "video": "https://youtu.be/mhYRW_yNtWA?si=jZ6kgaQETjom54BI",
+    "levelID": 814678,
+    "video": "https://youtu.be/mhYRW_yNtWA",
     "showcaseVideo": "https://youtu.be/gSZVFyZg8ys"
   },
   {
@@ -1527,4 +1528,3 @@
     "video": "https://youtu.be/727pUHwWSVg"
   }
 ]
-
