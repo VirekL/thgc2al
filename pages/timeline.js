@@ -21,7 +21,17 @@ function normalizeYoutubeUrl(input) {
   const s = input.trim();
 
   let m = s.match(/(?:https?:\/\/)?(?:www\.)?youtu\.be\/([^?&#\/]+)/i);
-  if (m) return `https://youtu.be/${m[1]}`;
+  if (m) {
+    const id = m[1];
+    try {
+      const parsedShort = new URL(s.startsWith('http') ? s : `https://${s}`);
+      const t = parsedShort.searchParams.get('t') || parsedShort.searchParams.get('start') || parsedShort.searchParams.get('time_continue');
+      if (t) return `https://www.youtube.com/watch?v=${id}&t=${t}`;
+    } catch (e) {
+      // ignore and fall back
+    }
+    return `https://youtu.be/${id}`;
+  }
 
   let parsed;
   try {
