@@ -139,6 +139,8 @@ function TagFilterPillsInner({ allTags, filterTags, setFilterTags, isMobile, sho
 
 function formatDate(date, dateFormat) {
   if (!date) return 'N/A';
+  // If the date string contains unknown parts represented by '?', just return it unchanged
+  if (typeof date === 'string' && date.includes('?')) return date;
   const d = new Date(date);
   if (isNaN(d)) return 'N/A';
   d.setDate(d.getDate() + 1);
@@ -154,11 +156,14 @@ function formatDate(date, dateFormat) {
 
 function parseAsLocal(d) {
   if (!d) return null;
+  const s = String(d).trim();
+  // Treat dates with unknown parts (e.g. 2020-??-15 or 2020-01-??) as unknown
+  if (s.includes('?')) return null;
   try {
-    if (/^\d{4}-\d{2}-\d{2}$/.test(String(d).trim())) {
-      return new Date(String(d).trim().replace(/-/g, '/'));
+    if (/^\d{4}-\d{2}-\d{2}$/.test(s)) {
+      return new Date(s.replace(/-/g, '/'));
     }
-    return new Date(d);
+    return new Date(s);
   } catch (e) {
     return null;
   }
