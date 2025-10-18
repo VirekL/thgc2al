@@ -575,23 +575,6 @@
     "showcaseVideo": "https://youtu.be/lm1498Rfl0s"
   },
   {
-    "id": "tartarus-61",
-    "name": "Tartarus 61%",
-    "player": "Mullsy",
-    "thumbnail": "https://tjcsucht.net/levelthumbs/41514680.png",
-    "tags": [
-      "Level",
-      "Progress",
-      "Rated"
-    ],
-    "length": "60",
-    "version": "2.1",
-    "date": "2019-02-20",
-    "levelID": "59075347",
-    "video": "https://youtu.be/BuZ7e9cMjdg",
-    "showcaseVideo": "https://youtu.be/lm1498Rfl0s"
-  },
-  {
     "name": "Thinking Space 97%",
     "id": "thinking-space-97",
     "player": "Atomic",
@@ -617,7 +600,7 @@
     "video": "https://www.youtube.com/watch?v=nV6fiTzM_OI",
     "showcaseVideo": "https://www.youtube.com/watch?v=IJHKpwXSaV0",
     "date": "2018-05-19",
-    "submitter": "TTB18",
+    "submitter": "Dave4681",
     "levelID": 37456092,
     "tags": [
       "Level",
@@ -654,42 +637,6 @@
     "date": "2017-11-04",
     "levelID": "38655495",
     "video": "https://youtu.be/efl4b9pWBQg",
-    "showcaseVideo": "https://youtu.be/CDUcdR1-uho"
-  },
-  {
-    "id": "plasma-pulse-finale-60hz-66",
-    "name": "Plasma Pulse Finale 60hz 66%",
-    "player": "hotball1",
-    "thumbnail": "https://i.ytimg.com/vi/pSGPEkuwtrs/maxresdefault.jpg",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Progress",
-      "Rated"
-    ],
-    "length": "77",
-    "version": "2.1",
-    "date": "2017-11-03",
-    "levelID": "38655495",
-    "video": "https://youtu.be/b4PYrHEk0RE",
-    "showcaseVideo": "https://youtu.be/CDUcdR1-uho"
-  },
-  {
-    "id": "plasma-pulse-finale-60hz-57",
-    "name": "Plasma Pulse Finale 60hz 57%",
-    "player": "hotball1",
-    "thumbnail": "https://pm1.aminoapps.com/7504/1dd701f2047b621d08ad986a4c298da627941b4ar1-1280-720v2_hq.jpg",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Progress",
-      "Rated"
-    ],
-    "length": "68",
-    "version": "2.1",
-    "date": "2017-11-03",
-    "levelID": "38655495",
-    "video": "https://youtu.be/Lbk5pxy1tSI",
     "showcaseVideo": "https://youtu.be/CDUcdR1-uho"
   },
   {
