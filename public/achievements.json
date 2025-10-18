@@ -1136,7 +1136,7 @@
   },
   {
     "name": "Sakupen circles (Old)",
-    "id": "sakupen-circles-old-copy",
+    "id": "sakupen-circles-old",
     "player": "ad3usgmd",
     "length": 49,
     "version": 2.2,
@@ -1701,7 +1701,7 @@
   },
   {
     "name": "KOCMOC UNLEASHED 49-100%",
-    "id": "kocmoc-unleashed-49-100-copy",
+    "id": "kocmoc-unleashed-49-100",
     "player": "Arshadow",
     "date": "2025-03-31",
     "length": 43,
@@ -10509,4 +10509,5 @@
     ]
   }
 ]
+
 
