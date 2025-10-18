@@ -12,7 +12,7 @@
     ],
     "date": "2025-09-21",
     "length": 714,
-    "version": ,
+    "version": 2.2,
     "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
   },
   {
@@ -29,7 +29,7 @@
     ],
     "date": "2025-09-06",
     "length": 615,
-    "version": ,
+    "version": 2.2,
     "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
   },
   {
@@ -46,7 +46,7 @@
     ],
     "date": "2025-08-31",
     "length": 600,
-    "version": ,
+    "version": 2.2,
     "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg"
   },
   {
@@ -1527,4 +1527,3 @@
     "video": "https://youtu.be/727pUHwWSVg"
   }
 ]
-
