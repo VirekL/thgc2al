@@ -382,12 +382,29 @@ export default function List() {
     if (!a && !b) return 0;
     if (!a) return -1;
     if (!b) return 1;
-    const getVal = item => {
+      const getVal = item => {
       if (!item) return '';
       if (key === 'name') return (item.name || '').toString().toLowerCase();
       if (key === 'length') return Number(item.length) || 0;
       if (key === 'levelID') return Number(item.levelID) || 0;
-      if (key === 'date') return item.date ? new Date(item.date).getTime() || 0 : 0;
+      if (key === 'date') {
+        if (!item.date) return 0;
+        // Attempt to handle partial/unknown dates like '2014-06-??'
+        try {
+          const s = String(item.date).trim();
+          // if pattern YYYY-MM-?? or YYYY-??-??, replace unknown parts with '01' to sort by earliest possible date
+          if (/^\d{4}-(?:\d{2}|\?\?)-(?:\d{2}|\?\?)$/.test(s)) {
+            const normalized = s.replace(/\?\?/g, '01');
+            const t = new Date(normalized).getTime();
+            return Number.isFinite(t) ? t : 0;
+          }
+          // fallback to standard parsing
+          const t = new Date(s).getTime();
+          return Number.isFinite(t) ? t : 0;
+        } catch (e) {
+          return 0;
+        }
+      }
       if (key === 'rank') return Number(item.rank) || 0;
       return (item[key] || '').toString().toLowerCase();
     };
