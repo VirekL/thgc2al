@@ -83,8 +83,13 @@ export async function getStaticProps({ params }) {
 
   let placement = null;
   if (achievement) {
-    const index = combinedData.findIndex(a => a.id.toString() === params.id);
-    if (index !== -1) placement = index + 1;
+    const achIndex = achievements.findIndex(a => a && a.id && a.id.toString() === params.id);
+    if (achIndex !== -1) {
+      placement = achIndex + 1;
+    } else {
+      const platIndex = platformers.findIndex(a => a && a.id && a.id.toString() === params.id);
+      if (platIndex !== -1) placement = platIndex + 1;
+    }
   }
 
   return { props: { achievement, placement } };
