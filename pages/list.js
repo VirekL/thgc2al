@@ -140,6 +140,8 @@ function TagFilterPillsInner({ allTags, filterTags, setFilterTags, isMobile, sho
 
 function formatDate(date, dateFormat) {
   if (!date) return 'N/A';
+  // If the date string contains unknown parts represented by '?', just return it unchanged
+  if (typeof date === 'string' && date.includes('?')) return date;
   const d = new Date(date);
   if (isNaN(d)) return 'N/A';
   d.setDate(d.getDate() + 1);
