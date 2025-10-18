@@ -336,7 +336,21 @@ export default function List() {
       if (key === 'name') return (item.name || '').toString().toLowerCase();
       if (key === 'length') return Number(item.length) || 0;
       if (key === 'levelID') return Number(item.levelID) || 0;
-      if (key === 'date') return item.date ? new Date(item.date).getTime() || 0 : 0;
+      if (key === 'date') {
+        if (!item.date) return 0;
+        try {
+          const s = String(item.date).trim();
+          if (/^\d{4}-(?:\d{2}|\?\?)-(?:\d{2}|\?\?)$/.test(s)) {
+            const normalized = s.replace(/\?\?/g, '01');
+            const t = new Date(normalized).getTime();
+            return Number.isFinite(t) ? t : 0;
+          }
+          const t = new Date(s).getTime();
+          return Number.isFinite(t) ? t : 0;
+        } catch (e) {
+          return 0;
+        }
+      }
       if (key === 'rank') return Number(item.rank) || 0;
       return (item[key] || '').toString().toLowerCase();
     };
