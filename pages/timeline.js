@@ -86,16 +86,7 @@ function normalizeYoutubeUrl(input) {
       return t ? `https://www.youtube.com/watch?v=${id}&t=${t}` : `https://www.youtube.com/watch?v=${id}`;
     }
 
-    if (parsed.searchParams.has('si')) parsed.searchParams.delete('si');
-
-    try {
-      if (parsed.searchParams.get('feature')) parsed.searchParams.delete('feature');
-    } catch (e) {
-      // ignore
-    }
-
-    const remainingParams = parsed.searchParams.toString();
-    return `${parsed.origin}${parsed.pathname}${remainingParams ? `?${remainingParams}` : ''}`;
+    return parsed.href;
   }
 
   return input;
