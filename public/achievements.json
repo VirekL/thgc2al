@@ -264,23 +264,6 @@
     ]
   },
   {
-    "name": "Quanteuse processing",
-    "id": "quanteuse-processing",
-    "player": "Zoink",
-    "length": 103,
-    "version": 2.2,
-    "video": "https://youtu.be/j5NC0u1Q91Q",
-    "showcaseVideo": "https://youtu.be/XLdekslmFqg",
-    "date": "2024-12-31",
-    "submitter": "Arcadie",
-    "levelID": 117692518,
-    "tags": [
-      "Level",
-      "Verified",
-      "Tentative"
-    ]
-  },
-  {
     "name": "SARY NEVER CLEAR (Old)",
     "id": "sary-never-clear-old",
     "player": "Glow",
@@ -594,6 +577,23 @@
     "tags": [
       "Level",
       "Progress",
+      "Tentative"
+    ]
+  },
+  {
+    "name": "Quanteuse processing",
+    "id": "quanteuse-processing",
+    "player": "Zoink",
+    "length": 103,
+    "version": 2.2,
+    "video": "https://youtu.be/j5NC0u1Q91Q",
+    "showcaseVideo": "https://youtu.be/XLdekslmFqg",
+    "date": "2024-12-31",
+    "submitter": "Arcadie",
+    "levelID": 117692518,
+    "tags": [
+      "Level",
+      "Verified",
       "Tentative"
     ]
   },
