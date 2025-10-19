@@ -157,6 +157,7 @@ function formatDate(date, dateFormat) {
 
 const AchievementCard = memo(function AchievementCard({ achievement, devMode }) {
   const { dateFormat } = useDateFormat();
+  const isPlatformer = (achievement && Array.isArray(achievement.tags)) ? achievement.tags.some(t => typeof t === 'string' && t.toLowerCase() === 'platformer') : false;
   const handleClick = e => {
     if (devMode) {
       if (e.ctrlKey || e.button === 1) return;
@@ -180,7 +181,7 @@ const AchievementCard = memo(function AchievementCard({ achievement, devMode }) 
         >
           <div className="rank-date-container">
             <div className="achievement-length">
-              {achievement.length ? `${Math.floor(achievement.length / 60)}:${(achievement.length % 60).toString().padStart(2, '0')}` : 'N/A'}
+                {isPlatformer ? 'N/A' : (achievement.length ? `${Math.floor(achievement.length / 60)}:${(achievement.length % 60).toString().padStart(2, '0')}` : 'N/A')}
             </div>
             <div className="achievement-date">
               {achievement.date ? formatDate(achievement.date, dateFormat) : 'N/A'}
@@ -335,13 +336,23 @@ export default function List() {
           const s = String(item.date).trim();
           if (/^\d{4}-(?:\d{2}|\?\?)-(?:\d{2}|\?\?)$/.test(s)) {
             const normalized = s.replace(/\?\?/g, '01');
-            const t = new Date(normalized).getTime();
-            return Number.isFinite(t) ? t : 0;
+            const d = new Date(normalized + 'T00:00:00Z');
+            const t = d.getTime();
+            return Number.isFinite(t) ? t : Infinity;
           }
-          const t = new Date(s).getTime();
-          return Number.isFinite(t) ? t : 0;
+          const parsed = new Date(s);
+          if (Number.isFinite(parsed.getTime())) {
+            const utcMidnight = Date.UTC(parsed.getFullYear(), parsed.getMonth(), parsed.getDate());
+            return utcMidnight;
+          }
+          const m = s.match(/\bt=(\d+)\b/);
+          if (m) {
+            const secs = Number(m[1]) || 0;
+            return secs * 1000;
+          }
+          return Infinity;
         } catch (e) {
-          return 0;
+          return Infinity;
         }
       }
       // 'rank' field is no longer used
