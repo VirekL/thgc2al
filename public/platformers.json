@@ -575,6 +575,52 @@
   ]
   },
   {
+    "name": "The Elephants Foot (Unnerfed) 120hz Mobile",
+    "id": "the-elephants-foot-unnerfed-120hz-mobile",
+    "player": "CuriousTheFurious",
+    "levelID": 109553133,
+    "tags": [
+      "Low Hertz",
+      "Mobile",
+      "Platformer"
+    ],
+    "version": 2.2,
+    "date": "2025-08-15",
+    "video": "https://youtu.be/KaHvcARUVC0",
+    "submitter": "kyle1saurus"
+  },
+  {
+    "name": "The Elephants Foot (Unnerfed)",
+    "id": "the-elephants-foot-unnerfed",
+    "player": "evetS",
+    "levelID": 109553133,
+    "tags": [
+      "Verified",
+      "Platformer"
+    ],
+    "version": 2.2,
+    "date": "2025-02-22",
+    "video": "https://youtu.be/FA6h9KOCn7A",
+    "submitter": "kyle1saurus"
+  },
+  {
+    "name": "Null 120hz Mobile",
+    "id": "null-120hz-mobile",
+    "player": "CuriousTheFurious",
+    "levelID": 104031134,
+    "tags": [
+      "Low Hertz",
+      "Mobile",
+      "Platformer",
+      "Rated"
+    ],
+    "version": 2.2,
+    "date": "2025-10-18",
+    "video": "https://youtu.be/bgubINSm9ZU",
+    "showcaseVideo": "https://youtu.be/QNByVIH4OKE",
+    "submitter": "sirdoodle"
+  },
+  {
     "name": "Null (Buffdate)",
     "id": "null",
     "player": "Aibyou",
@@ -679,6 +725,21 @@
     "showcaseVideo": "https://youtu.be/9iZZFUC2QVo",
     "video": "https://www.youtube.com/watch?v=rmKva5pbYgk",
     "submitter": "toolazytogetausername"
+  },
+  {
+    "name": "The Elephants Foot 120hz Mobile",
+    "id": "the-elephants-foot-120hz-mobile",
+    "player": "CuriousTheFurious",
+    "levelID": 104896656,
+    "tags": [
+      "Low Hertz",
+      "Mobile",
+      "Platformer"
+    ],
+    "version": 2.2,
+    "date": "2025-07-01",
+    "video": "https://youtu.be/c8vfGS2HBKA",
+    "submitter": "kyle1saurus"
   },
   {
     "name": "The Elephants Foot",
