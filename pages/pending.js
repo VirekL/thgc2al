@@ -313,9 +313,8 @@ export default function List() {
   const { dateFormat, setDateFormat } = useDateFormat();
   const [showSettings, setShowSettings] = useState(false);
   const [devMode, setDevMode] = useState(false);
-  // sorting state: key and direction (default to date)
   const [sortKey, setSortKey] = useState(() => {
-    try { return typeof window !== 'undefined' ? localStorage.getItem('sortKey') || 'date' : 'date'; } catch (e) { return 'date'; }
+    try { return typeof window !== 'undefined' ? (localStorage.getItem('sortKey') || '') : ''; } catch (e) { return ''; }
   });
   const [sortDir, setSortDir] = useState(() => {
     try { return typeof window !== 'undefined' ? localStorage.getItem('sortDir') || 'asc' : 'asc'; } catch (e) { return 'asc'; }
@@ -1073,7 +1072,8 @@ export default function List() {
                   }}
                   style={{ padding: '6px 8px', borderRadius: 6, background: 'var(--primary-bg)', color: 'var(--text-color)', border: '1px solid var(--hover-bg)' }}
                 >
-                  <option value="date">Date (Default)</option>
+                    <option value="">Default</option>
+                    <option value="date">Date</option>
                   <option value="name">Name</option>
                   <option value="length">Length</option>
                   <option value="levelID">Level ID</option>
