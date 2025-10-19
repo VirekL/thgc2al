@@ -21,7 +21,18 @@ function normalizeYoutubeUrl(input) {
   const s = input.trim();
 
   let m = s.match(/(?:https?:\/\/)?(?:www\.)?youtu\.be\/([^?&#\/]+)/i);
-  if (m) return `https://youtu.be/${m[1]}`;
+  if (m) {
+    const id = m[1];
+    // try to parse search params to preserve timestamps if present
+    try {
+      const parsedShort = new URL(s.startsWith('http') ? s : `https://${s}`);
+      const t = parsedShort.searchParams.get('t') || parsedShort.searchParams.get('start') || parsedShort.searchParams.get('time_continue');
+      if (t) return `https://www.youtube.com/watch?v=${id}&t=${t}`;
+    } catch (e) {
+      // ignore parsing errors and fall back to short url
+    }
+    return `https://youtu.be/${id}`;
+  }
 
   let parsed;
   try {
@@ -76,16 +87,7 @@ function normalizeYoutubeUrl(input) {
       return t ? `https://www.youtube.com/watch?v=${id}&t=${t}` : `https://www.youtube.com/watch?v=${id}`;
     }
 
-    if (parsed.searchParams.has('si')) parsed.searchParams.delete('si');
-
-    try {
-      if (parsed.searchParams.get('feature')) parsed.searchParams.delete('feature');
-    } catch (e) {
-      // ignore
-    }
-
-    const remainingParams = parsed.searchParams.toString();
-    return `${parsed.origin}${parsed.pathname}${remainingParams ? `?${remainingParams}` : ''}`;
+    return parsed.href;
   }
 
   return input;
@@ -138,6 +140,8 @@ function TagFilterPillsInner({ allTags, filterTags, setFilterTags, isMobile, sho
 
 function formatDate(date, dateFormat) {
   if (!date) return 'N/A';
+  // If the date string contains unknown parts represented by '?', just return it unchanged
+  if (typeof date === 'string' && date.includes('?')) return date;
   const d = new Date(date);
   if (isNaN(d)) return 'N/A';
   d.setDate(d.getDate() + 1);
@@ -181,7 +185,6 @@ const AchievementCard = memo(function AchievementCard({ achievement, devMode }) 
             <div className="achievement-date">
               {achievement.date ? formatDate(achievement.date, dateFormat) : 'N/A'}
             </div>
-            <div className="rank"><strong>#{achievement.rank}</strong></div>
           </div>
           <div className="tag-container">
             {(achievement.tags || []).sort((a, b) => TAG_PRIORITY_ORDER.indexOf(a.toUpperCase()) - TAG_PRIORITY_ORDER.indexOf(b.toUpperCase())).map(tag => (
@@ -315,9 +318,9 @@ export default function List() {
   const { dateFormat, setDateFormat } = useDateFormat();
   const [showSettings, setShowSettings] = useState(false);
   const [devMode, setDevMode] = useState(false);
-  // sorting state: key and direction
+  // sorting state: key and direction (default to date)
   const [sortKey, setSortKey] = useState(() => {
-    try { return typeof window !== 'undefined' ? localStorage.getItem('sortKey') || 'rank' : 'rank'; } catch (e) { return 'rank'; }
+    try { return typeof window !== 'undefined' ? localStorage.getItem('sortKey') || 'date' : 'date'; } catch (e) { return 'date'; }
   });
   const [sortDir, setSortDir] = useState(() => {
     try { return typeof window !== 'undefined' ? localStorage.getItem('sortDir') || 'asc' : 'asc'; } catch (e) { return 'asc'; }
@@ -332,8 +335,22 @@ export default function List() {
       if (key === 'name') return (item.name || '').toString().toLowerCase();
       if (key === 'length') return Number(item.length) || 0;
       if (key === 'levelID') return Number(item.levelID) || 0;
-      if (key === 'date') return item.date ? new Date(item.date).getTime() || 0 : 0;
-      if (key === 'rank') return Number(item.rank) || 0;
+      if (key === 'date') {
+        if (!item.date) return 0;
+        try {
+          const s = String(item.date).trim();
+          if (/^\d{4}-(?:\d{2}|\?\?)-(?:\d{2}|\?\?)$/.test(s)) {
+            const normalized = s.replace(/\?\?/g, '01');
+            const t = new Date(normalized).getTime();
+            return Number.isFinite(t) ? t : 0;
+          }
+          const t = new Date(s).getTime();
+          return Number.isFinite(t) ? t : 0;
+        } catch (e) {
+          return 0;
+        }
+      }
+      // 'rank' field is no longer used
       return (item[key] || '').toString().toLowerCase();
     };
     const va = getVal(a);
@@ -370,7 +387,6 @@ export default function List() {
       const temp = arr[idx - 1];
       arr[idx - 1] = arr[idx];
       arr[idx] = temp;
-      arr.forEach((a, i) => { a.rank = i + 1; });
       return arr;
     });
   }
@@ -382,7 +398,6 @@ export default function List() {
       const temp = arr[idx + 1];
       arr[idx + 1] = arr[idx];
       arr[idx] = temp;
-      arr.forEach((a, i) => { a.rank = i + 1; });
       return arr;
     });
   }
@@ -418,7 +433,15 @@ export default function List() {
 
   function handleEditFormChange(e) {
     const { name, value } = e.target;
-    const newVal = (name === 'video' || name === 'showcaseVideo') ? normalizeYoutubeUrl(value) : (['version', 'levelID', 'length'].includes(name) ? Number(value) : value);
+    let newVal;
+    if (name === 'id') {
+      // normalize id: trim, lowercase, convert spaces to hyphens
+      newVal = String(value || '').trim().toLowerCase().replace(/\s+/g, '-');
+    } else {
+      newVal = (name === 'video' || name === 'showcaseVideo')
+        ? normalizeYoutubeUrl(value)
+        : (['version', 'levelID', 'length'].includes(name) ? Number(value) : value);
+    }
     setEditForm(f => ({
       ...f,
       [name]: newVal
@@ -465,10 +488,8 @@ export default function List() {
       const arr = [...prev];
       const [removed] = arr.splice(editIdx, 1);
       const updated = { ...removed, ...entry };
-      let newRank = parseInt(updated.rank, 10);
-      if (isNaN(newRank) || newRank < 1) newRank = arr.length + 1;
-      arr.splice(newRank - 1, 0, updated);
-      arr.forEach((a, i) => { a.rank = i + 1; });
+      // re-insert updated item at the same index (do not use or assign ranks)
+      arr.splice(editIdx, 0, updated);
       return arr;
     });
     setEditIdx(null);
@@ -486,21 +507,20 @@ export default function List() {
 
   // fetch data whenever the selected source changes
   useEffect(() => {
-    const file = usePlatformers ? '/platformers.json' : '/timeline.json';
+    const file = usePlatformers ? '/platformers.json' : '/pending.json';
     fetch(file)
       .then(res => res.json())
       .then(data => {
         const list = Array.isArray(data) ? data : (data.achievements || []);
         const valid = list.filter(a => a && typeof a.name === 'string' && a.name && a.id);
-        const withRank = valid.map((a, i) => ({ ...a, rank: i + 1 }));
-        setAchievements(withRank);
+        setAchievements(valid);
         const tags = new Set();
-        withRank.forEach(a => (a.tags || []).forEach(t => tags.add(t)));
+        valid.forEach(a => (a.tags || []).forEach(t => tags.add(t)));
         setAllTags(Array.from(tags));
       });
   }, [usePlatformers]);
 
-  // update background image to the thumbnail of the top (rank 1) achievement for the current dataset
+  // update background image to the thumbnail of the most recent achievement (by date) for the current dataset
   useEffect(() => {
     try {
       const srcList = achievements || [];
@@ -508,8 +528,16 @@ export default function List() {
         setBgImage(null);
         return;
       }
-      // find the top-ranked achievement (rank === 1) or first item
-      const top = srcList.find(a => Number(a.rank) === 1) || srcList[0];
+      // find the most recent by date, falling back to first item
+      const withDates = srcList.filter(a => a && a.date);
+      let top = srcList[0];
+      if (withDates && withDates.length) {
+        top = withDates.slice().sort((x, y) => {
+          const tx = new Date(x.date).getTime() || 0;
+          const ty = new Date(y.date).getTime() || 0;
+          return ty - tx;
+        })[0];
+      }
       if (!top) {
         setBgImage(null);
         return;
@@ -631,11 +659,6 @@ export default function List() {
   const filtered = useMemo(() => {
     let base = achievements.filter(filterFn);
     if (!sortKey) return base;
-    if (sortKey === 'rank') {
-      const copy = [...base];
-      if (sortDir === 'desc') copy.reverse();
-      return copy;
-    }
     if (sortKey === 'levelID') {
       base = base.filter(a => {
         const num = Number(a && a.levelID);
@@ -679,11 +702,6 @@ export default function List() {
   const devAchievements = useMemo(() => {
     if (!baseDev) return baseDev;
     if (!sortKey) return baseDev;
-    if (sortKey === 'rank') {
-      const copy = [...baseDev];
-      if (sortDir === 'desc') copy.reverse();
-      return copy;
-    }
     if (sortKey === 'levelID') {
       const onlyWithLevel = baseDev.filter(a => {
         const num = Number(a && a.levelID);
@@ -729,7 +747,15 @@ export default function List() {
 
   function handleNewFormChange(e) {
     const { name, value } = e.target;
-    const newVal = (name === 'video' || name === 'showcaseVideo') ? normalizeYoutubeUrl(value) : (['version', 'levelID', 'length'].includes(name) ? Number(value) : value);
+    let newVal;
+    if (name === 'id') {
+      // normalize id: trim, lowercase, convert spaces to hyphens
+      newVal = String(value || '').trim().toLowerCase().replace(/\s+/g, '-');
+    } else {
+      newVal = (name === 'video' || name === 'showcaseVideo')
+        ? normalizeYoutubeUrl(value)
+        : (['version', 'levelID', 'length'].includes(name) ? Number(value) : value);
+    }
     setNewForm(f => ({
       ...f,
       [name]: newVal
@@ -779,7 +805,7 @@ export default function List() {
         newArr.splice(insertIdx + 1, 0, entry);
         setScrollToIdx(insertIdx + 1);
       }
-      newArr.forEach((a, i) => { a.rank = i + 1; });
+      // do not assign rank
       return newArr;
     });
     setShowNewForm(false);
@@ -820,10 +846,10 @@ export default function List() {
 
   function handleCopyJson() {
     if (!reordered) return;
-    const json = JSON.stringify(reordered.map(({ rank, ...rest }) => rest), null, 2);
+  const json = JSON.stringify(reordered.map(r => ({ ...r })), null, 2);
     if (navigator.clipboard) {
       navigator.clipboard.writeText(json);
-      alert(`Copied new ${usePlatformers ? 'platformers.json' : 'timeline.json'} to clipboard!`);
+      alert(`Copied new ${usePlatformers ? 'platformers.json' : 'pending.json'} to clipboard!`);
     } else {
       const textarea = document.createElement('textarea');
       textarea.value = json;
@@ -831,7 +857,7 @@ export default function List() {
       textarea.select();
       document.execCommand('copy');
       document.body.removeChild(textarea);
-      alert(`Copied new ${usePlatformers ? 'platformers.json' : 'timeline.json'} to clipboard!`);
+      alert(`Copied new ${usePlatformers ? 'platformers.json' : 'pending.json'} to clipboard!`);
     }
   }
 
@@ -1062,12 +1088,12 @@ export default function List() {
                   }}
                   style={{ padding: '6px 8px', borderRadius: 6, background: 'var(--primary-bg)', color: 'var(--text-color)', border: '1px solid var(--hover-bg)' }}
                 >
-                  <option value="rank">Rank (Default)</option>
+                  <option value="date">Date (Default)</option>
                   <option value="name">Name</option>
                   <option value="length">Length</option>
                   <option value="levelID">Level ID</option>
                   <option value="random">Random</option>
-                  <option value="date">Date</option>
+                  
                 </select>
                 <button
                   aria-label="Toggle sort direction"
@@ -1237,15 +1263,16 @@ export default function List() {
             onImportAchievementsJson={json => {
               let imported = Array.isArray(json) ? json : (json.achievements || []);
               if (!Array.isArray(imported)) {
-                alert(`Invalid ${usePlatformers ? 'platformers.json' : 'timeline.json'} format.`);
+                alert(`Invalid ${usePlatformers ? 'platformers.json' : 'pending.json'} format.`);
                 return;
               }
-              imported = imported.map((a, i) => ({ ...a, rank: i + 1 }));
+              // preserve imported items as-is; do not add rank
+              imported = imported.map(a => ({ ...a }));
               setReordered(imported);
               setDevMode(true);
-              alert(`Imported ${usePlatformers ? 'platformers.json' : 'timeline.json'}!`);
+              alert(`Imported ${usePlatformers ? 'platformers.json' : 'pending.json'}!`);
             }}
-            dataFileName={usePlatformers ? 'platformers.json' : 'timeline.json'}
+            dataFileName={usePlatformers ? 'platformers.json' : 'pending.json'}
           />
           {isPending ? (
             <div className="no-achievements">Loading...</div>
