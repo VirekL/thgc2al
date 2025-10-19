@@ -217,14 +217,8 @@ function useDebouncedValue(value, delay) {
 
 export default function List() {
   const [achievements, setAchievements] = useState([]);
-  const [usePlatformers, setUsePlatformers] = useState(() => {
-    try {
-      const v = typeof window !== 'undefined' ? window.localStorage.getItem('usePlatformers') : null;
-      return v === '1' || v === 'true';
-    } catch (e) {
-      return false;
-    }
-  });
+
+  const usePlatformers = false;
   const [visibleCount, setVisibleCount] = useState(100);
   const [searchJumpPending, setSearchJumpPending] = useState(false);
   const listRef = useRef(null);
@@ -1012,27 +1006,7 @@ export default function List() {
                 />
               </div>
               <div style={{ display: 'flex', justifyContent: 'center', marginTop: 8 }}>
-                <label className="pill-toggle" data-variant="platformer" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: 'var(--muted, #DFE3F5)', fontSize: 14 }}>
-                  <input
-                    type="checkbox"
-                    checked={usePlatformers}
-                    onChange={e => {
-                      const next = !!e.target.checked;
-                      setUsePlatformers(next);
-                      try { localStorage.setItem('usePlatformers', next ? '1' : '0'); } catch (err) {}
-                    }}
-                  />
-                  <span
-                    className="track"
-                    role="switch"
-                    aria-checked={usePlatformers}
-                    tabIndex={0}
-                  >
-                    <span className="inner-label label-left">Platformer</span>
-                    <span className="thumb" aria-hidden="true" />
-                    <span className="inner-label label-right">Classic</span>
-                  </span>
-                </label>
+
               </div>
               <div className="tag-filter-pills-container" style={{ width: '100%' }}>
                 <TagFilterPills
@@ -1108,27 +1082,7 @@ export default function List() {
                   {sortDir === 'asc' ? '↑' : '↓'}
                 </button>
               </div>
-              <label className="pill-toggle" data-variant="platformer" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: 'var(--muted, #DFE3F5)', fontSize: 14 }}>
-                <input
-                  type="checkbox"
-                  checked={usePlatformers}
-                  onChange={e => {
-                    const next = !!e.target.checked;
-                    setUsePlatformers(next);
-                    try { localStorage.setItem('usePlatformers', next ? '1' : '0'); } catch (err) {}
-                  }}
-                />
-                <span
-                  className="track"
-                  role="switch"
-                  aria-checked={usePlatformers}
-                  tabIndex={0}
-                >
-                  <span className="inner-label label-left">Platformer</span>
-                  <span className="thumb" aria-hidden="true" />
-                  <span className="inner-label label-right">Classic</span>
-                </span>
-              </label>
+
             </div>
           )}
         </div>
