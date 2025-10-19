@@ -80,6 +80,9 @@ function SidebarInner() {
         <Link href="/submission-stats" className="sidebar-link">
           Submission Stats
         </Link>
+        <Link href="/pending" className="sidebar-link">
+          Pending
+        </Link>
         <a
           href="#"
           id="random-achievement-btn"
