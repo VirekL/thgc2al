@@ -213,7 +213,7 @@
     "date": "2025-08-07",
     "video": "https://www.youtube.com/watch?v=tB57LBE6cro",
     "showcaseVideo": "https://youtu.be/hnj6vAqh7cA",
-    "submitter": "kyle1saurus"
+    "submitter": "toolazytogetausername"
   },
   {
     "name": "CONVOLUTION",
@@ -682,6 +682,23 @@
     "submitter": "kyle1saurus"
   },
   {
+    "name": "Feverest Dream (3rd Coin)",
+  "id": "feverest-dream-3rd-coin",
+  "player": "Cucu",
+  "length": null,
+  "version": 2,
+  "video": "https://www.youtube.com/watch?v=a8kSgfbnokU&t=337",
+  "date": "2024-07-17",
+  "submitter": "Woachi",
+  "levelID": 107841263,
+  "tags": [
+    "Platformer",
+    "Verified",
+    "Coin Route",
+    "Rated"
+  ]
+  },
+  {
     "name": "ascend",
     "id": "ascend",
     "player": "Toboz",
@@ -694,6 +711,23 @@
     "date": "2024-10-08",
     "video": "https://www.youtube.com/watch?v=7xT5KBtHJVw",
     "submitter": "kyle1saurus"
+  },
+  {
+  "name": "Physics Issue Plus (Coin)",
+  "id": "physics-issue-plus-coin",
+  "player": "Abby135",
+  "length": null,
+  "version": 2,
+  "video": "https://www.youtube.com/watch?v=gLN56ckkG9c",
+  "showcaseVideo": "https://youtu.be/B-2b8G6wEm0",
+  "date": "2024-09-16",
+  "submitter": "toolazytogetausername",
+  "levelID": 110196588,
+  "tags": [
+    "Platformer",
+    "Verified",
+    "Coin Route"
+  ]
   },
   {
     "name": "Uhm Huh",
@@ -785,6 +819,22 @@
     "submitter": "kyle1saurus"
   },
   {
+    "name": "im happy 4 you 120hz Mobile",
+    "id": "im-happy-4-you-120hz-mobile",
+    "player": "mikoshii",
+    "levelID": 99195742,
+    "tags": [
+      "Low Hertz",
+      "Mobile",
+      "Platformer",
+      "Rated"
+    ],
+    "version": 2.2,
+    "date": "2025-06-30",
+    "video": "https://youtu.be/dHT7RFtakUA",
+    "submitter": "toolazytogetausername"
+  },
+  {
     "name": "im happy 4 you",
     "id": "im-happy-4-you",
     "player": "mikoshii",
@@ -797,7 +847,7 @@
     "version": 2.2,
     "date": "2024-09-12",
     "video": "https://www.youtube.com/watch?v=rvdQE3EyG-k",
-    "submitter": "toolazytogetausername"
+    "submitter": "kyle1saurus"
   },
   {
     "name": "Super Temu Guy",
@@ -946,13 +996,31 @@
   ]
   },
   {
+    "name": "Project BUZZKILL 60hz Mobile",
+    "id": "project-buzzkill-60hz-mobile",
+    "player": "Superkobster",
+    "levelID": 111113059,
+    "tags": [
+      "Low Hertz",
+      "Mobile",
+      "Platformer",
+      "Rated"
+    ],
+    "version": 2.2,
+    "date": "2024-11-19",
+    "showcaseVideo": "https://www.youtube.com/watch?v=JOQczmRTJbM",
+    "video": "https://www.youtube.com/watch?v=HjBLO7flVtY",
+    "submitter": "toolazytogetausername"
+  },
+{
     "name": "Project BUZZKILL",
     "id": "project-buzzkill",
     "player": "Superkobster",
     "levelID": 111113059,
     "tags": [
       "Verified",
-      "Platformer"
+      "Platformer",
+      "Rated"
     ],
     "version": 2.2,
     "date": "2024-10-14",
