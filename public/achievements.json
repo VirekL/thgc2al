@@ -2174,7 +2174,7 @@
   },
   {
     "name": "IT MEANS EVERYTHING 33-75%, 37%",
-    "id": "it-means-everything-33-75, 37%",
+    "id": "it-means-everything-33-75-37",
     "player": "Waltty",
     "length": 50,
     "version": 2.2,
@@ -2185,7 +2185,7 @@
     "levelID": 106165639,
     "tags": [
       "Level",
-      "Progress"
+      "Consistency"
     ]
   },
   {
@@ -10215,7 +10215,7 @@
   },
   {
     "name": "Cosmic Cyclone (Meatius) 10 deaths, 99.94 accuracy",
-    "id": "cosmic-cyclone-meatius- 10-deaths-99-94-accuracy",
+    "id": "cosmic-cyclone-meatius-10-deaths-99-94-accuracy",
     "player": "Meatius",
     "date": "2025-08-22",
     "levelID": "108671100",
