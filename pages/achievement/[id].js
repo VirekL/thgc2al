@@ -13,10 +13,12 @@ export async function getStaticPaths() {
   const timelinePath = path.join(process.cwd(), 'public', 'timeline.json');
   const platformersPath = path.join(process.cwd(), 'public', 'platformers.json');
   const platformerTimelinePath = path.join(process.cwd(), 'public', 'platformertimeline.json');
+  const pendingPath = path.join(process.cwd(), 'public', 'pending.json');
   let achievements = [];
   let timeline = [];
   let platformers = [];
   let platformerTimeline = [];
+  let pending = [];
 
   try {
     const achievementsData = fs.readFileSync(achievementsPath, 'utf8');
@@ -38,7 +40,12 @@ export async function getStaticPaths() {
     platformerTimeline = JSON.parse(platformerTimelineData);
   } catch (e) {}
 
-  const combinedData = [...achievements, ...timeline, ...platformers, ...platformerTimeline];
+  try {
+    const pendingData = fs.readFileSync(pendingPath, 'utf8');
+    pending = JSON.parse(pendingData);
+  } catch (e) {}
+
+  const combinedData = [...achievements, ...timeline, ...platformers, ...platformerTimeline, ...pending];
 
   const paths = combinedData
     .filter(a => a && a.id && a.name)
@@ -52,10 +59,12 @@ export async function getStaticProps({ params }) {
   const timelinePath = path.join(process.cwd(), 'public', 'timeline.json');
   const platformersPath = path.join(process.cwd(), 'public', 'platformers.json');
   const platformerTimelinePath = path.join(process.cwd(), 'public', 'platformertimeline.json');
+  const pendingPath = path.join(process.cwd(), 'public', 'pending.json');
   let achievements = [];
   let timeline = [];
   let platformers = [];
   let platformerTimeline = [];
+  let pending = [];
 
   try {
     const achievementsData = fs.readFileSync(achievementsPath, 'utf8');
@@ -77,7 +86,12 @@ export async function getStaticProps({ params }) {
     platformerTimeline = JSON.parse(platformerTimelineData);
   } catch (e) {}
 
-  const combinedData = [...achievements, ...timeline, ...platformers, ...platformerTimeline].filter(a => a && a.id && a.name);
+  try {
+    const pendingData = fs.readFileSync(pendingPath, 'utf8');
+    pending = JSON.parse(pendingData);
+  } catch (e) {}
+
+  const combinedData = [...achievements, ...timeline, ...platformers, ...platformerTimeline, ...pending].filter(a => a && a.id && a.name);
 
   const achievement = combinedData.find(a => a.id.toString() === params.id) || null;
 
