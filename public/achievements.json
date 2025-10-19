@@ -1016,6 +1016,23 @@
     ]
   },
   {
+    "name": "Sakupen circles (Old)",
+    "id": "sakupen-circles-old",
+    "player": "ad3usgmd",
+    "length": 49,
+    "version": 2.2,
+    "video": "https://youtu.be/AdrmZsy52EY",
+    "showcaseVideo": "https://youtu.be/WX5RCDxobSA",
+    "date": "2025-07-15",
+    "submitter": "Emp",
+    "levelID": 10887708,
+    "tags": [
+      "Level",
+      "Verified",
+      "CBF"
+    ]
+  },
+  {
     "name": "Blue Avernus",
     "id": "blue-avernus",
     "player": "KlimK",
@@ -1133,23 +1150,6 @@
       "Rated"
     ],
     "thumbnail": "https://tjcsucht.net/levelthumbs/75206202.png"
-  },
-  {
-    "name": "Sakupen circles (Old)",
-    "id": "sakupen-circles-old",
-    "player": "ad3usgmd",
-    "length": 49,
-    "version": 2.2,
-    "video": "https://youtu.be/AdrmZsy52EY",
-    "showcaseVideo": "https://youtu.be/WX5RCDxobSA",
-    "date": "2025-07-15",
-    "submitter": "Emp",
-    "levelID": 10887708,
-    "tags": [
-      "Level",
-      "Verified",
-      "CBF"
-    ]
   },
   {
     "name": "Sinister Silence 75hz",
@@ -3392,22 +3392,6 @@
     ]
   },
   {
-    "name": "wocky circles",
-    "id": "wocky-circles",
-    "player": "ROZE GD",
-    "date": "2025-09-15",
-    "levelID": 100420930,
-    "length": 55,
-    "version": 2.2,
-    "video": "https://youtu.be/yOx5Q3BkWIg",
-    "showcaseVideo": "https://youtu.be/yyZ9M5crxJc",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Verified"
-    ]
-  },
-  {
     "name": "Sakupen Circles (Diamond)",
     "id": "sakupen-circles-diamond",
     "player": "Skylar",
@@ -3550,6 +3534,22 @@
     "submitter": "Anceps",
     "video": "https://youtu.be/MKFeLVaBdoE",
     "showcaseVideo": "https://youtu.be/o626AFlYzoI",
+    "tags": [
+      "Level",
+      "Verified"
+    ]
+  },
+  {
+    "name": "wocky circles",
+    "id": "wocky-circles",
+    "player": "ROZE GD",
+    "date": "2025-09-15",
+    "levelID": 100420930,
+    "length": 55,
+    "version": 2.2,
+    "video": "https://youtu.be/yOx5Q3BkWIg",
+    "showcaseVideo": "https://youtu.be/yyZ9M5crxJc",
+    "submitter": "TYATYAPKA",
     "tags": [
       "Level",
       "Verified"
@@ -5300,6 +5300,23 @@
     "tags": [
       "Challenge",
       "Progress"
+    ]
+  },
+  {
+    "name": "CHIL",
+    "id": "chil",
+    "player": "Coco",
+    "levelID": 114281093,
+    "date": "2025-08-31",
+    "length": 62,
+    "version": 2.2,
+    "video": "https://youtu.be/DROMiCc2ZRM&t=73",
+    "showcaseVideo": "https://youtu.be/Mi49wryCl0E",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Verified",
+      "Tentative"
     ]
   },
   {
@@ -7892,6 +7909,22 @@
     ]
   },
   {
+    "name": "Femboy Friday",
+    "id": "femboy-friday",
+    "player": "Infinny",
+    "date": "2025-08-25",
+    "levelID": 86414534,
+    "length": 225,
+    "version": 2.2,
+    "video": "https://youtu.be/3RprZ2FeGdY",
+    "showcaseVideo": "https://youtu.be/sZK2RCOtBpc",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Verified"
+    ]
+  },
+  {
     "name": "THE DEVIL (Buffed) 37%",
     "id": "the-devil-buffed-37",
     "player": "Jenath",
@@ -8867,23 +8900,6 @@
     "tags": [
       "Challenge",
       "Verified"
-    ]
-  },
-  {
-    "name": "Femboy Friday",
-    "id": "femboy-friday",
-    "player": "Infinny",
-    "date": "2025-08-25",
-    "levelID": 86414534,
-    "length": 225,
-    "version": 2.2,
-    "video": "https://youtu.be/3RprZ2FeGdY",
-    "showcaseVideo": "https://youtu.be/sZK2RCOtBpc",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Verified",
-      "Tentative"
     ]
   },
   {
@@ -10409,23 +10425,6 @@
     ]
   },
   {
-    "name": "CHIL",
-    "id": "chil",
-    "player": "Coco",
-    "levelID": 114281093,
-    "date": "2025-08-31",
-    "length": 62,
-    "version": 2.2,
-    "video": "https://youtu.be/DROMiCc2ZRM&t=73",
-    "showcaseVideo": "https://youtu.be/Mi49wryCl0E",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Verified",
-      "Tentative"
-    ]
-  },
-  {
     "name": "Labyrinth 37%",
     "id": "labyrinth-37",
     "player": "GGonop",
@@ -10544,6 +10543,7 @@
     ]
   }
 ]
+
 
 
 
