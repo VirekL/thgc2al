@@ -1525,6 +1525,22 @@
     ]
   },
   {
+    "name": "Angelicide (Xtra8nugz) 37-100% 8 deaths, 99.83 accuracy",
+    "id": "angelicide-xtra8nugz-37-100-8-deaths-99-83-accuracy",
+    "player": "Xtra8nugz",
+    "length": 50,
+    "version": 2.2,
+    "video": "https://www.youtube.com/watch?v=V6HcmQRFIYA",
+    "showcaseVideo": "https://youtu.be/UvLvEh_xN5A",
+    "date": "2025-10-18",
+    "submitter": "Kuri",
+    "tags": [
+      "Level",
+      "Noclip",
+      "Progress"
+    ]
+  },
+  {
     "name": "Acheron (Loliklee) 41-100%",
     "id": "acheron-loliklee-41-100",
     "player": "Loliklee",
@@ -4427,6 +4443,21 @@
     ]
   },
   {
+    "name": "Ex Vacuo 72%",
+    "id": "ex-vacuo-72",
+    "player": "Laniakea",
+    "length": 90,
+    "version": 2.2,
+    "video": "https://www.youtube.com/watch?v=S9_XXbq3j3Q&t=4815s",
+    "showcaseVideo": "https://youtu.be/CVXC2_bveBQ",
+    "date": "2025-10-18",
+    "submitter": "kittycatiscute",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Firework",
     "id": "firework",
     "player": "Hyperlith",
@@ -5510,21 +5541,6 @@
       "Consistency",
       "CBF",
       "Rated"
-    ]
-  },
-  {
-    "name": "Ex Vacuo 58%",
-    "id": "ex-vacuo-58",
-    "player": "Laniakea",
-    "length": 75,
-    "version": 2.2,
-    "video": "https://youtu.be/WDTXRr0cGCg&t=3592",
-    "showcaseVideo": "https://youtu.be/CVXC2_bveBQ",
-    "date": "2025-08-23",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -7430,6 +7446,25 @@
       "Verified",
       "CBF",
       "Tentative"
+    ]
+  },
+  {
+    "name": "Sakupen Circles 120hz Mobile 67%",
+    "id": "sakupen-circles-120hz-mobile-67",
+    "player": "sydno",
+    "levelID": 76962930,
+    "date": "2025-10-18",
+    "length": 35,
+    "version": 2.2,
+    "video": "https://youtu.be/fFrVf3I-4_M",
+    "showcaseVideo": "https://youtu.be/b66_Oe4Xo1w",
+    "submitter": "tmtsps12",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -10509,5 +10544,6 @@
     ]
   }
 ]
+
 
 
