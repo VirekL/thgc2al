@@ -2394,6 +2394,25 @@
     ]
   },
   {
+    "name": "Sakupen Circles 120hz Mobile 37-80%",
+    "id": "sakupen-circles-120hz-mobile-37-80",
+    "player": "sydno",
+    "levelID": 76962930,
+    "date": "2025-10-20",
+    "length": 18,
+    "version": 2.2,
+    "video": "https://youtu.be/w33PphhKCfU",
+    "showcaseVideo": "https://youtu.be/b66_Oe4Xo1w",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
+  },
+  {
     "name": "Like if you camt bea 92%",
     "id": "like-if-you-camt-bea-92",
     "player": "Llqne",
@@ -3142,6 +3161,25 @@
       "Level",
       "Progress",
       "CBF"
+    ]
+  },
+  {
+    "name": "Sakupen Circles 120hz Mobile 67%",
+    "id": "sakupen-circles-120hz-mobile-67",
+    "player": "sydno",
+    "levelID": 76962930,
+    "date": "2025-10-18",
+    "length": 35,
+    "version": 2.2,
+    "video": "https://youtu.be/fFrVf3I-4_M",
+    "showcaseVideo": "https://youtu.be/b66_Oe4Xo1w",
+    "submitter": "tmtsps12",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -5090,9 +5128,9 @@
     "length": 13,
     "version": 2.1,
     "levelID": 64815983,
-    "video": "https://youtu.be/ge2_UFBkcHg",
+    "video": "https://youtu.be/NsvfAMQ0mRo",
     "showcaseVideo": "https://youtu.be/QyDnUJqBd60",
-    "submitter": "aytch0009",
+    "submitter": "aytch0008",
     "tags": [
       "Challenge",
       "Progress"
@@ -7387,44 +7425,6 @@
     ]
   },
   {
-    "name": "Sakupen Circles 120hz Mobile 67%",
-    "id": "sakupen-circles-120hz-mobile-67",
-    "player": "sydno",
-    "levelID": 76962930,
-    "date": "2025-10-18",
-    "length": 35,
-    "version": 2.2,
-    "video": "https://youtu.be/fFrVf3I-4_M",
-    "showcaseVideo": "https://youtu.be/b66_Oe4Xo1w",
-    "submitter": "tmtsps12",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Progress",
-      "Rated"
-    ]
-  },
-  {
-    "name": "Sakupen Circles 120hz Mobile 37-70%",
-    "id": "sakupen-circles-120hz-mobile-37-70",
-    "player": "ROZE GD",
-    "levelID": 76962930,
-    "date": "2024-11-16",
-    "length": 14,
-    "version": 2.2,
-    "video": "https://youtu.be/5puToOXOXCQ",
-    "showcaseVideo": "https://youtu.be/b66_Oe4Xo1w",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Progress",
-      "Rated"
-    ]
-  },
-  {
     "name": "Codependence 144hz",
     "id": "codependence-144hz",
     "player": "ty3544",
@@ -9140,6 +9140,25 @@
     ]
   },
   {
+    "name": "Kyouki 120hz Mobile 11-45%",
+    "id": "kyouki-120hz-mobile-11-45",
+    "player": "flarinova",
+    "levelID": 86018142,
+    "date": "2025-10-14",
+    "length": 29,
+    "version": 2.2,
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/lHwtZQtkwmM",
+    "showcaseVideo": "https://youtu.be/RBeyMGug3J0",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
+  },
+  {
     "name": "The Only Wish",
     "id": "the-only-wish",
     "player": "VxMasTeR",
@@ -9395,6 +9414,25 @@
     "tags": [
       "Level",
       "Verified"
+    ]
+  },
+  {
+    "name": "Kyouki 120hz Mobile 30%",
+    "id": "kyouki-120hz-mobile-30",
+    "player": "flarinova",
+    "levelID": 86018142,
+    "date": "2025-10-11",
+    "length": 33,
+    "version": 2.2,
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/BjGkRpaxQAg",
+    "showcaseVideo": "https://youtu.be/RBeyMGug3J0",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
     ]
   },
   {
@@ -10444,3 +10482,4 @@
     ]
   }
 ]
+
