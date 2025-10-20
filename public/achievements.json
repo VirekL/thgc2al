@@ -647,6 +647,21 @@
     ]
   },
   {
+    "name": "Sweeping Demon 2 (Taiago) 72%",
+    "id": "sweeping-demon-2-taiago-72",
+    "player": "Taiago",
+    "date": "2025-10-20",
+    "length": 61,
+    "version": 2.2,
+    "video": "https://youtu.be/yoCAD5DSr0I",
+    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
+    "submitter": "Excryst",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Sweeping Demon 2 (Taiago) 39-100%",
     "id": "sweeping-demon-2-taiago-39-100",
     "player": "Taiago",
@@ -711,21 +726,6 @@
     "tags": [
       "Challenge",
       "Consistency"
-    ]
-  },
-  {
-    "name": "Sweeping Demon 2 (Taiago) 71%",
-    "id": "sweeping-demon-2-taiago-71",
-    "player": "Taiago",
-    "date": "2025-09-27",
-    "length": 60,
-    "version": 2.2,
-    "video": "https://youtu.be/Iobk3wnqx2I",
-    "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
-    "submitter": "Excryst",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -1114,6 +1114,25 @@
     ]
   },
   {
+    "name": "Sakupen Circles 120hz Mobile 37-100%",
+    "id": "sakupen-circles-120hz-mobile-37-100",
+    "player": "sydno",
+    "levelID": 76962930,
+    "date": "2025-10-20",
+    "length": 28,
+    "version": 2.2,
+    "video": "https://youtu.be/Nj5q3q29ni0",
+    "showcaseVideo": "https://youtu.be/b66_Oe4Xo1w",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
+  },
+  {
     "name": "Firework 144hz Mobile",
     "id": "firework-144hz-mobile",
     "player": "MAXDASH07",
@@ -1219,6 +1238,22 @@
     ]
   },
   {
+    "name": "Angelicide (Xtra8nugz) 37-100% 8 deaths, 99.83 accuracy",
+    "id": "angelicide-xtra8nugz-37-100-8-deaths-99-83-accuracy",
+    "player": "Xtra8nugz",
+    "length": 50,
+    "version": 2.2,
+    "video": "https://www.youtube.com/watch?v=V6HcmQRFIYA",
+    "showcaseVideo": "https://youtu.be/UvLvEh_xN5A",
+    "date": "2025-10-18",
+    "submitter": "Kuri",
+    "tags": [
+      "Level",
+      "Noclip",
+      "Progress"
+    ]
+  },
+  {
     "name": "Silent clubstep 2.1",
     "id": "silent-clubstep-2-1",
     "player": "paqoe",
@@ -1233,6 +1268,37 @@
       "Level",
       "Verified",
       "Outdated Version"
+    ]
+  },
+  {
+    "name": "Angelicide (Xtra8nugz) 68-98%",
+    "id": "angelicide-xtra8nugz-68-98",
+    "player": "Xtra8nugz",
+    "length": 24,
+    "version": 2.2,
+    "video": "https://youtu.be/Suh3Uyj6omM",
+    "showcaseVideo": "https://youtu.be/UvLvEh_xN5A",
+    "date": "2025-10-20",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
+    "name": "Heliopolis 27-68%",
+    "id": "heliopolis-27-68",
+    "player": "Abdieldevil",
+    "date": "2025-10-02",
+    "length": 59,
+    "version": 2.2,
+    "video": "https://www.youtube.com/watch?v=rDR2hB65po4&t=708",
+    "showcaseVideo": "https://youtu.be/sNl2Vg5RXv4",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -1486,22 +1552,6 @@
     ]
   },
   {
-    "name": "Angelicide (Xtra8nugz) 37-100% 8 deaths, 99.83 accuracy",
-    "id": "angelicide-xtra8nugz-37-100-8-deaths-99-83-accuracy",
-    "player": "Xtra8nugz",
-    "length": 50,
-    "version": 2.2,
-    "video": "https://www.youtube.com/watch?v=V6HcmQRFIYA",
-    "showcaseVideo": "https://youtu.be/UvLvEh_xN5A",
-    "date": "2025-10-18",
-    "submitter": "Kuri",
-    "tags": [
-      "Level",
-      "Noclip",
-      "Progress"
-    ]
-  },
-  {
     "name": "Acheron (Loliklee) 41-100%",
     "id": "acheron-loliklee-41-100",
     "player": "Loliklee",
@@ -1599,21 +1649,6 @@
       "Level",
       "Verified",
       "Rated"
-    ]
-  },
-  {
-    "name": "Angelicide (Xtra8nugz) 68-95%",
-    "id": "angelicide-xtra8nugz-68-95",
-    "player": "Xtra8nugz",
-    "length": 23,
-    "version": 2.2,
-    "video": "https://youtu.be/J-zGawKanA0",
-    "showcaseVideo": "https://youtu.be/UvLvEh_xN5A",
-    "date": "2025-10-14",
-    "submitter": "JustAComfyCookie",
-    "tags": [
-      "Level",
-      "Progress"
     ]
   },
   {
@@ -1970,22 +2005,6 @@
     ]
   },
   {
-    "name": "Heliopolis 27-68%",
-    "id": "heliopolis-27-68",
-    "player": "Abdieldevil",
-    "date": "2025-10-02",
-    "length": 59,
-    "version": 2.2,
-    "video": "https://www.youtube.com/watch?v=rDR2hB65po4&t=708",
-    "showcaseVideo": "https://youtu.be/sNl2Vg5RXv4",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/heliopolis2.webp",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Illusion of Hell",
     "id": "illusion-of-hell",
     "player": "Diamond",
@@ -2327,6 +2346,22 @@
     ]
   },
   {
+    "name": "IT MEANS EVERYTHING 61%",
+    "id": "it-means-everything-61",
+    "player": "Waltty",
+    "length": 43,
+    "version": 2.2,
+    "video": "https://youtu.be/wtsiiTzQ5jQ",
+    "showcaseVideo": "https://youtu.be/9nSkkXZ628E",
+    "date": "2025-10-20",
+    "submitter": "TYATYAPKA",
+    "levelID": 106165639,
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "FINAL FANTASY 73%, 67% in a row",
     "id": "final-fantasy-73-67-in-a-row",
     "player": "DenseCabbage",
@@ -2340,6 +2375,23 @@
     "tags": [
       "Challenge",
       "Consistency"
+    ]
+  },
+  {
+    "name": "Sakupen Silhouette 67%",
+    "id": "sakupen-silhouette-67",
+    "player": "ad3usgmd",
+    "length": 36,
+    "version": 2.2,
+    "video": "https://youtu.be/m9y4rS_NNv4",
+    "showcaseVideo": "https://youtu.be/LptlyojZcNw",
+    "date": "2025-10-21",
+    "submitter": "TYATYAPKA",
+    "levelID": 92199224,
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
     ]
   },
   {
@@ -2390,25 +2442,6 @@
     "tags": [
       "Level",
       "Verified",
-      "Rated"
-    ]
-  },
-  {
-    "name": "Sakupen Circles 120hz Mobile 37-80%",
-    "id": "sakupen-circles-120hz-mobile-37-80",
-    "player": "sydno",
-    "levelID": 76962930,
-    "date": "2025-10-20",
-    "length": 18,
-    "version": 2.2,
-    "video": "https://youtu.be/w33PphhKCfU",
-    "showcaseVideo": "https://youtu.be/b66_Oe4Xo1w",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Progress",
       "Rated"
     ]
   },
@@ -2934,22 +2967,6 @@
     "video": "https://youtu.be/Z-LOnJKawIE",
     "showcaseVideo": "https://youtu.be/0Grvott58g0",
     "submitter": "TheShadowRealm",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
-    "name": "IT MEANS EVERYTHING 56%",
-    "id": "it-means-everything-56",
-    "player": "Waltty",
-    "length": 39,
-    "version": 2.2,
-    "video": "https://youtu.be/Cy52QePuvk4",
-    "showcaseVideo": "https://youtu.be/9nSkkXZ628E",
-    "date": "2025-10-10",
-    "submitter": "Emp",
-    "levelID": 106165639,
     "tags": [
       "Level",
       "Progress"
@@ -10482,4 +10499,3 @@
     ]
   }
 ]
-
