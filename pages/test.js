@@ -419,6 +419,7 @@ export default function List() {
     setDuplicateThumbKeys(dupKeys);
   }
   const [scrollToIdx, setScrollToIdx] = useState(null);
+  const [restoredScroll, setRestoredScroll] = useState(null);
   function handleEditAchievement(idx) {
     if (!reordered || !reordered[idx]) return;
     const a = reordered[idx];
@@ -887,14 +888,17 @@ export default function List() {
 
   const getStorageKey = () => `thal_scroll_index_${usePlatformers ? 'platformers' : 'achievements'}`;
 
-  function saveScrollIndex(idx) {
+  function saveScrollPosition(pos) {
     try {
       if (typeof window === 'undefined') return;
       const key = getStorageKey();
-      if (idx === null || idx === undefined) {
+      if (!pos || pos.index === null || pos.index === undefined) {
         localStorage.removeItem(key);
       } else {
-        localStorage.setItem(key, String(idx));
+        const out = { index: Number(pos.index) };
+        if (pos.offset !== undefined && pos.offset !== null) out.offset = Number(pos.offset);
+        out.ts = Date.now();
+        localStorage.setItem(key, JSON.stringify(out));
       }
     } catch (e) {
       // ignore
@@ -907,8 +911,17 @@ export default function List() {
       const key = getStorageKey();
       const v = localStorage.getItem(key);
       if (!v) return null;
-      const n = Number(v);
-      return Number.isFinite(n) ? n : null;
+      try {
+        const parsed = JSON.parse(v);
+        if (!parsed || typeof parsed !== 'object') return null;
+        const idx = Number(parsed.index);
+        if (!Number.isFinite(idx)) return null;
+        const offset = parsed.offset !== undefined ? Number(parsed.offset) : null;
+        return { index: idx, offset: Number.isFinite(offset) ? offset : null };
+      } catch (e) {
+        const n = Number(v);
+        return Number.isFinite(n) ? { index: n, offset: null } : null;
+      }
     } catch (e) {
       return null;
     }
@@ -934,8 +947,17 @@ export default function List() {
     function persist() {
       try {
         let idx = null;
+        let offset = null;
         if (devMode) {
-          idx = getMostVisibleIdx();
+          const bestIdx = getMostVisibleIdx();
+          if (bestIdx !== null && bestIdx !== undefined) {
+            idx = bestIdx;
+            const el = achievementRefs.current && achievementRefs.current[bestIdx];
+            if (el && typeof el.getBoundingClientRect === 'function') {
+              const rect = el.getBoundingClientRect();
+              offset = rect.top;
+            }
+          }
         } else if (listRef && listRef.current) {
           const container = listRef.current && listRef.current._outerRef ? listRef.current._outerRef : listRef.current;
           if (container && container.querySelector) {
@@ -949,10 +971,22 @@ export default function List() {
             });
             if (best) idx = Number(best.getAttribute('data-index'));
           }
+          // for virtualized lists, save the container scrollTop for an exact offset
+          try {
+            if (container && typeof container.scrollTop === 'number') offset = container.scrollTop;
+          } catch (e) {}
         } else if (achievementRefs && achievementRefs.current) {
-          idx = getMostVisibleIdx();
+          const bestIdx = getMostVisibleIdx();
+          if (bestIdx !== null && bestIdx !== undefined) {
+            idx = bestIdx;
+            const el = achievementRefs.current && achievementRefs.current[bestIdx];
+            if (el && typeof el.getBoundingClientRect === 'function') {
+              const rect = el.getBoundingClientRect();
+              offset = rect.top;
+            }
+          }
         }
-        if (idx !== null && idx !== undefined) saveScrollIndex(idx);
+        if (idx !== null && idx !== undefined) saveScrollPosition({ index: idx, offset });
       } catch (e) {}
     }
 
@@ -977,18 +1011,12 @@ export default function List() {
     if (typeof window === 'undefined') return;
     const saved = readSavedScrollIndex();
     if (saved === null) return;
+    setRestoredScroll(saved);
     const t = window.setTimeout(() => {
       try {
-        const targetIdx = Math.max(0, Math.floor(Number(saved)));
-        if (devMode) {
-          if (achievementRefs.current && achievementRefs.current[targetIdx]) {
-            setScrollToIdx(targetIdx);
-            setHighlightedIdx(targetIdx);
-          }
-        } else {
-          setScrollToIdx(targetIdx);
-          setHighlightedIdx(targetIdx);
-        }
+        const targetIdx = Math.max(0, Math.floor(Number(saved.index)));
+        setScrollToIdx(targetIdx);
+        setHighlightedIdx(targetIdx);
       } catch (e) {}
     }, 300);
     return () => clearTimeout(t);
@@ -1001,6 +1029,41 @@ export default function List() {
       if (searchJumpPending) setSearchJumpPending(false);
     }
   }, [scrollToIdx, devAchievements]);
+
+  useEffect(() => {
+    if (!restoredScroll) return;
+    try {
+      const { index, offset } = restoredScroll || {};
+      if (offset == null) {
+        // nothing precise to restore
+        return;
+      }
+      if (listRef && listRef.current) {
+        const container = listRef.current && listRef.current._outerRef ? listRef.current._outerRef : listRef.current;
+        if (container && typeof container.scrollTop === 'number') {
+          requestAnimationFrame(() => requestAnimationFrame(() => {
+            try {
+              // clamp offset to valid range
+              const top = Math.max(0, Math.min(Number(offset), container.scrollHeight || Number(offset)));
+              container.scrollTop = top;
+            } catch (e) {}
+          }));
+        }
+      } else if (achievementRefs && achievementRefs.current && achievementRefs.current[index]) {
+        const el = achievementRefs.current[index];
+        if (el && typeof el.getBoundingClientRect === 'function') {
+          requestAnimationFrame(() => requestAnimationFrame(() => {
+            try {
+              const rect = el.getBoundingClientRect();
+              const delta = Number(offset) - rect.top;
+              if (Math.abs(delta) > 1) window.scrollBy({ top: delta, left: 0, behavior: 'auto' });
+            } catch (e) {}
+          }));
+        }
+      }
+    } catch (e) {}
+    setRestoredScroll(null);
+  }, [restoredScroll, listRef, achievementRefs]);
 
   useEffect(() => {
     if (highlightedIdx === null) return;
