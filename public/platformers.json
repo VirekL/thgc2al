@@ -3,7 +3,7 @@
     "name": "Monitoring 82%",
     "id": "monitoring-82",
     "player": "Gabest",
-    "version": 2,
+    "version": null,
     "video": "https://youtu.be/F2KPV78GMGE",
     "date": "2025-09-28",
     "submitter": "Sirdoodle",
@@ -89,13 +89,13 @@
     "showcaseVideo": "https://www.youtube.com/watch?v=FtaBfhXY9D4",
     "video": "https://www.youtube.com/watch?v=yU0Nzf8lnTU",
     "submitter": "kyle1saurus",
-    "length": 0
+    "length": null
   },
   {
     "name": "i loved you",
     "id": "i-loved-you",
     "player": "nng12",
-    "version": 2,
+    "version": 2.2,
     "video": "https://www.youtube.com/watch?v=SLyCnzlygtc",
     "showcaseVideo": "https://youtu.be/NYRNOlQReg8",
     "date": "2025-09-25",
@@ -126,7 +126,7 @@
     "name": "Cl5u37r0ph0b1a (Deathless)",
     "id": "cl5u37r0ph0b1a-deathless",
     "player": "Artemka_klutoy",
-    "version": 2,
+    "version": null,
     "video": "https://youtu.be/uUouXQKkXMM",
     "showcaseVideo": "https://youtu.be/il1EO5KBhKM",
     "date": "2025-10-05",
@@ -141,7 +141,7 @@
     "name": "Sedulous",
   "id": "sedulous",
   "player": "mikoshii",
-  "version": 2,
+  "version": null,
   "video": "https://youtu.be/VGX3PFO55ps",
   "showcaseVideo": "https://youtu.be/T03qx2HDBe4",
   "date": "2025-10-16",
@@ -275,7 +275,7 @@
   },
   {
     "name": "glungus 60hz Mobile",
-    "id": "glungus",
+    "id": "glungus-60hz-mobile",
     "player": "Ray131",
     "levelID": 112482571,
     "tags": [
@@ -447,7 +447,7 @@
   {
     "name": "ECSTASIS unnerfed",
     "id": "ecstasis-unnerfed",
-    "player": "Dxshing",
+    "player": "Tokei",
     "levelID": 111338608,
     "tags": [
       "Verified",
@@ -455,7 +455,7 @@
     ],
     "version": 2.2,
     "date": "2025-02-25",
-    "video": "https://www.youtube.com/watch?v=DwAV3e8tEBU",
+    "video": "https://www.youtube.com/watch?v=bsXmrACozOw",
     "showcaseVideo": "https://youtu.be/6XORDGEYXuw",
     "submitter": "toolazytogetausername"
   },
@@ -599,15 +599,16 @@
   {
     "name": "The Elephants Foot (Unnerfed)",
     "id": "the-elephants-foot-unnerfed",
-    "player": "evetS",
+    "player": "Ayumi",
     "levelID": 109553133,
     "tags": [
       "Verified",
       "Platformer"
     ],
     "version": 2.2,
-    "date": "2025-02-22",
-    "video": "https://youtu.be/FA6h9KOCn7A",
+    "date": "2024-08-09",
+    "video": "https://www.youtube.com/watch?v=Gf_NgxUkQ0s",
+	"showcaseVideo": null,
     "submitter": "kyle1saurus"
   },
   {
@@ -685,6 +686,7 @@
     "version": 2.2,
     "date": "2025-08-07",
     "video": "https://www.youtube.com/watch?v=afV1u4fttl4",
+	"showcaseVideo": "https://youtu.be/RA4O1RQOnsU",
     "submitter": "kyle1saurus"
   },
   {
@@ -693,6 +695,7 @@
   "player": "Cucu",
   "version": 2,
   "video": "https://www.youtube.com/watch?v=a8kSgfbnokU&t=337",
+  "showcaseVideo": "https://youtu.be/TX_QsZaiNPo",
   "date": "2024-07-17",
   "submitter": "Woachi",
   "levelID": 107841263,
@@ -746,6 +749,7 @@
     "version": 2.2,
     "date": "2024-11-25",
     "video": "https://www.youtube.com/watch?v=bW3CcwkWOgE",
+	"showcaseVideo": "https://youtu.be/w_jc5Lwe2sE",
     "submitter": "kyle1saurus"
   },
   {
@@ -777,20 +781,22 @@
     "version": 2.2,
     "date": "2025-07-01",
     "video": "https://youtu.be/c8vfGS2HBKA",
+	"showcaseVideo": "https://youtu.be/iSxoIGgQGKs",
     "submitter": "kyle1saurus"
   },
   {
     "name": "The Elephants Foot",
     "id": "the-elephants-foot",
-    "player": "Ayumi",
+    "player": "Superkobster",
     "levelID": 104896656,
     "tags": [
       "Verified",
       "Platformer"
     ],
     "version": 2.2,
-    "date": "2024-08-09",
-    "video": "https://www.youtube.com/watch?v=Gf_NgxUkQ0s",
+    "date": "2024-10-04",
+    "video": "https://youtu.be/buYqlALqLJg",
+	"showcaseVideo": "https://youtu.be/iSxoIGgQGKs",
     "submitter": "kyle1saurus"
   },
   {
@@ -806,6 +812,7 @@
     "version": 2.2,
     "date": "2025-04-20",
     "video": "https://www.youtube.com/watch?v=VsQN1_oo_54",
+	"showcaseVideo": "https://youtu.be/tiSkNTl9UFc",
     "submitter": "kyle1saurus"
   },
   {
@@ -820,12 +827,13 @@
     "version": 2.2,
     "date": "2025-06-25",
     "video": "https://www.youtube.com/watch?v=TR25M9F3Q9Y",
+	"showcaseVideo": "https://youtu.be/IdXZRYNRQrc",
     "submitter": "kyle1saurus"
   },
   {
     "name": "im happy 4 you 120hz Mobile",
     "id": "im-happy-4-you-120hz-mobile",
-    "player": "mikoshii",
+    "player": "Colouts",
     "levelID": 99195742,
     "tags": [
       "Low Hertz",
@@ -836,6 +844,7 @@
     "version": 2.2,
     "date": "2025-06-30",
     "video": "https://youtu.be/dHT7RFtakUA",
+	"showcaseVideo": "https://youtu.be/OyoxEZ7BizE",
     "submitter": "toolazytogetausername"
   },
   {
@@ -851,13 +860,14 @@
     "version": 2.2,
     "date": "2024-09-12",
     "video": "https://www.youtube.com/watch?v=rvdQE3EyG-k",
+	"showcaseVideo": "https://youtu.be/OyoxEZ7BizE",
     "submitter": "kyle1saurus"
   },
   {
     "name": "Lava Trials II",
   "id": "lava-trials-ii",
   "player": "Thearmyants",
-  "version": 2,
+  "version": null,
   "video": "https://www.youtube.com/watch?v=nas9pK8iOBY",
   "showcaseVideo": "https://youtu.be/E6WUAzBTGgM",
   "date": "2025-10-05",
@@ -881,11 +891,12 @@
     "version": 2.2,
     "date": "2024-07-24",
     "video": "https://www.youtube.com/watch?v=wA1aQ-2V2hA",
+	"showcaseVideo": "https://youtu.be/PrdGhbMM7_g",
     "submitter": "kyle1saurus"
   },
   {
-    "name": "Troncy Ball",
-    "id": "troncy-ball",
+    "name": "Trouncy Ball",
+    "id": "trouncy-ball",
     "player": "spycold",
     "levelID": 112972263,
     "tags": [
@@ -925,7 +936,8 @@
     ],
     "version": 2.2,
     "date": "2025-03-31",
-    "video": "https://youtu.be/U3A_qBbMiFo",
+    "video": "https://youtu.be/ZXOpADmmQvQ",
+	"showcaseVideo": "https://youtu.be/U3A_qBbMiFo",
     "submitter": "kyle1saurus"
   },
   {
