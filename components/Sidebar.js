@@ -62,46 +62,47 @@ function SidebarInner() {
         flexDirection: 'column',
         height: isMobile ? 'auto' : '100%',
         maxHeight: isMobile ? '90vh' : 'calc(100vh - 2rem)',
-        /* make the sidebar itself scrollable so the scrollbar appears on the sidebar when needed */
         overflowY: 'auto',
         WebkitOverflowScrolling: 'touch',
       }}
     >
-      <div style={{ flex: '1 1 auto', minHeight: 0 }}>
-        <Link href="/list" className="sidebar-link">
+            <div style={{ flex: '1 1 auto', minHeight: 0 }}>
+        <Link href="/list" className="sidebar-link" style={{ color: '#DFE3F5' }}>
           Main List
         </Link>
-        <Link href="/timeline" className="sidebar-link">
+        <Link href="/timeline" className="sidebar-link" style={{ color: '#DFE3F5' }}>
           Timeline
         </Link>
-        <Link href="/leaderboard" className="sidebar-link">
+        <Link href="/leaderboard" className="sidebar-link" style={{ color: '#DFE3F5' }}>
           Leaderboard
         </Link>
-        <Link href="/submission-stats" className="sidebar-link">
+        <Link href="/submission-stats" className="sidebar-link" style={{ color: '#DFE3F5' }}>
           Submission Stats
         </Link>
-        <Link href="/pending" className="sidebar-link">
+        <Link href="/pending" className="sidebar-link" style={{ color: '#DFE3F5' }}>
           Pending
         </Link>
         <a
           href="#"
           id="random-achievement-btn"
           className="sidebar-link"
+          style={{ color: '#DFE3F5' }}
           onClick={handleRandomClick}
           role="button"
           tabIndex={0}
         >
           Random
         </a>
-        <Link href="/about-us" className="sidebar-link">
+        <Link href="/about-us" className="sidebar-link" style={{ color: '#DFE3F5' }}>
           About Us
         </Link>
-        <Link href="/discord" className="sidebar-link">
+        <Link href="/discord" className="sidebar-link" style={{ color: '#DFE3F5' }}>
           Discord
         </Link>
         <a
           href="#"
           className="sidebar-link"
+          style={{ color: '#DFE3F5' }}
           aria-label="Open settings"
           title="Open settings"
           onClick={(e) => {
