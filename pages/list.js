@@ -884,6 +884,35 @@ export default function List() {
     });
     return bestIdx;
   }
+
+  const getStorageKey = () => `thal_scroll_index_${usePlatformers ? 'platformers' : 'achievements'}`;
+
+  function saveScrollIndex(idx) {
+    try {
+      if (typeof window === 'undefined') return;
+      const key = getStorageKey();
+      if (idx === null || idx === undefined) {
+        localStorage.removeItem(key);
+      } else {
+        localStorage.setItem(key, String(idx));
+      }
+    } catch (e) {
+      // ignore
+    }
+  }
+
+  function readSavedScrollIndex() {
+    try {
+      if (typeof window === 'undefined') return null;
+      const key = getStorageKey();
+      const v = localStorage.getItem(key);
+      if (!v) return null;
+      const n = Number(v);
+      return Number.isFinite(n) ? n : null;
+    } catch (e) {
+      return null;
+    }
+  }
   function handleShowNewForm() {
     if (showNewForm) {
       setShowNewForm(false);
@@ -896,6 +925,74 @@ export default function List() {
     setInsertIdx(getMostVisibleIdx());
     setShowNewForm(true);
   }
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    let rafId = null;
+    let intervalId = null;
+
+    function persist() {
+      try {
+        let idx = null;
+        if (devMode) {
+          idx = getMostVisibleIdx();
+        } else if (listRef && listRef.current) {
+          const container = listRef.current && listRef.current._outerRef ? listRef.current._outerRef : listRef.current;
+          if (container && container.querySelector) {
+            const visible = Array.from(container.querySelectorAll('[data-index]'));
+            let best = null;
+            let bestVisible = 0;
+            visible.forEach(el => {
+              const rect = el.getBoundingClientRect();
+              const vis = Math.max(0, Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0));
+              if (vis > bestVisible) { bestVisible = vis; best = el; }
+            });
+            if (best) idx = Number(best.getAttribute('data-index'));
+          }
+        } else if (achievementRefs && achievementRefs.current) {
+          idx = getMostVisibleIdx();
+        }
+        if (idx !== null && idx !== undefined) saveScrollIndex(idx);
+      } catch (e) {}
+    }
+
+    intervalId = window.setInterval(() => {
+      if (rafId) cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(() => persist());
+    }, 2000);
+
+    const onUnload = () => persist();
+    window.addEventListener('beforeunload', onUnload);
+
+    rafId = requestAnimationFrame(() => persist());
+
+    return () => {
+      if (intervalId) clearInterval(intervalId);
+      if (rafId) cancelAnimationFrame(rafId);
+      window.removeEventListener('beforeunload', onUnload);
+    };
+  }, [devMode, listRef, achievementRefs, usePlatformers]);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const saved = readSavedScrollIndex();
+    if (saved === null) return;
+    const t = window.setTimeout(() => {
+      try {
+        const targetIdx = Math.max(0, Math.floor(Number(saved)));
+        if (devMode) {
+          if (achievementRefs.current && achievementRefs.current[targetIdx]) {
+            setScrollToIdx(targetIdx);
+            setHighlightedIdx(targetIdx);
+          }
+        } else {
+          setScrollToIdx(targetIdx);
+          setHighlightedIdx(targetIdx);
+        }
+      } catch (e) {}
+    }, 300);
+    return () => clearTimeout(t);
+  }, [achievements, filtered.length, devMode, usePlatformers]);
 
   useEffect(() => {
     if (scrollToIdx !== null && achievementRefs.current[scrollToIdx]) {
@@ -1287,6 +1384,7 @@ export default function List() {
             devAchievements.map((a, i) => (
               <div
                 key={a.id || i}
+                data-index={i}
                 ref={el => {
                   achievementRefs.current[i] = el;
                 }}
@@ -1483,7 +1581,7 @@ export default function List() {
                   const thumb = (a && a.thumbnail) ? a.thumbnail : (a && a.levelID) ? `https://tjcsucht.net/levelthumbs/${a.levelID}.png` : '';
                   const isDup = duplicateThumbKeys.has((thumb || '').trim());
                   return (
-                    <div style={itemStyle} key={a.id || index} className={`${isDup ? 'duplicate-thumb-item' : ''} ${highlightedIdx === index ? 'search-highlight' : ''}`}>
+                    <div data-index={index} style={itemStyle} key={a.id || index} className={`${isDup ? 'duplicate-thumb-item' : ''} ${highlightedIdx === index ? 'search-highlight' : ''}`}>
                       <AchievementCard achievement={a} devMode={devMode} />
                     </div>
                   );
