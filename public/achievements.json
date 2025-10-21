@@ -3354,6 +3354,23 @@
     ]
   },
   {
+    "name": "Operation Evolution 97%, 100%",
+    "id": "operation-evolution-97-100",
+    "player": "Lobster",
+    "levelID": 114999625,
+    "date": "2025-10-20",
+    "length": 600,
+    "version": 2.2,
+    "submitter": "Yoshikid",
+    "video": "https://youtu.be/BfpUmTO-PyM",
+    "showcaseVideo": "https://youtu.be/lgoEemeOYb0",
+    "tags": [
+      "Level",
+      "Consistency",
+      "Rated"
+    ]
+  },
+  {
     "name": "KOCMOC",
     "id": "kocmoc",
     "player": "Zoink",
@@ -10499,4 +10516,5 @@
     ]
   }
 ]
+
 
