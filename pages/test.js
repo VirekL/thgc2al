@@ -510,6 +510,7 @@ export default function List() {
     setEditFormCustomTags('');
   }
 
+  // fetch data whenever the selected source changes
   useEffect(() => {
     const file = usePlatformers ? '/platformers.json' : '/achievements.json';
     fetch(file)
@@ -525,6 +526,7 @@ export default function List() {
       });
   }, [usePlatformers]);
 
+  // update background image to the thumbnail of the top (rank 1) achievement for the current dataset
   useEffect(() => {
     try {
       const srcList = achievements || [];
@@ -532,6 +534,7 @@ export default function List() {
         setBgImage(null);
         return;
       }
+      // find the top-ranked achievement (rank === 1) or first item
       const top = srcList.find(a => Number(a.rank) === 1) || srcList[0];
       if (!top) {
         setBgImage(null);
@@ -557,103 +560,6 @@ export default function List() {
     } catch (e) {
     }
   }, [router, router && router.isReady, router && router.query, achievements]);
-
-  useEffect(() => {
-    if (!router || !router.events) return;
-
-    const handleRouteChangeStart = (url) => {
-      try {
-        if (typeof window === 'undefined') return;
-        if (!url || !url.startsWith('/achievement/')) return;
-
-        const state = {
-          windowScrollY: (window.scrollY || window.pageYOffset || 0),
-          listScrollTop: null,
-          mostVisibleIdx: null
-        };
-
-        try {
-          const lr = listRef && listRef.current;
-          if (lr) {
-            const outer = lr._outerRef || (lr.outerRef && lr.outerRef.current) || null;
-            if (outer && typeof outer.scrollTop === 'number') state.listScrollTop = outer.scrollTop;
-          }
-        } catch (e) {
-          // ignore
-        }
-
-        try {
-          const idx = getMostVisibleIdx();
-          if (idx !== null && idx !== undefined) state.mostVisibleIdx = idx;
-        } catch (e) {}
-
-        try {
-          sessionStorage.setItem('thal_list_scroll', JSON.stringify(state));
-        } catch (e) {}
-      } catch (e) {}
-    };
-
-    router.events.on('routeChangeStart', handleRouteChangeStart);
-    return () => router.events.off('routeChangeStart', handleRouteChangeStart);
-  }, [router, listRef, achievements, reordered, devMode]);
-
-  useEffect(() => {
-    let mounted = true;
-    let attempts = 0;
-
-    function tryRestore() {
-      if (!mounted) return;
-      let raw;
-      try { raw = sessionStorage.getItem('thal_list_scroll'); } catch (e) { raw = null; }
-      if (!raw) return;
-
-      let state;
-      try { state = JSON.parse(raw); } catch (e) { sessionStorage.removeItem('thal_list_scroll'); return; }
-
-      if (state.mostVisibleIdx !== null && state.mostVisibleIdx !== undefined) {
-        if (devMode) {
-          setTimeout(() => setScrollToIdx(state.mostVisibleIdx), 50);
-          try { sessionStorage.removeItem('thal_list_scroll'); } catch (e) {}
-          return;
-        }
-
-        const lr = listRef && listRef.current;
-        if (lr && typeof lr.scrollToItem === 'function') {
-          requestAnimationFrame(() => requestAnimationFrame(() => {
-            try {
-              lr.scrollToItem(state.mostVisibleIdx, 'center');
-            } catch (e) {}
-            try { sessionStorage.removeItem('thal_list_scroll'); } catch (e) {}
-          }));
-          return;
-        }
-      }
-
-      try {
-        const lr = listRef && listRef.current;
-        const outer = lr && (lr._outerRef || (lr.outerRef && lr.outerRef.current));
-        if (outer && typeof state.listScrollTop === 'number') {
-          outer.scrollTop = state.listScrollTop;
-          try { sessionStorage.removeItem('thal_list_scroll'); } catch (e) {}
-          return;
-        }
-      } catch (e) {}
-
-      try {
-        if (typeof state.windowScrollY === 'number') {
-          window.scrollTo(0, state.windowScrollY);
-          try { sessionStorage.removeItem('thal_list_scroll'); } catch (e) {}
-          return;
-        }
-      } catch (e) {}
-
-      attempts++;
-      if (attempts < 10) setTimeout(tryRestore, 150);
-    }
-
-    setTimeout(tryRestore, 60);
-    return () => { mounted = false; };
-  }, [listRef, achievements, reordered, devMode]);
 
   useEffect(() => {
     function handleKeyDown(e) {
@@ -978,6 +884,35 @@ export default function List() {
     });
     return bestIdx;
   }
+
+  const getStorageKey = () => `thal_scroll_index_${usePlatformers ? 'platformers' : 'achievements'}`;
+
+  function saveScrollIndex(idx) {
+    try {
+      if (typeof window === 'undefined') return;
+      const key = getStorageKey();
+      if (idx === null || idx === undefined) {
+        localStorage.removeItem(key);
+      } else {
+        localStorage.setItem(key, String(idx));
+      }
+    } catch (e) {
+      // ignore
+    }
+  }
+
+  function readSavedScrollIndex() {
+    try {
+      if (typeof window === 'undefined') return null;
+      const key = getStorageKey();
+      const v = localStorage.getItem(key);
+      if (!v) return null;
+      const n = Number(v);
+      return Number.isFinite(n) ? n : null;
+    } catch (e) {
+      return null;
+    }
+  }
   function handleShowNewForm() {
     if (showNewForm) {
       setShowNewForm(false);
@@ -990,6 +925,74 @@ export default function List() {
     setInsertIdx(getMostVisibleIdx());
     setShowNewForm(true);
   }
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    let rafId = null;
+    let intervalId = null;
+
+    function persist() {
+      try {
+        let idx = null;
+        if (devMode) {
+          idx = getMostVisibleIdx();
+        } else if (listRef && listRef.current) {
+          const container = listRef.current && listRef.current._outerRef ? listRef.current._outerRef : listRef.current;
+          if (container && container.querySelector) {
+            const visible = Array.from(container.querySelectorAll('[data-index]'));
+            let best = null;
+            let bestVisible = 0;
+            visible.forEach(el => {
+              const rect = el.getBoundingClientRect();
+              const vis = Math.max(0, Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0));
+              if (vis > bestVisible) { bestVisible = vis; best = el; }
+            });
+            if (best) idx = Number(best.getAttribute('data-index'));
+          }
+        } else if (achievementRefs && achievementRefs.current) {
+          idx = getMostVisibleIdx();
+        }
+        if (idx !== null && idx !== undefined) saveScrollIndex(idx);
+      } catch (e) {}
+    }
+
+    intervalId = window.setInterval(() => {
+      if (rafId) cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(() => persist());
+    }, 2000);
+
+    const onUnload = () => persist();
+    window.addEventListener('beforeunload', onUnload);
+
+    rafId = requestAnimationFrame(() => persist());
+
+    return () => {
+      if (intervalId) clearInterval(intervalId);
+      if (rafId) cancelAnimationFrame(rafId);
+      window.removeEventListener('beforeunload', onUnload);
+    };
+  }, [devMode, listRef, achievementRefs, usePlatformers]);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const saved = readSavedScrollIndex();
+    if (saved === null) return;
+    const t = window.setTimeout(() => {
+      try {
+        const targetIdx = Math.max(0, Math.floor(Number(saved)));
+        if (devMode) {
+          if (achievementRefs.current && achievementRefs.current[targetIdx]) {
+            setScrollToIdx(targetIdx);
+            setHighlightedIdx(targetIdx);
+          }
+        } else {
+          setScrollToIdx(targetIdx);
+          setHighlightedIdx(targetIdx);
+        }
+      } catch (e) {}
+    }, 300);
+    return () => clearTimeout(t);
+  }, [achievements, filtered.length, devMode, usePlatformers]);
 
   useEffect(() => {
     if (scrollToIdx !== null && achievementRefs.current[scrollToIdx]) {
@@ -1381,6 +1384,7 @@ export default function List() {
             devAchievements.map((a, i) => (
               <div
                 key={a.id || i}
+                data-index={i}
                 ref={el => {
                   achievementRefs.current[i] = el;
                 }}
@@ -1577,7 +1581,7 @@ export default function List() {
                   const thumb = (a && a.thumbnail) ? a.thumbnail : (a && a.levelID) ? `https://tjcsucht.net/levelthumbs/${a.levelID}.png` : '';
                   const isDup = duplicateThumbKeys.has((thumb || '').trim());
                   return (
-                    <div style={itemStyle} key={a.id || index} className={`${isDup ? 'duplicate-thumb-item' : ''} ${highlightedIdx === index ? 'search-highlight' : ''}`}>
+                    <div data-index={index} style={itemStyle} key={a.id || index} className={`${isDup ? 'duplicate-thumb-item' : ''} ${highlightedIdx === index ? 'search-highlight' : ''}`}>
                       <AchievementCard achievement={a} devMode={devMode} />
                     </div>
                   );
