@@ -653,7 +653,7 @@ export default function List() {
 
     setTimeout(tryRestore, 60);
     return () => { mounted = false; };
-  }, [listRef, achievements, reordered, devMode, filtered.length]);
+  }, [listRef, achievements, reordered, devMode]);
 
   useEffect(() => {
     function handleKeyDown(e) {
