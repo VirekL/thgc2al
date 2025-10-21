@@ -221,9 +221,11 @@ export function useScrollPersistence({
             requestAnimationFrame(() => {
               try {
                 const rect = el.getBoundingClientRect();
-                const delta = Number(offset) - rect.top;
+                const targetTop = Number(offset);
+                const currentTop = rect.top;
+                const delta = currentTop - targetTop;
                 if (Math.abs(delta) > 1) {
-                  window.scrollBy({ top: delta, left: 0, behavior: 'auto' });
+                  window.scrollBy({ top: -delta, left: 0, behavior: 'auto' });
                 }
               } catch (e) {
               }
