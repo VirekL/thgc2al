@@ -17,7 +17,6 @@ import Tag, { TAG_PRIORITY_ORDER } from '../components/Tag';
 import DevModePanel from '../components/DevModePanel';
 import MobileSidebarOverlay from '../components/MobileSidebarOverlay';
 import { useScrollPersistence } from '../hooks/useScrollPersistence';
-import MobileSidebarOverlay from '../components/MobileSidebarOverlay';
 
 function normalizeYoutubeUrl(input) {
   if (!input || typeof input !== 'string') return input;
