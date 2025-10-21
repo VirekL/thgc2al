@@ -93,11 +93,7 @@ export function useScrollPersistence({
           const bestIdx = getMostVisibleIdx();
           if (bestIdx !== null && bestIdx !== undefined) {
             idx = bestIdx;
-            const el = itemRefs && itemRefs.current && itemRefs.current[bestIdx];
-            if (el && typeof el.getBoundingClientRect === 'function') {
-              const rect = el.getBoundingClientRect();
-              offset = rect.top + window.pageYOffset;
-            }
+            offset = window.pageYOffset || window.scrollY || 0;
           }
         } else if (listRef && listRef.current) {
           const container =
@@ -134,11 +130,7 @@ export function useScrollPersistence({
           const bestIdx = getMostVisibleIdx();
           if (bestIdx !== null && bestIdx !== undefined) {
             idx = bestIdx;
-            const el = itemRefs.current && itemRefs.current[bestIdx];
-            if (el && typeof el.getBoundingClientRect === 'function') {
-              const rect = el.getBoundingClientRect();
-              offset = rect.top + window.pageYOffset;
-            }
+            offset = window.pageYOffset || window.scrollY || 0;
           }
         }
 
