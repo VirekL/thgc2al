@@ -16,6 +16,7 @@ import { useDateFormat } from '../components/DateFormatContext';
 import Tag, { TAG_PRIORITY_ORDER } from '../components/Tag';
 import DevModePanel from '../components/DevModePanel';
 import MobileSidebarOverlay from '../components/MobileSidebarOverlay';
+import { useScrollPersistence } from '../hooks/useScrollPersistence';
 
 function normalizeYoutubeUrl(input) {
   if (!input || typeof input !== 'string') return input;
@@ -866,21 +867,16 @@ export default function List() {
     }
   }
 
-  function getMostVisibleIdx() {
-    if (!achievementRefs.current) return null;
-    let maxVisible = 0;
-    let bestIdx = null;
-    achievementRefs.current.forEach((ref, idx) => {
-      if (!ref) return;
-      const rect = ref.getBoundingClientRect();
-      const visible = Math.max(0, Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0));
-      if (visible > maxVisible) {
-        maxVisible = visible;
-        bestIdx = idx;
-      }
-    });
-    return bestIdx;
-  }
+    // Use scroll persistence hook
+  const { getMostVisibleIdx } = useScrollPersistence({
+    storageKey: `thal_scroll_index_pending`,
+    items: achievements,
+    devMode,
+    listRef,
+    itemRefs: achievementRefs,
+    setScrollToIdx,
+    setHighlightedIdx,
+  });
   function handleShowNewForm() {
     if (showNewForm) {
       setShowNewForm(false);
