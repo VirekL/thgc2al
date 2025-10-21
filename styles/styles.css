@@ -540,14 +540,16 @@ main {
 }
 
 .sidebar-link {
-  display: block;
+  display: block !important;
   padding: 0.95rem 1.2rem;
-  color: var(--text-color) !important;
+  color: #DFE3F5 !important;
   text-decoration: none;
   border-radius: var(--border-radius);
   transition: background-color var(--transition), color var(--transition);
   margin-bottom: 1.1rem;
   font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .sidebar-link:hover {
@@ -2016,7 +2018,7 @@ main, .main-content {
     overflow-y: auto !important;
   }
 
-  .sidebar-mobile-modal .sidebar,
+    .sidebar-mobile-modal .sidebar,
   .sidebar.sidebar-mobile-open .sidebar {
     display: block !important;
     width: 100% !important;
@@ -2025,11 +2027,17 @@ main, .main-content {
     overflow: auto !important;
   }
 
-  /* Ensure sidebar links are visible on mobile */
-  .sidebar-link {
+  .sidebar-mobile-modal,
+  .sidebar-mobile-modal * {
+    color: #DFE3F5 !important;
+  }
+
+  .sidebar-mobile-modal .sidebar-link,
+  .sidebar-mobile-modal a {
     color: #DFE3F5 !important;
     display: block !important;
     visibility: visible !important;
+    opacity: 1 !important;
   }
 }
 
