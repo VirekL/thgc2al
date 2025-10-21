@@ -542,21 +542,22 @@ main {
 .sidebar-link {
   display: block;
   padding: 0.95rem 1.2rem;
-  color: var(--text-color);
+  color: var(--text-color) !important;
   text-decoration: none;
   border-radius: var(--border-radius);
   transition: background-color var(--transition), color var(--transition);
   margin-bottom: 1.1rem;
+  font-weight: 600;
 }
 
 .sidebar-link:hover {
   background-color: var(--hover-bg);
-  color: #FFFFFF;
+  color: #FFFFFF !important;
 }
 
 .sidebar-link.active {
   background-color: var(--active-bg);
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   font-weight: bold;
 }
 
@@ -2022,6 +2023,13 @@ main, .main-content {
     height: auto !important;
     max-height: 80vh !important;
     overflow: auto !important;
+  }
+
+  /* Ensure sidebar links are visible on mobile */
+  .sidebar-link {
+    color: #DFE3F5 !important;
+    display: block !important;
+    visibility: visible !important;
   }
 }
 
