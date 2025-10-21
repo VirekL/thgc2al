@@ -66,43 +66,57 @@ function SidebarInner() {
         WebkitOverflowScrolling: 'touch',
       }}
     >
-            <div style={{ flex: '1 1 auto', minHeight: 0 }}>
-        <Link href="/list" className="sidebar-link" style={{ color: '#DFE3F5' }}>
-          Main List
+                  <div style={{ flex: '1 1 auto', minHeight: 0, padding: '1rem' }}>
+        <Link href="/list">
+          <a className="sidebar-link" style={{ color: '#DFE3F5', display: 'block', fontSize: '1rem' }}>
+            Main List
+          </a>
         </Link>
-        <Link href="/timeline" className="sidebar-link" style={{ color: '#DFE3F5' }}>
-          Timeline
+        <Link href="/timeline">
+          <a className="sidebar-link" style={{ color: '#DFE3F5', display: 'block', fontSize: '1rem' }}>
+            Timeline
+          </a>
         </Link>
-        <Link href="/leaderboard" className="sidebar-link" style={{ color: '#DFE3F5' }}>
-          Leaderboard
+        <Link href="/leaderboard">
+          <a className="sidebar-link" style={{ color: '#DFE3F5', display: 'block', fontSize: '1rem' }}>
+            Leaderboard
+          </a>
         </Link>
-        <Link href="/submission-stats" className="sidebar-link" style={{ color: '#DFE3F5' }}>
-          Submission Stats
+        <Link href="/submission-stats">
+          <a className="sidebar-link" style={{ color: '#DFE3F5', display: 'block', fontSize: '1rem' }}>
+            Submission Stats
+          </a>
         </Link>
-        <Link href="/pending" className="sidebar-link" style={{ color: '#DFE3F5' }}>
-          Pending
+        <Link href="/pending">
+          <a className="sidebar-link" style={{ color: '#DFE3F5', display: 'block', fontSize: '1rem' }}>
+            Pending
+          </a>
         </Link>
         <a
           href="#"
           id="random-achievement-btn"
           className="sidebar-link"
-          style={{ color: '#DFE3F5' }}
+          style={{ color: '#DFE3F5', display: 'block', fontSize: '1rem' }}
           onClick={handleRandomClick}
           role="button"
           tabIndex={0}
         >
           Random
         </a>
-        <Link href="/about-us" className="sidebar-link" style={{ color: '#DFE3F5' }}>
-          About Us
+        <Link href="/about-us">
+          <a className="sidebar-link" style={{ color: '#DFE3F5', display: 'block', fontSize: '1rem' }}>
+            About Us
+          </a>
         </Link>
-        <Link href="/discord" className="sidebar-link" style={{ color: '#DFE3F5' }}>
-          Discord
+        <Link href="/discord">
+          <a className="sidebar-link" style={{ color: '#DFE3F5', display: 'block', fontSize: '1rem' }}>
+            Discord
+          </a>
         </Link>
         <a
           href="#"
           className="sidebar-link"
-          style={{ color: '#DFE3F5' }}
+          style={{ color: '#DFE3F5', display: 'block', fontSize: '1rem' }}
           aria-label="Open settings"
           title="Open settings"
           onClick={(e) => {
