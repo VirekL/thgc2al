@@ -541,6 +541,24 @@
     "showcaseVideo": "https://youtu.be/lm1498Rfl0s"
   },
   {
+    "id": "sonic-wave-75hz-75",
+    "name": "Sonic Wave 75hz 75%",
+    "player": "Sonic80",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Progress",
+      "Rated"
+    ],
+    "length": 91,
+    "version": 2.1,
+    "date": "2018-07-20",
+    "levelID": 26681070,
+    "video": "https://www.youtube.com/watch?v=n4QCAP4tqOk",
+    "showcaseVideo": "https://youtu.be/iQowrO4trlk",
+    "submitter": "TTB18"
+  },
+  {
     "id": "sonic-wave-75hz-74",
     "name": "Sonic Wave 75hz 74%",
     "player": "Sonic80",
