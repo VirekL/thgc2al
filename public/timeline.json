@@ -541,86 +541,22 @@
     "showcaseVideo": "https://youtu.be/lm1498Rfl0s"
   },
   {
-    "id": "tartarus-73",
-    "name": "Tartarus 73%",
-    "player": "Mullsy",
-    "thumbnail": "https://tjcsucht.net/levelthumbs/41507422.png",
-    "tags": [
-      "Level",
-      "Progress",
-      "Rated"
-    ],
-    "length": "64",
-    "version": "2.1",
-    "date": "2019-03-09",
-    "levelID": "59075347",
-    "video": "https://youtu.be/CeCvC3hwyuw",
-    "showcaseVideo": "https://youtu.be/lm1498Rfl0s"
-  },
-  {
-    "id": "tartarus-64",
-    "name": "Tartarus 64%",
-    "player": "Mullsy",
-    "thumbnail": "https://i.ytimg.com/vi/eCy7RO1ctGQ/maxresdefault.jpg",
-    "tags": [
-      "Level",
-      "Progress",
-      "Rated"
-    ],
-    "length": "62",
-    "version": "2.1",
-    "date": "2019-03-04",
-    "levelID": "59075347",
-    "video": "https://youtu.be/eCy7RO1ctGQ",
-    "showcaseVideo": "https://youtu.be/lm1498Rfl0s"
-  },
-  {
-    "name": "Thinking Space 97%",
-    "id": "thinking-space-97",
-    "player": "Atomic",
-    "length": 96,
-    "version": 2.1,
-    "video": "https://youtu.be/qFKRAD8stcU",
-    "showcaseVideo": "https://youtu.be/rxcW9xgRZYI",
-    "date": "2019-02-11",
-    "submitter": "Relayne",
-    "levelID": 119544028,
-    "tags": [
-      "Level",
-      "Progress",
-      "Rated"
-    ]
-  },
-  {
-    "name": "Digital Descent 60hz",
-    "id": "digital-descent-60hz",
-    "player": "Jaeger",
-    "length": 137,
-    "version": 2.1,
-    "video": "https://www.youtube.com/watch?v=nV6fiTzM_OI",
-    "showcaseVideo": "https://www.youtube.com/watch?v=IJHKpwXSaV0",
-    "date": "2018-05-19",
-    "submitter": "Dave4681",
-    "levelID": 37456092,
+    "id": "sonic-wave-75hz-74",
+    "name": "Sonic Wave 75hz 74%",
+    "player": "Sonic80",
     "tags": [
       "Level",
       "Low Hertz",
+      "Progress",
       "Rated"
-    ]
-  },
-  {
-    "id": "crimson-planet-unnerfed-92",
-    "name": "Crimson Planet (Unnerfed) 92%",
-    "player": "Wooshi",
-    "tags": [
-      "Level"
     ],
-    "length": "67",
-    "version": "2.1",
-    "date": "2018-04-22",
-    "levelID": "80515897",
-    "video": "https://youtu.be/QYLfqDjBqlo",
-    "showcaseVideo": "https://youtu.be/GGOWzVmwtHA?si=JK0-TfZvdyiVGKCn"
+    "length": 89,
+    "version": 2.1,
+    "date": "2018-02-05",
+    "levelID": 26681070,
+    "video": "https://www.youtube.com/watch?v=QAD19pE0c1E",
+    "showcaseVideo": "https://youtu.be/iQowrO4trlk",
+    "submitter": "TTB18"
   },
   {
     "id": "plasma-pulse-finale-60hz-72",
@@ -740,7 +676,7 @@
     "showcaseVideo": "https://youtu.be/gRcK5Q0Dzys"
   },
   {
-    "id": "sonic-wave-75",
+    "id": "sonic-wave-75-copy",
     "name": "Sonic Wave 75%",
     "player": "Mefewe",
     "tags": [
