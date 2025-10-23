@@ -5479,6 +5479,21 @@
     ]
   },
   {
+    "name": "Angelicide (Xtra8nugz) 76-100%",
+    "id": "angelicide-xtra8nugz-76-100",
+    "player": "Xtra8nugz",
+    "date": "2025-10-22",
+    "length": 19,
+    "version": 2.2,
+    "showcaseVideo": "https://www.youtube.com/live/7sXz0-XR3zY?t=8086",
+    "video": "https://youtu.be/BRliFwd5jKs",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Angelicide (Kaza) 76-100%",
     "id": "angelicide-kaza-76-100",
     "player": "Kaza",
@@ -7561,6 +7576,7 @@
     "id": "disconnect",
     "player": "Elinore",
     "date": "2025-10-13",
+    "levelID": 127023313,
     "length": 176,
     "version": 2.2,
     "video": "https://youtu.be/HxHo-LzwSao",
@@ -7570,6 +7586,22 @@
       "Level",
       "Verified"
     ]
+  },
+  {
+    "name": "Lunatic Eyes",
+    "id": "lunatic-eyes",
+    "player": "DNM121",
+    "date": "2025-07-23",
+    "length": 86,
+    "version": 2.2,
+    "video": "https://youtu.be/0M1sMbchs68",
+    "showcaseVideo": "https://youtu.be/q3M4_gezvLc",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Verified"
+    ],
+    "levelID": 123417713
   },
   {
     "name": "riverlasting",
@@ -7588,6 +7620,22 @@
     ]
   },
   {
+    "name": "TrakineS",
+        "id": "trakines",
+        "player": "mariner",
+        "levelID": 125788781,
+        "date": "2025-09-09",
+        "length": 64,
+        "version": 2.2,
+        "submitter": "Exiled_Shade",
+        "video": "https://youtu.be/oKuoI-_JzKU",
+        "showcaseVideo": "https://youtu.be/0H-a8yQzi5A",
+        "tags": [
+            "Level",
+            "Verified"
+        ]
+    },
+    {
     "name": "Firework 1.1x 64%",
     "id": "firework-1-1x-64",
     "player": "Trick",
@@ -7610,8 +7658,9 @@
     "id": "britney-no-sclears",
     "player": "Scotchtape",
     "date": "2025-08-29",
-    "length": "79",
-    "version": "2.2",
+    "levelID": 125317359,
+    "length": 79,
+    "version": 2.2,
     "video": "https://youtu.be/ff_mQSXwjhU",
     "showcaseVideo": "https://youtu.be/UPZJHVYJyhw",
     "submitter": "kyle1saurus",
@@ -7652,22 +7701,6 @@
       "Level",
       "Progress"
     ]
-  },
-  {
-    "name": "Lunatic Eyes",
-    "id": "lunatic-eyes",
-    "player": "DNM121",
-    "date": "2025-07-23",
-    "length": 86,
-    "version": 2.2,
-    "video": "https://youtu.be/0M1sMbchs68",
-    "showcaseVideo": "https://youtu.be/q3M4_gezvLc",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Verified"
-    ],
-    "levelID": 123417713
   },
   {
     "name": "MIGRAINE 50%",
@@ -7863,22 +7896,6 @@
     ]
   },
   {
-    "name": "Femboy Friday",
-    "id": "femboy-friday",
-    "player": "Infinny",
-    "date": "2025-08-25",
-    "levelID": 86414534,
-    "length": 225,
-    "version": 2.2,
-    "video": "https://youtu.be/3RprZ2FeGdY",
-    "showcaseVideo": "https://youtu.be/sZK2RCOtBpc",
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Verified"
-    ]
-  },
-  {
     "name": "THE DEVIL (Buffed) 37%",
     "id": "the-devil-buffed-37",
     "player": "Jenath",
@@ -8044,6 +8061,23 @@
     ]
   },
   {
+    "name": "No Love",
+        "id": "no-love",
+        "player": "rinjello",
+        "levelID": 113587240,
+        "date": "2024-12-28",
+        "length": 300,
+        "version": 2.2,
+        "video": "https://youtu.be/DWsUvcu-3Lg",
+        "showcaseVideo": "https://youtu.be/hbsoTBl84xE",
+        "submitter": "kyle1saurus",
+        "tags": [
+            "Level",
+            "Verified",
+            "Tentative"
+        ]
+    },
+    {
     "name": "The Yangire",
     "id": "the-yangire",
     "player": "Dorami",
@@ -8772,6 +8806,22 @@
       "Level",
       "Verified",
       "Tentative"
+    ]
+  },
+  {
+    "name": "Femboy Friday",
+    "id": "femboy-friday",
+    "player": "Infinny",
+    "date": "2025-08-25",
+    "levelID": 86414534,
+    "length": 225,
+    "version": 2.2,
+    "video": "https://youtu.be/3RprZ2FeGdY",
+    "showcaseVideo": "https://youtu.be/sZK2RCOtBpc",
+    "submitter": "kyle1saurus",
+    "tags": [
+      "Level",
+      "Verified"
     ]
   },
   {
@@ -10532,6 +10582,7 @@
     ]
   }
 ]
+
 
 
 
