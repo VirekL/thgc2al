@@ -1169,6 +1169,25 @@
     "thumbnail": "https://tjcsucht.net/levelthumbs/75206202.png"
   },
   {
+    "name": "Sakupen Circles 144hz Mobile 70%",
+    "id": "sakupen-circles-144hz-mobile-70",
+    "player": "sydno",
+    "levelID": 76962930,
+    "date": "2025-10-22",
+    "length": 36,
+    "version": 2.2,
+    "video": "https://youtu.be/lmgDE10_ZyY",
+    "showcaseVideo": "https://youtu.be/b66_Oe4Xo1w",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Low Hertz",
+      "Mobile",
+      "Progress",
+      "Rated"
+    ]
+  },
+  {
     "name": "Sinister Silence 75hz",
     "id": "sinister-silence-75hz",
     "player": "wwdonut",
@@ -2707,6 +2726,22 @@
     "showcaseVideo": "https://youtu.be/CxdvSP7nLvI"
   },
   {
+    "name": "last stop 31%, 15%, 25%, 31%, 15%, 25% in a row",
+    "id": "last-stop-31-15-25-31-15-25-in-a-row",
+    "player": "aytch0008",
+    "date": "2025-10-22",
+    "length": 30,
+    "version": 2.1,
+    "levelID": 64815983,
+    "showcaseVideo": "https://www.dropbox.com/scl/fi/n5rsxv8g5eptsk7pxypju/Day-295.mp4?rlkey=633t477vfcqdwb35mjraigw70&st=jij4zb7u&dl=0",
+    "video": "https://youtu.be/FNRBXG2KC1U",
+    "submitter": "aytch0008",
+    "tags": [
+      "Challenge",
+      "Consistency"
+    ]
+  },
+  {
     "name": "vsc superbuff 3 deaths, 99.87 accuracy",
     "id": "vsc-superbuff-3-deaths-99-87-accuracy",
     "player": "JACKSONAMORE",
@@ -3181,25 +3216,6 @@
     ]
   },
   {
-    "name": "Sakupen Circles 144hz Mobile 67%",
-    "id": "sakupen-circles-144hz-mobile-67",
-    "player": "sydno",
-    "levelID": 76962930,
-    "date": "2025-10-18",
-    "length": 35,
-    "version": 2.2,
-    "video": "https://youtu.be/fFrVf3I-4_M",
-    "showcaseVideo": "https://youtu.be/b66_Oe4Xo1w",
-    "submitter": "tmtsps12",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile",
-      "Progress",
-      "Rated"
-    ]
-  },
-  {
     "name": "Yatagarasu 60hz Mobile",
     "id": "yatagarasu-60hz-mobile",
     "player": "Coopersuper",
@@ -3250,23 +3266,6 @@
     "tags": [
       "Challenge",
       "Verified"
-    ]
-  },
-  {
-    "name": "last stop 24%, 36% in a row",
-    "id": "last-stop-24-36-in-a-row",
-    "player": "aytch0008",
-    "date": "2025-08-22",
-    "length": 17,
-    "version": 2.1,
-    "levelID": 64815983,
-    "showcaseVideo": "https://youtu.be/jQKg2jn2W-0",
-    "video": "https://youtu.be/FNRBXG2KC1U",
-    "submitter": "aytch0008",
-    "tags": [
-      "Challenge",
-      "Consistency",
-      "Tentative"
     ]
   },
   {
@@ -10431,6 +10430,23 @@
     ]
   },
   {
+    "name": "Excelsus 82%",
+    "id": "excelsus-82",
+    "player": "NucGDStuff",
+    "length": 56,
+    "version": 2.2,
+    "video": "https://youtu.be/8zF5nPQ8Rog",
+    "showcaseVideo": "https://youtu.be/TfIU5ziu0aI",
+    "date": "2025-08-30",
+    "submitter": "kyle1saurus",
+    "levelID": null,
+    "thumbnail": null,
+    "tags": [
+      "Level",
+      "Progress"
+    ]
+  },
+  {
     "name": "Tidal Wave 1.2x 62-80%",
     "id": "tidal-wave-1-2x-62-80",
     "player": "Zoink",
@@ -10516,6 +10532,7 @@
     ]
   }
 ]
+
 
 
 
