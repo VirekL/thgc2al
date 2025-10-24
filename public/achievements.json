@@ -54,24 +54,6 @@
     "levelID": 119544028
   },
   {
-    "name": "Flamewall",
-    "id": "flamewall",
-    "player": "Cuatrocientos",
-    "video": "https://youtu.be/x4Io4zkWVRw",
-    "showcaseVideo": "https://youtu.be/eeTlZnCGP_k",
-    "tags": [
-      "Level",
-      "Verified",
-      "Rated"
-    ],
-    "date": "2025-09-21",
-    "length": 407,
-    "version": 2.2,
-    "submitter": "TYATYAPKA",
-    "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg",
-    "levelID": 126242564
-  },
-  {
     "name": "Amethyst",
     "id": "amethyst",
     "player": "wPopoff",
@@ -106,6 +88,24 @@
     "version": "2.2",
     "submitter": "Swift",
     "thumbnail": "https://tjcsucht.net/levelthumbs/102686349.png"
+  },
+  {
+    "name": "Flamewall",
+    "id": "flamewall",
+    "player": "Cuatrocientos",
+    "video": "https://youtu.be/x4Io4zkWVRw",
+    "showcaseVideo": "https://youtu.be/eeTlZnCGP_k",
+    "tags": [
+      "Level",
+      "Verified",
+      "Rated"
+    ],
+    "date": "2025-09-21",
+    "length": 407,
+    "version": 2.2,
+    "submitter": "TYATYAPKA",
+    "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg",
+    "levelID": 126242564
   },
   {
     "name": "KOCMOC UNLEASHED 19-91%",
