@@ -14,36 +14,6 @@
     ]
   },
   {
-    "name": "delightful climb 75-100%, 22-96%",
-    "id": "delightful-climb-75-100-22-96",
-    "player": "Aibyou",
-    "levelID": 115206404,
-    "tags": [
-      "Platformer",
-      "Consistency"
-    ],
-    "version": 2.2,
-    "date": "2025-08-01",
-    "showcaseVideo": "https://youtu.be/lGb1NB5Rg_A",
-    "video": "https://youtu.be/pxehjdXeQvo",
-    "submitter": "Aibyou"
-  },
-  {
-    "name": "delightful climb",
-    "id": "delightful-climb",
-    "player": "GToast",
-    "levelID": 115206404,
-    "tags": [
-      "Verified",
-      "Platformer"
-    ],
-    "version": 2.2,
-    "date": "2025-02-17",
-    "showcaseVideo": "https://youtu.be/lGb1NB5Rg_A",
-    "video": "https://youtu.be/Y5cpF51YwgY",
-    "submitter": "kyle1saurus"
-  },
-  {
     "name": "The Abyss (Deathless)",
     "id": "the-abyss-deathless",
     "player": "GToast",
