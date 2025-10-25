@@ -13,6 +13,23 @@
     ]
   },
   {
+	"name": "The Abyss (3rd Coin)",
+    "id": "the-abyss-3rd-coin",
+    "player": "mikoshii",
+    "levelID": 98163412,
+    "tags": [
+      "Platformer",
+      "Coin Route",
+      "Deathless",
+      "Rated"
+    ],
+    "version": 2.2,
+    "date": "2024-12-09",
+    "showcaseVideo": "https://youtu.be/RKP5NVBdunc",
+    "video": "https://youtu.be/Grw8DT3v8PA",
+    "submitter": "toolazytogetausername"
+  },
+  {
     "name": "delightful climb 75-100%, 22-96%",
     "id": "delightful-climb-75-100-22-96",
     "player": "Aibyou",
@@ -57,23 +74,6 @@
       "Platformer",
       "Rated"
     ]
-  },
-  {
-    "name": "The Abyss (3rd Coin)",
-    "id": "the-abyss-3rd-coin",
-    "player": "mikoshii",
-    "levelID": 98163412,
-    "tags": [
-      "Platformer",
-      "Coin Route",
-      "Deathless",
-      "Rated"
-    ],
-    "version": 2.2,
-    "date": "2024-12-09",
-    "showcaseVideo": "https://youtu.be/RKP5NVBdunc",
-    "video": "https://youtu.be/Grw8DT3v8PA",
-    "submitter": "toolazytogetausername"
   },
   {
     "name": "Diamonds For Dashers",
