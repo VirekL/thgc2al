@@ -15,6 +15,21 @@
     ]
   },
   {
+	"name": "Silent Silhouette",
+    "id": "silent-silhouette",
+    "player": "ROZE",
+    "levelID": 126822479,
+    "date": "2025-10-23",
+    "version": 2.2,
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/Lidju9Y3ZcE",
+    "showcaseVideo": "https://youtu.be/8T4HwJWkNcQ",
+    "tags": [
+      "Level",
+      "Verified"
+    ]
+  },
+  {
 	"name": "Make Paul Dance",
     "id": "make-paul-dance",
     "player": "AiriCloud",
