@@ -10571,7 +10571,7 @@
     "date": "2025-10-25",
     "length": 19,
     "version": 2.2,
-    "video": "https://www.youtube.com/live/8EZ_bmKDNsA?t=4682",
+    "video": "https://www.youtube.com/live/8EZ_bmKDNsA?t=7114",
     "showcaseVideo": "https://youtu.be/uZsilHbMc2s",
     "submitter": "Excryst",
     "tags": [
@@ -10579,23 +10579,6 @@
       "Progress",
       "CBF"
     ]
-  },
-  {
-    "name": "Rusted Retinas 50-100%",
-    "id": "rusted-retinas-50-100",
-    "player": "MyntiFresh",
-    "date": "2024-02-13",
-    "length": 42,
-    "version": 2.2,
-    "video": "https://youtu.be/T6O6xxI1vCY",
-    "showcaseVideo": "https://youtu.be/KmF8wZ-al3M",
-    "submitter": "MyntiFresh",
-    "tags": [
-      "Level",
-      "Progress",
-      "Tentative"
-    ],
-    "levelID": 120453309
   },
   {
     "name": "Rusted Retinas 50-100%",
@@ -10666,4 +10649,5 @@
   }
 
 ]
+
 
