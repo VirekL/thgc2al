@@ -82,7 +82,8 @@
     "levelID": 118798387,
     "tags": [
       "Verified",
-      "Platformer"
+      "Platformer",
+	  "Rated"
     ],
     "version": 2.2,
     "date": "2025-05-12",
@@ -372,7 +373,7 @@
   "name": "Exaltation (Deathless)",
   "id": "exaltation-deathless",
   "player": "Cucu",
-  "version": 2,
+  "version": 2.2,
   "video": "https://www.youtube.com/watch?v=jGRr3uuUMZY",
   "showcaseVideo": "https://youtu.be/fVUFC2dvMbg",
   "date": "2025-03-03",
@@ -388,7 +389,7 @@
   "name": "Crime And Punishment",
   "id": "crime-and-punishment",
   "player": "itzCyberCube",
-  "version": 2,
+  "version": 2.2,
   "video": "https://youtu.be/hy6bUSzVM_g",
   "showcaseVideo": "https://youtu.be/DZZl3IftwQQ",
   "date": "2025-08-31",
@@ -396,7 +397,8 @@
   "levelID": 125430986,
   "tags": [
     "Platformer",
-    "Verified"
+    "Verified",
+	"Rated"
   ]
   },
   {
@@ -451,7 +453,8 @@
     "levelID": 111338608,
     "tags": [
       "Verified",
-      "Platformer"
+      "Platformer",
+	  "Outdated Version"
     ],
     "version": 2.2,
     "date": "2025-02-25",
