@@ -3188,6 +3188,22 @@
     ]
   },
   {
+    "name": "Old Orochi 10-80%",
+    "id": "old-orochi-10-80",
+    "player": "SeptaGon7",
+    "date": "2025-10-25",
+    "length": 67,
+    "version": 2.2,
+    "video": "https://youtu.be/DJ8abAPFvz8",
+    "showcaseVideo": "https://youtu.be/kOjaffK5Rgo",
+    "submitter": "Exiled_shade",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
+  },
+  {
     "name": "Demotivation Dance",
     "id": "demotivation-dance",
     "player": "Cursed",
@@ -6426,23 +6442,6 @@
     ]
   },
   {
-    "name": "Operation Evolution",
-    "id": "operation_evolution",
-    "player": "cobrablitz",
-    "levelID": 114999625,
-    "date": "2025-02-10",
-    "length": 304,
-    "version": 2.2,
-    "submitter": "kyle1saurus",
-    "video": "https://youtu.be/WsVF-ayipvY",
-    "showcaseVideo": "https://youtu.be/lgoEemeOYb0",
-    "tags": [
-      "Level",
-      "Verified",
-      "Rated"
-    ]
-  },
-  {
     "name": "Sevvend Clubstep",
     "id": "sevvend-clubstep",
     "player": "Vorten",
@@ -7828,6 +7827,23 @@
     "tags": [
       "Level",
       "Consistency",
+      "Rated"
+    ]
+  },
+  {
+    "name": "Operation Evolution",
+    "id": "operation_evolution",
+    "player": "cobrablitz",
+    "levelID": 114999625,
+    "date": "2025-02-10",
+    "length": 304,
+    "version": 2.2,
+    "submitter": "kyle1saurus",
+    "video": "https://youtu.be/WsVF-ayipvY",
+    "showcaseVideo": "https://youtu.be/lgoEemeOYb0",
+    "tags": [
+      "Level",
+      "Verified",
       "Rated"
     ]
   },
@@ -9363,6 +9379,23 @@
     ]
   },
   {
+    "name": "Silent Circles (Starchman) 62-89%, 62-96%",
+    "id": "silent-circles-starchman-62-89-62-96",
+    "player": "Juls",
+    "levelID": null,
+    "date": "2025-10-25",
+    "length": 59,
+    "version": 2.2,
+    "video": "https://www.youtube.com/live/8EZ_bmKDNsA?t=4682",
+    "showcaseVideo": "https://youtu.be/uZsilHbMc2s",
+    "submitter": "Excryst",
+    "tags": [
+      "Level",
+      "Consistency",
+      "CBF"
+    ]
+  },
+  {
     "name": "Axinie 144hz Mobile 83%",
     "id": "axinie-144hz-mobile-83",
     "player": "Mateex",
@@ -10531,22 +10564,38 @@
     ]
   },
   {
-    "name": "Tidal Wave 1.2x 62-80%",
-    "id": "tidal-wave-1-2x-62-80",
-    "player": "Zoink",
-    "levelID": 86407629,
-    "date": "2025-04-14",
-    "length": 22,
+    "name": "Silent Circles (Starchman) 53-83%",
+    "id": "silent-circles-starchman-53-83",
+    "player": "Juls",
+    "levelID": null,
+    "date": "2025-10-25",
+    "length": 19,
     "version": 2.2,
-    "video": "https://youtu.be/2au6VIqVBPM&t=6680",
-    "showcaseVideo": "https://youtu.be/PFHlkdz9UqM",
-    "submitter": "jak",
+    "video": "https://www.youtube.com/live/8EZ_bmKDNsA?t=4682",
+    "showcaseVideo": "https://youtu.be/uZsilHbMc2s",
+    "submitter": "Excryst",
     "tags": [
       "Level",
-      "Speedhack",
       "Progress",
-      "Rated"
+      "CBF"
     ]
+  },
+  {
+    "name": "Rusted Retinas 50-100%",
+    "id": "rusted-retinas-50-100",
+    "player": "MyntiFresh",
+    "date": "2024-02-13",
+    "length": 42,
+    "version": 2.2,
+    "video": "https://youtu.be/T6O6xxI1vCY",
+    "showcaseVideo": "https://youtu.be/KmF8wZ-al3M",
+    "submitter": "MyntiFresh",
+    "tags": [
+      "Level",
+      "Progress",
+      "Tentative"
+    ],
+    "levelID": 120453309
   },
   {
     "name": "Rusted Retinas 50-100%",
@@ -10617,3 +10666,4 @@
   }
 
 ]
+
