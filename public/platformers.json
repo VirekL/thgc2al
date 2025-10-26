@@ -229,6 +229,21 @@
     "submitter": "toolazytogetausername"
   },
   {
+	"name": "glungus (Unnerfed)",
+    "id": "glungus-unnerfed",
+    "player": "dpoopoop",
+    "tags": [
+      "Verified",
+      "Platformer",
+      "Outdated Version"
+    ],
+    "version": 2.2,
+    "date": "2025-02-13",
+    "video": "https://www.youtube.com/watch?v=a9099BQ1Suk",
+    "showcaseVideo": "https://youtu.be/muYSrubZ1kk",
+    "submitter": "kyle1saurus"
+  },
+  {
     "name": "CONVOLUTION",
     "id": "convolution",
     "player": "GToast",
@@ -287,21 +302,6 @@
     ],
     "version": 2.2,
     "date": "2025-08-15",
-    "video": "https://www.youtube.com/watch?v=a9099BQ1Suk",
-    "showcaseVideo": "https://youtu.be/muYSrubZ1kk",
-    "submitter": "kyle1saurus"
-  },
-  {
-    "name": "glungus (Unnerfed)",
-    "id": "glungus-unnerfed",
-    "player": "dpoopoop",
-    "tags": [
-      "Verified",
-      "Platformer",
-      "Outdated Version"
-    ],
-    "version": 2.2,
-    "date": "2025-02-13",
     "video": "https://www.youtube.com/watch?v=a9099BQ1Suk",
     "showcaseVideo": "https://youtu.be/muYSrubZ1kk",
     "submitter": "kyle1saurus"
