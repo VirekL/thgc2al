@@ -2878,6 +2878,21 @@
     "thumbnail": "https://tjcsucht.net/levelthumbs/85140035.png"
   },
   {
+    "name": "3sh on Pointercrate 93%",
+    "id": "3sh-on-pointercrate-93",
+    "player": "VovanPo",
+    "date": "2025-10-16",
+    "length": 18,
+    "version": 2.2,
+    "submitter": "Anceps",
+    "video": "https://youtu.be/eLQK7QfaU1g",
+    "showcaseVideo": "https://youtu.be/r0UUlgjrF2w",
+    "tags": [
+      "Challenge",
+      "Progress"
+    ]
+  },
+  {
     "name": "VSC Madness",
     "id": "vsc-madness",
     "player": "-",
@@ -5722,21 +5737,6 @@
       "Mobile",
       "Progress",
       "Rated"
-    ]
-  },
-  {
-    "name": "3sh on Pointercrate 79%",
-    "id": "3sh-on-pointercrate-79",
-    "player": "TahaBht_",
-    "date": "2024-04-30",
-    "length": 15,
-    "version": 2.2,
-    "submitter": "Anceps",
-    "video": "https://youtu.be/dlle6sylsE8",
-    "showcaseVideo": "https://youtu.be/r0UUlgjrF2w",
-    "tags": [
-      "Challenge",
-      "Progress"
     ]
   },
   {
@@ -10649,5 +10649,6 @@
   }
 
 ]
+
 
 
