@@ -1100,6 +1100,23 @@
     ]
   },
   {
+    "name": "Determination Dance 144hz Mobile",
+    "id": "determination-dance-144hz-mobile",
+    "player": "sydno",
+    "levelID": 74015661,
+    "date": "2025-10-28",
+    "length": 24,
+    "version": 2.2,
+    "submitter": "TYATYAPKA",
+    "video": "https://youtu.be/oixgxM8U508",
+    "showcaseVideo": "https://youtu.be/gHIt5LX6JrM",
+    "tags": [
+      "Challenge",
+      "Low Hertz",
+      "Mobile"
+    ]
+  },
+  {
     "name": "Aquamarine",
     "id": "aquamarine",
     "player": "seels",
@@ -2160,6 +2177,21 @@
     ]
   },
   {
+    "name": "3sh on Pointercrate 76%, 69%",
+    "id": "3sh-on-pointercrate-76-69",
+    "player": "TahaBht_",
+    "date": "2025-10-23",
+    "length": 45,
+    "version": 2.2,
+    "submitter": "nensa",
+    "video": "https://youtu.be/CweiVNgo9IY",
+    "showcaseVideo": "https://youtu.be/r0UUlgjrF2w",
+    "tags": [
+      "Challenge",
+      "Consistency"
+    ]
+  },
+  {
     "name": "surface 62%",
     "id": "surface-62",
     "player": "zXdasfsa",
@@ -2884,7 +2916,7 @@
     "date": "2025-10-16",
     "length": 18,
     "version": 2.2,
-    "submitter": "Anceps",
+    "submitter": "Emp",
     "video": "https://youtu.be/eLQK7QfaU1g",
     "showcaseVideo": "https://youtu.be/r0UUlgjrF2w",
     "tags": [
@@ -5833,6 +5865,21 @@
     "tags": [
       "Challenge",
       "Verified"
+    ]
+  },
+  {
+    "name": "ANTARCTIC LIGHTS 63%",
+    "id": "antarctic-lights-63",
+    "player": "Axinity",
+    "length": 50,
+    "version": 2.2,
+    "video": "https://t.co/OjeXFZefJU",
+    "date": "2025-10-28",
+    "showcaseVideo": "https://youtu.be/oZfKkZ36L9Q",
+    "submitter": "Exiled_shade",
+    "tags": [
+      "Level",
+      "Progress"
     ]
   },
   {
@@ -9125,21 +9172,6 @@
     ]
   },
   {
-    "name": "ANTARCTIC LIGHTS 51%",
-    "id": "antarctic-lights-51",
-    "player": "Axinity",
-    "length": 37,
-    "version": 2.2,
-    "video": "https://youtu.be/3BvEZmCKcFo",
-    "date": "2025-10-05",
-    "showcaseVideo": "https://youtu.be/oZfKkZ36L9Q",
-    "submitter": "Exiled_shade",
-    "tags": [
-      "Level",
-      "Progress"
-    ]
-  },
-  {
     "name": "Sonic Wave Infinity 480hz Mobile",
     "id": "sonic-wave-infinity-480hz-mobile",
     "player": "Rotys",
@@ -10649,6 +10681,7 @@
   }
 
 ]
+
 
 
 
