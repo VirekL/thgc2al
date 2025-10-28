@@ -431,13 +431,14 @@
     "submitter": "kyle1saurus"
   },
   {
-    "name": "Closed Square X",
+  "name": "Closed Square X",
   "id": "closed-square-x",
   "player": "zXdasfsa",
-  "version": 2,
+  "version": 2.2,
   "video": "https://youtu.be/mx_VDrBApiY",
   "date": "2024-07-09",
   "levelID": 107457912,
+  "submitter": "kyle1saurus",
   "tags": [
     "Platformer",
     "Verified"
@@ -585,7 +586,7 @@
   "name": "Zenith Of The Sky (3rd Coin)",
   "id": "zenith-of-the-sky-3rd-coin",
   "player": "Revnotruv",
-  "version": 2,
+  "version": 2.2,
   "video": "https://www.youtube.com/watch?v=wFsS2_qqsBk",
   "showcaseVideo": "https://youtu.be/13WeKRquFWU",
   "date": "2025-09-21",
@@ -710,7 +711,7 @@
     "name": "Feverest Dream (3rd Coin)",
   "id": "feverest-dream-3rd-coin",
   "player": "Cucu",
-  "version": 2,
+  "version": 2.2,
   "video": "https://www.youtube.com/watch?v=a8kSgfbnokU&t=337",
   "showcaseVideo": "https://youtu.be/TX_QsZaiNPo",
   "date": "2024-07-17",
@@ -742,7 +743,7 @@
   "name": "Physics Issue Plus (Coin)",
   "id": "physics-issue-plus-coin",
   "player": "Abby135",
-  "version": 2,
+  "version": 2.2,
   "video": "https://www.youtube.com/watch?v=gLN56ckkG9c",
   "showcaseVideo": "https://youtu.be/B-2b8G6wEm0",
   "date": "2024-09-16",
@@ -882,7 +883,7 @@
     "submitter": "kyle1saurus"
   },
   {
-    "name": "Lava Trials II",
+  "name": "Lava Trials II",
   "id": "lava-trials-ii",
   "player": "Thearmyants",
   "version": null,
@@ -986,6 +987,7 @@
     "version": 2.2,
     "date": "2025-01-20",
     "video": "https://www.youtube.com/watch?v=7rm9nLXt_wQ",
+	"showcaseVideo": "https://youtu.be/DT-9rh4mvAs",
     "submitter": "kyle1saurus"
   },
   {
@@ -1000,6 +1002,7 @@
     "version": 2.2,
     "date": "2025-09-16",
     "video": "https://www.youtube.com/watch?v=X9lfKKl-WE8",
+	"showcaseVideo": "https://youtu.be/YdJVesuWD3w",
     "submitter": "kyle1saurus"
   },
   {
@@ -1014,6 +1017,7 @@
     "version": 2.2,
     "date": "2024-11-02",
     "video": "https://www.youtube.com/watch?v=cFTUGNtkAx8",
+	"showcaseVideo": "https://youtu.be/dFbuMG9yMkA",
     "submitter": "kyle1saurus"
   },
   {
