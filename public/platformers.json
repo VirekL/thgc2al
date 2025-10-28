@@ -139,7 +139,7 @@
     ]
   },
   {
-    "name": "Sedulous",
+  "name": "Sedulous",
   "id": "sedulous",
   "player": "mikoshii",
   "version": null,
@@ -180,6 +180,7 @@
     "version": 2.2,
     "date": "2025-06-28",
     "video": "https://www.youtube.com/watch?v=j0BVe1uNAxE",
+	"showcaseVideo": "https://youtu.be/vKIgbiHmZDY",
     "submitter": "kyle1saurus"
   },
   {
@@ -284,6 +285,7 @@
     "version": 2.2,
     "date": "2024-08-28",
     "video": "https://www.youtube.com/watch?v=34MFHdGgYjk",
+	"showcaseVideo": "https://youtu.be/diPpLoXvJtM",
     "submitter": "kyle1saurus"
   },
   {
