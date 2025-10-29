@@ -54,6 +54,24 @@
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/grief-unbuffed1.avif"
   },
   {
+    "name": "KOCMOC UNLEASHED 19-91%",
+    "id": "kocmoc-unleashed-19-91",
+    "player": "Arshadow",
+    "date": "2025-08-19",
+    "length": 50,
+    "version": 2.2,
+    "video": "https://youtu.be/9p8gPt7704c",
+    "showcaseVideo": "https://youtu.be/bYswI_NVbQ4",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/kocmoc-unleashed1.webp",
+    "submitter": "TYATYAPKA",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF",
+      "Tentative"
+    ]
+  },
+  {
     "name": "GRIEF 25-98%",
     "id": "grief-25-98",
     "player": "Doggie",
@@ -144,24 +162,6 @@
     "levelID": 126242564
   },
   {
-    "name": "KOCMOC UNLEASHED 19-91%",
-    "id": "kocmoc-unleashed-19-91",
-    "player": "Arshadow",
-    "date": "2025-08-19",
-    "length": 50,
-    "version": 2.2,
-    "video": "https://youtu.be/9p8gPt7704c",
-    "showcaseVideo": "https://youtu.be/bYswI_NVbQ4",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/kocmoc-unleashed1.webp",
-    "submitter": "TYATYAPKA",
-    "tags": [
-      "Level",
-      "Progress",
-      "CBF",
-      "Tentative"
-    ]
-  },
-  {
     "name": "GRIEF (Old) 25-100%",
     "id": "grief-old-25-100",
     "player": "Doggie",
@@ -196,6 +196,23 @@
     "length": 116,
     "version": 2.2,
     "thumbnail": "https://tjcsucht.net/levelthumbs/103524537.png"
+  },
+  {
+    "name": "KOCMOC UNLEASHED 14-78%",
+    "id": "kocmoc-unleashed-14-78",
+    "player": "Arshadow",
+    "date": "2025-05-09",
+    "length": 38,
+    "version": 2.2,
+    "video": "https://youtu.be/GFzBnEWr8ZM",
+    "showcaseVideo": "https://youtu.be/bYswI_NVbQ4",
+    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/kocmoc-unleashed1.webp",
+    "submitter": "Exiled_Shade",
+    "tags": [
+      "Level",
+      "Progress",
+      "CBF"
+    ]
   },
   {
     "name": "GRIEF madness 85%",
@@ -436,23 +453,6 @@
     "thumbnail": "https://i.ytimg.com/vi/i8TGgQNAzDg/maxresdefault.jpg"
   },
   {
-    "name": "KOCMOC UNLEASHED 14-78%",
-    "id": "kocmoc-unleashed-14-78",
-    "player": "Arshadow",
-    "date": "2025-05-09",
-    "length": 38,
-    "version": 2.2,
-    "video": "https://youtu.be/GFzBnEWr8ZM",
-    "showcaseVideo": "https://youtu.be/bYswI_NVbQ4",
-    "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/kocmoc-unleashed1.webp",
-    "submitter": "Exiled_Shade",
-    "tags": [
-      "Level",
-      "Progress",
-      "CBF"
-    ]
-  },
-  {
     "name": "Anathema 156%",
     "id": "anathema-156",
     "player": "Netermind",
@@ -645,7 +645,7 @@
     "video": "https://youtu.be/0tFBzVMAORQ",
     "showcaseVideo": "https://youtu.be/J73lxPI-9dI",
     "submitter": "TYATYAPKA",
-   "tags": [
+    "tags": [
       "Level",
       "Progress"
     ]
@@ -10715,14 +10715,4 @@
       "Rated"
     ]
   }
-
 ]
-
-
-
-
-
-
-
-
-
