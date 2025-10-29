@@ -1,7 +1,7 @@
 [
   {
-    "name": "Flamewall 73%, 100% in a row",
-    "id": "flamewall-73-100-in-a-row",
+    "name": "Flamewall 73%, 100%",
+    "id": "flamewall-73-100",
     "player": "Cuatrocientos",
     "video": "https://youtu.be/18ixmjwoG6Q",
     "showcaseVideo": "https://youtu.be/eeTlZnCGP_k",
@@ -16,6 +16,24 @@
     "submitter": "TYATYAPKA",
     "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg",
     "levelID": 126242564
+  },
+  {
+    "name": "GRIEF 79%",
+    "id": "grief-79",
+    "player": "Doggie",
+    "video": "https://www.youtube.com/live/RInlxRwyjI4?t=7756",
+    "showcaseVideo": "https://youtu.be/1GolW8jKK7k",
+    "tags": [
+      "Level",
+      "Progress",
+      "2P",
+      "CBF"
+    ],
+    "date": "2025-10-29",
+    "length": 133,
+    "version": 2.2,
+    "submitter": "TTB18",
+    "thumbnail": "https://tjcsucht.net/levelthumbs/102686349.png"
   },
   {
     "name": "GRIEF (Old) 56-100%, 67% in a row",
@@ -34,24 +52,6 @@
     "version": 2.2,
     "submitter": "TYATYAPKA",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/grief-unbuffed1.avif"
-  },
-  {
-    "name": "GRIEF 78%",
-    "id": "grief-78",
-    "player": "Doggie",
-    "video": "https://www.youtube.com/live/k4P0bXO0fTc?t=5244",
-    "showcaseVideo": "https://youtu.be/1GolW8jKK7k",
-    "tags": [
-      "Level",
-      "Progress",
-      "2P",
-      "CBF"
-    ],
-    "date": "2025-07-04",
-    "length": 132,
-    "version": 2.2,
-    "submitter": "Excryst",
-    "thumbnail": "https://tjcsucht.net/levelthumbs/102686349.png"
   },
   {
     "name": "GRIEF 25-98%",
@@ -10717,6 +10717,7 @@
   }
 
 ]
+
 
 
 
