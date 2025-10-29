@@ -2910,18 +2910,18 @@
     "thumbnail": "https://tjcsucht.net/levelthumbs/85140035.png"
   },
   {
-    "name": "3sh on Pointercrate 93%",
-    "id": "3sh-on-pointercrate-93",
+    "name": "3sh on Pointercrate",
+    "id": "3sh-on-pointercrate",
     "player": "VovanPo",
     "date": "2025-10-16",
-    "length": 18,
+    "length": 21,
     "version": 2.2,
-    "submitter": "Emp",
-    "video": "https://youtu.be/eLQK7QfaU1g",
+    "submitter": "VovanPo",
+    "video": "https://youtu.be/oY-rlZxhLUM",
     "showcaseVideo": "https://youtu.be/r0UUlgjrF2w",
     "tags": [
       "Challenge",
-      "Progress"
+      "Verified"
     ]
   },
   {
@@ -5790,7 +5790,7 @@
     "name": "3SH is Dead is Dead 84%",
     "id": "3sh-is-dead-is-dead-84",
     "player": "48exa",
-    "levelID": 93324060,
+    "levelID": 126940854,
     "date": "2023-02-03",
     "length": 15,
     "version": 2.1,
@@ -8398,23 +8398,6 @@
     "showcaseVideo": "https://youtu.be/AauwACwyVBo"
   },
   {
-    "name": "Time Lapse 144hz Mobile",
-    "id": "time-lapse-144hz-mobile",
-    "player": "Mateex",
-    "length": 64,
-    "version": 2.2,
-    "video": "https://youtu.be/ns2RJoy4MpE",
-    "date": "2025-10-14",
-    "showcaseVideo": "https://youtu.be/SGlmK7YVLGY",
-    "levelID": 97705490,
-    "submitter": "kyle1saurus",
-    "tags": [
-      "Level",
-      "Low Hertz",
-      "Mobile"
-    ]
-  },
-  {
     "name": "Firework (Pre-Balance) 54%",
     "id": "firework-pre-balance-54",
     "player": "Trick",
@@ -10696,6 +10679,7 @@
   }
 
 ]
+
 
 
 
