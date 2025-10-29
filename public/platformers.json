@@ -509,6 +509,22 @@
     "submitter": "kyle1saurus"
   },
   {
+  "name": "Magadan Grotto X",
+  "id": "magadan-grotto-x",
+  "player": "mikoshii",
+  "length": null,
+  "version": 2.2,
+  "video": "https://youtu.be/tL4wdeAn9T4",
+  "showcaseVideo": "https://youtu.be/w98qlXWxtm4",
+  "date": "2025-08-03",
+  "submitter": "toolazytogetausername",
+  "levelID": 99536415,
+  "tags": [
+    "Platformer",
+    "Verified"
+  ]
+	},
+	{
     "name": "vortex",
     "id": "vortex",
     "player": "Dxshing",
@@ -885,22 +901,6 @@
     "submitter": "kyle1saurus"
   },
   {
-  "name": "Lava Trials II",
-  "id": "lava-trials-ii",
-  "player": "Thearmyants",
-  "version": null,
-  "video": "https://www.youtube.com/watch?v=nas9pK8iOBY",
-  "showcaseVideo": "https://youtu.be/E6WUAzBTGgM",
-  "date": "2025-10-05",
-  "submitter": "toolazytogetausername",
-  "levelID": 120722125,
-  "tags": [
-    "Platformer",
-    "Verified",
-    "Rated"
-  ]
-  },
-	{
     "name": "Super Temu Guy",
     "id": "super-temu-guy",
     "player": "panap",
@@ -1023,6 +1023,22 @@
     "submitter": "kyle1saurus"
   },
   {
+  "name": "Lava Trials II",
+  "id": "lava-trials-ii",
+  "player": "Thearmyants",
+  "version": 2.2,
+  "video": "https://www.youtube.com/watch?v=nas9pK8iOBY",
+  "showcaseVideo": "https://youtu.be/E6WUAzBTGgM",
+  "date": "2025-10-05",
+  "submitter": "toolazytogetausername",
+  "levelID": 120722125,
+  "tags": [
+    "Platformer",
+    "Verified",
+    "Rated"
+  ]
+  },
+	{
     "name": "Dead Of Night",
     "id": "dead-of-night",
     "player": "GD Iris",
@@ -1039,10 +1055,10 @@
     "submitter": "kyle1saurus"
   },
   {
-    "name": "ungafos jp practice",
+  "name": "ungafos jp practice",
   "id": "ungafos-jp-practice",
   "player": "ungafo",
-  "version": 2,
+  "version": 2.2,
   "video": "https://youtu.be/Aj11kIg50YE",
   "date": "2025-10-11",
   "submitter": "kyle1saurus",
