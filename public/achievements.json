@@ -18,8 +18,8 @@
     "levelID": 126242564
   },
   {
-    "name": "GRIEF 56-100%, 67% in a row",
-    "id": "grief-56-100-67-in-a-row",
+    "name": "GRIEF (Old) 56-100%, 67% in a row",
+    "id": "grief-old-56-100-67-in-a-row",
     "player": "Doggie",
     "video": "https://youtu.be/aqg-2kThaSc",
     "showcaseVideo": "https://youtu.be/1GolW8jKK7k",
@@ -34,6 +34,42 @@
     "version": 2.2,
     "submitter": "TYATYAPKA",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/grief-unbuffed1.avif"
+  },
+  {
+    "name": "GRIEF 78%",
+    "id": "grief-78",
+    "player": "Doggie",
+    "video": "https://www.youtube.com/live/k4P0bXO0fTc?t=5244",
+    "showcaseVideo": "https://youtu.be/1GolW8jKK7k",
+    "tags": [
+      "Level",
+      "Progress",
+      "2P",
+      "CBF"
+    ],
+    "date": "2025-07-04",
+    "length": 132,
+    "version": 2.2,
+    "submitter": "Excryst",
+    "thumbnail": "https://tjcsucht.net/levelthumbs/102686349.png"
+  },
+  {
+    "name": "GRIEF 25-98%",
+    "id": "grief-25-98",
+    "player": "Doggie",
+    "video": "https://www.youtube.com/watch?v=RInlxRwyjI4&t=2152s",
+    "showcaseVideo": "https://youtu.be/1GolW8jKK7k",
+    "tags": [
+      "Level",
+      "Progress",
+      "2P",
+      "CBF"
+    ],
+    "date": "2025-10-29",
+    "length": 115,
+    "version": 2.2,
+    "submitter": "CoolSchnoodle",
+    "thumbnail": "https://tjcsucht.net/levelthumbs/102303428.png"
   },
   {
     "name": "Thinking Space II",
@@ -72,8 +108,8 @@
     "levelID": 119550490
   },
   {
-    "name": "GRIEF 80%",
-    "id": "grief-80",
+    "name": "GRIEF (Old) 80%",
+    "id": "grief-old-80",
     "player": "Doggie",
     "video": "https://youtu.be/5gx07ZNiuJY",
     "showcaseVideo": "https://youtu.be/1GolW8jKK7k",
@@ -84,8 +120,8 @@
       "CBF"
     ],
     "date": "2024-11-24",
-    "length": "134",
-    "version": "2.2",
+    "length": 134,
+    "version": 2.2,
     "submitter": "Swift",
     "thumbnail": "https://tjcsucht.net/levelthumbs/102686349.png"
   },
@@ -126,8 +162,8 @@
     ]
   },
   {
-    "name": "GRIEF 25-100%",
-    "id": "grief-25-100",
+    "name": "GRIEF (Old) 25-100%",
+    "id": "grief-old-25-100",
     "player": "Doggie",
     "video": "https://youtu.be/JZ6rLQoP7Y0",
     "showcaseVideo": "https://youtu.be/1GolW8jKK7k",
@@ -144,8 +180,8 @@
     "thumbnail": "https://tjcsucht.net/levelthumbs/102303428.png"
   },
   {
-    "name": "GRIEF 17-92%",
-    "id": "grief-17-92",
+    "name": "GRIEF (Old) 17-92%",
+    "id": "grief-old-17-92",
     "player": "Doggie",
     "video": "https://youtu.be/ssE2G3-y5dE",
     "showcaseVideo": "https://youtu.be/1GolW8jKK7k",
@@ -157,8 +193,8 @@
     ],
     "submitter": "Scarlett",
     "date": "2025-01-19",
-    "length": "116",
-    "version": "2.2",
+    "length": 116,
+    "version": 2.2,
     "thumbnail": "https://tjcsucht.net/levelthumbs/103524537.png"
   },
   {
@@ -173,8 +209,8 @@
       "CBF"
     ],
     "date": "2024-11-01",
-    "length": "138",
-    "version": "2.2",
+    "length": 138,
+    "version": 2.2,
     "submitter": "kyle1saurus",
     "thumbnail": "https://raw.githubusercontent.com/AncepsGD/the-hardest-achievements-list/refs/heads/main/thumbnails/grief-unbuffed2.avif"
   },
@@ -190,10 +226,10 @@
       "Rated"
     ],
     "submitter": "Anceps",
-    "levelID": "27690100",
+    "levelID": 27690100,
     "date": "2024-04-27",
-    "length": "210",
-    "version": "2.1"
+    "length": 210,
+    "version": 2.1
   },
   {
     "name": "Acheron 60hz 17-67%",
@@ -10679,6 +10715,7 @@
   }
 
 ]
+
 
 
 
