@@ -24,6 +24,7 @@ function SidebarInner() {
 const sources = [
   '/achievements.json',
   '/legacy.json',
+  '/pending.json',
   '/platformers.json',
   '/platformertimeline.json',
   '/timeline.json',
@@ -43,12 +44,9 @@ const handleRandomClick = useCallback(
       );
 
       const all = results.flat();
+      if (all.length === 0) return;
 
-      const poolIndex = Math.floor(Math.random() * results.length);
-      const chosenPool = results[poolIndex];
-      if (!chosenPool || chosenPool.length === 0) return;
-      const random = chosenPool[Math.floor(Math.random() * chosenPool.length)];
-
+      const random = all[Math.floor(Math.random() * all.length)];
       router.push(`/achievement/${random.id}`);
     } catch (err) {
       console.error('Random selection failed', err);
