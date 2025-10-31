@@ -166,11 +166,11 @@ const AchievementCard = memo(function AchievementCard({ achievement, devMode, us
           style={{ cursor: 'pointer' }}
         >
           <div className="rank-date-container">
-            {!usePlatformers && (
-              <div className="achievement-length">
-                {achievement.length ? `${Math.floor(achievement.length / 60)}:${(achievement.length % 60).toString().padStart(2, '0')}` : 'N/A'}
-              </div>
-            )}
+              {!usePlatformers && (
+                <div className="achievement-length">
+                  {achievement.length ? `${Math.floor(achievement.length / 60)}:${(achievement.length % 60).toString().padStart(2, '0')}` : 'N/A'}
+                </div>
+              )}
             <div className="achievement-date">
               {achievement.date ? formatDate(achievement.date, dateFormat) : 'N/A'}
             </div>
@@ -1410,7 +1410,7 @@ export default function List() {
                     >🗑️</button>
                   </div>
                 )}
-                <div style={{
+                  <div style={{
                   opacity: hoveredIdx === i ? 0.3 : 1,
                   transition: 'opacity 0.2s',
                   position: 'relative',
