@@ -142,7 +142,7 @@ function formatDate(date, dateFormat) {
   return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
-const AchievementCard = memo(function AchievementCard({ achievement, devMode, usePlatformers }) {
+const AchievementCard = memo(function AchievementCard({ achievement, devMode, showLength }) {
   const { dateFormat } = useDateFormat();
   const handleClick = e => {
     if (devMode) {
@@ -166,11 +166,11 @@ const AchievementCard = memo(function AchievementCard({ achievement, devMode, us
           style={{ cursor: 'pointer' }}
         >
           <div className="rank-date-container">
-              {!usePlatformers && (
+              {showLength ? (
                 <div className="achievement-length">
                   {achievement.length ? `${Math.floor(achievement.length / 60)}:${(achievement.length % 60).toString().padStart(2, '0')}` : 'N/A'}
                 </div>
-              )}
+              ) : null}
             <div className="achievement-date">
               {achievement.date ? formatDate(achievement.date, dateFormat) : 'N/A'}
             </div>
@@ -194,7 +194,7 @@ const AchievementCard = memo(function AchievementCard({ achievement, devMode, us
       </a>
     </Link>
   );
-}, (prev, next) => prev.achievement === next.achievement && prev.devMode === next.devMode && prev.usePlatformers === next.usePlatformers);
+}, (prev, next) => prev.achievement === next.achievement && prev.devMode === next.devMode && prev.showLength === next.showLength);
 
 function useDebouncedValue(value, delay) {
   const [debounced, setDebounced] = useState(value);
@@ -1410,13 +1410,13 @@ export default function List() {
                     >🗑️</button>
                   </div>
                 )}
-                  <div style={{
+                <div style={{
                   opacity: hoveredIdx === i ? 0.3 : 1,
                   transition: 'opacity 0.2s',
                   position: 'relative',
                   zIndex: 1
                 }} className={highlightedIdx === i ? 'search-highlight' : ''}>
-                  <AchievementCard achievement={a} devMode={devMode} usePlatformers={usePlatformers} />
+                  <AchievementCard achievement={a} devMode={devMode} showLength={!usePlatformers} />
                 </div>
               </div>
             ))
@@ -1453,7 +1453,7 @@ export default function List() {
                   const isDup = duplicateThumbKeys.has((thumb || '').trim());
                   return (
                     <div data-index={index} style={itemStyle} key={a.id || index} className={`${isDup ? 'duplicate-thumb-item' : ''} ${highlightedIdx === index ? 'search-highlight' : ''}`}>
-                      <AchievementCard achievement={a} devMode={devMode} usePlatformers={usePlatformers} />
+                      <AchievementCard achievement={a} devMode={devMode} showLength={!usePlatformers} />
                     </div>
                   );
                 }}
