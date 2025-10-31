@@ -4,7 +4,7 @@ import { VariableSizeList as ListWindow } from 'react-window';
 
 const AVAILABLE_TAGS = [
   "Level", "Challenge", "Platformer", "Verified", "Deathless", "Coin Route", "Low Hertz", "Mobile", "Speedhack",
-  "Noclip", "Miscellaneous", "Progress", "Consistency",
+  "Noclip", "Miscellaneous", "Progress", "Consistency", "Speedrun",
   "2P", "CBF", "Rated", "Formerly Rated", "Outdated Version", "Tentative"
 ];
 import Link from 'next/link';
