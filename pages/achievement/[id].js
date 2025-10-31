@@ -14,39 +14,18 @@ export async function getStaticPaths() {
   const platformersPath = path.join(process.cwd(), 'public', 'platformers.json');
   const platformerTimelinePath = path.join(process.cwd(), 'public', 'platformertimeline.json');
   const pendingPath = path.join(process.cwd(), 'public', 'pending.json');
-  let achievements = [];
-  let timeline = [];
-  let platformers = [];
-  let platformerTimeline = [];
-  let pending = [];
+  const legacyPath = path.join(process.cwd(), 'public', 'legacy.json'); // added
 
-  try {
-    const achievementsData = fs.readFileSync(achievementsPath, 'utf8');
-    achievements = JSON.parse(achievementsData);
-  } catch (e) {}
+  let achievements = [], timeline = [], platformers = [], platformerTimeline = [], pending = [], legacy = [];
 
-  try {
-    const timelineData = fs.readFileSync(timelinePath, 'utf8');
-    timeline = JSON.parse(timelineData);
-  } catch (e) {}
+  try { achievements = JSON.parse(fs.readFileSync(achievementsPath, 'utf8')); } catch {}
+  try { timeline = JSON.parse(fs.readFileSync(timelinePath, 'utf8')); } catch {}
+  try { platformers = JSON.parse(fs.readFileSync(platformersPath, 'utf8')); } catch {}
+  try { platformerTimeline = JSON.parse(fs.readFileSync(platformerTimelinePath, 'utf8')); } catch {}
+  try { pending = JSON.parse(fs.readFileSync(pendingPath, 'utf8')); } catch {}
+  try { legacy = JSON.parse(fs.readFileSync(legacyPath, 'utf8')); } catch {} // added
 
-  try {
-    const platformersData = fs.readFileSync(platformersPath, 'utf8');
-    platformers = JSON.parse(platformersData);
-  } catch (e) {}
-
-  try {
-    const platformerTimelineData = fs.readFileSync(platformerTimelinePath, 'utf8');
-    platformerTimeline = JSON.parse(platformerTimelineData);
-  } catch (e) {}
-
-  try {
-    const pendingData = fs.readFileSync(pendingPath, 'utf8');
-    pending = JSON.parse(pendingData);
-  } catch (e) {}
-
-  const combinedData = [...achievements, ...timeline, ...platformers, ...platformerTimeline, ...pending];
-
+  const combinedData = [...achievements, ...timeline, ...platformers, ...platformerTimeline, ...pending, ...legacy];
   const paths = combinedData
     .filter(a => a && a.id && a.name)
     .map(a => ({ params: { id: a.id.toString() } }));
@@ -60,47 +39,27 @@ export async function getStaticProps({ params }) {
   const platformersPath = path.join(process.cwd(), 'public', 'platformers.json');
   const platformerTimelinePath = path.join(process.cwd(), 'public', 'platformertimeline.json');
   const pendingPath = path.join(process.cwd(), 'public', 'pending.json');
-  let achievements = [];
-  let timeline = [];
-  let platformers = [];
-  let platformerTimeline = [];
-  let pending = [];
+  const legacyPath = path.join(process.cwd(), 'public', 'legacy.json'); // added
 
-  try {
-    const achievementsData = fs.readFileSync(achievementsPath, 'utf8');
-    achievements = JSON.parse(achievementsData);
-  } catch (e) {}
+  let achievements = [], timeline = [], platformers = [], platformerTimeline = [], pending = [], legacy = [];
 
-  try {
-    const timelineData = fs.readFileSync(timelinePath, 'utf8');
-    timeline = JSON.parse(timelineData);
-  } catch (e) {}
+  try { achievements = JSON.parse(fs.readFileSync(achievementsPath, 'utf8')); } catch {}
+  try { timeline = JSON.parse(fs.readFileSync(timelinePath, 'utf8')); } catch {}
+  try { platformers = JSON.parse(fs.readFileSync(platformersPath, 'utf8')); } catch {}
+  try { platformerTimeline = JSON.parse(fs.readFileSync(platformerTimelinePath, 'utf8')); } catch {}
+  try { pending = JSON.parse(fs.readFileSync(pendingPath, 'utf8')); } catch {}
+  try { legacy = JSON.parse(fs.readFileSync(legacyPath, 'utf8')); } catch {} // added
 
-  try {
-    const platformersData = fs.readFileSync(platformersPath, 'utf8');
-    platformers = JSON.parse(platformersData);
-  } catch (e) {}
-
-  try {
-    const platformerTimelineData = fs.readFileSync(platformerTimelinePath, 'utf8');
-    platformerTimeline = JSON.parse(platformerTimelineData);
-  } catch (e) {}
-
-  try {
-    const pendingData = fs.readFileSync(pendingPath, 'utf8');
-    pending = JSON.parse(pendingData);
-  } catch (e) {}
-
-  const combinedData = [...achievements, ...timeline, ...platformers, ...platformerTimeline, ...pending].filter(a => a && a.id && a.name);
+  const combinedData = [...achievements, ...timeline, ...platformers, ...platformerTimeline, ...pending, ...legacy]
+    .filter(a => a && a.id && a.name);
 
   const achievement = combinedData.find(a => a.id.toString() === params.id) || null;
 
   let placement = null;
   if (achievement) {
     const achIndex = achievements.findIndex(a => a && a.id && a.id.toString() === params.id);
-    if (achIndex !== -1) {
-      placement = achIndex + 1;
-    } else {
+    if (achIndex !== -1) placement = achIndex + 1;
+    else {
       const platIndex = platformers.findIndex(a => a && a.id && a.id.toString() === params.id);
       if (platIndex !== -1) placement = platIndex + 1;
     }
