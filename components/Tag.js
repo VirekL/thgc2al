@@ -10,12 +10,12 @@ const TAG_DEFINITIONS = {
   PLATFORMER: {
     className: 'tag-platformer',
     text: 'Platformer',
-    tooltip: 'A side-scrolling mode added in update 2.2.'
+    tooltip: 'Uses platformer mode, a side-scrolling mode added in update 2.2.'
   },
   LEVEL: {
     className: 'tag-level',
     text: 'Level',
-    tooltip: 'A traditional classic level, which spans 30+ seconds.'
+    tooltip: 'A traditional level, which spans 30+ seconds.'
   },
   CHALLENGE: {
     className: 'tag-challenge',
@@ -35,22 +35,22 @@ const TAG_DEFINITIONS = {
   SPEEDHACK: {
     className: 'tag-speedhack',
     text: 'Speedhack',
-    tooltip: 'Altered speed using hacks.'
+    tooltip: 'Altered speed of the game.'
   },
   NOCLIP: {
     className: 'tag-noclip',
     text: 'Noclip',
-    tooltip: 'Completed using noclip.'
+    tooltip: 'Done with noclip on.'
   },
   DEATHLESS: {
     className: 'tag-deathless',
     text: 'Deathless',
-    tooltip: 'Achievement done without dying. Tag is used for platformers.'
+    tooltip: 'Platformer done without dying.'
   },
   MISCELLANEOUS: {
     className: 'tag-miscellaneous',
     text: 'Miscellaneous',
-    tooltip: "An achievement that doesn't fit with any other types."
+    tooltip: "An achievement that doesn't fit with any other tags."
   },
   PROGRESS: {
     className: 'tag-progress',
@@ -60,7 +60,12 @@ const TAG_DEFINITIONS = {
   CONSISTENCY: {
     className: 'tag-consistency',
     text: 'Consistency',
-    tooltip: 'Progress done in a row (consistency-based achievements).'
+    tooltip: 'Progress done in a row.'
+  },
+  SPEEDRUN: {
+    className: 'tag-speedrun',
+    text: 'Speedrun',
+    tooltip: 'Time of completion contributes to the difficulty.'
   },
   '2P': {
     className: 'tag-2p',
@@ -72,7 +77,7 @@ const TAG_DEFINITIONS = {
     className: 'tag-cbf',
     icon: '/assets/cbf-logo.webp',
     text: 'CBF',
-    tooltip: 'Uses Geode mod Click Between Frames to increase input precision.'
+    tooltip: 'Uses Geode mod Click Between Frames to input actions in between visual frames, increasing input precision.'
   },
   RATED: {
     className: 'tag-rated',
@@ -90,12 +95,12 @@ const TAG_DEFINITIONS = {
     className: 'tag-outdated-version',
     icon: '/assets/outdated-version-icon.webp',
     text: 'Outdated Version',
-    tooltip: 'Level is on an older version than the current one.'
+    tooltip: 'Achievement is on an older version of its level than the current one, or done on a version before the latest release.'
   },
   VERIFIED: {
     className: 'tag-verified',
     text: 'Verified',
-    tooltip: 'Levels that are fully verified without alterations.'
+    tooltip: 'Levels that are verified without alterations such as speedhack.'
   },
   'COIN ROUTE': {
     className: 'tag-coin-route',
@@ -197,6 +202,9 @@ const TagComponent = function Tag({ tag, onClick, tabIndex, clickable, state }) 
 }
 .tag-low-hertz {
   background: linear-gradient(135deg, #D724E7 0%, #6232D1 100%);
+}
+.tag-speedrun {
+  background: linear-gradient(135deg, #e7e7e7ff 0%rgba(255, 216, 145, 1)D1 100%);
 }
 .tag-mobile {
   background: linear-gradient(135deg, #2398FF 0%, #4FFFF7 100%)
