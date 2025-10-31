@@ -558,9 +558,6 @@ export default function List() {
       if (hasDev && achievements && achievements.length && !devMode) {
         setDevMode(true);
         setReordered(achievements.map(a => ({ ...a })));
-        requestAnimationFrame(() => requestAnimationFrame(() => {
-          try { setScrollToIdx(getMostVisibleIdx()); } catch (e) { }
-        }));
       }
     } catch (e) {
     }
@@ -571,14 +568,8 @@ export default function List() {
       if (e.shiftKey && (e.key === 'M' || e.key === 'm')) {
         setDevMode(v => {
           const next = !v;
-          if (!next) {
-            setReordered(null);
-          } else {
-            setReordered(achievements);
-            requestAnimationFrame(() => {
-              try { setScrollToIdx(getMostVisibleIdx()); } catch (e) { }
-            });
-          }
+          if (!next) setReordered(null);
+          else setReordered(achievements);
           return next;
         });
       }
