@@ -207,7 +207,7 @@ const TagComponent = function Tag({ tag, onClick, tabIndex, clickable, state }) 
   background: linear-gradient(135deg, #e7e7e7ff 0%rgba(255, 216, 145, 1)D1 100%);
 }
 .tag-mobile {
-  background: linear-gradient(135deg, #2398FF 0%, #4FFFF7 100%)
+  background: linear-gradient(135deg, #2398FF 0%, #4FFFF7 100%);
 }
 .tag-speedhack {
   background: linear-gradient(135deg, #E92EAAFF 0%, #93225c 100%);
