@@ -4,7 +4,7 @@ import { VariableSizeList as ListWindow } from 'react-window';
 
 const AVAILABLE_TAGS = [
   "Level", "Challenge", "Platformer", "Verified", "Deathless", "Coin Route", "Low Hertz", "Mobile", "Speedhack",
-  "Noclip", "Miscellaneous", "Progress", "Consistency",
+  "Noclip", "Miscellaneous", "Progress", "Consistency", "Speedrun",
   "2P", "CBF", "Rated", "Formerly Rated", "Outdated Version", "Tentative"
 ];
 import Link from 'next/link';
@@ -21,78 +21,64 @@ import { useScrollPersistence } from '../hooks/useScrollPersistence';
 function normalizeYoutubeUrl(input) {
   if (!input || typeof input !== 'string') return input;
   const s = input.trim();
-
-  let m = s.match(/(?:https?:\/\/)?(?:www\.)?youtu\.be\/([^?&#\/]+)/i);
-  if (m) {
-    const id = m[1];
-    // try to parse search params to preserve timestamps if present
-    try {
-      const parsedShort = new URL(s.startsWith('http') ? s : `https://${s}`);
-      const t = parsedShort.searchParams.get('t') || parsedShort.searchParams.get('start') || parsedShort.searchParams.get('time_continue');
-      if (t) return `https://www.youtube.com/watch?v=${id}&t=${t}`;
-    } catch (e) {
-      // ignore parsing errors and fall back to short url
-    }
-    return `https://youtu.be/${id}`;
-  }
-
-  let parsed;
   try {
-    parsed = new URL(s.startsWith('http') ? s : `https://${s}`);
-  } catch (err) {
-    m = s.match(/[?&]v=([^?&#]+)/);
-    if (m) return `https://youtu.be/${m[1]}`;
-    m = s.match(/(?:https?:\/\/)?(?:www\.)?youtube\.com\/live\/([^?&#\/]+)/i);
-    if (m) return `https://youtu.be/${m[1]}`;
-    m = s.match(/(?:https?:\/\/)?(?:www\.)?youtube\.com\/shorts\/([^?&#\/]+)/i);
-    if (m) return `https://youtu.be/${m[1]}`;
+    const shortMatch = s.match(/(?:https?:\/\/)?(?:www\.)?youtu\.be\/([^?&#\/]+)/i);
+    if (shortMatch) {
+      const id = shortMatch[1];
+      try {
+        const parsed = new URL(s.startsWith('http') ? s : `https://${s}`);
+        const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
+        return t ? `https://www.youtube.com/watch?v=${id}&t=${t}` : `https://youtu.be/${id}`;
+      } catch (e) {
+        return `https://youtu.be/${id}`;
+      }
+    }
+
+    if (/^[a-zA-Z0-9_-]{11}$/.test(s)) {
+      return `https://youtu.be/${s}`;
+    }
+    
+    let parsed;
+    try {
+      parsed = new URL(s);
+    } catch (e) {
+      return input;
+    }
+
+    const host = (parsed.host || '').toLowerCase();
+    if (host.endsWith('youtu.be')) {
+      const raw = parsed.pathname.replace(/^\//, '');
+      const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
+      return t ? `https://www.youtube.com/watch?v=${raw}&t=${t}` : `https://youtu.be/${raw}`;
+    }
+
+    if (host.endsWith('youtube.com') || host.endsWith('youtube-nocookie.com')) {
+      const v = parsed.searchParams.get('v');
+      if (v) {
+        const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
+        return t ? `https://www.youtube.com/watch?v=${v}&t=${t}` : `https://www.youtube.com/watch?v=${v}`;
+      }
+      const path = parsed.pathname || '';
+      const parts = path.split('/').filter(Boolean);
+      const liveIdx = parts.indexOf('live');
+      if (liveIdx !== -1 && parts[liveIdx + 1]) {
+        const id = parts[liveIdx + 1];
+        const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
+        return t ? `https://www.youtube.com/watch?v=${id}&t=${t}` : `https://www.youtube.com/watch?v=${id}`;
+      }
+      const shortsIdx = parts.indexOf('shorts');
+      if (shortsIdx !== -1 && parts[shortsIdx + 1]) {
+        const id = parts[shortsIdx + 1];
+        const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
+        return t ? `https://www.youtube.com/watch?v=${id}&t=${t}` : `https://www.youtube.com/watch?v=${id}`;
+      }
+      return parsed.href;
+    }
+
+    return input;
+  } catch (e) {
     return input;
   }
-
-  const host = parsed.hostname.toLowerCase();
-
-  if (host === 'youtu.be') {
-    const id = parsed.pathname.split('/').filter(Boolean)[0];
-    if (id) {
-      // preserve timestamp params if present
-      const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
-      if (t) return `https://www.youtube.com/watch?v=${id}&t=${t}`;
-      return `https://youtu.be/${id}`;
-    }
-    const raw = parsed.pathname.replace(/^\//, '');
-    const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
-    if (t) return `https://www.youtube.com/watch?v=${raw}&t=${t}`;
-    return `https://youtu.be/${raw}`;
-  }
-
-  if (host.endsWith('youtube.com') || host.endsWith('youtube-nocookie.com')) {
-    const v = parsed.searchParams.get('v');
-    if (v) {
-      const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
-      return t ? `https://www.youtube.com/watch?v=${v}&t=${t}` : `https://www.youtube.com/watch?v=${v}`;
-    }
-
-    const path = parsed.pathname || '';
-    let parts = path.split('/').filter(Boolean);
-
-    const liveIdx = parts.indexOf('live');
-    if (liveIdx !== -1 && parts[liveIdx + 1]) {
-      const id = parts[liveIdx + 1];
-      const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
-      return t ? `https://www.youtube.com/watch?v=${id}&t=${t}` : `https://www.youtube.com/watch?v=${id}`;
-    }
-
-    const shortsIdx = parts.indexOf('shorts');
-    if (shortsIdx !== -1 && parts[shortsIdx + 1]) {
-      const id = parts[shortsIdx + 1];
-      const t = parsed.searchParams.get('t') || parsed.searchParams.get('start') || parsed.searchParams.get('time_continue');
-      return t ? `https://www.youtube.com/watch?v=${id}&t=${t}` : `https://www.youtube.com/watch?v=${id}`;
-    }
-
-    return parsed.href;
-  }
-
-  return input;
 }
 
 function TagFilterPillsInner({ allTags, filterTags, setFilterTags, isMobile, show, setShow }) {
@@ -142,7 +128,6 @@ function TagFilterPillsInner({ allTags, filterTags, setFilterTags, isMobile, sho
 
 function formatDate(date, dateFormat) {
   if (!date) return 'N/A';
-  // If the date string contains unknown parts represented by '?', just return it unchanged
   if (typeof date === 'string' && date.includes('?')) return date;
   const d = new Date(date);
   if (isNaN(d)) return 'N/A';
@@ -157,7 +142,7 @@ function formatDate(date, dateFormat) {
   return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
-const AchievementCard = memo(function AchievementCard({ achievement, devMode }) {
+const AchievementCard = memo(function AchievementCard({ achievement, devMode, usePlatformers }) {
   const { dateFormat } = useDateFormat();
   const handleClick = e => {
     if (devMode) {
@@ -181,9 +166,11 @@ const AchievementCard = memo(function AchievementCard({ achievement, devMode }) 
           style={{ cursor: 'pointer' }}
         >
           <div className="rank-date-container">
-            <div className="achievement-length">
-              {achievement.length ? `${Math.floor(achievement.length / 60)}:${(achievement.length % 60).toString().padStart(2, '0')}` : 'N/A'}
-            </div>
+            {!usePlatformers && (
+              <div className="achievement-length">
+                {achievement.length ? `${Math.floor(achievement.length / 60)}:${(achievement.length % 60).toString().padStart(2, '0')}` : 'N/A'}
+              </div>
+            )}
             <div className="achievement-date">
               {achievement.date ? formatDate(achievement.date, dateFormat) : 'N/A'}
             </div>
@@ -207,7 +194,7 @@ const AchievementCard = memo(function AchievementCard({ achievement, devMode }) 
       </a>
     </Link>
   );
-}, (prev, next) => prev.achievement === next.achievement && prev.devMode === next.devMode);
+}, (prev, next) => prev.achievement === next.achievement && prev.devMode === next.devMode && prev.usePlatformers === next.usePlatformers);
 
 function useDebouncedValue(value, delay) {
   const [debounced, setDebounced] = useState(value);
@@ -321,14 +308,13 @@ export default function List() {
   const { dateFormat, setDateFormat } = useDateFormat();
   const [showSettings, setShowSettings] = useState(false);
   const [devMode, setDevMode] = useState(false);
-  // sorting state: key and direction
+
   const [sortKey, setSortKey] = useState(() => {
     try { return typeof window !== 'undefined' ? localStorage.getItem('sortKey') || 'rank' : 'rank'; } catch (e) { return 'rank'; }
   });
   const [sortDir, setSortDir] = useState(() => {
     try { return typeof window !== 'undefined' ? localStorage.getItem('sortDir') || 'asc' : 'asc'; } catch (e) { return 'asc'; }
   });
-  // comparator helper (define early so filtered can use it during module init / SSR)
   const compareByKey = useCallback((a, b, key) => {
     if (!a && !b) return 0;
     if (!a) return -1;
@@ -363,7 +349,6 @@ export default function List() {
     if (va > vb) return 1;
     return 0;
   }, []);
-  // stable random order mapping: key -> index
   const [randomOrderMap, setRandomOrderMap] = useState({});
   
   const [reordered, setReordered] = useState(null);
@@ -440,7 +425,6 @@ export default function List() {
     const { name, value } = e.target;
     let newVal;
     if (name === 'id') {
-      // normalize id: trim, lowercase, convert spaces to hyphens
       newVal = String(value || '').trim().toLowerCase().replace(/\s+/g, '-');
     } else {
       newVal = (name === 'video' || name === 'showcaseVideo')
@@ -512,7 +496,6 @@ export default function List() {
     setEditFormCustomTags('');
   }
 
-  // fetch data whenever the selected source changes
   useEffect(() => {
     const file = usePlatformers ? '/platformers.json' : '/achievements.json';
     fetch(file)
@@ -528,7 +511,6 @@ export default function List() {
       });
   }, [usePlatformers]);
 
-  // update background image to the thumbnail of the top (rank 1) achievement for the current dataset
   useEffect(() => {
     try {
       const srcList = achievements || [];
@@ -536,7 +518,6 @@ export default function List() {
         setBgImage(null);
         return;
       }
-      // find the top-ranked achievement (rank === 1) or first item
       const top = srcList.find(a => Number(a.rank) === 1) || srcList[0];
       if (!top) {
         setBgImage(null);
@@ -550,33 +531,31 @@ export default function List() {
   }, [achievements, usePlatformers]);
 
   const router = useRouter();
-
   useEffect(() => {
     if (!router || !router.isReady) return;
     try {
       const hasDev = router.query && (router.query.dev === '1' || router.query.dev === 'true' || router.query.dev !== undefined);
       if (hasDev && achievements && achievements.length && !devMode) {
+        const currentItems = (devMode && reordered) ? reordered : achievements;
+        const bestIdx = typeof getMostVisibleIdx === 'function' ? getMostVisibleIdx() : null;
+        const bestId = (bestIdx !== null && currentItems && currentItems[bestIdx]) ? currentItems[bestIdx].id : null;
+
+        const newReordered = achievements.map(a => ({ ...a }));
+        setReordered(newReordered);
         setDevMode(true);
-        setReordered(achievements.map(a => ({ ...a })));
+
+        if (bestId && typeof setScrollToIdx === 'function') {
+          requestAnimationFrame(() => requestAnimationFrame(() => {
+            try {
+              const newIdx = newReordered.findIndex(x => x && x.id === bestId);
+              if (newIdx !== -1) setScrollToIdx(newIdx);
+            } catch (e) {}
+          }));
+        }
       }
     } catch (e) {
     }
-  }, [router, router && router.isReady, router && router.query, achievements]);
-
-  useEffect(() => {
-    function handleKeyDown(e) {
-      if (e.shiftKey && (e.key === 'M' || e.key === 'm')) {
-        setDevMode(v => {
-          const next = !v;
-          if (!next) setReordered(null);
-          else setReordered(achievements);
-          return next;
-        });
-      }
-    }
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [achievements]);
+  }, [router, router && router.isReady, router && router.query, achievements, devMode, reordered, getMostVisibleIdx, setScrollToIdx]);
 
   useEffect(() => {
     if (!isMobile) return;
@@ -735,11 +714,9 @@ export default function List() {
     return copy;
   }, [baseDev, sortKey, sortDir, compareByKey, randomOrderMap]);
 
-  // regenerate stable random order map when the underlying lists change
   useEffect(() => {
     const items = (reordered && Array.isArray(reordered) && reordered.length) ? reordered : achievements;
     const keys = (items || []).map((a, i) => (a && a.id) ? String(a.id) : `__idx_${i}`);
-    // Fisher-Yates shuffle
     for (let i = keys.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       const t = keys[i];
@@ -759,7 +736,6 @@ export default function List() {
     const { name, value } = e.target;
     let newVal;
     if (name === 'id') {
-      // normalize id: trim, lowercase, convert spaces to hyphens
       newVal = String(value || '').trim().toLowerCase().replace(/\s+/g, '-');
     } else {
       newVal = (name === 'video' || name === 'showcaseVideo')
@@ -871,7 +847,6 @@ export default function List() {
     }
   }
 
-    // Use scroll persistence hook
   const { getMostVisibleIdx } = useScrollPersistence({
     storageKey: `thal_scroll_index_${usePlatformers ? 'platformers' : 'achievements'}`,
     items: achievements,
@@ -958,6 +933,44 @@ export default function List() {
     });
   }
 
+  useEffect(() => {
+    function handleKeyDown(e) {
+      if (e.shiftKey && (e.key === 'M' || e.key === 'm')) {
+        const currentItems = (devMode && reordered) ? reordered : achievements;
+        const bestIdx = typeof getMostVisibleIdx === 'function' ? getMostVisibleIdx() : null;
+        const bestId = (bestIdx !== null && currentItems && currentItems[bestIdx]) ? currentItems[bestIdx].id : null;
+
+        setDevMode(v => {
+          const next = !v;
+          if (!next) {
+            setReordered(null);
+            return next;
+          }
+
+          try {
+            const newReordered = achievements.map(a => ({ ...a }));
+            setReordered(newReordered);
+            if (bestId && typeof setScrollToIdx === 'function') {
+              requestAnimationFrame(() => requestAnimationFrame(() => {
+                try {
+                  const newIdx = newReordered.findIndex(x => x && x.id === bestId);
+                  if (newIdx !== -1) setScrollToIdx(newIdx);
+                } catch (e) {}
+              }));
+            }
+          } catch (e) {
+            setReordered(achievements);
+          }
+
+          return next;
+        });
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [achievements, devMode, reordered, getMostVisibleIdx, setScrollToIdx]);
+
   return (
     <>
       <Head>
@@ -980,10 +993,11 @@ export default function List() {
           className="header-bar"
           style={{
             display: 'flex',
-            flexDirection: 'column',
+            flexDirection: isMobile ? 'column' : 'row',
+            alignItems: isMobile ? 'flex-start' : 'center',
+            gap: isMobile ? 0 : 16,
             width: '100%',
-            gap: 16,
-            paddingBottom: 16
+            paddingBottom: isMobile ? 8 : 0
           }}
         >
           <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', width: isMobile ? '100%' : 'auto' }}>
@@ -1007,7 +1021,7 @@ export default function List() {
           </div>
           {isMobile && (
             <div style={{ width: '100%', marginTop: 12 }}>
-              <div style={{ display: 'flex', justifyContent: 'center', marginTop: 8 }}>
+              <div className="search-bar" style={{ width: '100%', maxWidth: 400, margin: '0 auto' }}>
                 <input
                   type="text"
                   placeholder="Search achievements..."
@@ -1069,8 +1083,22 @@ export default function List() {
             </div>
           )}
           {!isMobile && (
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 24 }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <div className="search-bar" style={{ width: '100%', maxWidth: 400, marginLeft: 'auto' }}>
+              <input
+                type="text"
+                placeholder="Search achievements..."
+                value={search}
+                onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
+                onKeyDown={handleSearchKeyDown}
+                aria-label="Search achievements"
+                className="search-input"
+                style={{ width: '100%' }}
+              />
+            </div>
+          )}
+          {!isMobile && (
+            <div style={{ display: 'flex', alignItems: 'center', marginLeft: 12 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginRight: 12 }}>
                 <label style={{ color: 'var(--text-color)', fontSize: 13 }}>Sort:</label>
                 <select
                   aria-label="Sort achievements"
@@ -1127,7 +1155,7 @@ export default function List() {
           )}
         </div>
         {!isMobile && (
-          <div className="tag-filter-pills-container" style={{ marginBottom: 16 }}>
+          <div className="tag-filter-pills-container">
             <TagFilterPills
               allTags={allTags}
               filterTags={filterTags}
@@ -1138,19 +1166,6 @@ export default function List() {
             />
           </div>
         )}
-        
-        <div className="search-bar" style={{ width: '100%', maxWidth: '100%', margin: '0 auto', padding: '0 16px' }}>
-          <input
-            type="text"
-            placeholder="Search achievements..."
-            value={search}
-            onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
-            onKeyDown={handleSearchKeyDown}
-            aria-label="Search achievements"
-            className="search-input"
-            style={{ width: '100%' }}
-          />
-        </div>
       </header>
             <MobileSidebarOverlay 
         isOpen={isMobile && showSidebar}
@@ -1219,8 +1234,17 @@ export default function List() {
                 return;
               }
               imported = imported.map((a, i) => ({ ...a, rank: i + 1 }));
-              setReordered(imported);
-              setDevMode(true);
+              try {
+                const idx = typeof getMostVisibleIdx === 'function' ? getMostVisibleIdx() : null;
+                setReordered(imported);
+                setDevMode(true);
+                if (idx !== null && typeof setScrollToIdx === 'function') {
+                  requestAnimationFrame(() => requestAnimationFrame(() => setScrollToIdx(idx)));
+                }
+              } catch (e) {
+                setReordered(imported);
+                setDevMode(true);
+              }
               alert(`Imported ${usePlatformers ? 'platformers.json' : 'achievements.json'}!`);
             }}
             dataFileName={usePlatformers ? 'platformers.json' : 'achievements.json'}
@@ -1392,7 +1416,7 @@ export default function List() {
                   position: 'relative',
                   zIndex: 1
                 }} className={highlightedIdx === i ? 'search-highlight' : ''}>
-                  <AchievementCard achievement={a} devMode={devMode} />
+                  <AchievementCard achievement={a} devMode={devMode} usePlatformers={usePlatformers} />
                 </div>
               </div>
             ))
@@ -1429,7 +1453,7 @@ export default function List() {
                   const isDup = duplicateThumbKeys.has((thumb || '').trim());
                   return (
                     <div data-index={index} style={itemStyle} key={a.id || index} className={`${isDup ? 'duplicate-thumb-item' : ''} ${highlightedIdx === index ? 'search-highlight' : ''}`}>
-                      <AchievementCard achievement={a} devMode={devMode} />
+                      <AchievementCard achievement={a} devMode={devMode} usePlatformers={usePlatformers} />
                     </div>
                   );
                 }}
