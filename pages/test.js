@@ -16,6 +16,7 @@ import { useDateFormat } from '../components/DateFormatContext';
 import Tag, { TAG_PRIORITY_ORDER } from '../components/Tag';
 import DevModePanel from '../components/DevModePanel';
 import MobileSidebarOverlay from '../components/MobileSidebarOverlay';
+import { useScrollPersistence } from '../hooks/useScrollPersistence';
 
 function normalizeYoutubeUrl(input) {
   if (!input || typeof input !== 'string') return input;
@@ -419,8 +420,7 @@ export default function List() {
     map.forEach((count, key) => { if (count > 1) dupKeys.add(key); });
     setDuplicateThumbKeys(dupKeys);
   }
-  const [scrollToIdx, setScrollToIdx] = useState(null);
-  const [restoredScroll, setRestoredScroll] = useState(null);
+    const [scrollToIdx, setScrollToIdx] = useState(null);
   function handleEditAchievement(idx) {
     if (!reordered || !reordered[idx]) return;
     const a = reordered[idx];
@@ -871,62 +871,16 @@ export default function List() {
     }
   }
 
-  function getMostVisibleIdx() {
-    if (!achievementRefs.current) return null;
-    let maxVisible = 0;
-    let bestIdx = null;
-    achievementRefs.current.forEach((ref, idx) => {
-      if (!ref) return;
-      const rect = ref.getBoundingClientRect();
-      const visible = Math.max(0, Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0));
-      if (visible > maxVisible) {
-        maxVisible = visible;
-        bestIdx = idx;
-      }
-    });
-    return bestIdx;
-  }
-
-  const getStorageKey = () => `thal_scroll_index_${usePlatformers ? 'platformers' : 'achievements'}`;
-
-  function saveScrollPosition(pos) {
-    try {
-      if (typeof window === 'undefined') return;
-      const key = getStorageKey();
-      if (!pos || pos.index === null || pos.index === undefined) {
-        localStorage.removeItem(key);
-      } else {
-        const out = { index: Number(pos.index) };
-        if (pos.offset !== undefined && pos.offset !== null) out.offset = Number(pos.offset);
-        out.ts = Date.now();
-        localStorage.setItem(key, JSON.stringify(out));
-      }
-    } catch (e) {
-      // ignore
-    }
-  }
-
-  function readSavedScrollIndex() {
-    try {
-      if (typeof window === 'undefined') return null;
-      const key = getStorageKey();
-      const v = localStorage.getItem(key);
-      if (!v) return null;
-      try {
-        const parsed = JSON.parse(v);
-        if (!parsed || typeof parsed !== 'object') return null;
-        const idx = Number(parsed.index);
-        if (!Number.isFinite(idx)) return null;
-        const offset = parsed.offset !== undefined ? Number(parsed.offset) : null;
-        return { index: idx, offset: Number.isFinite(offset) ? offset : null };
-      } catch (e) {
-        const n = Number(v);
-        return Number.isFinite(n) ? { index: n, offset: null } : null;
-      }
-    } catch (e) {
-      return null;
-    }
-  }
+    // Use scroll persistence hook
+  const { getMostVisibleIdx } = useScrollPersistence({
+    storageKey: `thal_scroll_index_${usePlatformers ? 'platformers' : 'achievements'}`,
+    items: achievements,
+    devMode,
+    listRef,
+    itemRefs: achievementRefs,
+    setScrollToIdx,
+    setHighlightedIdx,
+  });
   function handleShowNewForm() {
     if (showNewForm) {
       setShowNewForm(false);
@@ -940,88 +894,7 @@ export default function List() {
     setShowNewForm(true);
   }
 
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-    let rafId = null;
-    let intervalId = null;
-
-    function persist() {
-      try {
-        let idx = null;
-        let offset = null;
-        if (devMode) {
-          const bestIdx = getMostVisibleIdx();
-          if (bestIdx !== null && bestIdx !== undefined) {
-            idx = bestIdx;
-            const el = achievementRefs.current && achievementRefs.current[bestIdx];
-            if (el && typeof el.getBoundingClientRect === 'function') {
-              const rect = el.getBoundingClientRect();
-              offset = rect.top;
-            }
-          }
-        } else if (listRef && listRef.current) {
-          const container = listRef.current && listRef.current._outerRef ? listRef.current._outerRef : listRef.current;
-          if (container && container.querySelector) {
-            const visible = Array.from(container.querySelectorAll('[data-index]'));
-            let best = null;
-            let bestVisible = 0;
-            visible.forEach(el => {
-              const rect = el.getBoundingClientRect();
-              const vis = Math.max(0, Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0));
-              if (vis > bestVisible) { bestVisible = vis; best = el; }
-            });
-            if (best) idx = Number(best.getAttribute('data-index'));
-          }
-          // for virtualized lists, save the container scrollTop for an exact offset
-          try {
-            if (container && typeof container.scrollTop === 'number') offset = container.scrollTop;
-          } catch (e) {}
-        } else if (achievementRefs && achievementRefs.current) {
-          const bestIdx = getMostVisibleIdx();
-          if (bestIdx !== null && bestIdx !== undefined) {
-            idx = bestIdx;
-            const el = achievementRefs.current && achievementRefs.current[bestIdx];
-            if (el && typeof el.getBoundingClientRect === 'function') {
-              const rect = el.getBoundingClientRect();
-              offset = rect.top;
-            }
-          }
-        }
-        if (idx !== null && idx !== undefined) saveScrollPosition({ index: idx, offset });
-      } catch (e) {}
-    }
-
-    intervalId = window.setInterval(() => {
-      if (rafId) cancelAnimationFrame(rafId);
-      rafId = requestAnimationFrame(() => persist());
-    }, 2000);
-
-    const onUnload = () => persist();
-    window.addEventListener('beforeunload', onUnload);
-
-    rafId = requestAnimationFrame(() => persist());
-
-    return () => {
-      if (intervalId) clearInterval(intervalId);
-      if (rafId) cancelAnimationFrame(rafId);
-      window.removeEventListener('beforeunload', onUnload);
-    };
-  }, [devMode, listRef, achievementRefs, usePlatformers]);
-
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-    const saved = readSavedScrollIndex();
-    if (saved === null) return;
-    setRestoredScroll(saved);
-    const t = window.setTimeout(() => {
-      try {
-        const targetIdx = Math.max(0, Math.floor(Number(saved.index)));
-        setScrollToIdx(targetIdx);
-        setHighlightedIdx(targetIdx);
-      } catch (e) {}
-    }, 300);
-    return () => clearTimeout(t);
-  }, [achievements, filtered.length, devMode, usePlatformers]);
+  
 
   useEffect(() => {
     if (scrollToIdx !== null && achievementRefs.current[scrollToIdx]) {
@@ -1031,40 +904,7 @@ export default function List() {
     }
   }, [scrollToIdx, devAchievements]);
 
-  useEffect(() => {
-    if (!restoredScroll) return;
-    try {
-      const { index, offset } = restoredScroll || {};
-      if (offset == null) {
-        // nothing precise to restore
-        return;
-      }
-      if (listRef && listRef.current) {
-        const container = listRef.current && listRef.current._outerRef ? listRef.current._outerRef : listRef.current;
-        if (container && typeof container.scrollTop === 'number') {
-          requestAnimationFrame(() => requestAnimationFrame(() => {
-            try {
-              // clamp offset to valid range
-              const top = Math.max(0, Math.min(Number(offset), container.scrollHeight || Number(offset)));
-              container.scrollTop = top;
-            } catch (e) {}
-          }));
-        }
-      } else if (achievementRefs && achievementRefs.current && achievementRefs.current[index]) {
-        const el = achievementRefs.current[index];
-        if (el && typeof el.getBoundingClientRect === 'function') {
-          requestAnimationFrame(() => requestAnimationFrame(() => {
-            try {
-              const rect = el.getBoundingClientRect();
-              const delta = Number(offset) - rect.top;
-              if (Math.abs(delta) > 1) window.scrollBy({ top: delta, left: 0, behavior: 'auto' });
-            } catch (e) {}
-          }));
-        }
-      }
-    } catch (e) {}
-    setRestoredScroll(null);
-  }, [restoredScroll, listRef, achievementRefs]);
+  
 
   useEffect(() => {
     if (highlightedIdx === null) return;
@@ -1230,20 +1070,6 @@ export default function List() {
             </div>
           )}
           {!isMobile && (
-            <div className="search-bar" style={{ width: '100%', maxWidth: 400, marginLeft: 'auto' }}>
-              <input
-                type="text"
-                placeholder="Search achievements..."
-                value={search}
-                onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
-                onKeyDown={handleSearchKeyDown}
-                aria-label="Search achievements"
-                className="search-input"
-                style={{ width: '100%' }}
-              />
-            </div>
-          )}
-          {!isMobile && (
             <div style={{ display: 'flex', alignItems: 'center', marginLeft: 12 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginRight: 12 }}>
                 <label style={{ color: 'var(--text-color)', fontSize: 13 }}>Sort:</label>
@@ -1310,6 +1136,20 @@ export default function List() {
               isMobile={isMobile}
               show={showMobileFilters}
               setShow={setShowMobileFilters}
+            />
+          </div>
+        )}
+        {!isMobile && (
+          <div className="search-bar" style={{ width: '100%', maxWidth: 400, margin: '16px auto 0' }}>
+            <input
+              type="text"
+              placeholder="Search achievements..."
+              value={search}
+              onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
+              onKeyDown={handleSearchKeyDown}
+              aria-label="Search achievements"
+              className="search-input"
+              style={{ width: '100%' }}
             />
           </div>
         )}
