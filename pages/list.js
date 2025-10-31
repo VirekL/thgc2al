@@ -556,8 +556,12 @@ export default function List() {
     try {
       const hasDev = router.query && (router.query.dev === '1' || router.query.dev === 'true' || router.query.dev !== undefined);
       if (hasDev && achievements && achievements.length && !devMode) {
+        const idx = typeof getMostVisibleIdx === 'function' ? getMostVisibleIdx() : null;
         setDevMode(true);
         setReordered(achievements.map(a => ({ ...a })));
+        if (idx !== null && typeof setScrollToIdx === 'function') {
+          requestAnimationFrame(() => requestAnimationFrame(() => setScrollToIdx(idx)));
+        }
       }
     } catch (e) {
     }
@@ -568,8 +572,19 @@ export default function List() {
       if (e.shiftKey && (e.key === 'M' || e.key === 'm')) {
         setDevMode(v => {
           const next = !v;
-          if (!next) setReordered(null);
-          else setReordered(achievements);
+          if (!next) {
+            setReordered(null);
+            return next;
+          }
+          try {
+            const idx = typeof getMostVisibleIdx === 'function' ? getMostVisibleIdx() : null;
+            setReordered(achievements.map(a => ({ ...a })));
+            if (idx !== null && typeof setScrollToIdx === 'function') {
+              requestAnimationFrame(() => requestAnimationFrame(() => setScrollToIdx(idx)));
+            }
+          } catch (e) {
+            setReordered(achievements);
+          }
           return next;
         });
       }
@@ -1221,8 +1236,17 @@ export default function List() {
                 return;
               }
               imported = imported.map((a, i) => ({ ...a, rank: i + 1 }));
-              setReordered(imported);
-              setDevMode(true);
+              try {
+                const idx = typeof getMostVisibleIdx === 'function' ? getMostVisibleIdx() : null;
+                setReordered(imported);
+                setDevMode(true);
+                if (idx !== null && typeof setScrollToIdx === 'function') {
+                  requestAnimationFrame(() => requestAnimationFrame(() => setScrollToIdx(idx)));
+                }
+              } catch (e) {
+                setReordered(imported);
+                setDevMode(true);
+              }
               alert(`Imported ${usePlatformers ? 'platformers.json' : 'achievements.json'}!`);
             }}
             dataFileName={usePlatformers ? 'platformers.json' : 'achievements.json'}
