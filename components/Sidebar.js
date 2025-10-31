@@ -21,20 +21,41 @@ function SidebarInner() {
     }
   });
 
-  const handleRandomClick = useCallback(
-    async (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      const res = await fetch('/achievements.json');
-      const data = await res.json();
-      const valid = data.filter((a) => a && a.id && a.name);
-      if (valid.length > 0) {
-        const random = valid[Math.floor(Math.random() * valid.length)];
-        router.push(`/achievement/${random.id}`);
-      }
-    },
-    [router]
-  );
+const sources = [
+  '/achievements.json',
+  '/legacy.json',
+  '/platformers.json',
+  '/platformertimeline.json',
+  '/timeline.json',
+];
+
+const handleRandomClick = useCallback(
+  async (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    try {
+      const results = await Promise.all(
+        sources.map(async (src) => {
+          const res = await fetch(src);
+          const data = await res.json();
+          return data.filter((a) => a && a.id && a.name);
+        })
+      );
+
+      const all = results.flat();
+
+      const poolIndex = Math.floor(Math.random() * results.length);
+      const chosenPool = results[poolIndex];
+      if (!chosenPool || chosenPool.length === 0) return;
+      const random = chosenPool[Math.floor(Math.random() * chosenPool.length)];
+
+      router.push(`/achievement/${random.id}`);
+    } catch (err) {
+      console.error('Random selection failed', err);
+    }
+  },
+  [router]
+);
 
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
