@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { createPortal } from 'react-dom';
 import { useDateFormat } from './DateFormatContext';
 
-function SidebarInner({ onClose } = {}) {
+function SidebarInner() {
   const router = useRouter();
   const { dateFormat, setDateFormat } = useDateFormat();
   const [showSettings, setShowSettings] = useState(false);
@@ -47,15 +47,12 @@ const handleRandomClick = useCallback(
       if (all.length === 0) return;
 
       const random = all[Math.floor(Math.random() * all.length)];
-      await router.push(`/achievement/${random.id}`);
-      try {
-        if (typeof onClose === 'function') onClose();
-      } catch (e) {}
+      router.push(`/achievement/${random.id}`);
     } catch (err) {
       console.error('Random selection failed', err);
     }
   },
-  [router, onClose]
+  [router]
 );
 
   const [mounted, setMounted] = useState(false);
@@ -89,56 +86,37 @@ const handleRandomClick = useCallback(
       }}
     >
             <div style={{ flex: '1 1 auto', minHeight: 0 }}>
-        <Link href="/list">
-          <a className="sidebar-link" style={{ color: '#DFE3F5' }} onClick={() => { try { if (onClose) onClose(); } catch {} }}>
-            Main List
-          </a>
+        <Link href="/list" className="sidebar-link" style={{ color: '#DFE3F5' }}>
+          Main List
         </Link>
-        <Link href="/timeline">
-          <a className="sidebar-link" style={{ color: '#DFE3F5' }} onClick={() => { try { if (onClose) onClose(); } catch {} }}>
-            Timeline
-          </a>
+        <Link href="/timeline" className="sidebar-link" style={{ color: '#DFE3F5' }}>
+          Timeline
         </Link>
-        <Link href="/leaderboard">
-          <a className="sidebar-link" style={{ color: '#DFE3F5' }} onClick={() => { try { if (onClose) onClose(); } catch {} }}>
-            Leaderboard
-          </a>
+        <Link href="/leaderboard" className="sidebar-link" style={{ color: '#DFE3F5' }}>
+          Leaderboard
         </Link>
-        <Link href="/submission-stats">
-          <a className="sidebar-link" style={{ color: '#DFE3F5' }} onClick={() => { try { if (onClose) onClose(); } catch {} }}>
-            Submission Stats
-          </a>
+        <Link href="/submission-stats" className="sidebar-link" style={{ color: '#DFE3F5' }}>
+          Submission Stats
         </Link>
-        <Link href="/pending">
-          <a className="sidebar-link" style={{ color: '#DFE3F5' }} onClick={() => { try { if (onClose) onClose(); } catch {} }}>
-            Pending
-          </a>
+        <Link href="/pending" className="sidebar-link" style={{ color: '#DFE3F5' }}>
+          Pending
         </Link>
         <a
           href="#"
           id="random-achievement-btn"
           className="sidebar-link"
           style={{ color: '#DFE3F5' }}
-          onClick={(e) => {
-            handleRandomClick(e);
-            try {
-              if (onClose) onClose();
-            } catch {}
-          }}
+          onClick={handleRandomClick}
           role="button"
           tabIndex={0}
         >
           Random
         </a>
-        <Link href="/about-us">
-          <a className="sidebar-link" style={{ color: '#DFE3F5' }} onClick={() => { try { if (onClose) onClose(); } catch {} }}>
-            About Us
-          </a>
+        <Link href="/about-us" className="sidebar-link" style={{ color: '#DFE3F5' }}>
+          About Us
         </Link>
-        <Link href="/discord">
-          <a className="sidebar-link" style={{ color: '#DFE3F5' }} onClick={() => { try { if (onClose) onClose(); } catch {} }}>
-            Discord
-          </a>
+        <Link href="/discord" className="sidebar-link" style={{ color: '#DFE3F5' }}>
+          Discord
         </Link>
         <a
           href="#"
@@ -149,9 +127,6 @@ const handleRandomClick = useCallback(
           onClick={(e) => {
             e.preventDefault();
             setShowSettings(true);
-            try {
-              if (onClose) onClose();
-            } catch {}
           }}
           tabIndex={0}
           role="button"
