@@ -274,13 +274,11 @@ main {
 
 .achievements {
   flex: 1 1 auto;
-  width: 70%;
   max-width: 1000px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 2rem;
-
   min-height: 0;
   height: calc(100vh - 72px - 4rem);
   max-height: calc(100vh - 72px - 4rem);
@@ -1865,7 +1863,6 @@ main, .main-content {
 
 .achievements-section {
   flex-grow: 1;
-  width: 70%;
   max-width: 1000px;
   display: flex;
   flex-direction: column;
