@@ -64,23 +64,23 @@ export default function AboutUs() {
             <ul>
               <li><b>Level</b> — A traditional level, which spans 30+ seconds. (Acheron)</li>
               <li><b>Challenge</b> — Tiny or short length level; a level that spans under 30 seconds. (VSC)</li>
-              <li><b>Platformer</b> — Uses platformer mode, which you can freely move. (Diamonds For Dashers)</li>
+              <li><b>Platformer</b> — Uses platformer mode, a side-scrolling mode added in update 2.2. (Diamonds For Dashers)</li>
               <li><b>Verified</b> — Levels that are verified without alterations such as speedhack. (CBF, Low Hertz, etc. can qualify if it's the first completion.)</li>
               <li><b>Deathless</b> — Platformer done without dying. (Null (Deathless))</li>
               <li><b>Coin Route</b> — Coin(s) collected that contribute to the difficulty. (Checked Steam (1st Coin))</li>
-              <li><b>Low Hertz</b> — Done at a low hz. It can be added if it adds a lot more difficulty to the level. (The Rupture 60hz)</li>
+              <li><b>Low Hertz</b> — Done at a low hz. Added when it significantly increases difficulty. (The Rupture 60hz)</li>
               <li><b>Mobile</b> — Played on mobile. (Hard Machine 144hz Mobile)</li>
-              <li><b>Speedhack</b> — Altered speed using hacks. (Trueffet 1.3x)</li>
+              <li><b>Speedhack</b> — Altered speed of the game. (Trueffet 1.3x)</li>
               <li><b>Noclip</b> — Done with noclip on. (vsc superbuff 6 deaths, 99.79 accuracy)</li>
               <li><b>Miscellaneous</b> — An achievement that doesn't fit with any other tags.</li>
               <li><b>Progress</b> — Parts of the level completed. (Singularity 61%)</li>
               <li><b>Consistency</b> — Progress done in a row. (Slaughterhouse 300%, Extra Mile 77%, 69%, 53%)</li>
               <li><b>Speedrun</b> — Time of completion contributes to the difficulty. (Terminal Heaven (Speedrun))</li>
               <li><b>2P</b> — Level uses 2 player mode. (Codependence)</li>
-              <li><b>CBF</b> — Achievement uses Geode mod Click Between Frames, which allows players to input actions in between visual frames, effectively increasing input precision.</li>
+              <li><b>CBF</b> — Uses Geode mod Click Between Frames to input actions in between visual frames, increasing input precision.</li>
               <li><b>Rated</b> — Level is rated ingame.</li>
               <li><b>Formerly Rated</b> — Level was rated, but had its rating status removed. (Natural Disaster (GammaReXx))</li>
-              <li><b>Outdated Version</b> — Achievement is on an older version of its level than the current one. (Silent clubstep 2.1)</li>
+              <li><b>Outdated Version</b> — Achievement is on an older version of its level than the current one, or done on a version before the latest release. (Silent clubstep 2.1)</li>
               <li><b>Tentative</b> — Tentative placement; unfixed; subject to change.</li>
             </ul>
             <h3>Rules</h3>
@@ -161,6 +161,7 @@ export default function AboutUs() {
     </>
   );
 }
+
 
 
 
