@@ -7,8 +7,7 @@
     "showcaseVideo": "https://youtu.be/eeTlZnCGP_k",
     "tags": [
       "Level",
-      "Consistency",
-      "Rated"
+      "Progress"
     ],
     "date": "2025-09-21",
     "length": 23,
@@ -16,6 +15,42 @@
     "submitter": "None",
     "thumbnail": "https://i.ytimg.com/vi/8de-8JPymqA/hq720.jpg",
     "levelID": 126242564
+  },
+  {
+    "name": "Omnipresent 76% + 75%",
+    "id": "omni7675",
+    "player": "GhastGaming12",
+    "video": "https://www.youtube.com/live/RInlxRwyjI4?t=7756",
+    "showcaseVideo": "https://youtu.be/1GolW8jKK7k",
+    "tags": [
+      "Level",
+      "Consistency",
+      "Rated",
+      "CBF"
+    ],
+    "date": "2025-10-29",
+    "length": 133,
+    "version": 2.2,
+    "submitter": "None",
+    "thumbnail": "https://tjcsucht.net/levelthumbs/102686349.png"
+  },
+  {
+    "name": "Tregence 134%",
+    "id": "treg134",
+    "player": "LeftDpad",
+    "video": "https://www.youtube.com/live/RInlxRwyjI4?t=7756",
+    "showcaseVideo": "https://youtu.be/1GolW8jKK7k",
+    "tags": [
+      "Level",
+      "Consistency",
+      "Rated",
+      "CBF"
+    ],
+    "date": "2025-10-29",
+    "length": 133,
+    "version": 2.2,
+    "submitter": "TTB18",
+    "thumbnail": "https://tjcsucht.net/levelthumbs/102686349.png"
   }
 ]
 
