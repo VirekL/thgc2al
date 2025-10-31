@@ -1070,6 +1070,20 @@ export default function List() {
             </div>
           )}
           {!isMobile && (
+            <div className="search-bar" style={{ width: '100%', maxWidth: 400, marginLeft: 'auto' }}>
+              <input
+                type="text"
+                placeholder="Search achievements..."
+                value={search}
+                onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
+                onKeyDown={handleSearchKeyDown}
+                aria-label="Search achievements"
+                className="search-input"
+                style={{ width: '100%' }}
+              />
+            </div>
+          )}
+          {!isMobile && (
             <div style={{ display: 'flex', alignItems: 'center', marginLeft: 12 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginRight: 12 }}>
                 <label style={{ color: 'var(--text-color)', fontSize: 13 }}>Sort:</label>
@@ -1136,20 +1150,6 @@ export default function List() {
               isMobile={isMobile}
               show={showMobileFilters}
               setShow={setShowMobileFilters}
-            />
-          </div>
-        )}
-        {!isMobile && (
-          <div className="search-bar" style={{ width: '100%', maxWidth: 1000, margin: '12px auto 0', padding: '0 16px' }}>
-            <input
-              type="text"
-              placeholder="Search achievements..."
-              value={search}
-              onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
-              onKeyDown={handleSearchKeyDown}
-              aria-label="Search achievements"
-              className="search-input"
-              style={{ width: '100%' }}
             />
           </div>
         )}
