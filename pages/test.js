@@ -980,11 +980,10 @@ export default function List() {
           className="header-bar"
           style={{
             display: 'flex',
-            flexDirection: isMobile ? 'column' : 'row',
-            alignItems: isMobile ? 'flex-start' : 'center',
-            gap: isMobile ? 0 : 16,
+            flexDirection: 'column',
             width: '100%',
-            paddingBottom: isMobile ? 8 : 0
+            gap: 16,
+            paddingBottom: 16
           }}
         >
           <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', width: isMobile ? '100%' : 'auto' }}>
@@ -1008,7 +1007,7 @@ export default function List() {
           </div>
           {isMobile && (
             <div style={{ width: '100%', marginTop: 12 }}>
-              <div className="search-bar" style={{ width: '100%', maxWidth: 400, margin: '0 auto' }}>
+              <div style={{ display: 'flex', justifyContent: 'center', marginTop: 8 }}>
                 <input
                   type="text"
                   placeholder="Search achievements..."
@@ -1070,8 +1069,8 @@ export default function List() {
             </div>
           )}
           {!isMobile && (
-            <div style={{ display: 'flex', alignItems: 'center', marginLeft: 12 }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginRight: 12 }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 24 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                 <label style={{ color: 'var(--text-color)', fontSize: 13 }}>Sort:</label>
                 <select
                   aria-label="Sort achievements"
@@ -1128,7 +1127,7 @@ export default function List() {
           )}
         </div>
         {!isMobile && (
-          <div className="tag-filter-pills-container">
+          <div className="tag-filter-pills-container" style={{ marginBottom: 16 }}>
             <TagFilterPills
               allTags={allTags}
               filterTags={filterTags}
@@ -1139,20 +1138,19 @@ export default function List() {
             />
           </div>
         )}
-        {!isMobile && (
-          <div className="search-bar" style={{ width: '100%', maxWidth: 400, margin: '16px auto 0' }}>
-            <input
-              type="text"
-              placeholder="Search achievements..."
-              value={search}
-              onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
-              onKeyDown={handleSearchKeyDown}
-              aria-label="Search achievements"
-              className="search-input"
-              style={{ width: '100%' }}
-            />
-          </div>
-        )}
+        
+        <div className="search-bar" style={{ width: '100%', maxWidth: '100%', margin: '0 auto', padding: '0 16px' }}>
+          <input
+            type="text"
+            placeholder="Search achievements..."
+            value={search}
+            onChange={e => { setManualSearch(''); setSearch(e.target.value); }}
+            onKeyDown={handleSearchKeyDown}
+            aria-label="Search achievements"
+            className="search-input"
+            style={{ width: '100%' }}
+          />
+        </div>
       </header>
             <MobileSidebarOverlay 
         isOpen={isMobile && showSidebar}
