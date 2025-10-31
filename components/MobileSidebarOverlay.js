@@ -62,7 +62,7 @@ export default function MobileSidebarOverlay({ isOpen, onClose }) {
         >
           ×
         </button>
-        <Sidebar />
+  <Sidebar onClose={onClose} />
       </div>
     </div>
   );
