@@ -39,7 +39,7 @@ export default function AboutUs() {
             <p>
               This list ranks <strong>rated levels</strong>, <strong>unrated</strong>, <strong>challenges</strong>,
               <strong>runs</strong>, <strong>speedhacked</strong>, and more. This is all under one list, sorted by
-              difficulty, with the baseline starting at <strong>Zodiac</strong>.
+              difficulty, with the baseline starting at <strong>Tartarus</strong>.
             </p>
             <h3>Owner</h3>
             <ul>
@@ -161,4 +161,5 @@ export default function AboutUs() {
     </>
   );
 }
+
 
