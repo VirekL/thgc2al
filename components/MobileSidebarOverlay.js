@@ -15,6 +15,8 @@ export default function MobileSidebarOverlay({ isOpen, onClose }) {
         height: "100vh",
         background: "rgba(0,0,0,0.75)",
         zIndex: 1001,
+        pointerEvents: 'auto',
+        touchAction: 'manipulation',
         display: "flex",
         alignItems: "center",
         justifyContent: "center"
@@ -27,10 +29,7 @@ export default function MobileSidebarOverlay({ isOpen, onClose }) {
       <div
         className="sidebar-mobile-modal"
         style={{
-          position: "fixed",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
+          position: "relative",
           zIndex: 1002,
           width: "90vw",
           maxWidth: 350,
@@ -40,7 +39,8 @@ export default function MobileSidebarOverlay({ isOpen, onClose }) {
           flexDirection: "column",
           background: "var(--secondary-bg)",
           borderRadius: "1.2rem",
-          overflowY: "auto"
+          overflowY: "auto",
+          margin: 'auto'
         }}
         onClick={e => e.stopPropagation()}
       >
@@ -48,7 +48,7 @@ export default function MobileSidebarOverlay({ isOpen, onClose }) {
           aria-label="Close sidebar"
           title="Close sidebar"
           style={{
-            position: "absolute",
+            position: 'absolute',
             top: 12,
             right: 12,
             background: "none",
